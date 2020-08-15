@@ -1,0 +1,67 @@
+Unsupposrted library path: C:\Users\SrRina\Documents\Rocan\Rocan\build\classes\api
+Unsupposrted library path: C:\Users\SrRina\Documents\Rocan\Rocan\build\resources\api
+Symbol range map extraction starting
+Processing 2 files
+startProcessing "rina/rocan/Rocan.java" md5: 69931fab98b0a649a6bc0ecca2365e09
+@|rina/rocan/Rocan.java|8|18|rina.rocan|package|rina.rocan|(file)
+Class Start: rina.rocan.Rocan
+   @|rina/rocan/Rocan.java|84|87|Mod|class|net.minecraftforge.fml.common.Mod|false
+   @|rina/rocan/Rocan.java|88|93|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|rina/rocan/Rocan.java|105|112|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|rina/rocan/Rocan.java|115|120|Rocan|class|rina.rocan.Rocan|false
+   @|rina/rocan/Rocan.java|121|134|ROCAN_VERSION|field|rina.rocan.Rocan|ROCAN_VERSION
+   @|rina/rocan/Rocan.java|150|155|Rocan|class|rina.rocan.Rocan|false
+   @|rina/rocan/Rocan.java|180|186|String|class|java.lang.String|false
+   @|rina/rocan/Rocan.java|180|186|String|class|java.lang.String|false
+   @|rina/rocan/Rocan.java|187|200|ROCAN_VERSION|field|rina.rocan.Rocan|ROCAN_VERSION|
+Class End  : rina.rocan.Rocan
+endProcessing "rina/rocan/Rocan.java"
+
+startProcessing "rina/rocan/mixin/RocanMixinLoader.java" md5: db51b460f66e00297961a068b9729c98
+@|rina/rocan/mixin/RocanMixinLoader.java|8|24|rina.rocan.mixin|package|rina.rocan.mixin|(file)
+Class Start: rina.rocan.mixin.RocanMixinLoader
+   @|rina/rocan/mixin/RocanMixinLoader.java|450|466|RocanMixinLoader|class|rina.rocan.mixin.RocanMixinLoader|false
+   @|rina/rocan/mixin/RocanMixinLoader.java|478|495|IFMLLoadingPlugin|class|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|false
+   Method Start: RocanMixinLoader()V
+      @|rina/rocan/mixin/RocanMixinLoader.java|507|523|RocanMixinLoader|method|rina.rocan.mixin.RocanMixinLoader|RocanMixinLoader|()V
+      @|rina/rocan/mixin/RocanMixinLoader.java|531|545|MixinBootstrap|class|org.spongepowered.asm.launch.MixinBootstrap|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|546|550|init|method|org.spongepowered.asm.launch.MixinBootstrap|init|()V
+      @|rina/rocan/mixin/RocanMixinLoader.java|557|563|Mixins|class|org.spongepowered.asm.mixin.Mixins|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|564|580|addConfiguration|method|org.spongepowered.asm.mixin.Mixins|addConfiguration|(Ljava/lang/String;)V
+      @|rina/rocan/mixin/RocanMixinLoader.java|606|622|MixinEnvironment|class|org.spongepowered.asm.mixin.MixinEnvironment|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|623|644|getDefaultEnvironment|method|org.spongepowered.asm.mixin.MixinEnvironment|getDefaultEnvironment|()Lorg/spongepowered/asm/mixin/MixinEnvironment;
+      @|rina/rocan/mixin/RocanMixinLoader.java|647|668|setObfuscationContext|method|org.spongepowered.asm.mixin.MixinEnvironment|setObfuscationContext|(Ljava/lang/String;)V
+   Method End: RocanMixinLoader()V
+   Method Start: getASMTransformerClass()[Ljava/lang/String;
+      @|rina/rocan/mixin/RocanMixinLoader.java|689|697|Override|class|java.lang.Override|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|707|713|String|class|java.lang.String|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|716|738|getASMTransformerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getASMTransformerClass|()[Ljava/lang/String;
+      @|rina/rocan/mixin/RocanMixinLoader.java|757|763|String|class|java.lang.String|false
+   Method End: getASMTransformerClass()[Ljava/lang/String;
+   Method Start: getModContainerClass()Ljava/lang/String;
+      @|rina/rocan/mixin/RocanMixinLoader.java|777|785|Override|class|java.lang.Override|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|795|801|String|class|java.lang.String|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|802|822|getModContainerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getModContainerClass|()Ljava/lang/String;
+   Method End: getModContainerClass()Ljava/lang/String;
+   Method Start: getSetupClass()Ljava/lang/String;
+      @|rina/rocan/mixin/RocanMixinLoader.java|852|860|Nullable|class|javax.annotation.Nullable|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|864|872|Override|class|java.lang.Override|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|882|888|String|class|java.lang.String|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|889|902|getSetupClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getSetupClass|()Ljava/lang/String;
+   Method End: getSetupClass()Ljava/lang/String;
+   Method Start: injectData(Ljava/util/Map;)V
+      @|rina/rocan/mixin/RocanMixinLoader.java|986|990|data|param|rina.rocan.mixin.RocanMixinLoader|injectData|(Ljava/util/Map;)V|data|0
+      @|rina/rocan/mixin/RocanMixinLoader.java|932|940|Override|class|java.lang.Override|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|955|965|injectData|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|injectData|(Ljava/util/Map;)V
+      @|rina/rocan/mixin/RocanMixinLoader.java|966|969|Map|class|java.util.Map|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|970|976|String|class|java.lang.String|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|978|984|Object|class|java.lang.Object|false
+   Method End: injectData(Ljava/util/Map;)V
+   Method Start: getAccessTransformerClass()Ljava/lang/String;
+      @|rina/rocan/mixin/RocanMixinLoader.java|1000|1008|Override|class|java.lang.Override|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|1018|1024|String|class|java.lang.String|false
+      @|rina/rocan/mixin/RocanMixinLoader.java|1025|1050|getAccessTransformerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getAccessTransformerClass|()Ljava/lang/String;
+   Method End: getAccessTransformerClass()Ljava/lang/String;
+Class End  : rina.rocan.mixin.RocanMixinLoader
+endProcessing "rina/rocan/mixin/RocanMixinLoader.java"
+

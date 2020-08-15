@@ -1,0 +1,14 @@
+[{
+	"modid"        : "rocan",
+	"name"         : "Rocan",
+	"description"  : "Still beta.";
+	"version"      : "0.1",	
+	"mcversion"    : "1.12.2-14.23.5.2772",
+	"url"          : "- no",
+	"updateUrl"    : "- no",
+	"authorList"   : ["Rina, "Yoink"];
+	"credits"      : "Rina",
+	"logoFile"     : "",
+	"screenshots"  : [],
+	"dependencies" : []
+}]
