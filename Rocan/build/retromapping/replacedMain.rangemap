@@ -1,21 +1,775 @@
 Unsupposrted library path: C:\Users\SrRina\Documents\Rocan\Rocan\build\classes\api
 Unsupposrted library path: C:\Users\SrRina\Documents\Rocan\Rocan\build\resources\api
 Symbol range map extraction starting
-Processing 2 files
-startProcessing "rina/rocan/Rocan.java" md5: 69931fab98b0a649a6bc0ecca2365e09
+Processing 25 files
+startProcessing "rina/rocan/Rocan.java" md5: 838d14d6df83af81b58186de162f1388
 @|rina/rocan/Rocan.java|8|18|rina.rocan|package|rina.rocan|(file)
 Class Start: rina.rocan.Rocan
-   @|rina/rocan/Rocan.java|84|87|Mod|class|net.minecraftforge.fml.common.Mod|false
-   @|rina/rocan/Rocan.java|88|93|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
-   @|rina/rocan/Rocan.java|105|112|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
-   @|rina/rocan/Rocan.java|115|120|Rocan|class|rina.rocan.Rocan|false
-   @|rina/rocan/Rocan.java|121|134|ROCAN_VERSION|field|rina.rocan.Rocan|ROCAN_VERSION
-   @|rina/rocan/Rocan.java|150|155|Rocan|class|rina.rocan.Rocan|false
-   @|rina/rocan/Rocan.java|180|186|String|class|java.lang.String|false
-   @|rina/rocan/Rocan.java|180|186|String|class|java.lang.String|false
-   @|rina/rocan/Rocan.java|187|200|ROCAN_VERSION|field|rina.rocan.Rocan|ROCAN_VERSION|
+   @|rina/rocan/Rocan.java|627|630|Mod|class|net.minecraftforge.fml.common.Mod|false
+   @|rina/rocan/Rocan.java|631|636|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|rina/rocan/Rocan.java|648|652|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|rina/rocan/Rocan.java|655|660|Rocan|class|rina.rocan.Rocan|false
+   @|rina/rocan/Rocan.java|661|671|ROCAN_NAME|field|rina.rocan.Rocan|ROCAN_NAME
+   @|rina/rocan/Rocan.java|673|680|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|rina/rocan/Rocan.java|683|688|Rocan|class|rina.rocan.Rocan|false
+   @|rina/rocan/Rocan.java|689|702|ROCAN_VERSION|field|rina.rocan.Rocan|ROCAN_VERSION
+   @|rina/rocan/Rocan.java|718|723|Rocan|class|rina.rocan.Rocan|false
+   @|rina/rocan/Rocan.java|776|782|String|class|java.lang.String|false
+   @|rina/rocan/Rocan.java|776|782|String|class|java.lang.String|false
+   @|rina/rocan/Rocan.java|783|796|ROCAN_VERSION|field|rina.rocan.Rocan|ROCAN_VERSION|
+   @|rina/rocan/Rocan.java|828|834|String|class|java.lang.String|false
+   @|rina/rocan/Rocan.java|828|834|String|class|java.lang.String|false
+   @|rina/rocan/Rocan.java|835|845|ROCAN_NAME|field|rina.rocan.Rocan|ROCAN_NAME|
+   @|rina/rocan/Rocan.java|895|900|Rocan|class|rina.rocan.Rocan|false
+   @|rina/rocan/Rocan.java|865|877|Mod.Instance|class|net.minecraftforge.fml.common.Mod.Instance|false
+   @|rina/rocan/Rocan.java|895|900|Rocan|class|rina.rocan.Rocan|false
+   @|rina/rocan/Rocan.java|901|909|INSTANCE|field|rina.rocan.Rocan|INSTANCE|
+   @|rina/rocan/Rocan.java|938|957|RocanCommandManager|class|rina.rocan.manager.RocanCommandManager|false
+   @|rina/rocan/Rocan.java|938|957|RocanCommandManager|class|rina.rocan.manager.RocanCommandManager|false
+   @|rina/rocan/Rocan.java|958|973|command_manager|field|rina.rocan.Rocan|command_manager|
+   @|rina/rocan/Rocan.java|985|1003|RocanModuleManager|class|rina.rocan.manager.RocanModuleManager|false
+   @|rina/rocan/Rocan.java|985|1003|RocanModuleManager|class|rina.rocan.manager.RocanModuleManager|false
+   @|rina/rocan/Rocan.java|1004|1018|module_manager|field|rina.rocan.Rocan|module_manager|
+   @|rina/rocan/Rocan.java|1030|1047|RocanEventManager|class|rina.rocan.manager.RocanEventManager|false
+   @|rina/rocan/Rocan.java|1030|1047|RocanEventManager|class|rina.rocan.manager.RocanEventManager|false
+   @|rina/rocan/Rocan.java|1048|1061|event_manager|field|rina.rocan.Rocan|event_manager|
+   @|rina/rocan/Rocan.java|1090|1102|EventManager|class|team.stiff.pomelo.EventManager|false
+   @|rina/rocan/Rocan.java|1090|1102|EventManager|class|team.stiff.pomelo.EventManager|false
+   @|rina/rocan/Rocan.java|1103|1123|pomelo_event_manager|field|rina.rocan.Rocan|pomelo_event_manager|
+   Method Start: clientInitialize(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|rina/rocan/Rocan.java|1201|1206|event|param|rina.rocan.Rocan|clientInitialize|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|rina/rocan/Rocan.java|1130|1146|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|rina/rocan/Rocan.java|1161|1177|clientInitialize|method|rina.rocan.Rocan|clientInitialize|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|rina/rocan/Rocan.java|1178|1200|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent|false
+      @|rina/rocan/Rocan.java|1213|1228|command_manager|field|rina.rocan.Rocan|command_manager
+      @|rina/rocan/Rocan.java|1240|1259|RocanCommandManager|class|rina.rocan.manager.RocanCommandManager|false
+      @|rina/rocan/Rocan.java|1269|1283|module_manager|field|rina.rocan.Rocan|module_manager
+      @|rina/rocan/Rocan.java|1296|1314|RocanModuleManager|class|rina.rocan.manager.RocanModuleManager|false
+      @|rina/rocan/Rocan.java|1321|1334|event_manager|field|rina.rocan.Rocan|event_manager
+      @|rina/rocan/Rocan.java|1348|1365|RocanEventManager|class|rina.rocan.manager.RocanEventManager|false
+      @|rina/rocan/Rocan.java|1372|1392|pomelo_event_manager|field|rina.rocan.Rocan|pomelo_event_manager
+      @|rina/rocan/Rocan.java|1399|1420|AnnotatedEventManager|class|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|false
+      @|rina/rocan/Rocan.java|1429|1443|MinecraftForge|class|net.minecraftforge.common.MinecraftForge|false
+      @|rina/rocan/Rocan.java|1444|1453|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|rina/rocan/Rocan.java|1454|1462|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|rina/rocan/Rocan.java|1463|1478|command_manager|field|rina.rocan.Rocan|command_manager
+      @|rina/rocan/Rocan.java|1484|1498|MinecraftForge|class|net.minecraftforge.common.MinecraftForge|false
+      @|rina/rocan/Rocan.java|1499|1508|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|rina/rocan/Rocan.java|1509|1517|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|rina/rocan/Rocan.java|1518|1531|event_manager|field|rina.rocan.Rocan|event_manager
+   Method End: clientInitialize(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: getInstance()Lrina/rocan/Rocan;
+      @|rina/rocan/Rocan.java|1556|1561|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/Rocan.java|1562|1573|getInstance|method|rina.rocan.Rocan|getInstance|()Lrina/rocan/Rocan;
+      @|rina/rocan/Rocan.java|1588|1596|INSTANCE|field|rina.rocan.Rocan|INSTANCE
+   Method End: getInstance()Lrina/rocan/Rocan;
+   Method Start: getClientName()Ljava/lang/String;
+      @|rina/rocan/Rocan.java|1620|1626|String|class|java.lang.String|false
+      @|rina/rocan/Rocan.java|1627|1640|getClientName|method|rina.rocan.Rocan|getClientName|()Ljava/lang/String;
+      @|rina/rocan/Rocan.java|1655|1666|getInstance|method|rina.rocan.Rocan|getInstance|()Lrina/rocan/Rocan;
+      @|rina/rocan/Rocan.java|1669|1679|ROCAN_NAME|field|rina.rocan.Rocan|ROCAN_NAME
+   Method End: getClientName()Ljava/lang/String;
+   Method Start: getClientVersion()Ljava/lang/String;
+      @|rina/rocan/Rocan.java|1703|1709|String|class|java.lang.String|false
+      @|rina/rocan/Rocan.java|1710|1726|getClientVersion|method|rina.rocan.Rocan|getClientVersion|()Ljava/lang/String;
+      @|rina/rocan/Rocan.java|1741|1752|getInstance|method|rina.rocan.Rocan|getInstance|()Lrina/rocan/Rocan;
+      @|rina/rocan/Rocan.java|1755|1768|ROCAN_VERSION|field|rina.rocan.Rocan|ROCAN_VERSION
+   Method End: getClientVersion()Ljava/lang/String;
+   Method Start: getCommandManager()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/Rocan.java|1792|1811|RocanCommandManager|class|rina.rocan.manager.RocanCommandManager|false
+      @|rina/rocan/Rocan.java|1812|1829|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/Rocan.java|1844|1855|getInstance|method|rina.rocan.Rocan|getInstance|()Lrina/rocan/Rocan;
+      @|rina/rocan/Rocan.java|1858|1873|command_manager|field|rina.rocan.Rocan|command_manager
+   Method End: getCommandManager()Lrina/rocan/manager/RocanCommandManager;
+   Method Start: getModuleManager()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/Rocan.java|1897|1915|RocanModuleManager|class|rina.rocan.manager.RocanModuleManager|false
+      @|rina/rocan/Rocan.java|1916|1932|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/Rocan.java|1947|1958|getInstance|method|rina.rocan.Rocan|getInstance|()Lrina/rocan/Rocan;
+      @|rina/rocan/Rocan.java|1961|1975|module_manager|field|rina.rocan.Rocan|module_manager
+   Method End: getModuleManager()Lrina/rocan/manager/RocanModuleManager;
+   Method Start: getEventManager()Lrina/rocan/manager/RocanEventManager;
+      @|rina/rocan/Rocan.java|1999|2016|RocanEventManager|class|rina.rocan.manager.RocanEventManager|false
+      @|rina/rocan/Rocan.java|2017|2032|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
+      @|rina/rocan/Rocan.java|2047|2058|getInstance|method|rina.rocan.Rocan|getInstance|()Lrina/rocan/Rocan;
+      @|rina/rocan/Rocan.java|2061|2074|event_manager|field|rina.rocan.Rocan|event_manager
+   Method End: getEventManager()Lrina/rocan/manager/RocanEventManager;
+   Method Start: getPomeloEventManager()Lteam/stiff/pomelo/EventManager;
+      @|rina/rocan/Rocan.java|2098|2110|EventManager|class|team.stiff.pomelo.EventManager|false
+      @|rina/rocan/Rocan.java|2111|2132|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
+      @|rina/rocan/Rocan.java|2147|2158|getInstance|method|rina.rocan.Rocan|getInstance|()Lrina/rocan/Rocan;
+      @|rina/rocan/Rocan.java|2161|2181|pomelo_event_manager|field|rina.rocan.Rocan|pomelo_event_manager
+   Method End: getPomeloEventManager()Lteam/stiff/pomelo/EventManager;
+   Method Start: setDefaultColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2218|2232|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2233|2248|setDefaultColor|method|rina.rocan.Rocan|setDefaultColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2263|2277|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2278|2283|RESET|field|com.mojang.realmsclient.gui.ChatFormatting|RESET
+   Method End: setDefaultColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getBlackColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2307|2321|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2322|2335|getBlackColor|method|rina.rocan.Rocan|getBlackColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2350|2364|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2365|2370|BLACK|field|com.mojang.realmsclient.gui.ChatFormatting|BLACK
+   Method End: getBlackColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getRedColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2394|2408|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2409|2420|getRedColor|method|rina.rocan.Rocan|getRedColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2435|2449|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2450|2453|RED|field|com.mojang.realmsclient.gui.ChatFormatting|RED
+   Method End: getRedColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getAquaColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2477|2491|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2492|2504|getAquaColor|method|rina.rocan.Rocan|getAquaColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2519|2533|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2534|2538|AQUA|field|com.mojang.realmsclient.gui.ChatFormatting|AQUA
+   Method End: getAquaColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getBlueColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2562|2576|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2577|2589|getBlueColor|method|rina.rocan.Rocan|getBlueColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2604|2618|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2619|2623|BLUE|field|com.mojang.realmsclient.gui.ChatFormatting|BLUE
+   Method End: getBlueColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getGoldColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2647|2661|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2662|2674|getGoldColor|method|rina.rocan.Rocan|getGoldColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2689|2703|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2704|2708|GOLD|field|com.mojang.realmsclient.gui.ChatFormatting|GOLD
+   Method End: getGoldColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getGrayColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2732|2746|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2747|2759|getGrayColor|method|rina.rocan.Rocan|getGrayColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2774|2788|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2789|2793|GRAY|field|com.mojang.realmsclient.gui.ChatFormatting|GRAY
+   Method End: getGrayColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getWhiteColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2817|2831|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2832|2845|getWhiteColor|method|rina.rocan.Rocan|getWhiteColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2860|2874|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2875|2880|WHITE|field|com.mojang.realmsclient.gui.ChatFormatting|WHITE
+   Method End: getWhiteColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getGreenColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2904|2918|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2919|2932|getGreenColor|method|rina.rocan.Rocan|getGreenColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2947|2961|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|2962|2967|GREEN|field|com.mojang.realmsclient.gui.ChatFormatting|GREEN
+   Method End: getGreenColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getYellowColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|2991|3005|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3006|3020|getYellowColor|method|rina.rocan.Rocan|getYellowColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3035|3049|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3050|3056|YELLOW|field|com.mojang.realmsclient.gui.ChatFormatting|YELLOW
+   Method End: getYellowColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getDarkRedColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3080|3094|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3095|3110|getDarkRedColor|method|rina.rocan.Rocan|getDarkRedColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3125|3139|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3140|3148|DARK_RED|field|com.mojang.realmsclient.gui.ChatFormatting|DARK_RED
+   Method End: getDarkRedColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getDarkAquaColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3172|3186|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3187|3203|getDarkAquaColor|method|rina.rocan.Rocan|getDarkAquaColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3218|3232|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3233|3242|DARK_AQUA|field|com.mojang.realmsclient.gui.ChatFormatting|DARK_AQUA
+   Method End: getDarkAquaColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getDarkBlueColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3266|3280|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3281|3297|getDarkBlueColor|method|rina.rocan.Rocan|getDarkBlueColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3312|3326|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3327|3336|DARK_BLUE|field|com.mojang.realmsclient.gui.ChatFormatting|DARK_BLUE
+   Method End: getDarkBlueColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getDarkGrayColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3360|3374|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3375|3391|getDarkGrayColor|method|rina.rocan.Rocan|getDarkGrayColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3406|3420|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3421|3430|DARK_GRAY|field|com.mojang.realmsclient.gui.ChatFormatting|DARK_GRAY
+   Method End: getDarkGrayColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getDarkGreenColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3454|3468|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3469|3486|getDarkGreenColor|method|rina.rocan.Rocan|getDarkGreenColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3501|3515|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3516|3526|DARK_GREEN|field|com.mojang.realmsclient.gui.ChatFormatting|DARK_GREEN
+   Method End: getDarkGreenColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getDarkPurpleColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3550|3564|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3565|3583|getDarkPurpleColor|method|rina.rocan.Rocan|getDarkPurpleColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3598|3612|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3613|3624|DARK_PURPLE|field|com.mojang.realmsclient.gui.ChatFormatting|DARK_PURPLE
+   Method End: getDarkPurpleColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+   Method Start: getLightPurpleColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3648|3662|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3663|3682|getLightPurpleColor|method|rina.rocan.Rocan|getLightPurpleColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/Rocan.java|3697|3711|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting|false
+      @|rina/rocan/Rocan.java|3712|3724|LIGHT_PURPLE|field|com.mojang.realmsclient.gui.ChatFormatting|LIGHT_PURPLE
+   Method End: getLightPurpleColor()Lcom/mojang/realmsclient/gui/ChatFormatting;
 Class End  : rina.rocan.Rocan
 endProcessing "rina/rocan/Rocan.java"
+
+startProcessing "rina/rocan/client/RocanCommand.java" md5: ae9918ce0df023295af843be0623f32d
+@|rina/rocan/client/RocanCommand.java|8|25|rina.rocan.client|package|rina.rocan.client|(file)
+Class Start: rina.rocan.client.RocanCommand
+   @|rina/rocan/client/RocanCommand.java|335|347|RocanCommand|class|rina.rocan.client.RocanCommand|false
+   @|rina/rocan/client/RocanCommand.java|360|366|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanCommand.java|360|366|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanCommand.java|367|374|command|field|rina.rocan.client.RocanCommand|command|
+   @|rina/rocan/client/RocanCommand.java|386|392|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanCommand.java|386|392|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanCommand.java|393|404|description|field|rina.rocan.client.RocanCommand|description|
+   Method Start: RocanCommand(Ljava/lang/String;Ljava/lang/String;)V
+      @|rina/rocan/client/RocanCommand.java|437|444|command|param|rina.rocan.client.RocanCommand|RocanCommand|(Ljava/lang/String;Ljava/lang/String;)V|command|0
+      @|rina/rocan/client/RocanCommand.java|453|464|description|param|rina.rocan.client.RocanCommand|RocanCommand|(Ljava/lang/String;Ljava/lang/String;)V|description|1
+      @|rina/rocan/client/RocanCommand.java|417|429|RocanCommand|method|rina.rocan.client.RocanCommand|RocanCommand|(Ljava/lang/String;Ljava/lang/String;)V
+      @|rina/rocan/client/RocanCommand.java|430|436|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanCommand.java|446|452|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanCommand.java|476|483|command|field|rina.rocan.client.RocanCommand|command
+      @|rina/rocan/client/RocanCommand.java|490|497|command|param|rina.rocan.client.RocanCommand|RocanCommand|(Ljava/lang/String;Ljava/lang/String;)V|command|0
+      @|rina/rocan/client/RocanCommand.java|507|518|description|field|rina.rocan.client.RocanCommand|description
+      @|rina/rocan/client/RocanCommand.java|521|532|description|param|rina.rocan.client.RocanCommand|RocanCommand|(Ljava/lang/String;Ljava/lang/String;)V|description|1
+   Method End: RocanCommand(Ljava/lang/String;Ljava/lang/String;)V
+   Method Start: getCommand()Ljava/lang/String;
+      @|rina/rocan/client/RocanCommand.java|549|555|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanCommand.java|556|566|getCommand|method|rina.rocan.client.RocanCommand|getCommand|()Ljava/lang/String;
+      @|rina/rocan/client/RocanCommand.java|586|593|command|field|rina.rocan.client.RocanCommand|command
+   Method End: getCommand()Ljava/lang/String;
+   Method Start: getDescription()Ljava/lang/String;
+      @|rina/rocan/client/RocanCommand.java|610|616|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanCommand.java|617|631|getDescription|method|rina.rocan.client.RocanCommand|getDescription|()Ljava/lang/String;
+      @|rina/rocan/client/RocanCommand.java|651|662|description|field|rina.rocan.client.RocanCommand|description
+   Method End: getDescription()Ljava/lang/String;
+   Method Start: onRequested([Ljava/lang/String;)Z
+      @|rina/rocan/client/RocanCommand.java|708|712|args|param|rina.rocan.client.RocanCommand|onRequested|([Ljava/lang/String;)Z|args|0
+      @|rina/rocan/client/RocanCommand.java|687|698|onRequested|method|rina.rocan.client.RocanCommand|onRequested|([Ljava/lang/String;)Z
+      @|rina/rocan/client/RocanCommand.java|699|705|String|class|java.lang.String|false
+   Method End: onRequested([Ljava/lang/String;)Z
+   Method Start: verifyErrorArg([Ljava/lang/String;I)Z
+      @|rina/rocan/client/RocanCommand.java|780|784|args|param|rina.rocan.client.RocanCommand|verifyErrorArg|([Ljava/lang/String;I)Z|args|0
+      @|rina/rocan/client/RocanCommand.java|790|795|index|param|rina.rocan.client.RocanCommand|verifyErrorArg|([Ljava/lang/String;I)Z|index|1
+      @|rina/rocan/client/RocanCommand.java|756|770|verifyErrorArg|method|rina.rocan.client.RocanCommand|verifyErrorArg|([Ljava/lang/String;I)Z
+      @|rina/rocan/client/RocanCommand.java|771|777|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanCommand.java|806|810|args|param|rina.rocan.client.RocanCommand|verifyErrorArg|([Ljava/lang/String;I)Z|args|0
+      Field: Array Length, skipping
+      @|rina/rocan/client/RocanCommand.java|820|825|index|param|rina.rocan.client.RocanCommand|verifyErrorArg|([Ljava/lang/String;I)Z|index|1
+   Method End: verifyErrorArg([Ljava/lang/String;I)Z
+Class End  : rina.rocan.client.RocanCommand
+endProcessing "rina/rocan/client/RocanCommand.java"
+
+startProcessing "rina/rocan/client/RocanModule.java" md5: 332b293019c572cdafe7a4bb725c52b7
+@|rina/rocan/client/RocanModule.java|8|25|rina.rocan.client|package|rina.rocan.client|(file)
+Class Start: rina.rocan.client.RocanModule
+   @|rina/rocan/client/RocanModule.java|335|346|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/client/RocanModule.java|393|399|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanModule.java|393|399|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanModule.java|400|404|name|field|rina.rocan.client.RocanModule|name|
+   @|rina/rocan/client/RocanModule.java|414|427|getAnnotation|method|rina.rocan.client.RocanModule|getAnnotation|()Lrina/rocan/client/RocanModule$Define;
+   @|rina/rocan/client/RocanModule.java|430|434|name|method|rina.rocan.client.RocanModule.Define|name|()Ljava/lang/String;
+   @|rina/rocan/client/RocanModule.java|454|460|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanModule.java|454|460|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanModule.java|461|464|tag|field|rina.rocan.client.RocanModule|tag|
+   @|rina/rocan/client/RocanModule.java|475|488|getAnnotation|method|rina.rocan.client.RocanModule|getAnnotation|()Lrina/rocan/client/RocanModule$Define;
+   @|rina/rocan/client/RocanModule.java|491|494|tag|method|rina.rocan.client.RocanModule.Define|tag|()Ljava/lang/String;
+   @|rina/rocan/client/RocanModule.java|514|520|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanModule.java|514|520|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanModule.java|521|532|description|field|rina.rocan.client.RocanModule|description|
+   @|rina/rocan/client/RocanModule.java|535|548|getAnnotation|method|rina.rocan.client.RocanModule|getAnnotation|()Lrina/rocan/client/RocanModule$Define;
+   @|rina/rocan/client/RocanModule.java|551|562|description|method|rina.rocan.client.RocanModule.Define|description|()Ljava/lang/String;
+   @|rina/rocan/client/RocanModule.java|584|592|Category|class|rina.rocan.client.RocanModule.Category|false
+   @|rina/rocan/client/RocanModule.java|584|592|Category|class|rina.rocan.client.RocanModule.Category|false
+   @|rina/rocan/client/RocanModule.java|593|601|category|field|rina.rocan.client.RocanModule|category|
+   @|rina/rocan/client/RocanModule.java|604|617|getAnnotation|method|rina.rocan.client.RocanModule|getAnnotation|()Lrina/rocan/client/RocanModule$Define;
+   @|rina/rocan/client/RocanModule.java|620|628|category|method|rina.rocan.client.RocanModule.Define|category|()Lrina/rocan/client/RocanModule$Category;
+   @|rina/rocan/client/RocanModule.java|650|659|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/client/RocanModule.java|650|659|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/client/RocanModule.java|660|662|mc|field|rina.rocan.client.RocanModule|mc|
+   @|rina/rocan/client/RocanModule.java|665|674|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/client/RocanModule.java|675|687|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|rina/rocan/client/RocanModule.java|707|715|key_bind|field|rina.rocan.client.RocanModule|key_bind|
+   @|rina/rocan/client/RocanModule.java|737|749|state_module|field|rina.rocan.client.RocanModule|state_module|
+   @|rina/rocan/client/RocanModule.java|769|787|show_hud_arraylist|field|rina.rocan.client.RocanModule|show_hud_arraylist|
+   Method Start: RocanModule()V
+      @|rina/rocan/client/RocanModule.java|800|811|RocanModule|method|rina.rocan.client.RocanModule|RocanModule|()V
+      @|rina/rocan/client/RocanModule.java|824|832|key_bind|field|rina.rocan.client.RocanModule|key_bind
+      @|rina/rocan/client/RocanModule.java|848|866|show_hud_arraylist|field|rina.rocan.client.RocanModule|show_hud_arraylist
+      @|rina/rocan/client/RocanModule.java|883|895|state_module|field|rina.rocan.client.RocanModule|state_module
+   Method End: RocanModule()V
+   Method Start: setState(Z)V
+      @|rina/rocan/client/RocanModule.java|948|953|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
+      @|rina/rocan/client/RocanModule.java|931|939|setState|method|rina.rocan.client.RocanModule|setState|(Z)V
+      @|rina/rocan/client/RocanModule.java|964|969|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
+      @|rina/rocan/client/RocanModule.java|978|990|state_module|field|rina.rocan.client.RocanModule|state_module
+      @|rina/rocan/client/RocanModule.java|1002|1007|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
+      @|rina/rocan/client/RocanModule.java|1016|1025|setEnable|method|rina.rocan.client.RocanModule|setEnable|()V
+      @|rina/rocan/client/RocanModule.java|1047|1057|setDisable|method|rina.rocan.client.RocanModule|setDisable|()V
+   Method End: setState(Z)V
+   Method Start: setKeyBind(I)V
+      @|rina/rocan/client/RocanModule.java|1107|1112|value|param|rina.rocan.client.RocanModule|setKeyBind|(I)V|value|0
+      @|rina/rocan/client/RocanModule.java|1092|1102|setKeyBind|method|rina.rocan.client.RocanModule|setKeyBind|(I)V
+      @|rina/rocan/client/RocanModule.java|1124|1132|key_bind|field|rina.rocan.client.RocanModule|key_bind
+      @|rina/rocan/client/RocanModule.java|1135|1140|value|param|rina.rocan.client.RocanModule|setKeyBind|(I)V|value|0
+   Method End: setKeyBind(I)V
+   Method Start: toggle()V
+      @|rina/rocan/client/RocanModule.java|1162|1168|toggle|method|rina.rocan.client.RocanModule|toggle|()V
+      @|rina/rocan/client/RocanModule.java|1176|1184|setState|method|rina.rocan.client.RocanModule|setState|(Z)V
+      @|rina/rocan/client/RocanModule.java|1186|1194|getState|method|rina.rocan.client.RocanModule|getState|()Z
+   Method End: toggle()V
+   Method Start: setEnable()V
+      @|rina/rocan/client/RocanModule.java|1219|1228|setEnable|method|rina.rocan.client.RocanModule|setEnable|()V
+      @|rina/rocan/client/RocanModule.java|1241|1253|state_module|field|rina.rocan.client.RocanModule|state_module
+      @|rina/rocan/client/RocanModule.java|1267|1275|onEnable|method|rina.rocan.client.RocanModule|onEnable|()V
+      @|rina/rocan/client/RocanModule.java|1284|1289|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|1290|1311|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
+      @|rina/rocan/client/RocanModule.java|1314|1330|addEventListener|method|team.stiff.pomelo.EventManager|addEventListener|(Ljava/lang/Object;)Z
+   Method End: setEnable()V
+   Method Start: setDisable()V
+      @|rina/rocan/client/RocanModule.java|1358|1368|setDisable|method|rina.rocan.client.RocanModule|setDisable|()V
+      @|rina/rocan/client/RocanModule.java|1381|1393|state_module|field|rina.rocan.client.RocanModule|state_module
+      @|rina/rocan/client/RocanModule.java|1408|1417|onDisable|method|rina.rocan.client.RocanModule|onDisable|()V
+      @|rina/rocan/client/RocanModule.java|1426|1431|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|1432|1453|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
+      @|rina/rocan/client/RocanModule.java|1456|1475|removeEventListener|method|team.stiff.pomelo.EventManager|removeEventListener|(Ljava/lang/Object;)Z
+   Method End: setDisable()V
+   Method Start: getName()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|1498|1504|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|1505|1512|getName|method|rina.rocan.client.RocanModule|getName|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|1527|1531|name|field|rina.rocan.client.RocanModule|name
+   Method End: getName()Ljava/lang/String;
+   Method Start: getTag()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|1548|1554|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|1555|1561|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|1576|1579|tag|field|rina.rocan.client.RocanModule|tag
+   Method End: getTag()Ljava/lang/String;
+   Method Start: getDescription()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|1596|1602|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|1603|1617|getDescription|method|rina.rocan.client.RocanModule|getDescription|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|1632|1643|description|field|rina.rocan.client.RocanModule|description
+   Method End: getDescription()Ljava/lang/String;
+   Method Start: getCategory()Lrina/rocan/client/RocanModule$Category;
+      @|rina/rocan/client/RocanModule.java|1660|1668|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/client/RocanModule.java|1669|1680|getCategory|method|rina.rocan.client.RocanModule|getCategory|()Lrina/rocan/client/RocanModule$Category;
+      @|rina/rocan/client/RocanModule.java|1695|1703|category|field|rina.rocan.client.RocanModule|category
+   Method End: getCategory()Lrina/rocan/client/RocanModule$Category;
+   Method Start: getKeyBind()I
+      @|rina/rocan/client/RocanModule.java|1724|1734|getKeyBind|method|rina.rocan.client.RocanModule|getKeyBind|()I
+      @|rina/rocan/client/RocanModule.java|1754|1762|key_bind|field|rina.rocan.client.RocanModule|key_bind
+   Method End: getKeyBind()I
+   Method Start: getState()Z
+      @|rina/rocan/client/RocanModule.java|1787|1795|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/client/RocanModule.java|1815|1827|state_module|field|rina.rocan.client.RocanModule|state_module
+   Method End: getState()Z
+   Method Start: onEnable()V
+      @|rina/rocan/client/RocanModule.java|1868|1876|onEnable|method|rina.rocan.client.RocanModule|onEnable|()V
+   Method End: onEnable()V
+   Method Start: onDisable()V
+      @|rina/rocan/client/RocanModule.java|1899|1908|onDisable|method|rina.rocan.client.RocanModule|onDisable|()V
+   Method End: onDisable()V
+   Method Start: onUpdate()V
+      @|rina/rocan/client/RocanModule.java|1930|1938|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
+   Method End: onUpdate()V
+   Method Start: getAnnotation()Lrina/rocan/client/RocanModule$Define;
+      @|rina/rocan/client/RocanModule.java|1980|1986|Define|class|rina.rocan.client.RocanModule.Define|false
+      @|rina/rocan/client/RocanModule.java|1987|2000|getAnnotation|method|rina.rocan.client.RocanModule|getAnnotation|()Lrina/rocan/client/RocanModule$Define;
+      @|rina/rocan/client/RocanModule.java|2012|2020|getClass|method|java.lang.Object|getClass|()Ljava/lang/Class;
+      @|rina/rocan/client/RocanModule.java|2023|2042|isAnnotationPresent|method|java.lang.reflect.AnnotatedElement|isAnnotationPresent|(Ljava/lang/Class;)Z
+      @|rina/rocan/client/RocanModule.java|2043|2049|Define|class|rina.rocan.client.RocanModule.Define|false
+      @|rina/rocan/client/RocanModule.java|2071|2079|getClass|method|java.lang.Object|getClass|()Ljava/lang/Class;
+      @|rina/rocan/client/RocanModule.java|2082|2095|getAnnotation|method|java.lang.reflect.AnnotatedElement|getAnnotation|(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+      @|rina/rocan/client/RocanModule.java|2096|2102|Define|class|rina.rocan.client.RocanModule.Define|false
+   Method End: getAnnotation()Lrina/rocan/client/RocanModule$Define;
+   Annotation Start: rina.rocan.client.RocanModule.Define
+      @|rina/rocan/client/RocanModule.java|2173|2182|Retention|class|java.lang.annotation.Retention|false
+      @|rina/rocan/client/RocanModule.java|2183|2198|RetentionPolicy|class|java.lang.annotation.RetentionPolicy|false
+      @|rina/rocan/client/RocanModule.java|2199|2206|RUNTIME|field|java.lang.annotation.RetentionPolicy|RUNTIME
+      @|rina/rocan/client/RocanModule.java|2228|2234|Define|class|rina.rocan.client.RocanModule.Define|false
+      @|rina/rocan/client/RocanModule.java|2240|2246|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2247|2251|name|method|rina.rocan.client.RocanModule.Define|name|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2258|2264|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2265|2268|tag|method|rina.rocan.client.RocanModule.Define|tag|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2275|2281|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2282|2293|description|method|rina.rocan.client.RocanModule.Define|description|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2328|2348|RocanModule.Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/client/RocanModule.java|2349|2357|category|method|rina.rocan.client.RocanModule.Define|category|()Lrina/rocan/client/RocanModule$Category;
+      Annotation End  : rina.rocan.client.RocanModule.Define
+   Enum Start: rina.rocan.client.RocanModule.Category
+      @|rina/rocan/client/RocanModule.java|2381|2389|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/client/RocanModule.java|2395|2404|ROCAN_DEV|field|rina.rocan.client.RocanModule.Category|ROCAN_DEV
+      @|rina/rocan/client/RocanModule.java|2430|2436|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2430|2436|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2437|2441|name|field|rina.rocan.client.RocanModule.Category|name|
+      @|rina/rocan/client/RocanModule.java|2446|2452|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2446|2452|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2453|2456|tag|field|rina.rocan.client.RocanModule.Category|tag|
+      Method Start: Category(Ljava/lang/String;Ljava/lang/String;)V
+         @|rina/rocan/client/RocanModule.java|2479|2483|name|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|name|0
+         @|rina/rocan/client/RocanModule.java|2492|2495|tag|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|tag|1
+         @|rina/rocan/client/RocanModule.java|2463|2471|Category|method|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V
+         @|rina/rocan/client/RocanModule.java|2472|2478|String|class|java.lang.String|false
+         @|rina/rocan/client/RocanModule.java|2485|2491|String|class|java.lang.String|false
+         @|rina/rocan/client/RocanModule.java|2508|2512|name|field|rina.rocan.client.RocanModule.Category|name
+         @|rina/rocan/client/RocanModule.java|2515|2519|name|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|name|0
+         @|rina/rocan/client/RocanModule.java|2530|2533|tag|field|rina.rocan.client.RocanModule.Category|tag
+         @|rina/rocan/client/RocanModule.java|2537|2540|tag|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|tag|1
+      Method End: Category(Ljava/lang/String;Ljava/lang/String;)V
+      Method Start: getName()Ljava/lang/String;
+         @|rina/rocan/client/RocanModule.java|2559|2565|String|class|java.lang.String|false
+         @|rina/rocan/client/RocanModule.java|2566|2573|getName|method|rina.rocan.client.RocanModule.Category|getName|()Ljava/lang/String;
+         @|rina/rocan/client/RocanModule.java|2594|2598|name|field|rina.rocan.client.RocanModule.Category|name
+      Method End: getName()Ljava/lang/String;
+      Method Start: getTag()Ljava/lang/String;
+         @|rina/rocan/client/RocanModule.java|2617|2623|String|class|java.lang.String|false
+         @|rina/rocan/client/RocanModule.java|2624|2630|getTag|method|rina.rocan.client.RocanModule.Category|getTag|()Ljava/lang/String;
+         @|rina/rocan/client/RocanModule.java|2651|2654|tag|field|rina.rocan.client.RocanModule.Category|tag
+      Method End: getTag()Ljava/lang/String;
+   Enum End  : rina.rocan.client.RocanModule.Category
+Class End  : rina.rocan.client.RocanModule
+endProcessing "rina/rocan/client/RocanModule.java"
+
+startProcessing "rina/rocan/client/commands/RocanCommandHelp.java" md5: dc240c8fd4c864c073907c05dbe9c1bf
+@|rina/rocan/client/commands/RocanCommandHelp.java|8|34|rina.rocan.client.commands|package|rina.rocan.client.commands|(file)
+Class Start: rina.rocan.client.commands.RocanCommandHelp
+   @|rina/rocan/client/commands/RocanCommandHelp.java|277|293|RocanCommandHelp|class|rina.rocan.client.commands.RocanCommandHelp|false
+   @|rina/rocan/client/commands/RocanCommandHelp.java|302|314|RocanCommand|class|rina.rocan.client.RocanCommand|false
+   Method Start: RocanCommandHelp()V
+      @|rina/rocan/client/commands/RocanCommandHelp.java|326|342|RocanCommandHelp|method|rina.rocan.client.commands.RocanCommandHelp|RocanCommandHelp|()V
+   Method End: RocanCommandHelp()V
+   Method Start: onRequested([Ljava/lang/String;)Z
+      @|rina/rocan/client/commands/RocanCommandHelp.java|449|453|args|param|rina.rocan.client.commands.RocanCommandHelp|onRequested|([Ljava/lang/String;)Z|args|0
+      @|rina/rocan/client/commands/RocanCommandHelp.java|402|410|Override|class|java.lang.Override|false
+      @|rina/rocan/client/commands/RocanCommandHelp.java|428|439|onRequested|method|rina.rocan.client.RocanCommand|onRequested|([Ljava/lang/String;)Z
+      @|rina/rocan/client/commands/RocanCommandHelp.java|440|446|String|class|java.lang.String|false
+      @|rina/rocan/client/commands/RocanCommandHelp.java|460|466|String|class|java.lang.String|false
+      @|rina/rocan/client/commands/RocanCommandHelp.java|492|506|verifyErrorArg|method|rina.rocan.client.RocanCommand|verifyErrorArg|([Ljava/lang/String;I)Z
+      @|rina/rocan/client/commands/RocanCommandHelp.java|507|511|args|param|rina.rocan.client.commands.RocanCommandHelp|onRequested|([Ljava/lang/String;)Z|args|0
+      @|rina/rocan/client/commands/RocanCommandHelp.java|523|538|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/client/commands/RocanCommandHelp.java|539|560|sendNotifyErrorClient|method|rina.rocan.util.RocanUtilClient|sendNotifyErrorClient|(Ljava/lang/String;)V
+      @|rina/rocan/client/commands/RocanCommandHelp.java|630|634|args|param|rina.rocan.client.commands.RocanCommandHelp|onRequested|([Ljava/lang/String;)Z|args|0
+      @|rina/rocan/client/commands/RocanCommandHelp.java|644|656|RocanCommand|class|rina.rocan.client.RocanCommand|false
+      @|rina/rocan/client/commands/RocanCommandHelp.java|677|682|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/commands/RocanCommandHelp.java|683|700|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/client/commands/RocanCommandHelp.java|703|722|getCommandByCommand|method|rina.rocan.manager.RocanCommandManager|getCommandByCommand|(Ljava/lang/String;)Lrina/rocan/client/RocanCommand;
+      @|rina/rocan/client/commands/RocanCommandHelp.java|776|791|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/client/commands/RocanCommandHelp.java|792|813|sendNotifyErrorClient|method|rina.rocan.util.RocanUtilClient|sendNotifyErrorClient|(Ljava/lang/String;)V
+      @|rina/rocan/client/commands/RocanCommandHelp.java|871|886|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/client/commands/RocanCommandHelp.java|887|903|sendNotifyClient|method|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V
+      @|rina/rocan/client/commands/RocanCommandHelp.java|922|936|getDescription|method|rina.rocan.client.RocanCommand|getDescription|()Ljava/lang/String;
+   Method End: onRequested([Ljava/lang/String;)Z
+Class End  : rina.rocan.client.commands.RocanCommandHelp
+endProcessing "rina/rocan/client/commands/RocanCommandHelp.java"
+
+startProcessing "rina/rocan/client/commands/RocanCommandPrefix.java" md5: f26236a8fe19d00d2460fb536814e0c5
+@|rina/rocan/client/commands/RocanCommandPrefix.java|8|34|rina.rocan.client.commands|package|rina.rocan.client.commands|(file)
+Class Start: rina.rocan.client.commands.RocanCommandPrefix
+   @|rina/rocan/client/commands/RocanCommandPrefix.java|277|295|RocanCommandPrefix|class|rina.rocan.client.commands.RocanCommandPrefix|false
+   @|rina/rocan/client/commands/RocanCommandPrefix.java|304|316|RocanCommand|class|rina.rocan.client.RocanCommand|false
+   Method Start: RocanCommandPrefix()V
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|328|346|RocanCommandPrefix|method|rina.rocan.client.commands.RocanCommandPrefix|RocanCommandPrefix|()V
+   Method End: RocanCommandPrefix()V
+   Method Start: onRequested([Ljava/lang/String;)Z
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|452|456|args|param|rina.rocan.client.commands.RocanCommandPrefix|onRequested|([Ljava/lang/String;)Z|args|0
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|405|413|Override|class|java.lang.Override|false
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|431|442|onRequested|method|rina.rocan.client.RocanCommand|onRequested|([Ljava/lang/String;)Z
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|443|449|String|class|java.lang.String|false
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|463|469|String|class|java.lang.String|false
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|495|509|verifyErrorArg|method|rina.rocan.client.RocanCommand|verifyErrorArg|([Ljava/lang/String;I)Z
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|510|514|args|param|rina.rocan.client.commands.RocanCommandPrefix|onRequested|([Ljava/lang/String;)Z|args|0
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|526|541|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|542|563|sendNotifyErrorClient|method|rina.rocan.util.RocanUtilClient|sendNotifyErrorClient|(Ljava/lang/String;)V
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|636|650|verifyErrorArg|method|rina.rocan.client.RocanCommand|verifyErrorArg|([Ljava/lang/String;I)Z
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|651|655|args|param|rina.rocan.client.commands.RocanCommandPrefix|onRequested|([Ljava/lang/String;)Z|args|0
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|667|682|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|683|704|sendNotifyErrorClient|method|rina.rocan.util.RocanUtilClient|sendNotifyErrorClient|(Ljava/lang/String;)V
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|783|787|args|param|rina.rocan.client.commands.RocanCommandPrefix|onRequested|([Ljava/lang/String;)Z|args|0
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|797|802|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|803|820|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|823|832|setPrefix|method|rina.rocan.manager.RocanCommandManager|setPrefix|(Ljava/lang/String;)V
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|848|863|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|864|880|sendNotifyClient|method|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|907|912|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|913|930|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/client/commands/RocanCommandPrefix.java|933|942|getPrefix|method|rina.rocan.manager.RocanCommandManager|getPrefix|()Ljava/lang/String;
+   Method End: onRequested([Ljava/lang/String;)Z
+Class End  : rina.rocan.client.commands.RocanCommandPrefix
+endProcessing "rina/rocan/client/commands/RocanCommandPrefix.java"
+
+startProcessing "rina/rocan/client/modules/dev/RocanTestModule.java" md5: 2076af8b55f11b8cc7584028ebf8b19b
+@|rina/rocan/client/modules/dev/RocanTestModule.java|8|37|rina.rocan.client.modules.dev|package|rina.rocan.client.modules.dev|(file)
+Class Start: rina.rocan.client.modules.dev.RocanTestModule
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|328|334|Define|class|rina.rocan.client.RocanModule.Define|false
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|335|339|name|method|rina.rocan.client.RocanModule.Define|name|()Ljava/lang/String;
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|356|359|tag|method|rina.rocan.client.RocanModule.Define|tag|()Ljava/lang/String;
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|375|386|description|method|rina.rocan.client.RocanModule.Define|description|()Ljava/lang/String;
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|399|407|category|method|rina.rocan.client.RocanModule.Define|category|()Lrina/rocan/client/RocanModule$Category;
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|410|418|Category|class|rina.rocan.client.RocanModule.Category|false
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|419|428|ROCAN_DEV|field|rina.rocan.client.RocanModule.Category|ROCAN_DEV
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|444|459|RocanTestModule|class|rina.rocan.client.modules.dev.RocanTestModule|false
+   @|rina/rocan/client/modules/dev/RocanTestModule.java|468|479|RocanModule|class|rina.rocan.client.RocanModule|false
+   Method Start: RocanTestModule()V
+      @|rina/rocan/client/modules/dev/RocanTestModule.java|491|506|RocanTestModule|method|rina.rocan.client.modules.dev.RocanTestModule|RocanTestModule|()V
+      @|rina/rocan/client/modules/dev/RocanTestModule.java|514|524|setKeyBind|method|rina.rocan.client.RocanModule|setKeyBind|(I)V
+   Method End: RocanTestModule()V
+   Method Start: onUpdate()V
+      @|rina/rocan/client/modules/dev/RocanTestModule.java|539|547|Override|class|java.lang.Override|false
+      @|rina/rocan/client/modules/dev/RocanTestModule.java|562|570|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
+      @|rina/rocan/client/modules/dev/RocanTestModule.java|578|593|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/client/modules/dev/RocanTestModule.java|594|610|sendNotifyClient|method|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V
+   Method End: onUpdate()V
+Class End  : rina.rocan.client.modules.dev.RocanTestModule
+endProcessing "rina/rocan/client/modules/dev/RocanTestModule.java"
+
+startProcessing "rina/rocan/manager/RocanCommandManager.java" md5: fe42e8b138fe1f6920f14e3f32234775
+@|rina/rocan/manager/RocanCommandManager.java|8|26|rina.rocan.manager|package|rina.rocan.manager|(file)
+Class Start: rina.rocan.manager.RocanCommandManager
+   @|rina/rocan/manager/RocanCommandManager.java|269|288|RocanCommandManager|class|rina.rocan.manager.RocanCommandManager|false
+   @|rina/rocan/manager/RocanCommandManager.java|303|315|RocanCommand|class|rina.rocan.client.RocanCommand|false
+   @|rina/rocan/manager/RocanCommandManager.java|293|302|ArrayList|class|java.util.ArrayList|false
+   @|rina/rocan/manager/RocanCommandManager.java|293|302|ArrayList|class|java.util.ArrayList|false
+   @|rina/rocan/manager/RocanCommandManager.java|303|315|RocanCommand|class|rina.rocan.client.RocanCommand|false
+   @|rina/rocan/manager/RocanCommandManager.java|317|329|command_list|field|rina.rocan.manager.RocanCommandManager|command_list|
+   @|rina/rocan/manager/RocanCommandManager.java|335|341|String|class|java.lang.String|false
+   @|rina/rocan/manager/RocanCommandManager.java|335|341|String|class|java.lang.String|false
+   @|rina/rocan/manager/RocanCommandManager.java|342|348|prefix|field|rina.rocan.manager.RocanCommandManager|prefix|
+   Method Start: RocanCommandManager(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanCommandManager.java|388|402|default_prefix|param|rina.rocan.manager.RocanCommandManager|RocanCommandManager|(Ljava/lang/String;)V|default_prefix|0
+      @|rina/rocan/manager/RocanCommandManager.java|361|380|RocanCommandManager|method|rina.rocan.manager.RocanCommandManager|RocanCommandManager|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanCommandManager.java|381|387|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanCommandManager.java|414|426|command_list|field|rina.rocan.manager.RocanCommandManager|command_list
+      @|rina/rocan/manager/RocanCommandManager.java|433|442|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanCommandManager.java|458|464|prefix|field|rina.rocan.manager.RocanCommandManager|prefix
+      @|rina/rocan/manager/RocanCommandManager.java|467|481|default_prefix|param|rina.rocan.manager.RocanCommandManager|RocanCommandManager|(Ljava/lang/String;)V|default_prefix|0
+      @|rina/rocan/manager/RocanCommandManager.java|488|498|addCommand|method|rina.rocan.manager.RocanCommandManager|addCommand|(Lrina/rocan/client/RocanCommand;)V
+      @|rina/rocan/manager/RocanCommandManager.java|503|519|RocanCommandHelp|class|rina.rocan.client.commands.RocanCommandHelp|false
+      @|rina/rocan/manager/RocanCommandManager.java|527|537|addCommand|method|rina.rocan.manager.RocanCommandManager|addCommand|(Lrina/rocan/client/RocanCommand;)V
+      @|rina/rocan/manager/RocanCommandManager.java|542|560|RocanCommandPrefix|class|rina.rocan.client.commands.RocanCommandPrefix|false
+   Method End: RocanCommandManager(Ljava/lang/String;)V
+   Method Start: addCommand(Lrina/rocan/client/RocanCommand;)V
+      @|rina/rocan/manager/RocanCommandManager.java|609|616|command|param|rina.rocan.manager.RocanCommandManager|addCommand|(Lrina/rocan/client/RocanCommand;)V|command|0
+      @|rina/rocan/manager/RocanCommandManager.java|585|595|addCommand|method|rina.rocan.manager.RocanCommandManager|addCommand|(Lrina/rocan/client/RocanCommand;)V
+      @|rina/rocan/manager/RocanCommandManager.java|596|608|RocanCommand|class|rina.rocan.client.RocanCommand|false
+      @|rina/rocan/manager/RocanCommandManager.java|628|640|command_list|field|rina.rocan.manager.RocanCommandManager|command_list
+      @|rina/rocan/manager/RocanCommandManager.java|641|644|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanCommandManager.java|645|652|command|param|rina.rocan.manager.RocanCommandManager|addCommand|(Lrina/rocan/client/RocanCommand;)V|command|0
+   Method End: addCommand(Lrina/rocan/client/RocanCommand;)V
+   Method Start: setPrefix(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanCommandManager.java|692|697|value|param|rina.rocan.manager.RocanCommandManager|setPrefix|(Ljava/lang/String;)V|value|0
+      @|rina/rocan/manager/RocanCommandManager.java|675|684|setPrefix|method|rina.rocan.manager.RocanCommandManager|setPrefix|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanCommandManager.java|685|691|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanCommandManager.java|709|715|prefix|field|rina.rocan.manager.RocanCommandManager|prefix
+      @|rina/rocan/manager/RocanCommandManager.java|718|723|value|param|rina.rocan.manager.RocanCommandManager|setPrefix|(Ljava/lang/String;)V|value|0
+   Method End: setPrefix(Ljava/lang/String;)V
+   Method Start: getArgs(Ljava/lang/String;)[Ljava/lang/String;
+      @|rina/rocan/manager/RocanCommandManager.java|764|771|message|param|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;|message|0
+      @|rina/rocan/manager/RocanCommandManager.java|740|746|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanCommandManager.java|749|756|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
+      @|rina/rocan/manager/RocanCommandManager.java|757|763|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanCommandManager.java|778|784|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanCommandManager.java|807|814|message|param|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;|message|0
+      @|rina/rocan/manager/RocanCommandManager.java|815|825|startsWith|method|java.lang.String|startsWith|(Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanCommandManager.java|826|835|getPrefix|method|rina.rocan.manager.RocanCommandManager|getPrefix|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanCommandManager.java|853|860|message|param|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;|message|0
+      @|rina/rocan/manager/RocanCommandManager.java|861|873|replaceFirst|method|java.lang.String|replaceFirst|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|rina/rocan/manager/RocanCommandManager.java|874|883|getPrefix|method|rina.rocan.manager.RocanCommandManager|getPrefix|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanCommandManager.java|891|896|split|method|java.lang.String|split|(Ljava/lang/String;)[Ljava/lang/String;
+   Method End: getArgs(Ljava/lang/String;)[Ljava/lang/String;
+   Method Start: getCommandList()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanCommandManager.java|941|950|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanCommandManager.java|951|963|RocanCommand|class|rina.rocan.client.RocanCommand|false
+      @|rina/rocan/manager/RocanCommandManager.java|965|979|getCommandList|method|rina.rocan.manager.RocanCommandManager|getCommandList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanCommandManager.java|999|1011|command_list|field|rina.rocan.manager.RocanCommandManager|command_list
+   Method End: getCommandList()Ljava/util/ArrayList;
+   Method Start: getCommandByCommand(Ljava/lang/String;)Lrina/rocan/client/RocanCommand;
+      @|rina/rocan/manager/RocanCommandManager.java|1068|1075|command|param|rina.rocan.manager.RocanCommandManager|getCommandByCommand|(Ljava/lang/String;)Lrina/rocan/client/RocanCommand;|command|0
+      @|rina/rocan/manager/RocanCommandManager.java|1028|1040|RocanCommand|class|rina.rocan.client.RocanCommand|false
+      @|rina/rocan/manager/RocanCommandManager.java|1041|1060|getCommandByCommand|method|rina.rocan.manager.RocanCommandManager|getCommandByCommand|(Ljava/lang/String;)Lrina/rocan/client/RocanCommand;
+      @|rina/rocan/manager/RocanCommandManager.java|1061|1067|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanCommandManager.java|1087|1099|RocanCommand|class|rina.rocan.client.RocanCommand|false
+      @|rina/rocan/manager/RocanCommandManager.java|1111|1125|getCommandList|method|rina.rocan.manager.RocanCommandManager|getCommandList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanCommandManager.java|1148|1158|getCommand|method|rina.rocan.client.RocanCommand|getCommand|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanCommandManager.java|1161|1167|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanCommandManager.java|1168|1175|command|param|rina.rocan.manager.RocanCommandManager|getCommandByCommand|(Ljava/lang/String;)Lrina/rocan/client/RocanCommand;|command|0
+   Method End: getCommandByCommand(Ljava/lang/String;)Lrina/rocan/client/RocanCommand;
+   Method Start: getPrefix()Ljava/lang/String;
+      @|rina/rocan/manager/RocanCommandManager.java|1246|1252|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanCommandManager.java|1253|1262|getPrefix|method|rina.rocan.manager.RocanCommandManager|getPrefix|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanCommandManager.java|1282|1288|prefix|field|rina.rocan.manager.RocanCommandManager|prefix
+   Method End: getPrefix()Ljava/lang/String;
+Class End  : rina.rocan.manager.RocanCommandManager
+endProcessing "rina/rocan/manager/RocanCommandManager.java"
+
+startProcessing "rina/rocan/manager/RocanEventManager.java" md5: 45a55d699fbf6d5ffc2efc8291525054
+@|rina/rocan/manager/RocanEventManager.java|8|26|rina.rocan.manager|package|rina.rocan.manager|(file)
+Class Start: rina.rocan.manager.RocanEventManager
+   @|rina/rocan/manager/RocanEventManager.java|965|982|RocanEventManager|class|rina.rocan.manager.RocanEventManager|false
+   @|rina/rocan/manager/RocanEventManager.java|995|1004|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/manager/RocanEventManager.java|995|1004|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/manager/RocanEventManager.java|1005|1007|mc|field|rina.rocan.manager.RocanEventManager|mc|
+   @|rina/rocan/manager/RocanEventManager.java|1010|1019|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/manager/RocanEventManager.java|1020|1032|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   Method Start: RocanEventManager()V
+      @|rina/rocan/manager/RocanEventManager.java|1047|1064|RocanEventManager|method|rina.rocan.manager.RocanEventManager|RocanEventManager|()V
+   Method End: RocanEventManager()V
+   Method Start: onUpdate(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1143|1148|event|param|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1075|1089|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1104|1112|onUpdate|method|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1113|1142|LivingEvent.LivingUpdateEvent|class|net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1159|1164|event|param|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1165|1175|isCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|isCanceled|()Z
+   Method End: onUpdate(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+   Method Start: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1269|1274|event|param|rina.rocan.manager.RocanEventManager|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1207|1221|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1236|1242|onTick|method|rina.rocan.manager.RocanEventManager|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1243|1268|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1285|1287|mc|field|rina.rocan.manager.RocanEventManager|mc
+      @|rina/rocan/manager/RocanEventManager.java|1288|1294|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/manager/RocanEventManager.java|1328|1333|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|1334|1350|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/manager/RocanEventManager.java|1353|1371|onUpdateModuleList|method|rina.rocan.manager.RocanModuleManager|onUpdateModuleList|()V
+   Method End: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+   Method Start: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1506|1511|event|param|rina.rocan.manager.RocanEventManager|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1384|1398|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1399|1407|priority|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|priority|()Lnet/minecraftforge/fml/common/eventhandler/EventPriority;
+      @|rina/rocan/manager/RocanEventManager.java|1410|1423|EventPriority|class|net.minecraftforge.fml.common.eventhandler.EventPriority|false
+      @|rina/rocan/manager/RocanEventManager.java|1424|1430|NORMAL|field|net.minecraftforge.fml.common.eventhandler.EventPriority|NORMAL
+      @|rina/rocan/manager/RocanEventManager.java|1432|1447|receiveCanceled|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|receiveCanceled|()Z
+      @|rina/rocan/manager/RocanEventManager.java|1470|1480|onKeyInput|method|rina.rocan.manager.RocanEventManager|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1481|1505|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1522|1530|Keyboard|class|org.lwjgl.input.Keyboard|false
+      @|rina/rocan/manager/RocanEventManager.java|1531|1547|getEventKeyState|method|org.lwjgl.input.Keyboard|getEventKeyState|()Z
+      @|rina/rocan/manager/RocanEventManager.java|1557|1562|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|1563|1579|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/manager/RocanEventManager.java|1582|1598|onPressedKeyBind|method|rina.rocan.manager.RocanModuleManager|onPressedKeyBind|(I)V
+      @|rina/rocan/manager/RocanEventManager.java|1599|1607|Keyboard|class|org.lwjgl.input.Keyboard|false
+      @|rina/rocan/manager/RocanEventManager.java|1608|1619|getEventKey|method|org.lwjgl.input.Keyboard|getEventKey|()I
+   Method End: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+   Method Start: onChat(Lnet/minecraftforge/client/event/ClientChatEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1723|1728|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1638|1652|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1653|1661|priority|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|priority|()Lnet/minecraftforge/fml/common/eventhandler/EventPriority;
+      @|rina/rocan/manager/RocanEventManager.java|1664|1677|EventPriority|class|net.minecraftforge.fml.common.eventhandler.EventPriority|false
+      @|rina/rocan/manager/RocanEventManager.java|1678|1684|NORMAL|field|net.minecraftforge.fml.common.eventhandler.EventPriority|NORMAL
+      @|rina/rocan/manager/RocanEventManager.java|1700|1706|onChat|method|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1707|1722|ClientChatEvent|class|net.minecraftforge.client.event.ClientChatEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1735|1741|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanEventManager.java|1759|1764|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1765|1775|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|1782|1788|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanEventManager.java|1806|1811|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|1812|1829|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|1832|1839|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|1840|1845|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1846|1856|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      Field: Array Length, skipping
+      @|rina/rocan/manager/RocanEventManager.java|1936|1941|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1942|1953|setCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|setCanceled|(Z)V
+      @|rina/rocan/manager/RocanEventManager.java|1967|1969|mc|field|rina.rocan.manager.RocanEventManager|mc
+      @|rina/rocan/manager/RocanEventManager.java|1970|1979|ingameGUI|field|net.minecraft.client.Minecraft|ingameGUI
+      @|rina/rocan/manager/RocanEventManager.java|1980|1990|getChatGUI|method|net.minecraft.client.gui.GuiIngame|getChatGUI|()Lnet/minecraft/client/gui/GuiNewChat;
+      @|rina/rocan/manager/RocanEventManager.java|1993|2010|addToSentMessages|method|net.minecraft.client.gui.GuiNewChat|addToSentMessages|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanEventManager.java|2011|2016|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|2017|2027|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|2043|2055|RocanCommand|class|rina.rocan.client.RocanCommand|false
+      @|rina/rocan/manager/RocanEventManager.java|2067|2072|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|2073|2090|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|2093|2107|getCommandList|method|rina.rocan.manager.RocanCommandManager|getCommandList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanEventManager.java|2134|2139|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|2140|2157|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|2160|2167|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|2168|2173|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|2174|2184|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|2191|2207|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanEventManager.java|2217|2227|getCommand|method|rina.rocan.client.RocanCommand|getCommand|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|2265|2276|onRequested|method|rina.rocan.client.RocanCommand|onRequested|([Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanEventManager.java|2277|2282|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|2283|2300|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|2303|2310|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|2311|2316|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|2317|2327|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|2355|2364|Exception|class|java.lang.Exception|false
+      @|rina/rocan/manager/RocanEventManager.java|2406|2411|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|2412|2422|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|2425|2435|startsWith|method|java.lang.String|startsWith|(Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanEventManager.java|2436|2441|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|2442|2459|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|2462|2471|getPrefix|method|rina.rocan.manager.RocanCommandManager|getPrefix|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|2483|2498|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/manager/RocanEventManager.java|2499|2515|sendNotifyClient|method|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V
+   Method End: onChat(Lnet/minecraftforge/client/event/ClientChatEvent;)V
+Class End  : rina.rocan.manager.RocanEventManager
+endProcessing "rina/rocan/manager/RocanEventManager.java"
+
+startProcessing "rina/rocan/manager/RocanModuleManager.java" md5: 6e8ff05ffaf287a59e7970bed5872fa1
+@|rina/rocan/manager/RocanModuleManager.java|8|26|rina.rocan.manager|package|rina.rocan.manager|(file)
+Class Start: rina.rocan.manager.RocanModuleManager
+   @|rina/rocan/manager/RocanModuleManager.java|554|572|RocanModuleManager|class|rina.rocan.manager.RocanModuleManager|false
+   @|rina/rocan/manager/RocanModuleManager.java|587|598|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/manager/RocanModuleManager.java|577|586|ArrayList|class|java.util.ArrayList|false
+   @|rina/rocan/manager/RocanModuleManager.java|577|586|ArrayList|class|java.util.ArrayList|false
+   @|rina/rocan/manager/RocanModuleManager.java|587|598|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/manager/RocanModuleManager.java|600|611|module_list|field|rina.rocan.manager.RocanModuleManager|module_list|
+   Method Start: RocanModuleManager()V
+      @|rina/rocan/manager/RocanModuleManager.java|624|642|RocanModuleManager|method|rina.rocan.manager.RocanModuleManager|RocanModuleManager|()V
+      @|rina/rocan/manager/RocanModuleManager.java|655|666|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
+      @|rina/rocan/manager/RocanModuleManager.java|673|682|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|693|702|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|707|722|RocanTestModule|class|rina.rocan.client.modules.dev.RocanTestModule|false
+   Method End: RocanModuleManager()V
+   Method Start: addModule(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|769|775|module|param|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V|module|0
+      @|rina/rocan/manager/RocanModuleManager.java|747|756|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|757|768|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|787|798|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
+      @|rina/rocan/manager/RocanModuleManager.java|799|802|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|803|809|module|param|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V|module|0
+   Method End: addModule(Lrina/rocan/client/RocanModule;)V
+   Method Start: onUpdateModuleList()V
+      @|rina/rocan/manager/RocanModuleManager.java|832|850|onUpdateModuleList|method|rina.rocan.manager.RocanModuleManager|onUpdateModuleList|()V
+      @|rina/rocan/manager/RocanModuleManager.java|863|874|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|885|898|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|920|928|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|947|955|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
+   Method End: onUpdateModuleList()V
+   Method Start: onPressedKeyBind(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|1011|1014|key|param|rina.rocan.manager.RocanModuleManager|onPressedKeyBind|(I)V|key|0
+      @|rina/rocan/manager/RocanModuleManager.java|990|1006|onPressedKeyBind|method|rina.rocan.manager.RocanModuleManager|onPressedKeyBind|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|1026|1037|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1048|1061|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|1083|1093|getKeyBind|method|rina.rocan.client.RocanModule|getKeyBind|()I
+      @|rina/rocan/manager/RocanModuleManager.java|1099|1102|key|param|rina.rocan.manager.RocanModuleManager|onPressedKeyBind|(I)V|key|0
+      @|rina/rocan/manager/RocanModuleManager.java|1119|1125|toggle|method|rina.rocan.client.RocanModule|toggle|()V
+   Method End: onPressedKeyBind(I)V
+   Method Start: getModuleList()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|1155|1164|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|1165|1176|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1178|1191|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|1211|1222|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
+   Method End: getModuleList()Ljava/util/ArrayList;
+   Method Start: getModuleListByCategory(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|1295|1303|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
+      @|rina/rocan/manager/RocanModuleManager.java|1239|1248|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|1249|1260|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1262|1285|getModuleListByCategory|method|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|1286|1294|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/manager/RocanModuleManager.java|1310|1319|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|1320|1331|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1360|1369|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|1385|1396|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1407|1420|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|1442|1453|getCategory|method|rina.rocan.client.RocanModule|getCategory|()Lrina/rocan/client/RocanModule$Category;
+      @|rina/rocan/manager/RocanModuleManager.java|1459|1467|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
+      @|rina/rocan/manager/RocanModuleManager.java|1497|1500|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+   Method End: getModuleListByCategory(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
+   Method Start: getModuleByTag(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+      @|rina/rocan/manager/RocanModuleManager.java|1605|1608|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
+      @|rina/rocan/manager/RocanModuleManager.java|1571|1582|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1583|1597|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+      @|rina/rocan/manager/RocanModuleManager.java|1598|1604|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanModuleManager.java|1620|1631|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1642|1655|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|1677|1683|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|1686|1692|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|1693|1696|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
+   Method End: getModuleByTag(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+Class End  : rina.rocan.manager.RocanModuleManager
+endProcessing "rina/rocan/manager/RocanModuleManager.java"
 
 startProcessing "rina/rocan/mixin/RocanMixinLoader.java" md5: db51b460f66e00297961a068b9729c98
 @|rina/rocan/mixin/RocanMixinLoader.java|8|24|rina.rocan.mixin|package|rina.rocan.mixin|(file)
@@ -64,4 +818,566 @@ Class Start: rina.rocan.mixin.RocanMixinLoader
    Method End: getAccessTransformerClass()Ljava/lang/String;
 Class End  : rina.rocan.mixin.RocanMixinLoader
 endProcessing "rina/rocan/mixin/RocanMixinLoader.java"
+
+startProcessing "rina/rocan/util/RocanUtilClient.java" md5: fd9ae7755cca20a61c827cca83d1bda7
+@|rina/rocan/util/RocanUtilClient.java|8|23|rina.rocan.util|package|rina.rocan.util|(file)
+Class Start: rina.rocan.util.RocanUtilClient
+   @|rina/rocan/util/RocanUtilClient.java|454|469|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+   @|rina/rocan/util/RocanUtilClient.java|494|503|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/util/RocanUtilClient.java|494|503|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/util/RocanUtilClient.java|504|506|mc|field|rina.rocan.util.RocanUtilClient|mc|
+   @|rina/rocan/util/RocanUtilClient.java|509|518|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/util/RocanUtilClient.java|519|531|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   Method Start: sendMessage(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|577|584|message|param|rina.rocan.util.RocanUtilClient|sendMessage|(Ljava/lang/String;)V|message|0
+      @|rina/rocan/util/RocanUtilClient.java|558|569|sendMessage|method|rina.rocan.util.RocanUtilClient|sendMessage|(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|570|576|String|class|java.lang.String|false
+      @|rina/rocan/util/RocanUtilClient.java|595|597|mc|field|rina.rocan.util.RocanUtilClient|mc
+      @|rina/rocan/util/RocanUtilClient.java|598|604|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/util/RocanUtilClient.java|620|622|mc|field|rina.rocan.util.RocanUtilClient|mc
+      @|rina/rocan/util/RocanUtilClient.java|623|629|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/util/RocanUtilClient.java|630|640|connection|field|net.minecraft.client.entity.EntityPlayerSP|connection
+      @|rina/rocan/util/RocanUtilClient.java|641|651|sendPacket|method|net.minecraft.client.network.NetHandlerPlayClient|sendPacket|(Lnet/minecraft/network/Packet;)V
+      @|rina/rocan/util/RocanUtilClient.java|656|674|CPacketChatMessage|class|net.minecraft.network.play.client.CPacketChatMessage|false
+      @|rina/rocan/util/RocanUtilClient.java|675|682|message|param|rina.rocan.util.RocanUtilClient|sendMessage|(Ljava/lang/String;)V|message|0
+   Method End: sendMessage(Ljava/lang/String;)V
+   Method Start: sendNotify(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|736|743|message|param|rina.rocan.util.RocanUtilClient|sendNotify|(Ljava/lang/String;)V|message|0
+      @|rina/rocan/util/RocanUtilClient.java|718|728|sendNotify|method|rina.rocan.util.RocanUtilClient|sendNotify|(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|729|735|String|class|java.lang.String|false
+      @|rina/rocan/util/RocanUtilClient.java|754|756|mc|field|rina.rocan.util.RocanUtilClient|mc
+      @|rina/rocan/util/RocanUtilClient.java|757|763|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/util/RocanUtilClient.java|779|781|mc|field|rina.rocan.util.RocanUtilClient|mc
+      @|rina/rocan/util/RocanUtilClient.java|782|788|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/util/RocanUtilClient.java|789|800|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|rina/rocan/util/RocanUtilClient.java|805|824|CustomTextComponent|class|rina.rocan.util.RocanUtilClient.CustomTextComponent|false
+      @|rina/rocan/util/RocanUtilClient.java|825|832|message|param|rina.rocan.util.RocanUtilClient|sendNotify|(Ljava/lang/String;)V|message|0
+   Method End: sendNotify(Ljava/lang/String;)V
+   Method Start: sendNotifyClient(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|892|899|message|param|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V|message|0
+      @|rina/rocan/util/RocanUtilClient.java|868|884|sendNotifyClient|method|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|885|891|String|class|java.lang.String|false
+      @|rina/rocan/util/RocanUtilClient.java|906|916|sendNotify|method|rina.rocan.util.RocanUtilClient|sendNotify|(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|917|924|message|param|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V|message|0
+   Method End: sendNotifyClient(Ljava/lang/String;)V
+   Method Start: sendNotifyErrorClient(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|983|990|message|param|rina.rocan.util.RocanUtilClient|sendNotifyErrorClient|(Ljava/lang/String;)V|message|0
+      @|rina/rocan/util/RocanUtilClient.java|954|975|sendNotifyErrorClient|method|rina.rocan.util.RocanUtilClient|sendNotifyErrorClient|(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|976|982|String|class|java.lang.String|false
+      @|rina/rocan/util/RocanUtilClient.java|997|1007|sendNotify|method|rina.rocan.util.RocanUtilClient|sendNotify|(Ljava/lang/String;)V
+      @|rina/rocan/util/RocanUtilClient.java|1008|1013|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/util/RocanUtilClient.java|1014|1025|getRedColor|method|rina.rocan.Rocan|getRedColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/util/RocanUtilClient.java|1030|1037|message|param|rina.rocan.util.RocanUtilClient|sendNotifyErrorClient|(Ljava/lang/String;)V|message|0
+   Method End: sendNotifyErrorClient(Ljava/lang/String;)V
+   Class Start: rina.rocan.util.RocanUtilClient.CustomTextComponent
+      @|rina/rocan/util/RocanUtilClient.java|1068|1087|CustomTextComponent|class|rina.rocan.util.RocanUtilClient.CustomTextComponent|false
+      @|rina/rocan/util/RocanUtilClient.java|1096|1113|TextComponentBase|class|net.minecraft.util.text.TextComponentBase|false
+      @|rina/rocan/util/RocanUtilClient.java|1119|1125|String|class|java.lang.String|false
+      @|rina/rocan/util/RocanUtilClient.java|1119|1125|String|class|java.lang.String|false
+      @|rina/rocan/util/RocanUtilClient.java|1126|1139|message_input|field|rina.rocan.util.RocanUtilClient.CustomTextComponent|message_input|
+      Method Start: CustomTextComponent(Ljava/lang/String;)V
+         @|rina/rocan/util/RocanUtilClient.java|1182|1189|message|param|rina.rocan.util.RocanUtilClient.CustomTextComponent|CustomTextComponent|(Ljava/lang/String;)V|message|0
+         @|rina/rocan/util/RocanUtilClient.java|1155|1174|CustomTextComponent|method|rina.rocan.util.RocanUtilClient.CustomTextComponent|CustomTextComponent|(Ljava/lang/String;)V
+         @|rina/rocan/util/RocanUtilClient.java|1175|1181|String|class|java.lang.String|false
+         @|rina/rocan/util/RocanUtilClient.java|1199|1206|Pattern|class|java.util.regex.Pattern|false
+         @|rina/rocan/util/RocanUtilClient.java|1217|1224|Pattern|class|java.util.regex.Pattern|false
+         @|rina/rocan/util/RocanUtilClient.java|1225|1232|compile|method|java.util.regex.Pattern|compile|(Ljava/lang/String;)Ljava/util/regex/Pattern;
+         @|rina/rocan/util/RocanUtilClient.java|1267|1274|Matcher|class|java.util.regex.Matcher|false
+         @|rina/rocan/util/RocanUtilClient.java|1287|1294|matcher|method|java.util.regex.Pattern|matcher|(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+         @|rina/rocan/util/RocanUtilClient.java|1295|1302|message|param|rina.rocan.util.RocanUtilClient.CustomTextComponent|CustomTextComponent|(Ljava/lang/String;)V|message|0
+         @|rina/rocan/util/RocanUtilClient.java|1309|1321|StringBuffer|class|java.lang.StringBuffer|false
+         @|rina/rocan/util/RocanUtilClient.java|1331|1343|StringBuffer|class|java.lang.StringBuffer|false
+         @|rina/rocan/util/RocanUtilClient.java|1363|1367|find|method|java.util.regex.Matcher|find|()Z
+         @|rina/rocan/util/RocanUtilClient.java|1378|1384|String|class|java.lang.String|false
+         @|rina/rocan/util/RocanUtilClient.java|1412|1417|group|method|java.util.regex.MatchResult|group|()Ljava/lang/String;
+         @|rina/rocan/util/RocanUtilClient.java|1420|1429|substring|method|java.lang.String|substring|(I)Ljava/lang/String;
+         @|rina/rocan/util/RocanUtilClient.java|1441|1458|appendReplacement|method|java.util.regex.Matcher|appendReplacement|(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
+         @|rina/rocan/util/RocanUtilClient.java|1492|1502|appendTail|method|java.util.regex.Matcher|appendTail|(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
+         @|rina/rocan/util/RocanUtilClient.java|1517|1530|message_input|field|rina.rocan.util.RocanUtilClient.CustomTextComponent|message_input
+         @|rina/rocan/util/RocanUtilClient.java|1536|1544|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      Method End: CustomTextComponent(Ljava/lang/String;)V
+      Method Start: getUnformattedComponentText()Ljava/lang/String;
+         @|rina/rocan/util/RocanUtilClient.java|1567|1573|String|class|java.lang.String|false
+         @|rina/rocan/util/RocanUtilClient.java|1574|1601|getUnformattedComponentText|method|net.minecraft.util.text.ITextComponent|getUnformattedComponentText|()Ljava/lang/String;
+         @|rina/rocan/util/RocanUtilClient.java|1622|1635|message_input|field|rina.rocan.util.RocanUtilClient.CustomTextComponent|message_input
+      Method End: getUnformattedComponentText()Ljava/lang/String;
+      Method Start: createCopy()Lnet/minecraft/util/text/ITextComponent;
+         @|rina/rocan/util/RocanUtilClient.java|1650|1658|Override|class|java.lang.Override|false
+         @|rina/rocan/util/RocanUtilClient.java|1669|1683|ITextComponent|class|net.minecraft.util.text.ITextComponent|false
+         @|rina/rocan/util/RocanUtilClient.java|1684|1694|createCopy|method|net.minecraft.util.text.ITextComponent|createCopy|()Lnet/minecraft/util/text/ITextComponent;
+         @|rina/rocan/util/RocanUtilClient.java|1714|1733|CustomTextComponent|class|rina.rocan.util.RocanUtilClient.CustomTextComponent|false
+         @|rina/rocan/util/RocanUtilClient.java|1739|1752|message_input|field|rina.rocan.util.RocanUtilClient.CustomTextComponent|message_input
+      Method End: createCopy()Lnet/minecraft/util/text/ITextComponent;
+   Class End  : rina.rocan.util.RocanUtilClient.CustomTextComponent
+Class End  : rina.rocan.util.RocanUtilClient
+endProcessing "rina/rocan/util/RocanUtilClient.java"
+
+startProcessing "team/stiff/pomelo/EventManager.java" md5: a011d941355a835b0459ad045eb15209
+@|team/stiff/pomelo/EventManager.java|8|25|team.stiff.pomelo|package|team.stiff.pomelo|(file)
+Class Start: team.stiff.pomelo.EventManager
+   @|team/stiff/pomelo/EventManager.java|265|277|EventManager|class|team.stiff.pomelo.EventManager|false
+   Method Start: dispatchEvent(Ljava/lang/Object;)Ljava/lang/Object;
+      @|team/stiff/pomelo/EventManager.java|567|572|event|param|team.stiff.pomelo.EventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;|event|0
+      @|team/stiff/pomelo/EventManager.java|551|564|dispatchEvent|method|team.stiff.pomelo.EventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;
+   Method End: dispatchEvent(Ljava/lang/Object;)Ljava/lang/Object;
+   Method Start: isRegisteredListener(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/EventManager.java|789|797|listener|param|team.stiff.pomelo.EventManager|isRegisteredListener|(Ljava/lang/Object;)Z|listener|0
+      @|team/stiff/pomelo/EventManager.java|761|781|isRegisteredListener|method|team.stiff.pomelo.EventManager|isRegisteredListener|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/EventManager.java|782|788|Object|class|java.lang.Object|false
+   Method End: isRegisteredListener(Ljava/lang/Object;)Z
+   Method Start: addEventListener(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/EventManager.java|1084|1092|listener|param|team.stiff.pomelo.EventManager|addEventListener|(Ljava/lang/Object;)Z|listener|0
+      @|team/stiff/pomelo/EventManager.java|1060|1076|addEventListener|method|team.stiff.pomelo.EventManager|addEventListener|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/EventManager.java|1077|1083|Object|class|java.lang.Object|false
+   Method End: addEventListener(Ljava/lang/Object;)Z
+   Method Start: removeEventListener(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/EventManager.java|1370|1378|listener|param|team.stiff.pomelo.EventManager|removeEventListener|(Ljava/lang/Object;)Z|listener|0
+      @|team/stiff/pomelo/EventManager.java|1343|1362|removeEventListener|method|team.stiff.pomelo.EventManager|removeEventListener|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/EventManager.java|1363|1369|Object|class|java.lang.Object|false
+   Method End: removeEventListener(Ljava/lang/Object;)Z
+Class End  : team.stiff.pomelo.EventManager
+endProcessing "team/stiff/pomelo/EventManager.java"
+
+startProcessing "team/stiff/pomelo/dispatch/EventDispatcher.java" md5: 1ceaaa95b1800c7b5698a80d7cc58c0d
+@|team/stiff/pomelo/dispatch/EventDispatcher.java|8|34|team.stiff.pomelo.dispatch|package|team.stiff.pomelo.dispatch|(file)
+Class Start: team.stiff.pomelo.dispatch.EventDispatcher
+   @|team/stiff/pomelo/dispatch/EventDispatcher.java|172|187|EventDispatcher|class|team.stiff.pomelo.dispatch.EventDispatcher|false
+   Method Start: dispatch(Ljava/lang/Object;)V
+      @|team/stiff/pomelo/dispatch/EventDispatcher.java|381|386|event|param|team.stiff.pomelo.dispatch.EventDispatcher|dispatch|(Ljava/lang/Object;)V|event|0
+      @|team/stiff/pomelo/dispatch/EventDispatcher.java|370|378|dispatch|method|team.stiff.pomelo.dispatch.EventDispatcher|dispatch|(Ljava/lang/Object;)V
+   Method End: dispatch(Ljava/lang/Object;)V
+Class End  : team.stiff.pomelo.dispatch.EventDispatcher
+endProcessing "team/stiff/pomelo/dispatch/EventDispatcher.java"
+
+startProcessing "team/stiff/pomelo/filter/EventFilter.java" md5: 4b1e9683be4e7871ca65b7e74e8128ff
+@|team/stiff/pomelo/filter/EventFilter.java|8|32|team.stiff.pomelo.filter|package|team.stiff.pomelo.filter|(file)
+Class Start: team.stiff.pomelo.filter.EventFilter
+   @|team/stiff/pomelo/filter/EventFilter.java|320|331|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+   Method Start: test(Lteam/stiff/pomelo/handler/EventHandler;Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/filter/EventFilter.java|650|662|eventHandler|param|team.stiff.pomelo.filter.EventFilter|test|(Lteam/stiff/pomelo/handler/EventHandler;Ljava/lang/Object;)Z|eventHandler|0
+      @|team/stiff/pomelo/filter/EventFilter.java|666|671|event|param|team.stiff.pomelo.filter.EventFilter|test|(Lteam/stiff/pomelo/handler/EventHandler;Ljava/lang/Object;)Z|event|1
+      @|team/stiff/pomelo/filter/EventFilter.java|632|636|test|method|team.stiff.pomelo.filter.EventFilter|test|(Lteam/stiff/pomelo/handler/EventHandler;Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/filter/EventFilter.java|637|649|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+   Method End: test(Lteam/stiff/pomelo/handler/EventHandler;Ljava/lang/Object;)Z
+Class End  : team.stiff.pomelo.filter.EventFilter
+endProcessing "team/stiff/pomelo/filter/EventFilter.java"
+
+startProcessing "team/stiff/pomelo/filter/EventFilterScanner.java" md5: 45354d4efb92977e58c747bc2225d2dd
+@|team/stiff/pomelo/filter/EventFilterScanner.java|8|32|team.stiff.pomelo.filter|package|team.stiff.pomelo.filter|(file)
+Class Start: team.stiff.pomelo.filter.EventFilterScanner
+   @|team/stiff/pomelo/filter/EventFilterScanner.java|193|211|EventFilterScanner|class|team.stiff.pomelo.filter.EventFilterScanner|false
+   Method Start: scan(Ljava/lang/Object;)Ljava/util/Set;
+      @|team/stiff/pomelo/filter/EventFilterScanner.java|383|391|listener|param|team.stiff.pomelo.filter.EventFilterScanner|scan|(Ljava/lang/Object;)Ljava/util/Set;|listener|0
+      @|team/stiff/pomelo/filter/EventFilterScanner.java|359|362|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/filter/EventFilterScanner.java|363|374|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+      @|team/stiff/pomelo/filter/EventFilterScanner.java|376|380|scan|method|team.stiff.pomelo.filter.EventFilterScanner|scan|(Ljava/lang/Object;)Ljava/util/Set;
+   Method End: scan(Ljava/lang/Object;)Ljava/util/Set;
+Class End  : team.stiff.pomelo.filter.EventFilterScanner
+endProcessing "team/stiff/pomelo/filter/EventFilterScanner.java"
+
+startProcessing "team/stiff/pomelo/handler/EventHandler.java" md5: df9697678bae844ab7a2cf63e50bea3c
+@|team/stiff/pomelo/handler/EventHandler.java|8|33|team.stiff.pomelo.handler|package|team.stiff.pomelo.handler|(file)
+Class Start: team.stiff.pomelo.handler.EventHandler
+   @|team/stiff/pomelo/handler/EventHandler.java|245|257|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+   @|team/stiff/pomelo/handler/EventHandler.java|266|276|Comparable|class|java.lang.Comparable|false
+   @|team/stiff/pomelo/handler/EventHandler.java|277|289|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+   Method Start: handle(Ljava/lang/Object;)V
+      @|team/stiff/pomelo/handler/EventHandler.java|404|409|event|param|team.stiff.pomelo.handler.EventHandler|handle|(Ljava/lang/Object;)V|event|0
+      @|team/stiff/pomelo/handler/EventHandler.java|389|395|handle|method|team.stiff.pomelo.handler.EventHandler|handle|(Ljava/lang/Object;)V
+   Method End: handle(Ljava/lang/Object;)V
+   Method Start: getListener()Ljava/lang/Object;
+      @|team/stiff/pomelo/handler/EventHandler.java|515|521|Object|class|java.lang.Object|false
+      @|team/stiff/pomelo/handler/EventHandler.java|522|533|getListener|method|team.stiff.pomelo.handler.EventHandler|getListener|()Ljava/lang/Object;
+   Method End: getListener()Ljava/lang/Object;
+   Method Start: getPriority()Lteam/stiff/pomelo/handler/ListenerPriority;
+      @|team/stiff/pomelo/handler/EventHandler.java|664|680|ListenerPriority|class|team.stiff.pomelo.handler.ListenerPriority|false
+      @|team/stiff/pomelo/handler/EventHandler.java|681|692|getPriority|method|team.stiff.pomelo.handler.EventHandler|getPriority|()Lteam/stiff/pomelo/handler/ListenerPriority;
+   Method End: getPriority()Lteam/stiff/pomelo/handler/ListenerPriority;
+   Method Start: getFilters()Ljava/lang/Iterable;
+      @|team/stiff/pomelo/handler/EventHandler.java|847|855|Iterable|class|java.lang.Iterable|false
+      @|team/stiff/pomelo/handler/EventHandler.java|856|867|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+      @|team/stiff/pomelo/handler/EventHandler.java|869|879|getFilters|method|team.stiff.pomelo.handler.EventHandler|getFilters|()Ljava/lang/Iterable;
+   Method End: getFilters()Ljava/lang/Iterable;
+Class End  : team.stiff.pomelo.handler.EventHandler
+endProcessing "team/stiff/pomelo/handler/EventHandler.java"
+
+startProcessing "team/stiff/pomelo/handler/ListenerPriority.java" md5: 6f186804f6e22912e5d984204e2bedfe
+@|team/stiff/pomelo/handler/ListenerPriority.java|8|33|team.stiff.pomelo.handler|package|team.stiff.pomelo.handler|(file)
+Enum Start: team.stiff.pomelo.handler.ListenerPriority
+   @|team/stiff/pomelo/handler/ListenerPriority.java|296|312|ListenerPriority|class|team.stiff.pomelo.handler.ListenerPriority|false
+   @|team/stiff/pomelo/handler/ListenerPriority.java|319|325|LOWEST|field|team.stiff.pomelo.handler.ListenerPriority|LOWEST
+   @|team/stiff/pomelo/handler/ListenerPriority.java|337|342|LOWER|field|team.stiff.pomelo.handler.ListenerPriority|LOWER
+   @|team/stiff/pomelo/handler/ListenerPriority.java|354|357|LOW|field|team.stiff.pomelo.handler.ListenerPriority|LOW
+   @|team/stiff/pomelo/handler/ListenerPriority.java|369|375|NORMAL|field|team.stiff.pomelo.handler.ListenerPriority|NORMAL
+   @|team/stiff/pomelo/handler/ListenerPriority.java|384|388|HIGH|field|team.stiff.pomelo.handler.ListenerPriority|HIGH
+   @|team/stiff/pomelo/handler/ListenerPriority.java|399|405|HIGHER|field|team.stiff.pomelo.handler.ListenerPriority|HIGHER
+   @|team/stiff/pomelo/handler/ListenerPriority.java|416|423|HIGHEST|field|team.stiff.pomelo.handler.ListenerPriority|HIGHEST
+   @|team/stiff/pomelo/handler/ListenerPriority.java|453|466|priorityLevel|field|team.stiff.pomelo.handler.ListenerPriority|priorityLevel|
+   Method Start: ListenerPriority(I)V
+      @|team/stiff/pomelo/handler/ListenerPriority.java|500|513|priorityLevel|param|team.stiff.pomelo.handler.ListenerPriority|ListenerPriority|(I)V|priorityLevel|0
+      @|team/stiff/pomelo/handler/ListenerPriority.java|473|489|ListenerPriority|method|team.stiff.pomelo.handler.ListenerPriority|ListenerPriority|(I)V
+      @|team/stiff/pomelo/handler/ListenerPriority.java|530|543|priorityLevel|field|team.stiff.pomelo.handler.ListenerPriority|priorityLevel
+      @|team/stiff/pomelo/handler/ListenerPriority.java|546|559|priorityLevel|param|team.stiff.pomelo.handler.ListenerPriority|ListenerPriority|(I)V|priorityLevel|0
+   Method End: ListenerPriority(I)V
+   Method Start: getPriorityLevel()I
+      @|team/stiff/pomelo/handler/ListenerPriority.java|583|599|getPriorityLevel|method|team.stiff.pomelo.handler.ListenerPriority|getPriorityLevel|()I
+      @|team/stiff/pomelo/handler/ListenerPriority.java|619|632|priorityLevel|field|team.stiff.pomelo.handler.ListenerPriority|priorityLevel
+   Method End: getPriorityLevel()I
+Enum End  : team.stiff.pomelo.handler.ListenerPriority
+endProcessing "team/stiff/pomelo/handler/ListenerPriority.java"
+
+startProcessing "team/stiff/pomelo/handler/scan/EventHandlerScanner.java" md5: 4ca256c6723b9332e7b60143500e7115
+@|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|8|38|team.stiff.pomelo.handler.scan|package|team.stiff.pomelo.handler.scan|(file)
+Class Start: team.stiff.pomelo.handler.scan.EventHandlerScanner
+   @|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|338|357|EventHandlerScanner|class|team.stiff.pomelo.handler.scan.EventHandlerScanner|false
+   Method Start: locate(Ljava/lang/Object;)Ljava/util/Map;
+      @|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|584|601|listenerContainer|param|team.stiff.pomelo.handler.scan.EventHandlerScanner|locate|(Ljava/lang/Object;)Ljava/util/Map;|listenerContainer|0
+      @|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|537|540|Map|class|java.util.Map|false
+      @|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|541|546|Class|class|java.lang.Class|false
+      @|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|551|554|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|555|567|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+      @|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|570|576|locate|method|team.stiff.pomelo.handler.scan.EventHandlerScanner|locate|(Ljava/lang/Object;)Ljava/util/Map;
+      @|team/stiff/pomelo/handler/scan/EventHandlerScanner.java|577|583|Object|class|java.lang.Object|false
+   Method End: locate(Ljava/lang/Object;)Ljava/util/Map;
+Class End  : team.stiff.pomelo.handler.scan.EventHandlerScanner
+endProcessing "team/stiff/pomelo/handler/scan/EventHandlerScanner.java"
+
+startProcessing "team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java" md5: bdf54080f66d22dc757d9e525d0e879f
+@|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|8|40|team.stiff.pomelo.impl.annotated|package|team.stiff.pomelo.impl.annotated|(file)
+Class Start: team.stiff.pomelo.impl.annotated.AnnotatedEventManager
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|713|734|AnnotatedEventManager|class|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|746|758|EventManager|class|team.stiff.pomelo.EventManager|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|899|918|EventHandlerScanner|class|team.stiff.pomelo.handler.scan.EventHandlerScanner|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|899|918|EventHandlerScanner|class|team.stiff.pomelo.handler.scan.EventHandlerScanner|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|919|938|eventHandlerScanner|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|eventHandlerScanner|
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1067|1073|Object|class|java.lang.Object|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1075|1090|EventDispatcher|class|team.stiff.pomelo.dispatch.EventDispatcher|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1063|1066|Map|class|java.util.Map|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1063|1066|Map|class|java.util.Map|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1067|1073|Object|class|java.lang.Object|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1075|1090|EventDispatcher|class|team.stiff.pomelo.dispatch.EventDispatcher|false
+   @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1092|1111|listenerDispatchers|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|listenerDispatchers|
+   Method Start: AnnotatedEventManager()V
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1125|1146|AnnotatedEventManager|method|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|AnnotatedEventManager|()V
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1164|1183|eventHandlerScanner|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|eventHandlerScanner
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1190|1210|MethodHandlerScanner|class|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1227|1246|listenerDispatchers|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|listenerDispatchers
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1253|1270|ConcurrentHashMap|class|java.util.concurrent.ConcurrentHashMap|false
+   Method End: AnnotatedEventManager()V
+   Method Start: dispatchEvent(Ljava/lang/Object;)Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1336|1341|event|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;|event|0
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1288|1296|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1314|1327|dispatchEvent|method|team.stiff.pomelo.EventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1431|1446|EventDispatcher|class|team.stiff.pomelo.dispatch.EventDispatcher|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1460|1479|listenerDispatchers|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|listenerDispatchers
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1480|1486|values|method|java.util.Map|values|()Ljava/util/Collection;
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1513|1521|dispatch|method|team.stiff.pomelo.dispatch.EventDispatcher|dispatch|(Ljava/lang/Object;)V
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1522|1527|event|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;|event|0
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1546|1551|event|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;|event|0
+   Method End: dispatchEvent(Ljava/lang/Object;)Ljava/lang/Object;
+   Method Start: isRegisteredListener(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1627|1635|listener|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|isRegisteredListener|(Ljava/lang/Object;)Z|listener|0
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1565|1573|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1593|1613|isRegisteredListener|method|team.stiff.pomelo.EventManager|isRegisteredListener|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1620|1626|Object|class|java.lang.Object|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1654|1673|listenerDispatchers|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|listenerDispatchers
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1674|1685|containsKey|method|java.util.Map|containsKey|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1686|1694|listener|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|isRegisteredListener|(Ljava/lang/Object;)Z|listener|0
+   Method End: isRegisteredListener(Ljava/lang/Object;)Z
+   Method Start: addEventListener(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1767|1784|listenerContainer|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|addEventListener|(Ljava/lang/Object;)Z|listenerContainer|0
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1709|1717|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1737|1753|addEventListener|method|team.stiff.pomelo.EventManager|addEventListener|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1760|1766|Object|class|java.lang.Object|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1861|1880|listenerDispatchers|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|listenerDispatchers
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1881|1892|containsKey|method|java.util.Map|containsKey|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|1893|1910|listenerContainer|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|addEventListener|(Ljava/lang/Object;)Z|listenerContainer|0
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2009|2012|Map|class|java.util.Map|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2013|2018|Class|class|java.lang.Class|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2023|2026|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2027|2039|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2074|2093|eventHandlerScanner|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|eventHandlerScanner
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2094|2100|locate|method|team.stiff.pomelo.handler.scan.EventHandlerScanner|locate|(Ljava/lang/Object;)Ljava/util/Map;
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2101|2118|listenerContainer|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|addEventListener|(Ljava/lang/Object;)Z|listenerContainer|0
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2147|2154|isEmpty|method|java.util.Map|isEmpty|()Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2262|2281|listenerDispatchers|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|listenerDispatchers
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2282|2285|put|method|java.util.Map|put|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2286|2303|listenerContainer|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|addEventListener|(Ljava/lang/Object;)Z|listenerContainer|0
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2325|2346|MethodEventDispatcher|class|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|false
+   Method End: addEventListener(Ljava/lang/Object;)Z
+   Method Start: removeEventListener(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2445|2462|listenerContainer|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|removeEventListener|(Ljava/lang/Object;)Z|listenerContainer|0
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2384|2392|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2412|2431|removeEventListener|method|team.stiff.pomelo.EventManager|removeEventListener|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2438|2444|Object|class|java.lang.Object|false
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2553|2572|listenerDispatchers|field|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|listenerDispatchers
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2573|2579|remove|method|java.util.Map|remove|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java|2580|2597|listenerContainer|param|team.stiff.pomelo.impl.annotated.AnnotatedEventManager|removeEventListener|(Ljava/lang/Object;)Z|listenerContainer|0
+   Method End: removeEventListener(Ljava/lang/Object;)Z
+Class End  : team.stiff.pomelo.impl.annotated.AnnotatedEventManager
+endProcessing "team/stiff/pomelo/impl/annotated/AnnotatedEventManager.java"
+
+startProcessing "team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java" md5: 21922075c2f917d0511e57424599e95f
+@|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|8|49|team.stiff.pomelo.impl.annotated.dispatch|package|team.stiff.pomelo.impl.annotated.dispatch|(file)
+Class Start: team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|479|500|MethodEventDispatcher|class|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|512|527|EventDispatcher|class|team.stiff.pomelo.dispatch.EventDispatcher|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|637|642|Class|class|java.lang.Class|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|651|663|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|647|650|Set|class|java.util.Set|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|633|636|Map|class|java.util.Map|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|633|636|Map|class|java.util.Map|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|637|642|Class|class|java.lang.Class|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|647|650|Set|class|java.util.Set|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|651|663|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+   @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|666|679|eventHandlers|field|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|eventHandlers|
+   Method Start: MethodEventDispatcher(Ljava/util/Map;)V
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|754|767|eventHandlers|param|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|MethodEventDispatcher|(Ljava/util/Map;)V|eventHandlers|0
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|693|714|MethodEventDispatcher|method|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|MethodEventDispatcher|(Ljava/util/Map;)V
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|721|724|Map|class|java.util.Map|false
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|725|730|Class|class|java.lang.Class|false
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|735|738|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|739|751|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|784|797|eventHandlers|field|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|eventHandlers
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|800|813|eventHandlers|param|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|MethodEventDispatcher|(Ljava/util/Map;)V|eventHandlers|0
+   Method End: MethodEventDispatcher(Ljava/util/Map;)V
+   Method Start: dispatch(Ljava/lang/Object;)V
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|873|878|event|param|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|dispatch|(Ljava/lang/Object;)V|event|0
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|827|835|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|856|864|dispatch|method|team.stiff.pomelo.dispatch.EventDispatcher|dispatch|(Ljava/lang/Object;)V
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|979|991|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|1007|1020|eventHandlers|field|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|eventHandlers
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|1021|1033|getOrDefault|method|java.util.Map|getOrDefault|(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|1051|1056|event|param|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|dispatch|(Ljava/lang/Object;)V|event|0
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|1057|1065|getClass|method|java.lang.Object|getClass|()Ljava/lang/Class;
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|1069|1080|Collections|class|java.util.Collections|false
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|1081|1089|emptySet|method|java.util.Collections|emptySet|()Ljava/util/Set;
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|1119|1125|handle|method|team.stiff.pomelo.handler.EventHandler|handle|(Ljava/lang/Object;)V
+      @|team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java|1126|1131|event|param|team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher|dispatch|(Ljava/lang/Object;)V|event|0
+   Method End: dispatch(Ljava/lang/Object;)V
+Class End  : team.stiff.pomelo.impl.annotated.dispatch.MethodEventDispatcher
+endProcessing "team/stiff/pomelo/impl/annotated/dispatch/MethodEventDispatcher.java"
+
+startProcessing "team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java" md5: 187f947007046c6c36fb64c0d9e9e8e0
+@|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|8|47|team.stiff.pomelo.impl.annotated.filter|package|team.stiff.pomelo.impl.annotated.filter|(file)
+Class Start: team.stiff.pomelo.impl.annotated.filter.MethodFilterScanner
+   @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|513|532|MethodFilterScanner|class|team.stiff.pomelo.impl.annotated.filter.MethodFilterScanner|false
+   @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|544|562|EventFilterScanner|class|team.stiff.pomelo.filter.EventFilterScanner|false
+   @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|563|569|Method|class|java.lang.reflect.Method|false
+   Method Start: scan(Ljava/lang/reflect/Method;)Ljava/util/Set;
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|634|642|listener|param|team.stiff.pomelo.impl.annotated.filter.MethodFilterScanner|scan|(Ljava/lang/reflect/Method;)Ljava/util/Set;|listener|0
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|579|587|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|599|602|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|603|614|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|616|620|scan|method|team.stiff.pomelo.filter.EventFilterScanner|scan|(Ljava/lang/Object;)Ljava/util/Set;
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|627|633|Method|class|java.lang.reflect.Method|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|659|667|listener|param|team.stiff.pomelo.impl.annotated.filter.MethodFilterScanner|scan|(Ljava/lang/reflect/Method;)Ljava/util/Set;|listener|0
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|668|687|isAnnotationPresent|method|java.lang.reflect.AnnotatedElement|isAnnotationPresent|(Ljava/lang/Class;)Z
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|688|696|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|724|735|Collections|class|java.util.Collections|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|736|744|emptySet|method|java.util.Collections|emptySet|()Ljava/util/Set;
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|763|766|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|767|778|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|794|801|HashSet|class|java.util.HashSet|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|896|901|Class|class|java.lang.Class|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|912|923|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|934|942|listener|param|team.stiff.pomelo.impl.annotated.filter.MethodFilterScanner|scan|(Ljava/lang/reflect/Method;)Ljava/util/Set;|listener|0
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|960|981|getDeclaredAnnotation|method|java.lang.reflect.AnnotatedElement|getDeclaredAnnotation|(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|982|990|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|998|1005|filters|method|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|filters|()[Ljava/lang/Class;
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|1051|1054|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|1062|1073|newInstance|method|java.lang.Class|newInstance|()Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|1105|1114|Exception|class|java.lang.Exception|false
+      @|team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java|1154|1169|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: scan(Ljava/lang/reflect/Method;)Ljava/util/Set;
+Class End  : team.stiff.pomelo.impl.annotated.filter.MethodFilterScanner
+endProcessing "team/stiff/pomelo/impl/annotated/filter/MethodFilterScanner.java"
+
+startProcessing "team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java" md5: 44164b0ae4422c0f63e41159f8cd8fd9
+@|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|8|48|team.stiff.pomelo.impl.annotated.handler|package|team.stiff.pomelo.impl.annotated.handler|(file)
+Class Start: team.stiff.pomelo.impl.annotated.handler.MethodEventHandler
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|555|573|MethodEventHandler|class|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|585|597|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|686|692|Object|class|java.lang.Object|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|686|692|Object|class|java.lang.Object|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|693|707|listenerParent|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|listenerParent|
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|805|811|Method|class|java.lang.reflect.Method|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|805|811|Method|class|java.lang.reflect.Method|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|812|818|method|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|method|
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|970|981|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|966|969|Set|class|java.util.Set|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|966|969|Set|class|java.util.Set|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|970|981|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|983|995|eventFilters|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|eventFilters|
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1077|1085|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1077|1085|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
+   @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1086|1104|listenerAnnotation|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|listenerAnnotation|
+   Method Start: MethodEventHandler(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1150|1164|listenerParent|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|listenerParent|0
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1179|1185|method|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|method|1
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1222|1234|eventFilters|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|eventFilters|2
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1118|1136|MethodEventHandler|method|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1143|1149|Object|class|java.lang.Object|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1172|1178|Method|class|java.lang.reflect.Method|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1205|1208|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1209|1220|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1251|1265|listenerParent|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|listenerParent
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1268|1282|listenerParent|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|listenerParent|0
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1297|1303|method|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|method|1
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1304|1316|isAccessible|method|java.lang.reflect.AccessibleObject|isAccessible|()Z
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1332|1338|method|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|method|1
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1339|1352|setAccessible|method|java.lang.reflect.AccessibleObject|setAccessible|(Z)V
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1374|1380|method|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|method
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1383|1389|method|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|method|1
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1404|1416|eventFilters|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|eventFilters
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1419|1431|eventFilters|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|eventFilters|2
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1446|1464|listenerAnnotation|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|listenerAnnotation
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1467|1473|method|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|MethodEventHandler|(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V|method|1
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1474|1487|getAnnotation|method|java.lang.reflect.AnnotatedElement|getAnnotation|(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1488|1496|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
+   Method End: MethodEventHandler(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;)V
+   Method Start: handle(Ljava/lang/Object;)V
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1596|1601|event|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|handle|(Ljava/lang/Object;)V|event|0
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1517|1525|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1531|1547|SuppressWarnings|class|java.lang.SuppressWarnings|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1581|1587|handle|method|team.stiff.pomelo.handler.EventHandler|handle|(Ljava/lang/Object;)V
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1682|1693|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1703|1715|eventFilters|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|eventFilters
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1741|1745|test|method|team.stiff.pomelo.filter.EventFilter|test|(Lteam/stiff/pomelo/handler/EventHandler;Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1752|1757|event|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|handle|(Ljava/lang/Object;)V|event|0
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1869|1875|method|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|method
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1876|1882|invoke|method|java.lang.reflect.Method|invoke|(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1883|1897|listenerParent|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|listenerParent
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1899|1904|event|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|handle|(Ljava/lang/Object;)V|event|0
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1930|1952|IllegalAccessException|class|java.lang.IllegalAccessException|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|1955|1980|InvocationTargetException|class|java.lang.reflect.InvocationTargetException|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2016|2031|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: handle(Ljava/lang/Object;)V
+   Method Start: getListener()Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2057|2065|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2077|2083|Object|class|java.lang.Object|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2084|2095|getListener|method|team.stiff.pomelo.handler.EventHandler|getListener|()Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2115|2121|method|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|method
+   Method End: getListener()Ljava/lang/Object;
+   Method Start: getPriority()Lteam/stiff/pomelo/handler/ListenerPriority;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2135|2143|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2155|2171|ListenerPriority|class|team.stiff.pomelo.handler.ListenerPriority|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2172|2183|getPriority|method|team.stiff.pomelo.handler.EventHandler|getPriority|()Lteam/stiff/pomelo/handler/ListenerPriority;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2203|2221|listenerAnnotation|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|listenerAnnotation
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2222|2230|priority|method|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|priority|()Lteam/stiff/pomelo/handler/ListenerPriority;
+   Method End: getPriority()Lteam/stiff/pomelo/handler/ListenerPriority;
+   Method Start: getFilters()Ljava/lang/Iterable;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2246|2254|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2266|2274|Iterable|class|java.lang.Iterable|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2275|2286|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2288|2298|getFilters|method|team.stiff.pomelo.handler.EventHandler|getFilters|()Ljava/lang/Iterable;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2318|2330|eventFilters|field|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|eventFilters
+   Method End: getFilters()Ljava/lang/Iterable;
+   Method Start: compareTo(Lteam/stiff/pomelo/handler/EventHandler;)I
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2397|2409|eventHandler|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|compareTo|(Lteam/stiff/pomelo/handler/EventHandler;)I|eventHandler|0
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2344|2352|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2368|2377|compareTo|method|java.lang.Comparable|compareTo|(Ljava/lang/Object;)I
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2384|2396|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2428|2435|Integer|class|java.lang.Integer|false
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2436|2443|compare|method|java.lang.Integer|compare|(II)I
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2444|2456|eventHandler|param|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|compareTo|(Lteam/stiff/pomelo/handler/EventHandler;)I|eventHandler|0
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2457|2468|getPriority|method|team.stiff.pomelo.handler.EventHandler|getPriority|()Lteam/stiff/pomelo/handler/ListenerPriority;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2471|2487|getPriorityLevel|method|team.stiff.pomelo.handler.ListenerPriority|getPriorityLevel|()I
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2507|2518|getPriority|method|team.stiff.pomelo.handler.EventHandler|getPriority|()Lteam/stiff/pomelo/handler/ListenerPriority;
+      @|team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java|2521|2537|getPriorityLevel|method|team.stiff.pomelo.handler.ListenerPriority|getPriorityLevel|()I
+   Method End: compareTo(Lteam/stiff/pomelo/handler/EventHandler;)I
+Class End  : team.stiff.pomelo.impl.annotated.handler.MethodEventHandler
+endProcessing "team/stiff/pomelo/impl/annotated/handler/MethodEventHandler.java"
+
+startProcessing "team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java" md5: 5659884441631b441ba1eaf48a6cc6ab
+@|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|8|59|team.stiff.pomelo.impl.annotated.handler.annotation|package|team.stiff.pomelo.impl.annotated.handler.annotation|(file)
+Annotation Start: team.stiff.pomelo.impl.annotated.handler.annotation.Listener
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|467|476|Retention|class|java.lang.annotation.Retention|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|477|492|RetentionPolicy|class|java.lang.annotation.RetentionPolicy|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|493|500|RUNTIME|field|java.lang.annotation.RetentionPolicy|RUNTIME
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|503|509|Target|class|java.lang.annotation.Target|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|510|521|ElementType|class|java.lang.annotation.ElementType|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|522|528|METHOD|field|java.lang.annotation.ElementType|METHOD
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|548|556|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|747|752|Class|class|java.lang.Class|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|763|774|EventFilter|class|team.stiff.pomelo.filter.EventFilter|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|778|785|filters|method|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|filters|()[Ljava/lang/Class;
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|922|938|ListenerPriority|class|team.stiff.pomelo.handler.ListenerPriority|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|939|947|priority|method|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|priority|()Lteam/stiff/pomelo/handler/ListenerPriority;
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|958|974|ListenerPriority|class|team.stiff.pomelo.handler.ListenerPriority|false
+   @|team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java|975|981|NORMAL|field|team.stiff.pomelo.handler.ListenerPriority|NORMAL
+   Annotation End  : team.stiff.pomelo.impl.annotated.handler.annotation.Listener
+endProcessing "team/stiff/pomelo/impl/annotated/handler/annotation/Listener.java"
+
+startProcessing "team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java" md5: 05df4c888a158e1dc401db6e56d85e5e
+@|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|8|53|team.stiff.pomelo.impl.annotated.handler.scan|package|team.stiff.pomelo.impl.annotated.handler.scan|(file)
+Class Start: team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate
+   @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|216|242|AnnotatedListenerPredicate|class|team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|254|263|Predicate|class|java.util.function.Predicate|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|264|270|Method|class|java.lang.reflect.Method|false
+   Method Start: test(Ljava/lang/reflect/Method;)Z
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|326|332|method|param|team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate|test|(Ljava/lang/reflect/Method;)Z|method|0
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|280|288|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|308|312|test|method|java.util.function.Predicate|test|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|319|325|Method|class|java.lang.reflect.Method|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|351|357|method|param|team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate|test|(Ljava/lang/reflect/Method;)Z|method|0
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|358|377|isAnnotationPresent|method|java.lang.reflect.AnnotatedElement|isAnnotationPresent|(Ljava/lang/Class;)Z
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|378|386|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|413|419|method|param|team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate|test|(Ljava/lang/reflect/Method;)Z|method|0
+      @|team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java|420|437|getParameterCount|method|java.lang.reflect.Executable|getParameterCount|()I
+   Method End: test(Ljava/lang/reflect/Method;)Z
+Class End  : team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate
+endProcessing "team/stiff/pomelo/impl/annotated/handler/scan/AnnotatedListenerPredicate.java"
+
+startProcessing "team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java" md5: ffd6bf02765c14962decb1a8d1be0e41
+@|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|8|53|team.stiff.pomelo.impl.annotated.handler.scan|package|team.stiff.pomelo.impl.annotated.handler.scan|(file)
+Class Start: team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|701|721|MethodHandlerScanner|class|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|733|752|EventHandlerScanner|class|team.stiff.pomelo.handler.scan.EventHandlerScanner|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|773|799|AnnotatedListenerPredicate|class|team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|773|799|AnnotatedListenerPredicate|class|team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|800|826|annotatedListenerPredicate|field|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|annotatedListenerPredicate|
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|845|871|AnnotatedListenerPredicate|class|team.stiff.pomelo.impl.annotated.handler.scan.AnnotatedListenerPredicate|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|912|918|Method|class|java.lang.reflect.Method|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|893|911|EventFilterScanner|class|team.stiff.pomelo.filter.EventFilterScanner|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|893|911|EventFilterScanner|class|team.stiff.pomelo.filter.EventFilterScanner|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|912|918|Method|class|java.lang.reflect.Method|false
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|920|933|filterScanner|field|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|filterScanner|
+   @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|940|959|MethodFilterScanner|class|team.stiff.pomelo.impl.annotated.filter.MethodFilterScanner|false
+   Method Start: locate(Ljava/lang/Object;)Ljava/util/Map;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1042|1059|listenerContainer|param|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|locate|(Ljava/lang/Object;)Ljava/util/Map;|listenerContainer|0
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|969|977|Override|class|java.lang.Override|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|989|992|Map|class|java.util.Map|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|993|998|Class|class|java.lang.Class|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1003|1006|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1007|1019|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1022|1028|locate|method|team.stiff.pomelo.handler.scan.EventHandlerScanner|locate|(Ljava/lang/Object;)Ljava/util/Map;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1035|1041|Object|class|java.lang.Object|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1077|1080|Map|class|java.util.Map|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1081|1086|Class|class|java.lang.Class|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1091|1094|Set|class|java.util.Set|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1095|1107|EventHandler|class|team.stiff.pomelo.handler.EventHandler|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1130|1137|HashMap|class|java.util.HashMap|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1151|1157|Stream|class|java.util.stream.Stream|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1158|1160|of|method|java.util.stream.Stream|of|([Ljava/lang/Object;)Ljava/util/stream/Stream;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1161|1178|listenerContainer|param|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|locate|(Ljava/lang/Object;)Ljava/util/Map;|listenerContainer|0
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1179|1187|getClass|method|java.lang.Object|getClass|()Ljava/lang/Class;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1190|1208|getDeclaredMethods|method|java.lang.Class|getDeclaredMethods|()[Ljava/lang/reflect/Method;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1229|1235|filter|method|java.util.stream.Stream|filter|(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1236|1262|annotatedListenerPredicate|field|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|annotatedListenerPredicate
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1264|1271|forEach|method|java.util.stream.Stream|forEach|(Ljava/util/function/Consumer;)V
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1313|1328|computeIfAbsent|method|java.util.Map|computeIfAbsent|(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1329|1335|method|param|java.util.function.Consumer<java.lang.reflect.Method>|accept|(Ljava/lang/reflect/Method;)V|method|-1
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1336|1353|getParameterTypes|method|java.lang.reflect.Executable|getParameterTypes|()[Ljava/lang/Class;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1371|1378|TreeSet|class|java.util.TreeSet|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1401|1404|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1409|1427|MethodEventHandler|class|team.stiff.pomelo.impl.annotated.handler.MethodEventHandler|false
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1428|1445|listenerContainer|param|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|locate|(Ljava/lang/Object;)Ljava/util/Map;|listenerContainer|0
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1447|1453|method|param|java.util.function.Consumer<java.lang.reflect.Method>|accept|(Ljava/lang/reflect/Method;)V|method|-1
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1479|1492|filterScanner|field|team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner|filterScanner
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1493|1497|scan|method|team.stiff.pomelo.filter.EventFilterScanner|scan|(Ljava/lang/Object;)Ljava/util/Set;
+      @|team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java|1498|1504|method|param|java.util.function.Consumer<java.lang.reflect.Method>|accept|(Ljava/lang/reflect/Method;)V|method|-1
+   Method End: locate(Ljava/lang/Object;)Ljava/util/Map;
+Class End  : team.stiff.pomelo.impl.annotated.handler.scan.MethodHandlerScanner
+endProcessing "team/stiff/pomelo/impl/annotated/handler/scan/MethodHandlerScanner.java"
 
