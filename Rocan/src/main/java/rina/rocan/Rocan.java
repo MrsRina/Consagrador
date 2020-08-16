@@ -15,6 +15,7 @@ import team.stiff.pomelo.EventManager;
 
 // Rocan Managers.
 import rina.rocan.manager.RocanCommandManager;
+import rina.rocan.manager.RocanSettingManager;
 import rina.rocan.manager.RocanModuleManager;
 import rina.rocan.manager.RocanEventManager;
 
@@ -28,8 +29,9 @@ public class Rocan {
 	private static Rocan INSTANCE;
 
 	// Managers.
-	private RocanCommandManager command_manager;
 	private RocanModuleManager module_manager;
+	private RocanSettingManager setting_manager;
+	private RocanCommandManager command_manager;
 	private RocanEventManager event_manager;
 
 	// EventBus.
@@ -37,8 +39,9 @@ public class Rocan {
 
 	@Mod.EventHandler
 	public void clientInitialize(FMLInitializationEvent event) {
-		command_manager      = new RocanCommandManager(".");
+		setting_manager      = new RocanSettingManager();
 		module_manager       = new RocanModuleManager();
+		command_manager      = new RocanCommandManager(".");
 		event_manager        = new RocanEventManager();
 		pomelo_event_manager = new AnnotatedEventManager();
 
@@ -56,6 +59,10 @@ public class Rocan {
 
 	public static String getClientVersion() {
 		return getInstance().ROCAN_VERSION;
+	}
+
+	public static RocanSettingManager getSettingManager() {
+		return getInstance().setting_manager;
 	}
 
 	public static RocanCommandManager getCommandManager() {

@@ -40,11 +40,11 @@ public class RocanCommand {
 		return false;
 	}
 
-	public boolean verifyErrorArg(String[] args, int index) {
+	public boolean verifyIndex(String[] args, int index) {
 		if (args.length > index) {
-			return false;
+			return true;
 		}
 
-		return true;
+		return false;
 	}
 }

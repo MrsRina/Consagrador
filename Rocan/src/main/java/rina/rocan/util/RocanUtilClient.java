@@ -37,11 +37,11 @@ public class RocanUtilClient {
 	}
 
 	public static void sendNotifyClient(String message) {
-		sendNotify(message);
+		sendNotify(Rocan.getGrayColor() + "Rocan Notify " + Rocan.setDefaultColor() + message);
 	}
 
 	public static void sendNotifyErrorClient(String message) {
-		sendNotify(Rocan.getRedColor() + message);
+		sendNotify(Rocan.getGrayColor() + "Rocan Notify " + Rocan.getRedColor() + message);
 	}
 
 	public static class CustomTextComponent extends TextComponentBase {

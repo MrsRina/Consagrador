@@ -24,26 +24,8 @@ public class RocanCommandHelp extends RocanCommand {
 
 	@Override
 	public boolean onRequested(String[] args) {
-		String value_0 = null;
+		RocanUtilClient.sendNotifyClient("Gay");
 
-		if (verifyErrorArg(args, 0)) {
-			RocanUtilClient.sendNotifyErrorClient("arguments are incorrects.");
-
-			return true;
-		}
-
-		value_0 = args[0];
-
-		RocanCommand command_requested = Rocan.getCommandManager().getCommandByCommand(value_0); 
-
-		if (command_requested == null) {
-			RocanUtilClient.sendNotifyErrorClient("Command does not exist.");
-
-			return true;
-		}
-
-		RocanUtilClient.sendNotifyClient(command_requested.getDescription());
-
-		return false;
+		return true;
 	}
 }

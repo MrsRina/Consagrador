@@ -84,7 +84,7 @@ public class RocanEventManager {
 				} catch (Exception exc) {}
 			}
 
-			if (!true_command && event.getMessage().startsWith(Rocan.getCommandManager().getPrefix())) {
+			if (!true_command && Rocan.getCommandManager().hasPrefix(event.getMessage())) {
 				RocanUtilClient.sendNotifyClient("An error ocurred.");
 
 				true_command = false;

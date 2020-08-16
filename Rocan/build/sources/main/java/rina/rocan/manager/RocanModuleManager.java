@@ -30,6 +30,7 @@ public class RocanModuleManager {
 		this.module_list = new ArrayList<>();
 
 		addModule(new RocanTestModule());
+		addModule(new RocanXCarry());
 	}
 
 	public void addModule(RocanModule module) {
@@ -70,7 +71,7 @@ public class RocanModuleManager {
 
 	public RocanModule getModuleByTag(String tag) {
 		for (RocanModule modules : getModuleList()) {
-			if (modules.getTag().equals(tag)) {
+			if (modules.getTag().equalsIgnoreCase(tag)) {
 				return modules;
 			}
 		}

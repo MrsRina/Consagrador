@@ -6,7 +6,10 @@ import net.minecraft.client.Minecraft;
 // Java.
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
-import java.awt.*;
+import java.util.*;
+
+// Setting.
+import rina.rocan.client.RocanSetting;
 
 // Rocan.
 import rina.rocan.Rocan;
@@ -27,7 +30,7 @@ public class RocanModule {
 
 	private final Category category = getAnnotation().category();
 
-	private final Minecraft mc = Minecraft.getMinecraft();
+	public final Minecraft mc = Minecraft.getMinecraft();
 
 	private int key_bind;
 
@@ -125,7 +128,8 @@ public class RocanModule {
 	}
 
 	public enum Category {
-		ROCAN_DEV("DEV", "RocanDev");
+		ROCAN_DEV("DEV", "RocanDev"),
+		ROCAN_EXPLOIT("Exploit", "RocanExploit");
 
 		String name;
 		String tag;
@@ -143,4 +147,64 @@ public class RocanModule {
 			return this.tag;
 		}
 	}
+
+	protected RocanSetting createSetting(String[] details, boolean value) {
+		RocanSetting setting = new RocanSetting(this, details, value);
+
+		setting.setType(RocanSetting.SettingType.SETTING_BOOLEAN);
+
+		Rocan.getSettingManager().addSetting(setting);
+
+		return setting;
+	}
+
+	protected RocanSetting createSetting(String[] details, String value) {
+		RocanSetting setting = new RocanSetting(this, details, value);
+
+		setting.setType(RocanSetting.SettingType.SETTING_STRING);
+
+		Rocan.getSettingManager().addSetting(setting);
+
+		return setting;
+	}
+
+	protected RocanSetting createSetting(String[] details, int value, int min, int max) {
+		RocanSetting setting = new RocanSetting(this, details, value, min, max);
+
+		setting.setType(RocanSetting.SettingType.SETTING_INTEGER);
+
+		Rocan.getSettingManager().addSetting(setting);
+
+		return setting;
+	}
+
+	protected RocanSetting createSetting(String[] details, double value, double min, double max) {
+		RocanSetting setting = new RocanSetting(this, details, value, min, max);
+
+		setting.setType(RocanSetting.SettingType.SETTING_DOUBLE);
+
+		Rocan.getSettingManager().addSetting(setting);
+
+		return setting;
+	}
+
+	protected RocanSetting createSetting(String[] details, String value, String[] values) {
+		RocanSetting setting = new RocanSetting(this, details, value, values);
+
+		setting.setType(RocanSetting.SettingType.SETTING_LIST);
+
+		Rocan.getSettingManager().addSetting(setting);
+
+		return setting;
+	}
+
+	protected ArrayList<String> createStringList(String... list) {
+		ArrayList<String> list_requested = new ArrayList<>();
+
+		for (String strings : list) {
+			list_requested.add(strings);
+		}
+
+		return list_requested;
+	} 
 }

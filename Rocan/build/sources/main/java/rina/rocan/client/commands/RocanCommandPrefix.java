@@ -24,26 +24,28 @@ public class RocanCommandPrefix extends RocanCommand {
 
 	@Override
 	public boolean onRequested(String[] args) {
-		String value_0 = null;
+		String value_0 = "null";
 
-		if (verifyErrorArg(args, 0)) {
+		if (verifyIndex(args, 1)) {
+			value_0 = args[1];
+		}
+
+		if (verifyIndex(args, 2)) {
 			RocanUtilClient.sendNotifyErrorClient("The usage correct is prefix <char>");
 
 			return true;
 		}
 
-		if (verifyErrorArg(args, 1)) {
+		if (value_0.equals("null")) {
 			RocanUtilClient.sendNotifyErrorClient("The usage correct is prefix <char>");
 
 			return true;
 		}
-
-		value_0 = args[0];
 
 		Rocan.getCommandManager().setPrefix(value_0);
 
 		RocanUtilClient.sendNotifyClient("The client prefix is " + Rocan.getCommandManager().getPrefix());
 
-		return false;
+		return true;
 	}
 }

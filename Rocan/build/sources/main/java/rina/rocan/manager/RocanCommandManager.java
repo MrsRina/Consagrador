@@ -29,6 +29,8 @@ public class RocanCommandManager {
 
 		addCommand(new RocanCommandHelp());
 		addCommand(new RocanCommandPrefix());
+		addCommand(new RocanCommandToggle());
+		addCommand(new RocanCommandSet());
 	}
 
 	public void addCommand(RocanCommand command) {
@@ -47,6 +49,10 @@ public class RocanCommandManager {
 		}
 
 		return args;
+	}
+
+	public boolean hasPrefix(String message) {
+		return message.startsWith(getPrefix());
 	}
 
 	public ArrayList<RocanCommand> getCommandList() {
