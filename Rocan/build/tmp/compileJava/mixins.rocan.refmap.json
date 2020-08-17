@@ -3,6 +3,11 @@
     "rina/rocan/mixin/mixins/RocanMixinNetworkManager": {
       "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V",
       "channelRead0": "Lnet/minecraft/network/NetworkManager;channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"
+    },
+    "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
+      "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lnet/minecraft/client/Minecraft;func_71377_b(Lnet/minecraft/crash/CrashReport;)V",
+      "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
+      "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V"
     }
   },
   "data": {
@@ -10,12 +15,22 @@
       "rina/rocan/mixin/mixins/RocanMixinNetworkManager": {
         "sendPacket(Lnet/minecraft/network/Packet;)V": "Lgw;a(Lht;)V",
         "channelRead0": "Lgw;a(Lio/netty/channel/ChannelHandlerContext;Lht;)V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
+        "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lbib;c(Lb;)V",
+        "run": "Lbib;a()V",
+        "shutdown": "Lbib;n()V"
       }
     },
     "searge": {
       "rina/rocan/mixin/mixins/RocanMixinNetworkManager": {
         "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V",
         "channelRead0": "Lnet/minecraft/network/NetworkManager;channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
+        "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lnet/minecraft/client/Minecraft;func_71377_b(Lnet/minecraft/crash/CrashReport;)V",
+        "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
+        "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V"
       }
     }
   }

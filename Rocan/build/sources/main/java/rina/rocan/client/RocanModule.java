@@ -3,10 +3,14 @@ package rina.rocan.client;
 // Minecraft.
 import net.minecraft.client.Minecraft;
 
+// Gson.
+import com.google.gson.*;
+
 // Java.
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 import java.util.*;
+import java.io.*;
 
 // Setting.
 import rina.rocan.client.RocanSetting;
@@ -27,6 +31,8 @@ public class RocanModule {
 	private final String name        = getAnnotation().name();
 	private final String tag         = getAnnotation().tag();
 	private final String description = getAnnotation().description();
+
+	private ArrayList<RocanSetting> setting_list = new ArrayList<>();
 
 	private final Category category = getAnnotation().category();
 
@@ -128,8 +134,8 @@ public class RocanModule {
 	}
 
 	public enum Category {
-		ROCAN_DEV("DEV", "RocanDev"),
-		ROCAN_EXPLOIT("Exploit", "RocanExploit");
+		ROCAN_DEV("Rocan Dev", "Dev"),
+		ROCAN_EXPLOIT("Rocan Exploit", "Exploit");
 
 		String name;
 		String tag;
@@ -148,54 +154,117 @@ public class RocanModule {
 		}
 	}
 
+	public void loadSettingListFromJsonObject(JsonObject object_cache) {
+		for (RocanSetting settings : setting_list) {
+			JsonObject SETTING = object_cache.get(settings.getTag()).getAsJsonObject();
+
+			if (SETTING.get("Name") == null || SETTING.get("Tag") == null || SETTING.get("Type") == null) {
+				continue;
+			}
+
+			if (SETTING.get("Boolean") != null) {
+				settings.setBoolean(SETTING.get("Boolean").getAsBoolean());
+			} else if (SETTING.get("String") != null) {
+				settings.setString(SETTING.get("String").getAsString());
+			} else if (SETTING.get("Integer") != null) {
+				settings.setInteger(SETTING.get("Integer").getAsInt());
+			} else if (SETTING.get("Double") != null) {
+				settings.setDouble(SETTING.get("Double").getAsDouble());
+			}
+		}
+	}
+
+	public JsonObject getJsonObjectSettingList() {
+		JsonObject MAIN_SETTING_LIST = new JsonObject();
+
+		for (RocanSetting settings : setting_list) {
+			JsonObject SETTING = new JsonObject();
+
+			SETTING.add("Name", new JsonPrimitive(settings.getName()));
+			SETTING.add("Tag", new JsonPrimitive(settings.getTag()));
+			SETTING.add("Type", new JsonPrimitive(settings.getType().name().replace("SETTING_", "")));
+
+			if (settings.getType() == RocanSetting.SettingType.SETTING_BOOLEAN) {
+				SETTING.add("Boolean", new JsonPrimitive(settings.getBoolean()));
+			} else if (settings.getType() == RocanSetting.SettingType.SETTING_STRING) {
+				SETTING.add("String", new JsonPrimitive(settings.getString()));
+			} else if (settings.getType() == RocanSetting.SettingType.SETTING_INTEGER) {
+				SETTING.add("Integer", new JsonPrimitive(settings.getInteger()));
+			} else if (settings.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
+				SETTING.add("Double", new JsonPrimitive(settings.getDouble()));
+			} else if (settings.getType() == RocanSetting.SettingType.SETTING_LIST) {
+				SETTING.add("String", new JsonPrimitive(settings.getString()));
+			}
+
+			MAIN_SETTING_LIST.add(settings.getTag(), SETTING);
+		}
+
+		return MAIN_SETTING_LIST;
+	}
+
 	protected RocanSetting createSetting(String[] details, boolean value) {
-		RocanSetting setting = new RocanSetting(this, details, value);
+		if (setting_list == null) {
+			setting_list = new ArrayList<>();
+		}
 
-		setting.setType(RocanSetting.SettingType.SETTING_BOOLEAN);
+		Rocan.getSettingManager().addSetting(new RocanSetting(this, details, value));
+		Rocan.getSettingManager().getSettingByTag(details[1]).setType(RocanSetting.SettingType.SETTING_BOOLEAN);
 
-		Rocan.getSettingManager().addSetting(setting);
+		setting_list.add(Rocan.getSettingManager().getSettingByTag(details[1]));
 
-		return setting;
+		return Rocan.getSettingManager().getSettingByTag(details[1]);
 	}
 
 	protected RocanSetting createSetting(String[] details, String value) {
-		RocanSetting setting = new RocanSetting(this, details, value);
+		if (setting_list == null) {
+			setting_list = new ArrayList<>();
+		}
 
-		setting.setType(RocanSetting.SettingType.SETTING_STRING);
+		Rocan.getSettingManager().addSetting(new RocanSetting(this, details, value));
+		Rocan.getSettingManager().getSettingByTag(details[1]).setType(RocanSetting.SettingType.SETTING_STRING);
 
-		Rocan.getSettingManager().addSetting(setting);
+		setting_list.add(Rocan.getSettingManager().getSettingByTag(details[1]));
 
-		return setting;
+		return Rocan.getSettingManager().getSettingByTag(details[1]);
 	}
 
 	protected RocanSetting createSetting(String[] details, int value, int min, int max) {
-		RocanSetting setting = new RocanSetting(this, details, value, min, max);
+		if (setting_list == null) {
+			setting_list = new ArrayList<>();
+		}
 
-		setting.setType(RocanSetting.SettingType.SETTING_INTEGER);
+		Rocan.getSettingManager().addSetting(new RocanSetting(this, details, value, min, max));
+		Rocan.getSettingManager().getSettingByTag(details[1]).setType(RocanSetting.SettingType.SETTING_INTEGER);
 
-		Rocan.getSettingManager().addSetting(setting);
+		setting_list.add(Rocan.getSettingManager().getSettingByTag(details[1]));
 
-		return setting;
+		return Rocan.getSettingManager().getSettingByTag(details[1]);
 	}
 
 	protected RocanSetting createSetting(String[] details, double value, double min, double max) {
-		RocanSetting setting = new RocanSetting(this, details, value, min, max);
+		if (setting_list == null) {
+			setting_list = new ArrayList<>();
+		}
 
-		setting.setType(RocanSetting.SettingType.SETTING_DOUBLE);
+		Rocan.getSettingManager().addSetting(new RocanSetting(this, details, value, min, max));
+		Rocan.getSettingManager().getSettingByTag(details[1]).setType(RocanSetting.SettingType.SETTING_DOUBLE);
 
-		Rocan.getSettingManager().addSetting(setting);
+		setting_list.add(Rocan.getSettingManager().getSettingByTag(details[1]));
 
-		return setting;
+		return Rocan.getSettingManager().getSettingByTag(details[1]);
 	}
 
 	protected RocanSetting createSetting(String[] details, String value, String[] values) {
-		RocanSetting setting = new RocanSetting(this, details, value, values);
+		if (setting_list == null) {
+			setting_list = new ArrayList<>();
+		}
 
-		setting.setType(RocanSetting.SettingType.SETTING_LIST);
+		Rocan.getSettingManager().addSetting(new RocanSetting(this, details, value, values));
+		Rocan.getSettingManager().getSettingByTag(details[1]).setType(RocanSetting.SettingType.SETTING_LIST);
 
-		Rocan.getSettingManager().addSetting(setting);
+		setting_list.add(Rocan.getSettingManager().getSettingByTag(details[1]));
 
-		return setting;
+		return Rocan.getSettingManager().getSettingByTag(details[1]);
 	}
 
 	protected ArrayList<String> createStringList(String... list) {
@@ -206,5 +275,5 @@ public class RocanModule {
 		}
 
 		return list_requested;
-	} 
+	}
 }

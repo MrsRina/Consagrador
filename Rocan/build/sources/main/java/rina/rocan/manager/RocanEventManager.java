@@ -85,7 +85,7 @@ public class RocanEventManager {
 			}
 
 			if (!true_command && Rocan.getCommandManager().hasPrefix(event.getMessage())) {
-				RocanUtilClient.sendNotifyClient("An error ocurred.");
+				RocanUtilClient.sendNotifyClient("An error ocurred, try type help command.");
 
 				true_command = false;
 			}

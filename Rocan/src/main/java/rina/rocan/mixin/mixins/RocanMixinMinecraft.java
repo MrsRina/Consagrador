@@ -42,9 +42,13 @@ public class RocanMixinMinecraft {
 //		Bope.ZERO_ALPINE_EVENT_BUS.post(guiscreen);
 //	}
 
-//	@Inject(method = "shutdown", at = @At("HEAD"))
-//	private void shutdown(CallbackInfo info) {}
-//
-//	@Redirect(method = "run", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V"))
-//	private void crash(Minecraft minecraft, CrashReport crash) {}
+	@Inject(method = "shutdown", at = @At("HEAD"))
+	private void shutdown(CallbackInfo info) {
+		Rocan.getFileManager().saveClient();
+	}
+
+	@Redirect(method = "run", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V"))
+	private void crash(Minecraft minecraft, CrashReport crash) {
+		Rocan.getFileManager().saveClient();
+	}
 }

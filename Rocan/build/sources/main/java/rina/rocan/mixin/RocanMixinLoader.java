@@ -11,6 +11,9 @@ import org.spongepowered.asm.mixin.MixinEnvironment;
 import org.spongepowered.asm.launch.MixinBootstrap;
 import org.spongepowered.asm.mixin.Mixins;
 
+// Acess.
+import rina.rocan.mixin.acess.RocanMixinAcess;
+
 // Java.
 import java.util.Map;
 
@@ -18,7 +21,7 @@ import java.util.Map;
   * @author Rina
   *
   * Created by Rina!
-  * 08/04/20.
+  * 15/08/2020.
   *
   **/
 public class RocanMixinLoader implements IFMLLoadingPlugin {
@@ -49,6 +52,6 @@ public class RocanMixinLoader implements IFMLLoadingPlugin {
 
 	@Override
 	public String getAccessTransformerClass() {
-		return null;
+		return RocanMixinAcess.class.getName();
 	}
 }

@@ -31,6 +31,7 @@ public class RocanCommandManager {
 		addCommand(new RocanCommandPrefix());
 		addCommand(new RocanCommandToggle());
 		addCommand(new RocanCommandSet());
+		addCommand(new RocanCommandClient());
 	}
 
 	public void addCommand(RocanCommand command) {

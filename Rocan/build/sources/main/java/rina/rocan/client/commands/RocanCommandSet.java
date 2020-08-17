@@ -42,7 +42,7 @@ public class RocanCommandSet extends RocanCommand {
 			value_2 = args[3];
 		}
 
-		if (verifyIndex(args, 3)) {
+		if (verifyIndex(args, 4)) {
 			RocanUtilClient.sendNotifyErrorClient("The usage correct is set <module> <setting> <value>");
 
 			return true;

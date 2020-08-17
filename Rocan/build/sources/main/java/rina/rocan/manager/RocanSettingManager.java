@@ -44,7 +44,7 @@ public class RocanSettingManager {
 		ArrayList<RocanSetting> settings_requested = null;
 
 		for (RocanSetting settings : getSettingList()) {
-			if (settings.getMaster().getTag().equals(module.getTag())) {
+			if (settings.getMaster().equals(module)) {
 				settings_requested.add(settings);
 			}
 		}

@@ -18,6 +18,7 @@ import rina.rocan.manager.RocanCommandManager;
 import rina.rocan.manager.RocanSettingManager;
 import rina.rocan.manager.RocanModuleManager;
 import rina.rocan.manager.RocanEventManager;
+import rina.rocan.manager.RocanFileManager;
 
 @Mod(modid = "rocan", name = Rocan.ROCAN_NAME, version = Rocan.ROCAN_VERSION)
 public class Rocan {
@@ -33,20 +34,36 @@ public class Rocan {
 	private RocanSettingManager setting_manager;
 	private RocanCommandManager command_manager;
 	private RocanEventManager event_manager;
+	private RocanFileManager file_manager;
 
 	// EventBus.
 	private EventManager pomelo_event_manager;
 
 	@Mod.EventHandler
-	public void clientInitialize(FMLInitializationEvent event) {
+	public void init(FMLInitializationEvent event) {
 		setting_manager      = new RocanSettingManager();
 		module_manager       = new RocanModuleManager();
 		command_manager      = new RocanCommandManager(".");
 		event_manager        = new RocanEventManager();
 		pomelo_event_manager = new AnnotatedEventManager();
+		file_manager         = new RocanFileManager();
 
 		MinecraftForge.EVENT_BUS.register(command_manager);
 		MinecraftForge.EVENT_BUS.register(event_manager);
+
+		// e.e;
+		clientNonChche("YES RINA!");
+	}
+
+	public void clientNonChche(String tag_or_rina_crazy_frog_bin_bin_rin_pao) {
+		file_manager.loadClient();
+
+		//Runtime.getRuntime().addShutdownHook(new Thread("Rocan Shutdown Hook") {
+		//	@Override
+		//	public void run() {
+		//		getFileManager().saveClient();
+		//	}
+		//});
 	}
 
 	public static Rocan getInstance() {
@@ -75,6 +92,10 @@ public class Rocan {
 
 	public static RocanEventManager getEventManager() {
 		return getInstance().event_manager;
+	}
+
+	public static RocanFileManager getFileManager() {
+		return getInstance().file_manager;
 	}
 
 	public static EventManager getPomeloEventManager() {
