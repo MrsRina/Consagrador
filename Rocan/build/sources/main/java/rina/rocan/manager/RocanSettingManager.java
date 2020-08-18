@@ -8,13 +8,13 @@ import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
 /**
- *
- * @author Rina!
- *
- * Created by Rina!
- * 15/08/2020.
- *
- **/
+  *
+  * @author Rina!
+  *
+  * Created by Rina!
+  * 15/08/2020.
+  *
+  **/
 public class RocanSettingManager {
 	ArrayList<RocanSetting> setting_list;
 

@@ -9,10 +9,11 @@ import net.minecraft.util.math.Vec3d;
 import rina.rocan.event.RocanEventCancellable;
 
 /**
-  * @author Rina
+  *
+  * @author Rina!
   *
   * Created by Rina!
-  * 15/08/2020.
+  * 17/08/2020.
   *
   **/
 public class RocanEventRender extends RocanEventCancellable {

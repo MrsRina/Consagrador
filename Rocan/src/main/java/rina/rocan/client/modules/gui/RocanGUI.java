@@ -18,13 +18,11 @@ import rina.rocan.Rocan;
  **/
 @Define(name = "GUI", tag = "GUI", description = "GUI click.", category = Category.ROCAN_GUI)
 public class RocanGUI extends RocanModule {
-	boolean e;
+	boolean show_gui;
 
 	@Override
 	public void onEnable() {
-		mc.displayGuiScreen(Rocan.rocan_gui);
-
-		e = true;
+		show_gui = true;
 	}
 
 	@Override
@@ -34,10 +32,10 @@ public class RocanGUI extends RocanModule {
 
 	@Override
 	public void onUpdate() {
-		if (e) {
+		if (show_gui) {
 			mc.displayGuiScreen(Rocan.rocan_gui);
 
-			e = false;
+			show_gui = false;
 		}
 	}
 }

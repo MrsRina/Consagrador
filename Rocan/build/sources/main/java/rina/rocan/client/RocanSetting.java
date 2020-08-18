@@ -12,13 +12,13 @@ import java.awt.*;
 import rina.rocan.Rocan;
 
 /**
- *
- * @author Rina!
- *
- * Created by Rina!
- * 15/08/2020.
- *
- **/
+  *
+  * @author Rina!
+  *
+  * Created by Rina!
+  * 16/08/2020.
+  *
+  **/
 public class RocanSetting<T> {
 	private RocanModule master;
 

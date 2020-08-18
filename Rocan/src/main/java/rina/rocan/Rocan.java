@@ -23,6 +23,14 @@ import rina.rocan.manager.RocanModuleManager;
 import rina.rocan.manager.RocanEventManager;
 import rina.rocan.manager.RocanFileManager;
 
+/**
+  *
+  * @author Rina!
+  *
+  * Created by Rina!
+  * 15/08/2020.
+  *
+  **/
 @Mod(modid = "rocan", name = Rocan.ROCAN_NAME, version = Rocan.ROCAN_VERSION)
 public class Rocan {
 	// Details of the client.

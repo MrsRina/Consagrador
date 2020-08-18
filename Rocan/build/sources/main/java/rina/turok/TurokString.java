@@ -22,6 +22,7 @@ public class TurokString {
 	public static CFontRenderer custom_font_hud = new CFontRenderer(new Font("Tahoma", 0, 19), true, true);
 	public static FontRenderer font_renderer    = Minecraft.getMinecraft().fontRenderer;
 
+
 	// Main Render.
 	public static void renderString(String string, int x, int y, int r, int g, int b, boolean shadow, boolean custom) {
 		TurokRenderGL.prepareToRenderString();

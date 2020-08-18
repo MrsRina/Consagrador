@@ -1,6 +1,10 @@
 package rina.rocan.gui.frame;
 
+// Java.
+import java.util.*;
+
 // GUI.
+import rina.rocan.gui.component.RocanComponentModuleButton;
 import rina.rocan.gui.RocanMainGUI;
 
 // Client.
@@ -10,6 +14,9 @@ import rina.rocan.client.RocanModule;
 import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
 import rina.turok.TurokRect;
+
+// Rocan.
+import rina.rocan.Rocan;
 
 /**
  *
@@ -22,10 +29,17 @@ import rina.turok.TurokRect;
 public class RocanFrame {
 	private RocanMainGUI master;
 
+	private RocanModule.Category category;
+
 	private TurokRect rect;
+
+	private ArrayList<RocanComponentModuleButton> component_module_button_list;
 
 	private int move_x;
 	private int move_y;
+
+	private int save_width;
+	private int save_height;
 
 	private boolean event_mouse_click;
 	private boolean event_mouse_passing;
@@ -36,15 +50,23 @@ public class RocanFrame {
 	public RocanFrame(RocanMainGUI master, RocanModule.Category category) {
 		this.master = master;
 
-		this.rect = new TurokRect(category.getName(), 0, 0);
+		this.category = category;
+
+		this.rect = new TurokRect(this.category.getName(), 0, 0);
+
+		this.component_module_button_list = new ArrayList<>();
 
 		this.rect.width  = 100;
-		this.rect.height = 3 + TurokString.getStringWidth(this.rect.getTag(), true) + 3;
+		this.rect.height = 3 + TurokString.getStringHeight(this.rect.getTag(), true) + 1;
 
 		this.move_x = 0;
 		this.move_y = 0;
 
+		this.save_width  = 0;
+		this.save_height = this.rect.height + 1;
+
 		resetAllEvent();
+		loadWidgets();
 	}
 
 	public void resetAllEvent() {
@@ -52,6 +74,29 @@ public class RocanFrame {
 		this.event_mouse_passing     = false;
 		this.event_frame_dragging    = false;
 		this.event_frame_cancel_drag = false;
+	}
+
+	public void loadWidgets() {
+		int size  = Rocan.getModuleManager().getModuleListByCategory(this.category).size();
+		int count = 0;
+
+		for (RocanModule modules : Rocan.getModuleManager().getModuleListByCategory(this.category)) {
+			RocanComponentModuleButton module_button = new RocanComponentModuleButton(this, modules, this.save_height);
+
+			module_button.setY(this.save_height + module_button.getHeight());
+
+			count++;
+
+			if (count >= size) {
+				this.rect.height = this.save_height + module_button.getHeight() + 2;
+				this.save_height = module_button.getY() + module_button.getHeight() + 2;
+			} else {
+				this.rect.height = this.save_height + module_button.getHeight();
+				this.save_height = module_button.getY() + 1;
+			}
+
+			this.component_module_button_list.add(module_button);
+		}
 	}
 
 	public void setX(int x) {
@@ -161,7 +206,13 @@ public class RocanFrame {
 		updateActions(this.master.getMouseX(), this.master.getMouseY());
 
 		TurokRenderGL.color(0, 0, 0, 100);
-		TurokRenderGL.drawRoundedRect(this.rect, 2);
+		TurokRenderGL.drawRoundedRect(this.rect, 1);
+
+		TurokString.renderString(this.rect.getTag(), this.rect.getX() + (this.rect.getWidth() / 2) - TurokString.getStringWidth(this.rect.getTag(), true) / 2, this.rect.getY() + 3, 255, 255, 255, false, true);
+	
+		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
+			module_buttons.render();
+		}
 	}
 
 	public void updateEvent(int x, int y) {

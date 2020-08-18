@@ -32,13 +32,13 @@ import rina.turok.TurokRenderGL;
 import rina.turok.TurokRect;
 
 /**
- *
- * @author Rina!
- *
- * Created by Rina!
- * 17/08/2020.
- *
- **/
+  *
+  * @author Rina!
+  *
+  * Created by Rina!
+  * 17/08/2020.
+  *
+  **/
 public class RocanMainGUI extends GuiScreen {
 	private ArrayList<RocanFrame> frame_list;
 
@@ -63,10 +63,10 @@ public class RocanMainGUI extends GuiScreen {
 
 		this.default_position_x = 10; // 10 for default.
 
-		loadModules();
+		loadFrames();
 	}
 
-	public void loadModules() {
+	public void loadFrames() {
 		for (RocanModule.Category categories : RocanModule.Category.values()) {
 			RocanFrame new_frame = new RocanFrame(this, categories);
 
@@ -96,9 +96,11 @@ public class RocanMainGUI extends GuiScreen {
 
 	@Override
 	public void mouseReleased(int x, int y, int mouse) {
-		if (mouse == 0) {
-			if (this.focused_frame.isMouseClick()) {
-				this.focused_frame.setMouseClick(false);
+		for (RocanFrame frames : this.frame_list) {
+			if (mouse == 0) {
+				if (frames.isMouseClick()) {
+					frames.setMouseClick(false);
+				}
 			}
 		}
 	}

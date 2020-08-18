@@ -35,13 +35,13 @@ import rina.rocan.util.RocanUtilEntity;
 import rina.rocan.util.RocanUtilMinecraftHelper;
 
 /**
- *
- * @author Rina!
- *
- * Created by Rina!
- * 15/08/2020.
- *
- **/
+  *
+  * @author Rina!
+  *
+  * Created by Rina!
+  * 15/08/2020.
+  *
+  **/
 public class RocanModuleManager {
 	ArrayList<RocanModule> module_list;
 
@@ -49,6 +49,8 @@ public class RocanModuleManager {
 		this.module_list = new ArrayList<>();
 
 		addModule(new RocanTestModule());
+		addModule(new RocanTestModule2());
+		addModule(new RocanTestModule3());
 
 		// Exploit.
 		addModule(new RocanXCarry());

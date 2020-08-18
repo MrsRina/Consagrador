@@ -7,10 +7,11 @@ import net.minecraft.network.Packet;
 import rina.rocan.event.RocanEventCancellable;
 
 /**
-  * @author Rina
+  *
+  * @author Rina!
   *
   * Created by Rina!
-  * 15/08/2020.
+  * 16/08/2020.
   *
   **/
 public class RocanEventPacketReceive extends RocanEventCancellable {
