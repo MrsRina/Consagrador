@@ -19,7 +19,10 @@ import org.lwjgl.opengl.GL11;
 // Java.
 import java.util.*;
 
-// Command.
+// Turok.
+import rina.turok.TurokRenderGL;
+
+// Client.
 import rina.rocan.client.RocanCommand;
 
 /// Util.
@@ -57,10 +60,40 @@ public class RocanEventManager {
 		Rocan.getModuleManager().onUpdateModuleList();
 	}
 
+	@SubscribeEvent
+	public void onWorldRender(RenderWorldLastEvent event) {
+		if (event.isCanceled()) {
+			return;
+		}
+
+		Rocan.getModuleManager().onRenderModuleList(event);
+	}
+
 	@SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
 	public void onKeyInput(InputEvent.KeyInputEvent event) {
 		if (Keyboard.getEventKeyState()) {
 			Rocan.getModuleManager().onPressedKeyBind(Keyboard.getEventKey());
+		}
+	}
+
+	@SubscribeEvent
+	public void onRender(RenderGameOverlayEvent.Post event) {
+		if (event.isCanceled()) {
+			return;
+		}
+
+		RenderGameOverlayEvent.ElementType target = RenderGameOverlayEvent.ElementType.EXPERIENCE;
+
+		if (!mc.player.isCreative() && mc.player.getRidingEntity() instanceof AbstractHorse) {
+			target = RenderGameOverlayEvent.ElementType.HEALTHMOUNT;
+		}
+
+		if (event.getType() == target) {
+			Rocan.getModuleManager().onRenderModuleList();
+
+			// Prepare to render.
+			TurokRenderGL.init2D();
+			TurokRenderGL.release2D();
 		}
 	}
 

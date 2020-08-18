@@ -27,8 +27,10 @@ import java.util.Map;
 public class RocanMixinLoader implements IFMLLoadingPlugin {
 	public RocanMixinLoader() {
 		MixinBootstrap.init();
+
 		Mixins.addConfiguration("mixins.rocan.json");
-		MixinEnvironment.getDefaultEnvironment().setObfuscationContext("searge");
+
+		// MixinEnvironment.getDefaultEnvironment().setObfuscationContext("searge");
 	}
 
 	@Override

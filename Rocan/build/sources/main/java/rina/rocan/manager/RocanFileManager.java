@@ -31,7 +31,7 @@ import rina.rocan.Rocan;
  **/
 public class RocanFileManager {
 	private String PATH_MAIN    = "Rocan/";
-	private String PATH_MODULES = PATH_MAIN + "Module/";
+	private String PATH_MODULES = PATH_MAIN + "modules/";
 
 	private String PATH_FILE_CLIENT = PATH_MAIN + "Client.json";
 
@@ -107,7 +107,7 @@ public class RocanFileManager {
 		JsonParser GSON_PARSER = new JsonParser();
 
 		for (RocanModule modules : Rocan.getModuleManager().getModuleList()) {
-			String path = getPathModules() + modules.getCategory().getTag() + "/";
+			String path = getPathModules() + modules.getCategory().getTag().toLowerCase() + "/";
 
 			JsonObject MAIN_JSON = new JsonObject();
 	
@@ -134,7 +134,7 @@ public class RocanFileManager {
 
 	public void loadModules() throws IOException {
 		for (RocanModule modules : Rocan.getModuleManager().getModuleList()) {
-			String path = getPathModules() + modules.getCategory().getTag() + "/";
+			String path = getPathModules() + modules.getCategory().getTag().toLowerCase() + "/";
 
 			InputStream JSON_FILE = Files.newInputStream(Paths.get(path + modules.getTag() + ".json"));
 

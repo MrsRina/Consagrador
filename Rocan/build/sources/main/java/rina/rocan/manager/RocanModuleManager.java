@@ -1,19 +1,38 @@
 package rina.rocan.manager;
 
-// Folders.
-// import rina.rocan.client.modules.combat.*;
-// import rina.rocan.client.modules.render.*;
-// import rina.rocan.client.modules.misc.*;
-// import rina.rocan.client.modules.exploit.*;
-// import rina.rocan.client.modules.movement.*;
-import rina.rocan.client.modules.dev.*;
-
-// Rocan module.
-import rina.rocan.client.RocanModule.Category;
-import rina.rocan.client.RocanModule;
+// Minecraft.
+import net.minecraftforge.client.event.RenderWorldLastEvent;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.entity.Entity;
+import org.lwjgl.opengl.GL11;
 
 // Java.
 import java.util.*;
+
+// Turok.
+import rina.turok.TurokRenderHelp;
+
+// Events.
+import rina.rocan.event.render.RocanEventRender;
+
+// Folders.
+// import rina.rocan.client.modules.combat.*;
+import rina.rocan.client.modules.render.*;
+// import rina.rocan.client.modules.misc.*;
+import rina.rocan.client.modules.exploit.*;
+// import rina.rocan.client.modules.movement.*;
+import rina.rocan.client.modules.dev.*;
+import rina.rocan.client.modules.gui.*;
+
+// Client.
+import rina.rocan.client.RocanModule.Category;
+import rina.rocan.client.RocanModule;
+
+// Util.
+import rina.rocan.util.RocanUtilEntity;
+import rina.rocan.util.RocanUtilMinecraftHelper;
 
 /**
  *
@@ -30,7 +49,15 @@ public class RocanModuleManager {
 		this.module_list = new ArrayList<>();
 
 		addModule(new RocanTestModule());
+
+		// Exploit.
 		addModule(new RocanXCarry());
+
+		// Render.
+		addModule(new RocanBlockHighlight());
+
+		// GUI.
+		addModule(new RocanGUI());
 	}
 
 	public void addModule(RocanModule module) {
@@ -43,6 +70,62 @@ public class RocanModuleManager {
 				modules.onUpdate();
 			}
 		}
+	}
+
+	public void onRenderModuleList() {
+		for (RocanModule modules : getModuleList()) {
+			if (modules.getState()) {
+				modules.onRender();
+			}
+		}
+	}
+
+	public void onRenderModuleList(RenderWorldLastEvent event) {
+		RocanUtilMinecraftHelper.getMinecraft().profiler.startSection("rocan");
+		RocanUtilMinecraftHelper.getMinecraft().profiler.startSection("setup");
+
+		GlStateManager.disableTexture2D();
+		GlStateManager.enableBlend();
+		GlStateManager.disableAlpha();
+		GlStateManager.tryBlendFuncSeparate(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA, 1, 0);
+		GlStateManager.shadeModel(GL11.GL_SMOOTH);
+		GlStateManager.disableDepth();
+
+		GlStateManager.glLineWidth(1.5f);
+
+		Vec3d pos = RocanUtilEntity.getInterpolatedPos(RocanUtilMinecraftHelper.getMinecraft().player, event.getPartialTicks());
+
+		RocanEventRender event_render = new RocanEventRender(TurokRenderHelp.INSTANCE, pos);
+
+		event_render.resetTranslatation();
+
+		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
+
+		for (RocanModule modules : getModuleList()) {
+			if (modules.getState()) {
+				RocanUtilMinecraftHelper.getMinecraft().profiler.startSection(modules.getTag());
+
+				modules.onRender(event_render);
+
+				RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
+			}
+		}
+
+		RocanUtilMinecraftHelper.getMinecraft().profiler.startSection("release");
+
+		GlStateManager.glLineWidth(1.5f);
+
+		GlStateManager.shadeModel(GL11.GL_FLAT);
+		GlStateManager.disableBlend();
+		GlStateManager.enableAlpha();
+		GlStateManager.enableTexture2D();
+		GlStateManager.enableDepth();
+		GlStateManager.enableCull();
+
+		TurokRenderHelp.releaseGL();
+
+		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
+		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
 	}
 
 	public void onPressedKeyBind(int key) {

@@ -13,6 +13,9 @@ import com.mojang.realmsclient.gui.ChatFormatting;
 import team.stiff.pomelo.impl.annotated.AnnotatedEventManager;
 import team.stiff.pomelo.EventManager;
 
+// GUI.
+import rina.rocan.gui.RocanMainGUI;
+
 // Rocan Managers.
 import rina.rocan.manager.RocanCommandManager;
 import rina.rocan.manager.RocanSettingManager;
@@ -39,6 +42,9 @@ public class Rocan {
 	// EventBus.
 	private EventManager pomelo_event_manager;
 
+	// GUI.
+	public static RocanMainGUI rocan_gui;
+
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		setting_manager      = new RocanSettingManager();
@@ -51,19 +57,15 @@ public class Rocan {
 		MinecraftForge.EVENT_BUS.register(command_manager);
 		MinecraftForge.EVENT_BUS.register(event_manager);
 
+		// Load gui.
+		rocan_gui = new RocanMainGUI();
+
 		// e.e;
 		clientNonChche("YES RINA!");
 	}
 
 	public void clientNonChche(String tag_or_rina_crazy_frog_bin_bin_rin_pao) {
 		file_manager.loadClient();
-
-		//Runtime.getRuntime().addShutdownHook(new Thread("Rocan Shutdown Hook") {
-		//	@Override
-		//	public void run() {
-		//		getFileManager().saveClient();
-		//	}
-		//});
 	}
 
 	public static Rocan getInstance() {
@@ -76,6 +78,10 @@ public class Rocan {
 
 	public static String getClientVersion() {
 		return getInstance().ROCAN_VERSION;
+	}
+
+	public static RocanMainGUI getClientGUIModule() {
+		return getInstance().rocan_gui;
 	}
 
 	public static RocanSettingManager getSettingManager() {

@@ -23,6 +23,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Mixin;
 
+// Event.
+import rina.rocan.event.gui.*;
+
 // Rocan.
 import rina.rocan.Rocan;
 
@@ -35,20 +38,20 @@ import rina.rocan.Rocan;
   **/
 @Mixin(value = Minecraft.class)
 public class RocanMixinMinecraft {
-//	@Inject(method = "displayGuiScreen", at = @At("HEAD"))
-//	private void displayGuiScreen(GuiScreen guiScreenIn, CallbackInfo info) {
-//		BopeEventGUIScreen guiscreen = new BopeEventGUIScreen(guiScreenIn);
-//
-//		Bope.ZERO_ALPINE_EVENT_BUS.post(guiscreen);
-//	}
+	@Inject(method = "displayGuiScreen", at = @At("HEAD"))
+	private void displayGuiScreen(GuiScreen actual_guiscreen, CallbackInfo info) {
+		RocanEventGUI event_gui = new RocanEventGUI(actual_guiscreen);
+
+		Rocan.getPomeloEventManager().dispatchEvent(event_gui);
+	}
 
 	@Inject(method = "shutdown", at = @At("HEAD"))
 	private void shutdown(CallbackInfo info) {
-	//	Rocan.getFileManager().saveClient();
+		Rocan.getFileManager().saveClient();
 	}
 
 	@Redirect(method = "run", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V"))
 	private void crash(Minecraft minecraft, CrashReport crash) {
-	//	Rocan.getFileManager().saveClient();
+		Rocan.getFileManager().saveClient();
 	}
 }

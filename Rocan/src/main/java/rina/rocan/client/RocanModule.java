@@ -1,6 +1,7 @@
 package rina.rocan.client;
 
 // Minecraft.
+import net.minecraftforge.client.event.*;
 import net.minecraft.client.Minecraft;
 
 // Gson.
@@ -11,6 +12,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 import java.util.*;
 import java.io.*;
+
+// Event.
+import rina.rocan.event.render.RocanEventRender;
 
 // Setting.
 import rina.rocan.client.RocanSetting;
@@ -113,6 +117,8 @@ public class RocanModule {
 	protected void onDisable() {}
 
 	public void onUpdate() {}
+	public void onRender() {}
+	public void onRender(RocanEventRender event) {}
 
 	// Annotation details.
 	public Define getAnnotation() {
@@ -135,7 +141,9 @@ public class RocanModule {
 
 	public enum Category {
 		ROCAN_DEV("Rocan Dev", "Dev"),
-		ROCAN_EXPLOIT("Rocan Exploit", "Exploit");
+		ROCAN_EXPLOIT("Rocan Exploit", "Exploit"),
+		ROCAN_RENDER("Rocan Render", "Render"),
+		ROCAN_GUI("Rocan GUI", "GUI");
 
 		String name;
 		String tag;

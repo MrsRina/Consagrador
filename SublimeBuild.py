@@ -4,8 +4,8 @@ class Compile:
 
 	def run(self, version, final):
 		import os	
-		os.system("cd Rocan && gradlew setupDecompWorkspace --stop && gradlew clean build")
-		#os.system("cd Rocan && gradlew runClient --stop && gradlew clean build")
+		#os.system("cd Rocan && gradlew setupDecompWorkspace --stop && gradlew clean build")
+		os.system("cd Rocan && gradlew runClient --stop && gradlew clean build")
 
 		import shutil
 		try:

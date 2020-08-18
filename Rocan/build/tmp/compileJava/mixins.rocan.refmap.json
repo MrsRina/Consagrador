@@ -7,7 +7,8 @@
     "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
       "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lnet/minecraft/client/Minecraft;func_71377_b(Lnet/minecraft/crash/CrashReport;)V",
       "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
-      "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V"
+      "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V",
+      "displayGuiScreen": "Lnet/minecraft/client/Minecraft;func_147108_a(Lnet/minecraft/client/gui/GuiScreen;)V"
     }
   },
   "data": {
@@ -19,7 +20,8 @@
       "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
         "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lbib;c(Lb;)V",
         "run": "Lbib;a()V",
-        "shutdown": "Lbib;n()V"
+        "shutdown": "Lbib;n()V",
+        "displayGuiScreen": "Lbib;a(Lblk;)V"
       }
     },
     "searge": {
@@ -30,7 +32,8 @@
       "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
         "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lnet/minecraft/client/Minecraft;func_71377_b(Lnet/minecraft/crash/CrashReport;)V",
         "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
-        "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V"
+        "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V",
+        "displayGuiScreen": "Lnet/minecraft/client/Minecraft;func_147108_a(Lnet/minecraft/client/gui/GuiScreen;)V"
       }
     }
   }
