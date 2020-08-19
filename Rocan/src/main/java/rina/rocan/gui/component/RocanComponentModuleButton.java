@@ -24,6 +24,8 @@ public class RocanComponentModuleButton {
 	private RocanFrame master;
 	private RocanMainGUI absolute;
 
+	private RocanModule module;
+
 	private TurokRect rect;
 
 	private int save_x;
@@ -38,7 +40,9 @@ public class RocanComponentModuleButton {
 		this.master   = master;
 		this.absolute = this.master.getMaster();
 
-		this.rect = new TurokRect(module.getName(), 0, 0);
+		this.module = module;
+
+		this.rect = new TurokRect(this.module.getName(), 0, 0);
 
 		this.rect.x = this.master.getX();
 		this.rect.y = next_y;
@@ -148,11 +152,16 @@ public class RocanComponentModuleButton {
 			if (isMousePassing()) {
 				setMouseClick(true);
 
-				if (!isButtonOpen()) {
-					setButtonOpen(true);
-				} else {
-					setButtonOpen(false);
-				}
+				this.module.toggle();
+
+				// Frame event.
+				this.master.setFrameCancelDrag(true);
+			}
+		}
+
+		if (mouse == 1) {
+			if (isMousePassing()) {
+				setButtonOpen(!isButtonOpen());
 			}
 		}
 	}
@@ -160,6 +169,9 @@ public class RocanComponentModuleButton {
 	public void release(int mouse) {
 		if (mouse == 0) {
 			setMouseClick(false);
+
+			// Frame event.
+			this.master.setFrameCancelDrag(false);
 		}
 	}
 
@@ -167,15 +179,35 @@ public class RocanComponentModuleButton {
 		updateAction(this.absolute.getMouseX(), this.absolute.getMouseY());
 
 		if (isMousePassing()) {
-			TurokRenderGL.color(255, 255, 255, 190);
-			TurokRenderGL.drawSolidRect(this.rect);
+			if (this.module.getState()) {
+				TurokRenderGL.color(255, 0, 0, 190);
+				TurokRenderGL.drawSolidRect(this.rect);
 
-			TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+				TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+			} else {
+				TurokRenderGL.color(255, 255, 255, 190);
+				TurokRenderGL.drawSolidRect(this.rect);
+
+				TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+			}
 		} else {
-			TurokRenderGL.color(190, 190, 190, 190);
-			TurokRenderGL.drawSolidRect(this.rect);
+			if (this.module.getState()) {
+				TurokRenderGL.color(190, 0, 0, 190);
+				TurokRenderGL.drawSolidRect(this.rect);
 
-			TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+				TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+			} else {
+				TurokRenderGL.color(190, 190, 190, 190);
+				TurokRenderGL.drawSolidRect(this.rect);
+
+				TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+			}
+		}
+
+		if (isButtonOpen()) {
+			TurokString.renderString("-", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("-", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
+		} else {
+			TurokString.renderString("+", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("+", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
 		}
 	}
 

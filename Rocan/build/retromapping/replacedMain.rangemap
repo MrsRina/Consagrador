@@ -1666,7 +1666,7 @@ Class Start: rina.rocan.event.render.RocanEventRender
 Class End  : rina.rocan.event.render.RocanEventRender
 endProcessing "rina/rocan/event/render/RocanEventRender.java"
 
-startProcessing "rina/rocan/gui/RocanMainGUI.java" md5: 6d284453e3e121094e57a8fc60665974
+startProcessing "rina/rocan/gui/RocanMainGUI.java" md5: 3dfcd6a775bf14226322dc29d2151cec
 @|rina/rocan/gui/RocanMainGUI.java|8|22|rina.rocan.gui|package|rina.rocan.gui|(file)
 Class Start: rina.rocan.gui.RocanMainGUI
    @|rina/rocan/gui/RocanMainGUI.java|950|962|RocanMainGUI|class|rina.rocan.gui.RocanMainGUI|false
@@ -1702,148 +1702,151 @@ Class Start: rina.rocan.gui.RocanMainGUI
       @|rina/rocan/gui/RocanMainGUI.java|1547|1553|values|method|rina.rocan.client.RocanModule.Category|values|()[Lrina/rocan/client/RocanModule$Category;
       @|rina/rocan/gui/RocanMainGUI.java|1563|1573|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
       @|rina/rocan/gui/RocanMainGUI.java|1590|1600|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
-      @|rina/rocan/gui/RocanMainGUI.java|1636|1640|setX|method|rina.rocan.gui.frame.RocanFrame|setX|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|1646|1664|default_position_x|field|rina.rocan.gui.RocanMainGUI|default_position_x
-      @|rina/rocan/gui/RocanMainGUI.java|1678|1696|default_position_x|field|rina.rocan.gui.RocanMainGUI|default_position_x
-      @|rina/rocan/gui/RocanMainGUI.java|1709|1713|getX|method|rina.rocan.gui.frame.RocanFrame|getX|()I
-      @|rina/rocan/gui/RocanMainGUI.java|1728|1736|getWidth|method|rina.rocan.gui.frame.RocanFrame|getWidth|()I
-      @|rina/rocan/gui/RocanMainGUI.java|1755|1765|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
-      @|rina/rocan/gui/RocanMainGUI.java|1766|1769|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/gui/RocanMainGUI.java|1793|1806|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|1636|1640|setY|method|rina.rocan.gui.frame.RocanFrame|setY|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|1660|1664|setX|method|rina.rocan.gui.frame.RocanFrame|setX|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|1670|1688|default_position_x|field|rina.rocan.gui.RocanMainGUI|default_position_x
+      @|rina/rocan/gui/RocanMainGUI.java|1702|1720|default_position_x|field|rina.rocan.gui.RocanMainGUI|default_position_x
+      @|rina/rocan/gui/RocanMainGUI.java|1733|1737|getX|method|rina.rocan.gui.frame.RocanFrame|getX|()I
+      @|rina/rocan/gui/RocanMainGUI.java|1752|1760|getWidth|method|rina.rocan.gui.frame.RocanFrame|getWidth|()I
+      @|rina/rocan/gui/RocanMainGUI.java|1779|1789|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|1790|1793|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/gui/RocanMainGUI.java|1817|1830|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
    Method End: loadFrames()V
    Method Start: mouseClicked(III)V
-      @|rina/rocan/gui/RocanMainGUI.java|1874|1875|x|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|1881|1882|y|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|1888|1893|mouse|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|mouse|2
-      @|rina/rocan/gui/RocanMainGUI.java|1834|1842|Override|class|java.lang.Override|false
-      @|rina/rocan/gui/RocanMainGUI.java|1857|1869|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
-      @|rina/rocan/gui/RocanMainGUI.java|1904|1909|mouse|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|mouse|2
-      @|rina/rocan/gui/RocanMainGUI.java|1931|1944|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|1945|1959|isMousePassing|method|rina.rocan.gui.frame.RocanFrame|isMousePassing|()Z
-      @|rina/rocan/gui/RocanMainGUI.java|1971|1984|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|1985|2006|isFrameCancelingClick|method|rina.rocan.gui.frame.RocanFrame|isFrameCancelingClick|()Z
-      @|rina/rocan/gui/RocanMainGUI.java|2017|2029|refreshFrame|method|rina.rocan.gui.RocanMainGUI|refreshFrame|()V
-      @|rina/rocan/gui/RocanMainGUI.java|2045|2058|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|2059|2072|setMouseClick|method|rina.rocan.gui.frame.RocanFrame|setMouseClick|(Z)V
-      @|rina/rocan/gui/RocanMainGUI.java|2092|2105|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|2106|2114|setMoveX|method|rina.rocan.gui.frame.RocanFrame|setMoveX|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|2115|2116|x|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|2124|2137|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|2138|2142|getX|method|rina.rocan.gui.frame.RocanFrame|getX|()I
-      @|rina/rocan/gui/RocanMainGUI.java|2157|2170|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|2171|2179|setMoveY|method|rina.rocan.gui.frame.RocanFrame|setMoveY|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|2180|2181|y|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|2189|2202|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|2203|2207|getY|method|rina.rocan.gui.frame.RocanFrame|getY|()I
+      @|rina/rocan/gui/RocanMainGUI.java|1898|1899|x|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|1905|1906|y|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|1912|1917|mouse|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|mouse|2
+      @|rina/rocan/gui/RocanMainGUI.java|1858|1866|Override|class|java.lang.Override|false
+      @|rina/rocan/gui/RocanMainGUI.java|1881|1893|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|rina/rocan/gui/RocanMainGUI.java|1929|1942|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|1943|1948|click|method|rina.rocan.gui.frame.RocanFrame|click|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|1949|1954|mouse|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|mouse|2
+      @|rina/rocan/gui/RocanMainGUI.java|1966|1971|mouse|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|mouse|2
+      @|rina/rocan/gui/RocanMainGUI.java|1993|2006|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|2007|2021|isMousePassing|method|rina.rocan.gui.frame.RocanFrame|isMousePassing|()Z
+      @|rina/rocan/gui/RocanMainGUI.java|2033|2046|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|2047|2068|isFrameCancelingClick|method|rina.rocan.gui.frame.RocanFrame|isFrameCancelingClick|()Z
+      @|rina/rocan/gui/RocanMainGUI.java|2079|2091|refreshFrame|method|rina.rocan.gui.RocanMainGUI|refreshFrame|()V
+      @|rina/rocan/gui/RocanMainGUI.java|2107|2120|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|2121|2134|setMouseClick|method|rina.rocan.gui.frame.RocanFrame|setMouseClick|(Z)V
+      @|rina/rocan/gui/RocanMainGUI.java|2154|2167|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|2168|2176|setMoveX|method|rina.rocan.gui.frame.RocanFrame|setMoveX|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|2177|2178|x|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|2186|2199|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|2200|2204|getX|method|rina.rocan.gui.frame.RocanFrame|getX|()I
+      @|rina/rocan/gui/RocanMainGUI.java|2219|2232|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|2233|2241|setMoveY|method|rina.rocan.gui.frame.RocanFrame|setMoveY|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|2242|2243|y|param|rina.rocan.gui.RocanMainGUI|mouseClicked|(III)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|2251|2264|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|2265|2269|getY|method|rina.rocan.gui.frame.RocanFrame|getY|()I
    Method End: mouseClicked(III)V
    Method Start: mouseReleased(III)V
-      @|rina/rocan/gui/RocanMainGUI.java|2273|2274|x|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|2280|2281|y|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|2287|2292|mouse|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|mouse|2
-      @|rina/rocan/gui/RocanMainGUI.java|2232|2240|Override|class|java.lang.Override|false
-      @|rina/rocan/gui/RocanMainGUI.java|2255|2268|mouseReleased|method|net.minecraft.client.gui.GuiScreen|mouseReleased|(III)V
-      @|rina/rocan/gui/RocanMainGUI.java|2304|2314|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
-      @|rina/rocan/gui/RocanMainGUI.java|2329|2339|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
-      @|rina/rocan/gui/RocanMainGUI.java|2351|2356|mouse|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|mouse|2
-      @|rina/rocan/gui/RocanMainGUI.java|2381|2393|isMouseClick|method|rina.rocan.gui.frame.RocanFrame|isMouseClick|()Z
-      @|rina/rocan/gui/RocanMainGUI.java|2412|2425|setMouseClick|method|rina.rocan.gui.frame.RocanFrame|setMouseClick|(Z)V
+      @|rina/rocan/gui/RocanMainGUI.java|2335|2336|x|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|2342|2343|y|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|2349|2354|mouse|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|mouse|2
+      @|rina/rocan/gui/RocanMainGUI.java|2294|2302|Override|class|java.lang.Override|false
+      @|rina/rocan/gui/RocanMainGUI.java|2317|2330|mouseReleased|method|net.minecraft.client.gui.GuiScreen|mouseReleased|(III)V
+      @|rina/rocan/gui/RocanMainGUI.java|2366|2379|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|2380|2387|release|method|rina.rocan.gui.frame.RocanFrame|release|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|2388|2393|mouse|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|mouse|2
+      @|rina/rocan/gui/RocanMainGUI.java|2406|2416|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
+      @|rina/rocan/gui/RocanMainGUI.java|2431|2441|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|2453|2458|mouse|param|rina.rocan.gui.RocanMainGUI|mouseReleased|(III)V|mouse|2
+      @|rina/rocan/gui/RocanMainGUI.java|2483|2495|isMouseClick|method|rina.rocan.gui.frame.RocanFrame|isMouseClick|()Z
+      @|rina/rocan/gui/RocanMainGUI.java|2514|2527|setMouseClick|method|rina.rocan.gui.frame.RocanFrame|setMouseClick|(Z)V
    Method End: mouseReleased(III)V
    Method Start: drawScreen(IIF)V
-      @|rina/rocan/gui/RocanMainGUI.java|2499|2500|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|2506|2507|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|2515|2528|partial_ticks|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|partial_ticks|2
-      @|rina/rocan/gui/RocanMainGUI.java|2461|2469|Override|class|java.lang.Override|false
-      @|rina/rocan/gui/RocanMainGUI.java|2484|2494|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
-      @|rina/rocan/gui/RocanMainGUI.java|2535|2551|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
-      @|rina/rocan/gui/RocanMainGUI.java|2576|2592|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
-      @|rina/rocan/gui/RocanMainGUI.java|2593|2602|Minecraft|class|net.minecraft.client.Minecraft|false
-      @|rina/rocan/gui/RocanMainGUI.java|2603|2615|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/gui/RocanMainGUI.java|2625|2638|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/gui/RocanMainGUI.java|2639|2648|fixScreen|method|rina.turok.TurokRenderGL|fixScreen|(FF)V
-      @|rina/rocan/gui/RocanMainGUI.java|2667|2681|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
-      @|rina/rocan/gui/RocanMainGUI.java|2703|2718|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
-      @|rina/rocan/gui/RocanMainGUI.java|2728|2732|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|2733|2742|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|2743|2747|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|2748|2761|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
-      @|rina/rocan/gui/RocanMainGUI.java|2769|2779|refreshGUI|method|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V
-      @|rina/rocan/gui/RocanMainGUI.java|2780|2781|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|2783|2784|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|2816|2826|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
-      @|rina/rocan/gui/RocanMainGUI.java|2841|2851|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
-      @|rina/rocan/gui/RocanMainGUI.java|2866|2872|render|method|rina.rocan.gui.frame.RocanFrame|render|()V
-      @|rina/rocan/gui/RocanMainGUI.java|2893|2904|verifyFrame|method|rina.rocan.gui.frame.RocanFrame|verifyFrame|(II)Z
-      @|rina/rocan/gui/RocanMainGUI.java|2905|2906|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|2908|2909|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|2924|2937|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|2972|2979|getName|method|rina.rocan.gui.frame.RocanFrame|getName|()Ljava/lang/String;
-      @|rina/rocan/gui/RocanMainGUI.java|2982|2988|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/gui/RocanMainGUI.java|2994|3007|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|3008|3015|getName|method|rina.rocan.gui.frame.RocanFrame|getName|()Ljava/lang/String;
-      @|rina/rocan/gui/RocanMainGUI.java|3034|3044|resetFrame|method|rina.rocan.gui.frame.RocanFrame|resetFrame|()V
-      @|rina/rocan/gui/RocanMainGUI.java|3069|3082|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|3083|3095|refreshFrame|method|rina.rocan.gui.frame.RocanFrame|refreshFrame|()V
-      @|rina/rocan/gui/RocanMainGUI.java|3104|3108|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|3109|3118|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|3119|3123|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|3124|3137|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
-      @|rina/rocan/gui/RocanMainGUI.java|3143|3147|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|3148|3157|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|3158|3162|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|3163|3171|GL_BLEND|field|org.lwjgl.opengl.GL11|GL_BLEND
-      @|rina/rocan/gui/RocanMainGUI.java|3179|3183|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|3184|3192|glEnable|method|org.lwjgl.opengl.GL11|glEnable|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|3193|3197|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|3198|3211|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
-      @|rina/rocan/gui/RocanMainGUI.java|3217|3231|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/gui/RocanMainGUI.java|3232|3237|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFF)V
+      @|rina/rocan/gui/RocanMainGUI.java|2601|2602|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|2608|2609|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|2617|2630|partial_ticks|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|partial_ticks|2
+      @|rina/rocan/gui/RocanMainGUI.java|2563|2571|Override|class|java.lang.Override|false
+      @|rina/rocan/gui/RocanMainGUI.java|2586|2596|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|rina/rocan/gui/RocanMainGUI.java|2637|2653|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
+      @|rina/rocan/gui/RocanMainGUI.java|2678|2694|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
+      @|rina/rocan/gui/RocanMainGUI.java|2695|2704|Minecraft|class|net.minecraft.client.Minecraft|false
+      @|rina/rocan/gui/RocanMainGUI.java|2705|2717|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/gui/RocanMainGUI.java|2727|2740|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/RocanMainGUI.java|2741|2750|fixScreen|method|rina.turok.TurokRenderGL|fixScreen|(FF)V
+      @|rina/rocan/gui/RocanMainGUI.java|2769|2783|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|rina/rocan/gui/RocanMainGUI.java|2805|2820|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|rina/rocan/gui/RocanMainGUI.java|2830|2834|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|2835|2844|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|2845|2849|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|2850|2863|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
+      @|rina/rocan/gui/RocanMainGUI.java|2871|2881|refreshGUI|method|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V
+      @|rina/rocan/gui/RocanMainGUI.java|2882|2883|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|2885|2886|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|2918|2928|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
+      @|rina/rocan/gui/RocanMainGUI.java|2943|2953|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|2968|2974|render|method|rina.rocan.gui.frame.RocanFrame|render|()V
+      @|rina/rocan/gui/RocanMainGUI.java|2995|3006|verifyFrame|method|rina.rocan.gui.frame.RocanFrame|verifyFrame|(II)Z
+      @|rina/rocan/gui/RocanMainGUI.java|3007|3008|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|3010|3011|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|3026|3039|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|3069|3079|resetFrame|method|rina.rocan.gui.frame.RocanFrame|resetFrame|()V
+      @|rina/rocan/gui/RocanMainGUI.java|3098|3111|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|3112|3124|refreshFrame|method|rina.rocan.gui.frame.RocanFrame|refreshFrame|()V
+      @|rina/rocan/gui/RocanMainGUI.java|3133|3137|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|3138|3147|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|3148|3152|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|3153|3166|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
+      @|rina/rocan/gui/RocanMainGUI.java|3172|3176|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|3177|3186|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|3187|3191|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|3192|3200|GL_BLEND|field|org.lwjgl.opengl.GL11|GL_BLEND
+      @|rina/rocan/gui/RocanMainGUI.java|3208|3212|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|3213|3221|glEnable|method|org.lwjgl.opengl.GL11|glEnable|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|3222|3226|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|3227|3240|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
+      @|rina/rocan/gui/RocanMainGUI.java|3246|3260|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/gui/RocanMainGUI.java|3261|3266|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFF)V
    Method End: drawScreen(IIF)V
    Method Start: refreshGUI(IILnet/minecraft/client/gui/ScaledResolution;)V
-      @|rina/rocan/gui/RocanMainGUI.java|3283|3284|x|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|3290|3291|y|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|3310|3327|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
-      @|rina/rocan/gui/RocanMainGUI.java|3268|3278|refreshGUI|method|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V
-      @|rina/rocan/gui/RocanMainGUI.java|3293|3309|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
-      @|rina/rocan/gui/RocanMainGUI.java|3339|3346|mouse_x|field|rina.rocan.gui.RocanMainGUI|mouse_x
-      @|rina/rocan/gui/RocanMainGUI.java|3349|3350|x|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|3360|3367|mouse_y|field|rina.rocan.gui.RocanMainGUI|mouse_y
-      @|rina/rocan/gui/RocanMainGUI.java|3370|3371|y|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|3383|3395|screen_width|field|rina.rocan.gui.RocanMainGUI|screen_width
-      @|rina/rocan/gui/RocanMainGUI.java|3399|3416|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
-      @|rina/rocan/gui/RocanMainGUI.java|3417|3431|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
-      @|rina/rocan/gui/RocanMainGUI.java|3443|3456|screen_height|field|rina.rocan.gui.RocanMainGUI|screen_height
-      @|rina/rocan/gui/RocanMainGUI.java|3459|3476|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
-      @|rina/rocan/gui/RocanMainGUI.java|3477|3492|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|rina/rocan/gui/RocanMainGUI.java|3312|3313|x|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|3319|3320|y|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|3339|3356|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
+      @|rina/rocan/gui/RocanMainGUI.java|3297|3307|refreshGUI|method|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V
+      @|rina/rocan/gui/RocanMainGUI.java|3322|3338|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
+      @|rina/rocan/gui/RocanMainGUI.java|3368|3375|mouse_x|field|rina.rocan.gui.RocanMainGUI|mouse_x
+      @|rina/rocan/gui/RocanMainGUI.java|3378|3379|x|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|3389|3396|mouse_y|field|rina.rocan.gui.RocanMainGUI|mouse_y
+      @|rina/rocan/gui/RocanMainGUI.java|3399|3400|y|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|3412|3424|screen_width|field|rina.rocan.gui.RocanMainGUI|screen_width
+      @|rina/rocan/gui/RocanMainGUI.java|3428|3445|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
+      @|rina/rocan/gui/RocanMainGUI.java|3446|3460|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|rina/rocan/gui/RocanMainGUI.java|3472|3485|screen_height|field|rina.rocan.gui.RocanMainGUI|screen_height
+      @|rina/rocan/gui/RocanMainGUI.java|3488|3505|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
+      @|rina/rocan/gui/RocanMainGUI.java|3506|3521|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
    Method End: refreshGUI(IILnet/minecraft/client/gui/ScaledResolution;)V
    Method Start: refreshFrame()V
-      @|rina/rocan/gui/RocanMainGUI.java|3516|3528|refreshFrame|method|rina.rocan.gui.RocanMainGUI|refreshFrame|()V
-      @|rina/rocan/gui/RocanMainGUI.java|3541|3551|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
-      @|rina/rocan/gui/RocanMainGUI.java|3552|3558|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
-      @|rina/rocan/gui/RocanMainGUI.java|3564|3577|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|3588|3598|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
-      @|rina/rocan/gui/RocanMainGUI.java|3599|3602|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/gui/RocanMainGUI.java|3608|3621|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|3545|3557|refreshFrame|method|rina.rocan.gui.RocanMainGUI|refreshFrame|()V
+      @|rina/rocan/gui/RocanMainGUI.java|3570|3580|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|3581|3587|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|rina/rocan/gui/RocanMainGUI.java|3593|3606|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|3617|3627|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|3628|3631|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/gui/RocanMainGUI.java|3637|3650|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
    Method End: refreshFrame()V
    Method Start: getScreenWidth()I
-      @|rina/rocan/gui/RocanMainGUI.java|3643|3657|getScreenWidth|method|rina.rocan.gui.RocanMainGUI|getScreenWidth|()I
-      @|rina/rocan/gui/RocanMainGUI.java|3677|3689|screen_width|field|rina.rocan.gui.RocanMainGUI|screen_width
+      @|rina/rocan/gui/RocanMainGUI.java|3672|3686|getScreenWidth|method|rina.rocan.gui.RocanMainGUI|getScreenWidth|()I
+      @|rina/rocan/gui/RocanMainGUI.java|3706|3718|screen_width|field|rina.rocan.gui.RocanMainGUI|screen_width
    Method End: getScreenWidth()I
    Method Start: getScreenHeight()I
-      @|rina/rocan/gui/RocanMainGUI.java|3710|3725|getScreenHeight|method|rina.rocan.gui.RocanMainGUI|getScreenHeight|()I
-      @|rina/rocan/gui/RocanMainGUI.java|3745|3758|screen_height|field|rina.rocan.gui.RocanMainGUI|screen_height
+      @|rina/rocan/gui/RocanMainGUI.java|3739|3754|getScreenHeight|method|rina.rocan.gui.RocanMainGUI|getScreenHeight|()I
+      @|rina/rocan/gui/RocanMainGUI.java|3774|3787|screen_height|field|rina.rocan.gui.RocanMainGUI|screen_height
    Method End: getScreenHeight()I
    Method Start: getMouseX()I
-      @|rina/rocan/gui/RocanMainGUI.java|3779|3788|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
-      @|rina/rocan/gui/RocanMainGUI.java|3808|3815|mouse_x|field|rina.rocan.gui.RocanMainGUI|mouse_x
+      @|rina/rocan/gui/RocanMainGUI.java|3808|3817|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
+      @|rina/rocan/gui/RocanMainGUI.java|3837|3844|mouse_x|field|rina.rocan.gui.RocanMainGUI|mouse_x
    Method End: getMouseX()I
    Method Start: getMouseY()I
-      @|rina/rocan/gui/RocanMainGUI.java|3836|3845|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
-      @|rina/rocan/gui/RocanMainGUI.java|3865|3872|mouse_y|field|rina.rocan.gui.RocanMainGUI|mouse_y
+      @|rina/rocan/gui/RocanMainGUI.java|3865|3874|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
+      @|rina/rocan/gui/RocanMainGUI.java|3894|3901|mouse_y|field|rina.rocan.gui.RocanMainGUI|mouse_y
    Method End: getMouseY()I
 Class End  : rina.rocan.gui.RocanMainGUI
 endProcessing "rina/rocan/gui/RocanMainGUI.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentModuleButton.java" md5: 998eece4eb4868311d934253c26f14d1
+startProcessing "rina/rocan/gui/component/RocanComponentModuleButton.java" md5: 8b7ee55c25ab2c8a43e70a871d731455
 @|rina/rocan/gui/component/RocanComponentModuleButton.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentModuleButton
    @|rina/rocan/gui/component/RocanComponentModuleButton.java|386|412|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
@@ -1853,258 +1856,321 @@ Class Start: rina.rocan.gui.component.RocanComponentModuleButton
    @|rina/rocan/gui/component/RocanComponentModuleButton.java|454|466|RocanMainGUI|class|rina.rocan.gui.RocanMainGUI|false
    @|rina/rocan/gui/component/RocanComponentModuleButton.java|454|466|RocanMainGUI|class|rina.rocan.gui.RocanMainGUI|false
    @|rina/rocan/gui/component/RocanComponentModuleButton.java|467|475|absolute|field|rina.rocan.gui.component.RocanComponentModuleButton|absolute|
-   @|rina/rocan/gui/component/RocanComponentModuleButton.java|489|498|TurokRect|class|rina.turok.TurokRect|false
-   @|rina/rocan/gui/component/RocanComponentModuleButton.java|489|498|TurokRect|class|rina.turok.TurokRect|false
-   @|rina/rocan/gui/component/RocanComponentModuleButton.java|499|503|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect|
-   @|rina/rocan/gui/component/RocanComponentModuleButton.java|521|527|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x|
-   @|rina/rocan/gui/component/RocanComponentModuleButton.java|543|549|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y|
-   @|rina/rocan/gui/component/RocanComponentModuleButton.java|571|583|state_button|field|rina.rocan.gui.component.RocanComponentModuleButton|state_button|
-   @|rina/rocan/gui/component/RocanComponentModuleButton.java|605|624|event_mouse_passing|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_passing|
-   @|rina/rocan/gui/component/RocanComponentModuleButton.java|644|663|event_mouse_clicked|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_clicked|
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|489|500|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|489|500|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|501|507|module|field|rina.rocan.gui.component.RocanComponentModuleButton|module|
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|521|530|TurokRect|class|rina.turok.TurokRect|false
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|521|530|TurokRect|class|rina.turok.TurokRect|false
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|531|535|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect|
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|553|559|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x|
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|575|581|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y|
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|603|615|state_button|field|rina.rocan.gui.component.RocanComponentModuleButton|state_button|
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|637|656|event_mouse_passing|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_passing|
+   @|rina/rocan/gui/component/RocanComponentModuleButton.java|676|695|event_mouse_clicked|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_clicked|
    Method Start: RocanComponentModuleButton(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|714|720|master|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|master|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|734|740|module|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|module|1
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|746|752|next_y|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|next_y|2
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|676|702|RocanComponentModuleButton|method|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|703|713|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|722|733|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|764|770|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|775|781|master|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|master|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|791|799|absolute|field|rina.rocan.gui.component.RocanComponentModuleButton|absolute
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|807|813|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|814|823|getMaster|method|rina.rocan.gui.frame.RocanFrame|getMaster|()Lrina/rocan/gui/RocanMainGUI;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|837|841|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|848|857|TurokRect|class|rina.turok.TurokRect|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|858|864|module|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|module|1
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|865|872|getName|method|rina.rocan.client.RocanModule|getName|()Ljava/lang/String;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|893|897|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|898|899|x|field|rina.turok.TurokRect|x
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|907|913|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|914|918|getX|method|rina.rocan.gui.frame.RocanFrame|getX|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|930|934|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|935|936|y|field|rina.turok.TurokRect|y
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|939|945|next_y|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|next_y|2
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|957|963|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|977|983|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|986|992|next_y|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|next_y|2
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1004|1008|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1009|1014|width|field|rina.turok.TurokRect|width
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1023|1029|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1030|1038|getWidth|method|rina.rocan.gui.frame.RocanFrame|getWidth|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1050|1054|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1055|1061|height|field|rina.turok.TurokRect|height
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1068|1079|TurokString|class|rina.turok.TurokString|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1080|1095|getStringHeight|method|rina.turok.TurokString|getStringHeight|(Ljava/lang/String;Z)I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1101|1105|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1106|1112|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1133|1146|resetAllEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|resetAllEvent|()V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1160|1172|state_button|field|rina.rocan.gui.component.RocanComponentModuleButton|state_button
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|746|752|master|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|master|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|766|772|module|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|module|1
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|778|784|next_y|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|next_y|2
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|708|734|RocanComponentModuleButton|method|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|735|745|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|754|765|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|796|802|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|807|813|master|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|master|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|823|831|absolute|field|rina.rocan.gui.component.RocanComponentModuleButton|absolute
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|839|845|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|846|855|getMaster|method|rina.rocan.gui.frame.RocanFrame|getMaster|()Lrina/rocan/gui/RocanMainGUI;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|869|875|module|field|rina.rocan.gui.component.RocanComponentModuleButton|module
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|878|884|module|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|module|1
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|896|900|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|907|916|TurokRect|class|rina.turok.TurokRect|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|922|928|module|field|rina.rocan.gui.component.RocanComponentModuleButton|module
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|929|936|getName|method|rina.rocan.client.RocanModule|getName|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|957|961|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|962|963|x|field|rina.turok.TurokRect|x
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|971|977|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|978|982|getX|method|rina.rocan.gui.frame.RocanFrame|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|994|998|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|999|1000|y|field|rina.turok.TurokRect|y
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1003|1009|next_y|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|next_y|2
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1021|1027|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1041|1047|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1050|1056|next_y|param|rina.rocan.gui.component.RocanComponentModuleButton|RocanComponentModuleButton|(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V|next_y|2
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1068|1072|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1073|1078|width|field|rina.turok.TurokRect|width
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1087|1093|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1094|1102|getWidth|method|rina.rocan.gui.frame.RocanFrame|getWidth|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1114|1118|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1119|1125|height|field|rina.turok.TurokRect|height
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1132|1143|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1144|1159|getStringHeight|method|rina.turok.TurokString|getStringHeight|(Ljava/lang/String;Z)I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1165|1169|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1170|1176|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1197|1210|resetAllEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|resetAllEvent|()V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1224|1236|state_button|field|rina.rocan.gui.component.RocanComponentModuleButton|state_button
    Method End: RocanComponentModuleButton(Lrina/rocan/gui/frame/RocanFrame;Lrina/rocan/client/RocanModule;I)V
    Method Start: resetAllEvent()V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1202|1215|resetAllEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|resetAllEvent|()V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1228|1247|event_mouse_passing|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_passing
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1265|1284|event_mouse_clicked|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_clicked
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1266|1279|resetAllEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|resetAllEvent|()V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1292|1311|event_mouse_passing|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_passing
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1329|1348|event_mouse_clicked|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_clicked
    Method End: resetAllEvent()V
    Method Start: setX(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1323|1324|x|param|rina.rocan.gui.component.RocanComponentModuleButton|setX|(I)V|x|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1314|1318|setX|method|rina.rocan.gui.component.RocanComponentModuleButton|setX|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1336|1340|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1341|1345|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1346|1347|x|param|rina.rocan.gui.component.RocanComponentModuleButton|setX|(I)V|x|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1387|1388|x|param|rina.rocan.gui.component.RocanComponentModuleButton|setX|(I)V|x|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1378|1382|setX|method|rina.rocan.gui.component.RocanComponentModuleButton|setX|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1400|1404|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1405|1409|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1410|1411|x|param|rina.rocan.gui.component.RocanComponentModuleButton|setX|(I)V|x|0
    Method End: setX(I)V
    Method Start: setY(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1379|1380|y|param|rina.rocan.gui.component.RocanComponentModuleButton|setY|(I)V|y|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1370|1374|setY|method|rina.rocan.gui.component.RocanComponentModuleButton|setY|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1392|1396|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1397|1401|setY|method|rina.turok.TurokRect|setY|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1402|1403|y|param|rina.rocan.gui.component.RocanComponentModuleButton|setY|(I)V|y|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1443|1444|y|param|rina.rocan.gui.component.RocanComponentModuleButton|setY|(I)V|y|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1434|1438|setY|method|rina.rocan.gui.component.RocanComponentModuleButton|setY|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1456|1460|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1461|1465|setY|method|rina.turok.TurokRect|setY|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1466|1467|y|param|rina.rocan.gui.component.RocanComponentModuleButton|setY|(I)V|y|0
    Method End: setY(I)V
    Method Start: setSaveX(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1439|1440|x|param|rina.rocan.gui.component.RocanComponentModuleButton|setSaveX|(I)V|x|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1426|1434|setSaveX|method|rina.rocan.gui.component.RocanComponentModuleButton|setSaveX|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1452|1458|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1461|1462|x|param|rina.rocan.gui.component.RocanComponentModuleButton|setSaveX|(I)V|x|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1503|1504|x|param|rina.rocan.gui.component.RocanComponentModuleButton|setSaveX|(I)V|x|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1490|1498|setSaveX|method|rina.rocan.gui.component.RocanComponentModuleButton|setSaveX|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1516|1522|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1525|1526|x|param|rina.rocan.gui.component.RocanComponentModuleButton|setSaveX|(I)V|x|0
    Method End: setSaveX(I)V
    Method Start: setSaveY(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1497|1498|y|param|rina.rocan.gui.component.RocanComponentModuleButton|setSaveY|(I)V|y|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1484|1492|setSaveY|method|rina.rocan.gui.component.RocanComponentModuleButton|setSaveY|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1510|1516|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1519|1520|y|param|rina.rocan.gui.component.RocanComponentModuleButton|setSaveY|(I)V|y|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1561|1562|y|param|rina.rocan.gui.component.RocanComponentModuleButton|setSaveY|(I)V|y|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1548|1556|setSaveY|method|rina.rocan.gui.component.RocanComponentModuleButton|setSaveY|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1574|1580|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1583|1584|y|param|rina.rocan.gui.component.RocanComponentModuleButton|setSaveY|(I)V|y|0
    Method End: setSaveY(I)V
    Method Start: setWidth(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1555|1560|width|param|rina.rocan.gui.component.RocanComponentModuleButton|setWidth|(I)V|width|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1542|1550|setWidth|method|rina.rocan.gui.component.RocanComponentModuleButton|setWidth|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1572|1576|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1577|1585|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1586|1591|width|param|rina.rocan.gui.component.RocanComponentModuleButton|setWidth|(I)V|width|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1619|1624|width|param|rina.rocan.gui.component.RocanComponentModuleButton|setWidth|(I)V|width|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1606|1614|setWidth|method|rina.rocan.gui.component.RocanComponentModuleButton|setWidth|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1636|1640|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1641|1649|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1650|1655|width|param|rina.rocan.gui.component.RocanComponentModuleButton|setWidth|(I)V|width|0
    Method End: setWidth(I)V
    Method Start: setHeight(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1628|1634|height|param|rina.rocan.gui.component.RocanComponentModuleButton|setHeight|(I)V|height|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1614|1623|setHeight|method|rina.rocan.gui.component.RocanComponentModuleButton|setHeight|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1646|1650|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1651|1660|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1661|1667|height|param|rina.rocan.gui.component.RocanComponentModuleButton|setHeight|(I)V|height|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1692|1698|height|param|rina.rocan.gui.component.RocanComponentModuleButton|setHeight|(I)V|height|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1678|1687|setHeight|method|rina.rocan.gui.component.RocanComponentModuleButton|setHeight|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1710|1714|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1715|1724|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1725|1731|height|param|rina.rocan.gui.component.RocanComponentModuleButton|setHeight|(I)V|height|0
    Method End: setHeight(I)V
    Method Start: setMousePassing(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1714|1719|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V|state|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1690|1705|setMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1731|1750|event_mouse_passing|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_passing
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1753|1758|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V|state|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1778|1783|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V|state|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1754|1769|setMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1795|1814|event_mouse_passing|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_passing
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1817|1822|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V|state|0
    Method End: setMousePassing(Z)V
    Method Start: setMouseClick(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1802|1807|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V|state|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1780|1793|setMouseClick|method|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1819|1838|event_mouse_clicked|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_clicked
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1841|1846|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V|state|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1866|1871|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V|state|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1844|1857|setMouseClick|method|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1883|1902|event_mouse_clicked|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_clicked
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1905|1910|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V|state|0
    Method End: setMouseClick(Z)V
    Method Start: setButtonOpen(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1890|1895|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V|state|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1868|1881|setButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1907|1919|state_button|field|rina.rocan.gui.component.RocanComponentModuleButton|state_button
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1922|1927|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V|state|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1954|1959|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V|state|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1932|1945|setButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1971|1983|state_button|field|rina.rocan.gui.component.RocanComponentModuleButton|state_button
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1986|1991|state|param|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V|state|0
    Method End: setButtonOpen(Z)V
    Method Start: getRect()Lrina/turok/TurokRect;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1944|1953|TurokRect|class|rina.turok.TurokRect|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1954|1961|getRect|method|rina.rocan.gui.component.RocanComponentModuleButton|getRect|()Lrina/turok/TurokRect;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|1981|1985|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2008|2017|TurokRect|class|rina.turok.TurokRect|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2018|2025|getRect|method|rina.rocan.gui.component.RocanComponentModuleButton|getRect|()Lrina/turok/TurokRect;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2045|2049|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
    Method End: getRect()Lrina/turok/TurokRect;
    Method Start: getMaster()Lrina/rocan/gui/frame/RocanFrame;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2002|2012|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2013|2022|getMaster|method|rina.rocan.gui.component.RocanComponentModuleButton|getMaster|()Lrina/rocan/gui/frame/RocanFrame;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2042|2048|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2066|2076|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2077|2086|getMaster|method|rina.rocan.gui.component.RocanComponentModuleButton|getMaster|()Lrina/rocan/gui/frame/RocanFrame;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2106|2112|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
    Method End: getMaster()Lrina/rocan/gui/frame/RocanFrame;
    Method Start: getName()Ljava/lang/String;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2066|2072|String|class|java.lang.String|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2073|2080|getName|method|rina.rocan.gui.component.RocanComponentModuleButton|getName|()Ljava/lang/String;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2100|2104|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2105|2111|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2130|2136|String|class|java.lang.String|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2137|2144|getName|method|rina.rocan.gui.component.RocanComponentModuleButton|getName|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2164|2168|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2169|2175|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
    Method End: getName()Ljava/lang/String;
    Method Start: getX()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2134|2138|getX|method|rina.rocan.gui.component.RocanComponentModuleButton|getX|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2158|2162|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2163|2167|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2198|2202|getX|method|rina.rocan.gui.component.RocanComponentModuleButton|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2222|2226|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2227|2231|getX|method|rina.turok.TurokRect|getX|()I
    Method End: getX()I
    Method Start: getY()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2190|2194|getY|method|rina.rocan.gui.component.RocanComponentModuleButton|getY|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2214|2218|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2219|2223|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2254|2258|getY|method|rina.rocan.gui.component.RocanComponentModuleButton|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2278|2282|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2283|2287|getY|method|rina.turok.TurokRect|getY|()I
    Method End: getY()I
    Method Start: getSaveX()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2246|2254|getSaveX|method|rina.rocan.gui.component.RocanComponentModuleButton|getSaveX|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2274|2280|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2310|2318|getSaveX|method|rina.rocan.gui.component.RocanComponentModuleButton|getSaveX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2338|2344|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
    Method End: getSaveX()I
    Method Start: getSaveY()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2301|2309|getSaveY|method|rina.rocan.gui.component.RocanComponentModuleButton|getSaveY|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2329|2335|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2365|2373|getSaveY|method|rina.rocan.gui.component.RocanComponentModuleButton|getSaveY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2393|2399|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y
    Method End: getSaveY()I
    Method Start: getWidth()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2356|2364|getWidth|method|rina.rocan.gui.component.RocanComponentModuleButton|getWidth|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2384|2388|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2389|2397|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2420|2428|getWidth|method|rina.rocan.gui.component.RocanComponentModuleButton|getWidth|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2448|2452|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2453|2461|getWidth|method|rina.turok.TurokRect|getWidth|()I
    Method End: getWidth()I
    Method Start: getHeight()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2420|2429|getHeight|method|rina.rocan.gui.component.RocanComponentModuleButton|getHeight|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2449|2453|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2454|2463|getHeight|method|rina.turok.TurokRect|getHeight|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2484|2493|getHeight|method|rina.rocan.gui.component.RocanComponentModuleButton|getHeight|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2513|2517|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2518|2527|getHeight|method|rina.turok.TurokRect|getHeight|()I
    Method End: getHeight()I
    Method Start: isMousePassing()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2490|2504|isMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|isMousePassing|()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2524|2543|event_mouse_passing|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_passing
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2554|2568|isMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|isMousePassing|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2588|2607|event_mouse_passing|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_passing
    Method End: isMousePassing()Z
    Method Start: isMouseClicked()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2568|2582|isMouseClicked|method|rina.rocan.gui.component.RocanComponentModuleButton|isMouseClicked|()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2602|2621|event_mouse_clicked|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_clicked
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2632|2646|isMouseClicked|method|rina.rocan.gui.component.RocanComponentModuleButton|isMouseClicked|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2666|2685|event_mouse_clicked|field|rina.rocan.gui.component.RocanComponentModuleButton|event_mouse_clicked
    Method End: isMouseClicked()Z
    Method Start: isButtonOpen()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2646|2658|isButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|isButtonOpen|()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2678|2690|state_button|field|rina.rocan.gui.component.RocanComponentModuleButton|state_button
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2710|2722|isButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|isButtonOpen|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2742|2754|state_button|field|rina.rocan.gui.component.RocanComponentModuleButton|state_button
    Method End: isButtonOpen()Z
    Method Start: click(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2722|2727|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|click|(I)V|mouse|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2712|2717|click|method|rina.rocan.gui.component.RocanComponentModuleButton|click|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2738|2743|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|click|(I)V|mouse|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2760|2774|isMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|isMousePassing|()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2785|2798|setMouseClick|method|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2818|2830|isButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|isButtonOpen|()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2842|2855|setButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2883|2896|setButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2786|2791|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|click|(I)V|mouse|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2776|2781|click|method|rina.rocan.gui.component.RocanComponentModuleButton|click|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2802|2807|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|click|(I)V|mouse|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2824|2838|isMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|isMousePassing|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2849|2862|setMouseClick|method|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2882|2888|module|field|rina.rocan.gui.component.RocanComponentModuleButton|module
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2889|2895|toggle|method|rina.rocan.client.RocanModule|toggle|()V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2932|2938|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2939|2957|setFrameCancelDrag|method|rina.rocan.gui.frame.RocanFrame|setFrameCancelDrag|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2985|2990|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|click|(I)V|mouse|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3007|3021|isMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|isMousePassing|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3032|3045|setButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|setButtonOpen|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3047|3059|isButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|isButtonOpen|()Z
    Method End: click(I)V
    Method Start: release(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2955|2960|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|release|(I)V|mouse|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2943|2950|release|method|rina.rocan.gui.component.RocanComponentModuleButton|release|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2971|2976|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|release|(I)V|mouse|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|2989|3002|setMouseClick|method|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3107|3112|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|release|(I)V|mouse|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3095|3102|release|method|rina.rocan.gui.component.RocanComponentModuleButton|release|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3123|3128|mouse|param|rina.rocan.gui.component.RocanComponentModuleButton|release|(I)V|mouse|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3141|3154|setMouseClick|method|rina.rocan.gui.component.RocanComponentModuleButton|setMouseClick|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3194|3200|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3201|3219|setFrameCancelDrag|method|rina.rocan.gui.frame.RocanFrame|setFrameCancelDrag|(Z)V
    Method End: release(I)V
    Method Start: render()V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3036|3042|render|method|rina.rocan.gui.component.RocanComponentModuleButton|render|()V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3050|3062|updateAction|method|rina.rocan.gui.component.RocanComponentModuleButton|updateAction|(II)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3068|3076|absolute|field|rina.rocan.gui.component.RocanComponentModuleButton|absolute
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3077|3086|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3095|3103|absolute|field|rina.rocan.gui.component.RocanComponentModuleButton|absolute
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3104|3113|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3127|3141|isMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|isMousePassing|()Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3151|3164|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3165|3170|color|method|rina.turok.TurokRenderGL|color|(IIII)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3196|3209|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3210|3223|drawSolidRect|method|rina.turok.TurokRenderGL|drawSolidRect|(Lrina/turok/TurokRect;)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3229|3233|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3242|3253|TurokString|class|rina.turok.TurokString|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3254|3266|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3272|3276|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3277|3283|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3292|3296|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3297|3301|getX|method|rina.turok.TurokRect|getX|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3314|3318|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3319|3323|getY|method|rina.turok.TurokRect|getY|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3376|3389|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3390|3395|color|method|rina.turok.TurokRenderGL|color|(IIII)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3421|3434|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3435|3448|drawSolidRect|method|rina.turok.TurokRenderGL|drawSolidRect|(Lrina/turok/TurokRect;)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3454|3458|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3467|3478|TurokString|class|rina.turok.TurokString|false
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3479|3491|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3497|3501|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3502|3508|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3517|3521|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3522|3526|getX|method|rina.turok.TurokRect|getX|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3539|3543|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3544|3548|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3253|3259|render|method|rina.rocan.gui.component.RocanComponentModuleButton|render|()V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3267|3279|updateAction|method|rina.rocan.gui.component.RocanComponentModuleButton|updateAction|(II)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3285|3293|absolute|field|rina.rocan.gui.component.RocanComponentModuleButton|absolute
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3294|3303|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3312|3320|absolute|field|rina.rocan.gui.component.RocanComponentModuleButton|absolute
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3321|3330|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3344|3358|isMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|isMousePassing|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3377|3383|module|field|rina.rocan.gui.component.RocanComponentModuleButton|module
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3384|3392|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3403|3416|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3417|3422|color|method|rina.turok.TurokRenderGL|color|(IIII)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3445|3458|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3459|3472|drawSolidRect|method|rina.turok.TurokRenderGL|drawSolidRect|(Lrina/turok/TurokRect;)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3478|3482|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3492|3503|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3504|3516|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3522|3526|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3527|3533|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3542|3546|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3547|3551|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3564|3568|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3569|3573|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3628|3641|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3642|3647|color|method|rina.turok.TurokRenderGL|color|(IIII)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3674|3687|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3688|3701|drawSolidRect|method|rina.turok.TurokRenderGL|drawSolidRect|(Lrina/turok/TurokRect;)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3707|3711|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3721|3732|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3733|3745|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3751|3755|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3756|3762|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3771|3775|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3776|3780|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3793|3797|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3798|3802|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3870|3876|module|field|rina.rocan.gui.component.RocanComponentModuleButton|module
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3877|3885|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3896|3909|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3910|3915|color|method|rina.turok.TurokRenderGL|color|(IIII)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3938|3951|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3952|3965|drawSolidRect|method|rina.turok.TurokRenderGL|drawSolidRect|(Lrina/turok/TurokRect;)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3971|3975|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3985|3996|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3997|4009|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4015|4019|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4020|4026|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4035|4039|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4040|4044|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4057|4061|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4062|4066|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4121|4134|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4135|4140|color|method|rina.turok.TurokRenderGL|color|(IIII)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4167|4180|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4181|4194|drawSolidRect|method|rina.turok.TurokRenderGL|drawSolidRect|(Lrina/turok/TurokRect;)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4200|4204|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4214|4225|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4226|4238|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4244|4248|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4249|4255|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4264|4268|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4269|4273|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4286|4290|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4291|4295|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4352|4364|isButtonOpen|method|rina.rocan.gui.component.RocanComponentModuleButton|isButtonOpen|()Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4374|4385|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4386|4398|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4409|4413|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4414|4418|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4428|4432|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4433|4441|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4446|4457|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4458|4472|getStringWidth|method|rina.turok.TurokString|getStringWidth|(Ljava/lang/String;Z)I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4494|4498|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4499|4503|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4556|4567|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4568|4580|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4591|4595|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4596|4600|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4610|4614|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4615|4623|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4628|4639|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4640|4654|getStringWidth|method|rina.turok.TurokString|getStringWidth|(Ljava/lang/String;Z)I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4676|4680|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4681|4685|getY|method|rina.turok.TurokRect|getY|()I
    Method End: render()V
    Method Start: updateEvent(II)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3626|3627|x|param|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V|x|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3633|3634|y|param|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V|y|1
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3610|3621|updateEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3650|3654|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3655|3662|collide|method|rina.turok.TurokRect|collide|(II)Z
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3663|3664|x|param|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V|x|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3666|3667|y|param|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V|y|1
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3676|3691|setMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3715|3730|setMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4763|4764|x|param|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V|x|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4770|4771|y|param|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V|y|1
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4747|4758|updateEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4787|4791|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4792|4799|collide|method|rina.turok.TurokRect|collide|(II)Z
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4800|4801|x|param|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V|x|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4803|4804|y|param|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V|y|1
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4813|4828|setMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4852|4867|setMousePassing|method|rina.rocan.gui.component.RocanComponentModuleButton|setMousePassing|(Z)V
    Method End: updateEvent(II)V
    Method Start: updateAction(II)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3781|3782|x|param|rina.rocan.gui.component.RocanComponentModuleButton|updateAction|(II)V|x|0
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3788|3789|y|param|rina.rocan.gui.component.RocanComponentModuleButton|updateAction|(II)V|y|1
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3764|3776|updateAction|method|rina.rocan.gui.component.RocanComponentModuleButton|updateAction|(II)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3801|3805|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3806|3810|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3816|3822|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3823|3827|getX|method|rina.rocan.gui.frame.RocanFrame|getX|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3837|3843|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3854|3858|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3859|3863|setY|method|rina.turok.TurokRect|setY|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3869|3875|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3876|3880|getY|method|rina.rocan.gui.frame.RocanFrame|getY|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3890|3896|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3907|3911|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3912|3920|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3926|3932|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3933|3941|getWidth|method|rina.rocan.gui.frame.RocanFrame|getWidth|()I
-      @|rina/rocan/gui/component/RocanComponentModuleButton.java|3951|3957|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4918|4919|x|param|rina.rocan.gui.component.RocanComponentModuleButton|updateAction|(II)V|x|0
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4925|4926|y|param|rina.rocan.gui.component.RocanComponentModuleButton|updateAction|(II)V|y|1
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4901|4913|updateAction|method|rina.rocan.gui.component.RocanComponentModuleButton|updateAction|(II)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4938|4942|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4943|4947|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4953|4959|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4960|4964|getX|method|rina.rocan.gui.frame.RocanFrame|getX|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4974|4980|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4991|4995|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|4996|5000|setY|method|rina.turok.TurokRect|setY|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|5006|5012|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|5013|5017|getY|method|rina.rocan.gui.frame.RocanFrame|getY|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|5027|5033|save_y|field|rina.rocan.gui.component.RocanComponentModuleButton|save_y
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|5044|5048|rect|field|rina.rocan.gui.component.RocanComponentModuleButton|rect
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|5049|5057|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|5063|5069|master|field|rina.rocan.gui.component.RocanComponentModuleButton|master
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|5070|5078|getWidth|method|rina.rocan.gui.frame.RocanFrame|getWidth|()I
+      @|rina/rocan/gui/component/RocanComponentModuleButton.java|5088|5094|save_x|field|rina.rocan.gui.component.RocanComponentModuleButton|save_x
    Method End: updateAction(II)V
 Class End  : rina.rocan.gui.component.RocanComponentModuleButton
 endProcessing "rina/rocan/gui/component/RocanComponentModuleButton.java"
 
-startProcessing "rina/rocan/gui/frame/RocanFrame.java" md5: 6d60c4d16931886f24adc3939aafe99b
+startProcessing "rina/rocan/gui/frame/RocanFrame.java" md5: bde4a14f07f5fac46f7db4dd5e671a25
 @|rina/rocan/gui/frame/RocanFrame.java|8|28|rina.rocan.gui.frame|package|rina.rocan.gui.frame|(file)
 Class Start: rina.rocan.gui.frame.RocanFrame
    @|rina/rocan/gui/frame/RocanFrame.java|467|477|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
@@ -2337,89 +2403,97 @@ Class Start: rina.rocan.gui.frame.RocanFrame
    Method Start: click(I)V
       @|rina/rocan/gui/frame/RocanFrame.java|4246|4251|mouse|param|rina.rocan.gui.frame.RocanFrame|click|(I)V|mouse|0
       @|rina/rocan/gui/frame/RocanFrame.java|4236|4241|click|method|rina.rocan.gui.frame.RocanFrame|click|(I)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4263|4289|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
+      @|rina/rocan/gui/frame/RocanFrame.java|4312|4340|component_module_button_list|field|rina.rocan.gui.frame.RocanFrame|component_module_button_list
+      @|rina/rocan/gui/frame/RocanFrame.java|4363|4368|click|method|rina.rocan.gui.component.RocanComponentModuleButton|click|(I)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4369|4374|mouse|param|rina.rocan.gui.frame.RocanFrame|click|(I)V|mouse|0
    Method End: click(I)V
    Method Start: release(I)V
-      @|rina/rocan/gui/frame/RocanFrame.java|4284|4289|mouse|param|rina.rocan.gui.frame.RocanFrame|release|(I)V|mouse|0
-      @|rina/rocan/gui/frame/RocanFrame.java|4272|4279|release|method|rina.rocan.gui.frame.RocanFrame|release|(I)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4414|4419|mouse|param|rina.rocan.gui.frame.RocanFrame|release|(I)V|mouse|0
+      @|rina/rocan/gui/frame/RocanFrame.java|4402|4409|release|method|rina.rocan.gui.frame.RocanFrame|release|(I)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4431|4457|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
+      @|rina/rocan/gui/frame/RocanFrame.java|4480|4508|component_module_button_list|field|rina.rocan.gui.frame.RocanFrame|component_module_button_list
+      @|rina/rocan/gui/frame/RocanFrame.java|4531|4538|release|method|rina.rocan.gui.component.RocanComponentModuleButton|release|(I)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4539|4544|mouse|param|rina.rocan.gui.frame.RocanFrame|release|(I)V|mouse|0
    Method End: release(I)V
    Method Start: render()V
-      @|rina/rocan/gui/frame/RocanFrame.java|4310|4316|render|method|rina.rocan.gui.frame.RocanFrame|render|()V
-      @|rina/rocan/gui/frame/RocanFrame.java|4324|4335|updateEvent|method|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V
-      @|rina/rocan/gui/frame/RocanFrame.java|4341|4347|master|field|rina.rocan.gui.frame.RocanFrame|master
-      @|rina/rocan/gui/frame/RocanFrame.java|4348|4357|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|4366|4372|master|field|rina.rocan.gui.frame.RocanFrame|master
-      @|rina/rocan/gui/frame/RocanFrame.java|4373|4382|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|4390|4403|updateActions|method|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V
-      @|rina/rocan/gui/frame/RocanFrame.java|4409|4415|master|field|rina.rocan.gui.frame.RocanFrame|master
-      @|rina/rocan/gui/frame/RocanFrame.java|4416|4425|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|4434|4440|master|field|rina.rocan.gui.frame.RocanFrame|master
-      @|rina/rocan/gui/frame/RocanFrame.java|4441|4450|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|4460|4473|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/gui/frame/RocanFrame.java|4474|4479|color|method|rina.turok.TurokRenderGL|color|(IIII)V
-      @|rina/rocan/gui/frame/RocanFrame.java|4498|4511|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/gui/frame/RocanFrame.java|4512|4527|drawRoundedRect|method|rina.turok.TurokRenderGL|drawRoundedRect|(Lrina/turok/TurokRect;F)V
-      @|rina/rocan/gui/frame/RocanFrame.java|4533|4537|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|4548|4559|TurokString|class|rina.turok.TurokString|false
-      @|rina/rocan/gui/frame/RocanFrame.java|4560|4572|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
-      @|rina/rocan/gui/frame/RocanFrame.java|4578|4582|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|4583|4589|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
-      @|rina/rocan/gui/frame/RocanFrame.java|4598|4602|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|4603|4607|getX|method|rina.turok.TurokRect|getX|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|4618|4622|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|4623|4631|getWidth|method|rina.turok.TurokRect|getWidth|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|4641|4652|TurokString|class|rina.turok.TurokString|false
-      @|rina/rocan/gui/frame/RocanFrame.java|4653|4667|getStringWidth|method|rina.turok.TurokString|getStringWidth|(Ljava/lang/String;Z)I
-      @|rina/rocan/gui/frame/RocanFrame.java|4673|4677|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|4678|4684|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
-      @|rina/rocan/gui/frame/RocanFrame.java|4704|4708|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|4709|4713|getY|method|rina.turok.TurokRect|getY|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|4760|4786|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
-      @|rina/rocan/gui/frame/RocanFrame.java|4809|4837|component_module_button_list|field|rina.rocan.gui.frame.RocanFrame|component_module_button_list
-      @|rina/rocan/gui/frame/RocanFrame.java|4860|4866|render|method|rina.rocan.gui.component.RocanComponentModuleButton|render|()V
+      @|rina/rocan/gui/frame/RocanFrame.java|4572|4578|render|method|rina.rocan.gui.frame.RocanFrame|render|()V
+      @|rina/rocan/gui/frame/RocanFrame.java|4586|4597|updateEvent|method|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4603|4609|master|field|rina.rocan.gui.frame.RocanFrame|master
+      @|rina/rocan/gui/frame/RocanFrame.java|4610|4619|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|4628|4634|master|field|rina.rocan.gui.frame.RocanFrame|master
+      @|rina/rocan/gui/frame/RocanFrame.java|4635|4644|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|4652|4665|updateActions|method|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4671|4677|master|field|rina.rocan.gui.frame.RocanFrame|master
+      @|rina/rocan/gui/frame/RocanFrame.java|4678|4687|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|4696|4702|master|field|rina.rocan.gui.frame.RocanFrame|master
+      @|rina/rocan/gui/frame/RocanFrame.java|4703|4712|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|4722|4735|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/frame/RocanFrame.java|4736|4741|color|method|rina.turok.TurokRenderGL|color|(IIII)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4760|4773|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/frame/RocanFrame.java|4774|4789|drawRoundedRect|method|rina.turok.TurokRenderGL|drawRoundedRect|(Lrina/turok/TurokRect;F)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4795|4799|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|4810|4821|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/frame/RocanFrame.java|4822|4834|renderString|method|rina.turok.TurokString|renderString|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/gui/frame/RocanFrame.java|4840|4844|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|4845|4851|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
+      @|rina/rocan/gui/frame/RocanFrame.java|4860|4864|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|4865|4869|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|4880|4884|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|4885|4893|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|4903|4914|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/gui/frame/RocanFrame.java|4915|4929|getStringWidth|method|rina.turok.TurokString|getStringWidth|(Ljava/lang/String;Z)I
+      @|rina/rocan/gui/frame/RocanFrame.java|4935|4939|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|4940|4946|getTag|method|rina.turok.TurokRect|getTag|()Ljava/lang/String;
+      @|rina/rocan/gui/frame/RocanFrame.java|4966|4970|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|4971|4975|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|5022|5048|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
+      @|rina/rocan/gui/frame/RocanFrame.java|5071|5099|component_module_button_list|field|rina.rocan.gui.frame.RocanFrame|component_module_button_list
+      @|rina/rocan/gui/frame/RocanFrame.java|5122|5128|render|method|rina.rocan.gui.component.RocanComponentModuleButton|render|()V
    Method End: render()V
    Method Start: refreshFrame()V
-      @|rina/rocan/gui/frame/RocanFrame.java|4895|4907|refreshFrame|method|rina.rocan.gui.frame.RocanFrame|refreshFrame|()V
-      @|rina/rocan/gui/frame/RocanFrame.java|4920|4946|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
-      @|rina/rocan/gui/frame/RocanFrame.java|4969|4997|component_module_button_list|field|rina.rocan.gui.frame.RocanFrame|component_module_button_list
-      @|rina/rocan/gui/frame/RocanFrame.java|5020|5031|updateEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5037|5043|master|field|rina.rocan.gui.frame.RocanFrame|master
-      @|rina/rocan/gui/frame/RocanFrame.java|5044|5053|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|5062|5068|master|field|rina.rocan.gui.frame.RocanFrame|master
-      @|rina/rocan/gui/frame/RocanFrame.java|5069|5078|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|5157|5169|refreshFrame|method|rina.rocan.gui.frame.RocanFrame|refreshFrame|()V
+      @|rina/rocan/gui/frame/RocanFrame.java|5182|5208|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
+      @|rina/rocan/gui/frame/RocanFrame.java|5231|5259|component_module_button_list|field|rina.rocan.gui.frame.RocanFrame|component_module_button_list
+      @|rina/rocan/gui/frame/RocanFrame.java|5282|5293|updateEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|updateEvent|(II)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5299|5305|master|field|rina.rocan.gui.frame.RocanFrame|master
+      @|rina/rocan/gui/frame/RocanFrame.java|5306|5315|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|5324|5330|master|field|rina.rocan.gui.frame.RocanFrame|master
+      @|rina/rocan/gui/frame/RocanFrame.java|5331|5340|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
    Method End: refreshFrame()V
    Method Start: resetFrame()V
-      @|rina/rocan/gui/frame/RocanFrame.java|5108|5118|resetFrame|method|rina.rocan.gui.frame.RocanFrame|resetFrame|()V
-      @|rina/rocan/gui/frame/RocanFrame.java|5131|5157|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
-      @|rina/rocan/gui/frame/RocanFrame.java|5180|5208|component_module_button_list|field|rina.rocan.gui.frame.RocanFrame|component_module_button_list
-      @|rina/rocan/gui/frame/RocanFrame.java|5231|5244|resetAllEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|resetAllEvent|()V
+      @|rina/rocan/gui/frame/RocanFrame.java|5370|5380|resetFrame|method|rina.rocan.gui.frame.RocanFrame|resetFrame|()V
+      @|rina/rocan/gui/frame/RocanFrame.java|5393|5419|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
+      @|rina/rocan/gui/frame/RocanFrame.java|5442|5470|component_module_button_list|field|rina.rocan.gui.frame.RocanFrame|component_module_button_list
+      @|rina/rocan/gui/frame/RocanFrame.java|5493|5506|resetAllEvent|method|rina.rocan.gui.component.RocanComponentModuleButton|resetAllEvent|()V
    Method End: resetFrame()V
    Method Start: updateEvent(II)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5289|5290|x|param|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V|x|0
-      @|rina/rocan/gui/frame/RocanFrame.java|5296|5297|y|param|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V|y|1
-      @|rina/rocan/gui/frame/RocanFrame.java|5273|5284|updateEvent|method|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5313|5317|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|5318|5325|collide|method|rina.turok.TurokRect|collide|(II)Z
-      @|rina/rocan/gui/frame/RocanFrame.java|5326|5327|x|param|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V|x|0
-      @|rina/rocan/gui/frame/RocanFrame.java|5329|5330|y|param|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V|y|1
-      @|rina/rocan/gui/frame/RocanFrame.java|5339|5354|setMousePassing|method|rina.rocan.gui.frame.RocanFrame|setMousePassing|(Z)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5378|5393|setMousePassing|method|rina.rocan.gui.frame.RocanFrame|setMousePassing|(Z)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5416|5428|isMouseClick|method|rina.rocan.gui.frame.RocanFrame|isMouseClick|()Z
-      @|rina/rocan/gui/frame/RocanFrame.java|5438|5454|setFrameDragging|method|rina.rocan.gui.frame.RocanFrame|setFrameDragging|(Z)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5478|5494|setFrameDragging|method|rina.rocan.gui.frame.RocanFrame|setFrameDragging|(Z)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5551|5552|x|param|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V|x|0
+      @|rina/rocan/gui/frame/RocanFrame.java|5558|5559|y|param|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V|y|1
+      @|rina/rocan/gui/frame/RocanFrame.java|5535|5546|updateEvent|method|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5575|5579|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|5580|5587|collide|method|rina.turok.TurokRect|collide|(II)Z
+      @|rina/rocan/gui/frame/RocanFrame.java|5588|5589|x|param|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V|x|0
+      @|rina/rocan/gui/frame/RocanFrame.java|5591|5592|y|param|rina.rocan.gui.frame.RocanFrame|updateEvent|(II)V|y|1
+      @|rina/rocan/gui/frame/RocanFrame.java|5601|5616|setMousePassing|method|rina.rocan.gui.frame.RocanFrame|setMousePassing|(Z)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5640|5655|setMousePassing|method|rina.rocan.gui.frame.RocanFrame|setMousePassing|(Z)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5678|5690|isMouseClick|method|rina.rocan.gui.frame.RocanFrame|isMouseClick|()Z
+      @|rina/rocan/gui/frame/RocanFrame.java|5700|5716|setFrameDragging|method|rina.rocan.gui.frame.RocanFrame|setFrameDragging|(Z)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5740|5756|setFrameDragging|method|rina.rocan.gui.frame.RocanFrame|setFrameDragging|(Z)V
    Method End: updateEvent(II)V
    Method Start: updateActions(II)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5546|5547|x|param|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V|x|0
-      @|rina/rocan/gui/frame/RocanFrame.java|5553|5554|y|param|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V|y|1
-      @|rina/rocan/gui/frame/RocanFrame.java|5528|5541|updateActions|method|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5565|5580|isFrameDragging|method|rina.rocan.gui.frame.RocanFrame|isFrameDragging|()Z
-      @|rina/rocan/gui/frame/RocanFrame.java|5595|5599|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|5600|5604|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5605|5606|x|param|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V|x|0
-      @|rina/rocan/gui/frame/RocanFrame.java|5609|5617|getMoveX|method|rina.rocan.gui.frame.RocanFrame|getMoveX|()I
-      @|rina/rocan/gui/frame/RocanFrame.java|5631|5635|rect|field|rina.rocan.gui.frame.RocanFrame|rect
-      @|rina/rocan/gui/frame/RocanFrame.java|5636|5640|setY|method|rina.turok.TurokRect|setY|(I)V
-      @|rina/rocan/gui/frame/RocanFrame.java|5641|5642|y|param|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V|y|1
-      @|rina/rocan/gui/frame/RocanFrame.java|5645|5653|getMoveY|method|rina.rocan.gui.frame.RocanFrame|getMoveY|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|5808|5809|x|param|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V|x|0
+      @|rina/rocan/gui/frame/RocanFrame.java|5815|5816|y|param|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V|y|1
+      @|rina/rocan/gui/frame/RocanFrame.java|5790|5803|updateActions|method|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5827|5842|isFrameDragging|method|rina.rocan.gui.frame.RocanFrame|isFrameDragging|()Z
+      @|rina/rocan/gui/frame/RocanFrame.java|5857|5861|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|5862|5866|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5867|5868|x|param|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V|x|0
+      @|rina/rocan/gui/frame/RocanFrame.java|5871|5879|getMoveX|method|rina.rocan.gui.frame.RocanFrame|getMoveX|()I
+      @|rina/rocan/gui/frame/RocanFrame.java|5893|5897|rect|field|rina.rocan.gui.frame.RocanFrame|rect
+      @|rina/rocan/gui/frame/RocanFrame.java|5898|5902|setY|method|rina.turok.TurokRect|setY|(I)V
+      @|rina/rocan/gui/frame/RocanFrame.java|5903|5904|y|param|rina.rocan.gui.frame.RocanFrame|updateActions|(II)V|y|1
+      @|rina/rocan/gui/frame/RocanFrame.java|5907|5915|getMoveY|method|rina.rocan.gui.frame.RocanFrame|getMoveY|()I
    Method End: updateActions(II)V
 Class End  : rina.rocan.gui.frame.RocanFrame
 endProcessing "rina/rocan/gui/frame/RocanFrame.java"

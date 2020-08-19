@@ -70,6 +70,7 @@ public class RocanMainGUI extends GuiScreen {
 		for (RocanModule.Category categories : RocanModule.Category.values()) {
 			RocanFrame new_frame = new RocanFrame(this, categories);
 
+			new_frame.setY(10);
 			new_frame.setX(this.default_position_x);
 
 			this.default_position_x = new_frame.getX() + new_frame.getWidth() + 1;
@@ -82,6 +83,8 @@ public class RocanMainGUI extends GuiScreen {
 
 	@Override
 	public void mouseClicked(int x, int y, int mouse) {
+		this.focused_frame.click(mouse);
+
 		if (mouse == 0) {
 			if (this.focused_frame.isMousePassing() && !this.focused_frame.isFrameCancelingClick()) {
 				refreshFrame();
@@ -96,6 +99,8 @@ public class RocanMainGUI extends GuiScreen {
 
 	@Override
 	public void mouseReleased(int x, int y, int mouse) {
+		this.focused_frame.release(mouse);
+
 		for (RocanFrame frames : this.frame_list) {
 			if (mouse == 0) {
 				if (frames.isMouseClick()) {
@@ -122,9 +127,7 @@ public class RocanMainGUI extends GuiScreen {
 				this.focused_frame = frames;
 			}
 
-			if (!frames.getName().equals(this.focused_frame.getName())) {
-				frames.resetFrame();
-			}
+			frames.resetFrame();
 		}
 
 		this.focused_frame.refreshFrame();
