@@ -121,7 +121,13 @@ public class RocanMainGUI extends GuiScreen {
 			if (frames.verifyFrame(x, y)) {
 				this.focused_frame = frames;
 			}
+
+			if (!frames.getName().equals(this.focused_frame.getName())) {
+				frames.resetFrame();
+			}
 		}
+
+		this.focused_frame.refreshFrame();
 
 		GL11.glDisable(GL11.GL_TEXTURE_2D);
 		GL11.glDisable(GL11.GL_BLEND);

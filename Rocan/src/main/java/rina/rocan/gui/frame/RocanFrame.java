@@ -57,13 +57,13 @@ public class RocanFrame {
 		this.component_module_button_list = new ArrayList<>();
 
 		this.rect.width  = 100;
-		this.rect.height = 3 + TurokString.getStringHeight(this.rect.getTag(), true) + 1;
+		this.rect.height = 2 + TurokString.getStringHeight(this.rect.getTag(), true) + 2;
 
 		this.move_x = 0;
 		this.move_y = 0;
 
 		this.save_width  = 0;
-		this.save_height = this.rect.height + 1;
+		this.save_height = this.rect.height + 2;
 
 		resetAllEvent();
 		loadWidgets();
@@ -147,6 +147,10 @@ public class RocanFrame {
 		return this.rect.getTag();
 	}
 
+	public TurokRect getRect() {
+		return this.rect;
+	}
+
 	public int getX() {
 		return this.rect.getX();
 	}
@@ -209,9 +213,15 @@ public class RocanFrame {
 		TurokRenderGL.drawRoundedRect(this.rect, 1);
 
 		TurokString.renderString(this.rect.getTag(), this.rect.getX() + (this.rect.getWidth() / 2) - TurokString.getStringWidth(this.rect.getTag(), true) / 2, this.rect.getY() + 3, 255, 255, 255, false, true);
-	
+
 		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
 			module_buttons.render();
+		}
+	}
+
+	public void refreshFrame() {
+		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
+			module_buttons.updateEvent(this.master.getMouseX(), this.master.getMouseY());
 		}
 	}
 
