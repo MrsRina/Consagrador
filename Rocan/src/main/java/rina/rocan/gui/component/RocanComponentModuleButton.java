@@ -1,16 +1,24 @@
 package rina.rocan.gui.component;
 
+// Java.
+import java.util.*;
+
 // GUI.
+import rina.rocan.gui.widget.RocanWidget;
 import rina.rocan.gui.frame.RocanFrame;
 import rina.rocan.gui.RocanMainGUI;
 
 // Client.
+import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
 // Turok.
 import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
 import rina.turok.TurokRect;
+
+// Rocan.
+import rina.rocan.Rocan;
 
 /**
   *
@@ -26,10 +34,15 @@ public class RocanComponentModuleButton {
 
 	private RocanModule module;
 
+	private ArrayList<RocanWidget> setting_widget_list;
+
 	private TurokRect rect;
 
 	private int save_x;
 	private int save_y;
+
+	private int save_width;
+	private int save_height;
 
 	private boolean state_button;
 
@@ -40,22 +53,68 @@ public class RocanComponentModuleButton {
 		this.master   = master;
 		this.absolute = this.master.getMaster();
 
+		this.setting_widget_list = new ArrayList<>();
+
 		this.module = module;
 
 		this.rect = new TurokRect(this.module.getName(), 0, 0);
 
-		this.rect.x = this.master.getX();
-		this.rect.y = next_y;
+		this.rect.setX(this.master.getX());
+		this.rect.setY(next_y);
+
+		this.rect.setWidth(this.master.getWidth());
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 
 		this.save_x = 2;
 		this.save_y = next_y;
 
-		this.rect.width  = this.master.getWidth();
-		this.rect.height = 3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3;
-	
+		this.save_width  = 0;
+		this.save_height = this.rect.getHeight() + 1;
+
+		loadWidgets();
+
 		resetAllEvent();
 
 		this.state_button = false;
+	}
+
+	public void loadWidgets() {
+		int size  = Rocan.getSettingManager().getSettingListByModule(this.module).size();
+		int count = 0;
+
+		for (RocanSetting settings : Rocan.getSettingManager().getSettingListByModule(this.module)) {
+			if (settings.getType() == RocanSetting.SettingType.SETTING_BOOLEAN) {
+				RocanComponentWidgetSettingBoolean widgets = new RocanComponentWidgetSettingBoolean(this, settings, this.save_height);
+
+				this.setting_widget_list.add(widgets);
+
+				count++;
+
+				this.save_height += widgets.getHeight() + 1;
+			} else if (settings.getType() == RocanSetting.SettingType.SETTING_STRING) {
+				RocanComponentWidgetSettingString widgets = new RocanComponentWidgetSettingString(this, settings, this.save_height);
+
+				this.setting_widget_list.add(widgets);
+
+				count++;
+
+				this.save_height += widgets.getHeight() + 1;
+			} else if (settings.getType() == RocanSetting.SettingType.SETTING_MACRO && !(settings.getTag().equals(settings.getMaster().getTag() + "Bind"))) {
+				RocanComponentWidgetSettingMacro widgets = new RocanComponentWidgetSettingMacro(this, settings, this.save_height);
+
+				this.setting_widget_list.add(widgets);
+
+				count++;
+
+				this.save_height += widgets.getHeight() + 1;
+			}
+		}
+
+		RocanComponentWidgetSettingMacro widgets = new RocanComponentWidgetSettingMacro(this, Rocan.getSettingManager().getSettingByTag(this.module.getTag() + "Bind"), this.save_height);
+
+		this.setting_widget_list.add(widgets);
+
+		this.save_height += widgets.getHeight() + 1;
 	}
 
 	public void resetAllEvent() {
@@ -85,6 +144,14 @@ public class RocanComponentModuleButton {
 
 	public void setHeight(int height) {
 		this.rect.setHeight(height);
+	}
+
+	public void setSaveWidth(int width) {
+		this.save_width = width;
+	}
+
+	public void setSaveHeight(int height) {
+		this.save_height = height;
 	}
 
 	public void setMousePassing(boolean state) {
@@ -135,6 +202,14 @@ public class RocanComponentModuleButton {
 		return this.rect.getHeight();
 	}
 
+	public int getSaveWidth() {
+		return this.save_width;
+	}
+
+	public int getSaveHeight() {
+		return this.save_height;
+	}
+
 	public boolean isMousePassing() {
 		return this.event_mouse_passing;
 	}
@@ -147,7 +222,25 @@ public class RocanComponentModuleButton {
 		return this.state_button;
 	}
 
+	public void keyboard(char char_, int key) {
+		for (RocanWidget widgets : this.setting_widget_list) {
+			widgets.keyboard(char_, key);
+		}
+	}
+
+	public void refreshFocus(int x, int y, int mouse) {
+		for (RocanWidget widgets : this.setting_widget_list) {
+			widgets.refreshFocus(x, y, mouse);
+		}
+	}
+
 	public void click(int mouse) {
+		if (isButtonOpen()) {
+			for (RocanWidget widgets : this.setting_widget_list) {
+				widgets.click(mouse);
+			}
+		}
+
 		if (mouse == 0) {
 			if (isMousePassing()) {
 				setMouseClick(true);
@@ -162,11 +255,17 @@ public class RocanComponentModuleButton {
 		if (mouse == 1) {
 			if (isMousePassing()) {
 				setButtonOpen(!isButtonOpen());
+
+				this.master.resizeHeight();
 			}
 		}
 	}
 
 	public void release(int mouse) {
+		for (RocanWidget widgets : this.setting_widget_list) {
+			widgets.release(mouse);
+		}
+
 		if (mouse == 0) {
 			setMouseClick(false);
 
@@ -204,8 +303,13 @@ public class RocanComponentModuleButton {
 			}
 		}
 
+
 		if (isButtonOpen()) {
 			TurokString.renderString("-", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("-", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
+
+			for (RocanWidget widgets : this.setting_widget_list) {
+				widgets.render();
+			}
 		} else {
 			TurokString.renderString("+", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("+", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
 		}
@@ -219,9 +323,22 @@ public class RocanComponentModuleButton {
 		}
 	}
 
+	public void updateEventWidget() {
+		for (RocanWidget widgets : this.setting_widget_list) {
+			widgets.updateEvent(this.absolute.getMouseX(), this.absolute.getMouseY());
+		}
+	}
+
+	public void resetAllEventWidget() {
+		for (RocanWidget widgets : this.setting_widget_list) {
+			widgets.resetAllEvent();
+		}
+	}
+
 	public void updateAction(int x, int y) {
 		this.rect.setX(this.master.getX() + this.save_x);
 		this.rect.setY(this.master.getY() + this.save_y);
 		this.rect.setWidth(this.master.getWidth() - this.save_x * 2);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	}
 }

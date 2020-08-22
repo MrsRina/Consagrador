@@ -49,7 +49,7 @@ public class RocanFileManager {
 			this.loadConfiguration();
 			this.loadModules();
 		} catch (IOException exc) {
-			exc.printStackTrace();
+			// exc.printStackTrace();
 		}
 	}
 
@@ -61,7 +61,7 @@ public class RocanFileManager {
 			this.saveConfiguration();
 			this.saveModules();
 		} catch (IOException exc) {
-			exc.printStackTrace();
+			// exc.printStackTrace();
 		}
 	}
 
@@ -113,8 +113,6 @@ public class RocanFileManager {
 	
 			MAIN_JSON.add("Name", new JsonPrimitive(modules.getName()));
 			MAIN_JSON.add("Tag", new JsonPrimitive(modules.getTag()));
-			MAIN_JSON.add("Bind", new JsonPrimitive(modules.getKeyBind()));
-			MAIN_JSON.add("State", new JsonPrimitive(modules.getState()));
 
 			MAIN_JSON.add("SettingList", modules.getJsonObjectSettingList());
 
@@ -140,14 +138,12 @@ public class RocanFileManager {
 
 			JsonObject MAIN_JSON = new JsonParser().parse(new InputStreamReader(JSON_FILE)).getAsJsonObject();
 
-			if (MAIN_JSON.get("Name") == null || MAIN_JSON.get("Tag") == null || MAIN_JSON.get("Bind") == null) {
+			if (MAIN_JSON.get("Name") == null || MAIN_JSON.get("Tag") == null) {
 				continue;
 			}
 
 			RocanModule module_requested = Rocan.getModuleManager().getModuleByTag(MAIN_JSON.get("Tag").getAsString());
 
-			module_requested.setKeyBind(MAIN_JSON.get("Bind").getAsInt());
-			module_requested.setState(MAIN_JSON.get("State").getAsBoolean());
 			module_requested.loadSettingListFromJsonObject(MAIN_JSON.get("SettingList").getAsJsonObject());
 
 			JSON_FILE.close();

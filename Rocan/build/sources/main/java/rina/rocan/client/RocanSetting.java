@@ -61,6 +61,17 @@ public class RocanSetting<T> {
 		this.value_string = value;
 	}
 
+	public RocanSetting(RocanModule master, String[] details, int value, boolean state) {
+		this.master = master;
+
+		this.name        = details[0];
+		this.tag         = details[1];
+		this.description = details[2];
+
+		this.value_integer = value;
+		this.value_boolean = state;
+	}
+
 	public RocanSetting(RocanModule master, String[] details, int value, int min, int max) {
 		this.master = master;
 
@@ -173,6 +184,7 @@ public class RocanSetting<T> {
 	public enum SettingType {
 		SETTING_BOOLEAN,
 		SETTING_STRING,
+		SETTING_MACRO,
 		SETTING_INTEGER,
 		SETTING_DOUBLE,
 		SETTING_LIST;

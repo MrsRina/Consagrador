@@ -130,14 +130,6 @@ public class RocanModuleManager {
 		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
 	}
 
-	public void onPressedKeyBind(int key) {
-		for (RocanModule modules : getModuleList()) {
-			if (modules.getKeyBind() == key) {
-				modules.toggle();
-			}
-		}
-	}
-
 	public ArrayList<RocanModule> getModuleList() {
 		return this.module_list;
 	}

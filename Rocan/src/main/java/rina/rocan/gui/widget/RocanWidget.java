@@ -15,6 +15,9 @@ public abstract class RocanWidget {
 	public void setWidth(int width) {}
 	public void setHeight(int height) {}
 
+	public void resetAllEvent() {}
+	public void updateEvent(int x, int y) {}
+
 	public int getX() {
 		return 0;
 	}
@@ -31,6 +34,8 @@ public abstract class RocanWidget {
 		return 0;
 	}
 
+	public void keyboard(char char_, int key) {}
+	public void refreshFocus(int x, int y, int mouse) {}
 	public void click(int mouse) {}
 	public void release(int mouse) {}
 	public void render() {}

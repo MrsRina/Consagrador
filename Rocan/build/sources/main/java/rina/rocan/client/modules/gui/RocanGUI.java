@@ -5,6 +5,9 @@ import rina.rocan.client.RocanModule.Category;
 import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanModule;
 
+// Util.
+import rina.rocan.util.RocanUtilClient;
+
 // Rocan.
 import rina.rocan.Rocan;
 
@@ -18,16 +21,20 @@ import rina.rocan.Rocan;
  **/
 @Define(name = "GUI", tag = "GUI", description = "GUI click.", category = Category.ROCAN_GUI)
 public class RocanGUI extends RocanModule {
-	boolean show_gui;
+	boolean show_gui = true;
 
 	@Override
 	public void onEnable() {
 		show_gui = true;
+
+		RocanUtilClient.sendNotifyClient("true");
 	}
 
 	@Override
 	public void onDisable() {
-		mc.displayGuiScreen(null);
+		show_gui = true;
+
+		RocanUtilClient.sendNotifyClient("false");
 	}
 
 	@Override

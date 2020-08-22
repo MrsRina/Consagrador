@@ -18,4 +18,13 @@ import rina.rocan.util.RocanUtilClient;
  *
  **/
 @Define(name = "Dev Module 3", tag = "DevModule3", description = "To dev", category = Category.ROCAN_DEV)
-public class RocanTestModule3 extends RocanModule {}
+public class RocanTestModule3 extends RocanModule {
+	RocanSetting override_stand = createSetting(new String[] {"Rect", "DevModuleRect", "REtard"}, 0, false);
+
+	@Override
+	public void onUpdate() {
+		if (override_stand.getBoolean()) {
+			RocanUtilClient.sendNotifyClient("u are chad!");
+		}
+	}
+}

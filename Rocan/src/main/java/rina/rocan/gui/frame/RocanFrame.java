@@ -56,14 +56,14 @@ public class RocanFrame {
 
 		this.component_module_button_list = new ArrayList<>();
 
-		this.rect.width  = 100;
-		this.rect.height = 2 + TurokString.getStringHeight(this.rect.getTag(), true) + 2;
+		this.rect.setWidth(102);
+		this.rect.setHeight(2 + TurokString.getStringHeight(this.rect.getTag(), true) + 2);
 
 		this.move_x = 0;
 		this.move_y = 0;
 
 		this.save_width  = 0;
-		this.save_height = this.rect.height + 2;
+		this.save_height = this.rect.getHeight() + 2;
 
 		resetAllEvent();
 		loadWidgets();
@@ -88,14 +88,35 @@ public class RocanFrame {
 			count++;
 
 			if (count >= size) {
-				this.rect.height = this.save_height + module_button.getHeight() + 2;
+				this.rect.setHeight(this.save_height + module_button.getHeight() + 2);
+
 				this.save_height = module_button.getY() + module_button.getHeight() + 2;
 			} else {
-				this.rect.height = this.save_height + module_button.getHeight();
+				this.rect.setHeight(this.save_height + module_button.getHeight());
+
 				this.save_height = module_button.getY() + 1;
 			}
 
 			this.component_module_button_list.add(module_button);
+		}
+	}
+
+	public void resizeHeight() {
+		int size  = Rocan.getModuleManager().getModuleListByCategory(this.category).size();
+		int count = 0;
+
+		this.rect.setHeight(2 + TurokString.getStringHeight(this.rect.getTag(), true) + 2 + 2);
+
+		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
+			count++;
+
+			module_buttons.setSaveY(this.rect.getHeight());
+
+			if (module_buttons.isButtonOpen()) {
+				this.rect.height += module_buttons.getSaveHeight() + (count >= size ? 1 : 0);
+			} else {
+				this.rect.height += module_buttons.getHeight() + (count >= size ? 2 : 1);
+			}
 		}
 	}
 
@@ -198,7 +219,25 @@ public class RocanFrame {
 			can = true;
 		}
 
+		if (isMouseClick()) {
+			can = true;
+		}
+
+		if (isFrameDragging()) {
+			can = true;
+		}
+
+		if (isFrameCancelingClick()) {
+			can = true;
+		}
+
 		return can;
+	}
+
+	public void keyboard(char char_, int key) {
+		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
+			module_buttons.keyboard(char_, key);
+		}
 	}
 
 	public void click(int mouse) {
@@ -230,12 +269,20 @@ public class RocanFrame {
 	public void refreshFrame() {
 		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
 			module_buttons.updateEvent(this.master.getMouseX(), this.master.getMouseY());
+			module_buttons.updateEventWidget();
 		}
 	}
 
 	public void resetFrame() {
 		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
 			module_buttons.resetAllEvent();
+			module_buttons.resetAllEventWidget();
+		}
+	}
+
+	public void refreshFocus(int x, int y, int mouse) {
+		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
+			module_buttons.refreshFocus(x, y, mouse);
 		}
 	}
 

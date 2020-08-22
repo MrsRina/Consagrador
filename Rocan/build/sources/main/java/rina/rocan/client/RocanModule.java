@@ -42,20 +42,18 @@ public class RocanModule {
 
 	public final Minecraft mc = Minecraft.getMinecraft();
 
-	private int key_bind;
+	private RocanSetting setting_module;
 
-	private boolean state_module;
 	private boolean show_hud_arraylist;
 
 	public RocanModule() {
-		this.key_bind = 0;
+		this.setting_module = createSetting(new String[] {"Bind", tag + "Bind", "Key bind to module."}, 0, false);
 
 		this.show_hud_arraylist = true;
-		this.state_module       = false;
 	}
 
 	public void setState(boolean value) {
-		if (value != this.state_module) {
+		if (value != this.setting_module.getBoolean()) {
 			if (value) {
 				setEnable();
 			} else {
@@ -64,16 +62,12 @@ public class RocanModule {
 		}
 	}
 
-	public void setKeyBind(int value) {
-		this.key_bind = value;
-	}
-
 	public void toggle() {
 		setState(!getState());
 	}
 
 	public void setEnable() {
-		this.state_module = true;
+		this.setting_module.setBoolean(true);
 
 		onEnable();
 
@@ -81,7 +75,7 @@ public class RocanModule {
 	}
 
 	public void setDisable() {
-		this.state_module = false;
+		this.setting_module.setBoolean(false);
 
 		onDisable();
 
@@ -105,16 +99,16 @@ public class RocanModule {
 	}
 
 	public int getKeyBind() {
-		return this.key_bind;
+		return this.setting_module.getInteger();
 	}
 
 	public boolean getState() {
-		return this.state_module;
+		return this.setting_module.getBoolean();
 	}
 
 	// Overrides.
-	protected void onEnable() {}
-	protected void onDisable() {}
+	public void onEnable() {}
+	public void onDisable() {}
 
 	public void onUpdate() {}
 	public void onRender() {}
@@ -164,19 +158,29 @@ public class RocanModule {
 
 	public void loadSettingListFromJsonObject(JsonObject object_cache) {
 		for (RocanSetting settings : setting_list) {
+			if (object_cache.get(settings.getTag()) == null) {
+				continue;
+			}
+
 			JsonObject SETTING = object_cache.get(settings.getTag()).getAsJsonObject();
 
-			if (SETTING.get("Name") == null || SETTING.get("Tag") == null || SETTING.get("Type") == null) {
+			if (SETTING != null && SETTING.get("Name") == null || SETTING.get("Tag") == null || SETTING.get("Type") == null) {
 				continue;
 			}
 
 			if (SETTING.get("Boolean") != null) {
 				settings.setBoolean(SETTING.get("Boolean").getAsBoolean());
-			} else if (SETTING.get("String") != null) {
+			}
+
+			if (SETTING.get("String") != null) {
 				settings.setString(SETTING.get("String").getAsString());
-			} else if (SETTING.get("Integer") != null) {
+			}
+
+			if (SETTING.get("Integer") != null) {
 				settings.setInteger(SETTING.get("Integer").getAsInt());
-			} else if (SETTING.get("Double") != null) {
+			}
+
+			if (SETTING.get("Double") != null) {
 				settings.setDouble(SETTING.get("Double").getAsDouble());
 			}
 		}
@@ -192,16 +196,20 @@ public class RocanModule {
 			SETTING.add("Tag", new JsonPrimitive(settings.getTag()));
 			SETTING.add("Type", new JsonPrimitive(settings.getType().name().replace("SETTING_", "")));
 
-			if (settings.getType() == RocanSetting.SettingType.SETTING_BOOLEAN) {
+			if (settings.getType() == RocanSetting.SettingType.SETTING_BOOLEAN || settings.getType() == RocanSetting.SettingType.SETTING_MACRO) {
 				SETTING.add("Boolean", new JsonPrimitive(settings.getBoolean()));
-			} else if (settings.getType() == RocanSetting.SettingType.SETTING_STRING) {
+			}
+
+			if (settings.getType() == RocanSetting.SettingType.SETTING_STRING || settings.getType() == RocanSetting.SettingType.SETTING_LIST) {
 				SETTING.add("String", new JsonPrimitive(settings.getString()));
-			} else if (settings.getType() == RocanSetting.SettingType.SETTING_INTEGER) {
+			}
+
+			if (settings.getType() == RocanSetting.SettingType.SETTING_INTEGER || settings.getType() == RocanSetting.SettingType.SETTING_MACRO) {
 				SETTING.add("Integer", new JsonPrimitive(settings.getInteger()));
-			} else if (settings.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
+			}
+
+			if (settings.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
 				SETTING.add("Double", new JsonPrimitive(settings.getDouble()));
-			} else if (settings.getType() == RocanSetting.SettingType.SETTING_LIST) {
-				SETTING.add("String", new JsonPrimitive(settings.getString()));
 			}
 
 			MAIN_SETTING_LIST.add(settings.getTag(), SETTING);
@@ -230,6 +238,19 @@ public class RocanModule {
 
 		Rocan.getSettingManager().addSetting(new RocanSetting(this, details, value));
 		Rocan.getSettingManager().getSettingByTag(details[1]).setType(RocanSetting.SettingType.SETTING_STRING);
+
+		setting_list.add(Rocan.getSettingManager().getSettingByTag(details[1]));
+
+		return Rocan.getSettingManager().getSettingByTag(details[1]);
+	}
+
+	protected RocanSetting createSetting(String[] details, int value, boolean state) {
+		if (setting_list == null) {
+			setting_list = new ArrayList<>();
+		}
+
+		Rocan.getSettingManager().addSetting(new RocanSetting(this, details, value, state));
+		Rocan.getSettingManager().getSettingByTag(details[1]).setType(RocanSetting.SettingType.SETTING_MACRO);
 
 		setting_list.add(Rocan.getSettingManager().getSettingByTag(details[1]));
 

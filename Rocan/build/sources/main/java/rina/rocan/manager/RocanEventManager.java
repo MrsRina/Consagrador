@@ -72,7 +72,7 @@ public class RocanEventManager {
 	@SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
 	public void onKeyInput(InputEvent.KeyInputEvent event) {
 		if (Keyboard.getEventKeyState()) {
-			Rocan.getModuleManager().onPressedKeyBind(Keyboard.getEventKey());
+			Rocan.getSettingManager().onKeyEvent(Keyboard.getEventKey());
 		}
 	}
 

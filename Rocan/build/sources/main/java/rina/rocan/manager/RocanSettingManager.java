@@ -26,6 +26,22 @@ public class RocanSettingManager {
 		this.setting_list.add(setting);
 	}
 
+	public void onKeyEvent(int key) {
+		for (RocanSetting settings : getSettingList()) {
+			if (settings.getType() != RocanSetting.SettingType.SETTING_MACRO) {
+				continue;
+			}
+
+			if (settings.getInteger() == key) {
+				settings.setBoolean(!settings.getBoolean());
+
+				if (settings.getName().equals("Bind")) {
+					settings.getMaster().setState(settings.getBoolean());
+				}
+			}
+		}
+	}
+
 	public ArrayList<RocanSetting> getSettingList() {
 		return this.setting_list;
 	}
@@ -41,7 +57,7 @@ public class RocanSettingManager {
 	}
 
 	public ArrayList<RocanSetting> getSettingListByModule(RocanModule module) {
-		ArrayList<RocanSetting> settings_requested = null;
+		ArrayList<RocanSetting> settings_requested = new ArrayList<>();
 
 		for (RocanSetting settings : getSettingList()) {
 			if (settings.getMaster().equals(module)) {

@@ -21,6 +21,10 @@ import java.io.IOException;
 import java.util.*;
 import java.awt.*;
 
+// Turok.
+import rina.turok.TurokRenderGL;
+import rina.turok.TurokRect;
+
 // GUI.
 import rina.rocan.gui.frame.RocanFrame;
 
@@ -28,8 +32,10 @@ import rina.rocan.gui.frame.RocanFrame;
 import rina.rocan.client.RocanModule;
 
 // Util.
-import rina.turok.TurokRenderGL;
-import rina.turok.TurokRect;
+import rina.rocan.util.RocanUtilMinecraftHelper;
+
+// Rocan.
+import rina.rocan.Rocan;
 
 /**
   *
@@ -52,6 +58,8 @@ public class RocanMainGUI extends GuiScreen {
 
 	private RocanFrame focused_frame;
 
+	private boolean event_cancel_close_gui;
+
 	public RocanMainGUI() {
 		this.frame_list = new ArrayList<>();
 
@@ -62,6 +70,8 @@ public class RocanMainGUI extends GuiScreen {
 		this.screen_height = 0;
 
 		this.default_position_x = 10; // 10 for default.
+
+		this.event_cancel_close_gui = false;
 
 		loadFrames();
 	}
@@ -82,7 +92,36 @@ public class RocanMainGUI extends GuiScreen {
 	}
 
 	@Override
+	public boolean doesGuiPauseGame() {
+		return false;
+	}
+
+	@Override
+	public void onGuiClosed() {
+		if (Rocan.getModuleManager().getModuleByTag("GUI").getState()) {
+			Rocan.getModuleManager().getModuleByTag("GUI").setState(false);
+		}
+	}
+
+	@Override
+	public void keyTyped(char char_, int key) {
+		this.focused_frame.keyboard(char_, key);
+
+		if (key == Keyboard.KEY_ESCAPE && !isCancelledToCloseGUI()) {
+			RocanUtilMinecraftHelper.getMinecraft().displayGuiScreen(null);
+		}
+	}
+
+	@Override
 	public void mouseClicked(int x, int y, int mouse) {
+		for (RocanFrame frames : this.frame_list) {
+			frames.refreshFocus(x, y, mouse);
+
+			if (frames.verifyFrame(x, y)) {
+				this.focused_frame = frames;
+			}
+		}
+
 		this.focused_frame.click(mouse);
 
 		if (mouse == 0) {
@@ -112,7 +151,7 @@ public class RocanMainGUI extends GuiScreen {
 
 	@Override
 	public void drawScreen(int x, int y, float partial_ticks) {
-		ScaledResolution scaled_resolution = new ScaledResolution(Minecraft.getMinecraft());
+		ScaledResolution scaled_resolution = new ScaledResolution(RocanUtilMinecraftHelper.getMinecraft());
 
 		TurokRenderGL.fixScreen(scaled_resolution.getScaledWidth(), scaled_resolution.getScaledHeight());
 
@@ -152,6 +191,10 @@ public class RocanMainGUI extends GuiScreen {
 		this.frame_list.add(this.focused_frame);
 	}
 
+	public void setCancelToCloseGUI(boolean state) {
+		this.event_cancel_close_gui = state;
+	}
+
 	public int getScreenWidth() {
 		return this.screen_width;
 	}
@@ -166,5 +209,9 @@ public class RocanMainGUI extends GuiScreen {
 
 	public int getMouseY() {
 		return this.mouse_y;
+	}
+
+	public boolean isCancelledToCloseGUI() {
+		return this.event_cancel_close_gui;
 	}
 }
