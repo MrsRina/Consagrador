@@ -35,6 +35,7 @@ import rina.rocan.util.RocanUtilMath;
 public class RocanStrafe extends RocanModule {
 	RocanSetting onground_move = createSetting(new String[] {"OnGround", "OnGround", "Make movement in ground"}, true);
 	RocanSetting auto_jump     = createSetting(new String[] {"Auto Jump", "AutoJump", "Auto jump to strafe"}, false);
+	RocanSetting effective     = createSetting(new String[] {"Effective", "Effective", "Effective"}, false);
 
 	private double speed;
 
@@ -60,7 +61,11 @@ public class RocanStrafe extends RocanModule {
 			}
 		}
 
-		speed = 0.2873d;
+		if (effective.getBoolean()) {
+			speed = 0.2873d;
+		} else {
+			speed = 0.2875d;
+		}
 
 		double[] player_movement = RocanUtilMath.transformStrafeMovement(mc.player);
 
@@ -84,12 +89,16 @@ public class RocanStrafe extends RocanModule {
 	}
 
 	public void multiplicJumpSpeed(RocanEventPlayerMove event) {
-		double new_motion_y = 0.40123128;
+		double new_motion_y = 0.40223128;
 
 		if (mc.player.onGround) {
 			event.setY(mc.player.motionY = new_motion_y);
 
-			speed *= 2.140;
+			if (effective.getBoolean()) {
+				speed *= 2.149;
+			} else {
+				speed *= 2.149;
+			}
 		}
 	}
 }
