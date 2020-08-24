@@ -40,7 +40,7 @@ public class RocanModule {
 
 	private final Category category = getAnnotation().category();
 
-	public final Minecraft mc = Minecraft.getMinecraft();
+	public static final Minecraft mc = Minecraft.getMinecraft();
 
 	private RocanSetting setting_module;
 
@@ -53,7 +53,7 @@ public class RocanModule {
 	}
 
 	public void setState(boolean value) {
-		if (value != this.setting_module.getBoolean()) {
+		if (this.setting_module.getBoolean() != value) {
 			if (value) {
 				setEnable();
 			} else {
@@ -134,10 +134,10 @@ public class RocanModule {
 	}
 
 	public enum Category {
-		ROCAN_DEV("Rocan Dev", "Dev"),
 		ROCAN_EXPLOIT("Rocan Exploit", "Exploit"),
 		ROCAN_RENDER("Rocan Render", "Render"),
-		ROCAN_GUI("Rocan GUI", "GUI");
+		ROCAN_GUI("Rocan GUI", "GUI"),
+		ROCAN_MOVEMENT("Rocan Movement", "Movement");
 
 		String name;
 		String tag;

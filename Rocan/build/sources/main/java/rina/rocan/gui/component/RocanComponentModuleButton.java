@@ -107,6 +107,14 @@ public class RocanComponentModuleButton {
 				count++;
 
 				this.save_height += widgets.getHeight() + 1;
+			} else if (settings.getType() == RocanSetting.SettingType.SETTING_INTEGER || settings.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
+				RocanComponentWidgetSettingSlider widgets = new RocanComponentWidgetSettingSlider(this, settings, this.save_height);
+
+				this.setting_widget_list.add(widgets);
+
+				count++;
+
+				this.save_height += widgets.getHeight() + 1;
 			}
 		}
 

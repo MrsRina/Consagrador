@@ -24,6 +24,7 @@ import java.util.Map;
   * 15/08/2020.
   *
   **/
+@IFMLLoadingPlugin.MCVersion("1.12.2")
 public class RocanMixinLoader implements IFMLLoadingPlugin {
 	public RocanMixinLoader() {
 		MixinBootstrap.init();

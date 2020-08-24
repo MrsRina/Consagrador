@@ -45,7 +45,7 @@ public class RocanComponentWidgetSettingBoolean extends RocanWidget {
 
 		this.setting = setting;
 
-		this.rect = new TurokRect(this.master.getName(), 0, 0);
+		this.rect = new TurokRect(this.setting.getName(), 0, 0);
 
 		this.rect.setX(this.master.getX());
 		this.rect.setY(next_y);

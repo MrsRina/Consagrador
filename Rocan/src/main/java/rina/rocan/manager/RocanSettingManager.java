@@ -33,10 +33,10 @@ public class RocanSettingManager {
 			}
 
 			if (settings.getInteger() == key) {
-				settings.setBoolean(!settings.getBoolean());
-
-				if (settings.getName().equals("Bind")) {
-					settings.getMaster().setState(settings.getBoolean());
+				if (settings.getTag().equals(settings.getMaster().getTag() + "Bind")) {
+					settings.getMaster().toggle();
+				} else {
+					settings.setBoolean(!settings.getBoolean());
 				}
 			}
 		}

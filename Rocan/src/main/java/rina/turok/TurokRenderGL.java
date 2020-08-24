@@ -101,11 +101,11 @@ public class TurokRenderGL {
 			GL11.glVertex2d(x + width - radius, y);
 			GL11.glVertex2d(x + radius, y);
 
-			GL11.glVertex2d(x + width - radius, y+radius);
-			GL11.glVertex2d(x + width - radius, y+radius);
+			GL11.glVertex2d(x + width - radius, y + radius);
+			GL11.glVertex2d(x + width - radius, y + radius);
 
 			GL11.glVertex2d(x + radius, y);
-			GL11.glVertex2d(x + radius, y+radius);
+			GL11.glVertex2d(x + radius, y + radius);
 
 			GL11.glVertex2d(x + width, y + radius);
 			GL11.glVertex2d(x, y + radius);

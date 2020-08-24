@@ -65,6 +65,8 @@ public class Rocan {
 		MinecraftForge.EVENT_BUS.register(command_manager);
 		MinecraftForge.EVENT_BUS.register(event_manager);
 
+		file_manager.loadClient();
+
 		// Load gui.
 		rocan_gui = new RocanMainGUI();
 

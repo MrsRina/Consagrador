@@ -22,8 +22,7 @@ import rina.rocan.event.render.RocanEventRender;
 import rina.rocan.client.modules.render.*;
 // import rina.rocan.client.modules.misc.*;
 import rina.rocan.client.modules.exploit.*;
-// import rina.rocan.client.modules.movement.*;
-import rina.rocan.client.modules.dev.*;
+import rina.rocan.client.modules.movement.*;
 import rina.rocan.client.modules.gui.*;
 
 // Client.
@@ -48,15 +47,15 @@ public class RocanModuleManager {
 	public RocanModuleManager() {
 		this.module_list = new ArrayList<>();
 
-		addModule(new RocanTestModule());
-		addModule(new RocanTestModule2());
-		addModule(new RocanTestModule3());
-
 		// Exploit.
 		addModule(new RocanXCarry());
 
 		// Render.
 		addModule(new RocanBlockHighlight());
+
+		// Movement.
+		addModule(new RocanStrafe());
+		addModule(new RocanGUIWalk());
 
 		// GUI.
 		addModule(new RocanGUI());

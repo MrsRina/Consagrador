@@ -5,6 +5,9 @@
 	"refmap"             : "mixins.rocan.refmap.json",
 	"mixins"             : [
 		"RocanMixinNetworkManager",
-		"RocanMixinMinecraft"
+		"RocanMixinEntityPlayerSP",
+		"RocanMixinEntityPlayer",
+		"RocanMixinMinecraft",
+		"RocanMixinEntity"
 	]
 }

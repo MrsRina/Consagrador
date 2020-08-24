@@ -40,9 +40,9 @@ import rina.rocan.Rocan;
 public class RocanMixinMinecraft {
 	@Inject(method = "displayGuiScreen", at = @At("HEAD"))
 	private void displayGuiScreen(GuiScreen actual_guiscreen, CallbackInfo info) {
-		RocanEventGUI event_gui = new RocanEventGUI(actual_guiscreen);
+		RocanEventGUI event = new RocanEventGUI(actual_guiscreen);
 
-		Rocan.getPomeloEventManager().dispatchEvent(event_gui);
+		Rocan.getPomeloEventManager().dispatchEvent(event);
 	}
 
 	@Inject(method = "shutdown", at = @At("HEAD"))

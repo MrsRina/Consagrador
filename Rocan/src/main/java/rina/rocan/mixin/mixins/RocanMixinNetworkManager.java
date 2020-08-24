@@ -35,22 +35,22 @@ import rina.rocan.Rocan;
 public class RocanMixinNetworkManager {
 	@Inject(method = "sendPacket(Lnet/minecraft/network/Packet;)V", at = @At("HEAD"), cancellable = true)
 	private void send(Packet<?> packet, CallbackInfo callback) {
-		RocanEventPacketSend send_packet_event = new RocanEventPacketSend(RocanEventStageable.EventStage.PRE, packet);
+		RocanEventPacketSend event = new RocanEventPacketSend(RocanEventStageable.EventStage.PRE, packet);
 
-		Rocan.getPomeloEventManager().dispatchEvent(send_packet_event);
+		Rocan.getPomeloEventManager().dispatchEvent(event);
 
-		if (send_packet_event.isCanceled()) {
+		if (event.isCanceled()) {
 			callback.cancel();
 		}
 	}
 
 	@Inject(method = "channelRead0", at = @At("HEAD"), cancellable = true)
 	private void receive(ChannelHandlerContext context, Packet<?> packet, CallbackInfo callback) {
-		RocanEventPacketReceive receive_packet_event = new RocanEventPacketReceive(RocanEventStageable.EventStage.POST, packet);
+		RocanEventPacketReceive event = new RocanEventPacketReceive(RocanEventStageable.EventStage.POST, packet);
 
-		Rocan.getPomeloEventManager().dispatchEvent(receive_packet_event);
+		Rocan.getPomeloEventManager().dispatchEvent(event);
 
-		if (receive_packet_event.isCanceled()) {
+		if (event.isCanceled()) {
 			callback.cancel();
 		}
 	}
