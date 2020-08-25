@@ -13,6 +13,9 @@ import java.lang.annotation.Retention;
 import java.util.*;
 import java.io.*;
 
+// OpenGL.
+import org.lwjgl.input.Keyboard;
+
 // Event.
 import rina.rocan.event.render.RocanEventRender;
 
@@ -47,7 +50,7 @@ public class RocanModule {
 	private boolean show_hud_arraylist;
 
 	public RocanModule() {
-		this.setting_module = createSetting(new String[] {"Bind", tag + "Bind", "Key bind to module."}, 0, false);
+		this.setting_module = createSetting(new String[] {"Bind", tag + "Bind", "Key bind to module."}, -1, false);
 
 		this.show_hud_arraylist = true;
 	}
@@ -96,6 +99,14 @@ public class RocanModule {
 
 	public Category getCategory() {
 		return category;
+	}
+
+	public String getKeyBindName() {
+		if (this.setting_module.getInteger() == -1) {
+			return "none";
+		}
+
+		return Keyboard.getKeyName(this.setting_module.getInteger()).toLowerCase();
 	}
 
 	public int getKeyBind() {
@@ -164,25 +175,33 @@ public class RocanModule {
 
 			JsonObject SETTING = object_cache.get(settings.getTag()).getAsJsonObject();
 
-			if (SETTING != null && SETTING.get("Name") == null || SETTING.get("Tag") == null || SETTING.get("Type") == null) {
+			if (SETTING.get("name") == null || SETTING.get("tag") == null || SETTING.get("type") == null) {
 				continue;
 			}
 
-			if (SETTING.get("Boolean") != null) {
-				settings.setBoolean(SETTING.get("Boolean").getAsBoolean());
+			if (SETTING.get("boolean") != null) {
+				settings.setBoolean(SETTING.get("boolean").getAsBoolean());
 			}
 
-			if (SETTING.get("String") != null) {
-				settings.setString(SETTING.get("String").getAsString());
+			if (SETTING.get("string") != null) {
+				settings.setString(SETTING.get("string").getAsString());
 			}
 
-			if (SETTING.get("Integer") != null) {
-				settings.setInteger(SETTING.get("Integer").getAsInt());
+			if (SETTING.get("integer") != null) {
+				settings.setInteger(SETTING.get("integer").getAsInt());
 			}
 
-			if (SETTING.get("Double") != null) {
-				settings.setDouble(SETTING.get("Double").getAsDouble());
+			if (SETTING.get("double") != null) {
+				settings.setDouble(SETTING.get("double").getAsDouble());
 			}
+		}
+	}
+
+	public void reloadModule() {
+		if (this.setting_module.getBoolean()) {
+			setEnable();
+		} else {
+			setDisable();
 		}
 	}
 
@@ -192,24 +211,24 @@ public class RocanModule {
 		for (RocanSetting settings : setting_list) {
 			JsonObject SETTING = new JsonObject();
 
-			SETTING.add("Name", new JsonPrimitive(settings.getName()));
-			SETTING.add("Tag", new JsonPrimitive(settings.getTag()));
-			SETTING.add("Type", new JsonPrimitive(settings.getType().name().replace("SETTING_", "")));
+			SETTING.add("name", new JsonPrimitive(settings.getName()));
+			SETTING.add("tag", new JsonPrimitive(settings.getTag()));
+			SETTING.add("type", new JsonPrimitive(settings.getType().name().replace("SETTING_", "").toLowerCase()));
 
 			if (settings.getType() == RocanSetting.SettingType.SETTING_BOOLEAN || settings.getType() == RocanSetting.SettingType.SETTING_MACRO) {
-				SETTING.add("Boolean", new JsonPrimitive(settings.getBoolean()));
+				SETTING.add("boolean", new JsonPrimitive(settings.getBoolean()));
 			}
 
 			if (settings.getType() == RocanSetting.SettingType.SETTING_STRING || settings.getType() == RocanSetting.SettingType.SETTING_LIST) {
-				SETTING.add("String", new JsonPrimitive(settings.getString()));
+				SETTING.add("string", new JsonPrimitive(settings.getString()));
 			}
 
 			if (settings.getType() == RocanSetting.SettingType.SETTING_INTEGER || settings.getType() == RocanSetting.SettingType.SETTING_MACRO) {
-				SETTING.add("Integer", new JsonPrimitive(settings.getInteger()));
+				SETTING.add("integer", new JsonPrimitive(settings.getInteger()));
 			}
 
 			if (settings.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
-				SETTING.add("Double", new JsonPrimitive(settings.getDouble()));
+				SETTING.add("double", new JsonPrimitive(settings.getDouble()));
 			}
 
 			MAIN_SETTING_LIST.add(settings.getTag(), SETTING);

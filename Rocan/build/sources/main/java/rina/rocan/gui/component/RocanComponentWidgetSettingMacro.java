@@ -173,7 +173,7 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 				}
 
 				case Keyboard.KEY_DELETE : {
-					this.setting.setInteger(0);
+					this.setting.setInteger(-1);
 
 					setWaiting(false);
 
@@ -255,12 +255,10 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 			}
 		}
 
-		if (this.setting.getTag().equals(this.setting.getMaster().getTag() + "Bind")) {
-			TurokString.renderString("Bind", this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
-		} else {
-			TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
-		}
-		
+		TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+
+		String key = this.setting.getInteger() == -1 ? "none" : Keyboard.getKeyName(this.setting.getInteger()).toLowerCase();
+
 		if (isWaiting()) {
 			this.waiting_tick_animation++;
 
@@ -280,7 +278,7 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 
 			TurokString.renderString("<" + this.waiting_animation + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + this.waiting_animation + ">", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
 		} else {
-			TurokString.renderString("<" + ((String) Keyboard.getKeyName(this.setting.getInteger())).toLowerCase() + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + ((String) Keyboard.getKeyName(this.setting.getInteger())).toLowerCase() + ">", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
+			TurokString.renderString("<" + key + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + key + ">", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
 		}
 	}
 

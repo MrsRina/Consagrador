@@ -30,10 +30,10 @@ import rina.rocan.Rocan;
   *
   **/
 public class RocanFileManager {
-	private String PATH_MAIN    = "Rocan/";
+	private String PATH_MAIN    = "rocan/";
 	private String PATH_MODULES = PATH_MAIN + "modules/";
 
-	private String PATH_FILE_CLIENT = PATH_MAIN + "Client.json";
+	private String PATH_FILE_CLIENT = PATH_MAIN + "client.json";
 
 	public RocanFileManager() {
 		try {
@@ -111,10 +111,10 @@ public class RocanFileManager {
 
 			JsonObject MAIN_JSON = new JsonObject();
 	
-			MAIN_JSON.add("Name", new JsonPrimitive(modules.getName()));
-			MAIN_JSON.add("Tag", new JsonPrimitive(modules.getTag()));
+			MAIN_JSON.add("name", new JsonPrimitive(modules.getName()));
+			MAIN_JSON.add("tag", new JsonPrimitive(modules.getTag()));
 
-			MAIN_JSON.add("SettingList", modules.getJsonObjectSettingList());
+			MAIN_JSON.add("settingList", modules.getJsonObjectSettingList());
 
 			JsonElement JSON_PRETTY_FORMAT = GSON_PARSER.parse(MAIN_JSON.toString());
 
@@ -138,15 +138,21 @@ public class RocanFileManager {
 
 			JsonObject MAIN_JSON = new JsonParser().parse(new InputStreamReader(JSON_FILE)).getAsJsonObject();
 
-			if (MAIN_JSON.get("Name") == null || MAIN_JSON.get("Tag") == null) {
+			if (MAIN_JSON.get("name") == null || MAIN_JSON.get("tag") == null || MAIN_JSON.get("settingList") == null) {
 				continue;
 			}
 
-			RocanModule module_requested = Rocan.getModuleManager().getModuleByTag(MAIN_JSON.get("Tag").getAsString());
+			RocanModule module_requested = Rocan.getModuleManager().getModuleByTag(MAIN_JSON.get("tag").getAsString());
 
-			module_requested.loadSettingListFromJsonObject(MAIN_JSON.get("SettingList").getAsJsonObject());
+			module_requested.loadSettingListFromJsonObject(MAIN_JSON.get("settingList").getAsJsonObject());
 
 			JSON_FILE.close();
+		}
+	}
+
+	public void reloadModules() {
+		for (RocanModule modules : Rocan.getModuleManager().getModuleList()) {
+			modules.reloadModule();
 		}
 	}
 

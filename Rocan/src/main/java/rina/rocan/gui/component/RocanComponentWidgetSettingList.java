@@ -1,7 +1,7 @@
 package rina.rocan.gui.component;
 
-// OpenGL.
-import org.lwjgl.input.Keyboard;
+// Java.
+import java.*;
 
 // GUI.
 import rina.rocan.gui.widget.RocanWidget;
@@ -22,16 +22,18 @@ import rina.turok.TurokRect;
   * @author Rina!
   *
   * Created by Rina!
-  * 21/08/2020.
+  * 25/08/2020.
   *
   **/                                                  // No-no-no, why this isn't a component no extend...
-public class RocanComponentWidgetSettingMacro extends RocanWidget {
+public class RocanComponentWidgetSettingList extends RocanWidget {
 	private RocanComponentModuleButton master;
 	private RocanMainGUI absolute;
 
 	private RocanSetting setting;
 
 	private TurokRect rect;
+
+	private int index;
 
 	private int save_x;
 	private int save_y;
@@ -42,13 +44,9 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 	private boolean event_mouse_passing;
 	private boolean event_mouse_clicked;
 
-	private boolean event_waiting;
+	private boolean event_started;
 
-	private String waiting_animation;
-
-	private int waiting_tick_animation;
-
-	public RocanComponentWidgetSettingMacro(RocanComponentModuleButton master, RocanSetting setting, int next_y) {
+	public RocanComponentWidgetSettingList(RocanComponentModuleButton master, RocanSetting setting, int next_y) {
 		this.master   = master;
 		this.absolute = this.master.getMaster().getMaster();
 
@@ -64,13 +62,12 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 
 		this.rect.setWidth(this.master.getWidth());
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
-	
+
+		this.index = getIndexOf(this.setting.getString());
+
 		resetAllEvent();
 
-		this.event_waiting = false;
-
-		this.waiting_animation      = ".";
-		this.waiting_tick_animation = 0;
+		this.event_started = false;
 	}
 
 	@Override
@@ -111,8 +108,8 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 		this.event_mouse_clicked = state;
 	}
 
-	public void setWaiting(boolean state) {
-		this.event_waiting = state;
+	public void setStarted(boolean state) {
+		this.event_started = state;
 	}
 
 	public TurokRect getRect() {
@@ -125,6 +122,18 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 
 	public String getName() {
 		return this.rect.getTag();
+	}
+
+	public int getIndexOf(String string) {
+		for (int i = 0; i < this.setting.getList().length; i++) {
+			String item = this.setting.getList()[i];
+
+			if (item.equals(string)) {
+				return i;
+			}
+		}
+
+		return -1;
 	}
 
 	public int getX() {
@@ -159,69 +168,24 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 		return this.event_mouse_clicked;
 	}
 
-	public boolean isWaiting() {
-		return this.event_waiting;
+	public boolean isStarted() {
+		return this.event_started;
 	}
 
-	public void keyboard(char char_, int key) {
-		if (isWaiting()) {
-			switch (key) {
-				case Keyboard.KEY_ESCAPE : {
-					setWaiting(false);
-
-					break;
-				}
-
-				case Keyboard.KEY_DELETE : {
-					this.setting.setInteger(-1);
-
-					setWaiting(false);
-
-					this.absolute.setCancelToCloseGUI(false);
-
-					break;
-				}
-
-				default : {
-					this.setting.setInteger(key);
-
-					setWaiting(false);
-
-					this.absolute.setCancelToCloseGUI(false);
-
-					break;
-				}
-			}
-		}
-	}
-
-	public void refreshFocus(int x, int y, int mouse) {
-		if (mouse == 0) {
-			this.absolute.setCancelToCloseGUI(false);
-
-			if (isWaiting()) {
-				setWaiting(false);
-			}
-		}
-
-		if (mouse == 1) {
-			this.absolute.setCancelToCloseGUI(false);
-
-			if (isWaiting()) {
-				setWaiting(false);
-			}
-		}
-	}
+	public void refreshFocus(int x, int y, int mouse) {}
 
 	public void click(int mouse) {
 		if (mouse == 0) {
 			if (isMousePassing()) {
 				this.master.getMaster().setFrameCancelDrag(true);
 
-				setWaiting(true);
 				setMouseClick(true);
 
-				this.absolute.setCancelToCloseGUI(true);
+				if ((this.index + 1) >= this.setting.getList().length) {
+					this.index = 0;
+				} else {
+					this.index++;
+				}
 			}
 		}
 	}
@@ -238,48 +202,14 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 		updateAction(this.absolute.getMouseX(), this.absolute.getMouseY());
 
 		if (isMousePassing()) {
-			if (this.setting.getBoolean()) {
-				TurokRenderGL.color(255, 0, 0, 190);
-				TurokRenderGL.drawSolidRect(this.rect);
-			} else {
-				TurokRenderGL.color(255, 255, 255, 190);
-				TurokRenderGL.drawSolidRect(this.rect);
-			}
+			TurokRenderGL.color(255, 255, 255, 190);
+			TurokRenderGL.drawSolidRect(this.rect);
 		} else {
-			if (this.setting.getBoolean()) {
-				TurokRenderGL.color(190, 0, 0, 190);
-				TurokRenderGL.drawSolidRect(this.rect);
-			} else {
-				TurokRenderGL.color(190, 190, 190, 190);
-				TurokRenderGL.drawSolidRect(this.rect);
-			}
+			TurokRenderGL.color(190, 190, 190, 190);
+			TurokRenderGL.drawSolidRect(this.rect);
 		}
 
-		TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
-
-		String key = this.setting.getInteger() == -1 ? "none" : Keyboard.getKeyName(this.setting.getInteger()).toLowerCase();
-
-		if (isWaiting()) {
-			this.waiting_tick_animation++;
-
-			if (this.waiting_tick_animation >= 30) {
-				this.waiting_animation = ".";
-			}
-
-			if (this.waiting_tick_animation >= 60) {
-				this.waiting_animation = "..";
-			}
-
-			if (this.waiting_tick_animation >= 90) {
-				this.waiting_animation = "...";
-
-				this.waiting_tick_animation = 0;
-			}
-
-			TurokString.renderString("<" + this.waiting_animation + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + this.waiting_animation + ">", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
-		} else {
-			TurokString.renderString("<" + key + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + key + ">", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
-		}
+		TurokString.renderString(this.rect.getTag() + " " + this.setting.getString(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
 	}
 
 	public void updateEvent(int x, int y) {
@@ -287,6 +217,10 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 			setMousePassing(true);
 		} else {
 			setMousePassing(false);
+		}
+
+		if (isStarted()) {
+			setStarted(false);
 		}
 	}
 
@@ -296,5 +230,11 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 
 		this.rect.setWidth(this.master.getWidth());
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
+	
+		if (isStarted()) {
+			this.index = getIndexOf(this.setting.getString());
+		}
+
+		this.setting.setString(this.setting.getList()[this.index]);
 	}
 }

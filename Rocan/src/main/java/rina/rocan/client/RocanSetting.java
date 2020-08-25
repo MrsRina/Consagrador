@@ -169,7 +169,7 @@ public class RocanSetting<T> {
 		return this.value_double;
 	}
 
-	public String[] getValues() {
+	public String[] getList() {
 		return this.values;
 	}
 

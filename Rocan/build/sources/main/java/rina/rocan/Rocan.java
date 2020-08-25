@@ -65,17 +65,12 @@ public class Rocan {
 		MinecraftForge.EVENT_BUS.register(command_manager);
 		MinecraftForge.EVENT_BUS.register(event_manager);
 
-		file_manager.loadClient();
-
-		// Load gui.
+		// Create gui.
 		rocan_gui = new RocanMainGUI();
 
-		// e.e;
-		clientNonChche("YES RINA!");
-	}
-
-	public void clientNonChche(String tag_or_rina_crazy_frog_bin_bin_rin_pao) {
+		// load client.
 		file_manager.loadClient();
+		file_manager.reloadModules();
 	}
 
 	public static Rocan getInstance() {
