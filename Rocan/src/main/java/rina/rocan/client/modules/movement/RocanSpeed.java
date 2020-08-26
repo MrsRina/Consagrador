@@ -5,6 +5,9 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.init.MobEffects;
 
+// Java.
+import java.util.Objects;
+
 // Pomelo.
 import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
 
@@ -21,6 +24,7 @@ import rina.rocan.client.RocanModule;
 import rina.turok.TurokString;
 
 // Utils.
+import rina.rocan.util.RocanUtilClient;
 import rina.rocan.util.RocanUtilMath;
 
 /**
@@ -31,11 +35,10 @@ import rina.rocan.util.RocanUtilMath;
  * 16/08/2020. // 00:05 am
  *
  **/
-@Define(name = "Strafe", tag = "Strafe", description = "Make you fast and stable.", category = Category.ROCAN_MOVEMENT)
-public class RocanStrafe extends RocanModule {
-	RocanSetting modes_strafe  = createSetting(new String[] {"Modes", "Modes", "Modes for strafe"}, "FHM", new String[] {"FHM", "Normal"});
-	RocanSetting onground_move = createSetting(new String[] {"OnGround", "OnGround", "Make movement in ground"}, true);
-	RocanSetting auto_jump     = createSetting(new String[] {"Auto Jump", "AutoJump", "Auto jump to strafe"}, false);
+@Define(name = "Speed", tag = "Speed", description = "Speed module.", category = Category.ROCAN_MOVEMENT)
+public class RocanSpeed extends RocanModule {
+	RocanSetting modes_speed  = createSetting(new String[] {"Mode", "Modes", "Modes for speed"}, "Strafe", new String[] {"Strafe", "Sprint"});
+	RocanSetting auto_jump     = createSetting(new String[] {"Auto Jump", "AutoJump", "Auto jump to speed"}, false);
 
 	private double speed;
 
@@ -45,20 +48,20 @@ public class RocanStrafe extends RocanModule {
 			return;
 		}
 
-		if (modes_strafe.getString().equals("FHM")) {
+		if (modes_speed.getString().equals("Strafe")) {
 			if (mc.player.isSneaking() || mc.player.isOnLadder() || mc.player.isInWeb || mc.player.isInLava() || mc.player.isInWater() || mc.player.capabilities.isFlying) {
 				return;
 			}
 
-			if (!onground_move.getBoolean() && !auto_jump.getBoolean()) {
-				if (mc.player.onGround) {
-					return;
-				}
-			}
+			double[] player_movement = RocanUtilMath.transformStrafeMovement(mc.player);
 
 			speed = 0.2873d;
 
-			double[] player_movement = RocanUtilMath.transformStrafeMovement(mc.player);
+			if (mc.player.isPotionActive(MobEffects.SPEED)) {
+				final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
+
+				speed *= (1.0d + 0.2d * (amplifier + 1));
+			}
 
 			// player_movement[0] = Yaw; player_movement[1] = Pitch; player_movement[2] = Forward; player_movement[3] = Strafe;
 
@@ -67,26 +70,39 @@ public class RocanStrafe extends RocanModule {
 				event.setZ(0.0d);
 			} else {
 				if (auto_jump.getBoolean()) {
-					multiplicJumpSpeed(event);
+					makeJump(event);
 				} else {
 					if (mc.gameSettings.keyBindJump.isKeyDown()) {
-						multiplicJumpSpeed(event);
+						makeJump(event);
 					}
 				}
 
 				event.setX((player_movement[2] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))) + (player_movement[3] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))));
 				event.setZ((player_movement[2] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))) - (player_movement[3] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))));
 			}
-		} else if (modes_strafe.getString().equals("Normal")) {}
+		} else if (modes_speed.getString().equals("Sprint")) {
+			if ((mc.gameSettings.keyBindForward.isKeyDown()) && !(mc.player.isSneaking()) && !(mc.player.isHandActive()) && !(mc.player.collidedHorizontally) && mc.currentScreen == null && !(mc.player.getFoodStats().getFoodLevel() <= 6f)) {
+				mc.player.setSprinting(true);
+
+				if (auto_jump.getBoolean()) {
+					makeJump(event);
+				}
+			}
+		}
 	}
 
-	public void multiplicJumpSpeed(RocanEventPlayerMove event) {
-		double new_motion_y = 0.40123128;
+	public void makeJump(RocanEventPlayerMove event) {
+		double jump = 0.40123128d;
 
 		if (mc.player.onGround) {
-			event.setY(mc.player.motionY = new_motion_y);
+			if (mc.player.isPotionActive(MobEffects.JUMP_BOOST)) {
+				jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1F);
+			}
 
-			speed *= 2.149;
+			event.setY(mc.player.motionY = jump);
+
+            // Fast jump.
+			speed = 0.6174077d;
 		}
 	}
 }

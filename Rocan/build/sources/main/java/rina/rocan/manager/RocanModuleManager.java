@@ -54,7 +54,7 @@ public class RocanModuleManager {
 		addModule(new RocanBlockHighlight());
 
 		// Movement.
-		addModule(new RocanStrafe());
+		addModule(new RocanSpeed());
 		addModule(new RocanGUIWalk());
 
 		// GUI.
