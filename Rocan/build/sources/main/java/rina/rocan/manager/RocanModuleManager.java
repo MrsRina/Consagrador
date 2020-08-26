@@ -18,11 +18,11 @@ import rina.turok.TurokRenderHelp;
 import rina.rocan.event.render.RocanEventRender;
 
 // Folders.
-// import rina.rocan.client.modules.combat.*;
-import rina.rocan.client.modules.render.*;
-// import rina.rocan.client.modules.misc.*;
-import rina.rocan.client.modules.exploit.*;
+import rina.rocan.client.modules.combat.*;
 import rina.rocan.client.modules.movement.*;
+import rina.rocan.client.modules.render.*;
+import rina.rocan.client.modules.exploit.*;
+import rina.rocan.client.modules.misc.*;
 import rina.rocan.client.modules.gui.*;
 
 // Client.
@@ -47,15 +47,22 @@ public class RocanModuleManager {
 	public RocanModuleManager() {
 		this.module_list = new ArrayList<>();
 
-		// Exploit.
-		addModule(new RocanXCarry());
-
-		// Render.
-		addModule(new RocanBlockHighlight());
+		// Combat.
+		addModule(new RocanOffhandUtil());
 
 		// Movement.
 		addModule(new RocanSpeed());
 		addModule(new RocanGUIWalk());
+		addModule(new RocanStep());
+
+		// Render.
+		addModule(new RocanBlockHighlight());
+
+		// Exploit.
+		addModule(new RocanXCarry());
+
+		// Misc.
+		addModule(new RocanFastUtil());
 
 		// GUI.
 		addModule(new RocanGUI());

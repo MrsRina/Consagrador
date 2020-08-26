@@ -5,9 +5,6 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.init.MobEffects;
 
-// Java.
-import java.util.Objects;
-
 // Pomelo.
 import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
 

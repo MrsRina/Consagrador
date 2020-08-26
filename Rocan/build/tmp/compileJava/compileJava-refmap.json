@@ -9,6 +9,9 @@
       "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
       "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V",
       "displayGuiScreen": "Lnet/minecraft/client/Minecraft;func_147108_a(Lnet/minecraft/client/gui/GuiScreen;)V"
+    },
+    "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
+      "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V"
     }
   },
   "data": {
@@ -22,6 +25,9 @@
         "run": "Lbib;a()V",
         "shutdown": "Lbib;n()V",
         "displayGuiScreen": "Lbib;a(Lblk;)V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
+        "onUpdateWalkingPlayer": "Lbud;N()V"
       }
     },
     "searge": {
@@ -34,6 +40,9 @@
         "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
         "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V",
         "displayGuiScreen": "Lnet/minecraft/client/Minecraft;func_147108_a(Lnet/minecraft/client/gui/GuiScreen;)V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
+        "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V"
       }
     }
   }

@@ -22,6 +22,9 @@ import rina.rocan.event.render.RocanEventRender;
 // Setting.
 import rina.rocan.client.RocanSetting;
 
+// Util.
+import rina.rocan.util.RocanUtilClient;
+
 // Rocan.
 import rina.rocan.Rocan;
 
@@ -145,10 +148,12 @@ public class RocanModule {
 	}
 
 	public enum Category {
+		ROCAN_COMBAT("Rocan Combat", "Combat"),
+		ROCAN_MOVEMENT("Rocan Movement", "Movement"),
 		ROCAN_EXPLOIT("Rocan Exploit", "Exploit"),
 		ROCAN_RENDER("Rocan Render", "Render"),
-		ROCAN_GUI("Rocan GUI", "GUI"),
-		ROCAN_MOVEMENT("Rocan Movement", "Movement");
+		ROCAN_MISC("Rocan Misc", "Misc"),
+		ROCAN_GUI("Rocan GUI", "GUI");
 
 		String name;
 		String tag;
@@ -235,6 +240,10 @@ public class RocanModule {
 		}
 
 		return MAIN_SETTING_LIST;
+	}
+
+	protected void sentNotifyClientChat(String message) {
+		RocanUtilClient.sendNotify(Rocan.getGrayColor() + tag + " " + Rocan.setDefaultColor() + message);
 	}
 
 	protected RocanSetting createSetting(String[] details, boolean value) {

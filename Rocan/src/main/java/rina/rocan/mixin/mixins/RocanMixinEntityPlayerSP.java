@@ -22,7 +22,9 @@ import java.io.IOException;
 import rina.rocan.mixin.acess.type.*;
 
 // Events.
+import rina.rocan.event.player.RocanEventPlayerUpdateWalking;
 import rina.rocan.event.player.RocanEventPlayerMove;
+import rina.rocan.event.RocanEventStageable;
 
 // Rocan.
 import rina.rocan.Rocan;
@@ -43,5 +45,19 @@ public abstract class RocanMixinEntityPlayerSP extends RocanMixinEntityPlayer im
 		Rocan.getPomeloEventManager().dispatchEvent(event);
 
 		super.move(type, event.getX(), event.getY(), event.getZ());
+	}
+
+	@Inject(method = "onUpdateWalkingPlayer", at = @At("HEAD"))
+	public void preEventWalking(CallbackInfo info) {
+		RocanEventPlayerUpdateWalking event = new RocanEventPlayerUpdateWalking(RocanEventStageable.EventStage.PRE);
+
+		Rocan.getPomeloEventManager().dispatchEvent(event);
+	}
+
+	@Inject(method = "onUpdateWalkingPlayer", at = @At("RETURN"))
+	public void postEventWalking(CallbackInfo info) {
+		RocanEventPlayerUpdateWalking event = new RocanEventPlayerUpdateWalking(RocanEventStageable.EventStage.POST);
+	
+		Rocan.getPomeloEventManager().dispatchEvent(event);
 	}
 }

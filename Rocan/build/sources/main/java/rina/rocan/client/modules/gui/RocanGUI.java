@@ -26,15 +26,11 @@ public class RocanGUI extends RocanModule {
 	@Override
 	public void onEnable() {
 		show_gui = true;
-
-		RocanUtilClient.sendNotifyClient("true");
 	}
 
 	@Override
 	public void onDisable() {
 		show_gui = true;
-
-		RocanUtilClient.sendNotifyClient("false");
 	}
 
 	@Override
