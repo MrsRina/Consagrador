@@ -82,7 +82,7 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 		this.maximum_length = false;
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	
 		resetAllEvent();
 
@@ -287,7 +287,7 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 		this.rect.setY(this.master.getY() + this.save_y);
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 
 		this.entry.x      = this.rect.getX() + 1;
 		this.entry.y      = this.rect.getY() + 1;

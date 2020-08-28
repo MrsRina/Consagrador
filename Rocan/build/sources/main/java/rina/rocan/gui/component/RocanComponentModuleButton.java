@@ -63,7 +63,7 @@ public class RocanComponentModuleButton {
 		this.rect.setY(next_y);
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 
 		this.save_x = 2;
 		this.save_y = next_y;
@@ -356,6 +356,6 @@ public class RocanComponentModuleButton {
 		this.rect.setY(this.master.getY() + this.save_y);
 
 		this.rect.setWidth(this.master.getWidth() - this.save_x * 2);
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	}
 }

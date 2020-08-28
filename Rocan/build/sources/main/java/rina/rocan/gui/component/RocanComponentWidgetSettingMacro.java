@@ -66,7 +66,7 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 		this.save_y = next_y;
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	
 		resetAllEvent();
 
@@ -298,6 +298,6 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 		this.rect.setY(this.master.getY() + this.save_y);
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	}
 }

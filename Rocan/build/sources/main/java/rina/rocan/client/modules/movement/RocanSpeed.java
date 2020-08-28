@@ -35,7 +35,7 @@ import rina.rocan.util.RocanUtilMath;
 @Define(name = "Speed", tag = "Speed", description = "Speed module.", category = Category.ROCAN_MOVEMENT)
 public class RocanSpeed extends RocanModule {
 	RocanSetting modes_speed  = createSetting(new String[] {"Mode", "Modes", "Modes for speed"}, "Strafe", new String[] {"Strafe", "Sprint"});
-	RocanSetting auto_jump     = createSetting(new String[] {"Auto Jump", "AutoJump", "Auto jump to speed"}, false);
+	RocanSetting auto_jump    = createSetting(new String[] {"Auto Jump", "AutoJump", "Auto jump to speed"}, false);
 
 	private double speed;
 

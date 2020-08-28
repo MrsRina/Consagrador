@@ -57,7 +57,7 @@ public class RocanComponentWidgetSettingBoolean extends RocanWidget {
 		this.save_y = next_y;
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	
 		resetAllEvent();
 	}
