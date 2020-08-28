@@ -120,6 +120,14 @@ public class RocanModule {
 		return this.setting_module.getBoolean();
 	}
 
+	public ArrayList<RocanSetting> getSettingList() {
+		if (setting_list == null) {
+			setting_list = new ArrayList<>();
+		}
+
+		return setting_list;
+	}
+
 	// Overrides.
 	public void onEnable() {}
 	public void onDisable() {}

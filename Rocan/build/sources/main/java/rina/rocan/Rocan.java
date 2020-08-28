@@ -23,6 +23,9 @@ import rina.rocan.manager.RocanModuleManager;
 import rina.rocan.manager.RocanEventManager;
 import rina.rocan.manager.RocanFileManager;
 
+// Turok.
+import rina.turok.TurokStructureColor;
+
 /**
   *
   * @author Rina!
@@ -50,6 +53,9 @@ public class Rocan {
 	// EventBus.
 	private EventManager pomelo_event_manager;
 
+	// THEME GUI.
+	public static TurokStructureColor gui_theme;
+
 	// GUI.
 	public static RocanMainGUI rocan_gui;
 
@@ -64,6 +70,9 @@ public class Rocan {
 
 		MinecraftForge.EVENT_BUS.register(command_manager);
 		MinecraftForge.EVENT_BUS.register(event_manager);
+
+		// Load theme.
+		gui_theme = new TurokStructureColor();
 
 		// Create gui.
 		rocan_gui = new RocanMainGUI();
@@ -85,7 +94,11 @@ public class Rocan {
 		return getInstance().ROCAN_VERSION;
 	}
 
-	public static RocanMainGUI getClientGUIModule() {
+	public static TurokStructureColor getClientGUITheme() {
+		return getInstance().gui_theme;
+	} 
+
+	public static RocanMainGUI getClientGUI() {
 		return getInstance().rocan_gui;
 	}
 

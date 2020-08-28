@@ -17,6 +17,9 @@ import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
 import rina.turok.TurokRect;
 
+// Rocan.
+import rina.rocan.Rocan;
+
 /**
   *
   * @author Rina!
@@ -61,7 +64,7 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		this.save_y = next_y;
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
 
 		this.index = getIndexOf(this.setting.getString());
 
@@ -202,14 +205,14 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		updateAction(this.absolute.getMouseX(), this.absolute.getMouseY());
 
 		if (isMousePassing()) {
-			TurokRenderGL.color(255, 255, 255, 190);
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
 			TurokRenderGL.drawSolidRect(this.rect);
 		} else {
-			TurokRenderGL.color(190, 190, 190, 190);
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_r, Rocan.getClientGUITheme().button_g, Rocan.getClientGUITheme().button_b, Rocan.getClientGUITheme().button_a);
 			TurokRenderGL.drawSolidRect(this.rect);
 		}
 
-		TurokString.renderString(this.rect.getTag() + " " + this.setting.getString(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+		TurokString.renderString(this.rect.getTag() + " " + this.setting.getString(), this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
 	}
 
 	public void updateEvent(int x, int y) {
@@ -229,7 +232,7 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		this.rect.setY(this.master.getY() + this.save_y);
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
 	
 		if (isStarted()) {
 			this.index = getIndexOf(this.setting.getString());

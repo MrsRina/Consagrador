@@ -15,7 +15,7 @@ import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
 // Event.
 import rina.rocan.event.player.RocanEventPlayerUpdateWalking;
 
-// Module.
+// Client.
 import rina.rocan.client.RocanModule.Category;
 import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;
@@ -38,7 +38,7 @@ public class RocanStep extends RocanModule {
 	};
 
 	private final double[] two_block_height = {
-		0.83d, 1.16d, 1.41d, 1.57d, 1.58d, 1.42d
+		0.4d, 0.75d, 0.5d, 0.41d, 0.83d, 1.16d, 1.41d, 1.57d, 1.58d, 1.42d
 	};
 
 	private double[] selected = new double[0];

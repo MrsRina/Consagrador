@@ -57,7 +57,7 @@ public class RocanFrame {
 		this.component_module_button_list = new ArrayList<>();
 
 		this.rect.setWidth(102);
-		this.rect.setHeight(2 + TurokString.getStringHeight(this.rect.getTag(), true) + 2);
+		this.rect.setHeight(2 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 2);
 
 		this.move_x = 0;
 		this.move_y = 0;
@@ -256,10 +256,10 @@ public class RocanFrame {
 		updateEvent(this.master.getMouseX(), this.master.getMouseY());
 		updateActions(this.master.getMouseX(), this.master.getMouseY());
 
-		TurokRenderGL.color(0, 0, 0, 200);
+		TurokRenderGL.color(Rocan.getClientGUITheme().frame_r, Rocan.getClientGUITheme().frame_g, Rocan.getClientGUITheme().frame_b, Rocan.getClientGUITheme().frame_a);
 		TurokRenderGL.drawRoundedRect(this.rect, 1);
 
-		TurokString.renderString(this.rect.getTag(), this.rect.getX() + (this.rect.getWidth() / 2) - TurokString.getStringWidth(this.rect.getTag(), true) / 2, this.rect.getY() + 3, 255, 255, 255, false, true);
+		TurokString.renderString(this.rect.getTag(), this.rect.getX() + (this.rect.getWidth() / 2) - TurokString.getStringWidth(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) / 2, this.rect.getY() + 3, Rocan.getClientGUITheme().frame_name_r, Rocan.getClientGUITheme().frame_name_g, Rocan.getClientGUITheme().frame_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
 
 		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
 			module_buttons.render();

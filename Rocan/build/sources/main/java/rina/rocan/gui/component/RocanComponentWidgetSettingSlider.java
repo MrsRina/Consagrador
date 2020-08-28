@@ -18,6 +18,9 @@ import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
 import rina.turok.TurokRect;
 
+// Rocan.
+import rina.rocan.Rocan;
+
 /**
   *
   * @author Rina!
@@ -58,7 +61,7 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 		this.save_y = next_y;
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
 	
 		resetAllEvent();
 	}
@@ -182,17 +185,15 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 		}
 
 		if (isMousePassing()) {
-			TurokRenderGL.color(255, 255, 255, 190);
-
-			TurokRenderGL.color(255, 0, 0, 190);
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_pass_r, Rocan.getClientGUITheme().button_pressed_pass_g, Rocan.getClientGUITheme().button_pressed_pass_b, Rocan.getClientGUITheme().button_pressed_pass_a);
 			TurokRenderGL.drawSolidRect(this.rect.getX(), this.rect.getY(), this.rect.getX() + width_calculed, this.rect.getY() + this.rect.getHeight());
 		} else {
-			TurokRenderGL.color(255, 0, 0, 190);
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
 			TurokRenderGL.drawSolidRect(this.rect.getX(), this.rect.getY(), this.rect.getX() + width_calculed, this.rect.getY() + this.rect.getHeight());
 		}
 
-		TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
-		TurokString.renderString(value, this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth(value, true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
+		TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
+		TurokString.renderString(value, this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth(value, Rocan.getClientGUITheme().smooth_font) - 2, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
 	}
 
 	public void updateEvent(int x, int y) {
@@ -208,7 +209,7 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 		this.rect.setY(this.master.getY() + this.save_y);
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
 
 		if (isMouseClicked()) {
 			double mouse = Math.min(this.rect.getWidth(), Math.max(0, x - this.rect.getX()));

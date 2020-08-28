@@ -151,6 +151,11 @@ public class RocanMainGUI extends GuiScreen {
 
 	@Override
 	public void drawScreen(int x, int y, float partial_ticks) {
+		this.drawDefaultBackground();
+
+		// We update theme.
+		Rocan.getClientGUITheme().refresh();
+
 		ScaledResolution scaled_resolution = new ScaledResolution(RocanUtilMinecraftHelper.getMinecraft());
 
 		TurokRenderGL.fixScreen(scaled_resolution.getScaledWidth(), scaled_resolution.getScaledHeight());

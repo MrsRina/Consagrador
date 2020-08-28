@@ -1,8 +1,9 @@
 package rina.rocan.client.modules.gui;
 
-// Module.
+// Client.
 import rina.rocan.client.RocanModule.Category;
 import rina.rocan.client.RocanModule.Define;
+import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
 // Util.
@@ -23,6 +24,42 @@ import rina.rocan.Rocan;
 public class RocanGUI extends RocanModule {
 	boolean show_gui = true;
 
+	RocanSetting smooth_font = createSetting(new String[] {"Smooth Font", "SmoothFont", "Enable custom font renderer."}, true);
+	RocanSetting shadow_font = createSetting(new String[] {"Shadow Font", "ShadowFont", "Shadow in font."}, false);
+
+	RocanSetting frame_name_r = createSetting(new String[] {"Frame Name Red", "FrameNameRed", "Change color red."}, 255, 0, 255);
+	RocanSetting frame_name_g = createSetting(new String[] {"Frame Name Green", "FrameNameGreen", "Change color green."}, 255, 0, 255);
+	RocanSetting frame_name_b = createSetting(new String[] {"Frame Name Blue", "FrameNameBlue", "Change color blue."}, 255, 0, 255);
+
+	RocanSetting frame_r = createSetting(new String[] {"Red", "FrameRed", "Change color red."}, 0, 0, 255);
+	RocanSetting frame_g = createSetting(new String[] {"Green", "FrameGreen", "Change color green."}, 0, 0, 255);
+	RocanSetting frame_b = createSetting(new String[] {"Blue", "FrameBlue", "Change color blue."}, 0, 0, 255);
+	RocanSetting frame_a = createSetting(new String[] {"Alpha", "FrameAlpha", "Change color alpha."}, 190, 0, 255);
+
+	RocanSetting button_name_r = createSetting(new String[] {"Button Name Red", "ButtonNameRed", "Change color red."}, 255, 0, 255);
+	RocanSetting button_name_g = createSetting(new String[] {"Button Name Green", "ButtonNameGreen", "Change color green."}, 255, 0, 255);
+	RocanSetting button_name_b = createSetting(new String[] {"Button Name Blue", "ButtonNameBlue", "Change color blue."}, 255, 0, 255);
+
+	RocanSetting button_r = createSetting(new String[] {"Red", "ButtonRed", "Change color red."}, 190, 0, 255);
+	RocanSetting button_g = createSetting(new String[] {"Green", "ButtonGreen", "Change color green."}, 190, 0, 255);
+	RocanSetting button_b = createSetting(new String[] {"Blue", "ButtonBlue", "Change color blue."}, 190, 0, 255);
+	RocanSetting button_a = createSetting(new String[] {"Alpha", "ButtonAlpha", "Change color alpha."}, 190, 0, 255);
+
+	RocanSetting button_pass_r = createSetting(new String[] {"Pass Red", "ButtonPassRed", "Change color red."}, 255, 0, 255);
+	RocanSetting button_pass_g = createSetting(new String[] {"Pass Green", "ButtonPassGreen", "Change color green."}, 255, 0, 255);
+	RocanSetting button_pass_b = createSetting(new String[] {"Pass Blue", "ButtonPassBlue", "Change color blue."}, 255, 0, 255);
+	RocanSetting button_pass_a = createSetting(new String[] {"Pass Alpha", "ButtonPassAlpha", "Change color alpha."}, 190, 0, 255);
+
+	RocanSetting button_pressed_r = createSetting(new String[] {"Pressed Red", "ButtonPressedRed", "Change color red."}, 190, 0, 255);
+	RocanSetting button_pressed_g = createSetting(new String[] {"Pressed Green", "ButtonPressedGreen", "Change color green."}, 0, 0, 255);
+	RocanSetting button_pressed_b = createSetting(new String[] {"Pressed Blue", "ButtonPressedBlue", "Change color blue."}, 0, 0, 255);
+	RocanSetting button_pressed_a = createSetting(new String[] {"Pressed Alpha", "ButtonPressedAlpha", "Change color alpha."}, 190, 0, 255);
+
+	RocanSetting button_pressed_pass_r = createSetting(new String[] {"Pressed Pass Red", "ButtonPressedPassRed", "Change color red."}, 255, 0, 255);
+	RocanSetting button_pressed_pass_g = createSetting(new String[] {"Pressed Pass Green", "ButtonPressedPassGreen", "Change color green."}, 0, 0, 255);
+	RocanSetting button_pressed_pass_b = createSetting(new String[] {"Pressed Pass Blue", "ButtonPressedPassBlue", "Change color blue."}, 0, 0, 255);
+	RocanSetting button_pressed_pass_a = createSetting(new String[] {"Pressed Pass Alpha", "ButtonPressedPassAlpha", "Change color alpha."}, 190, 0, 255);
+
 	@Override
 	public void onEnable() {
 		show_gui = true;
@@ -36,7 +73,7 @@ public class RocanGUI extends RocanModule {
 	@Override
 	public void onUpdate() {
 		if (show_gui) {
-			mc.displayGuiScreen(Rocan.rocan_gui);
+			mc.displayGuiScreen(Rocan.getClientGUI());
 
 			show_gui = false;
 		}

@@ -11,7 +11,7 @@ import net.minecraft.item.ItemBow;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
-// Module.
+// Client.
 import rina.rocan.client.RocanModule.Category;
 import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;

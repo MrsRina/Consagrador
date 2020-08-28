@@ -11,7 +11,7 @@ import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
 // Event.
 import rina.rocan.event.player.RocanEventPlayerMove;
 
-// Module.
+// Client.
 import rina.rocan.client.RocanModule.Category;
 import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;

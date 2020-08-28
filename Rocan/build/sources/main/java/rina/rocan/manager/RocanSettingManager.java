@@ -7,6 +7,9 @@ import java.util.*;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
+// Rocan.
+import rina.rocan.Rocan;
+
 /**
   *
   * @author Rina!
@@ -48,6 +51,18 @@ public class RocanSettingManager {
 
 	public RocanSetting getSettingByTag(String tag) {
 		for (RocanSetting settings : getSettingList()) {
+			if (settings.getTag().equalsIgnoreCase(tag)) {
+				return settings;
+			}
+		}
+
+		return null;
+	}
+
+	public RocanSetting getSettingByModuleAndTag(String module, String tag) {
+		RocanModule module_requested = Rocan.getModuleManager().getModuleByTag(module);
+
+		for (RocanSetting settings : module_requested.getSettingList()) {
 			if (settings.getTag().equalsIgnoreCase(tag)) {
 				return settings;
 			}

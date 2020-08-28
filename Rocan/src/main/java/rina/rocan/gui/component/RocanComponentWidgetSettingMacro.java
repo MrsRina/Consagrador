@@ -17,6 +17,9 @@ import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
 import rina.turok.TurokRect;
 
+// Rocan.
+import rina.rocan.Rocan;
+
 /**
   *
   * @author Rina!
@@ -63,7 +66,7 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 		this.save_y = next_y;
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
 	
 		resetAllEvent();
 
@@ -239,23 +242,23 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 
 		if (isMousePassing()) {
 			if (this.setting.getBoolean()) {
-				TurokRenderGL.color(255, 0, 0, 190);
+				TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_pass_r, Rocan.getClientGUITheme().button_pressed_pass_g, Rocan.getClientGUITheme().button_pressed_pass_b, Rocan.getClientGUITheme().button_pressed_pass_a);
 				TurokRenderGL.drawSolidRect(this.rect);
 			} else {
-				TurokRenderGL.color(255, 255, 255, 190);
+				TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
 				TurokRenderGL.drawSolidRect(this.rect);
 			}
 		} else {
 			if (this.setting.getBoolean()) {
-				TurokRenderGL.color(190, 0, 0, 190);
+				TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
 				TurokRenderGL.drawSolidRect(this.rect);
 			} else {
-				TurokRenderGL.color(190, 190, 190, 190);
+				TurokRenderGL.color(Rocan.getClientGUITheme().button_r, Rocan.getClientGUITheme().button_g, Rocan.getClientGUITheme().button_b, Rocan.getClientGUITheme().button_a);
 				TurokRenderGL.drawSolidRect(this.rect);
 			}
 		}
 
-		TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, 255, 255, 255, false, true);
+		TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
 
 		String key = this.setting.getInteger() == -1 ? "none" : Keyboard.getKeyName(this.setting.getInteger()).toLowerCase();
 
@@ -276,9 +279,9 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 				this.waiting_tick_animation = 0;
 			}
 
-			TurokString.renderString("<" + this.waiting_animation + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + this.waiting_animation + ">", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
+			TurokString.renderString("<" + this.waiting_animation + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + this.waiting_animation + ">", true) - 2, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
 		} else {
-			TurokString.renderString("<" + key + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + key + ">", true) - 2, this.rect.getY() + 3, 255, 255, 255, false, true);
+			TurokString.renderString("<" + key + ">", this.rect.getX() + this.rect.getWidth() - TurokString.getStringWidth("<" + key + ">", Rocan.getClientGUITheme().smooth_font) - 2, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
 		}
 	}
 
@@ -295,6 +298,6 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 		this.rect.setY(this.master.getY() + this.save_y);
 
 		this.rect.setWidth(this.master.getWidth());
-		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
+		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), Rocan.getClientGUITheme().smooth_font) + 3);
 	}
 }
