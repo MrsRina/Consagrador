@@ -1,8 +1,6 @@
 package rina.rocan.client.modules.gui;
 
 // Client.
-import rina.rocan.client.RocanModule.Category;
-import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
@@ -20,7 +18,6 @@ import rina.rocan.Rocan;
  * 17/08/2020. // 23:49 pm.
  *
  **/
-@Define(name = "GUI", tag = "GUI", description = "GUI click.", category = Category.ROCAN_GUI)
 public class RocanGUI extends RocanModule {
 	boolean show_gui = true;
 
@@ -59,6 +56,10 @@ public class RocanGUI extends RocanModule {
 	RocanSetting button_pressed_pass_g = createSetting(new String[] {"Pressed Pass Green", "ButtonPressedPassGreen", "Change color green."}, 0, 0, 255);
 	RocanSetting button_pressed_pass_b = createSetting(new String[] {"Pressed Pass Blue", "ButtonPressedPassBlue", "Change color blue."}, 0, 0, 255);
 	RocanSetting button_pressed_pass_a = createSetting(new String[] {"Pressed Pass Alpha", "ButtonPressedPassAlpha", "Change color alpha."}, 190, 0, 255);
+
+	public RocanGUI() {
+		super(new String[] {"GUI", "GUI", "Draw GUI."}, Category.ROCAN_GUI);
+	}
 
 	@Override
 	public void onEnable() {

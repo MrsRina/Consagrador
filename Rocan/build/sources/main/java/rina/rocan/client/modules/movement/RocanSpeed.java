@@ -12,8 +12,6 @@ import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
 import rina.rocan.event.player.RocanEventPlayerMove;
 
 // Client.
-import rina.rocan.client.RocanModule.Category;
-import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
@@ -32,12 +30,15 @@ import rina.rocan.util.RocanUtilMath;
  * 16/08/2020. // 00:05 am
  *
  **/
-@Define(name = "Speed", tag = "Speed", description = "Speed module.", category = Category.ROCAN_MOVEMENT)
 public class RocanSpeed extends RocanModule {
 	RocanSetting modes_speed  = createSetting(new String[] {"Mode", "Modes", "Modes for speed"}, "Strafe", new String[] {"Strafe", "Sprint"});
 	RocanSetting auto_jump    = createSetting(new String[] {"Auto Jump", "AutoJump", "Auto jump to speed"}, false);
 
 	private double speed;
+
+	public RocanSpeed() {
+		super(new String[] {"Speed", "Speed", "Make fast."}, Category.ROCAN_MOVEMENT);
+	}
 
 	@Listener
 	public void playerMove(RocanEventPlayerMove event) {

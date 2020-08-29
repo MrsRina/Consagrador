@@ -3,11 +3,6 @@ package rina.rocan.client;
 // Minecraft.
 import net.minecraft.client.Minecraft;
 
-// Java.
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Retention;
-import java.awt.*;
-
 // Turok.
 import rina.turok.TurokScreenUtil;
 import rina.turok.TurokString;
@@ -15,6 +10,9 @@ import rina.turok.TurokRect;
 
 // Client.
 import rina.rocan.client.RocanModule;
+
+// Util.
+import rina.rocan.util.RocanUtilMinecraftHelper;
 
 // Rocan.
 import rina.rocan.Rocan;
@@ -32,37 +30,43 @@ public class RocanHUD extends RocanModule {
 	private String tag;
 	private String description;
 
-	private TurokRect rect;
-
 	private RocanSetting setting_smooth;
 	private RocanSetting setting_shadow;
 
-	private Docking dock;
+	public TurokRect rect;
 
-	private int hud_r;
-	private int hud_g;
-	private int hud_b;
+	public Docking dock;
 
-	private int rgb_r;
-	private int rgb_g;
-	private int rgb_b;
+	public int hud_r;
+	public int hud_g;
+	public int hud_b;
 
-	public RocanHUD(String[] detail) {
+	public int rgb_r;
+	public int rgb_g;
+	public int rgb_b;
+
+	public static final Minecraft mc = RocanUtilMinecraftHelper.getMinecraft();
+
+	public RocanHUD(String[] details) {
+		super(new String[] {details[0], "HUD" + details[1], details[2]}, Category.ROCAN_GUI);
+
 		this.dock = Docking.LEFT_UP;
 
-		initializeComponentHUD(detail);
+		initializeComponentHUD(details);
 	}
 
-	public RocanHUD(String[] detail, Docking dock) {
+	public RocanHUD(String[] details, Docking dock) {
+		super(new String[] {details[0], "HUD" + details[1], details[2]}, Category.ROCAN_GUI);
+
 		this.dock = dock;
 
-		initializeComponentHUD(detail);
+		initializeComponentHUD(details);
 	}
 
-	public void initializeComponentHUD(String[] detail) {
-		this.name        = detail[0];
-		this.tag         = detail[1];
-		this.description = detail[2];
+	public void initializeComponentHUD(String[] details) {
+		this.name        = details[0];
+		this.tag         = details[1];
+		this.description = details[2];
 
 		this.rect = new TurokRect(this.name, 0, 0);
 
@@ -134,11 +138,11 @@ public class RocanHUD extends RocanModule {
 		this.rgb_b = Rocan.getEventManager().getRGBEffect()[2];
 
 		if (Rocan.getModuleManager().getModuleByTag("HUD").getState()) {
-			renderHUD();
+			onRenderHUD();
 		}
 	}
 
-	protected void renderHUD() {}
+	protected void onRenderHUD() {}
 
 	protected void drawGUIRect(int x, int y, int width, int height, int r, int g, int b, int a) {
 		TurokScreenUtil.drawGUIRect(this.rect.getX() + x, this.rect.getY() + y, this.rect.getX() + x + width, this.rect.getY() + y + height, r, g, b, a);
@@ -191,5 +195,29 @@ public class RocanHUD extends RocanModule {
 		LEFT_DOWN,
 		RIGHT_UP,
 		RIGHT_DOWN;
+	}
+
+	protected RocanSetting addSetting(String[] details, boolean value) {
+		return createSetting(details, value);
+	}
+
+	protected RocanSetting addSetting(String[] details, String value) {
+		return createSetting(details, value);
+	}
+
+	protected RocanSetting addSetting(String[] details, int value, boolean state) {
+		return createSetting(details, value, state);
+	}
+
+	protected RocanSetting addSetting(String[] details, int value, int min, int max) {
+		return createSetting(details, value, min, max);
+	}
+
+	protected RocanSetting addSetting(String[] details, double value, double min, double max) {
+		return createSetting(details, value, min, max);
+	}
+
+	protected RocanSetting addSetting(String[] details, String value, String[] values) {
+		return createSetting(details, value, values);
 	}
 }

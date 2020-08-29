@@ -17,7 +17,10 @@ import rina.turok.TurokRenderHelp;
 // Events.
 import rina.rocan.event.render.RocanEventRender;
 
-// Folders.
+// HUDS.
+import rina.rocan.client.huds.*;
+
+// Modules..
 import rina.rocan.client.modules.combat.*;
 import rina.rocan.client.modules.movement.*;
 import rina.rocan.client.modules.render.*;
@@ -59,7 +62,7 @@ public class RocanModuleManager {
 		addModule(new RocanStep());
 
 		// Render.
-		addModule(new RocanBlockHighlight());
+		addModule(new RocanHUDRender());
 
 		// Exploit.
 		addModule(new RocanXCarry());
@@ -69,9 +72,9 @@ public class RocanModuleManager {
 
 		// GUI.
 		addModule(new RocanGUI());
-		addModule(new RocanMasterHUD());
 
 		// HUD.
+		addHUD(new RocanCoordinates());
 	}
 
 	public void addModule(RocanModule module) {

@@ -8,8 +8,6 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 // Client.
-import rina.rocan.client.RocanModule.Category;
-import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
@@ -27,7 +25,6 @@ import rina.rocan.Rocan;
  * 26/08/2020.
  *
  **/
-@Define(name = "Offhand Util", tag = "OffhandUtil", description = "Offhand util for totem, golden apple & crystal.", category = Category.ROCAN_COMBAT)
 public class RocanOffhandUtil extends RocanModule {
 	RocanSetting smart_totem        = createSetting(new String[] {"Smart Auto Totem", "SmartAutoTotem", "Automatically put offhand totem for no die."}, 0.5, 0.0, 10.0);
 	RocanSetting enable_auto_totem  = createSetting(new String[] {"Auto Totem Enable", "AutoTotemEnable", "Enable totem when turn off golden apple or end crystal."}, true);
@@ -39,6 +36,10 @@ public class RocanOffhandUtil extends RocanModule {
 	boolean state_totem        = false;
 	boolean state_golden_apple = false;
 	boolean state_end_crystal  = false;
+
+	public RocanOffhandUtil() {
+		super(new String[] {"Offhand Util", "OffhandUtil", "Offhand util for totem, golden apple & crystal."}, Category.ROCAN_COMBAT);
+	}
 
 	@Override
 	public void onUpdate() {

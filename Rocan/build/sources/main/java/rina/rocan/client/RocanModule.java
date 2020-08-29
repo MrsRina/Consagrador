@@ -8,8 +8,6 @@ import net.minecraft.client.Minecraft;
 import com.google.gson.*;
 
 // Java.
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Retention;
 import java.util.*;
 import java.io.*;
 
@@ -37,14 +35,13 @@ import rina.rocan.Rocan;
  *
  **/
 public class RocanModule {
-	// Get value annotations.
-	private final String name        = getAnnotation().name();
-	private final String tag         = getAnnotation().tag();
-	private final String description = getAnnotation().description();
+	private String name;
+	private String tag;
+	private String description;
 
 	private ArrayList<RocanSetting> setting_list = new ArrayList<>();
 
-	private final Category category = getAnnotation().category();
+	private final Category category;
 
 	public static final Minecraft mc = Minecraft.getMinecraft();
 
@@ -52,8 +49,14 @@ public class RocanModule {
 
 	private boolean show_hud_arraylist;
 
-	public RocanModule() {
-		this.setting_module = createSetting(new String[] {"Bind", tag + "Bind", "Key bind to module."}, -1, false);
+	public RocanModule(String[] details, Category category) {
+		this.name        = details[0];
+		this.tag         = details[1];
+		this.description = details[2];
+
+		this.setting_module = createSetting(new String[] {"Bind", this.tag + "Bind", "Key bind to module."}, -1, false);
+
+		this.category = category;
 
 		this.show_hud_arraylist = true;
 	}
@@ -89,19 +92,19 @@ public class RocanModule {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public String getTag() {
-		return tag;
+		return this.tag;
 	}
 
 	public String getDescription() {
-		return description;
+		return this.description;
 	}
 
 	public Category getCategory() {
-		return category;
+		return this.category;
 	}
 
 	public String getKeyBindName() {
@@ -135,25 +138,6 @@ public class RocanModule {
 	public void onUpdate() {}
 	public void onRender() {}
 	public void onRender(RocanEventRender event) {}
-
-	// Annotation details.
-	public Define getAnnotation() {
-		if (getClass().isAnnotationPresent(Define.class)) {
-			return getClass().getAnnotation(Define.class);
-		}
-
-		return null;
-	}
-
-	// Interface to annotation.
-	@Retention(RetentionPolicy.RUNTIME)
-	public @interface Define {
-		String name();
-		String tag();
-		String description() default "No description.";
-
-		RocanModule.Category category();
-	}
 
 	public enum Category {
 		ROCAN_COMBAT("Rocan Combat", "Combat"),

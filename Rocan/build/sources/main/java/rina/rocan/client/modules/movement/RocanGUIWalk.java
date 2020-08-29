@@ -20,8 +20,6 @@ import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
 import rina.rocan.event.gui.RocanEventGUI;
 
 // Client.
-import rina.rocan.client.RocanModule.Category;
-import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
@@ -33,7 +31,6 @@ import rina.rocan.client.RocanModule;
  * 23/08/2020.
  *
  **/
-@Define(name = "GUI Walk", tag = "GUIWalk", description = "Able move while opened any GUI", category = Category.ROCAN_MOVEMENT)
 public class RocanGUIWalk extends RocanModule {
 	private static KeyBinding[] KEYS = new KeyBinding[] {
 		mc.gameSettings.keyBindForward, mc.gameSettings.keyBindRight,
@@ -42,6 +39,10 @@ public class RocanGUIWalk extends RocanModule {
 	};
 
 	int jump = mc.gameSettings.keyBindJump.getKeyCode();
+
+	public RocanGUIWalk() {
+		super(new String[] {"GUI Walk", "GUIWalk", "Able move while opened any GUI."}, Category.ROCAN_MOVEMENT);
+	}
 
 	@Listener
 	public void stateGUI(RocanEventGUI event) {

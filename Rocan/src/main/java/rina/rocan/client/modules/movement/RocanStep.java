@@ -16,8 +16,6 @@ import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
 import rina.rocan.event.player.RocanEventPlayerUpdateWalking;
 
 // Client.
-import rina.rocan.client.RocanModule.Category;
-import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
@@ -29,9 +27,12 @@ import rina.rocan.client.RocanModule;
  * 25/08/2020. // 23:05 pm
  *
  **/
-@Define(name = "Step", tag = "Step", description = "Make you step one or two blocks.", category = Category.ROCAN_MOVEMENT)
 public class RocanStep extends RocanModule {
 	RocanSetting size_block = createSetting(new String[] {"Block", "Block", "Size of block to step"}, "One", new String[] {"One", "Two"});
+
+	public RocanStep() {
+		super(new String[] {"Step", "Step", "Bypass 1 or 2 blocks."}, Category.ROCAN_MOVEMENT);
+	}
 
 	private final double[] one_block_height = {
 		0.42d, 0.75d

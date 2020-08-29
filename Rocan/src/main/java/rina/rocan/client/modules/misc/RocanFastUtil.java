@@ -12,8 +12,6 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 // Client.
-import rina.rocan.client.RocanModule.Category;
-import rina.rocan.client.RocanModule.Define;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
@@ -25,13 +23,16 @@ import rina.rocan.client.RocanModule;
  * 26/08/2020.
  *
  **/
-@Define(name = "Fast Util", tag = "Fast Util", description = "Fast utils like crystal, bottle...", category = Category.ROCAN_MISC)
 public class RocanFastUtil extends RocanModule {
 	RocanSetting bottle_xp = createSetting(new String[] {"Bottle XP", "BottleXP", "Splash fast bottle XP."}, true);
 	RocanSetting crystal   = createSetting(new String[] {"Crystal", "Crystal", "Place fast crystal."}, true);
 	RocanSetting place     = createSetting(new String[] {"Place", "Place", "Place fast anything."}, true);
 	RocanSetting break_    = createSetting(new String[] {"Break", "Break", "Fast break."}, true);
 	RocanSetting bow       = createSetting(new String[] {"Bow", "Bow", "Fire fast arrows."}, true);
+
+	public RocanFastUtil() {
+		super(new String[] {"Fast Util", "FastUtil", "Fast util for client."}, Category.ROCAN_MISC);
+	}
 
 	@Override
 	public void onUpdate() {
