@@ -1,7 +1,7 @@
 Unsupposrted library path: C:\Users\SrRina\Documents\Rocan\Rocan\build\classes\api
 Unsupposrted library path: C:\Users\SrRina\Documents\Rocan\Rocan\build\resources\api
 Symbol range map extraction starting
-Processing 75 files
+Processing 77 files
 startProcessing "rina/rocan/Rocan.java" md5: df389681fdf5cb9aceaf7a0f291f43fc
 @|rina/rocan/Rocan.java|8|18|rina.rocan|package|rina.rocan|(file)
 Class Start: rina.rocan.Rocan
@@ -299,6 +299,338 @@ Class Start: rina.rocan.client.RocanCommand
    Method End: verifyIndex([Ljava/lang/String;I)Z
 Class End  : rina.rocan.client.RocanCommand
 endProcessing "rina/rocan/client/RocanCommand.java"
+
+startProcessing "rina/rocan/client/RocanHUD.java" md5: 182ea43944987c19f9f65bfa593987d6
+@|rina/rocan/client/RocanHUD.java|8|25|rina.rocan.client|package|rina.rocan.client|(file)
+Class Start: rina.rocan.client.RocanHUD
+   @|rina/rocan/client/RocanHUD.java|499|507|RocanHUD|class|rina.rocan.client.RocanHUD|false
+   @|rina/rocan/client/RocanHUD.java|516|527|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/client/RocanHUD.java|540|546|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanHUD.java|540|546|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanHUD.java|547|551|name|field|rina.rocan.client.RocanHUD|name|
+   @|rina/rocan/client/RocanHUD.java|563|569|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanHUD.java|563|569|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanHUD.java|570|573|tag|field|rina.rocan.client.RocanHUD|tag|
+   @|rina/rocan/client/RocanHUD.java|585|591|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanHUD.java|585|591|String|class|java.lang.String|false
+   @|rina/rocan/client/RocanHUD.java|592|603|description|field|rina.rocan.client.RocanHUD|description|
+   @|rina/rocan/client/RocanHUD.java|617|626|TurokRect|class|rina.turok.TurokRect|false
+   @|rina/rocan/client/RocanHUD.java|617|626|TurokRect|class|rina.turok.TurokRect|false
+   @|rina/rocan/client/RocanHUD.java|627|631|rect|field|rina.rocan.client.RocanHUD|rect|
+   @|rina/rocan/client/RocanHUD.java|645|657|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/RocanHUD.java|645|657|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/RocanHUD.java|658|672|setting_smooth|field|rina.rocan.client.RocanHUD|setting_smooth|
+   @|rina/rocan/client/RocanHUD.java|684|696|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/RocanHUD.java|684|696|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/RocanHUD.java|697|711|setting_shadow|field|rina.rocan.client.RocanHUD|setting_shadow|
+   @|rina/rocan/client/RocanHUD.java|725|732|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+   @|rina/rocan/client/RocanHUD.java|725|732|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+   @|rina/rocan/client/RocanHUD.java|733|737|dock|field|rina.rocan.client.RocanHUD|dock|
+   @|rina/rocan/client/RocanHUD.java|755|760|hud_r|field|rina.rocan.client.RocanHUD|hud_r|
+   @|rina/rocan/client/RocanHUD.java|776|781|hud_g|field|rina.rocan.client.RocanHUD|hud_g|
+   @|rina/rocan/client/RocanHUD.java|797|802|hud_b|field|rina.rocan.client.RocanHUD|hud_b|
+   @|rina/rocan/client/RocanHUD.java|820|825|rgb_r|field|rina.rocan.client.RocanHUD|rgb_r|
+   @|rina/rocan/client/RocanHUD.java|841|846|rgb_g|field|rina.rocan.client.RocanHUD|rgb_g|
+   @|rina/rocan/client/RocanHUD.java|862|867|rgb_b|field|rina.rocan.client.RocanHUD|rgb_b|
+   Method Start: RocanHUD([Ljava/lang/String;)V
+      @|rina/rocan/client/RocanHUD.java|898|904|detail|param|rina.rocan.client.RocanHUD|RocanHUD|([Ljava/lang/String;)V|detail|0
+      @|rina/rocan/client/RocanHUD.java|880|888|RocanHUD|method|rina.rocan.client.RocanHUD|RocanHUD|([Ljava/lang/String;)V
+      @|rina/rocan/client/RocanHUD.java|889|895|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|916|920|dock|field|rina.rocan.client.RocanHUD|dock
+      @|rina/rocan/client/RocanHUD.java|923|930|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|931|938|LEFT_UP|field|rina.rocan.client.RocanHUD.Docking|LEFT_UP
+      @|rina/rocan/client/RocanHUD.java|945|967|initializeComponentHUD|method|rina.rocan.client.RocanHUD|initializeComponentHUD|([Ljava/lang/String;)V
+      @|rina/rocan/client/RocanHUD.java|968|974|detail|param|rina.rocan.client.RocanHUD|RocanHUD|([Ljava/lang/String;)V|detail|0
+   Method End: RocanHUD([Ljava/lang/String;)V
+   Method Start: RocanHUD([Ljava/lang/String;Lrina/rocan/client/RocanHUD$Docking;)V
+      @|rina/rocan/client/RocanHUD.java|1010|1016|detail|param|rina.rocan.client.RocanHUD|RocanHUD|([Ljava/lang/String;Lrina/rocan/client/RocanHUD$Docking;)V|detail|0
+      @|rina/rocan/client/RocanHUD.java|1026|1030|dock|param|rina.rocan.client.RocanHUD|RocanHUD|([Ljava/lang/String;Lrina/rocan/client/RocanHUD$Docking;)V|dock|1
+      @|rina/rocan/client/RocanHUD.java|992|1000|RocanHUD|method|rina.rocan.client.RocanHUD|RocanHUD|([Ljava/lang/String;Lrina/rocan/client/RocanHUD$Docking;)V
+      @|rina/rocan/client/RocanHUD.java|1001|1007|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|1018|1025|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|1042|1046|dock|field|rina.rocan.client.RocanHUD|dock
+      @|rina/rocan/client/RocanHUD.java|1049|1053|dock|param|rina.rocan.client.RocanHUD|RocanHUD|([Ljava/lang/String;Lrina/rocan/client/RocanHUD$Docking;)V|dock|1
+      @|rina/rocan/client/RocanHUD.java|1060|1082|initializeComponentHUD|method|rina.rocan.client.RocanHUD|initializeComponentHUD|([Ljava/lang/String;)V
+      @|rina/rocan/client/RocanHUD.java|1083|1089|detail|param|rina.rocan.client.RocanHUD|RocanHUD|([Ljava/lang/String;Lrina/rocan/client/RocanHUD$Docking;)V|detail|0
+   Method End: RocanHUD([Ljava/lang/String;Lrina/rocan/client/RocanHUD$Docking;)V
+   Method Start: initializeComponentHUD([Ljava/lang/String;)V
+      @|rina/rocan/client/RocanHUD.java|1144|1150|detail|param|rina.rocan.client.RocanHUD|initializeComponentHUD|([Ljava/lang/String;)V|detail|0
+      @|rina/rocan/client/RocanHUD.java|1112|1134|initializeComponentHUD|method|rina.rocan.client.RocanHUD|initializeComponentHUD|([Ljava/lang/String;)V
+      @|rina/rocan/client/RocanHUD.java|1135|1141|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|1162|1166|name|field|rina.rocan.client.RocanHUD|name
+      @|rina/rocan/client/RocanHUD.java|1176|1182|detail|param|rina.rocan.client.RocanHUD|initializeComponentHUD|([Ljava/lang/String;)V|detail|0
+      @|rina/rocan/client/RocanHUD.java|1195|1198|tag|field|rina.rocan.client.RocanHUD|tag
+      @|rina/rocan/client/RocanHUD.java|1209|1215|detail|param|rina.rocan.client.RocanHUD|initializeComponentHUD|([Ljava/lang/String;)V|detail|0
+      @|rina/rocan/client/RocanHUD.java|1228|1239|description|field|rina.rocan.client.RocanHUD|description
+      @|rina/rocan/client/RocanHUD.java|1242|1248|detail|param|rina.rocan.client.RocanHUD|initializeComponentHUD|([Ljava/lang/String;)V|detail|0
+      @|rina/rocan/client/RocanHUD.java|1263|1267|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|1274|1283|TurokRect|class|rina.turok.TurokRect|false
+      @|rina/rocan/client/RocanHUD.java|1289|1293|name|field|rina.rocan.client.RocanHUD|name
+      @|rina/rocan/client/RocanHUD.java|1312|1326|setting_smooth|field|rina.rocan.client.RocanHUD|setting_smooth
+      @|rina/rocan/client/RocanHUD.java|1329|1342|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|1347|1353|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|1421|1435|setting_shadow|field|rina.rocan.client.RocanHUD|setting_shadow
+      @|rina/rocan/client/RocanHUD.java|1438|1451|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|1456|1462|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|1529|1534|hud_r|field|rina.rocan.client.RocanHUD|hud_r
+      @|rina/rocan/client/RocanHUD.java|1548|1553|hud_g|field|rina.rocan.client.RocanHUD|hud_g
+      @|rina/rocan/client/RocanHUD.java|1567|1572|hud_b|field|rina.rocan.client.RocanHUD|hud_b
+      @|rina/rocan/client/RocanHUD.java|1588|1593|rgb_r|field|rina.rocan.client.RocanHUD|rgb_r
+      @|rina/rocan/client/RocanHUD.java|1607|1612|rgb_g|field|rina.rocan.client.RocanHUD|rgb_g
+      @|rina/rocan/client/RocanHUD.java|1626|1631|rgb_b|field|rina.rocan.client.RocanHUD|rgb_b
+   Method End: initializeComponentHUD([Ljava/lang/String;)V
+   Method Start: setX(I)V
+      @|rina/rocan/client/RocanHUD.java|1666|1667|x|param|rina.rocan.client.RocanHUD|setX|(I)V|x|0
+      @|rina/rocan/client/RocanHUD.java|1657|1661|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
+      @|rina/rocan/client/RocanHUD.java|1679|1683|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|1684|1688|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/client/RocanHUD.java|1689|1690|x|param|rina.rocan.client.RocanHUD|setX|(I)V|x|0
+   Method End: setX(I)V
+   Method Start: setY(I)V
+      @|rina/rocan/client/RocanHUD.java|1722|1723|y|param|rina.rocan.client.RocanHUD|setY|(I)V|y|0
+      @|rina/rocan/client/RocanHUD.java|1713|1717|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
+      @|rina/rocan/client/RocanHUD.java|1735|1739|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|1740|1744|setY|method|rina.turok.TurokRect|setY|(I)V
+      @|rina/rocan/client/RocanHUD.java|1745|1746|y|param|rina.rocan.client.RocanHUD|setY|(I)V|y|0
+   Method End: setY(I)V
+   Method Start: setWidth(I)V
+      @|rina/rocan/client/RocanHUD.java|1782|1787|width|param|rina.rocan.client.RocanHUD|setWidth|(I)V|width|0
+      @|rina/rocan/client/RocanHUD.java|1769|1777|setWidth|method|rina.rocan.client.RocanHUD|setWidth|(I)V
+      @|rina/rocan/client/RocanHUD.java|1799|1803|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|1804|1812|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
+      @|rina/rocan/client/RocanHUD.java|1813|1818|width|param|rina.rocan.client.RocanHUD|setWidth|(I)V|width|0
+   Method End: setWidth(I)V
+   Method Start: setHeight(I)V
+      @|rina/rocan/client/RocanHUD.java|1855|1861|height|param|rina.rocan.client.RocanHUD|setHeight|(I)V|height|0
+      @|rina/rocan/client/RocanHUD.java|1841|1850|setHeight|method|rina.rocan.client.RocanHUD|setHeight|(I)V
+      @|rina/rocan/client/RocanHUD.java|1873|1877|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|1878|1887|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
+      @|rina/rocan/client/RocanHUD.java|1888|1894|height|param|rina.rocan.client.RocanHUD|setHeight|(I)V|height|0
+   Method End: setHeight(I)V
+   Method Start: getName()Ljava/lang/String;
+      @|rina/rocan/client/RocanHUD.java|1912|1918|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|1919|1926|getName|method|rina.rocan.client.RocanModule|getName|()Ljava/lang/String;
+      @|rina/rocan/client/RocanHUD.java|1946|1950|name|field|rina.rocan.client.RocanHUD|name
+   Method End: getName()Ljava/lang/String;
+   Method Start: getTag()Ljava/lang/String;
+      @|rina/rocan/client/RocanHUD.java|1967|1973|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|1974|1980|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/client/RocanHUD.java|2000|2003|tag|field|rina.rocan.client.RocanHUD|tag
+   Method End: getTag()Ljava/lang/String;
+   Method Start: getDescription()Ljava/lang/String;
+      @|rina/rocan/client/RocanHUD.java|2020|2026|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|2027|2041|getDescription|method|rina.rocan.client.RocanModule|getDescription|()Ljava/lang/String;
+      @|rina/rocan/client/RocanHUD.java|2061|2072|description|field|rina.rocan.client.RocanHUD|description
+   Method End: getDescription()Ljava/lang/String;
+   Method Start: getX()I
+      @|rina/rocan/client/RocanHUD.java|2093|2097|getX|method|rina.rocan.client.RocanHUD|getX|()I
+      @|rina/rocan/client/RocanHUD.java|2117|2121|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|2122|2126|getX|method|rina.turok.TurokRect|getX|()I
+   Method End: getX()I
+   Method Start: getY()I
+      @|rina/rocan/client/RocanHUD.java|2149|2153|getY|method|rina.rocan.client.RocanHUD|getY|()I
+      @|rina/rocan/client/RocanHUD.java|2173|2177|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|2178|2182|getY|method|rina.turok.TurokRect|getY|()I
+   Method End: getY()I
+   Method Start: getWidth()I
+      @|rina/rocan/client/RocanHUD.java|2205|2213|getWidth|method|rina.rocan.client.RocanHUD|getWidth|()I
+      @|rina/rocan/client/RocanHUD.java|2233|2237|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|2238|2246|getWidth|method|rina.turok.TurokRect|getWidth|()I
+   Method End: getWidth()I
+   Method Start: getHeight()I
+      @|rina/rocan/client/RocanHUD.java|2269|2278|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
+      @|rina/rocan/client/RocanHUD.java|2298|2302|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|2303|2312|getHeight|method|rina.turok.TurokRect|getHeight|()I
+   Method End: getHeight()I
+   Method Start: onRender()V
+      @|rina/rocan/client/RocanHUD.java|2325|2333|Override|class|java.lang.Override|false
+      @|rina/rocan/client/RocanHUD.java|2348|2356|onRender|method|rina.rocan.client.RocanModule|onRender|()V
+      @|rina/rocan/client/RocanHUD.java|2390|2395|hud_r|field|rina.rocan.client.RocanHUD|hud_r
+      @|rina/rocan/client/RocanHUD.java|2398|2403|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|2404|2421|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanHUD.java|2424|2448|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|2469|2479|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/RocanHUD.java|2491|2496|hud_g|field|rina.rocan.client.RocanHUD|hud_g
+      @|rina/rocan/client/RocanHUD.java|2499|2504|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|2505|2522|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanHUD.java|2525|2549|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|2572|2582|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/RocanHUD.java|2594|2599|hud_b|field|rina.rocan.client.RocanHUD|hud_b
+      @|rina/rocan/client/RocanHUD.java|2602|2607|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|2608|2625|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanHUD.java|2628|2652|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|2674|2684|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/RocanHUD.java|2698|2703|rgb_r|field|rina.rocan.client.RocanHUD|rgb_r
+      @|rina/rocan/client/RocanHUD.java|2706|2711|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|2712|2727|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
+      @|rina/rocan/client/RocanHUD.java|2730|2742|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
+      @|rina/rocan/client/RocanHUD.java|2757|2762|rgb_g|field|rina.rocan.client.RocanHUD|rgb_g
+      @|rina/rocan/client/RocanHUD.java|2765|2770|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|2771|2786|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
+      @|rina/rocan/client/RocanHUD.java|2789|2801|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
+      @|rina/rocan/client/RocanHUD.java|2816|2821|rgb_b|field|rina.rocan.client.RocanHUD|rgb_b
+      @|rina/rocan/client/RocanHUD.java|2824|2829|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|2830|2845|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
+      @|rina/rocan/client/RocanHUD.java|2848|2860|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
+      @|rina/rocan/client/RocanHUD.java|2876|2881|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|2882|2898|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/client/RocanHUD.java|2901|2915|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+      @|rina/rocan/client/RocanHUD.java|2923|2931|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/client/RocanHUD.java|2941|2950|renderHUD|method|rina.rocan.client.RocanHUD|renderHUD|()V
+   Method End: onRender()V
+   Method Start: renderHUD()V
+      @|rina/rocan/client/RocanHUD.java|2982|2991|renderHUD|method|rina.rocan.client.RocanHUD|renderHUD|()V
+   Method End: renderHUD()V
+   Method Start: drawGUIRect(IIIIIIII)V
+      @|rina/rocan/client/RocanHUD.java|3032|3033|x|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|x|0
+      @|rina/rocan/client/RocanHUD.java|3039|3040|y|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|y|1
+      @|rina/rocan/client/RocanHUD.java|3046|3051|width|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|width|2
+      @|rina/rocan/client/RocanHUD.java|3057|3063|height|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|height|3
+      @|rina/rocan/client/RocanHUD.java|3069|3070|r|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|r|4
+      @|rina/rocan/client/RocanHUD.java|3076|3077|g|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|g|5
+      @|rina/rocan/client/RocanHUD.java|3083|3084|b|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|b|6
+      @|rina/rocan/client/RocanHUD.java|3090|3091|a|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|a|7
+      @|rina/rocan/client/RocanHUD.java|3016|3027|drawGUIRect|method|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V
+      @|rina/rocan/client/RocanHUD.java|3098|3113|TurokScreenUtil|class|rina.turok.TurokScreenUtil|false
+      @|rina/rocan/client/RocanHUD.java|3114|3125|drawGUIRect|method|rina.turok.TurokScreenUtil|drawGUIRect|(IIIIIIII)V
+      @|rina/rocan/client/RocanHUD.java|3131|3135|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|3136|3140|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/client/RocanHUD.java|3145|3146|x|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|x|0
+      @|rina/rocan/client/RocanHUD.java|3153|3157|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|3158|3162|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/client/RocanHUD.java|3167|3168|y|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|y|1
+      @|rina/rocan/client/RocanHUD.java|3175|3179|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|3180|3184|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/client/RocanHUD.java|3189|3190|x|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|x|0
+      @|rina/rocan/client/RocanHUD.java|3193|3198|width|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|width|2
+      @|rina/rocan/client/RocanHUD.java|3205|3209|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|3210|3214|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/client/RocanHUD.java|3219|3220|y|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|y|1
+      @|rina/rocan/client/RocanHUD.java|3223|3229|height|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|height|3
+      @|rina/rocan/client/RocanHUD.java|3231|3232|r|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|r|4
+      @|rina/rocan/client/RocanHUD.java|3234|3235|g|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|g|5
+      @|rina/rocan/client/RocanHUD.java|3237|3238|b|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|b|6
+      @|rina/rocan/client/RocanHUD.java|3240|3241|a|param|rina.rocan.client.RocanHUD|drawGUIRect|(IIIIIIII)V|a|7
+   Method End: drawGUIRect(IIIIIIII)V
+   Method Start: renderString(Ljava/lang/String;II)V
+      @|rina/rocan/client/RocanHUD.java|3287|3293|string|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;II)V|string|0
+      @|rina/rocan/client/RocanHUD.java|3299|3300|x|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;II)V|x|1
+      @|rina/rocan/client/RocanHUD.java|3306|3307|y|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;II)V|y|2
+      @|rina/rocan/client/RocanHUD.java|3267|3279|renderString|method|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;II)V
+      @|rina/rocan/client/RocanHUD.java|3280|3286|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|3314|3325|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/client/RocanHUD.java|3326|3341|renderStringHUD|method|rina.turok.TurokString|renderStringHUD|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/client/RocanHUD.java|3342|3348|string|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;II)V|string|0
+      @|rina/rocan/client/RocanHUD.java|3355|3359|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|3360|3364|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/client/RocanHUD.java|3369|3382|verifyDocking|method|rina.rocan.client.RocanHUD|verifyDocking|(II)I
+      @|rina/rocan/client/RocanHUD.java|3383|3397|getStringWidth|method|rina.rocan.client.RocanHUD|getStringWidth|(Ljava/lang/String;)I
+      @|rina/rocan/client/RocanHUD.java|3398|3404|string|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;II)V|string|0
+      @|rina/rocan/client/RocanHUD.java|3407|3408|x|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;II)V|x|1
+      @|rina/rocan/client/RocanHUD.java|3416|3420|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|3421|3425|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/client/RocanHUD.java|3430|3431|y|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;II)V|y|2
+      @|rina/rocan/client/RocanHUD.java|3438|3443|hud_r|field|rina.rocan.client.RocanHUD|hud_r
+      @|rina/rocan/client/RocanHUD.java|3450|3455|hud_g|field|rina.rocan.client.RocanHUD|hud_g
+      @|rina/rocan/client/RocanHUD.java|3462|3467|hud_b|field|rina.rocan.client.RocanHUD|hud_b
+      @|rina/rocan/client/RocanHUD.java|3474|3488|setting_shadow|field|rina.rocan.client.RocanHUD|setting_shadow
+      @|rina/rocan/client/RocanHUD.java|3489|3499|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanHUD.java|3508|3522|setting_smooth|field|rina.rocan.client.RocanHUD|setting_smooth
+      @|rina/rocan/client/RocanHUD.java|3523|3533|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+   Method End: renderString(Ljava/lang/String;II)V
+   Method Start: renderString(Ljava/lang/String;IIIII)V
+      @|rina/rocan/client/RocanHUD.java|3581|3587|string|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|string|0
+      @|rina/rocan/client/RocanHUD.java|3593|3594|x|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|x|1
+      @|rina/rocan/client/RocanHUD.java|3600|3601|y|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|y|2
+      @|rina/rocan/client/RocanHUD.java|3607|3608|r|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|r|3
+      @|rina/rocan/client/RocanHUD.java|3614|3615|g|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|g|4
+      @|rina/rocan/client/RocanHUD.java|3621|3622|b|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|b|5
+      @|rina/rocan/client/RocanHUD.java|3561|3573|renderString|method|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V
+      @|rina/rocan/client/RocanHUD.java|3574|3580|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|3629|3640|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/client/RocanHUD.java|3641|3656|renderStringHUD|method|rina.turok.TurokString|renderStringHUD|(Ljava/lang/String;IIIIIZZ)V
+      @|rina/rocan/client/RocanHUD.java|3657|3663|string|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|string|0
+      @|rina/rocan/client/RocanHUD.java|3670|3674|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|3675|3679|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/client/RocanHUD.java|3684|3697|verifyDocking|method|rina.rocan.client.RocanHUD|verifyDocking|(II)I
+      @|rina/rocan/client/RocanHUD.java|3698|3712|getStringWidth|method|rina.rocan.client.RocanHUD|getStringWidth|(Ljava/lang/String;)I
+      @|rina/rocan/client/RocanHUD.java|3713|3719|string|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|string|0
+      @|rina/rocan/client/RocanHUD.java|3722|3723|x|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|x|1
+      @|rina/rocan/client/RocanHUD.java|3731|3735|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|3736|3740|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/client/RocanHUD.java|3745|3746|y|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|y|2
+      @|rina/rocan/client/RocanHUD.java|3748|3749|r|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|r|3
+      @|rina/rocan/client/RocanHUD.java|3751|3752|g|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|g|4
+      @|rina/rocan/client/RocanHUD.java|3754|3755|b|param|rina.rocan.client.RocanHUD|renderString|(Ljava/lang/String;IIIII)V|b|5
+      @|rina/rocan/client/RocanHUD.java|3762|3776|setting_shadow|field|rina.rocan.client.RocanHUD|setting_shadow
+      @|rina/rocan/client/RocanHUD.java|3777|3787|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanHUD.java|3796|3810|setting_smooth|field|rina.rocan.client.RocanHUD|setting_smooth
+      @|rina/rocan/client/RocanHUD.java|3811|3821|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+   Method End: renderString(Ljava/lang/String;IIIII)V
+   Method Start: getStringWidth(Ljava/lang/String;)I
+      @|rina/rocan/client/RocanHUD.java|3870|3876|string|param|rina.rocan.client.RocanHUD|getStringWidth|(Ljava/lang/String;)I|string|0
+      @|rina/rocan/client/RocanHUD.java|3848|3862|getStringWidth|method|rina.rocan.client.RocanHUD|getStringWidth|(Ljava/lang/String;)I
+      @|rina/rocan/client/RocanHUD.java|3863|3869|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|3890|3901|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/client/RocanHUD.java|3902|3919|getStringHUDWidth|method|rina.turok.TurokString|getStringHUDWidth|(Ljava/lang/String;Z)I
+      @|rina/rocan/client/RocanHUD.java|3920|3926|string|param|rina.rocan.client.RocanHUD|getStringWidth|(Ljava/lang/String;)I|string|0
+      @|rina/rocan/client/RocanHUD.java|3933|3947|setting_smooth|field|rina.rocan.client.RocanHUD|setting_smooth
+      @|rina/rocan/client/RocanHUD.java|3948|3958|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+   Method End: getStringWidth(Ljava/lang/String;)I
+   Method Start: getStringHeight(Ljava/lang/String;)I
+      @|rina/rocan/client/RocanHUD.java|4008|4014|string|param|rina.rocan.client.RocanHUD|getStringHeight|(Ljava/lang/String;)I|string|0
+      @|rina/rocan/client/RocanHUD.java|3985|4000|getStringHeight|method|rina.rocan.client.RocanHUD|getStringHeight|(Ljava/lang/String;)I
+      @|rina/rocan/client/RocanHUD.java|4001|4007|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|4030|4044|setting_smooth|field|rina.rocan.client.RocanHUD|setting_smooth
+      @|rina/rocan/client/RocanHUD.java|4045|4055|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanHUD.java|4072|4083|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/client/RocanHUD.java|4084|4102|getStringHUDHeight|method|rina.turok.TurokString|getStringHUDHeight|(Ljava/lang/String;Z)I
+      @|rina/rocan/client/RocanHUD.java|4103|4109|string|param|rina.rocan.client.RocanHUD|getStringHeight|(Ljava/lang/String;)I|string|0
+      @|rina/rocan/client/RocanHUD.java|4116|4130|setting_smooth|field|rina.rocan.client.RocanHUD|setting_smooth
+      @|rina/rocan/client/RocanHUD.java|4131|4141|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanHUD.java|4167|4178|TurokString|class|rina.turok.TurokString|false
+      @|rina/rocan/client/RocanHUD.java|4179|4197|getStringHUDHeight|method|rina.turok.TurokString|getStringHUDHeight|(Ljava/lang/String;Z)I
+      @|rina/rocan/client/RocanHUD.java|4198|4204|string|param|rina.rocan.client.RocanHUD|getStringHeight|(Ljava/lang/String;)I|string|0
+      @|rina/rocan/client/RocanHUD.java|4211|4225|setting_smooth|field|rina.rocan.client.RocanHUD|setting_smooth
+      @|rina/rocan/client/RocanHUD.java|4226|4236|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+   Method End: getStringHeight(Ljava/lang/String;)I
+   Method Start: verifyDocking(II)I
+      @|rina/rocan/client/RocanHUD.java|4281|4286|width|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|width|0
+      @|rina/rocan/client/RocanHUD.java|4292|4293|x|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|x|1
+      @|rina/rocan/client/RocanHUD.java|4263|4276|verifyDocking|method|rina.rocan.client.RocanHUD|verifyDocking|(II)I
+      @|rina/rocan/client/RocanHUD.java|4321|4322|x|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|x|1
+      @|rina/rocan/client/RocanHUD.java|4333|4337|dock|field|rina.rocan.client.RocanHUD|dock
+      @|rina/rocan/client/RocanHUD.java|4341|4348|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|4349|4356|LEFT_UP|field|rina.rocan.client.RocanHUD.Docking|LEFT_UP
+      @|rina/rocan/client/RocanHUD.java|4381|4382|x|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|x|1
+      @|rina/rocan/client/RocanHUD.java|4398|4402|dock|field|rina.rocan.client.RocanHUD|dock
+      @|rina/rocan/client/RocanHUD.java|4406|4413|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|4414|4423|LEFT_DOWN|field|rina.rocan.client.RocanHUD.Docking|LEFT_DOWN
+      @|rina/rocan/client/RocanHUD.java|4448|4449|x|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|x|1
+      @|rina/rocan/client/RocanHUD.java|4465|4469|dock|field|rina.rocan.client.RocanHUD|dock
+      @|rina/rocan/client/RocanHUD.java|4473|4480|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|4481|4489|RIGHT_UP|field|rina.rocan.client.RocanHUD.Docking|RIGHT_UP
+      @|rina/rocan/client/RocanHUD.java|4519|4523|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|4524|4532|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/client/RocanHUD.java|4537|4542|width|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|width|0
+      @|rina/rocan/client/RocanHUD.java|4545|4546|x|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|x|1
+      @|rina/rocan/client/RocanHUD.java|4562|4566|dock|field|rina.rocan.client.RocanHUD|dock
+      @|rina/rocan/client/RocanHUD.java|4570|4577|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|4578|4588|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
+      @|rina/rocan/client/RocanHUD.java|4618|4622|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|4623|4631|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/client/RocanHUD.java|4636|4641|width|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|width|0
+      @|rina/rocan/client/RocanHUD.java|4644|4645|x|param|rina.rocan.client.RocanHUD|verifyDocking|(II)I|x|1
+   Method End: verifyDocking(II)I
+   Enum Start: rina.rocan.client.RocanHUD.Docking
+      @|rina/rocan/client/RocanHUD.java|4700|4707|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|4713|4720|LEFT_UP|field|rina.rocan.client.RocanHUD.Docking|LEFT_UP
+      @|rina/rocan/client/RocanHUD.java|4725|4734|LEFT_DOWN|field|rina.rocan.client.RocanHUD.Docking|LEFT_DOWN
+      @|rina/rocan/client/RocanHUD.java|4739|4747|RIGHT_UP|field|rina.rocan.client.RocanHUD.Docking|RIGHT_UP
+      @|rina/rocan/client/RocanHUD.java|4752|4762|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
+   Enum End  : rina.rocan.client.RocanHUD.Docking
+Class End  : rina.rocan.client.RocanHUD
+endProcessing "rina/rocan/client/RocanHUD.java"
 
 startProcessing "rina/rocan/client/RocanModule.java" md5: 55cebc67de69dc0423a1687e05d8d833
 @|rina/rocan/client/RocanModule.java|8|25|rina.rocan.client|package|rina.rocan.client|(file)
@@ -1706,6 +2038,36 @@ Class Start: rina.rocan.client.modules.gui.RocanGUI
 Class End  : rina.rocan.client.modules.gui.RocanGUI
 endProcessing "rina/rocan/client/modules/gui/RocanGUI.java"
 
+startProcessing "rina/rocan/client/modules/gui/RocanMasterHUD.java" md5: 13da0b1ad821a308364e5209161dfad8
+@|rina/rocan/client/modules/gui/RocanMasterHUD.java|8|37|rina.rocan.client.modules.gui|package|rina.rocan.client.modules.gui|(file)
+Class Start: rina.rocan.client.modules.gui.RocanMasterHUD
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|413|419|Define|class|rina.rocan.client.RocanModule.Define|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|420|424|name|method|rina.rocan.client.RocanModule.Define|name|()Ljava/lang/String;
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|434|437|tag|method|rina.rocan.client.RocanModule.Define|tag|()Ljava/lang/String;
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|447|458|description|method|rina.rocan.client.RocanModule.Define|description|()Ljava/lang/String;
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|474|482|category|method|rina.rocan.client.RocanModule.Define|category|()Lrina/rocan/client/RocanModule$Category;
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|485|493|Category|class|rina.rocan.client.RocanModule.Category|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|494|503|ROCAN_GUI|field|rina.rocan.client.RocanModule.Category|ROCAN_GUI
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|519|533|RocanMasterHUD|class|rina.rocan.client.modules.gui.RocanMasterHUD|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|542|553|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|558|570|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|558|570|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|571|587|string_color_red|field|rina.rocan.client.modules.gui.RocanMasterHUD|string_color_red|
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|592|605|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|610|616|String|class|java.lang.String|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|685|697|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|685|697|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|698|715|string_color_blue|field|rina.rocan.client.modules.gui.RocanMasterHUD|string_color_blue|
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|719|732|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|737|743|String|class|java.lang.String|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|815|827|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|815|827|RocanSetting|class|rina.rocan.client.RocanSetting|false
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|828|846|string_color_green|field|rina.rocan.client.modules.gui.RocanMasterHUD|string_color_green|
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|849|862|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
+   @|rina/rocan/client/modules/gui/RocanMasterHUD.java|867|873|String|class|java.lang.String|false
+Class End  : rina.rocan.client.modules.gui.RocanMasterHUD
+endProcessing "rina/rocan/client/modules/gui/RocanMasterHUD.java"
+
 startProcessing "rina/rocan/client/modules/misc/RocanFastUtil.java" md5: de57d76ae6b4a966b4a6258b738b40c7
 @|rina/rocan/client/modules/misc/RocanFastUtil.java|8|38|rina.rocan.client.modules.misc|package|rina.rocan.client.modules.misc|(file)
 Class Start: rina.rocan.client.modules.misc.RocanFastUtil
@@ -2607,7 +2969,7 @@ Class Start: rina.rocan.event.render.RocanEventRender
 Class End  : rina.rocan.event.render.RocanEventRender
 endProcessing "rina/rocan/event/render/RocanEventRender.java"
 
-startProcessing "rina/rocan/gui/RocanMainGUI.java" md5: 8afc15fbecb1bbac7d588382b73057a9
+startProcessing "rina/rocan/gui/RocanMainGUI.java" md5: 3a0c5a714e00ec6c1d1dfd2a57695d81
 @|rina/rocan/gui/RocanMainGUI.java|8|22|rina.rocan.gui|package|rina.rocan.gui|(file)
 Class Start: rina.rocan.gui.RocanMainGUI
    @|rina/rocan/gui/RocanMainGUI.java|1052|1064|RocanMainGUI|class|rina.rocan.gui.RocanMainGUI|false
@@ -2741,107 +3103,124 @@ Class Start: rina.rocan.gui.RocanMainGUI
       @|rina/rocan/gui/RocanMainGUI.java|3351|3363|isMouseClick|method|rina.rocan.gui.frame.RocanFrame|isMouseClick|()Z
       @|rina/rocan/gui/RocanMainGUI.java|3382|3395|setMouseClick|method|rina.rocan.gui.frame.RocanFrame|setMouseClick|(Z)V
    Method End: mouseReleased(III)V
+   Method Start: handleMouseInput()V
+      @|rina/rocan/gui/RocanMainGUI.java|3442|3458|handleMouseInput|method|net.minecraft.client.gui.GuiScreen|handleMouseInput|()V
+      @|rina/rocan/gui/RocanMainGUI.java|3468|3479|IOException|class|java.io.IOException|false
+      @|rina/rocan/gui/RocanMainGUI.java|3489|3494|Mouse|class|org.lwjgl.input.Mouse|false
+      @|rina/rocan/gui/RocanMainGUI.java|3495|3509|getEventDWheel|method|org.lwjgl.input.Mouse|getEventDWheel|()I
+      @|rina/rocan/gui/RocanMainGUI.java|3528|3538|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
+      @|rina/rocan/gui/RocanMainGUI.java|3553|3563|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|3579|3586|getRect|method|rina.rocan.gui.frame.RocanFrame|getRect|()Lrina/turok/TurokRect;
+      @|rina/rocan/gui/RocanMainGUI.java|3589|3590|y|field|rina.turok.TurokRect|y
+      @|rina/rocan/gui/RocanMainGUI.java|3617|3622|Mouse|class|org.lwjgl.input.Mouse|false
+      @|rina/rocan/gui/RocanMainGUI.java|3623|3637|getEventDWheel|method|org.lwjgl.input.Mouse|getEventDWheel|()I
+      @|rina/rocan/gui/RocanMainGUI.java|3656|3666|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
+      @|rina/rocan/gui/RocanMainGUI.java|3681|3691|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|3707|3714|getRect|method|rina.rocan.gui.frame.RocanFrame|getRect|()Lrina/turok/TurokRect;
+      @|rina/rocan/gui/RocanMainGUI.java|3717|3718|y|field|rina.turok.TurokRect|y
+      @|rina/rocan/gui/RocanMainGUI.java|3749|3765|handleMouseInput|method|net.minecraft.client.gui.GuiScreen|handleMouseInput|()V
+   Method End: handleMouseInput()V
    Method Start: drawScreen(IIF)V
-      @|rina/rocan/gui/RocanMainGUI.java|3469|3470|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|3476|3477|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|3485|3498|partial_ticks|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|partial_ticks|2
-      @|rina/rocan/gui/RocanMainGUI.java|3431|3439|Override|class|java.lang.Override|false
-      @|rina/rocan/gui/RocanMainGUI.java|3454|3464|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
-      @|rina/rocan/gui/RocanMainGUI.java|3510|3531|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
-      @|rina/rocan/gui/RocanMainGUI.java|3563|3568|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/gui/RocanMainGUI.java|3569|3586|getClientGUITheme|method|rina.rocan.Rocan|getClientGUITheme|()Lrina/turok/TurokStructureColor;
-      @|rina/rocan/gui/RocanMainGUI.java|3589|3596|refresh|method|rina.turok.TurokStructureColor|refresh|()V
-      @|rina/rocan/gui/RocanMainGUI.java|3605|3621|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
-      @|rina/rocan/gui/RocanMainGUI.java|3646|3662|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
-      @|rina/rocan/gui/RocanMainGUI.java|3663|3687|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/gui/RocanMainGUI.java|3688|3700|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/gui/RocanMainGUI.java|3710|3723|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/gui/RocanMainGUI.java|3724|3733|fixScreen|method|rina.turok.TurokRenderGL|fixScreen|(FF)V
-      @|rina/rocan/gui/RocanMainGUI.java|3752|3766|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
-      @|rina/rocan/gui/RocanMainGUI.java|3788|3803|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
-      @|rina/rocan/gui/RocanMainGUI.java|3813|3817|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|3818|3827|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|3828|3832|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|3833|3846|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
-      @|rina/rocan/gui/RocanMainGUI.java|3854|3864|refreshGUI|method|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V
-      @|rina/rocan/gui/RocanMainGUI.java|3865|3866|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|3868|3869|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|3901|3911|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
-      @|rina/rocan/gui/RocanMainGUI.java|3926|3936|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
-      @|rina/rocan/gui/RocanMainGUI.java|3951|3957|render|method|rina.rocan.gui.frame.RocanFrame|render|()V
-      @|rina/rocan/gui/RocanMainGUI.java|3978|3989|verifyFrame|method|rina.rocan.gui.frame.RocanFrame|verifyFrame|(II)Z
-      @|rina/rocan/gui/RocanMainGUI.java|3990|3991|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|3993|3994|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|4009|4022|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|4052|4062|resetFrame|method|rina.rocan.gui.frame.RocanFrame|resetFrame|()V
-      @|rina/rocan/gui/RocanMainGUI.java|4081|4094|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|4095|4107|refreshFrame|method|rina.rocan.gui.frame.RocanFrame|refreshFrame|()V
-      @|rina/rocan/gui/RocanMainGUI.java|4116|4120|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|4121|4130|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|4131|4135|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|4136|4149|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
-      @|rina/rocan/gui/RocanMainGUI.java|4155|4159|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|4160|4169|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|4170|4174|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|4175|4183|GL_BLEND|field|org.lwjgl.opengl.GL11|GL_BLEND
-      @|rina/rocan/gui/RocanMainGUI.java|4191|4195|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|4196|4204|glEnable|method|org.lwjgl.opengl.GL11|glEnable|(I)V
-      @|rina/rocan/gui/RocanMainGUI.java|4205|4209|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/gui/RocanMainGUI.java|4210|4223|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
-      @|rina/rocan/gui/RocanMainGUI.java|4229|4243|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/gui/RocanMainGUI.java|4244|4249|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFF)V
+      @|rina/rocan/gui/RocanMainGUI.java|3816|3817|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|3823|3824|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|3832|3845|partial_ticks|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|partial_ticks|2
+      @|rina/rocan/gui/RocanMainGUI.java|3778|3786|Override|class|java.lang.Override|false
+      @|rina/rocan/gui/RocanMainGUI.java|3801|3811|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|rina/rocan/gui/RocanMainGUI.java|3857|3878|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|rina/rocan/gui/RocanMainGUI.java|3910|3915|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/gui/RocanMainGUI.java|3916|3933|getClientGUITheme|method|rina.rocan.Rocan|getClientGUITheme|()Lrina/turok/TurokStructureColor;
+      @|rina/rocan/gui/RocanMainGUI.java|3936|3943|refresh|method|rina.turok.TurokStructureColor|refresh|()V
+      @|rina/rocan/gui/RocanMainGUI.java|3952|3968|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
+      @|rina/rocan/gui/RocanMainGUI.java|3993|4009|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
+      @|rina/rocan/gui/RocanMainGUI.java|4010|4034|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/gui/RocanMainGUI.java|4035|4047|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/gui/RocanMainGUI.java|4057|4070|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/gui/RocanMainGUI.java|4071|4080|fixScreen|method|rina.turok.TurokRenderGL|fixScreen|(FF)V
+      @|rina/rocan/gui/RocanMainGUI.java|4099|4113|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|rina/rocan/gui/RocanMainGUI.java|4135|4150|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|rina/rocan/gui/RocanMainGUI.java|4160|4164|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|4165|4174|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|4175|4179|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|4180|4193|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
+      @|rina/rocan/gui/RocanMainGUI.java|4201|4211|refreshGUI|method|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V
+      @|rina/rocan/gui/RocanMainGUI.java|4212|4213|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|4215|4216|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|4248|4258|RocanFrame|class|rina.rocan.gui.frame.RocanFrame|false
+      @|rina/rocan/gui/RocanMainGUI.java|4273|4283|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|4298|4304|render|method|rina.rocan.gui.frame.RocanFrame|render|()V
+      @|rina/rocan/gui/RocanMainGUI.java|4325|4336|verifyFrame|method|rina.rocan.gui.frame.RocanFrame|verifyFrame|(II)Z
+      @|rina/rocan/gui/RocanMainGUI.java|4337|4338|x|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|4340|4341|y|param|rina.rocan.gui.RocanMainGUI|drawScreen|(IIF)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|4356|4369|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|4399|4409|resetFrame|method|rina.rocan.gui.frame.RocanFrame|resetFrame|()V
+      @|rina/rocan/gui/RocanMainGUI.java|4428|4441|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|4442|4454|refreshFrame|method|rina.rocan.gui.frame.RocanFrame|refreshFrame|()V
+      @|rina/rocan/gui/RocanMainGUI.java|4463|4467|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|4468|4477|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|4478|4482|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|4483|4496|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
+      @|rina/rocan/gui/RocanMainGUI.java|4502|4506|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|4507|4516|glDisable|method|org.lwjgl.opengl.GL11|glDisable|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|4517|4521|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|4522|4530|GL_BLEND|field|org.lwjgl.opengl.GL11|GL_BLEND
+      @|rina/rocan/gui/RocanMainGUI.java|4538|4542|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|4543|4551|glEnable|method|org.lwjgl.opengl.GL11|glEnable|(I)V
+      @|rina/rocan/gui/RocanMainGUI.java|4552|4556|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/gui/RocanMainGUI.java|4557|4570|GL_TEXTURE_2D|field|org.lwjgl.opengl.GL11|GL_TEXTURE_2D
+      @|rina/rocan/gui/RocanMainGUI.java|4576|4590|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/gui/RocanMainGUI.java|4591|4596|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFF)V
    Method End: drawScreen(IIF)V
    Method Start: refreshGUI(IILnet/minecraft/client/gui/ScaledResolution;)V
-      @|rina/rocan/gui/RocanMainGUI.java|4295|4296|x|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|4302|4303|y|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|4322|4339|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
-      @|rina/rocan/gui/RocanMainGUI.java|4280|4290|refreshGUI|method|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V
-      @|rina/rocan/gui/RocanMainGUI.java|4305|4321|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
-      @|rina/rocan/gui/RocanMainGUI.java|4351|4358|mouse_x|field|rina.rocan.gui.RocanMainGUI|mouse_x
-      @|rina/rocan/gui/RocanMainGUI.java|4361|4362|x|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|x|0
-      @|rina/rocan/gui/RocanMainGUI.java|4372|4379|mouse_y|field|rina.rocan.gui.RocanMainGUI|mouse_y
-      @|rina/rocan/gui/RocanMainGUI.java|4382|4383|y|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|y|1
-      @|rina/rocan/gui/RocanMainGUI.java|4395|4407|screen_width|field|rina.rocan.gui.RocanMainGUI|screen_width
-      @|rina/rocan/gui/RocanMainGUI.java|4411|4428|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
-      @|rina/rocan/gui/RocanMainGUI.java|4429|4443|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
-      @|rina/rocan/gui/RocanMainGUI.java|4455|4468|screen_height|field|rina.rocan.gui.RocanMainGUI|screen_height
-      @|rina/rocan/gui/RocanMainGUI.java|4471|4488|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
-      @|rina/rocan/gui/RocanMainGUI.java|4489|4504|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|rina/rocan/gui/RocanMainGUI.java|4642|4643|x|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|4649|4650|y|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|4669|4686|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
+      @|rina/rocan/gui/RocanMainGUI.java|4627|4637|refreshGUI|method|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V
+      @|rina/rocan/gui/RocanMainGUI.java|4652|4668|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution|false
+      @|rina/rocan/gui/RocanMainGUI.java|4698|4705|mouse_x|field|rina.rocan.gui.RocanMainGUI|mouse_x
+      @|rina/rocan/gui/RocanMainGUI.java|4708|4709|x|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|x|0
+      @|rina/rocan/gui/RocanMainGUI.java|4719|4726|mouse_y|field|rina.rocan.gui.RocanMainGUI|mouse_y
+      @|rina/rocan/gui/RocanMainGUI.java|4729|4730|y|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|y|1
+      @|rina/rocan/gui/RocanMainGUI.java|4742|4754|screen_width|field|rina.rocan.gui.RocanMainGUI|screen_width
+      @|rina/rocan/gui/RocanMainGUI.java|4758|4775|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
+      @|rina/rocan/gui/RocanMainGUI.java|4776|4790|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|rina/rocan/gui/RocanMainGUI.java|4802|4815|screen_height|field|rina.rocan.gui.RocanMainGUI|screen_height
+      @|rina/rocan/gui/RocanMainGUI.java|4818|4835|scaled_resolution|param|rina.rocan.gui.RocanMainGUI|refreshGUI|(IILnet/minecraft/client/gui/ScaledResolution;)V|scaled_resolution|2
+      @|rina/rocan/gui/RocanMainGUI.java|4836|4851|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
    Method End: refreshGUI(IILnet/minecraft/client/gui/ScaledResolution;)V
    Method Start: refreshFrame()V
-      @|rina/rocan/gui/RocanMainGUI.java|4528|4540|refreshFrame|method|rina.rocan.gui.RocanMainGUI|refreshFrame|()V
-      @|rina/rocan/gui/RocanMainGUI.java|4553|4563|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
-      @|rina/rocan/gui/RocanMainGUI.java|4564|4570|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
-      @|rina/rocan/gui/RocanMainGUI.java|4576|4589|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
-      @|rina/rocan/gui/RocanMainGUI.java|4600|4610|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
-      @|rina/rocan/gui/RocanMainGUI.java|4611|4614|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/gui/RocanMainGUI.java|4620|4633|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|4875|4887|refreshFrame|method|rina.rocan.gui.RocanMainGUI|refreshFrame|()V
+      @|rina/rocan/gui/RocanMainGUI.java|4900|4910|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|4911|4917|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|rina/rocan/gui/RocanMainGUI.java|4923|4936|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
+      @|rina/rocan/gui/RocanMainGUI.java|4947|4957|frame_list|field|rina.rocan.gui.RocanMainGUI|frame_list
+      @|rina/rocan/gui/RocanMainGUI.java|4958|4961|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/gui/RocanMainGUI.java|4967|4980|focused_frame|field|rina.rocan.gui.RocanMainGUI|focused_frame
    Method End: refreshFrame()V
    Method Start: setCancelToCloseGUI(Z)V
-      @|rina/rocan/gui/RocanMainGUI.java|4684|4689|state|param|rina.rocan.gui.RocanMainGUI|setCancelToCloseGUI|(Z)V|state|0
-      @|rina/rocan/gui/RocanMainGUI.java|4656|4675|setCancelToCloseGUI|method|rina.rocan.gui.RocanMainGUI|setCancelToCloseGUI|(Z)V
-      @|rina/rocan/gui/RocanMainGUI.java|4701|4723|event_cancel_close_gui|field|rina.rocan.gui.RocanMainGUI|event_cancel_close_gui
-      @|rina/rocan/gui/RocanMainGUI.java|4726|4731|state|param|rina.rocan.gui.RocanMainGUI|setCancelToCloseGUI|(Z)V|state|0
+      @|rina/rocan/gui/RocanMainGUI.java|5031|5036|state|param|rina.rocan.gui.RocanMainGUI|setCancelToCloseGUI|(Z)V|state|0
+      @|rina/rocan/gui/RocanMainGUI.java|5003|5022|setCancelToCloseGUI|method|rina.rocan.gui.RocanMainGUI|setCancelToCloseGUI|(Z)V
+      @|rina/rocan/gui/RocanMainGUI.java|5048|5070|event_cancel_close_gui|field|rina.rocan.gui.RocanMainGUI|event_cancel_close_gui
+      @|rina/rocan/gui/RocanMainGUI.java|5073|5078|state|param|rina.rocan.gui.RocanMainGUI|setCancelToCloseGUI|(Z)V|state|0
    Method End: setCancelToCloseGUI(Z)V
    Method Start: getScreenWidth()I
-      @|rina/rocan/gui/RocanMainGUI.java|4752|4766|getScreenWidth|method|rina.rocan.gui.RocanMainGUI|getScreenWidth|()I
-      @|rina/rocan/gui/RocanMainGUI.java|4786|4798|screen_width|field|rina.rocan.gui.RocanMainGUI|screen_width
+      @|rina/rocan/gui/RocanMainGUI.java|5099|5113|getScreenWidth|method|rina.rocan.gui.RocanMainGUI|getScreenWidth|()I
+      @|rina/rocan/gui/RocanMainGUI.java|5133|5145|screen_width|field|rina.rocan.gui.RocanMainGUI|screen_width
    Method End: getScreenWidth()I
    Method Start: getScreenHeight()I
-      @|rina/rocan/gui/RocanMainGUI.java|4819|4834|getScreenHeight|method|rina.rocan.gui.RocanMainGUI|getScreenHeight|()I
-      @|rina/rocan/gui/RocanMainGUI.java|4854|4867|screen_height|field|rina.rocan.gui.RocanMainGUI|screen_height
+      @|rina/rocan/gui/RocanMainGUI.java|5166|5181|getScreenHeight|method|rina.rocan.gui.RocanMainGUI|getScreenHeight|()I
+      @|rina/rocan/gui/RocanMainGUI.java|5201|5214|screen_height|field|rina.rocan.gui.RocanMainGUI|screen_height
    Method End: getScreenHeight()I
    Method Start: getMouseX()I
-      @|rina/rocan/gui/RocanMainGUI.java|4888|4897|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
-      @|rina/rocan/gui/RocanMainGUI.java|4917|4924|mouse_x|field|rina.rocan.gui.RocanMainGUI|mouse_x
+      @|rina/rocan/gui/RocanMainGUI.java|5235|5244|getMouseX|method|rina.rocan.gui.RocanMainGUI|getMouseX|()I
+      @|rina/rocan/gui/RocanMainGUI.java|5264|5271|mouse_x|field|rina.rocan.gui.RocanMainGUI|mouse_x
    Method End: getMouseX()I
    Method Start: getMouseY()I
-      @|rina/rocan/gui/RocanMainGUI.java|4945|4954|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
-      @|rina/rocan/gui/RocanMainGUI.java|4974|4981|mouse_y|field|rina.rocan.gui.RocanMainGUI|mouse_y
+      @|rina/rocan/gui/RocanMainGUI.java|5292|5301|getMouseY|method|rina.rocan.gui.RocanMainGUI|getMouseY|()I
+      @|rina/rocan/gui/RocanMainGUI.java|5321|5328|mouse_y|field|rina.rocan.gui.RocanMainGUI|mouse_y
    Method End: getMouseY()I
    Method Start: isCancelledToCloseGUI()Z
-      @|rina/rocan/gui/RocanMainGUI.java|5006|5027|isCancelledToCloseGUI|method|rina.rocan.gui.RocanMainGUI|isCancelledToCloseGUI|()Z
-      @|rina/rocan/gui/RocanMainGUI.java|5047|5069|event_cancel_close_gui|field|rina.rocan.gui.RocanMainGUI|event_cancel_close_gui
+      @|rina/rocan/gui/RocanMainGUI.java|5353|5374|isCancelledToCloseGUI|method|rina.rocan.gui.RocanMainGUI|isCancelledToCloseGUI|()Z
+      @|rina/rocan/gui/RocanMainGUI.java|5394|5416|event_cancel_close_gui|field|rina.rocan.gui.RocanMainGUI|event_cancel_close_gui
    Method End: isCancelledToCloseGUI()Z
 Class End  : rina.rocan.gui.RocanMainGUI
 endProcessing "rina/rocan/gui/RocanMainGUI.java"
@@ -6163,147 +6542,166 @@ Class Start: rina.rocan.manager.RocanCommandManager
 Class End  : rina.rocan.manager.RocanCommandManager
 endProcessing "rina/rocan/manager/RocanCommandManager.java"
 
-startProcessing "rina/rocan/manager/RocanEventManager.java" md5: 4e3df57dbc8ded3b18738fc9079a18ac
+startProcessing "rina/rocan/manager/RocanEventManager.java" md5: 3fded059738e01755ba961a73c1f6bcc
 @|rina/rocan/manager/RocanEventManager.java|8|26|rina.rocan.manager|package|rina.rocan.manager|(file)
 Class Start: rina.rocan.manager.RocanEventManager
-   @|rina/rocan/manager/RocanEventManager.java|1011|1028|RocanEventManager|class|rina.rocan.manager.RocanEventManager|false
-   @|rina/rocan/manager/RocanEventManager.java|1041|1050|Minecraft|class|net.minecraft.client.Minecraft|false
-   @|rina/rocan/manager/RocanEventManager.java|1041|1050|Minecraft|class|net.minecraft.client.Minecraft|false
-   @|rina/rocan/manager/RocanEventManager.java|1051|1053|mc|field|rina.rocan.manager.RocanEventManager|mc|
-   @|rina/rocan/manager/RocanEventManager.java|1056|1065|Minecraft|class|net.minecraft.client.Minecraft|false
-   @|rina/rocan/manager/RocanEventManager.java|1066|1078|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|rina/rocan/manager/RocanEventManager.java|1035|1052|RocanEventManager|class|rina.rocan.manager.RocanEventManager|false
+   @|rina/rocan/manager/RocanEventManager.java|1065|1074|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/manager/RocanEventManager.java|1065|1074|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/manager/RocanEventManager.java|1075|1077|mc|field|rina.rocan.manager.RocanEventManager|mc|
+   @|rina/rocan/manager/RocanEventManager.java|1080|1089|Minecraft|class|net.minecraft.client.Minecraft|false
+   @|rina/rocan/manager/RocanEventManager.java|1090|1102|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|rina/rocan/manager/RocanEventManager.java|1121|1144|tickness_rgb_effect_red|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_red|
+   @|rina/rocan/manager/RocanEventManager.java|1159|1184|tickness_rgb_effect_green|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_green|
+   @|rina/rocan/manager/RocanEventManager.java|1199|1223|tickness_rgb_effect_blue|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_blue|
    Method Start: RocanEventManager()V
-      @|rina/rocan/manager/RocanEventManager.java|1093|1110|RocanEventManager|method|rina.rocan.manager.RocanEventManager|RocanEventManager|()V
+      @|rina/rocan/manager/RocanEventManager.java|1236|1253|RocanEventManager|method|rina.rocan.manager.RocanEventManager|RocanEventManager|()V
+      @|rina/rocan/manager/RocanEventManager.java|1266|1289|tickness_rgb_effect_red|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_red
+      @|rina/rocan/manager/RocanEventManager.java|1305|1330|tickness_rgb_effect_green|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_green
+      @|rina/rocan/manager/RocanEventManager.java|1344|1368|tickness_rgb_effect_blue|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_blue
    Method End: RocanEventManager()V
    Method Start: onUpdate(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1189|1194|event|param|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|1121|1135|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1150|1158|onUpdate|method|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1159|1188|LivingEvent.LivingUpdateEvent|class|net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1205|1210|event|param|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|1211|1221|isCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|isCanceled|()Z
+      @|rina/rocan/manager/RocanEventManager.java|1452|1457|event|param|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1384|1398|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1413|1421|onUpdate|method|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1422|1451|LivingEvent.LivingUpdateEvent|class|net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1468|1473|event|param|rina.rocan.manager.RocanEventManager|onUpdate|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1474|1484|isCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|isCanceled|()Z
    Method End: onUpdate(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V
    Method Start: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1315|1320|event|param|rina.rocan.manager.RocanEventManager|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|1253|1267|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1282|1288|onTick|method|rina.rocan.manager.RocanEventManager|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1289|1314|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1331|1333|mc|field|rina.rocan.manager.RocanEventManager|mc
-      @|rina/rocan/manager/RocanEventManager.java|1334|1340|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/manager/RocanEventManager.java|1374|1379|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|1380|1396|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/manager/RocanEventManager.java|1399|1417|onUpdateModuleList|method|rina.rocan.manager.RocanModuleManager|onUpdateModuleList|()V
+      @|rina/rocan/manager/RocanEventManager.java|1578|1583|event|param|rina.rocan.manager.RocanEventManager|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1516|1530|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1545|1551|onTick|method|rina.rocan.manager.RocanEventManager|onTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1552|1577|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1594|1596|mc|field|rina.rocan.manager.RocanEventManager|mc
+      @|rina/rocan/manager/RocanEventManager.java|1597|1603|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/manager/RocanEventManager.java|1637|1642|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|1643|1659|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/manager/RocanEventManager.java|1662|1680|onUpdateModuleList|method|rina.rocan.manager.RocanModuleManager|onUpdateModuleList|()V
    Method End: onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
    Method Start: onWorldRender(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1494|1499|event|param|rina.rocan.manager.RocanEventManager|onWorldRender|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|1430|1444|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1459|1472|onWorldRender|method|rina.rocan.manager.RocanEventManager|onWorldRender|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1473|1493|RenderWorldLastEvent|class|net.minecraftforge.client.event.RenderWorldLastEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1510|1515|event|param|rina.rocan.manager.RocanEventManager|onWorldRender|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|1516|1526|isCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|isCanceled|()Z
-      @|rina/rocan/manager/RocanEventManager.java|1554|1559|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|1560|1576|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/manager/RocanEventManager.java|1579|1597|onRenderModuleList|method|rina.rocan.manager.RocanModuleManager|onRenderModuleList|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1598|1603|event|param|rina.rocan.manager.RocanEventManager|onWorldRender|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1757|1762|event|param|rina.rocan.manager.RocanEventManager|onWorldRender|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1693|1707|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1722|1735|onWorldRender|method|rina.rocan.manager.RocanEventManager|onWorldRender|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1736|1756|RenderWorldLastEvent|class|net.minecraftforge.client.event.RenderWorldLastEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|1773|1778|event|param|rina.rocan.manager.RocanEventManager|onWorldRender|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1779|1789|isCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|isCanceled|()Z
+      @|rina/rocan/manager/RocanEventManager.java|1817|1822|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|1823|1839|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/manager/RocanEventManager.java|1842|1860|onRenderModuleList|method|rina.rocan.manager.RocanModuleManager|onRenderModuleList|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|1861|1866|event|param|rina.rocan.manager.RocanEventManager|onWorldRender|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|1902|1908|System|class|java.lang.System|false
+      @|rina/rocan/manager/RocanEventManager.java|1909|1926|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|rina/rocan/manager/RocanEventManager.java|1989|1994|Color|class|java.awt.Color|false
+      @|rina/rocan/manager/RocanEventManager.java|1995|2003|HSBtoRGB|method|java.awt.Color|HSBtoRGB|(FFF)I
+      @|rina/rocan/manager/RocanEventManager.java|2053|2076|tickness_rgb_effect_red|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_red
+      @|rina/rocan/manager/RocanEventManager.java|2121|2146|tickness_rgb_effect_green|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_green
+      @|rina/rocan/manager/RocanEventManager.java|2188|2212|tickness_rgb_effect_blue|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_blue
    Method End: onWorldRender(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
    Method Start: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1737|1742|event|param|rina.rocan.manager.RocanEventManager|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|1615|1629|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1630|1638|priority|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|priority|()Lnet/minecraftforge/fml/common/eventhandler/EventPriority;
-      @|rina/rocan/manager/RocanEventManager.java|1641|1654|EventPriority|class|net.minecraftforge.fml.common.eventhandler.EventPriority|false
-      @|rina/rocan/manager/RocanEventManager.java|1655|1661|NORMAL|field|net.minecraftforge.fml.common.eventhandler.EventPriority|NORMAL
-      @|rina/rocan/manager/RocanEventManager.java|1663|1678|receiveCanceled|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|receiveCanceled|()Z
-      @|rina/rocan/manager/RocanEventManager.java|1701|1711|onKeyInput|method|rina.rocan.manager.RocanEventManager|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|1712|1736|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1753|1761|Keyboard|class|org.lwjgl.input.Keyboard|false
-      @|rina/rocan/manager/RocanEventManager.java|1762|1778|getEventKeyState|method|org.lwjgl.input.Keyboard|getEventKeyState|()Z
-      @|rina/rocan/manager/RocanEventManager.java|1788|1793|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|1794|1811|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/manager/RocanEventManager.java|1814|1824|onKeyEvent|method|rina.rocan.manager.RocanSettingManager|onKeyEvent|(I)V
-      @|rina/rocan/manager/RocanEventManager.java|1825|1833|Keyboard|class|org.lwjgl.input.Keyboard|false
-      @|rina/rocan/manager/RocanEventManager.java|1834|1845|getEventKey|method|org.lwjgl.input.Keyboard|getEventKey|()I
+      @|rina/rocan/manager/RocanEventManager.java|2373|2378|event|param|rina.rocan.manager.RocanEventManager|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|2251|2265|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|2266|2274|priority|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|priority|()Lnet/minecraftforge/fml/common/eventhandler/EventPriority;
+      @|rina/rocan/manager/RocanEventManager.java|2277|2290|EventPriority|class|net.minecraftforge.fml.common.eventhandler.EventPriority|false
+      @|rina/rocan/manager/RocanEventManager.java|2291|2297|NORMAL|field|net.minecraftforge.fml.common.eventhandler.EventPriority|NORMAL
+      @|rina/rocan/manager/RocanEventManager.java|2299|2314|receiveCanceled|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|receiveCanceled|()Z
+      @|rina/rocan/manager/RocanEventManager.java|2337|2347|onKeyInput|method|rina.rocan.manager.RocanEventManager|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|2348|2372|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|2389|2397|Keyboard|class|org.lwjgl.input.Keyboard|false
+      @|rina/rocan/manager/RocanEventManager.java|2398|2414|getEventKeyState|method|org.lwjgl.input.Keyboard|getEventKeyState|()Z
+      @|rina/rocan/manager/RocanEventManager.java|2424|2429|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|2430|2447|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/manager/RocanEventManager.java|2450|2460|onKeyEvent|method|rina.rocan.manager.RocanSettingManager|onKeyEvent|(I)V
+      @|rina/rocan/manager/RocanEventManager.java|2461|2469|Keyboard|class|org.lwjgl.input.Keyboard|false
+      @|rina/rocan/manager/RocanEventManager.java|2470|2481|getEventKey|method|org.lwjgl.input.Keyboard|getEventKey|()I
    Method End: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
    Method Start: onRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
-      @|rina/rocan/manager/RocanEventManager.java|1930|1935|event|param|rina.rocan.manager.RocanEventManager|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|1864|1878|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|1893|1901|onRender|method|rina.rocan.manager.RocanEventManager|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
-      @|rina/rocan/manager/RocanEventManager.java|1902|1929|RenderGameOverlayEvent.Post|class|net.minecraftforge.client.event.RenderGameOverlayEvent.Post|false
-      @|rina/rocan/manager/RocanEventManager.java|1946|1951|event|param|rina.rocan.manager.RocanEventManager|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|1952|1962|isCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|isCanceled|()Z
-      @|rina/rocan/manager/RocanEventManager.java|1990|2024|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|false
-      @|rina/rocan/manager/RocanEventManager.java|2034|2068|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|false
-      @|rina/rocan/manager/RocanEventManager.java|2069|2079|EXPERIENCE|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|EXPERIENCE
-      @|rina/rocan/manager/RocanEventManager.java|2091|2093|mc|field|rina.rocan.manager.RocanEventManager|mc
-      @|rina/rocan/manager/RocanEventManager.java|2094|2100|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/manager/RocanEventManager.java|2101|2111|isCreative|method|net.minecraft.entity.player.EntityPlayer|isCreative|()Z
-      @|rina/rocan/manager/RocanEventManager.java|2117|2119|mc|field|rina.rocan.manager.RocanEventManager|mc
-      @|rina/rocan/manager/RocanEventManager.java|2120|2126|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/manager/RocanEventManager.java|2127|2142|getRidingEntity|method|net.minecraft.entity.Entity|getRidingEntity|()Lnet/minecraft/entity/Entity;
-      @|rina/rocan/manager/RocanEventManager.java|2156|2169|AbstractHorse|class|net.minecraft.entity.passive.AbstractHorse|false
-      @|rina/rocan/manager/RocanEventManager.java|2186|2220|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|false
-      @|rina/rocan/manager/RocanEventManager.java|2221|2232|HEALTHMOUNT|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|HEALTHMOUNT
-      @|rina/rocan/manager/RocanEventManager.java|2248|2253|event|param|rina.rocan.manager.RocanEventManager|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|2254|2261|getType|method|net.minecraftforge.client.event.RenderGameOverlayEvent|getType|()Lnet/minecraftforge/client/event/RenderGameOverlayEvent$ElementType;
-      @|rina/rocan/manager/RocanEventManager.java|2281|2286|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|2287|2303|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/manager/RocanEventManager.java|2306|2324|onRenderModuleList|method|rina.rocan.manager.RocanModuleManager|onRenderModuleList|()V
-      @|rina/rocan/manager/RocanEventManager.java|2360|2373|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/manager/RocanEventManager.java|2374|2380|init2D|method|rina.turok.TurokRenderGL|init2D|()V
-      @|rina/rocan/manager/RocanEventManager.java|2388|2401|TurokRenderGL|class|rina.turok.TurokRenderGL|false
-      @|rina/rocan/manager/RocanEventManager.java|2402|2411|release2D|method|rina.turok.TurokRenderGL|release2D|()V
+      @|rina/rocan/manager/RocanEventManager.java|2566|2571|event|param|rina.rocan.manager.RocanEventManager|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|2500|2514|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|2529|2537|onRender|method|rina.rocan.manager.RocanEventManager|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
+      @|rina/rocan/manager/RocanEventManager.java|2538|2565|RenderGameOverlayEvent.Post|class|net.minecraftforge.client.event.RenderGameOverlayEvent.Post|false
+      @|rina/rocan/manager/RocanEventManager.java|2582|2587|event|param|rina.rocan.manager.RocanEventManager|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|2588|2598|isCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|isCanceled|()Z
+      @|rina/rocan/manager/RocanEventManager.java|2626|2660|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|false
+      @|rina/rocan/manager/RocanEventManager.java|2670|2704|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|false
+      @|rina/rocan/manager/RocanEventManager.java|2705|2715|EXPERIENCE|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|EXPERIENCE
+      @|rina/rocan/manager/RocanEventManager.java|2727|2729|mc|field|rina.rocan.manager.RocanEventManager|mc
+      @|rina/rocan/manager/RocanEventManager.java|2730|2736|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/manager/RocanEventManager.java|2737|2747|isCreative|method|net.minecraft.entity.player.EntityPlayer|isCreative|()Z
+      @|rina/rocan/manager/RocanEventManager.java|2753|2755|mc|field|rina.rocan.manager.RocanEventManager|mc
+      @|rina/rocan/manager/RocanEventManager.java|2756|2762|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/manager/RocanEventManager.java|2763|2778|getRidingEntity|method|net.minecraft.entity.Entity|getRidingEntity|()Lnet/minecraft/entity/Entity;
+      @|rina/rocan/manager/RocanEventManager.java|2792|2805|AbstractHorse|class|net.minecraft.entity.passive.AbstractHorse|false
+      @|rina/rocan/manager/RocanEventManager.java|2822|2856|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|false
+      @|rina/rocan/manager/RocanEventManager.java|2857|2868|HEALTHMOUNT|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|HEALTHMOUNT
+      @|rina/rocan/manager/RocanEventManager.java|2884|2889|event|param|rina.rocan.manager.RocanEventManager|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|2890|2897|getType|method|net.minecraftforge.client.event.RenderGameOverlayEvent|getType|()Lnet/minecraftforge/client/event/RenderGameOverlayEvent$ElementType;
+      @|rina/rocan/manager/RocanEventManager.java|2917|2922|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|2923|2939|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/manager/RocanEventManager.java|2942|2960|onRenderModuleList|method|rina.rocan.manager.RocanModuleManager|onRenderModuleList|()V
+      @|rina/rocan/manager/RocanEventManager.java|2996|3009|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/manager/RocanEventManager.java|3010|3016|init2D|method|rina.turok.TurokRenderGL|init2D|()V
+      @|rina/rocan/manager/RocanEventManager.java|3024|3037|TurokRenderGL|class|rina.turok.TurokRenderGL|false
+      @|rina/rocan/manager/RocanEventManager.java|3038|3047|release2D|method|rina.turok.TurokRenderGL|release2D|()V
    Method End: onRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
    Method Start: onChat(Lnet/minecraftforge/client/event/ClientChatEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|2514|2519|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|2429|2443|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|2444|2452|priority|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|priority|()Lnet/minecraftforge/fml/common/eventhandler/EventPriority;
-      @|rina/rocan/manager/RocanEventManager.java|2455|2468|EventPriority|class|net.minecraftforge.fml.common.eventhandler.EventPriority|false
-      @|rina/rocan/manager/RocanEventManager.java|2469|2475|NORMAL|field|net.minecraftforge.fml.common.eventhandler.EventPriority|NORMAL
-      @|rina/rocan/manager/RocanEventManager.java|2491|2497|onChat|method|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V
-      @|rina/rocan/manager/RocanEventManager.java|2498|2513|ClientChatEvent|class|net.minecraftforge.client.event.ClientChatEvent|false
-      @|rina/rocan/manager/RocanEventManager.java|2526|2532|String|class|java.lang.String|false
-      @|rina/rocan/manager/RocanEventManager.java|2550|2555|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|2556|2566|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|2573|2579|String|class|java.lang.String|false
-      @|rina/rocan/manager/RocanEventManager.java|2597|2602|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|2603|2620|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
-      @|rina/rocan/manager/RocanEventManager.java|2623|2630|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|2631|2636|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|2637|2647|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3150|3155|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|3065|3079|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|3080|3088|priority|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|priority|()Lnet/minecraftforge/fml/common/eventhandler/EventPriority;
+      @|rina/rocan/manager/RocanEventManager.java|3091|3104|EventPriority|class|net.minecraftforge.fml.common.eventhandler.EventPriority|false
+      @|rina/rocan/manager/RocanEventManager.java|3105|3111|NORMAL|field|net.minecraftforge.fml.common.eventhandler.EventPriority|NORMAL
+      @|rina/rocan/manager/RocanEventManager.java|3127|3133|onChat|method|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V
+      @|rina/rocan/manager/RocanEventManager.java|3134|3149|ClientChatEvent|class|net.minecraftforge.client.event.ClientChatEvent|false
+      @|rina/rocan/manager/RocanEventManager.java|3162|3168|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanEventManager.java|3186|3191|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|3192|3202|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3209|3215|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanEventManager.java|3233|3238|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|3239|3256|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|3259|3266|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3267|3272|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|3273|3283|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
       Field: Array Length, skipping
-      @|rina/rocan/manager/RocanEventManager.java|2727|2732|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|2733|2744|setCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|setCanceled|(Z)V
-      @|rina/rocan/manager/RocanEventManager.java|2758|2760|mc|field|rina.rocan.manager.RocanEventManager|mc
-      @|rina/rocan/manager/RocanEventManager.java|2761|2770|ingameGUI|field|net.minecraft.client.Minecraft|ingameGUI
-      @|rina/rocan/manager/RocanEventManager.java|2771|2781|getChatGUI|method|net.minecraft.client.gui.GuiIngame|getChatGUI|()Lnet/minecraft/client/gui/GuiNewChat;
-      @|rina/rocan/manager/RocanEventManager.java|2784|2801|addToSentMessages|method|net.minecraft.client.gui.GuiNewChat|addToSentMessages|(Ljava/lang/String;)V
-      @|rina/rocan/manager/RocanEventManager.java|2802|2807|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|2808|2818|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|2834|2846|RocanCommand|class|rina.rocan.client.RocanCommand|false
-      @|rina/rocan/manager/RocanEventManager.java|2858|2863|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|2864|2881|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
-      @|rina/rocan/manager/RocanEventManager.java|2884|2898|getCommandList|method|rina.rocan.manager.RocanCommandManager|getCommandList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanEventManager.java|2925|2930|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|2931|2948|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
-      @|rina/rocan/manager/RocanEventManager.java|2951|2958|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|2959|2964|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|2965|2975|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|2982|2998|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
-      @|rina/rocan/manager/RocanEventManager.java|3008|3018|getCommand|method|rina.rocan.client.RocanCommand|getCommand|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|3056|3067|onRequested|method|rina.rocan.client.RocanCommand|onRequested|([Ljava/lang/String;)Z
-      @|rina/rocan/manager/RocanEventManager.java|3068|3073|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|3074|3091|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
-      @|rina/rocan/manager/RocanEventManager.java|3094|3101|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|3102|3107|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|3108|3118|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|3146|3155|Exception|class|java.lang.Exception|false
-      @|rina/rocan/manager/RocanEventManager.java|3197|3202|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/manager/RocanEventManager.java|3203|3220|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
-      @|rina/rocan/manager/RocanEventManager.java|3223|3232|hasPrefix|method|rina.rocan.manager.RocanCommandManager|hasPrefix|(Ljava/lang/String;)Z
-      @|rina/rocan/manager/RocanEventManager.java|3233|3238|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
-      @|rina/rocan/manager/RocanEventManager.java|3239|3249|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanEventManager.java|3261|3276|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
-      @|rina/rocan/manager/RocanEventManager.java|3277|3293|sendNotifyClient|method|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanEventManager.java|3363|3368|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|3369|3380|setCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|setCanceled|(Z)V
+      @|rina/rocan/manager/RocanEventManager.java|3394|3396|mc|field|rina.rocan.manager.RocanEventManager|mc
+      @|rina/rocan/manager/RocanEventManager.java|3397|3406|ingameGUI|field|net.minecraft.client.Minecraft|ingameGUI
+      @|rina/rocan/manager/RocanEventManager.java|3407|3417|getChatGUI|method|net.minecraft.client.gui.GuiIngame|getChatGUI|()Lnet/minecraft/client/gui/GuiNewChat;
+      @|rina/rocan/manager/RocanEventManager.java|3420|3437|addToSentMessages|method|net.minecraft.client.gui.GuiNewChat|addToSentMessages|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanEventManager.java|3438|3443|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|3444|3454|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3470|3482|RocanCommand|class|rina.rocan.client.RocanCommand|false
+      @|rina/rocan/manager/RocanEventManager.java|3494|3499|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|3500|3517|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|3520|3534|getCommandList|method|rina.rocan.manager.RocanCommandManager|getCommandList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanEventManager.java|3561|3566|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|3567|3584|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|3587|3594|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3595|3600|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|3601|3611|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3618|3634|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanEventManager.java|3644|3654|getCommand|method|rina.rocan.client.RocanCommand|getCommand|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3692|3703|onRequested|method|rina.rocan.client.RocanCommand|onRequested|([Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanEventManager.java|3704|3709|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|3710|3727|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|3730|3737|getArgs|method|rina.rocan.manager.RocanCommandManager|getArgs|(Ljava/lang/String;)[Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3738|3743|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|3744|3754|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3782|3791|Exception|class|java.lang.Exception|false
+      @|rina/rocan/manager/RocanEventManager.java|3833|3838|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/manager/RocanEventManager.java|3839|3856|getCommandManager|method|rina.rocan.Rocan|getCommandManager|()Lrina/rocan/manager/RocanCommandManager;
+      @|rina/rocan/manager/RocanEventManager.java|3859|3868|hasPrefix|method|rina.rocan.manager.RocanCommandManager|hasPrefix|(Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanEventManager.java|3869|3874|event|param|rina.rocan.manager.RocanEventManager|onChat|(Lnet/minecraftforge/client/event/ClientChatEvent;)V|event|0
+      @|rina/rocan/manager/RocanEventManager.java|3875|3885|getMessage|method|net.minecraftforge.client.event.ClientChatEvent|getMessage|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanEventManager.java|3897|3912|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/manager/RocanEventManager.java|3913|3929|sendNotifyClient|method|rina.rocan.util.RocanUtilClient|sendNotifyClient|(Ljava/lang/String;)V
    Method End: onChat(Lnet/minecraftforge/client/event/ClientChatEvent;)V
+   Method Start: getRGBEffect()[I
+      @|rina/rocan/manager/RocanEventManager.java|4036|4048|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
+      @|rina/rocan/manager/RocanEventManager.java|4079|4102|tickness_rgb_effect_red|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_red
+      @|rina/rocan/manager/RocanEventManager.java|4109|4134|tickness_rgb_effect_green|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_green
+      @|rina/rocan/manager/RocanEventManager.java|4141|4165|tickness_rgb_effect_blue|field|rina.rocan.manager.RocanEventManager|tickness_rgb_effect_blue
+   Method End: getRGBEffect()[I
 Class End  : rina.rocan.manager.RocanEventManager
 endProcessing "rina/rocan/manager/RocanEventManager.java"
 
@@ -6559,182 +6957,203 @@ Class Start: rina.rocan.manager.RocanFileManager
 Class End  : rina.rocan.manager.RocanFileManager
 endProcessing "rina/rocan/manager/RocanFileManager.java"
 
-startProcessing "rina/rocan/manager/RocanModuleManager.java" md5: fc889e4290923c11609a9f2f2a5f543d
+startProcessing "rina/rocan/manager/RocanModuleManager.java" md5: 8d10c9be6844700ed65f3e3c35adb996
 @|rina/rocan/manager/RocanModuleManager.java|8|26|rina.rocan.manager|package|rina.rocan.manager|(file)
 Class Start: rina.rocan.manager.RocanModuleManager
-   @|rina/rocan/manager/RocanModuleManager.java|1036|1054|RocanModuleManager|class|rina.rocan.manager.RocanModuleManager|false
-   @|rina/rocan/manager/RocanModuleManager.java|1069|1080|RocanModule|class|rina.rocan.client.RocanModule|false
-   @|rina/rocan/manager/RocanModuleManager.java|1059|1068|ArrayList|class|java.util.ArrayList|false
-   @|rina/rocan/manager/RocanModuleManager.java|1059|1068|ArrayList|class|java.util.ArrayList|false
-   @|rina/rocan/manager/RocanModuleManager.java|1069|1080|RocanModule|class|rina.rocan.client.RocanModule|false
-   @|rina/rocan/manager/RocanModuleManager.java|1082|1093|module_list|field|rina.rocan.manager.RocanModuleManager|module_list|
+   @|rina/rocan/manager/RocanModuleManager.java|1072|1090|RocanModuleManager|class|rina.rocan.manager.RocanModuleManager|false
+   @|rina/rocan/manager/RocanModuleManager.java|1105|1116|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/manager/RocanModuleManager.java|1095|1104|ArrayList|class|java.util.ArrayList|false
+   @|rina/rocan/manager/RocanModuleManager.java|1095|1104|ArrayList|class|java.util.ArrayList|false
+   @|rina/rocan/manager/RocanModuleManager.java|1105|1116|RocanModule|class|rina.rocan.client.RocanModule|false
+   @|rina/rocan/manager/RocanModuleManager.java|1118|1129|module_list|field|rina.rocan.manager.RocanModuleManager|module_list|
+   @|rina/rocan/manager/RocanModuleManager.java|1143|1151|RocanHUD|class|rina.rocan.client.RocanHUD|false
+   @|rina/rocan/manager/RocanModuleManager.java|1133|1142|ArrayList|class|java.util.ArrayList|false
+   @|rina/rocan/manager/RocanModuleManager.java|1133|1142|ArrayList|class|java.util.ArrayList|false
+   @|rina/rocan/manager/RocanModuleManager.java|1143|1151|RocanHUD|class|rina.rocan.client.RocanHUD|false
+   @|rina/rocan/manager/RocanModuleManager.java|1153|1161|hud_list|field|rina.rocan.manager.RocanModuleManager|hud_list|
    Method Start: RocanModuleManager()V
-      @|rina/rocan/manager/RocanModuleManager.java|1106|1124|RocanModuleManager|method|rina.rocan.manager.RocanModuleManager|RocanModuleManager|()V
-      @|rina/rocan/manager/RocanModuleManager.java|1137|1148|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
-      @|rina/rocan/manager/RocanModuleManager.java|1155|1164|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|1189|1198|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1203|1219|RocanOffhandUtil|class|rina.rocan.client.modules.combat.RocanOffhandUtil|false
-      @|rina/rocan/manager/RocanModuleManager.java|1245|1254|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1259|1269|RocanSpeed|class|rina.rocan.client.modules.movement.RocanSpeed|false
-      @|rina/rocan/manager/RocanModuleManager.java|1277|1286|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1291|1303|RocanGUIWalk|class|rina.rocan.client.modules.movement.RocanGUIWalk|false
-      @|rina/rocan/manager/RocanModuleManager.java|1311|1320|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1325|1334|RocanStep|class|rina.rocan.client.modules.movement.RocanStep|false
-      @|rina/rocan/manager/RocanModuleManager.java|1358|1367|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1372|1391|RocanBlockHighlight|class|rina.rocan.client.modules.render.RocanBlockHighlight|false
-      @|rina/rocan/manager/RocanModuleManager.java|1416|1425|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1430|1441|RocanXCarry|class|rina.rocan.client.modules.exploit.RocanXCarry|false
-      @|rina/rocan/manager/RocanModuleManager.java|1463|1472|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1477|1490|RocanFastUtil|class|rina.rocan.client.modules.misc.RocanFastUtil|false
-      @|rina/rocan/manager/RocanModuleManager.java|1511|1520|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1525|1533|RocanGUI|class|rina.rocan.client.modules.gui.RocanGUI|false
+      @|rina/rocan/manager/RocanModuleManager.java|1174|1192|RocanModuleManager|method|rina.rocan.manager.RocanModuleManager|RocanModuleManager|()V
+      @|rina/rocan/manager/RocanModuleManager.java|1205|1216|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
+      @|rina/rocan/manager/RocanModuleManager.java|1223|1232|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|1246|1254|hud_list|field|rina.rocan.manager.RocanModuleManager|hud_list
+      @|rina/rocan/manager/RocanModuleManager.java|1264|1273|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|1298|1307|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1312|1328|RocanOffhandUtil|class|rina.rocan.client.modules.combat.RocanOffhandUtil|false
+      @|rina/rocan/manager/RocanModuleManager.java|1354|1363|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1368|1378|RocanSpeed|class|rina.rocan.client.modules.movement.RocanSpeed|false
+      @|rina/rocan/manager/RocanModuleManager.java|1386|1395|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1400|1412|RocanGUIWalk|class|rina.rocan.client.modules.movement.RocanGUIWalk|false
+      @|rina/rocan/manager/RocanModuleManager.java|1420|1429|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1434|1443|RocanStep|class|rina.rocan.client.modules.movement.RocanStep|false
+      @|rina/rocan/manager/RocanModuleManager.java|1467|1476|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1481|1500|RocanBlockHighlight|class|rina.rocan.client.modules.render.RocanBlockHighlight|false
+      @|rina/rocan/manager/RocanModuleManager.java|1525|1534|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1539|1550|RocanXCarry|class|rina.rocan.client.modules.exploit.RocanXCarry|false
+      @|rina/rocan/manager/RocanModuleManager.java|1572|1581|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1586|1599|RocanFastUtil|class|rina.rocan.client.modules.misc.RocanFastUtil|false
+      @|rina/rocan/manager/RocanModuleManager.java|1620|1629|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1634|1642|RocanGUI|class|rina.rocan.client.modules.gui.RocanGUI|false
+      @|rina/rocan/manager/RocanModuleManager.java|1650|1659|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1664|1678|RocanMasterHUD|class|rina.rocan.client.modules.gui.RocanMasterHUD|false
    Method End: RocanModuleManager()V
    Method Start: addModule(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1580|1586|module|param|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V|module|0
-      @|rina/rocan/manager/RocanModuleManager.java|1558|1567|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1568|1579|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|1598|1609|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
-      @|rina/rocan/manager/RocanModuleManager.java|1610|1613|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|1614|1620|module|param|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V|module|0
+      @|rina/rocan/manager/RocanModuleManager.java|1738|1744|module|param|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V|module|0
+      @|rina/rocan/manager/RocanModuleManager.java|1716|1725|addModule|method|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1726|1737|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1756|1767|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
+      @|rina/rocan/manager/RocanModuleManager.java|1768|1771|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|1772|1778|module|param|rina.rocan.manager.RocanModuleManager|addModule|(Lrina/rocan/client/RocanModule;)V|module|0
    Method End: addModule(Lrina/rocan/client/RocanModule;)V
+   Method Start: addHUD(Lrina/rocan/client/RocanHUD;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1817|1820|hud|param|rina.rocan.manager.RocanModuleManager|addHUD|(Lrina/rocan/client/RocanHUD;)V|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|1801|1807|addHUD|method|rina.rocan.manager.RocanModuleManager|addHUD|(Lrina/rocan/client/RocanHUD;)V
+      @|rina/rocan/manager/RocanModuleManager.java|1808|1816|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|1832|1843|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
+      @|rina/rocan/manager/RocanModuleManager.java|1844|1847|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|1849|1860|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1862|1865|hud|param|rina.rocan.manager.RocanModuleManager|addHUD|(Lrina/rocan/client/RocanHUD;)V|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|1876|1884|hud_list|field|rina.rocan.manager.RocanModuleManager|hud_list
+      @|rina/rocan/manager/RocanModuleManager.java|1885|1888|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|1889|1892|hud|param|rina.rocan.manager.RocanModuleManager|addHUD|(Lrina/rocan/client/RocanHUD;)V|hud|0
+   Method End: addHUD(Lrina/rocan/client/RocanHUD;)V
    Method Start: onUpdateModuleList()V
-      @|rina/rocan/manager/RocanModuleManager.java|1643|1661|onUpdateModuleList|method|rina.rocan.manager.RocanModuleManager|onUpdateModuleList|()V
-      @|rina/rocan/manager/RocanModuleManager.java|1674|1685|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|1696|1709|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|1731|1739|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|1758|1766|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
+      @|rina/rocan/manager/RocanModuleManager.java|1915|1933|onUpdateModuleList|method|rina.rocan.manager.RocanModuleManager|onUpdateModuleList|()V
+      @|rina/rocan/manager/RocanModuleManager.java|1946|1957|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|1968|1981|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|2003|2011|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|2030|2038|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
    Method End: onUpdateModuleList()V
    Method Start: onRenderModuleList()V
-      @|rina/rocan/manager/RocanModuleManager.java|1801|1819|onRenderModuleList|method|rina.rocan.manager.RocanModuleManager|onRenderModuleList|()V
-      @|rina/rocan/manager/RocanModuleManager.java|1832|1843|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|1854|1867|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|1889|1897|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|1916|1924|onRender|method|rina.rocan.client.RocanModule|onRender|()V
+      @|rina/rocan/manager/RocanModuleManager.java|2073|2091|onRenderModuleList|method|rina.rocan.manager.RocanModuleManager|onRenderModuleList|()V
+      @|rina/rocan/manager/RocanModuleManager.java|2104|2115|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|2126|2139|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|2161|2169|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|2188|2196|onRender|method|rina.rocan.client.RocanModule|onRender|()V
    Method End: onRenderModuleList()V
    Method Start: onRenderModuleList(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1999|2004|event|param|rina.rocan.manager.RocanModuleManager|onRenderModuleList|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
-      @|rina/rocan/manager/RocanModuleManager.java|1959|1977|onRenderModuleList|method|rina.rocan.manager.RocanModuleManager|onRenderModuleList|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
-      @|rina/rocan/manager/RocanModuleManager.java|1978|1998|RenderWorldLastEvent|class|net.minecraftforge.client.event.RenderWorldLastEvent|false
-      @|rina/rocan/manager/RocanModuleManager.java|2011|2035|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|2036|2048|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|2051|2059|profiler|field|net.minecraft.client.Minecraft|profiler
-      @|rina/rocan/manager/RocanModuleManager.java|2060|2072|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
-      @|rina/rocan/manager/RocanModuleManager.java|2086|2110|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|2111|2123|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|2126|2134|profiler|field|net.minecraft.client.Minecraft|profiler
-      @|rina/rocan/manager/RocanModuleManager.java|2135|2147|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
-      @|rina/rocan/manager/RocanModuleManager.java|2163|2177|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|2178|2194|disableTexture2D|method|net.minecraft.client.renderer.GlStateManager|disableTexture2D|()V
-      @|rina/rocan/manager/RocanModuleManager.java|2201|2215|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|2216|2227|enableBlend|method|net.minecraft.client.renderer.GlStateManager|enableBlend|()V
-      @|rina/rocan/manager/RocanModuleManager.java|2234|2248|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|2249|2261|disableAlpha|method|net.minecraft.client.renderer.GlStateManager|disableAlpha|()V
-      @|rina/rocan/manager/RocanModuleManager.java|2268|2282|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|2283|2303|tryBlendFuncSeparate|method|net.minecraft.client.renderer.GlStateManager|tryBlendFuncSeparate|(IIII)V
-      @|rina/rocan/manager/RocanModuleManager.java|2304|2308|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/manager/RocanModuleManager.java|2309|2321|GL_SRC_ALPHA|field|org.lwjgl.opengl.GL11|GL_SRC_ALPHA
-      @|rina/rocan/manager/RocanModuleManager.java|2323|2327|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/manager/RocanModuleManager.java|2328|2350|GL_ONE_MINUS_SRC_ALPHA|field|org.lwjgl.opengl.GL11|GL_ONE_MINUS_SRC_ALPHA
-      @|rina/rocan/manager/RocanModuleManager.java|2362|2376|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|2377|2387|shadeModel|method|net.minecraft.client.renderer.GlStateManager|shadeModel|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|2388|2392|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/manager/RocanModuleManager.java|2393|2402|GL_SMOOTH|field|org.lwjgl.opengl.GL11|GL_SMOOTH
-      @|rina/rocan/manager/RocanModuleManager.java|2408|2422|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|2423|2435|disableDepth|method|net.minecraft.client.renderer.GlStateManager|disableDepth|()V
-      @|rina/rocan/manager/RocanModuleManager.java|2444|2458|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|2459|2470|glLineWidth|method|net.minecraft.client.renderer.GlStateManager|glLineWidth|(F)V
-      @|rina/rocan/manager/RocanModuleManager.java|2483|2488|Vec3d|class|net.minecraft.util.math.Vec3d|false
-      @|rina/rocan/manager/RocanModuleManager.java|2495|2510|RocanUtilEntity|class|rina.rocan.util.RocanUtilEntity|false
-      @|rina/rocan/manager/RocanModuleManager.java|2511|2529|getInterpolatedPos|method|rina.rocan.util.RocanUtilEntity|getInterpolatedPos|(Lnet/minecraft/entity/Entity;D)Lnet/minecraft/util/math/Vec3d;
-      @|rina/rocan/manager/RocanModuleManager.java|2530|2554|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|2555|2567|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|2570|2576|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/manager/RocanModuleManager.java|2578|2583|event|param|rina.rocan.manager.RocanModuleManager|onRenderModuleList|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
-      @|rina/rocan/manager/RocanModuleManager.java|2584|2599|getPartialTicks|method|net.minecraftforge.client.event.RenderWorldLastEvent|getPartialTicks|()F
-      @|rina/rocan/manager/RocanModuleManager.java|2609|2625|RocanEventRender|class|rina.rocan.event.render.RocanEventRender|false
-      @|rina/rocan/manager/RocanModuleManager.java|2645|2661|RocanEventRender|class|rina.rocan.event.render.RocanEventRender|false
-      @|rina/rocan/manager/RocanModuleManager.java|2662|2677|TurokRenderHelp|class|rina.turok.TurokRenderHelp|false
-      @|rina/rocan/manager/RocanModuleManager.java|2678|2686|INSTANCE|field|rina.turok.TurokRenderHelp|INSTANCE
-      @|rina/rocan/manager/RocanModuleManager.java|2712|2730|resetTranslatation|method|rina.rocan.event.render.RocanEventRender|resetTranslatation|()V
-      @|rina/rocan/manager/RocanModuleManager.java|2739|2763|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|2764|2776|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|2779|2787|profiler|field|net.minecraft.client.Minecraft|profiler
-      @|rina/rocan/manager/RocanModuleManager.java|2788|2798|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
-      @|rina/rocan/manager/RocanModuleManager.java|2812|2823|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|2834|2847|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|2869|2877|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|2888|2912|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|2913|2925|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|2928|2936|profiler|field|net.minecraft.client.Minecraft|profiler
-      @|rina/rocan/manager/RocanModuleManager.java|2937|2949|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
-      @|rina/rocan/manager/RocanModuleManager.java|2958|2964|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanModuleManager.java|2984|2992|onRender|method|rina.rocan.client.RocanModule|onRender|(Lrina/rocan/event/render/RocanEventRender;)V
-      @|rina/rocan/manager/RocanModuleManager.java|3015|3039|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|3040|3052|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|3055|3063|profiler|field|net.minecraft.client.Minecraft|profiler
-      @|rina/rocan/manager/RocanModuleManager.java|3064|3074|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
-      @|rina/rocan/manager/RocanModuleManager.java|3094|3118|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|3119|3131|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|3134|3142|profiler|field|net.minecraft.client.Minecraft|profiler
-      @|rina/rocan/manager/RocanModuleManager.java|3143|3155|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
-      @|rina/rocan/manager/RocanModuleManager.java|3173|3187|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|3188|3199|glLineWidth|method|net.minecraft.client.renderer.GlStateManager|glLineWidth|(F)V
-      @|rina/rocan/manager/RocanModuleManager.java|3212|3226|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|3227|3237|shadeModel|method|net.minecraft.client.renderer.GlStateManager|shadeModel|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|3238|3242|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/manager/RocanModuleManager.java|3243|3250|GL_FLAT|field|org.lwjgl.opengl.GL11|GL_FLAT
-      @|rina/rocan/manager/RocanModuleManager.java|3256|3270|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|3271|3283|disableBlend|method|net.minecraft.client.renderer.GlStateManager|disableBlend|()V
-      @|rina/rocan/manager/RocanModuleManager.java|3290|3304|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|3305|3316|enableAlpha|method|net.minecraft.client.renderer.GlStateManager|enableAlpha|()V
-      @|rina/rocan/manager/RocanModuleManager.java|3323|3337|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|3338|3353|enableTexture2D|method|net.minecraft.client.renderer.GlStateManager|enableTexture2D|()V
-      @|rina/rocan/manager/RocanModuleManager.java|3360|3374|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|3375|3386|enableDepth|method|net.minecraft.client.renderer.GlStateManager|enableDepth|()V
-      @|rina/rocan/manager/RocanModuleManager.java|3393|3407|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/manager/RocanModuleManager.java|3408|3418|enableCull|method|net.minecraft.client.renderer.GlStateManager|enableCull|()V
-      @|rina/rocan/manager/RocanModuleManager.java|3427|3442|TurokRenderHelp|class|rina.turok.TurokRenderHelp|false
-      @|rina/rocan/manager/RocanModuleManager.java|3443|3452|releaseGL|method|rina.turok.TurokRenderHelp|releaseGL|()V
-      @|rina/rocan/manager/RocanModuleManager.java|3461|3485|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|3486|3498|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|3501|3509|profiler|field|net.minecraft.client.Minecraft|profiler
-      @|rina/rocan/manager/RocanModuleManager.java|3510|3520|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
-      @|rina/rocan/manager/RocanModuleManager.java|3527|3551|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
-      @|rina/rocan/manager/RocanModuleManager.java|3552|3564|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|rina/rocan/manager/RocanModuleManager.java|3567|3575|profiler|field|net.minecraft.client.Minecraft|profiler
-      @|rina/rocan/manager/RocanModuleManager.java|3576|3586|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
+      @|rina/rocan/manager/RocanModuleManager.java|2271|2276|event|param|rina.rocan.manager.RocanModuleManager|onRenderModuleList|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
+      @|rina/rocan/manager/RocanModuleManager.java|2231|2249|onRenderModuleList|method|rina.rocan.manager.RocanModuleManager|onRenderModuleList|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
+      @|rina/rocan/manager/RocanModuleManager.java|2250|2270|RenderWorldLastEvent|class|net.minecraftforge.client.event.RenderWorldLastEvent|false
+      @|rina/rocan/manager/RocanModuleManager.java|2283|2307|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|2308|2320|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|2323|2331|profiler|field|net.minecraft.client.Minecraft|profiler
+      @|rina/rocan/manager/RocanModuleManager.java|2332|2344|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanModuleManager.java|2358|2382|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|2383|2395|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|2398|2406|profiler|field|net.minecraft.client.Minecraft|profiler
+      @|rina/rocan/manager/RocanModuleManager.java|2407|2419|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanModuleManager.java|2435|2449|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|2450|2466|disableTexture2D|method|net.minecraft.client.renderer.GlStateManager|disableTexture2D|()V
+      @|rina/rocan/manager/RocanModuleManager.java|2473|2487|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|2488|2499|enableBlend|method|net.minecraft.client.renderer.GlStateManager|enableBlend|()V
+      @|rina/rocan/manager/RocanModuleManager.java|2506|2520|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|2521|2533|disableAlpha|method|net.minecraft.client.renderer.GlStateManager|disableAlpha|()V
+      @|rina/rocan/manager/RocanModuleManager.java|2540|2554|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|2555|2575|tryBlendFuncSeparate|method|net.minecraft.client.renderer.GlStateManager|tryBlendFuncSeparate|(IIII)V
+      @|rina/rocan/manager/RocanModuleManager.java|2576|2580|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/manager/RocanModuleManager.java|2581|2593|GL_SRC_ALPHA|field|org.lwjgl.opengl.GL11|GL_SRC_ALPHA
+      @|rina/rocan/manager/RocanModuleManager.java|2595|2599|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/manager/RocanModuleManager.java|2600|2622|GL_ONE_MINUS_SRC_ALPHA|field|org.lwjgl.opengl.GL11|GL_ONE_MINUS_SRC_ALPHA
+      @|rina/rocan/manager/RocanModuleManager.java|2634|2648|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|2649|2659|shadeModel|method|net.minecraft.client.renderer.GlStateManager|shadeModel|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|2660|2664|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/manager/RocanModuleManager.java|2665|2674|GL_SMOOTH|field|org.lwjgl.opengl.GL11|GL_SMOOTH
+      @|rina/rocan/manager/RocanModuleManager.java|2680|2694|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|2695|2707|disableDepth|method|net.minecraft.client.renderer.GlStateManager|disableDepth|()V
+      @|rina/rocan/manager/RocanModuleManager.java|2716|2730|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|2731|2742|glLineWidth|method|net.minecraft.client.renderer.GlStateManager|glLineWidth|(F)V
+      @|rina/rocan/manager/RocanModuleManager.java|2755|2760|Vec3d|class|net.minecraft.util.math.Vec3d|false
+      @|rina/rocan/manager/RocanModuleManager.java|2767|2782|RocanUtilEntity|class|rina.rocan.util.RocanUtilEntity|false
+      @|rina/rocan/manager/RocanModuleManager.java|2783|2801|getInterpolatedPos|method|rina.rocan.util.RocanUtilEntity|getInterpolatedPos|(Lnet/minecraft/entity/Entity;D)Lnet/minecraft/util/math/Vec3d;
+      @|rina/rocan/manager/RocanModuleManager.java|2802|2826|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|2827|2839|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|2842|2848|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/manager/RocanModuleManager.java|2850|2855|event|param|rina.rocan.manager.RocanModuleManager|onRenderModuleList|(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V|event|0
+      @|rina/rocan/manager/RocanModuleManager.java|2856|2871|getPartialTicks|method|net.minecraftforge.client.event.RenderWorldLastEvent|getPartialTicks|()F
+      @|rina/rocan/manager/RocanModuleManager.java|2881|2897|RocanEventRender|class|rina.rocan.event.render.RocanEventRender|false
+      @|rina/rocan/manager/RocanModuleManager.java|2917|2933|RocanEventRender|class|rina.rocan.event.render.RocanEventRender|false
+      @|rina/rocan/manager/RocanModuleManager.java|2934|2949|TurokRenderHelp|class|rina.turok.TurokRenderHelp|false
+      @|rina/rocan/manager/RocanModuleManager.java|2950|2958|INSTANCE|field|rina.turok.TurokRenderHelp|INSTANCE
+      @|rina/rocan/manager/RocanModuleManager.java|2984|3002|resetTranslatation|method|rina.rocan.event.render.RocanEventRender|resetTranslatation|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3011|3035|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|3036|3048|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|3051|3059|profiler|field|net.minecraft.client.Minecraft|profiler
+      @|rina/rocan/manager/RocanModuleManager.java|3060|3070|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3084|3095|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|3106|3119|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|3141|3149|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|3160|3184|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|3185|3197|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|3200|3208|profiler|field|net.minecraft.client.Minecraft|profiler
+      @|rina/rocan/manager/RocanModuleManager.java|3209|3221|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanModuleManager.java|3230|3236|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|3256|3264|onRender|method|rina.rocan.client.RocanModule|onRender|(Lrina/rocan/event/render/RocanEventRender;)V
+      @|rina/rocan/manager/RocanModuleManager.java|3287|3311|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|3312|3324|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|3327|3335|profiler|field|net.minecraft.client.Minecraft|profiler
+      @|rina/rocan/manager/RocanModuleManager.java|3336|3346|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3366|3390|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|3391|3403|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|3406|3414|profiler|field|net.minecraft.client.Minecraft|profiler
+      @|rina/rocan/manager/RocanModuleManager.java|3415|3427|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
+      @|rina/rocan/manager/RocanModuleManager.java|3445|3459|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|3460|3471|glLineWidth|method|net.minecraft.client.renderer.GlStateManager|glLineWidth|(F)V
+      @|rina/rocan/manager/RocanModuleManager.java|3484|3498|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|3499|3509|shadeModel|method|net.minecraft.client.renderer.GlStateManager|shadeModel|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|3510|3514|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/manager/RocanModuleManager.java|3515|3522|GL_FLAT|field|org.lwjgl.opengl.GL11|GL_FLAT
+      @|rina/rocan/manager/RocanModuleManager.java|3528|3542|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|3543|3555|disableBlend|method|net.minecraft.client.renderer.GlStateManager|disableBlend|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3562|3576|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|3577|3588|enableAlpha|method|net.minecraft.client.renderer.GlStateManager|enableAlpha|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3595|3609|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|3610|3625|enableTexture2D|method|net.minecraft.client.renderer.GlStateManager|enableTexture2D|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3632|3646|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|3647|3658|enableDepth|method|net.minecraft.client.renderer.GlStateManager|enableDepth|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3665|3679|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/manager/RocanModuleManager.java|3680|3690|enableCull|method|net.minecraft.client.renderer.GlStateManager|enableCull|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3699|3714|TurokRenderHelp|class|rina.turok.TurokRenderHelp|false
+      @|rina/rocan/manager/RocanModuleManager.java|3715|3724|releaseGL|method|rina.turok.TurokRenderHelp|releaseGL|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3733|3757|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|3758|3770|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|3773|3781|profiler|field|net.minecraft.client.Minecraft|profiler
+      @|rina/rocan/manager/RocanModuleManager.java|3782|3792|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
+      @|rina/rocan/manager/RocanModuleManager.java|3799|3823|RocanUtilMinecraftHelper|class|rina.rocan.util.RocanUtilMinecraftHelper|false
+      @|rina/rocan/manager/RocanModuleManager.java|3824|3836|getMinecraft|method|rina.rocan.util.RocanUtilMinecraftHelper|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|rina/rocan/manager/RocanModuleManager.java|3839|3847|profiler|field|net.minecraft.client.Minecraft|profiler
+      @|rina/rocan/manager/RocanModuleManager.java|3848|3858|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
    Method End: onRenderModuleList(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V
    Method Start: getModuleList()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|3605|3614|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|3615|3626|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|3628|3641|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|3661|3672|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
+      @|rina/rocan/manager/RocanModuleManager.java|3877|3886|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|3887|3898|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|3900|3913|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|3933|3944|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
    Method End: getModuleList()Ljava/util/ArrayList;
    Method Start: getModuleListByCategory(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|3745|3753|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
-      @|rina/rocan/manager/RocanModuleManager.java|3689|3698|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|3699|3710|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|3712|3735|getModuleListByCategory|method|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|3736|3744|Category|class|rina.rocan.client.RocanModule.Category|false
-      @|rina/rocan/manager/RocanModuleManager.java|3760|3769|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|3770|3781|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|3810|3819|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|3835|3846|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|3857|3870|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|3892|3903|getCategory|method|rina.rocan.client.RocanModule|getCategory|()Lrina/rocan/client/RocanModule$Category;
-      @|rina/rocan/manager/RocanModuleManager.java|3909|3917|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
-      @|rina/rocan/manager/RocanModuleManager.java|3947|3950|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|4017|4025|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
+      @|rina/rocan/manager/RocanModuleManager.java|3961|3970|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|3971|3982|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|3984|4007|getModuleListByCategory|method|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|4008|4016|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/manager/RocanModuleManager.java|4032|4041|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|4042|4053|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|4082|4091|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|4107|4118|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|4129|4142|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|4164|4175|getCategory|method|rina.rocan.client.RocanModule|getCategory|()Lrina/rocan/client/RocanModule$Category;
+      @|rina/rocan/manager/RocanModuleManager.java|4181|4189|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
+      @|rina/rocan/manager/RocanModuleManager.java|4219|4222|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
    Method End: getModuleListByCategory(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
    Method Start: getModuleByTag(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
-      @|rina/rocan/manager/RocanModuleManager.java|4055|4058|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
-      @|rina/rocan/manager/RocanModuleManager.java|4021|4032|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|4033|4047|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
-      @|rina/rocan/manager/RocanModuleManager.java|4048|4054|String|class|java.lang.String|false
-      @|rina/rocan/manager/RocanModuleManager.java|4070|4081|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|4092|4105|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|4127|4133|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanModuleManager.java|4136|4152|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|4153|4156|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
+      @|rina/rocan/manager/RocanModuleManager.java|4327|4330|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
+      @|rina/rocan/manager/RocanModuleManager.java|4293|4304|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|4305|4319|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+      @|rina/rocan/manager/RocanModuleManager.java|4320|4326|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanModuleManager.java|4342|4353|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|4364|4377|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|4399|4405|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|4408|4424|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|4425|4428|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
    Method End: getModuleByTag(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
 Class End  : rina.rocan.manager.RocanModuleManager
 endProcessing "rina/rocan/manager/RocanModuleManager.java"

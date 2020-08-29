@@ -149,6 +149,22 @@ public class RocanMainGUI extends GuiScreen {
 		}
 	}
 
+	public void handleMouseInput() throws IOException {
+		if (Mouse.getEventDWheel() > 0) {
+			for (RocanFrame frames : this.frame_list) {
+				frames.getRect().y += 5;
+			}
+		}
+
+		if (Mouse.getEventDWheel() < 0) {
+			for (RocanFrame frames : this.frame_list) {
+				frames.getRect().y -= 5;
+			}
+		}
+		
+		super.handleMouseInput();
+	}
+
 	@Override
 	public void drawScreen(int x, int y, float partial_ticks) {
 		this.drawDefaultBackground();

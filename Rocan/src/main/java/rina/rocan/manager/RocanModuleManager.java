@@ -28,6 +28,7 @@ import rina.rocan.client.modules.gui.*;
 // Client.
 import rina.rocan.client.RocanModule.Category;
 import rina.rocan.client.RocanModule;
+import rina.rocan.client.RocanHUD;
 
 // Util.
 import rina.rocan.util.RocanUtilEntity;
@@ -43,9 +44,11 @@ import rina.rocan.util.RocanUtilMinecraftHelper;
   **/
 public class RocanModuleManager {
 	ArrayList<RocanModule> module_list;
+	ArrayList<RocanHUD> hud_list;
 
 	public RocanModuleManager() {
 		this.module_list = new ArrayList<>();
+		this.hud_list    = new ArrayList<>();
 
 		// Combat.
 		addModule(new RocanOffhandUtil());
@@ -66,10 +69,18 @@ public class RocanModuleManager {
 
 		// GUI.
 		addModule(new RocanGUI());
+		addModule(new RocanMasterHUD());
+
+		// HUD.
 	}
 
 	public void addModule(RocanModule module) {
 		this.module_list.add(module);
+	}
+
+	public void addHUD(RocanHUD hud) {
+		this.module_list.add((RocanModule) hud);
+		this.hud_list.add(hud);
 	}
 
 	public void onUpdateModuleList() {

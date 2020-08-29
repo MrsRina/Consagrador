@@ -17,6 +17,7 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
 // Java.
+import java.awt.Color;
 import java.util.*;
 
 // Turok.
@@ -42,7 +43,15 @@ import rina.rocan.Rocan;
 public class RocanEventManager {
 	private Minecraft mc = Minecraft.getMinecraft();
 
-	public RocanEventManager() {}
+	public int tickness_rgb_effect_red;
+	public int tickness_rgb_effect_green;
+	public int tickness_rgb_effect_blue;
+
+	public RocanEventManager() {
+		this.tickness_rgb_effect_red   = 0;
+		this.tickness_rgb_effect_green = 0;
+		this.tickness_rgb_effect_blue  = 0;
+	}
 
 	@SubscribeEvent
 	public void onUpdate(LivingEvent.LivingUpdateEvent event) {
@@ -67,6 +76,17 @@ public class RocanEventManager {
 		}
 
 		Rocan.getModuleManager().onRenderModuleList(event);
+
+		float[] tick_color = {
+			(System.currentTimeMillis() % (360 * 32)) / (360f * 32)
+		};
+	
+		int color_process = Color.HSBtoRGB(tick_color[0], 1, 1);
+
+		// We update.
+		this.tickness_rgb_effect_red   = ((color_process >> 16) & 0xFF);
+		this.tickness_rgb_effect_green = ((color_process >> 8) & 0xFF);
+		this.tickness_rgb_effect_blue  = ((color_process) & 0xFF);
 	}
 
 	@SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
@@ -123,5 +143,9 @@ public class RocanEventManager {
 				true_command = false;
 			}
 		}
+	}
+
+	public int[] getRGBEffect() {
+		return new int[] {this.tickness_rgb_effect_red, this.tickness_rgb_effect_green, this.tickness_rgb_effect_blue};
 	}
 }
