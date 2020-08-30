@@ -72,6 +72,7 @@ public class RocanModuleManager {
 
 		// GUI.
 		addModule(new RocanGUI());
+		addModule(new RocanHUDEditor());
 
 		// HUD.
 		addHUD(new RocanCoordinates());
@@ -150,8 +151,44 @@ public class RocanModuleManager {
 		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
 	}
 
+	public void keyTypedHUD(char char_, int key) {
+		for (RocanHUD huds : getHUDList()) {
+			if (((RocanModule) huds).getState()) {
+				huds.keyboard(char_, key);
+			}
+		}
+	}
+
+	public void mouseClickedHUD(int x, int y, int mouse) {
+		for (RocanHUD huds : getHUDList()) {
+			if (((RocanModule) huds).getState()) {
+				huds.click(x, y, mouse);
+			}
+		}
+	}
+
+	public void mouseReleasedHUD(int x, int y, int mouse) {
+		for (RocanHUD huds : getHUDList()) {
+			if (((RocanModule) huds).getState()) {
+				huds.release(x, y, mouse);
+			}
+		}
+	}
+
+	public void renderScreenHUD(int x, int y, float partial_ticks) {
+		for (RocanHUD huds : getHUDList()) {
+			if (((RocanModule) huds).getState()) {
+				huds.render(x, y, partial_ticks);
+			}
+		}
+	}
+
 	public ArrayList<RocanModule> getModuleList() {
 		return this.module_list;
+	}
+
+	public ArrayList<RocanHUD> getHUDList() {
+		return this.hud_list;
 	}
 
 	public ArrayList<RocanModule> getModuleListByCategory(Category category) {

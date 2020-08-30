@@ -5,6 +5,7 @@ import net.minecraft.client.Minecraft;
 
 // Turok.
 import rina.turok.TurokScreenUtil;
+import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
 import rina.turok.TurokRect;
 
@@ -26,10 +27,6 @@ import rina.rocan.Rocan;
  *
  **/
 public class RocanHUD extends RocanModule {
-	private String name;
-	private String tag;
-	private String description;
-
 	private RocanSetting setting_smooth;
 	private RocanSetting setting_shadow;
 
@@ -45,10 +42,18 @@ public class RocanHUD extends RocanModule {
 	public int rgb_g;
 	public int rgb_b;
 
+	public int move_x;
+	public int move_y;
+
+	private boolean event_mouse_click;
+	private boolean event_mouse_passing;
+
+	private boolean event_hud_dragging;
+
 	public static final Minecraft mc = RocanUtilMinecraftHelper.getMinecraft();
 
 	public RocanHUD(String[] details) {
-		super(new String[] {details[0], "HUD" + details[1], details[2]}, Category.ROCAN_GUI);
+		super(new String[] {details[0], "HUD" + details[1], details[2]}, Category.ROCAN_HUD);
 
 		this.dock = Docking.LEFT_UP;
 
@@ -56,7 +61,7 @@ public class RocanHUD extends RocanModule {
 	}
 
 	public RocanHUD(String[] details, Docking dock) {
-		super(new String[] {details[0], "HUD" + details[1], details[2]}, Category.ROCAN_GUI);
+		super(new String[] {details[0], "HUD" + details[1], details[2]}, Category.ROCAN_HUD);
 
 		this.dock = dock;
 
@@ -64,10 +69,6 @@ public class RocanHUD extends RocanModule {
 	}
 
 	public void initializeComponentHUD(String[] details) {
-		this.name        = details[0];
-		this.tag         = details[1];
-		this.description = details[2];
-
 		this.rect = new TurokRect(this.name, 0, 0);
 
 		this.setting_smooth = createSetting(new String[] {"Smooth", "Smooth", "Draw smooth font for HUD"}, true);
@@ -80,6 +81,9 @@ public class RocanHUD extends RocanModule {
 		this.rgb_r = 0;
 		this.rgb_g = 0;
 		this.rgb_b = 0;
+
+		this.move_x = 0;
+		this.move_y = 0;
 	}
 
 	public void setX(int x) {
@@ -90,12 +94,32 @@ public class RocanHUD extends RocanModule {
 		this.rect.setY(y);
 	}
 
+	public void setMoveX(int x) {
+		this.move_x = x;
+	}
+
+	public void setMoveY(int y) {
+		this.move_y = y;
+	}
+
 	public void setWidth(int width) {
 		this.rect.setWidth(width);
 	}
 
 	public void setHeight(int height) {
 		this.rect.setHeight(height);
+	}
+
+	public void setMouseClick(boolean state) {
+		this.event_mouse_click = state;
+	}
+
+	public void setMousePassing(boolean state) {
+		this.event_mouse_passing = state;
+	}
+
+	public void setHUDDragging(boolean state) {
+		this.event_hud_dragging = state;
 	}
 
 	public String getName() {
@@ -118,12 +142,32 @@ public class RocanHUD extends RocanModule {
 		return this.rect.getY();
 	}
 
+	public int getMoveX() {
+		return this.move_x;
+	}
+
+	public int getMoveY() {
+		return this.move_y;
+	}
+
 	public int getWidth() {
 		return this.rect.getWidth();
 	}
 
 	public int getHeight() {
 		return this.rect.getHeight();
+	}
+
+	public boolean isMouseClick() {
+		return this.event_mouse_click;
+	}
+
+	public boolean isMousePassing() {
+		return this.event_mouse_passing;
+	}
+
+	public boolean isHUDDragging() {
+		return this.event_hud_dragging;
 	}
 
 	@Override
@@ -141,6 +185,51 @@ public class RocanHUD extends RocanModule {
 			onRenderHUD();
 		}
 	}
+
+	public void keyboard(char char_, int key) {}
+
+	public void click(int x, int y, int mouse) {
+		if (mouse == 0) {
+			if (this.rect.collide(x, y)) {
+				setMouseClick(true);
+
+				setMoveX(x - getX());
+				setMoveY(y - getY());
+			}
+		}
+	}
+
+	public void release(int x, int y, int mouse) {
+		if (mouse == 0) {
+			setMouseClick(false);
+		}
+	}
+
+	public void render(int x, int y, float partial_ticks) {
+		updateEvent(x, y);
+		updateActions(x, y);
+
+		onRenderHUD();
+
+		// Prepare to render.
+		TurokRenderGL.init2D();
+		TurokRenderGL.release2D();
+	}
+
+	public void updateEvent(int x, int y) {
+		if (isMouseClick()) {
+			setHUDDragging(true);
+		} else {
+			setHUDDragging(false);
+		}
+	}
+
+	public void updateActions(int x, int y) {
+		if (isHUDDragging()) {
+			setX(x - getMoveX());
+			setY(y - getMoveY());
+		}
+	} 
 
 	protected void onRenderHUD() {}
 

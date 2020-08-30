@@ -35,9 +35,9 @@ import rina.rocan.Rocan;
  *
  **/
 public class RocanModule {
-	private String name;
-	private String tag;
-	private String description;
+	public String name;
+	public String tag;
+	public String description;
 
 	private ArrayList<RocanSetting> setting_list = new ArrayList<>();
 
@@ -145,6 +145,7 @@ public class RocanModule {
 		ROCAN_EXPLOIT("Rocan Exploit", "Exploit"),
 		ROCAN_RENDER("Rocan Render", "Render"),
 		ROCAN_MISC("Rocan Misc", "Misc"),
+		ROCAN_HUD("Rocan HUD", "HUD"),
 		ROCAN_GUI("Rocan GUI", "GUI");
 
 		String name;

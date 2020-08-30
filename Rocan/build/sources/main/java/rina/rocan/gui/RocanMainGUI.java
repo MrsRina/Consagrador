@@ -58,6 +58,8 @@ public class RocanMainGUI extends GuiScreen {
 
 	private RocanFrame focused_frame;
 
+	private RocanFrame frame_hud;
+
 	private boolean event_cancel_close_gui;
 
 	public RocanMainGUI() {
@@ -77,7 +79,13 @@ public class RocanMainGUI extends GuiScreen {
 	}
 
 	public void loadFrames() {
+		this.frame_hud = new RocanFrame(this, RocanModule.Category.ROCAN_HUD);
+
 		for (RocanModule.Category categories : RocanModule.Category.values()) {
+			if (categories == RocanModule.Category.ROCAN_HUD) {
+				continue;
+			}
+
 			RocanFrame new_frame = new RocanFrame(this, categories);
 
 			new_frame.setY(10);
@@ -101,37 +109,65 @@ public class RocanMainGUI extends GuiScreen {
 		if (Rocan.getModuleManager().getModuleByTag("GUI").getState()) {
 			Rocan.getModuleManager().getModuleByTag("GUI").setState(false);
 		}
+
+		if (Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
+			Rocan.getModuleManager().getModuleByTag("HUDEditor").setState(false);
+		}
 	}
 
 	@Override
 	public void keyTyped(char char_, int key) {
+		this.frame_hud.keyboard(char_, key);
 		this.focused_frame.keyboard(char_, key);
 
+		Rocan.getModuleManager().keyTypedHUD(char_, key);
+
 		if (key == Keyboard.KEY_ESCAPE && !isCancelledToCloseGUI()) {
+			this.onGuiClosed();
+
 			RocanUtilMinecraftHelper.getMinecraft().displayGuiScreen(null);
 		}
 	}
 
 	@Override
 	public void mouseClicked(int x, int y, int mouse) {
-		for (RocanFrame frames : this.frame_list) {
-			frames.refreshFocus(x, y, mouse);
+		if (Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
+			this.frame_hud.refreshFocus(x, y, mouse);
 
-			if (frames.verifyFrame(x, y)) {
-				this.focused_frame = frames;
+			this.frame_hud.click(mouse);
+
+			if (mouse == 0) {
+				if (this.frame_hud.isMousePassing() && !this.frame_hud.isFrameCancelingClick()) {
+					refreshFrame();
+
+					this.frame_hud.setMouseClick(true);
+
+					this.frame_hud.setMoveX(x - this.frame_hud.getX());
+					this.frame_hud.setMoveY(y - this.frame_hud.getY());
+				}
 			}
-		}
 
-		this.focused_frame.click(mouse);
+			Rocan.getModuleManager().mouseClickedHUD(x, y, mouse);
+		} else {
+			for (RocanFrame frames : this.frame_list) {
+				frames.refreshFocus(x, y, mouse);
 
-		if (mouse == 0) {
-			if (this.focused_frame.isMousePassing() && !this.focused_frame.isFrameCancelingClick()) {
-				refreshFrame();
+				if (frames.verifyFrame(x, y)) {
+					this.focused_frame = frames;
+				}
+			}
 
-				this.focused_frame.setMouseClick(true);
+			this.focused_frame.click(mouse);
 
-				this.focused_frame.setMoveX(x - this.focused_frame.getX());
-				this.focused_frame.setMoveY(y - this.focused_frame.getY());
+			if (mouse == 0) {
+				if (this.focused_frame.isMousePassing() && !this.focused_frame.isFrameCancelingClick()) {
+					refreshFrame();
+
+					this.focused_frame.setMouseClick(true);
+
+					this.focused_frame.setMoveX(x - this.focused_frame.getX());
+					this.focused_frame.setMoveY(y - this.focused_frame.getY());
+				}
 			}
 		}
 	}
@@ -147,21 +183,41 @@ public class RocanMainGUI extends GuiScreen {
 				}
 			}
 		}
+
+		this.frame_hud.release(mouse);
+
+		if (mouse == 0) {
+			if (this.frame_hud.isMouseClick()) {
+				this.frame_hud.setMouseClick(false);
+			}
+		}
+
+		Rocan.getModuleManager().mouseReleasedHUD(x, y, mouse);
 	}
 
 	public void handleMouseInput() throws IOException {
-		if (Mouse.getEventDWheel() > 0) {
-			for (RocanFrame frames : this.frame_list) {
-				frames.getRect().y += 5;
+		if (Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
+			if (Mouse.getEventDWheel() > 0) {
+				this.frame_hud.getRect().y += 5;
 			}
-		}
 
-		if (Mouse.getEventDWheel() < 0) {
-			for (RocanFrame frames : this.frame_list) {
-				frames.getRect().y -= 5;
+			if (Mouse.getEventDWheel() < 0) {
+				this.frame_hud.getRect().y -= 5;
+			}
+		} else {
+			if (Mouse.getEventDWheel() > 0) {
+				for (RocanFrame frames : this.frame_list) {
+					frames.getRect().y += 5;
+				}
+			}
+
+			if (Mouse.getEventDWheel() < 0) {
+				for (RocanFrame frames : this.frame_list) {
+					frames.getRect().y -= 5;
+				}
 			}
 		}
-		
+			
 		super.handleMouseInput();
 	}
 
@@ -180,17 +236,24 @@ public class RocanMainGUI extends GuiScreen {
 
 		refreshGUI(x, y, scaled_resolution);
 
-		for (RocanFrame frames : this.frame_list) {
-			frames.render();
+		if (Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
+			this.frame_hud.render();
+			this.frame_hud.refreshFrame();
 
-			if (frames.verifyFrame(x, y)) {
-				this.focused_frame = frames;
+			Rocan.getModuleManager().renderScreenHUD(x, y, partial_ticks);
+		} else {
+			for (RocanFrame frames : this.frame_list) {
+				frames.render();
+
+				if (frames.verifyFrame(x, y)) {
+					this.focused_frame = frames;
+				}
+
+				frames.resetFrame();
 			}
 
-			frames.resetFrame();
+			this.focused_frame.refreshFrame();
 		}
-
-		this.focused_frame.refreshFrame();
 
 		GL11.glDisable(GL11.GL_TEXTURE_2D);
 		GL11.glDisable(GL11.GL_BLEND);
