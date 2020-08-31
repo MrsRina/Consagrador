@@ -18,6 +18,9 @@ import java.io.*;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
+// GUI.
+import rina.rocan.gui.frame.RocanFrame;
+
 // Rocan.
 import rina.rocan.Rocan;
 
@@ -69,12 +72,32 @@ public class RocanFileManager {
 		Gson GSON_BUILDER      = new GsonBuilder().setPrettyPrinting().create();
 		JsonParser GSON_PARSER = new JsonParser();
 
-		JsonObject MAIN_JSON                 = new JsonObject();
-		JsonObject MAIN_CLIENT_CONFIGURATION = new JsonObject();
+		JsonObject MAIN_JSON      = new JsonObject();
+		JsonObject MAIN_FRAMES_XY = new JsonObject();
 
-		MAIN_JSON.add("Client", new JsonPrimitive(Rocan.getClientName()));
-		MAIN_JSON.add("Version", new JsonPrimitive(Rocan.getClientVersion()));
-		MAIN_JSON.add("Prefix", new JsonPrimitive(Rocan.getCommandManager().getPrefix()));
+		for (RocanFrame frames : Rocan.getClientGUI().getFrameList()) {
+			JsonObject FRAME = new JsonObject();
+
+			FRAME.add("tag", new JsonPrimitive(frames.getName()));
+			FRAME.add("x", new JsonPrimitive(frames.getX()));
+			FRAME.add("y", new JsonPrimitive(frames.getY()));
+
+			MAIN_FRAMES_XY.add(frames.getName(), FRAME);
+		}
+
+		JsonObject FRAME_HUD_EDITOR = new JsonObject();
+
+		FRAME_HUD_EDITOR.add("tag", new JsonPrimitive(Rocan.getClientGUI().getFrameHUD().getName()));
+		FRAME_HUD_EDITOR.add("x", new JsonPrimitive(Rocan.getClientGUI().getFrameHUD().getX()));
+		FRAME_HUD_EDITOR.add("y", new JsonPrimitive(Rocan.getClientGUI().getFrameHUD().getY()));
+
+		MAIN_FRAMES_XY.add(Rocan.getClientGUI().getFrameHUD().getName(), FRAME_HUD_EDITOR);
+
+		MAIN_JSON.add("client", new JsonPrimitive(Rocan.getClientName()));
+		MAIN_JSON.add("version", new JsonPrimitive(Rocan.getClientVersion()));
+		MAIN_JSON.add("prefix", new JsonPrimitive(Rocan.getCommandManager().getPrefix()));
+
+		MAIN_JSON.add("frameList", MAIN_FRAMES_XY);
 
 		JsonElement JSON_PRETTY_FORMAT = GSON_PARSER.parse(MAIN_JSON.toString());
 
@@ -94,9 +117,31 @@ public class RocanFileManager {
 
 		JsonObject MAIN_JSON = new JsonParser().parse(new InputStreamReader(JSON_FILE)).getAsJsonObject();
 
-		if (MAIN_JSON.get("Prefix") != null) {
+		if (MAIN_JSON.get("prefix") != null) {
 			// Load prefix.
-			Rocan.getCommandManager().setPrefix(MAIN_JSON.get("Prefix").getAsString());
+			Rocan.getCommandManager().setPrefix(MAIN_JSON.get("prefix").getAsString());
+		}
+
+		if (MAIN_JSON.get("frameList") != null) {
+			JsonObject FRAME_LIST = MAIN_JSON.get("frameList").getAsJsonObject();
+
+			for (RocanFrame frames : Rocan.getClientGUI().getFrameList()) {
+				if (FRAME_LIST.get(frames.getName()) == null) {
+					continue;
+				}
+
+				JsonObject FRAME = FRAME_LIST.get(frames.getName()).getAsJsonObject();
+
+				RocanFrame frame_requested = Rocan.getClientGUI().getFrameByRectTag(FRAME.get("tag").getAsString());
+
+				frame_requested.setX(FRAME.get("x").getAsInt());
+				frame_requested.setY(FRAME.get("y").getAsInt());
+			}
+
+			JsonObject FRAME_HUD_EDITOR = FRAME_LIST.get(Rocan.getClientGUI().getFrameHUD().getName()).getAsJsonObject();
+		
+			Rocan.getClientGUI().getFrameHUD().setX(FRAME_HUD_EDITOR.get("x").getAsInt());
+			Rocan.getClientGUI().getFrameHUD().setY(FRAME_HUD_EDITOR.get("y").getAsInt());
 		}
 
 		JSON_FILE.close();

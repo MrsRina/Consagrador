@@ -279,6 +279,25 @@ public class RocanMainGUI extends GuiScreen {
 		this.event_cancel_close_gui = state;
 	}
 
+	public ArrayList<RocanFrame> getFrameList() {
+		return this.frame_list;
+	}
+
+	// The string called getName() get the string of rect.
+	public RocanFrame getFrameByRectTag(String tag) {
+		for (RocanFrame frames : getFrameList()) {
+			if (frames.getName().equals(tag)) {
+				return frames;
+			}
+		}
+
+		return null;
+	}
+
+	public RocanFrame getFrameHUD() {
+		return this.frame_hud;
+	}
+
 	public int getScreenWidth() {
 		return this.screen_width;
 	}

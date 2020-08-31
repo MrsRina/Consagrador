@@ -21,10 +21,10 @@ import rina.rocan.Rocan;
  **/
 public class RocanCoordinates extends RocanHUD {
 	public RocanCoordinates() {
-		super(new String[] {"Coordinates", "Coordinates", "Draw position player."}, Docking.LEFT_DOWN);
+		super(new String[] {"Coordinates", "Coordinates", "Draw position player."}, Docking.LEFT_UP);
 	}
 
-	RocanSetting rgb_effect = addSetting(new String[] {"RGB", "RGB", "RGB effect."}, false);
+	RocanSetting rgb_effect = addSetting(new String[] {"RGB", "CoordinatesRGB", "RGB effect."}, false);
 	RocanSetting direction  = addSetting(new String[] {"Direction", "Direction", "Direction view."}, "XZ", new String[] {"XZ", "NSWE", "none"});
 
 	@Override

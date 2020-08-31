@@ -76,6 +76,7 @@ public class RocanModuleManager {
 
 		// HUD.
 		addHUD(new RocanCoordinates());
+		addHUD(new RocanWelcome());
 	}
 
 	public void addModule(RocanModule module) {

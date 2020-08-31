@@ -1,6 +1,7 @@
 package rina.rocan.client;
 
 // Minecraft.
+import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.Minecraft;
 
 // Turok.
@@ -8,6 +9,9 @@ import rina.turok.TurokScreenUtil;
 import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
 import rina.turok.TurokRect;
+
+// HUD render.
+import rina.rocan.client.modules.render.RocanHUDRender;
 
 // Client.
 import rina.rocan.client.RocanModule;
@@ -30,6 +34,9 @@ public class RocanHUD extends RocanModule {
 	private RocanSetting setting_smooth;
 	private RocanSetting setting_shadow;
 
+	private RocanSetting setting_pos_x;
+	private RocanSetting setting_pos_y;
+
 	public TurokRect rect;
 
 	public Docking dock;
@@ -45,10 +52,15 @@ public class RocanHUD extends RocanModule {
 	public int move_x;
 	public int move_y;
 
+	public int screen_width;
+	public int screen_height;
+
 	private boolean event_mouse_click;
 	private boolean event_mouse_passing;
 
 	private boolean event_hud_dragging;
+
+	private boolean event_joined_to_dock_rect;
 
 	public static final Minecraft mc = RocanUtilMinecraftHelper.getMinecraft();
 
@@ -71,8 +83,15 @@ public class RocanHUD extends RocanModule {
 	public void initializeComponentHUD(String[] details) {
 		this.rect = new TurokRect(this.name, 0, 0);
 
-		this.setting_smooth = createSetting(new String[] {"Smooth", "Smooth", "Draw smooth font for HUD"}, true);
+		this.setting_smooth = createSetting(new String[] {"Smooth", "Smooth", "Draw smooth font for HUD."}, true);
 		this.setting_shadow = createSetting(new String[] {"Shadow", "Shadow", "Enable shadow string."}, true);
+
+		// I dont set the setting type, so, wont render in GUI, but works normal as a setting.
+		Rocan.getSettingManager().addSetting(this.setting_pos_x = new RocanSetting((RocanModule) this, new String[] {"Position X", this.tag + "PositionX", "Save X."}, this.rect.getX(), 0, 8096));
+		Rocan.getSettingManager().addSetting(this.setting_pos_y = new RocanSetting((RocanModule) this, new String[] {"Position Y", this.tag + "PositionY", "Save Y."}, this.rect.getY(), 0, 8096));
+
+		this.screen_width  = 0;
+		this.screen_height = 0;
 
 		this.hud_r = 0;
 		this.hud_g = 0;
@@ -120,6 +139,14 @@ public class RocanHUD extends RocanModule {
 
 	public void setHUDDragging(boolean state) {
 		this.event_hud_dragging = state;
+	}
+
+	public void setJoinedToDockRect(boolean state) {
+		this.event_joined_to_dock_rect = state;
+	}
+
+	public void setDocking(Docking dock) {
+		this.dock = dock;
 	}
 
 	public String getName() {
@@ -170,8 +197,25 @@ public class RocanHUD extends RocanModule {
 		return this.event_hud_dragging;
 	}
 
+	public boolean isJoinedToDockRect() {
+		return this.event_joined_to_dock_rect;
+	}
+
+	public Docking getDocking() {
+		return this.dock;
+	}
+
 	@Override
 	public void onRender() {
+		ScaledResolution scaled_resolution = new ScaledResolution(mc);
+
+		this.screen_width  = scaled_resolution.getScaledWidth();
+		this.screen_height = scaled_resolution.getScaledHeight();
+
+		// I use a system with setting to save x, y of hud.
+		this.setting_pos_x.setInteger(this.rect.getX());
+		this.setting_pos_y.setInteger(this.rect.getY());
+
 		// Update colors.
 		this.hud_r = Rocan.getSettingManager().getSettingByModuleAndTag("HUD", "StringRed").getInteger();
 		this.hud_g = Rocan.getSettingManager().getSettingByModuleAndTag("HUD", "StringGreen").getInteger();
@@ -190,7 +234,7 @@ public class RocanHUD extends RocanModule {
 
 	public void click(int x, int y, int mouse) {
 		if (mouse == 0) {
-			if (this.rect.collide(x, y)) {
+			if (isMousePassing()) {
 				setMouseClick(true);
 
 				setMoveX(x - getX());
@@ -217,10 +261,22 @@ public class RocanHUD extends RocanModule {
 	}
 
 	public void updateEvent(int x, int y) {
+		if (this.rect.collide(x, y)) {
+			setMousePassing(true);
+		} else {
+			setMousePassing(false);
+		}
+
 		if (isMouseClick()) {
 			setHUDDragging(true);
 		} else {
 			setHUDDragging(false);
+		}
+
+		if (this.rect.collide(RocanHUDRender.RECT_HUD_LEFT_UP)) {
+			setJoinedToDockRect(true);
+		} else {
+			setJoinedToDockRect(false);
 		}
 	}
 
@@ -228,6 +284,17 @@ public class RocanHUD extends RocanModule {
 		if (isHUDDragging()) {
 			setX(x - getMoveX());
 			setY(y - getMoveY());
+
+			verifyDrag(x, y);
+
+			// Considering mouse pass.
+			drawGUIRect(0, 0, this.rect.getWidth(), this.rect.getHeight(), 255, 255, 255, 100);
+		} else {
+			if (isMousePassing()) {
+				drawGUIRect(0, 0, this.rect.getWidth(), this.rect.getHeight(), 190, 190, 190, 100);
+			} else {
+				drawGUIRect(0, 0, this.rect.getWidth(), this.rect.getHeight(), 0, 0, 0, 100);
+			}
 		}
 	} 
 
@@ -277,6 +344,24 @@ public class RocanHUD extends RocanModule {
 		}
 
 		return final_position;
+	}
+
+	protected void verifyDrag(int x, int y) {
+		if ((this.rect.getX() <= 0 && this.rect.getY() <= 0)) {
+			setDocking(Docking.LEFT_UP);
+		}
+
+		if ((this.rect.getX() <= 0 && this.rect.getY() >= this.screen_width)) {
+			setDocking(Docking.LEFT_DOWN);
+		}
+
+		if ((this.rect.getX() + this.rect.getWidth() >= this.screen_width && this.rect.getY() <= 0)) {
+			setDocking(Docking.RIGHT_UP);
+		}
+
+		if ((this.rect.getX() + this.rect.getWidth() >= this.screen_width && this.rect.getY() + this.rect.getHeight() >= this.screen_height)) {
+			setDocking(Docking.RIGHT_DOWN);
+		}
 	}
 
 	public enum Docking {

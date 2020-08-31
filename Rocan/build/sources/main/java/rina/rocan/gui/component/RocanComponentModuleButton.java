@@ -83,6 +83,10 @@ public class RocanComponentModuleButton {
 		int count = 0;
 
 		for (RocanSetting settings : Rocan.getSettingManager().getSettingListByModule(this.module)) {
+			if (settings.getType() == null) {
+				continue;
+			}
+
 			if (settings.getType() == RocanSetting.SettingType.SETTING_BOOLEAN) {
 				RocanComponentWidgetSettingBoolean widgets = new RocanComponentWidgetSettingBoolean(this, settings, this.save_height);
 
