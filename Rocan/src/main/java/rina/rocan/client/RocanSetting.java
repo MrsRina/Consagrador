@@ -134,51 +134,51 @@ public class RocanSetting<T> {
 	}
 
 	public RocanModule getMaster() {
-		return this.master;
+		return master;
 	}
 
 	public String getName() {
-		return this.name;
+		return name;
 	}
 
 	public String getTag() {
-		return this.tag;
+		return tag;
 	}
 
 	public String getDescription() {
-		return this.description;
+		return description;
 	}
 
 	public SettingType getType() {
-		return this.type;
+		return type;
 	}
 
 	public boolean getBoolean() {
-		return this.value_boolean;
+		return value_boolean;
 	}
 
 	public String getString() {
-		return this.value_string;
+		return value_string;
 	}
 
 	public int getInteger() {
-		return this.value_integer;
+		return value_integer;
 	}
 
 	public double getDouble() {
-		return this.value_double;
+		return value_double;
 	}
 
 	public String[] getList() {
-		return this.values;
+		return values;
 	}
 
 	public double getMin() {
-		return this.min;
+		return min;
 	}
 
 	public double getMax() {
-		return this.max;
+		return max;
 	}
 
 	public enum SettingType {
@@ -187,6 +187,7 @@ public class RocanSetting<T> {
 		SETTING_MACRO,
 		SETTING_INTEGER,
 		SETTING_DOUBLE,
-		SETTING_LIST;
+		SETTING_LIST,
+		SETTING_GHOST;
 	}
 }

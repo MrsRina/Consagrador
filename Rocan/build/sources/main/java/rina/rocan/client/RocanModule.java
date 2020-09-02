@@ -173,7 +173,7 @@ public class RocanModule {
 
 			JsonObject SETTING = object_cache.get(settings.getTag()).getAsJsonObject();
 
-			if (SETTING.get("name") == null || SETTING.get("tag") == null || SETTING.get("type") == null) {
+			if (SETTING.get("name") == null || SETTING.get("tag") == null) {
 				continue;
 			}
 
@@ -211,21 +211,20 @@ public class RocanModule {
 
 			SETTING.add("name", new JsonPrimitive(settings.getName()));
 			SETTING.add("tag", new JsonPrimitive(settings.getTag()));
-			SETTING.add("type", new JsonPrimitive(settings.getType().name().replace("SETTING_", "").toLowerCase()));
 
-			if (settings.getType() == RocanSetting.SettingType.SETTING_BOOLEAN || settings.getType() == RocanSetting.SettingType.SETTING_MACRO) {
+			if ((Boolean) settings.getBoolean() != null) {
 				SETTING.add("boolean", new JsonPrimitive(settings.getBoolean()));
 			}
 
-			if (settings.getType() == RocanSetting.SettingType.SETTING_STRING || settings.getType() == RocanSetting.SettingType.SETTING_LIST) {
+			if ((String) settings.getString() != null) {
 				SETTING.add("string", new JsonPrimitive(settings.getString()));
 			}
 
-			if (settings.getType() == RocanSetting.SettingType.SETTING_INTEGER || settings.getType() == RocanSetting.SettingType.SETTING_MACRO) {
+			if ((Integer) settings.getInteger() != null) {
 				SETTING.add("integer", new JsonPrimitive(settings.getInteger()));
 			}
 
-			if (settings.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
+			if ((Double) settings.getDouble() != null) {
 				SETTING.add("double", new JsonPrimitive(settings.getDouble()));
 			}
 
@@ -237,6 +236,16 @@ public class RocanModule {
 
 	protected void sentNotifyClientChat(String message) {
 		RocanUtilClient.sendNotify(Rocan.getGrayColor() + tag + " " + Rocan.setDefaultColor() + message);
+	}
+
+	protected void addSetting(RocanSetting setting) {
+		if (setting_list == null) {
+			setting_list = new ArrayList<>();
+		}
+
+		setting_list.add(setting);
+
+		Rocan.getSettingManager().addSetting(setting);
 	}
 
 	protected RocanSetting createSetting(String[] details, boolean value) {

@@ -67,6 +67,9 @@ public class RocanEventManager {
 		}
 
 		Rocan.getModuleManager().onUpdateModuleList();
+
+		// Sync HUD collision.
+		Rocan.getModuleManager().syncHUD();
 	}
 
 	@SubscribeEvent

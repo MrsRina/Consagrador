@@ -10,14 +10,12 @@ import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
 import rina.turok.TurokRect;
 
-// HUD render.
-import rina.rocan.client.modules.render.RocanHUDRender;
-
 // Client.
 import rina.rocan.client.RocanModule;
 
 // Util.
 import rina.rocan.util.RocanUtilMinecraftHelper;
+import rina.rocan.util.RocanUtilClient;
 
 // Rocan.
 import rina.rocan.Rocan;
@@ -62,6 +60,8 @@ public class RocanHUD extends RocanModule {
 
 	private boolean event_joined_to_dock_rect;
 
+	private boolean event_started;
+
 	public static final Minecraft mc = RocanUtilMinecraftHelper.getMinecraft();
 
 	public RocanHUD(String[] details) {
@@ -83,12 +83,12 @@ public class RocanHUD extends RocanModule {
 	public void initializeComponentHUD(String[] details) {
 		this.rect = new TurokRect(this.name, 0, 0);
 
-		this.setting_smooth = createSetting(new String[] {"Smooth", "Smooth", "Draw smooth font for HUD."}, true);
-		this.setting_shadow = createSetting(new String[] {"Shadow", "Shadow", "Enable shadow string."}, true);
+		this.setting_smooth = createSetting(new String[] {"Smooth", this.tag + "Smooth", "Draw smooth font for HUD."}, true);
+		this.setting_shadow = createSetting(new String[] {"Shadow", this.tag + "Shadow", "Enable shadow string."}, true);
 
 		// I dont set the setting type, so, wont render in GUI, but works normal as a setting.
-		Rocan.getSettingManager().addSetting(this.setting_pos_x = new RocanSetting((RocanModule) this, new String[] {"Position X", this.tag + "PositionX", "Save X."}, this.rect.getX(), 0, 8096));
-		Rocan.getSettingManager().addSetting(this.setting_pos_y = new RocanSetting((RocanModule) this, new String[] {"Position Y", this.tag + "PositionY", "Save Y."}, this.rect.getY(), 0, 8096));
+		addSetting(this.setting_pos_x = new RocanSetting((RocanModule) this, new String[] {"Position X", this.tag + "PositionX", "Save X."}, this.rect.getX(), 0, 8096));
+		addSetting(this.setting_pos_y = new RocanSetting((RocanModule) this, new String[] {"Position Y", this.tag + "PositionY", "Save Y."}, this.rect.getY(), 0, 8096));
 
 		this.screen_width  = 0;
 		this.screen_height = 0;
@@ -103,6 +103,8 @@ public class RocanHUD extends RocanModule {
 
 		this.move_x = 0;
 		this.move_y = 0;
+
+		this.event_started = true;
 	}
 
 	public void setX(int x) {
@@ -213,8 +215,15 @@ public class RocanHUD extends RocanModule {
 		this.screen_height = scaled_resolution.getScaledHeight();
 
 		// I use a system with setting to save x, y of hud.
-		this.setting_pos_x.setInteger(this.rect.getX());
-		this.setting_pos_y.setInteger(this.rect.getY());
+		if (this.event_started) {
+			this.rect.setX(this.setting_pos_x.getInteger());
+			this.rect.setY(this.setting_pos_y.getInteger());	
+
+			this.event_started = false;
+		} else {
+			this.setting_pos_x.setInteger(this.rect.getX());
+			this.setting_pos_y.setInteger(this.rect.getY());
+		}
 
 		// Update colors.
 		this.hud_r = Rocan.getSettingManager().getSettingByModuleAndTag("HUD", "StringRed").getInteger();
@@ -273,7 +282,7 @@ public class RocanHUD extends RocanModule {
 			setHUDDragging(false);
 		}
 
-		if (this.rect.collide(RocanHUDRender.RECT_HUD_LEFT_UP)) {
+		if (this.rect.collide(Rocan.getModuleManager().getHUDRectLeftUp()) || this.rect.collide(Rocan.getModuleManager().getHUDRectLeftDown()) || this.rect.collide(Rocan.getModuleManager().getHUDRectRightUp()) || this.rect.collide(Rocan.getModuleManager().getHUDRectRightDown())) {
 			setJoinedToDockRect(true);
 		} else {
 			setJoinedToDockRect(false);
@@ -286,6 +295,7 @@ public class RocanHUD extends RocanModule {
 			setY(y - getMoveY());
 
 			verifyDrag(x, y);
+			verifyCollision(x, y);
 
 			// Considering mouse pass.
 			drawGUIRect(0, 0, this.rect.getWidth(), this.rect.getHeight(), 255, 255, 255, 100);
@@ -347,20 +357,38 @@ public class RocanHUD extends RocanModule {
 	}
 
 	protected void verifyDrag(int x, int y) {
-		if ((this.rect.getX() <= 0 && this.rect.getY() <= 0)) {
+		if ((this.rect.getX() <= 1 && this.rect.getY() <= 1) || this.rect.collide(Rocan.getModuleManager().getHUDRectLeftUp())) {
 			setDocking(Docking.LEFT_UP);
 		}
 
-		if ((this.rect.getX() <= 0 && this.rect.getY() >= this.screen_width)) {
+		if ((this.rect.getX() <= 1 && this.rect.getY() + this.rect.getHeight() >= (this.screen_width - 1)) || this.rect.collide(Rocan.getModuleManager().getHUDRectLeftDown())) {
 			setDocking(Docking.LEFT_DOWN);
 		}
 
-		if ((this.rect.getX() + this.rect.getWidth() >= this.screen_width && this.rect.getY() <= 0)) {
+		if ((this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1) && this.rect.getY() <= 1 || this.rect.collide(Rocan.getModuleManager().getHUDRectRightUp()))) {
 			setDocking(Docking.RIGHT_UP);
 		}
 
-		if ((this.rect.getX() + this.rect.getWidth() >= this.screen_width && this.rect.getY() + this.rect.getHeight() >= this.screen_height)) {
+		if ((this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1) && this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1) || this.rect.collide(Rocan.getModuleManager().getHUDRectRightDown()))) {
 			setDocking(Docking.RIGHT_DOWN);
+		}
+	}
+
+	protected void verifyCollision(int x, int y) {
+		if (this.rect.getX() <= 0) {
+			this.rect.setX(1);
+		}
+
+		if (this.rect.getX() + this.rect.getWidth() >= this.screen_width) {
+			this.rect.setX(this.screen_width - this.rect.getWidth() - 1);
+		}
+
+		if (this.rect.getY() <= 0) {
+			this.setY(1);
+		}
+
+		if (this.rect.getY() + this.rect.getHeight() >= this.screen_height) {
+			this.setY(this.screen_height - this.rect.getHeight() - 1);
 		}
 	}
 

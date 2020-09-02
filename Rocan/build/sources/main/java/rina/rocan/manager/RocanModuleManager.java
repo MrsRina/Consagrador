@@ -3,6 +3,7 @@ package rina.rocan.manager;
 // Minecraft.
 import net.minecraftforge.client.event.RenderWorldLastEvent;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.entity.Entity;
@@ -13,6 +14,8 @@ import java.util.*;
 
 // Turok.
 import rina.turok.TurokRenderHelp;
+import rina.turok.TurokScreenUtil;
+import rina.turok.TurokRect;
 
 // Events.
 import rina.rocan.event.render.RocanEventRender;
@@ -34,8 +37,8 @@ import rina.rocan.client.RocanModule;
 import rina.rocan.client.RocanHUD;
 
 // Util.
-import rina.rocan.util.RocanUtilEntity;
 import rina.rocan.util.RocanUtilMinecraftHelper;
+import rina.rocan.util.RocanUtilEntity;
 
 /**
   *
@@ -46,12 +49,34 @@ import rina.rocan.util.RocanUtilMinecraftHelper;
   *
   **/
 public class RocanModuleManager {
-	ArrayList<RocanModule> module_list;
-	ArrayList<RocanHUD> hud_list;
+	private ArrayList<RocanModule> module_list;
+
+	private ArrayList<RocanHUD> hud_list;
+	private ArrayList<RocanHUD> hud_list_left_up;
+	private ArrayList<RocanHUD> hud_list_left_down;
+	private ArrayList<RocanHUD> hud_list_right_up;
+	private ArrayList<RocanHUD> hud_list_right_down;
+
+	private TurokRect hud_rect_left_up;
+	private TurokRect hud_rect_left_down;
+	private TurokRect hud_rect_right_up;
+	private TurokRect hud_rect_right_down;
+
+	private int off_set_chat;
 
 	public RocanModuleManager() {
 		this.module_list = new ArrayList<>();
-		this.hud_list    = new ArrayList<>();
+
+		this.hud_list            = new ArrayList<>();
+		this.hud_list_left_up    = new ArrayList<>();
+		this.hud_list_left_down  = new ArrayList<>();
+		this.hud_list_right_up   = new ArrayList<>();
+		this.hud_list_right_down = new ArrayList<>();
+
+		this.hud_rect_left_up    = new TurokRect("LEFTUP", 0, 0, 0, 0);
+		this.hud_rect_left_down  = new TurokRect("LEFTDOWN", 0, 0, 0, 0);
+		this.hud_rect_right_up   = new TurokRect("RIGHTUP", 0, 0, 0, 0);
+		this.hud_rect_right_down = new TurokRect("RIGHTDOWN", 0, 0, 0, 0);
 
 		// Combat.
 		addModule(new RocanOffhandUtil());
@@ -152,6 +177,118 @@ public class RocanModuleManager {
 		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
 	}
 
+	// HUD seems not a module, but extend module, so I get the list HUD in module manager.
+	public void syncHUD() {
+		ScaledResolution scl_minecraft_screen = new ScaledResolution(RocanUtilMinecraftHelper.getMinecraft());
+
+		int scr_width  = scl_minecraft_screen.getScaledWidth();
+		int scr_height = scl_minecraft_screen.getScaledHeight();
+
+		if (RocanUtilMinecraftHelper.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
+			off_set_chat = 16;
+		} else {
+			off_set_chat = 0;
+		}
+
+		for (RocanHUD huds : getHUDList()) {
+			if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.LEFT_UP && huds.isJoinedToDockRect() && !isOnListLeftUp(huds)) {
+				this.hud_list_left_up.add(huds);
+			} else if (((RocanModule) huds).getState() && huds.getDocking() != RocanHUD.Docking.LEFT_UP && isOnListLeftUp(huds)) {
+				this.hud_list_left_up.remove(huds);
+			} else if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.LEFT_UP && !huds.isJoinedToDockRect() && isOnListLeftUp(huds)) {
+				this.hud_list_left_up.remove(huds);
+			} else if (!((RocanModule) huds).getState() && (huds.getDocking() != RocanHUD.Docking.LEFT_UP || huds.getDocking() == RocanHUD.Docking.LEFT_UP) && isOnListLeftUp(huds)) {
+				this.hud_list_left_up.remove(huds);
+			}
+
+			if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.LEFT_DOWN && huds.isJoinedToDockRect() && !isOnListLeftDown(huds)) {
+				this.hud_list_left_down.add(huds);
+			} else if (((RocanModule) huds).getState() && huds.getDocking() != RocanHUD.Docking.LEFT_DOWN && isOnListLeftDown(huds)) {
+				this.hud_list_left_down.remove(huds);
+			} else if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.LEFT_DOWN && !huds.isJoinedToDockRect() && isOnListLeftDown(huds)) {
+				this.hud_list_left_down.remove(huds);
+			} else if (!((RocanModule) huds).getState() && (huds.getDocking() != RocanHUD.Docking.LEFT_DOWN || huds.getDocking() == RocanHUD.Docking.LEFT_DOWN) && isOnListLeftDown(huds)) {
+				this.hud_list_left_down.remove(huds);
+			}
+
+			if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.RIGHT_UP && huds.isJoinedToDockRect() && !isOnListRightUp(huds)) {
+				this.hud_list_right_up.add(huds);
+			} else if (((RocanModule) huds).getState() && huds.getDocking() != RocanHUD.Docking.RIGHT_UP && isOnListRightUp(huds)) {
+				this.hud_list_right_up.remove(huds);
+			} else if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.RIGHT_UP && !huds.isJoinedToDockRect() && isOnListRightUp(huds)) {
+				this.hud_list_right_up.remove(huds);
+			} else if (!((RocanModule) huds).getState() && (huds.getDocking() != RocanHUD.Docking.RIGHT_UP || huds.getDocking() == RocanHUD.Docking.RIGHT_UP) && isOnListRightUp(huds)) {
+				this.hud_list_right_up.remove(huds);
+			}
+
+			if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.RIGHT_DOWN && huds.isJoinedToDockRect() && !isOnListRightDown(huds)) {
+				this.hud_list_right_down.add(huds);
+			} else if (((RocanModule) huds).getState() && huds.getDocking() != RocanHUD.Docking.RIGHT_DOWN && isOnListRightDown(huds)) {
+				this.hud_list_right_down.remove(huds);
+			} else if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.RIGHT_DOWN && !huds.isJoinedToDockRect() && isOnListRightUp(huds)) {
+				this.hud_list_right_down.remove(huds);
+			} else if (!((RocanModule) huds).getState() && (huds.getDocking() != RocanHUD.Docking.RIGHT_DOWN || huds.getDocking() == RocanHUD.Docking.RIGHT_DOWN) && isOnListRightDown(huds)) {
+				this.hud_list_right_down.remove(huds);
+			}
+		}
+
+		int left_up_save_y = 1;
+
+		for (RocanHUD huds : getHUDListLeftUp()) {
+			huds.setX(1);
+			huds.setY(left_up_save_y);
+
+			left_up_save_y = huds.getY() + huds.getHeight() + 1;
+		}
+
+		this.hud_rect_left_up.setX(1);
+		this.hud_rect_left_up.setY(1);
+		this.hud_rect_left_up.setWidth(10);
+		this.hud_rect_left_up.setHeight(left_up_save_y);
+
+		int left_down_save_y = scr_height - 1 - off_set_chat;
+
+		for (RocanHUD huds : getHUDListLeftDown()) {
+			huds.setX(1);
+			huds.setY(left_down_save_y - huds.getHeight());
+
+			left_down_save_y = huds.getY() - 1;
+		}
+
+		this.hud_rect_left_down.setX(1);
+		this.hud_rect_left_down.setY(left_down_save_y);
+		this.hud_rect_left_down.setWidth(10);
+		this.hud_rect_left_down.setHeight(scr_height - left_down_save_y);
+
+		int right_up_save_y = 1;
+
+		for (RocanHUD huds : getHUDListRightUp()) {
+			huds.setX(scr_width - huds.getWidth() - 1);
+			huds.setY(right_up_save_y);
+		
+			right_up_save_y = huds.getY() + huds.getHeight() + 1;
+		}
+
+		this.hud_rect_right_up.setX(scr_width - 11);
+		this.hud_rect_right_up.setY(1);
+		this.hud_rect_right_up.setWidth(10);
+		this.hud_rect_right_up.setHeight(right_up_save_y);
+
+		int right_down_save_y = scr_height - 1 - off_set_chat;
+
+		for (RocanHUD huds : getHUDListRightDown()) {
+			huds.setX(scr_width - huds.getWidth() - 1);
+			huds.setY(right_down_save_y - huds.getHeight());
+
+			right_down_save_y = huds.getY() - 1;			
+		}
+
+		this.hud_rect_right_down.setX(scr_width - 11);
+		this.hud_rect_right_down.setY(right_down_save_y);
+		this.hud_rect_right_down.setWidth(10);
+		this.hud_rect_right_down.setHeight(scr_height - right_down_save_y);
+	}
+
 	public void keyTypedHUD(char char_, int key) {
 		for (RocanHUD huds : getHUDList()) {
 			if (((RocanModule) huds).getState()) {
@@ -192,6 +329,22 @@ public class RocanModuleManager {
 		return this.hud_list;
 	}
 
+	public ArrayList<RocanHUD> getHUDListLeftUp() {
+		return this.hud_list_left_up;
+	}
+
+	public ArrayList<RocanHUD> getHUDListLeftDown() {
+		return this.hud_list_left_down;
+	}
+
+	public ArrayList<RocanHUD> getHUDListRightUp() {
+		return this.hud_list_right_up;
+	}
+
+	public ArrayList<RocanHUD> getHUDListRightDown() {
+		return this.hud_list_right_down;
+	}
+
 	public ArrayList<RocanModule> getModuleListByCategory(Category category) {
 		ArrayList<RocanModule> category_module_list = new ArrayList<>();
 
@@ -212,5 +365,61 @@ public class RocanModuleManager {
 		}
 
 		return null;
+	}
+
+	public TurokRect getHUDRectLeftUp() {
+		return this.hud_rect_left_up;
+	}
+
+	public TurokRect getHUDRectLeftDown() {
+		return this.hud_rect_left_down;
+	}
+
+	public TurokRect getHUDRectRightUp() {
+		return this.hud_rect_right_up;
+	}
+
+	public TurokRect getHUDRectRightDown() {
+		return this.hud_rect_right_down;
+	}
+
+	public boolean isOnListLeftUp(RocanHUD hud) {
+		for (RocanHUD huds : this.hud_list_left_up) {
+			if (huds.getTag().equals(hud.getTag())) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public boolean isOnListLeftDown(RocanHUD hud) {
+		for (RocanHUD huds : this.hud_list_left_down) {
+			if (huds.getTag().equals(hud.getTag())) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public boolean isOnListRightUp(RocanHUD hud) {
+		for (RocanHUD huds : this.hud_list_right_up) {
+			if (huds.getTag().equals(hud.getTag())) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public boolean isOnListRightDown(RocanHUD hud) {
+		for (RocanHUD huds : this.hud_list_right_down) {
+			if (huds.getTag().equals(hud.getTag())) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 }

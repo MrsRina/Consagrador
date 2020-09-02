@@ -46,6 +46,10 @@ public class RocanGUIWalk extends RocanModule {
 
 	@Listener
 	public void stateGUI(RocanEventGUI event) {
+		if (mc.player != null && mc.world != null) {
+			return;
+		}
+
 		if (event.getGuiScreen() instanceof GuiChat || event.getGuiScreen() == null) {
 			return;
 		}
@@ -55,6 +59,10 @@ public class RocanGUIWalk extends RocanModule {
 
 	@Override
 	public void onUpdate() {
+		if (mc.player != null && mc.world != null) {
+			return;
+		}
+
 		if (mc.currentScreen instanceof GuiChat || mc.currentScreen == null) {
 			return;
 		}
