@@ -46,7 +46,7 @@ public class RocanGUIWalk extends RocanModule {
 
 	@Listener
 	public void stateGUI(RocanEventGUI event) {
-		if (mc.player != null && mc.world != null) {
+		if (mc.player == null && mc.world == null) {
 			return;
 		}
 
@@ -59,7 +59,7 @@ public class RocanGUIWalk extends RocanModule {
 
 	@Override
 	public void onUpdate() {
-		if (mc.player != null && mc.world != null) {
+		if (mc.player == null && mc.world == null) {
 			return;
 		}
 

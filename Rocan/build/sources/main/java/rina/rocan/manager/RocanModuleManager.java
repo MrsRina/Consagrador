@@ -225,7 +225,7 @@ public class RocanModuleManager {
 				this.hud_list_right_down.add(huds);
 			} else if (((RocanModule) huds).getState() && huds.getDocking() != RocanHUD.Docking.RIGHT_DOWN && isOnListRightDown(huds)) {
 				this.hud_list_right_down.remove(huds);
-			} else if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.RIGHT_DOWN && !huds.isJoinedToDockRect() && isOnListRightUp(huds)) {
+			} else if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.RIGHT_DOWN && !huds.isJoinedToDockRect() && isOnListRightDown(huds)) {
 				this.hud_list_right_down.remove(huds);
 			} else if (!((RocanModule) huds).getState() && (huds.getDocking() != RocanHUD.Docking.RIGHT_DOWN || huds.getDocking() == RocanHUD.Docking.RIGHT_DOWN) && isOnListRightDown(huds)) {
 				this.hud_list_right_down.remove(huds);

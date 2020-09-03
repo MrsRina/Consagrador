@@ -66,6 +66,8 @@ public class RocanSpeed extends RocanModule {
 			if (player_movement[2] == 0.0d && player_movement[3] == 0.0d) {
 				event.setX(0.0d);
 				event.setZ(0.0d);
+
+				speed = 0.6174077d;
 			} else {
 				if (auto_jump.getBoolean()) {
 					makeJump(event);

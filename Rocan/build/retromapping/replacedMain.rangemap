@@ -300,7 +300,7 @@ Class Start: rina.rocan.client.RocanCommand
 Class End  : rina.rocan.client.RocanCommand
 endProcessing "rina/rocan/client/RocanCommand.java"
 
-startProcessing "rina/rocan/client/RocanHUD.java" md5: b55720ef25e4af9bc0afead5f78cd6d3
+startProcessing "rina/rocan/client/RocanHUD.java" md5: a23e62f46f2d9caad87e5202c4390060
 @|rina/rocan/client/RocanHUD.java|8|25|rina.rocan.client|package|rina.rocan.client|(file)
 Class Start: rina.rocan.client.RocanHUD
    @|rina/rocan/client/RocanHUD.java|569|577|RocanHUD|class|rina.rocan.client.RocanHUD|false
@@ -896,161 +896,161 @@ Class Start: rina.rocan.client.RocanHUD
       @|rina/rocan/client/RocanHUD.java|9333|9337|getY|method|rina.turok.TurokRect|getY|()I
       @|rina/rocan/client/RocanHUD.java|9347|9351|rect|field|rina.rocan.client.RocanHUD|rect
       @|rina/rocan/client/RocanHUD.java|9352|9361|getHeight|method|rina.turok.TurokRect|getHeight|()I
-      @|rina/rocan/client/RocanHUD.java|9373|9385|screen_width|field|rina.rocan.client.RocanHUD|screen_width
-      @|rina/rocan/client/RocanHUD.java|9400|9404|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9405|9412|collide|method|rina.turok.TurokRect|collide|(Lrina/turok/TurokRect;)Z
-      @|rina/rocan/client/RocanHUD.java|9413|9418|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanHUD.java|9419|9435|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/client/RocanHUD.java|9438|9456|getHUDRectLeftDown|method|rina.rocan.manager.RocanModuleManager|getHUDRectLeftDown|()Lrina/turok/TurokRect;
-      @|rina/rocan/client/RocanHUD.java|9467|9477|setDocking|method|rina.rocan.client.RocanHUD|setDocking|(Lrina/rocan/client/RocanHUD$Docking;)V
-      @|rina/rocan/client/RocanHUD.java|9478|9485|Docking|class|rina.rocan.client.RocanHUD.Docking|false
-      @|rina/rocan/client/RocanHUD.java|9486|9495|LEFT_DOWN|field|rina.rocan.client.RocanHUD.Docking|LEFT_DOWN
-      @|rina/rocan/client/RocanHUD.java|9518|9522|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9523|9527|getX|method|rina.turok.TurokRect|getX|()I
-      @|rina/rocan/client/RocanHUD.java|9537|9541|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9542|9550|getWidth|method|rina.turok.TurokRect|getWidth|()I
-      @|rina/rocan/client/RocanHUD.java|9562|9574|screen_width|field|rina.rocan.client.RocanHUD|screen_width
-      @|rina/rocan/client/RocanHUD.java|9588|9592|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9593|9597|getY|method|rina.turok.TurokRect|getY|()I
-      @|rina/rocan/client/RocanHUD.java|9613|9617|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9618|9625|collide|method|rina.turok.TurokRect|collide|(Lrina/turok/TurokRect;)Z
-      @|rina/rocan/client/RocanHUD.java|9626|9631|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanHUD.java|9632|9648|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/client/RocanHUD.java|9651|9668|getHUDRectRightUp|method|rina.rocan.manager.RocanModuleManager|getHUDRectRightUp|()Lrina/turok/TurokRect;
-      @|rina/rocan/client/RocanHUD.java|9680|9690|setDocking|method|rina.rocan.client.RocanHUD|setDocking|(Lrina/rocan/client/RocanHUD$Docking;)V
-      @|rina/rocan/client/RocanHUD.java|9691|9698|Docking|class|rina.rocan.client.RocanHUD.Docking|false
-      @|rina/rocan/client/RocanHUD.java|9699|9707|RIGHT_UP|field|rina.rocan.client.RocanHUD.Docking|RIGHT_UP
-      @|rina/rocan/client/RocanHUD.java|9730|9734|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9735|9739|getX|method|rina.turok.TurokRect|getX|()I
-      @|rina/rocan/client/RocanHUD.java|9749|9753|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9754|9762|getWidth|method|rina.turok.TurokRect|getWidth|()I
-      @|rina/rocan/client/RocanHUD.java|9774|9786|screen_width|field|rina.rocan.client.RocanHUD|screen_width
-      @|rina/rocan/client/RocanHUD.java|9800|9804|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9805|9809|getY|method|rina.turok.TurokRect|getY|()I
-      @|rina/rocan/client/RocanHUD.java|9819|9823|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9824|9833|getHeight|method|rina.turok.TurokRect|getHeight|()I
-      @|rina/rocan/client/RocanHUD.java|9845|9858|screen_height|field|rina.rocan.client.RocanHUD|screen_height
-      @|rina/rocan/client/RocanHUD.java|9872|9876|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|9877|9884|collide|method|rina.turok.TurokRect|collide|(Lrina/turok/TurokRect;)Z
-      @|rina/rocan/client/RocanHUD.java|9885|9890|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanHUD.java|9891|9907|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/client/RocanHUD.java|9910|9929|getHUDRectRightDown|method|rina.rocan.manager.RocanModuleManager|getHUDRectRightDown|()Lrina/turok/TurokRect;
-      @|rina/rocan/client/RocanHUD.java|9941|9951|setDocking|method|rina.rocan.client.RocanHUD|setDocking|(Lrina/rocan/client/RocanHUD$Docking;)V
-      @|rina/rocan/client/RocanHUD.java|9952|9959|Docking|class|rina.rocan.client.RocanHUD.Docking|false
-      @|rina/rocan/client/RocanHUD.java|9960|9970|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
+      @|rina/rocan/client/RocanHUD.java|9373|9386|screen_height|field|rina.rocan.client.RocanHUD|screen_height
+      @|rina/rocan/client/RocanHUD.java|9401|9405|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9406|9413|collide|method|rina.turok.TurokRect|collide|(Lrina/turok/TurokRect;)Z
+      @|rina/rocan/client/RocanHUD.java|9414|9419|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|9420|9436|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/client/RocanHUD.java|9439|9457|getHUDRectLeftDown|method|rina.rocan.manager.RocanModuleManager|getHUDRectLeftDown|()Lrina/turok/TurokRect;
+      @|rina/rocan/client/RocanHUD.java|9468|9478|setDocking|method|rina.rocan.client.RocanHUD|setDocking|(Lrina/rocan/client/RocanHUD$Docking;)V
+      @|rina/rocan/client/RocanHUD.java|9479|9486|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|9487|9496|LEFT_DOWN|field|rina.rocan.client.RocanHUD.Docking|LEFT_DOWN
+      @|rina/rocan/client/RocanHUD.java|9519|9523|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9524|9528|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/client/RocanHUD.java|9538|9542|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9543|9551|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/client/RocanHUD.java|9563|9575|screen_width|field|rina.rocan.client.RocanHUD|screen_width
+      @|rina/rocan/client/RocanHUD.java|9589|9593|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9594|9598|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/client/RocanHUD.java|9615|9619|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9620|9627|collide|method|rina.turok.TurokRect|collide|(Lrina/turok/TurokRect;)Z
+      @|rina/rocan/client/RocanHUD.java|9628|9633|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|9634|9650|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/client/RocanHUD.java|9653|9670|getHUDRectRightUp|method|rina.rocan.manager.RocanModuleManager|getHUDRectRightUp|()Lrina/turok/TurokRect;
+      @|rina/rocan/client/RocanHUD.java|9681|9691|setDocking|method|rina.rocan.client.RocanHUD|setDocking|(Lrina/rocan/client/RocanHUD$Docking;)V
+      @|rina/rocan/client/RocanHUD.java|9692|9699|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|9700|9708|RIGHT_UP|field|rina.rocan.client.RocanHUD.Docking|RIGHT_UP
+      @|rina/rocan/client/RocanHUD.java|9731|9735|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9736|9740|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/client/RocanHUD.java|9750|9754|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9755|9763|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/client/RocanHUD.java|9775|9787|screen_width|field|rina.rocan.client.RocanHUD|screen_width
+      @|rina/rocan/client/RocanHUD.java|9801|9805|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9806|9810|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/client/RocanHUD.java|9820|9824|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9825|9834|getHeight|method|rina.turok.TurokRect|getHeight|()I
+      @|rina/rocan/client/RocanHUD.java|9846|9859|screen_height|field|rina.rocan.client.RocanHUD|screen_height
+      @|rina/rocan/client/RocanHUD.java|9874|9878|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|9879|9886|collide|method|rina.turok.TurokRect|collide|(Lrina/turok/TurokRect;)Z
+      @|rina/rocan/client/RocanHUD.java|9887|9892|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanHUD.java|9893|9909|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/client/RocanHUD.java|9912|9931|getHUDRectRightDown|method|rina.rocan.manager.RocanModuleManager|getHUDRectRightDown|()Lrina/turok/TurokRect;
+      @|rina/rocan/client/RocanHUD.java|9942|9952|setDocking|method|rina.rocan.client.RocanHUD|setDocking|(Lrina/rocan/client/RocanHUD$Docking;)V
+      @|rina/rocan/client/RocanHUD.java|9953|9960|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|9961|9971|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
    Method End: verifyDrag(II)V
    Method Start: verifyCollision(II)V
-      @|rina/rocan/client/RocanHUD.java|10021|10022|x|param|rina.rocan.client.RocanHUD|verifyCollision|(II)V|x|0
-      @|rina/rocan/client/RocanHUD.java|10028|10029|y|param|rina.rocan.client.RocanHUD|verifyCollision|(II)V|y|1
-      @|rina/rocan/client/RocanHUD.java|10001|10016|verifyCollision|method|rina.rocan.client.RocanHUD|verifyCollision|(II)V
-      @|rina/rocan/client/RocanHUD.java|10045|10049|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10050|10054|getX|method|rina.turok.TurokRect|getX|()I
-      @|rina/rocan/client/RocanHUD.java|10074|10078|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10079|10083|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/client/RocanHUD.java|10107|10111|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10112|10116|getX|method|rina.turok.TurokRect|getX|()I
-      @|rina/rocan/client/RocanHUD.java|10126|10130|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10131|10139|getWidth|method|rina.turok.TurokRect|getWidth|()I
-      @|rina/rocan/client/RocanHUD.java|10150|10162|screen_width|field|rina.rocan.client.RocanHUD|screen_width
-      @|rina/rocan/client/RocanHUD.java|10175|10179|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10180|10184|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/client/RocanHUD.java|10190|10202|screen_width|field|rina.rocan.client.RocanHUD|screen_width
-      @|rina/rocan/client/RocanHUD.java|10210|10214|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10215|10223|getWidth|method|rina.turok.TurokRect|getWidth|()I
-      @|rina/rocan/client/RocanHUD.java|10251|10255|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10256|10260|getY|method|rina.turok.TurokRect|getY|()I
-      @|rina/rocan/client/RocanHUD.java|10280|10284|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
-      @|rina/rocan/client/RocanHUD.java|10308|10312|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10313|10317|getY|method|rina.turok.TurokRect|getY|()I
-      @|rina/rocan/client/RocanHUD.java|10327|10331|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10332|10341|getHeight|method|rina.turok.TurokRect|getHeight|()I
-      @|rina/rocan/client/RocanHUD.java|10352|10365|screen_height|field|rina.rocan.client.RocanHUD|screen_height
-      @|rina/rocan/client/RocanHUD.java|10378|10382|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
-      @|rina/rocan/client/RocanHUD.java|10388|10401|screen_height|field|rina.rocan.client.RocanHUD|screen_height
-      @|rina/rocan/client/RocanHUD.java|10409|10413|rect|field|rina.rocan.client.RocanHUD|rect
-      @|rina/rocan/client/RocanHUD.java|10414|10423|getHeight|method|rina.turok.TurokRect|getHeight|()I
+      @|rina/rocan/client/RocanHUD.java|10022|10023|x|param|rina.rocan.client.RocanHUD|verifyCollision|(II)V|x|0
+      @|rina/rocan/client/RocanHUD.java|10029|10030|y|param|rina.rocan.client.RocanHUD|verifyCollision|(II)V|y|1
+      @|rina/rocan/client/RocanHUD.java|10002|10017|verifyCollision|method|rina.rocan.client.RocanHUD|verifyCollision|(II)V
+      @|rina/rocan/client/RocanHUD.java|10046|10050|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10051|10055|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/client/RocanHUD.java|10075|10079|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10080|10084|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/client/RocanHUD.java|10108|10112|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10113|10117|getX|method|rina.turok.TurokRect|getX|()I
+      @|rina/rocan/client/RocanHUD.java|10127|10131|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10132|10140|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/client/RocanHUD.java|10151|10163|screen_width|field|rina.rocan.client.RocanHUD|screen_width
+      @|rina/rocan/client/RocanHUD.java|10176|10180|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10181|10185|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/client/RocanHUD.java|10191|10203|screen_width|field|rina.rocan.client.RocanHUD|screen_width
+      @|rina/rocan/client/RocanHUD.java|10211|10215|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10216|10224|getWidth|method|rina.turok.TurokRect|getWidth|()I
+      @|rina/rocan/client/RocanHUD.java|10252|10256|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10257|10261|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/client/RocanHUD.java|10281|10285|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
+      @|rina/rocan/client/RocanHUD.java|10309|10313|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10314|10318|getY|method|rina.turok.TurokRect|getY|()I
+      @|rina/rocan/client/RocanHUD.java|10328|10332|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10333|10342|getHeight|method|rina.turok.TurokRect|getHeight|()I
+      @|rina/rocan/client/RocanHUD.java|10353|10366|screen_height|field|rina.rocan.client.RocanHUD|screen_height
+      @|rina/rocan/client/RocanHUD.java|10379|10383|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
+      @|rina/rocan/client/RocanHUD.java|10389|10402|screen_height|field|rina.rocan.client.RocanHUD|screen_height
+      @|rina/rocan/client/RocanHUD.java|10410|10414|rect|field|rina.rocan.client.RocanHUD|rect
+      @|rina/rocan/client/RocanHUD.java|10415|10424|getHeight|method|rina.turok.TurokRect|getHeight|()I
    Method End: verifyCollision(II)V
    Enum Start: rina.rocan.client.RocanHUD.Docking
-      @|rina/rocan/client/RocanHUD.java|10457|10464|Docking|class|rina.rocan.client.RocanHUD.Docking|false
-      @|rina/rocan/client/RocanHUD.java|10470|10477|LEFT_UP|field|rina.rocan.client.RocanHUD.Docking|LEFT_UP
-      @|rina/rocan/client/RocanHUD.java|10482|10491|LEFT_DOWN|field|rina.rocan.client.RocanHUD.Docking|LEFT_DOWN
-      @|rina/rocan/client/RocanHUD.java|10496|10504|RIGHT_UP|field|rina.rocan.client.RocanHUD.Docking|RIGHT_UP
-      @|rina/rocan/client/RocanHUD.java|10509|10519|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
+      @|rina/rocan/client/RocanHUD.java|10458|10465|Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/client/RocanHUD.java|10471|10478|LEFT_UP|field|rina.rocan.client.RocanHUD.Docking|LEFT_UP
+      @|rina/rocan/client/RocanHUD.java|10483|10492|LEFT_DOWN|field|rina.rocan.client.RocanHUD.Docking|LEFT_DOWN
+      @|rina/rocan/client/RocanHUD.java|10497|10505|RIGHT_UP|field|rina.rocan.client.RocanHUD.Docking|RIGHT_UP
+      @|rina/rocan/client/RocanHUD.java|10510|10520|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
    Enum End  : rina.rocan.client.RocanHUD.Docking
    Method Start: addSetting([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10572|10579|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|10589|10594|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|10539|10551|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanHUD.java|10552|10562|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10563|10569|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|10608|10621|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10622|10629|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|10631|10636|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|10573|10580|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|10590|10595|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|10540|10552|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanHUD.java|10553|10563|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|10564|10570|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|10609|10622|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|10623|10630|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|10632|10637|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|value|1
    Method End: addSetting([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
    Method Start: addSetting([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10690|10697|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|10706|10711|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|10657|10669|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanHUD.java|10670|10680|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10681|10687|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|10699|10705|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|10725|10738|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10739|10746|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|10748|10753|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|10691|10698|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|10707|10712|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|10658|10670|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanHUD.java|10671|10681|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|10682|10688|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|10700|10706|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|10726|10739|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|10740|10747|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|10749|10754|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
    Method End: addSetting([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
    Method Start: addSetting([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10807|10814|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|10820|10825|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|10835|10840|state|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|state|2
-      @|rina/rocan/client/RocanHUD.java|10774|10786|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanHUD.java|10787|10797|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10798|10804|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|10854|10867|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10868|10875|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|10877|10882|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|10884|10889|state|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|state|2
+      @|rina/rocan/client/RocanHUD.java|10808|10815|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|10821|10826|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|10836|10841|state|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|state|2
+      @|rina/rocan/client/RocanHUD.java|10775|10787|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanHUD.java|10788|10798|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|10799|10805|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|10855|10868|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|10869|10876|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|10878|10883|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|10885|10890|state|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|state|2
    Method End: addSetting([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
    Method Start: addSetting([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10943|10950|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|10956|10961|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|10967|10970|min|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|min|2
-      @|rina/rocan/client/RocanHUD.java|10976|10979|max|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|max|3
-      @|rina/rocan/client/RocanHUD.java|10910|10922|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanHUD.java|10923|10933|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|10934|10940|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|10993|11006|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|11007|11014|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|11016|11021|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|11023|11026|min|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|min|2
-      @|rina/rocan/client/RocanHUD.java|11028|11031|max|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|max|3
+      @|rina/rocan/client/RocanHUD.java|10944|10951|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|10957|10962|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|10968|10971|min|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|min|2
+      @|rina/rocan/client/RocanHUD.java|10977|10980|max|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|max|3
+      @|rina/rocan/client/RocanHUD.java|10911|10923|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanHUD.java|10924|10934|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|10935|10941|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|10994|11007|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|11008|11015|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|11017|11022|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|11024|11027|min|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|min|2
+      @|rina/rocan/client/RocanHUD.java|11029|11032|max|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|max|3
    Method End: addSetting([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
    Method Start: addSetting([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|11085|11092|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|11101|11106|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|11115|11118|min|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|min|2
-      @|rina/rocan/client/RocanHUD.java|11127|11130|max|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|max|3
-      @|rina/rocan/client/RocanHUD.java|11052|11064|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanHUD.java|11065|11075|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|11076|11082|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|11144|11157|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|11158|11165|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|11167|11172|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|11174|11177|min|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|min|2
-      @|rina/rocan/client/RocanHUD.java|11179|11182|max|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|max|3
+      @|rina/rocan/client/RocanHUD.java|11086|11093|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|11102|11107|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|11116|11119|min|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|min|2
+      @|rina/rocan/client/RocanHUD.java|11128|11131|max|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|max|3
+      @|rina/rocan/client/RocanHUD.java|11053|11065|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanHUD.java|11066|11076|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|11077|11083|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|11145|11158|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|11159|11166|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|11168|11173|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|11175|11178|min|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|min|2
+      @|rina/rocan/client/RocanHUD.java|11180|11183|max|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|max|3
    Method End: addSetting([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
    Method Start: addSetting([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|11236|11243|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|11252|11257|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|11268|11274|values|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|values|2
-      @|rina/rocan/client/RocanHUD.java|11203|11215|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanHUD.java|11216|11226|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|11227|11233|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|11245|11251|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|11259|11265|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanHUD.java|11288|11301|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanHUD.java|11302|11309|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanHUD.java|11311|11316|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanHUD.java|11318|11324|values|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|values|2
+      @|rina/rocan/client/RocanHUD.java|11237|11244|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|11253|11258|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|11269|11275|values|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|values|2
+      @|rina/rocan/client/RocanHUD.java|11204|11216|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanHUD.java|11217|11227|addSetting|method|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|11228|11234|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|11246|11252|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|11260|11266|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanHUD.java|11289|11302|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanHUD.java|11303|11310|details|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanHUD.java|11312|11317|value|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanHUD.java|11319|11325|values|param|rina.rocan.client.RocanHUD|addSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|values|2
    Method End: addSetting([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
 Class End  : rina.rocan.client.RocanHUD
 endProcessing "rina/rocan/client/RocanHUD.java"
@@ -2760,7 +2760,7 @@ Class Start: rina.rocan.client.modules.misc.RocanFastUtil
 Class End  : rina.rocan.client.modules.misc.RocanFastUtil
 endProcessing "rina/rocan/client/modules/misc/RocanFastUtil.java"
 
-startProcessing "rina/rocan/client/modules/movement/RocanGUIWalk.java" md5: 7fc1321b88f763a9e5bf0abc2079e3d4
+startProcessing "rina/rocan/client/modules/movement/RocanGUIWalk.java" md5: dfbc02b6deedfeeb8a6bd7ac66f5d3e6
 @|rina/rocan/client/modules/movement/RocanGUIWalk.java|8|42|rina.rocan.client.modules.movement|package|rina.rocan.client.modules.movement|(file)
 Class Start: rina.rocan.client.modules.movement.RocanGUIWalk
    @|rina/rocan/client/modules/movement/RocanGUIWalk.java|733|745|RocanGUIWalk|class|rina.rocan.client.modules.movement.RocanGUIWalk|false
@@ -2871,7 +2871,7 @@ Class Start: rina.rocan.client.modules.movement.RocanGUIWalk
 Class End  : rina.rocan.client.modules.movement.RocanGUIWalk
 endProcessing "rina/rocan/client/modules/movement/RocanGUIWalk.java"
 
-startProcessing "rina/rocan/client/modules/movement/RocanSpeed.java" md5: 5269bf2a91450bb1fcc49e42ba12eb75
+startProcessing "rina/rocan/client/modules/movement/RocanSpeed.java" md5: c6512e72513ad73da94ce5f25719f709
 @|rina/rocan/client/modules/movement/RocanSpeed.java|8|42|rina.rocan.client.modules.movement|package|rina.rocan.client.modules.movement|(file)
 Class Start: rina.rocan.client.modules.movement.RocanSpeed
    @|rina/rocan/client/modules/movement/RocanSpeed.java|679|689|RocanSpeed|class|rina.rocan.client.modules.movement.RocanSpeed|false
@@ -2946,94 +2946,95 @@ Class Start: rina.rocan.client.modules.movement.RocanSpeed
       @|rina/rocan/client/modules/movement/RocanSpeed.java|1989|1993|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
       @|rina/rocan/client/modules/movement/RocanSpeed.java|2006|2011|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
       @|rina/rocan/client/modules/movement/RocanSpeed.java|2012|2016|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2046|2055|auto_jump|field|rina.rocan.client.modules.movement.RocanSpeed|auto_jump
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2056|2066|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2078|2086|makeJump|method|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2087|2092|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2119|2121|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2122|2134|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2135|2146|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2147|2156|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2169|2177|makeJump|method|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2178|2183|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2208|2213|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2214|2218|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2241|2246|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2250|2254|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2255|2258|cos|method|java.lang.Math|cos|(D)D
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2259|2263|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2264|2273|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2329|2334|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2338|2342|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2343|2346|sin|method|java.lang.Math|sin|(D)D
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2347|2351|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2352|2361|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2400|2405|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2406|2410|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2433|2438|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2442|2446|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2447|2450|sin|method|java.lang.Math|sin|(D)D
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2451|2455|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2456|2465|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2521|2526|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2530|2534|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2535|2538|cos|method|java.lang.Math|cos|(D)D
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2539|2543|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2544|2553|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2607|2618|modes_speed|field|rina.rocan.client.modules.movement.RocanSpeed|modes_speed
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2619|2628|getString|method|rina.rocan.client.RocanSetting|getString|()Ljava/lang/String;
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2631|2637|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2660|2662|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2663|2675|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2676|2690|keyBindForward|field|net.minecraft.client.settings.GameSettings|keyBindForward
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2691|2700|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2709|2711|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2712|2718|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2719|2729|isSneaking|method|net.minecraft.entity.Entity|isSneaking|()Z
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2738|2740|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2741|2747|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2748|2760|isHandActive|method|net.minecraft.entity.EntityLivingBase|isHandActive|()Z
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2769|2771|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2772|2778|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2779|2799|collidedHorizontally|field|net.minecraft.entity.Entity|collidedHorizontally
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2804|2806|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2807|2820|currentScreen|field|net.minecraft.client.Minecraft|currentScreen
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2834|2836|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2837|2843|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2844|2856|getFoodStats|method|net.minecraft.entity.player.EntityPlayer|getFoodStats|()Lnet/minecraft/util/FoodStats;
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2859|2871|getFoodLevel|method|net.minecraft.util.FoodStats|getFoodLevel|()I
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2889|2891|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2892|2898|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2899|2911|setSprinting|method|net.minecraft.entity.Entity|setSprinting|(Z)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2930|2939|auto_jump|field|rina.rocan.client.modules.movement.RocanSpeed|auto_jump
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2940|2950|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2962|2970|makeJump|method|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|2971|2976|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2031|2036|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2073|2082|auto_jump|field|rina.rocan.client.modules.movement.RocanSpeed|auto_jump
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2083|2093|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2105|2113|makeJump|method|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2114|2119|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2146|2148|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2149|2161|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2162|2173|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2174|2183|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2196|2204|makeJump|method|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2205|2210|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2235|2240|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2241|2245|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2268|2273|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2277|2281|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2282|2285|cos|method|java.lang.Math|cos|(D)D
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2286|2290|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2291|2300|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2356|2361|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2365|2369|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2370|2373|sin|method|java.lang.Math|sin|(D)D
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2374|2378|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2379|2388|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2427|2432|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2433|2437|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2460|2465|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2469|2473|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2474|2477|sin|method|java.lang.Math|sin|(D)D
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2478|2482|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2483|2492|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2548|2553|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2557|2561|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2562|2565|cos|method|java.lang.Math|cos|(D)D
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2566|2570|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2571|2580|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2634|2645|modes_speed|field|rina.rocan.client.modules.movement.RocanSpeed|modes_speed
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2646|2655|getString|method|rina.rocan.client.RocanSetting|getString|()Ljava/lang/String;
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2658|2664|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2687|2689|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2690|2702|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2703|2717|keyBindForward|field|net.minecraft.client.settings.GameSettings|keyBindForward
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2718|2727|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2736|2738|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2739|2745|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2746|2756|isSneaking|method|net.minecraft.entity.Entity|isSneaking|()Z
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2765|2767|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2768|2774|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2775|2787|isHandActive|method|net.minecraft.entity.EntityLivingBase|isHandActive|()Z
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2796|2798|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2799|2805|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2806|2826|collidedHorizontally|field|net.minecraft.entity.Entity|collidedHorizontally
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2831|2833|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2834|2847|currentScreen|field|net.minecraft.client.Minecraft|currentScreen
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2861|2863|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2864|2870|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2871|2883|getFoodStats|method|net.minecraft.entity.player.EntityPlayer|getFoodStats|()Lnet/minecraft/util/FoodStats;
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2886|2898|getFoodLevel|method|net.minecraft.util.FoodStats|getFoodLevel|()I
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2916|2918|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2919|2925|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2926|2938|setSprinting|method|net.minecraft.entity.Entity|setSprinting|(Z)V
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2957|2966|auto_jump|field|rina.rocan.client.modules.movement.RocanSpeed|auto_jump
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2967|2977|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2989|2997|makeJump|method|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|2998|3003|event|param|rina.rocan.client.modules.movement.RocanSpeed|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
    Method End: playerMove(Lrina/rocan/event/player/RocanEventPlayerMove;)V
    Method Start: makeJump(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3047|3052|event|param|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3017|3025|makeJump|method|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3026|3046|RocanEventPlayerMove|class|rina.rocan.event.player.RocanEventPlayerMove|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3095|3097|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3098|3104|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3105|3113|onGround|field|net.minecraft.entity.Entity|onGround
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3125|3127|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3128|3134|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3135|3149|isPotionActive|method|net.minecraft.entity.EntityLivingBase|isPotionActive|(Lnet/minecraft/potion/Potion;)Z
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3150|3160|MobEffects|class|net.minecraft.init.MobEffects|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3161|3171|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3191|3193|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3194|3200|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3201|3222|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3223|3233|MobEffects|class|net.minecraft.init.MobEffects|false
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3234|3244|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3246|3258|getAmplifier|method|net.minecraft.potion.PotionEffect|getAmplifier|()I
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3287|3292|event|param|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3293|3297|setY|method|rina.rocan.event.player.RocanEventPlayerMove|setY|(D)V
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3298|3300|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3301|3307|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3308|3315|motionY|field|net.minecraft.entity.Entity|motionY
-      @|rina/rocan/client/modules/movement/RocanSpeed.java|3358|3363|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3074|3079|event|param|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3044|3052|makeJump|method|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3053|3073|RocanEventPlayerMove|class|rina.rocan.event.player.RocanEventPlayerMove|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3122|3124|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3125|3131|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3132|3140|onGround|field|net.minecraft.entity.Entity|onGround
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3152|3154|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3155|3161|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3162|3176|isPotionActive|method|net.minecraft.entity.EntityLivingBase|isPotionActive|(Lnet/minecraft/potion/Potion;)Z
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3177|3187|MobEffects|class|net.minecraft.init.MobEffects|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3188|3198|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3218|3220|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3221|3227|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3228|3249|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3250|3260|MobEffects|class|net.minecraft.init.MobEffects|false
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3261|3271|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3273|3285|getAmplifier|method|net.minecraft.potion.PotionEffect|getAmplifier|()I
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3314|3319|event|param|rina.rocan.client.modules.movement.RocanSpeed|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3320|3324|setY|method|rina.rocan.event.player.RocanEventPlayerMove|setY|(D)V
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3325|3327|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3328|3334|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3335|3342|motionY|field|net.minecraft.entity.Entity|motionY
+      @|rina/rocan/client/modules/movement/RocanSpeed.java|3385|3390|speed|field|rina.rocan.client.modules.movement.RocanSpeed|speed
    Method End: makeJump(Lrina/rocan/event/player/RocanEventPlayerMove;)V
 Class End  : rina.rocan.client.modules.movement.RocanSpeed
 endProcessing "rina/rocan/client/modules/movement/RocanSpeed.java"
@@ -7745,7 +7746,7 @@ Class Start: rina.rocan.manager.RocanFileManager
 Class End  : rina.rocan.manager.RocanFileManager
 endProcessing "rina/rocan/manager/RocanFileManager.java"
 
-startProcessing "rina/rocan/manager/RocanModuleManager.java" md5: dc5205c84348188f17c324aa1c724aaa
+startProcessing "rina/rocan/manager/RocanModuleManager.java" md5: 4341e3b73ce83e1e54424e3c50c145b1
 @|rina/rocan/manager/RocanModuleManager.java|8|26|rina.rocan.manager|package|rina.rocan.manager|(file)
 Class Start: rina.rocan.manager.RocanModuleManager
    @|rina/rocan/manager/RocanModuleManager.java|1236|1254|RocanModuleManager|class|rina.rocan.manager.RocanModuleManager|false
@@ -8115,260 +8116,260 @@ Class Start: rina.rocan.manager.RocanModuleManager
       @|rina/rocan/manager/RocanModuleManager.java|8290|8306|RocanHUD.Docking|class|rina.rocan.client.RocanHUD.Docking|false
       @|rina/rocan/manager/RocanModuleManager.java|8307|8317|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
       @|rina/rocan/manager/RocanModuleManager.java|8327|8345|isJoinedToDockRect|method|rina.rocan.client.RocanHUD|isJoinedToDockRect|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|8351|8366|isOnListRightUp|method|rina.rocan.manager.RocanModuleManager|isOnListRightUp|(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|8386|8405|hud_list_right_down|field|rina.rocan.manager.RocanModuleManager|hud_list_right_down
-      @|rina/rocan/manager/RocanModuleManager.java|8406|8412|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|8438|8449|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|8457|8465|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|8477|8487|getDocking|method|rina.rocan.client.RocanHUD|getDocking|()Lrina/rocan/client/RocanHUD$Docking;
-      @|rina/rocan/manager/RocanModuleManager.java|8493|8509|RocanHUD.Docking|class|rina.rocan.client.RocanHUD.Docking|false
-      @|rina/rocan/manager/RocanModuleManager.java|8510|8520|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
-      @|rina/rocan/manager/RocanModuleManager.java|8529|8539|getDocking|method|rina.rocan.client.RocanHUD|getDocking|()Lrina/rocan/client/RocanHUD$Docking;
-      @|rina/rocan/manager/RocanModuleManager.java|8545|8561|RocanHUD.Docking|class|rina.rocan.client.RocanHUD.Docking|false
-      @|rina/rocan/manager/RocanModuleManager.java|8562|8572|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
-      @|rina/rocan/manager/RocanModuleManager.java|8577|8594|isOnListRightDown|method|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|8614|8633|hud_list_right_down|field|rina.rocan.manager.RocanModuleManager|hud_list_right_down
-      @|rina/rocan/manager/RocanModuleManager.java|8634|8640|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|8698|8706|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|8714|8730|getHUDListLeftUp|method|rina.rocan.manager.RocanModuleManager|getHUDListLeftUp|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|8745|8749|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|8763|8767|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|8813|8817|getY|method|rina.rocan.client.RocanHUD|getY|()I
-      @|rina/rocan/manager/RocanModuleManager.java|8827|8836|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
-      @|rina/rocan/manager/RocanModuleManager.java|8859|8875|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
-      @|rina/rocan/manager/RocanModuleManager.java|8876|8880|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|8893|8909|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
-      @|rina/rocan/manager/RocanModuleManager.java|8910|8914|setY|method|rina.turok.TurokRect|setY|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|8927|8943|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
-      @|rina/rocan/manager/RocanModuleManager.java|8944|8952|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|8966|8982|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
-      @|rina/rocan/manager/RocanModuleManager.java|8983|8992|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9055|9067|off_set_chat|field|rina.rocan.manager.RocanModuleManager|off_set_chat
-      @|rina/rocan/manager/RocanModuleManager.java|9079|9087|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|9095|9113|getHUDListLeftDown|method|rina.rocan.manager.RocanModuleManager|getHUDListLeftDown|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|9128|9132|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9146|9150|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9175|9184|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
-      @|rina/rocan/manager/RocanModuleManager.java|9219|9223|getY|method|rina.rocan.client.RocanHUD|getY|()I
-      @|rina/rocan/manager/RocanModuleManager.java|9246|9264|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
-      @|rina/rocan/manager/RocanModuleManager.java|9265|9269|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9282|9300|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
-      @|rina/rocan/manager/RocanModuleManager.java|9301|9305|setY|method|rina.turok.TurokRect|setY|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9333|9351|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
-      @|rina/rocan/manager/RocanModuleManager.java|9352|9360|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9374|9392|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
-      @|rina/rocan/manager/RocanModuleManager.java|9393|9402|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9475|9483|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|9491|9508|getHUDListRightUp|method|rina.rocan.manager.RocanModuleManager|getHUDListRightUp|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|9523|9527|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9545|9553|getWidth|method|rina.rocan.client.RocanHUD|getWidth|()I
-      @|rina/rocan/manager/RocanModuleManager.java|9571|9575|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9625|9629|getY|method|rina.rocan.client.RocanHUD|getY|()I
-      @|rina/rocan/manager/RocanModuleManager.java|9639|9648|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
-      @|rina/rocan/manager/RocanModuleManager.java|9671|9688|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
-      @|rina/rocan/manager/RocanModuleManager.java|9689|9693|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9719|9736|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
-      @|rina/rocan/manager/RocanModuleManager.java|9737|9741|setY|method|rina.turok.TurokRect|setY|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9754|9771|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
-      @|rina/rocan/manager/RocanModuleManager.java|9772|9780|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9794|9811|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
-      @|rina/rocan/manager/RocanModuleManager.java|9812|9821|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9886|9898|off_set_chat|field|rina.rocan.manager.RocanModuleManager|off_set_chat
-      @|rina/rocan/manager/RocanModuleManager.java|9910|9918|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|9926|9945|getHUDListRightDown|method|rina.rocan.manager.RocanModuleManager|getHUDListRightDown|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|9960|9964|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|9982|9990|getWidth|method|rina.rocan.client.RocanHUD|getWidth|()I
-      @|rina/rocan/manager/RocanModuleManager.java|10008|10012|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|10038|10047|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
-      @|rina/rocan/manager/RocanModuleManager.java|10083|10087|getY|method|rina.rocan.client.RocanHUD|getY|()I
-      @|rina/rocan/manager/RocanModuleManager.java|10113|10132|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
-      @|rina/rocan/manager/RocanModuleManager.java|10133|10137|setX|method|rina.turok.TurokRect|setX|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|10163|10182|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
-      @|rina/rocan/manager/RocanModuleManager.java|10183|10187|setY|method|rina.turok.TurokRect|setY|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|10216|10235|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
-      @|rina/rocan/manager/RocanModuleManager.java|10236|10244|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
-      @|rina/rocan/manager/RocanModuleManager.java|10258|10277|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
-      @|rina/rocan/manager/RocanModuleManager.java|10278|10287|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|8351|8368|isOnListRightDown|method|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|8388|8407|hud_list_right_down|field|rina.rocan.manager.RocanModuleManager|hud_list_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|8408|8414|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|8440|8451|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|8459|8467|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|8479|8489|getDocking|method|rina.rocan.client.RocanHUD|getDocking|()Lrina/rocan/client/RocanHUD$Docking;
+      @|rina/rocan/manager/RocanModuleManager.java|8495|8511|RocanHUD.Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/manager/RocanModuleManager.java|8512|8522|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
+      @|rina/rocan/manager/RocanModuleManager.java|8531|8541|getDocking|method|rina.rocan.client.RocanHUD|getDocking|()Lrina/rocan/client/RocanHUD$Docking;
+      @|rina/rocan/manager/RocanModuleManager.java|8547|8563|RocanHUD.Docking|class|rina.rocan.client.RocanHUD.Docking|false
+      @|rina/rocan/manager/RocanModuleManager.java|8564|8574|RIGHT_DOWN|field|rina.rocan.client.RocanHUD.Docking|RIGHT_DOWN
+      @|rina/rocan/manager/RocanModuleManager.java|8579|8596|isOnListRightDown|method|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|8616|8635|hud_list_right_down|field|rina.rocan.manager.RocanModuleManager|hud_list_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|8636|8642|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|8700|8708|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|8716|8732|getHUDListLeftUp|method|rina.rocan.manager.RocanModuleManager|getHUDListLeftUp|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|8747|8751|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|8765|8769|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|8815|8819|getY|method|rina.rocan.client.RocanHUD|getY|()I
+      @|rina/rocan/manager/RocanModuleManager.java|8829|8838|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
+      @|rina/rocan/manager/RocanModuleManager.java|8861|8877|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
+      @|rina/rocan/manager/RocanModuleManager.java|8878|8882|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|8895|8911|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
+      @|rina/rocan/manager/RocanModuleManager.java|8912|8916|setY|method|rina.turok.TurokRect|setY|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|8929|8945|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
+      @|rina/rocan/manager/RocanModuleManager.java|8946|8954|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|8968|8984|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
+      @|rina/rocan/manager/RocanModuleManager.java|8985|8994|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9057|9069|off_set_chat|field|rina.rocan.manager.RocanModuleManager|off_set_chat
+      @|rina/rocan/manager/RocanModuleManager.java|9081|9089|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|9097|9115|getHUDListLeftDown|method|rina.rocan.manager.RocanModuleManager|getHUDListLeftDown|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|9130|9134|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9148|9152|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9177|9186|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
+      @|rina/rocan/manager/RocanModuleManager.java|9221|9225|getY|method|rina.rocan.client.RocanHUD|getY|()I
+      @|rina/rocan/manager/RocanModuleManager.java|9248|9266|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
+      @|rina/rocan/manager/RocanModuleManager.java|9267|9271|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9284|9302|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
+      @|rina/rocan/manager/RocanModuleManager.java|9303|9307|setY|method|rina.turok.TurokRect|setY|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9335|9353|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
+      @|rina/rocan/manager/RocanModuleManager.java|9354|9362|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9376|9394|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
+      @|rina/rocan/manager/RocanModuleManager.java|9395|9404|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9477|9485|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|9493|9510|getHUDListRightUp|method|rina.rocan.manager.RocanModuleManager|getHUDListRightUp|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|9525|9529|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9547|9555|getWidth|method|rina.rocan.client.RocanHUD|getWidth|()I
+      @|rina/rocan/manager/RocanModuleManager.java|9573|9577|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9627|9631|getY|method|rina.rocan.client.RocanHUD|getY|()I
+      @|rina/rocan/manager/RocanModuleManager.java|9641|9650|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
+      @|rina/rocan/manager/RocanModuleManager.java|9673|9690|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
+      @|rina/rocan/manager/RocanModuleManager.java|9691|9695|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9721|9738|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
+      @|rina/rocan/manager/RocanModuleManager.java|9739|9743|setY|method|rina.turok.TurokRect|setY|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9756|9773|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
+      @|rina/rocan/manager/RocanModuleManager.java|9774|9782|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9796|9813|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
+      @|rina/rocan/manager/RocanModuleManager.java|9814|9823|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9888|9900|off_set_chat|field|rina.rocan.manager.RocanModuleManager|off_set_chat
+      @|rina/rocan/manager/RocanModuleManager.java|9912|9920|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|9928|9947|getHUDListRightDown|method|rina.rocan.manager.RocanModuleManager|getHUDListRightDown|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|9962|9966|setX|method|rina.rocan.client.RocanHUD|setX|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|9984|9992|getWidth|method|rina.rocan.client.RocanHUD|getWidth|()I
+      @|rina/rocan/manager/RocanModuleManager.java|10010|10014|setY|method|rina.rocan.client.RocanHUD|setY|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|10040|10049|getHeight|method|rina.rocan.client.RocanHUD|getHeight|()I
+      @|rina/rocan/manager/RocanModuleManager.java|10085|10089|getY|method|rina.rocan.client.RocanHUD|getY|()I
+      @|rina/rocan/manager/RocanModuleManager.java|10115|10134|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|10135|10139|setX|method|rina.turok.TurokRect|setX|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|10165|10184|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|10185|10189|setY|method|rina.turok.TurokRect|setY|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|10218|10237|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|10238|10246|setWidth|method|rina.turok.TurokRect|setWidth|(I)V
+      @|rina/rocan/manager/RocanModuleManager.java|10260|10279|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|10280|10289|setHeight|method|rina.turok.TurokRect|setHeight|(I)V
    Method End: syncHUD()V
    Method Start: keyTypedHUD(CI)V
-      @|rina/rocan/manager/RocanModuleManager.java|10358|10363|char_|param|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V|char_|0
-      @|rina/rocan/manager/RocanModuleManager.java|10369|10372|key|param|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V|key|1
-      @|rina/rocan/manager/RocanModuleManager.java|10341|10352|keyTypedHUD|method|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V
-      @|rina/rocan/manager/RocanModuleManager.java|10384|10392|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|10400|10410|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|10426|10437|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|10445|10453|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|10469|10477|keyboard|method|rina.rocan.client.RocanHUD|keyboard|(CI)V
-      @|rina/rocan/manager/RocanModuleManager.java|10478|10483|char_|param|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V|char_|0
-      @|rina/rocan/manager/RocanModuleManager.java|10485|10488|key|param|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V|key|1
+      @|rina/rocan/manager/RocanModuleManager.java|10360|10365|char_|param|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V|char_|0
+      @|rina/rocan/manager/RocanModuleManager.java|10371|10374|key|param|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V|key|1
+      @|rina/rocan/manager/RocanModuleManager.java|10343|10354|keyTypedHUD|method|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V
+      @|rina/rocan/manager/RocanModuleManager.java|10386|10394|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|10402|10412|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|10428|10439|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|10447|10455|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|10471|10479|keyboard|method|rina.rocan.client.RocanHUD|keyboard|(CI)V
+      @|rina/rocan/manager/RocanModuleManager.java|10480|10485|char_|param|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V|char_|0
+      @|rina/rocan/manager/RocanModuleManager.java|10487|10490|key|param|rina.rocan.manager.RocanModuleManager|keyTypedHUD|(CI)V|key|1
    Method End: keyTypedHUD(CI)V
    Method Start: mouseClickedHUD(III)V
-      @|rina/rocan/manager/RocanModuleManager.java|10542|10543|x|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|x|0
-      @|rina/rocan/manager/RocanModuleManager.java|10549|10550|y|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|y|1
-      @|rina/rocan/manager/RocanModuleManager.java|10556|10561|mouse|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|mouse|2
-      @|rina/rocan/manager/RocanModuleManager.java|10522|10537|mouseClickedHUD|method|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V
-      @|rina/rocan/manager/RocanModuleManager.java|10573|10581|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|10589|10599|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|10615|10626|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|10634|10642|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|10658|10663|click|method|rina.rocan.client.RocanHUD|click|(III)V
-      @|rina/rocan/manager/RocanModuleManager.java|10664|10665|x|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|x|0
-      @|rina/rocan/manager/RocanModuleManager.java|10667|10668|y|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|y|1
-      @|rina/rocan/manager/RocanModuleManager.java|10670|10675|mouse|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|mouse|2
+      @|rina/rocan/manager/RocanModuleManager.java|10544|10545|x|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|x|0
+      @|rina/rocan/manager/RocanModuleManager.java|10551|10552|y|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|y|1
+      @|rina/rocan/manager/RocanModuleManager.java|10558|10563|mouse|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|mouse|2
+      @|rina/rocan/manager/RocanModuleManager.java|10524|10539|mouseClickedHUD|method|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V
+      @|rina/rocan/manager/RocanModuleManager.java|10575|10583|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|10591|10601|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|10617|10628|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|10636|10644|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|10660|10665|click|method|rina.rocan.client.RocanHUD|click|(III)V
+      @|rina/rocan/manager/RocanModuleManager.java|10666|10667|x|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|x|0
+      @|rina/rocan/manager/RocanModuleManager.java|10669|10670|y|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|y|1
+      @|rina/rocan/manager/RocanModuleManager.java|10672|10677|mouse|param|rina.rocan.manager.RocanModuleManager|mouseClickedHUD|(III)V|mouse|2
    Method End: mouseClickedHUD(III)V
    Method Start: mouseReleasedHUD(III)V
-      @|rina/rocan/manager/RocanModuleManager.java|10730|10731|x|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|x|0
-      @|rina/rocan/manager/RocanModuleManager.java|10737|10738|y|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|y|1
-      @|rina/rocan/manager/RocanModuleManager.java|10744|10749|mouse|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|mouse|2
-      @|rina/rocan/manager/RocanModuleManager.java|10709|10725|mouseReleasedHUD|method|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V
-      @|rina/rocan/manager/RocanModuleManager.java|10761|10769|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|10777|10787|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|10803|10814|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|10822|10830|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|10846|10853|release|method|rina.rocan.client.RocanHUD|release|(III)V
-      @|rina/rocan/manager/RocanModuleManager.java|10854|10855|x|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|x|0
-      @|rina/rocan/manager/RocanModuleManager.java|10857|10858|y|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|y|1
-      @|rina/rocan/manager/RocanModuleManager.java|10860|10865|mouse|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|mouse|2
+      @|rina/rocan/manager/RocanModuleManager.java|10732|10733|x|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|x|0
+      @|rina/rocan/manager/RocanModuleManager.java|10739|10740|y|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|y|1
+      @|rina/rocan/manager/RocanModuleManager.java|10746|10751|mouse|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|mouse|2
+      @|rina/rocan/manager/RocanModuleManager.java|10711|10727|mouseReleasedHUD|method|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V
+      @|rina/rocan/manager/RocanModuleManager.java|10763|10771|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|10779|10789|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|10805|10816|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|10824|10832|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|10848|10855|release|method|rina.rocan.client.RocanHUD|release|(III)V
+      @|rina/rocan/manager/RocanModuleManager.java|10856|10857|x|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|x|0
+      @|rina/rocan/manager/RocanModuleManager.java|10859|10860|y|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|y|1
+      @|rina/rocan/manager/RocanModuleManager.java|10862|10867|mouse|param|rina.rocan.manager.RocanModuleManager|mouseReleasedHUD|(III)V|mouse|2
    Method End: mouseReleasedHUD(III)V
    Method Start: renderScreenHUD(IIF)V
-      @|rina/rocan/manager/RocanModuleManager.java|10919|10920|x|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|x|0
-      @|rina/rocan/manager/RocanModuleManager.java|10926|10927|y|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|y|1
-      @|rina/rocan/manager/RocanModuleManager.java|10935|10948|partial_ticks|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|partial_ticks|2
-      @|rina/rocan/manager/RocanModuleManager.java|10899|10914|renderScreenHUD|method|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V
-      @|rina/rocan/manager/RocanModuleManager.java|10960|10968|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|10976|10986|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11002|11013|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|11021|11029|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/manager/RocanModuleManager.java|11045|11051|render|method|rina.rocan.client.RocanHUD|render|(IIF)V
-      @|rina/rocan/manager/RocanModuleManager.java|11052|11053|x|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|x|0
-      @|rina/rocan/manager/RocanModuleManager.java|11055|11056|y|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|y|1
-      @|rina/rocan/manager/RocanModuleManager.java|11058|11071|partial_ticks|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|partial_ticks|2
+      @|rina/rocan/manager/RocanModuleManager.java|10921|10922|x|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|x|0
+      @|rina/rocan/manager/RocanModuleManager.java|10928|10929|y|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|y|1
+      @|rina/rocan/manager/RocanModuleManager.java|10937|10950|partial_ticks|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|partial_ticks|2
+      @|rina/rocan/manager/RocanModuleManager.java|10901|10916|renderScreenHUD|method|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V
+      @|rina/rocan/manager/RocanModuleManager.java|10962|10970|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|10978|10988|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11004|11015|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|11023|11031|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/manager/RocanModuleManager.java|11047|11053|render|method|rina.rocan.client.RocanHUD|render|(IIF)V
+      @|rina/rocan/manager/RocanModuleManager.java|11054|11055|x|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|x|0
+      @|rina/rocan/manager/RocanModuleManager.java|11057|11058|y|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|y|1
+      @|rina/rocan/manager/RocanModuleManager.java|11060|11073|partial_ticks|param|rina.rocan.manager.RocanModuleManager|renderScreenHUD|(IIF)V|partial_ticks|2
    Method End: renderScreenHUD(IIF)V
    Method Start: getModuleList()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11100|11109|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11110|11121|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|11123|11136|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11156|11167|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
+      @|rina/rocan/manager/RocanModuleManager.java|11102|11111|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11112|11123|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|11125|11138|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11158|11169|module_list|field|rina.rocan.manager.RocanModuleManager|module_list
    Method End: getModuleList()Ljava/util/ArrayList;
    Method Start: getHUDList()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11184|11193|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11194|11202|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|11204|11214|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11234|11242|hud_list|field|rina.rocan.manager.RocanModuleManager|hud_list
+      @|rina/rocan/manager/RocanModuleManager.java|11186|11195|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11196|11204|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|11206|11216|getHUDList|method|rina.rocan.manager.RocanModuleManager|getHUDList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11236|11244|hud_list|field|rina.rocan.manager.RocanModuleManager|hud_list
    Method End: getHUDList()Ljava/util/ArrayList;
    Method Start: getHUDListLeftUp()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11259|11268|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11269|11277|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|11279|11295|getHUDListLeftUp|method|rina.rocan.manager.RocanModuleManager|getHUDListLeftUp|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11315|11331|hud_list_left_up|field|rina.rocan.manager.RocanModuleManager|hud_list_left_up
+      @|rina/rocan/manager/RocanModuleManager.java|11261|11270|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11271|11279|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|11281|11297|getHUDListLeftUp|method|rina.rocan.manager.RocanModuleManager|getHUDListLeftUp|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11317|11333|hud_list_left_up|field|rina.rocan.manager.RocanModuleManager|hud_list_left_up
    Method End: getHUDListLeftUp()Ljava/util/ArrayList;
    Method Start: getHUDListLeftDown()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11348|11357|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11358|11366|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|11368|11386|getHUDListLeftDown|method|rina.rocan.manager.RocanModuleManager|getHUDListLeftDown|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11406|11424|hud_list_left_down|field|rina.rocan.manager.RocanModuleManager|hud_list_left_down
+      @|rina/rocan/manager/RocanModuleManager.java|11350|11359|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11360|11368|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|11370|11388|getHUDListLeftDown|method|rina.rocan.manager.RocanModuleManager|getHUDListLeftDown|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11408|11426|hud_list_left_down|field|rina.rocan.manager.RocanModuleManager|hud_list_left_down
    Method End: getHUDListLeftDown()Ljava/util/ArrayList;
    Method Start: getHUDListRightUp()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11441|11450|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11451|11459|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|11461|11478|getHUDListRightUp|method|rina.rocan.manager.RocanModuleManager|getHUDListRightUp|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11498|11515|hud_list_right_up|field|rina.rocan.manager.RocanModuleManager|hud_list_right_up
+      @|rina/rocan/manager/RocanModuleManager.java|11443|11452|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11453|11461|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|11463|11480|getHUDListRightUp|method|rina.rocan.manager.RocanModuleManager|getHUDListRightUp|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11500|11517|hud_list_right_up|field|rina.rocan.manager.RocanModuleManager|hud_list_right_up
    Method End: getHUDListRightUp()Ljava/util/ArrayList;
    Method Start: getHUDListRightDown()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11532|11541|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11542|11550|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|11552|11571|getHUDListRightDown|method|rina.rocan.manager.RocanModuleManager|getHUDListRightDown|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11591|11610|hud_list_right_down|field|rina.rocan.manager.RocanModuleManager|hud_list_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|11534|11543|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11544|11552|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|11554|11573|getHUDListRightDown|method|rina.rocan.manager.RocanModuleManager|getHUDListRightDown|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11593|11612|hud_list_right_down|field|rina.rocan.manager.RocanModuleManager|hud_list_right_down
    Method End: getHUDListRightDown()Ljava/util/ArrayList;
    Method Start: getModuleListByCategory(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11683|11691|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
-      @|rina/rocan/manager/RocanModuleManager.java|11627|11636|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11637|11648|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|11650|11673|getModuleListByCategory|method|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11674|11682|Category|class|rina.rocan.client.RocanModule.Category|false
-      @|rina/rocan/manager/RocanModuleManager.java|11698|11707|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11708|11719|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|11748|11757|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/manager/RocanModuleManager.java|11773|11784|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|11795|11808|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|11830|11841|getCategory|method|rina.rocan.client.RocanModule|getCategory|()Lrina/rocan/client/RocanModule$Category;
-      @|rina/rocan/manager/RocanModuleManager.java|11847|11855|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
-      @|rina/rocan/manager/RocanModuleManager.java|11885|11888|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|11685|11693|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
+      @|rina/rocan/manager/RocanModuleManager.java|11629|11638|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11639|11650|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|11652|11675|getModuleListByCategory|method|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11676|11684|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/manager/RocanModuleManager.java|11700|11709|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11710|11721|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|11750|11759|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/manager/RocanModuleManager.java|11775|11786|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|11797|11810|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|11832|11843|getCategory|method|rina.rocan.client.RocanModule|getCategory|()Lrina/rocan/client/RocanModule$Category;
+      @|rina/rocan/manager/RocanModuleManager.java|11849|11857|category|param|rina.rocan.manager.RocanModuleManager|getModuleListByCategory|(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;|category|0
+      @|rina/rocan/manager/RocanModuleManager.java|11887|11890|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
    Method End: getModuleListByCategory(Lrina/rocan/client/RocanModule$Category;)Ljava/util/ArrayList;
    Method Start: getModuleByTag(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
-      @|rina/rocan/manager/RocanModuleManager.java|11993|11996|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
-      @|rina/rocan/manager/RocanModuleManager.java|11959|11970|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|11971|11985|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
-      @|rina/rocan/manager/RocanModuleManager.java|11986|11992|String|class|java.lang.String|false
-      @|rina/rocan/manager/RocanModuleManager.java|12008|12019|RocanModule|class|rina.rocan.client.RocanModule|false
-      @|rina/rocan/manager/RocanModuleManager.java|12030|12043|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
-      @|rina/rocan/manager/RocanModuleManager.java|12065|12071|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanModuleManager.java|12074|12090|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12091|12094|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
+      @|rina/rocan/manager/RocanModuleManager.java|11995|11998|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
+      @|rina/rocan/manager/RocanModuleManager.java|11961|11972|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|11973|11987|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+      @|rina/rocan/manager/RocanModuleManager.java|11988|11994|String|class|java.lang.String|false
+      @|rina/rocan/manager/RocanModuleManager.java|12010|12021|RocanModule|class|rina.rocan.client.RocanModule|false
+      @|rina/rocan/manager/RocanModuleManager.java|12032|12045|getModuleList|method|rina.rocan.manager.RocanModuleManager|getModuleList|()Ljava/util/ArrayList;
+      @|rina/rocan/manager/RocanModuleManager.java|12067|12073|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|12076|12092|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|12093|12096|tag|param|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;|tag|0
    Method End: getModuleByTag(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
    Method Start: getHUDRectLeftUp()Lrina/turok/TurokRect;
-      @|rina/rocan/manager/RocanModuleManager.java|12164|12173|TurokRect|class|rina.turok.TurokRect|false
-      @|rina/rocan/manager/RocanModuleManager.java|12174|12190|getHUDRectLeftUp|method|rina.rocan.manager.RocanModuleManager|getHUDRectLeftUp|()Lrina/turok/TurokRect;
-      @|rina/rocan/manager/RocanModuleManager.java|12210|12226|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
+      @|rina/rocan/manager/RocanModuleManager.java|12166|12175|TurokRect|class|rina.turok.TurokRect|false
+      @|rina/rocan/manager/RocanModuleManager.java|12176|12192|getHUDRectLeftUp|method|rina.rocan.manager.RocanModuleManager|getHUDRectLeftUp|()Lrina/turok/TurokRect;
+      @|rina/rocan/manager/RocanModuleManager.java|12212|12228|hud_rect_left_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_up
    Method End: getHUDRectLeftUp()Lrina/turok/TurokRect;
    Method Start: getHUDRectLeftDown()Lrina/turok/TurokRect;
-      @|rina/rocan/manager/RocanModuleManager.java|12243|12252|TurokRect|class|rina.turok.TurokRect|false
-      @|rina/rocan/manager/RocanModuleManager.java|12253|12271|getHUDRectLeftDown|method|rina.rocan.manager.RocanModuleManager|getHUDRectLeftDown|()Lrina/turok/TurokRect;
-      @|rina/rocan/manager/RocanModuleManager.java|12291|12309|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
+      @|rina/rocan/manager/RocanModuleManager.java|12245|12254|TurokRect|class|rina.turok.TurokRect|false
+      @|rina/rocan/manager/RocanModuleManager.java|12255|12273|getHUDRectLeftDown|method|rina.rocan.manager.RocanModuleManager|getHUDRectLeftDown|()Lrina/turok/TurokRect;
+      @|rina/rocan/manager/RocanModuleManager.java|12293|12311|hud_rect_left_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_left_down
    Method End: getHUDRectLeftDown()Lrina/turok/TurokRect;
    Method Start: getHUDRectRightUp()Lrina/turok/TurokRect;
-      @|rina/rocan/manager/RocanModuleManager.java|12326|12335|TurokRect|class|rina.turok.TurokRect|false
-      @|rina/rocan/manager/RocanModuleManager.java|12336|12353|getHUDRectRightUp|method|rina.rocan.manager.RocanModuleManager|getHUDRectRightUp|()Lrina/turok/TurokRect;
-      @|rina/rocan/manager/RocanModuleManager.java|12373|12390|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
+      @|rina/rocan/manager/RocanModuleManager.java|12328|12337|TurokRect|class|rina.turok.TurokRect|false
+      @|rina/rocan/manager/RocanModuleManager.java|12338|12355|getHUDRectRightUp|method|rina.rocan.manager.RocanModuleManager|getHUDRectRightUp|()Lrina/turok/TurokRect;
+      @|rina/rocan/manager/RocanModuleManager.java|12375|12392|hud_rect_right_up|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_up
    Method End: getHUDRectRightUp()Lrina/turok/TurokRect;
    Method Start: getHUDRectRightDown()Lrina/turok/TurokRect;
-      @|rina/rocan/manager/RocanModuleManager.java|12407|12416|TurokRect|class|rina.turok.TurokRect|false
-      @|rina/rocan/manager/RocanModuleManager.java|12417|12436|getHUDRectRightDown|method|rina.rocan.manager.RocanModuleManager|getHUDRectRightDown|()Lrina/turok/TurokRect;
-      @|rina/rocan/manager/RocanModuleManager.java|12456|12475|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|12409|12418|TurokRect|class|rina.turok.TurokRect|false
+      @|rina/rocan/manager/RocanModuleManager.java|12419|12438|getHUDRectRightDown|method|rina.rocan.manager.RocanModuleManager|getHUDRectRightDown|()Lrina/turok/TurokRect;
+      @|rina/rocan/manager/RocanModuleManager.java|12458|12477|hud_rect_right_down|field|rina.rocan.manager.RocanModuleManager|hud_rect_right_down
    Method End: getHUDRectRightDown()Lrina/turok/TurokRect;
    Method Start: isOnListLeftUp(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12524|12527|hud|param|rina.rocan.manager.RocanModuleManager|isOnListLeftUp|(Lrina/rocan/client/RocanHUD;)Z|hud|0
-      @|rina/rocan/manager/RocanModuleManager.java|12500|12514|isOnListLeftUp|method|rina.rocan.manager.RocanModuleManager|isOnListLeftUp|(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12515|12523|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|12539|12547|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|12560|12576|hud_list_left_up|field|rina.rocan.manager.RocanModuleManager|hud_list_left_up
-      @|rina/rocan/manager/RocanModuleManager.java|12593|12599|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanModuleManager.java|12602|12608|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12609|12612|hud|param|rina.rocan.manager.RocanModuleManager|isOnListLeftUp|(Lrina/rocan/client/RocanHUD;)Z|hud|0
-      @|rina/rocan/manager/RocanModuleManager.java|12613|12619|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|12526|12529|hud|param|rina.rocan.manager.RocanModuleManager|isOnListLeftUp|(Lrina/rocan/client/RocanHUD;)Z|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|12502|12516|isOnListLeftUp|method|rina.rocan.manager.RocanModuleManager|isOnListLeftUp|(Lrina/rocan/client/RocanHUD;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|12517|12525|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|12541|12549|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|12562|12578|hud_list_left_up|field|rina.rocan.manager.RocanModuleManager|hud_list_left_up
+      @|rina/rocan/manager/RocanModuleManager.java|12595|12601|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|12604|12610|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|12611|12614|hud|param|rina.rocan.manager.RocanModuleManager|isOnListLeftUp|(Lrina/rocan/client/RocanHUD;)Z|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|12615|12621|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
    Method End: isOnListLeftUp(Lrina/rocan/client/RocanHUD;)Z
    Method Start: isOnListLeftDown(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12723|12726|hud|param|rina.rocan.manager.RocanModuleManager|isOnListLeftDown|(Lrina/rocan/client/RocanHUD;)Z|hud|0
-      @|rina/rocan/manager/RocanModuleManager.java|12697|12713|isOnListLeftDown|method|rina.rocan.manager.RocanModuleManager|isOnListLeftDown|(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12714|12722|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|12738|12746|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|12759|12777|hud_list_left_down|field|rina.rocan.manager.RocanModuleManager|hud_list_left_down
-      @|rina/rocan/manager/RocanModuleManager.java|12794|12800|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanModuleManager.java|12803|12809|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12810|12813|hud|param|rina.rocan.manager.RocanModuleManager|isOnListLeftDown|(Lrina/rocan/client/RocanHUD;)Z|hud|0
-      @|rina/rocan/manager/RocanModuleManager.java|12814|12820|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|12725|12728|hud|param|rina.rocan.manager.RocanModuleManager|isOnListLeftDown|(Lrina/rocan/client/RocanHUD;)Z|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|12699|12715|isOnListLeftDown|method|rina.rocan.manager.RocanModuleManager|isOnListLeftDown|(Lrina/rocan/client/RocanHUD;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|12716|12724|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|12740|12748|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|12761|12779|hud_list_left_down|field|rina.rocan.manager.RocanModuleManager|hud_list_left_down
+      @|rina/rocan/manager/RocanModuleManager.java|12796|12802|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|12805|12811|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|12812|12815|hud|param|rina.rocan.manager.RocanModuleManager|isOnListLeftDown|(Lrina/rocan/client/RocanHUD;)Z|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|12816|12822|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
    Method End: isOnListLeftDown(Lrina/rocan/client/RocanHUD;)Z
    Method Start: isOnListRightUp(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12923|12926|hud|param|rina.rocan.manager.RocanModuleManager|isOnListRightUp|(Lrina/rocan/client/RocanHUD;)Z|hud|0
-      @|rina/rocan/manager/RocanModuleManager.java|12898|12913|isOnListRightUp|method|rina.rocan.manager.RocanModuleManager|isOnListRightUp|(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|12914|12922|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|12938|12946|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|12959|12976|hud_list_right_up|field|rina.rocan.manager.RocanModuleManager|hud_list_right_up
-      @|rina/rocan/manager/RocanModuleManager.java|12993|12999|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanModuleManager.java|13002|13008|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|13009|13012|hud|param|rina.rocan.manager.RocanModuleManager|isOnListRightUp|(Lrina/rocan/client/RocanHUD;)Z|hud|0
-      @|rina/rocan/manager/RocanModuleManager.java|13013|13019|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|12925|12928|hud|param|rina.rocan.manager.RocanModuleManager|isOnListRightUp|(Lrina/rocan/client/RocanHUD;)Z|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|12900|12915|isOnListRightUp|method|rina.rocan.manager.RocanModuleManager|isOnListRightUp|(Lrina/rocan/client/RocanHUD;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|12916|12924|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|12940|12948|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|12961|12978|hud_list_right_up|field|rina.rocan.manager.RocanModuleManager|hud_list_right_up
+      @|rina/rocan/manager/RocanModuleManager.java|12995|13001|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|13004|13010|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|13011|13014|hud|param|rina.rocan.manager.RocanModuleManager|isOnListRightUp|(Lrina/rocan/client/RocanHUD;)Z|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|13015|13021|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
    Method End: isOnListRightUp(Lrina/rocan/client/RocanHUD;)Z
    Method Start: isOnListRightDown(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|13124|13127|hud|param|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z|hud|0
-      @|rina/rocan/manager/RocanModuleManager.java|13097|13114|isOnListRightDown|method|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|13115|13123|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|13139|13147|RocanHUD|class|rina.rocan.client.RocanHUD|false
-      @|rina/rocan/manager/RocanModuleManager.java|13160|13179|hud_list_right_down|field|rina.rocan.manager.RocanModuleManager|hud_list_right_down
-      @|rina/rocan/manager/RocanModuleManager.java|13196|13202|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
-      @|rina/rocan/manager/RocanModuleManager.java|13205|13211|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/manager/RocanModuleManager.java|13212|13215|hud|param|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z|hud|0
-      @|rina/rocan/manager/RocanModuleManager.java|13216|13222|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|13126|13129|hud|param|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|13099|13116|isOnListRightDown|method|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|13117|13125|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|13141|13149|RocanHUD|class|rina.rocan.client.RocanHUD|false
+      @|rina/rocan/manager/RocanModuleManager.java|13162|13181|hud_list_right_down|field|rina.rocan.manager.RocanModuleManager|hud_list_right_down
+      @|rina/rocan/manager/RocanModuleManager.java|13198|13204|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/manager/RocanModuleManager.java|13207|13213|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/manager/RocanModuleManager.java|13214|13217|hud|param|rina.rocan.manager.RocanModuleManager|isOnListRightDown|(Lrina/rocan/client/RocanHUD;)Z|hud|0
+      @|rina/rocan/manager/RocanModuleManager.java|13218|13224|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
    Method End: isOnListRightDown(Lrina/rocan/client/RocanHUD;)Z
 Class End  : rina.rocan.manager.RocanModuleManager
 endProcessing "rina/rocan/manager/RocanModuleManager.java"
