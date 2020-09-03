@@ -35,7 +35,7 @@ public class RocanOffhandUtil extends RocanModule {
 	boolean state_totem        = false;
 	boolean state_golden_apple = false;
 	boolean state_end_crystal  = false;
-
+//hi rina! its me 69hr i learn from your code! its very good!
 	public RocanOffhandUtil() {
 		super(new String[] {"Offhand Util", "OffhandUtil", "Offhand util for totem, golden apple & crystal."}, Category.ROCAN_COMBAT);
 	}
