@@ -102,6 +102,7 @@ public class RocanModuleManager {
 		// HUD.
 		addHUD(new RocanCoordinates());
 		addHUD(new RocanWelcome());
+		addHUD(new RocanModuleList());
 	}
 
 	public void addModule(RocanModule module) {
@@ -175,6 +176,13 @@ public class RocanModuleManager {
 
 		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
 		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
+	}
+
+	public void clearHUDDockList() {
+		this.hud_list_left_up.clear();
+		this.hud_list_left_down.clear();
+		this.hud_list_right_up.clear();
+		this.hud_list_right_down.clear();
 	}
 
 	// HUD seems not a module, but extend module, so I get the list HUD in module manager.

@@ -17,6 +17,7 @@ import java.io.*;
 // Client.
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
+import rina.rocan.client.RocanHUD;
 
 // GUI.
 import rina.rocan.gui.frame.RocanFrame;
@@ -37,6 +38,7 @@ public class RocanFileManager {
 	private String PATH_MODULES = PATH_MAIN + "modules/";
 
 	private String PATH_FILE_CLIENT = PATH_MAIN + "client.json";
+	private String PATH_FILE_MATRIX = PATH_MAIN + "matrix.json";
 
 	public RocanFileManager() {
 		try {
@@ -51,6 +53,7 @@ public class RocanFileManager {
 		try {
 			this.loadConfiguration();
 			this.loadModules();
+			this.loadMatrix();
 		} catch (IOException exc) {
 			// exc.printStackTrace();
 		}
@@ -63,6 +66,7 @@ public class RocanFileManager {
 
 			this.saveConfiguration();
 			this.saveModules();
+			this.saveMatrix();
 		} catch (IOException exc) {
 			// exc.printStackTrace();
 		}
@@ -193,6 +197,118 @@ public class RocanFileManager {
 
 			JSON_FILE.close();
 		}
+	}
+
+	public void saveMatrix() throws IOException {
+		Gson GSON_BUILDER      = new GsonBuilder().setPrettyPrinting().create();
+		JsonParser GSON_PARSER = new JsonParser();
+
+		JsonObject MAIN_JSON = new JsonObject();
+
+		// We create array list to HUDs dock.
+		JsonArray MAIN_HUD_LEFT_UP    = new JsonArray();
+		JsonArray MAIN_HUD_LEFT_DOWN  = new JsonArray();
+		JsonArray MAIN_HUD_RIGHT_UP   = new JsonArray();
+		JsonArray MAIN_HUD_RIGHT_DOWN = new JsonArray();
+
+		for (RocanHUD huds : Rocan.getModuleManager().getHUDListLeftUp()) {
+			MAIN_HUD_LEFT_UP.add(huds.getTag());
+		}
+
+		for (RocanHUD huds : Rocan.getModuleManager().getHUDListLeftDown()) {
+			MAIN_HUD_LEFT_DOWN.add(huds.getTag());
+		}
+
+		for (RocanHUD huds : Rocan.getModuleManager().getHUDListRightUp()) {
+			MAIN_HUD_RIGHT_UP.add(huds.getTag());
+		}
+
+		for (RocanHUD huds : Rocan.getModuleManager().getHUDListRightDown()) {
+			MAIN_HUD_RIGHT_DOWN.add(huds.getTag());
+		}
+
+		MAIN_JSON.add("leftUp", MAIN_HUD_LEFT_UP);
+		MAIN_JSON.add("leftDown", MAIN_HUD_LEFT_DOWN);
+		MAIN_JSON.add("rightUp", MAIN_HUD_RIGHT_UP);
+		MAIN_JSON.add("rightDown", MAIN_HUD_RIGHT_DOWN);
+
+		JsonElement JSON_PRETTY_FORMAT = GSON_PARSER.parse(MAIN_JSON.toString());
+
+		String STRING_JSON = GSON_BUILDER.toJson(JSON_PRETTY_FORMAT);
+
+		cleanFile(PATH_FILE_MATRIX);
+		verifyFile(PATH_FILE_MATRIX);
+
+		OutputStreamWriter file = new OutputStreamWriter(new FileOutputStream(PATH_FILE_MATRIX), "UTF-8");
+
+		file.write(STRING_JSON);
+		file.close();
+	}
+
+	public void loadMatrix() throws IOException {
+		InputStream JSON_FILE = Files.newInputStream(Paths.get(PATH_FILE_MATRIX));
+
+		JsonObject MAIN_JSON = new JsonParser().parse(new InputStreamReader(JSON_FILE)).getAsJsonObject();
+
+		Rocan.getModuleManager().clearHUDDockList();
+
+		if (MAIN_JSON.get("leftUp") != null && MAIN_JSON.get("leftDown") != null && MAIN_JSON.get("rightUp") != null && MAIN_JSON.get("rightDown") != null) {
+			JsonArray HUD_LEFT_UP    = MAIN_JSON.get("leftUp").getAsJsonArray();
+			JsonArray HUD_LEFT_DOWN  = MAIN_JSON.get("leftDown").getAsJsonArray();
+			JsonArray HUD_RIGHT_UP   = MAIN_JSON.get("rightUp").getAsJsonArray();
+			JsonArray HUD_RIGHT_DOWN = MAIN_JSON.get("rightDown").getAsJsonArray();
+
+			for (JsonElement elements : HUD_LEFT_UP) {
+				String element = elements.getAsString();
+
+				if (Rocan.getModuleManager().getModuleByTag(element) == null) {
+					continue;
+				}
+
+				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
+
+				Rocan.getModuleManager().getHUDListLeftUp().add(hud);
+			}
+
+			for (JsonElement elements : HUD_LEFT_DOWN) {
+				String element = elements.getAsString();
+
+				if (Rocan.getModuleManager().getModuleByTag(element) == null) {
+					continue;
+				}
+
+				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
+
+				Rocan.getModuleManager().getHUDListLeftDown().add(hud);
+			}
+
+
+			for (JsonElement elements : HUD_RIGHT_UP) {
+				String element = elements.getAsString();
+
+				if (Rocan.getModuleManager().getModuleByTag(element) == null) {
+					continue;
+				}
+
+				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
+
+				Rocan.getModuleManager().getHUDListRightUp().add(hud);
+			}
+
+			for (JsonElement elements : HUD_RIGHT_DOWN) {
+				String element = elements.getAsString();
+
+				if (Rocan.getModuleManager().getModuleByTag(element) == null) {
+					continue;
+				}
+
+				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
+
+				Rocan.getModuleManager().getHUDListRightDown().add(hud);
+			}
+		}
+
+		JSON_FILE.close();
 	}
 
 	public void reloadModules() {

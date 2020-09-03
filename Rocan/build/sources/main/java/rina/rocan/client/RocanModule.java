@@ -39,6 +39,8 @@ public class RocanModule {
 	public String tag;
 	public String description;
 
+	public String info;
+
 	private ArrayList<RocanSetting> setting_list = new ArrayList<>();
 
 	private final Category category;
@@ -54,11 +56,12 @@ public class RocanModule {
 		this.tag         = details[1];
 		this.description = details[2];
 
-		this.setting_module = createSetting(new String[] {"Bind", this.tag + "Bind", "Key bind to module."}, -1, false);
-
-		this.category = category;
-
+		this.setting_module     = createSetting(new String[] {"Bind", this.tag + "Bind", "Key bind to module."}, -1, false);
+		this.category           = category;
 		this.show_hud_arraylist = true;
+
+		// Empty info.
+		this.info = "";
 	}
 
 	public void setState(boolean value) {
@@ -103,6 +106,10 @@ public class RocanModule {
 		return this.description;
 	}
 
+	public String getInfo() {
+		return this.info;
+	}
+
 	public Category getCategory() {
 		return this.category;
 	}
@@ -121,6 +128,10 @@ public class RocanModule {
 
 	public boolean getState() {
 		return this.setting_module.getBoolean();
+	}
+
+	public boolean showInHUD() {
+		return this.show_hud_arraylist;
 	}
 
 	public ArrayList<RocanSetting> getSettingList() {

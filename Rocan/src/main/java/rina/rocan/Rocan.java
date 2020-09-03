@@ -37,7 +37,7 @@ import rina.turok.TurokStructureColor;
 @Mod(modid = "rocan", name = Rocan.ROCAN_NAME, version = Rocan.ROCAN_VERSION)
 public class Rocan {
 	// Details of the client.
-	public final static String ROCAN_VERSION = "0.1";
+	public final static String ROCAN_VERSION = "0.8";
 	public final static String ROCAN_NAME    = "Rocan";
 
 	@Mod.Instance
@@ -68,6 +68,7 @@ public class Rocan {
 		pomelo_event_manager = new AnnotatedEventManager();
 		file_manager         = new RocanFileManager();
 
+		// Register events.
 		MinecraftForge.EVENT_BUS.register(command_manager);
 		MinecraftForge.EVENT_BUS.register(event_manager);
 

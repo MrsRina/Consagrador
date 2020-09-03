@@ -68,7 +68,6 @@ public class RocanEventManager {
 
 		Rocan.getModuleManager().onUpdateModuleList();
 
-		// Sync HUD collision.
 		Rocan.getModuleManager().syncHUD();
 	}
 
@@ -76,6 +75,10 @@ public class RocanEventManager {
 	public void onWorldRender(RenderWorldLastEvent event) {
 		if (event.isCanceled()) {
 			return;
+		}
+
+		if (!Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
+			Rocan.getModuleManager().syncHUD();
 		}
 
 		Rocan.getModuleManager().onRenderModuleList(event);
@@ -105,7 +108,7 @@ public class RocanEventManager {
 			return;
 		}
 
-		RenderGameOverlayEvent.ElementType target = RenderGameOverlayEvent.ElementType.EXPERIENCE;
+		RenderGameOverlayEvent.ElementType target = RenderGameOverlayEvent.ElementType.ALL;
 
 		if (!mc.player.isCreative() && mc.player.getRidingEntity() instanceof AbstractHorse) {
 			target = RenderGameOverlayEvent.ElementType.HEALTHMOUNT;

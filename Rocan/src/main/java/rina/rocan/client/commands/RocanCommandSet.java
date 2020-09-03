@@ -43,25 +43,25 @@ public class RocanCommandSet extends RocanCommand {
 		}
 
 		if (verifyIndex(args, 4)) {
-			RocanUtilClient.sendNotifyErrorClient("The usage correct is set <module> <setting> <value>");
+			RocanUtilClient.sendNotifyErrorClient("The correct usage is set <module> <setting> <value>");
 
 			return true;
 		}
 
 		if (value_0.equals("null")) {
-			RocanUtilClient.sendNotifyErrorClient("The usage correct is set <module> <setting> <value>");
+			RocanUtilClient.sendNotifyErrorClient("The correct usage is set <module> <setting> <value>");
 
 			return true;
 		}
 
 		if (value_1.equals("null")) {
-			RocanUtilClient.sendNotifyErrorClient("The usage correct is set <module> <setting> <value>");
+			RocanUtilClient.sendNotifyErrorClient("The correct usage is set <module> <setting> <value>");
 
 			return true;
 		}
 
 		if (value_2.equals("null")) {
-			RocanUtilClient.sendNotifyErrorClient("The usage correct is set <module> <setting> <value>");
+			RocanUtilClient.sendNotifyErrorClient("The correct usage is set <module> <setting> <value>");
 
 			return true;
 		}
@@ -119,11 +119,27 @@ public class RocanCommandSet extends RocanCommand {
 
 			RocanUtilClient.sendNotifyClient(setting_requested.getName() + " value to " + setting_requested.getDouble());
 		} else if (setting_requested.getType() == RocanSetting.SettingType.SETTING_LIST) {
-			setting_requested.setString(value_2);
-
-			RocanUtilClient.sendNotifyClient(setting_requested.getName() + " value to " + setting_requested.getString());
+			if (isTrueItemList(setting_requested.getList(), value_2)) {
+				setting_requested.setString(value_2);
+			
+				RocanUtilClient.sendNotifyClient(setting_requested.getName() + " value to " + setting_requested.getString());
+			} else {
+				RocanUtilClient.sendNotifyErrorClient("This value not exist.");
+			}
 		}
 
 		return true;
+	}
+
+	public boolean isTrueItemList(String[] list, String value) {
+		for (int i = 0; i < list.length; i++) {
+			String item = list[i];
+
+			if (item.equals(value)) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 }

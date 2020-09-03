@@ -31,7 +31,6 @@ public class RocanOffhandUtil extends RocanModule {
 	RocanSetting bind_totem         = createSetting(new String[] {"Totem", "Totem", "Set offhand to totem."}, -1, false);
 	RocanSetting bind_golden_apple  = createSetting(new String[] {"Golden Apple", "GoldenApple", "Set offhand to golden apple."}, -1, false);
 	RocanSetting bind_end_crystal   = createSetting(new String[] {"End Crystal", "EndCrystal", "Set offhand to end crystal."}, -1, false);
-	RocanSetting bind_instanity_eat = createSetting(new String[] {"Fast Eat Glitch", "FastEatGlitch", "Make crazy glitch to eat."}, -1, false);
 
 	boolean state_totem        = false;
 	boolean state_golden_apple = false;
@@ -57,6 +56,8 @@ public class RocanOffhandUtil extends RocanModule {
 			}
 
 			verifyStuff(Items.TOTEM_OF_UNDYING);
+
+			this.info = "T";
 		}
 
 		if (bind_golden_apple.getBoolean()) {
@@ -73,6 +74,8 @@ public class RocanOffhandUtil extends RocanModule {
 			}
 
 			verifyStuff(Items.GOLDEN_APPLE);
+
+			this.info = "G";
 		}
 
 		if (bind_end_crystal.getBoolean()) {
@@ -89,6 +92,8 @@ public class RocanOffhandUtil extends RocanModule {
 			}
 
 			verifyStuff(Items.END_CRYSTAL);
+
+			this.info = "E";
 		}
 
 		if (enable_auto_totem.getBoolean() && bind_end_crystal.getBoolean() == false && bind_golden_apple.getBoolean() == false && bind_totem.getBoolean() == false) {
@@ -109,7 +114,7 @@ public class RocanOffhandUtil extends RocanModule {
 			bind_totem.setBoolean(true);
 		}
 
-		if (mc.player.getHeldItemOffhand().getItem() == item && !bind_instanity_eat.getBoolean()) {
+		if (mc.player.getHeldItemOffhand().getItem() == item) {
 			return;
 		}
 

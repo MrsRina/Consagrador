@@ -20,11 +20,11 @@ import rina.rocan.Rocan;
  *
  **/
 public class RocanWelcome extends RocanHUD {
+	RocanSetting rgb_effect = addSetting(new String[] {"RGB", "WelcomeRGB", "RGB effect."}, false);
+
 	public RocanWelcome() {
 		super(new String[] {"Welcome", "Welcome", "Pretty welcome message to user!."}, Docking.LEFT_UP);
 	}
-
-	RocanSetting rgb_effect = addSetting(new String[] {"RGB", "WelcomeRGB", "RGB effect."}, false);
 
 	@Override
 	public void onRenderHUD() {

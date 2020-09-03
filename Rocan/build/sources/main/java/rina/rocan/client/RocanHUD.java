@@ -35,6 +35,8 @@ public class RocanHUD extends RocanModule {
 	private RocanSetting setting_pos_x;
 	private RocanSetting setting_pos_y;
 
+	private RocanSetting setting_dock;
+
 	public TurokRect rect;
 
 	public Docking dock;
@@ -89,6 +91,7 @@ public class RocanHUD extends RocanModule {
 		// I dont set the setting type, so, wont render in GUI, but works normal as a setting.
 		addSetting(this.setting_pos_x = new RocanSetting((RocanModule) this, new String[] {"Position X", this.tag + "PositionX", "Save X."}, this.rect.getX(), 0, 8096));
 		addSetting(this.setting_pos_y = new RocanSetting((RocanModule) this, new String[] {"Position Y", this.tag + "PositionY", "Save Y."}, this.rect.getY(), 0, 8096));
+		addSetting(this.setting_dock  = new RocanSetting((RocanModule) this, new String[] {"Dock", this.tag + "Dock", "Dock side."}, this.dock.name()));
 
 		this.screen_width  = 0;
 		this.screen_height = 0;
@@ -219,10 +222,14 @@ public class RocanHUD extends RocanModule {
 			this.rect.setX(this.setting_pos_x.getInteger());
 			this.rect.setY(this.setting_pos_y.getInteger());	
 
+			this.dock = getDockingByName(this.setting_dock.getString());
+
 			this.event_started = false;
 		} else {
 			this.setting_pos_x.setInteger(this.rect.getX());
 			this.setting_pos_y.setInteger(this.rect.getY());
+
+			this.setting_dock.setString(this.dock.name());
 		}
 
 		// Update colors.
@@ -390,6 +397,16 @@ public class RocanHUD extends RocanModule {
 		if (this.rect.getY() + this.rect.getHeight() >= this.screen_height) {
 			this.setY(this.screen_height - this.rect.getHeight() - 1);
 		}
+	}
+
+	public Docking getDockingByName(String name) {
+		for (Docking docks : Docking.values()) {
+			if (docks.name().equals(name)) {
+				return docks;
+			}
+		}
+
+		return null;
 	}
 
 	public enum Docking {

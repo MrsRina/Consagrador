@@ -4,8 +4,8 @@ class Compile:
 
 	def run(self, version, final):
 		import os	
-		#os.system("cd Rocan && gradlew setupDecompWorkspace --stop && gradlew clean build")
-		os.system("cd Rocan && gradlew runClient --stop && gradlew clean build")
+		os.system("cd Rocan && gradlew setupDecompWorkspace --stop && gradlew clean build")
+		#os.system("cd Rocan && gradlew runClient --stop && gradlew clean build")
 
 		import shutil
 		try:
@@ -18,4 +18,4 @@ class Compile:
 		import sys
 		sys.exit()
 
-Compile("0.1", "0.1");
+Compile("0.8", "0.8");

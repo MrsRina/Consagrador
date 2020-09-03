@@ -70,7 +70,7 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 
 		resetAllEvent();
 
-		this.event_started = false;
+		this.event_started = true;
 	}
 
 	@Override
@@ -236,8 +236,8 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 	
 		if (isStarted()) {
 			this.index = getIndexOf(this.setting.getString());
+		} else {
+			this.setting.setString(this.setting.getList()[this.index]);
 		}
-
-		this.setting.setString(this.setting.getList()[this.index]);
 	}
 }
