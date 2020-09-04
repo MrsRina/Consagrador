@@ -82,7 +82,7 @@ public class RocanModuleManager {
 		addModule(new RocanOffhandUtil());
 
 		// Movement.
-		addModule(new RocanSpeed());
+		addModule(new RocanStrafe());
 		addModule(new RocanGUIWalk());
 		addModule(new RocanStep());
 
