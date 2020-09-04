@@ -103,6 +103,7 @@ public class RocanModuleManager {
 		addHUD(new RocanCoordinates());
 		addHUD(new RocanWelcome());
 		addHUD(new RocanModuleList());
+		addHUD(new RocanVelocitySpeed());
 	}
 
 	public void addModule(RocanModule module) {

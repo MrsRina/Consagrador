@@ -31,10 +31,13 @@ import rina.rocan.util.RocanUtilMath;
  *
  **/
 public class RocanSpeed extends RocanModule {
-	RocanSetting modes_speed  = createSetting(new String[] {"Mode", "Modes", "Modes for speed"}, "Strafe", new String[] {"Strafe", "Sprint"});
-	RocanSetting auto_jump    = createSetting(new String[] {"Auto Jump", "AutoJump", "Auto jump to speed"}, false);
+	RocanSetting modes_speed  = createSetting(new String[] {"Mode", "SpeedModes", "Modes for speed"}, "Strafe", new String[] {"Strafe", "Sprint"});
+	RocanSetting auto_jump    = createSetting(new String[] {"Auto Jump", "SpeedAutoJump", "Auto jump to speed"}, false);
 
 	private double speed;
+	private double tickness;
+
+	boolean jumping;
 
 	public RocanSpeed() {
 		super(new String[] {"Speed", "Speed", "Make fast."}, Category.ROCAN_MOVEMENT);
@@ -66,8 +69,6 @@ public class RocanSpeed extends RocanModule {
 			if (player_movement[2] == 0.0d && player_movement[3] == 0.0d) {
 				event.setX(0.0d);
 				event.setZ(0.0d);
-
-				speed = 0.6174077d;
 			} else {
 				if (auto_jump.getBoolean()) {
 					makeJump(event);

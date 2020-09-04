@@ -26,11 +26,11 @@ import rina.rocan.Rocan;
  *
  **/
 public class RocanOffhandUtil extends RocanModule {
-	RocanSetting smart_totem        = createSetting(new String[] {"Smart Auto Totem", "SmartAutoTotem", "Automatically put offhand totem for no die."}, 0.5, 0.0, 10.0);
-	RocanSetting enable_auto_totem  = createSetting(new String[] {"Auto Totem Enable", "AutoTotemEnable", "Enable totem when turn off golden apple or end crystal."}, true);
-	RocanSetting bind_totem         = createSetting(new String[] {"Totem", "Totem", "Set offhand to totem."}, -1, false);
-	RocanSetting bind_golden_apple  = createSetting(new String[] {"Golden Apple", "GoldenApple", "Set offhand to golden apple."}, -1, false);
-	RocanSetting bind_end_crystal   = createSetting(new String[] {"End Crystal", "EndCrystal", "Set offhand to end crystal."}, -1, false);
+	RocanSetting smart_totem        = createSetting(new String[] {"Smart Auto Totem", "OffhandUtilSmartAutoTotem", "Automatically put offhand totem for no die."}, 0.5, 0.0, 10.0);
+	RocanSetting enable_auto_totem  = createSetting(new String[] {"Auto Totem Enable", "OffhandUtilAutoTotemEnable", "Enable totem when turn off golden apple or end crystal."}, true);
+	RocanSetting bind_totem         = createSetting(new String[] {"Totem", "OffhandUtilTotem", "Set offhand to totem."}, -1, false);
+	RocanSetting bind_golden_apple  = createSetting(new String[] {"Golden Apple", "OffhandUtilGoldenApple", "Set offhand to golden apple."}, -1, false);
+	RocanSetting bind_end_crystal   = createSetting(new String[] {"End Crystal", "OffhandUtilEndCrystal", "Set offhand to end crystal."}, -1, false);
 
 	boolean state_totem        = false;
 	boolean state_golden_apple = false;

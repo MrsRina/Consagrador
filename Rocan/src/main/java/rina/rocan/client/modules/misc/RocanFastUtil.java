@@ -24,11 +24,11 @@ import rina.rocan.client.RocanModule;
  *
  **/
 public class RocanFastUtil extends RocanModule {
-	RocanSetting bottle_xp = createSetting(new String[] {"Bottle XP", "BottleXP", "Splash fast bottle XP."}, true);
-	RocanSetting crystal   = createSetting(new String[] {"Crystal", "Crystal", "Place fast crystal."}, true);
-	RocanSetting place     = createSetting(new String[] {"Place", "Place", "Place fast anything."}, true);
-	RocanSetting break_    = createSetting(new String[] {"Break", "Break", "Fast break."}, true);
-	RocanSetting bow       = createSetting(new String[] {"Bow", "Bow", "Fire fast arrows."}, true);
+	RocanSetting bottle_xp = createSetting(new String[] {"Bottle XP", "FastUtilBottleXP", "Splash fast bottle XP."}, true);
+	RocanSetting crystal   = createSetting(new String[] {"Crystal", "FastUtilCrystal", "Place fast crystal."}, true);
+	RocanSetting place     = createSetting(new String[] {"Place", "FastUtilPlace", "Place fast anything."}, true);
+	RocanSetting break_    = createSetting(new String[] {"Break", "FastUtilBreak", "Fast break."}, true);
+	RocanSetting bow       = createSetting(new String[] {"Bow", "FastUtilBow", "Fire fast arrows."}, true);
 
 	public RocanFastUtil() {
 		super(new String[] {"Fast Util", "FastUtil", "Fast util for client."}, Category.ROCAN_MISC);

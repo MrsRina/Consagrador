@@ -28,7 +28,7 @@ import rina.rocan.client.RocanModule;
  *
  **/
 public class RocanStep extends RocanModule {
-	RocanSetting size_block = createSetting(new String[] {"Block", "Block", "Size of block to step"}, "One", new String[] {"One", "Two"});
+	RocanSetting size_block = createSetting(new String[] {"Block", "StepBlock", "Size of block to step"}, "One", new String[] {"One", "Two"});
 
 	public RocanStep() {
 		super(new String[] {"Step", "Step", "Bypass 1 or 2 blocks."}, Category.ROCAN_MOVEMENT);
