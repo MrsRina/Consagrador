@@ -3365,7 +3365,7 @@ Class Start: rina.rocan.client.modules.movement.RocanStep
 Class End  : rina.rocan.client.modules.movement.RocanStep
 endProcessing "rina/rocan/client/modules/movement/RocanStep.java"
 
-startProcessing "rina/rocan/client/modules/movement/RocanStrafe.java" md5: 9daa34b6e8c5d5759422564f6e53fb5a
+startProcessing "rina/rocan/client/modules/movement/RocanStrafe.java" md5: 8c7ba0a695863612e2f1d3180a7b5357
 @|rina/rocan/client/modules/movement/RocanStrafe.java|8|42|rina.rocan.client.modules.movement|package|rina.rocan.client.modules.movement|(file)
 Class Start: rina.rocan.client.modules.movement.RocanStrafe
    @|rina/rocan/client/modules/movement/RocanStrafe.java|722|733|RocanStrafe|class|rina.rocan.client.modules.movement.RocanStrafe|false
@@ -3457,89 +3457,94 @@ Class Start: rina.rocan.client.modules.movement.RocanStrafe
       @|rina/rocan/client/modules/movement/RocanStrafe.java|2081|2085|getZ|method|rina.rocan.event.player.RocanEventPlayerMove|getZ|()D
       @|rina/rocan/client/modules/movement/RocanStrafe.java|2090|2095|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
       @|rina/rocan/client/modules/movement/RocanStrafe.java|2096|2100|getZ|method|rina.rocan.event.player.RocanEventPlayerMove|getZ|()D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2130|2144|modes_movement|field|rina.rocan.client.modules.movement.RocanStrafe|modes_movement
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2145|2154|getString|method|rina.rocan.client.RocanSetting|getString|()Ljava/lang/String;
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2157|2163|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2181|2186|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2212|2214|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2215|2221|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2222|2236|isPotionActive|method|net.minecraft.entity.EntityLivingBase|isPotionActive|(Lnet/minecraft/potion/Potion;)Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2237|2247|MobEffects|class|net.minecraft.init.MobEffects|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2248|2253|SPEED|field|net.minecraft.init.MobEffects|SPEED
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2258|2278|strafe_potion_effect|field|rina.rocan.client.modules.movement.RocanStrafe|strafe_potion_effect
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2279|2289|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2321|2323|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2324|2330|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2331|2352|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2353|2363|MobEffects|class|net.minecraft.init.MobEffects|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2364|2369|SPEED|field|net.minecraft.init.MobEffects|SPEED
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2371|2383|getAmplifier|method|net.minecraft.potion.PotionEffect|getAmplifier|()I
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2393|2398|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2634|2639|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2640|2644|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2124|2135|verifySpeed|method|rina.rocan.client.modules.movement.RocanStrafe|verifySpeed|()V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2153|2167|modes_movement|field|rina.rocan.client.modules.movement.RocanStrafe|modes_movement
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2168|2177|getString|method|rina.rocan.client.RocanSetting|getString|()Ljava/lang/String;
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2180|2186|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2204|2209|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2227|2238|verifySpeed|method|rina.rocan.client.modules.movement.RocanStrafe|verifySpeed|()V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2441|2446|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2447|2451|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2463|2468|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2469|2473|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2501|2510|auto_jump|field|rina.rocan.client.modules.movement.RocanStrafe|auto_jump
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2511|2521|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2532|2540|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2541|2546|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2571|2573|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2574|2586|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2587|2598|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2599|2608|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2620|2628|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2629|2634|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
       @|rina/rocan/client/modules/movement/RocanStrafe.java|2656|2661|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2662|2666|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2694|2703|auto_jump|field|rina.rocan.client.modules.movement.RocanStrafe|auto_jump
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2704|2714|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2725|2733|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2734|2739|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2764|2766|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2767|2779|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2780|2791|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2792|2801|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2813|2821|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2822|2827|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2849|2854|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2855|2859|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2882|2887|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2891|2895|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2896|2899|cos|method|java.lang.Math|cos|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2900|2904|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2905|2914|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2970|2975|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2979|2983|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2984|2987|sin|method|java.lang.Math|sin|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2988|2992|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|2993|3002|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3040|3045|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3046|3050|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3073|3078|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3082|3086|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3087|3090|sin|method|java.lang.Math|sin|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3091|3095|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3096|3105|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3161|3166|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3170|3174|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3175|3178|cos|method|java.lang.Math|cos|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3179|3183|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3184|3193|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2662|2666|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2689|2694|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2698|2702|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2703|2706|cos|method|java.lang.Math|cos|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2707|2711|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2712|2721|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2777|2782|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2786|2790|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2791|2794|sin|method|java.lang.Math|sin|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2795|2799|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2800|2809|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2847|2852|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2853|2857|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2880|2885|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2889|2893|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2894|2897|sin|method|java.lang.Math|sin|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2898|2902|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2903|2912|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2968|2973|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2977|2981|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2982|2985|cos|method|java.lang.Math|cos|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2986|2990|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|2991|3000|toRadians|method|java.lang.Math|toRadians|(D)D
    Method End: playerMove(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+   Method Start: verifySpeed()V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3059|3070|verifySpeed|method|rina.rocan.client.modules.movement.RocanStrafe|verifySpeed|()V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3082|3084|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3085|3091|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3092|3106|isPotionActive|method|net.minecraft.entity.EntityLivingBase|isPotionActive|(Lnet/minecraft/potion/Potion;)Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3107|3117|MobEffects|class|net.minecraft.init.MobEffects|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3118|3123|SPEED|field|net.minecraft.init.MobEffects|SPEED
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3128|3148|strafe_potion_effect|field|rina.rocan.client.modules.movement.RocanStrafe|strafe_potion_effect
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3149|3159|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3191|3193|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3194|3200|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3201|3222|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3223|3233|MobEffects|class|net.minecraft.init.MobEffects|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3234|3239|SPEED|field|net.minecraft.init.MobEffects|SPEED
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3241|3253|getAmplifier|method|net.minecraft.potion.PotionEffect|getAmplifier|()I
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3263|3268|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+   Method End: verifySpeed()V
    Method Start: makeJump(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3282|3287|event|param|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3252|3260|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3261|3281|RocanEventPlayerMove|class|rina.rocan.event.player.RocanEventPlayerMove|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3330|3332|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3333|3339|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3340|3348|onGround|field|net.minecraft.entity.Entity|onGround
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3360|3373|fast_movement|field|rina.rocan.client.modules.movement.RocanStrafe|fast_movement
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3374|3384|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3395|3400|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3431|3433|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3434|3440|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3441|3455|isPotionActive|method|net.minecraft.entity.EntityLivingBase|isPotionActive|(Lnet/minecraft/potion/Potion;)Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3456|3466|MobEffects|class|net.minecraft.init.MobEffects|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3467|3477|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3497|3499|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3500|3506|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3507|3528|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3529|3539|MobEffects|class|net.minecraft.init.MobEffects|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3540|3550|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3552|3564|getAmplifier|method|net.minecraft.potion.PotionEffect|getAmplifier|()I
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3593|3598|event|param|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3599|3603|setY|method|rina.rocan.event.player.RocanEventPlayerMove|setY|(D)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3604|3606|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3607|3613|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3614|3621|motionY|field|net.minecraft.entity.Entity|motionY
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3360|3365|event|param|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3330|3338|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3339|3359|RocanEventPlayerMove|class|rina.rocan.event.player.RocanEventPlayerMove|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3408|3410|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3411|3417|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3418|3426|onGround|field|net.minecraft.entity.Entity|onGround
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3438|3451|fast_movement|field|rina.rocan.client.modules.movement.RocanStrafe|fast_movement
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3452|3462|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3473|3478|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3509|3511|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3512|3518|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3519|3533|isPotionActive|method|net.minecraft.entity.EntityLivingBase|isPotionActive|(Lnet/minecraft/potion/Potion;)Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3534|3544|MobEffects|class|net.minecraft.init.MobEffects|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3545|3555|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3575|3577|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3578|3584|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3585|3606|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3607|3617|MobEffects|class|net.minecraft.init.MobEffects|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3618|3628|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3630|3642|getAmplifier|method|net.minecraft.potion.PotionEffect|getAmplifier|()I
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3671|3676|event|param|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3677|3681|setY|method|rina.rocan.event.player.RocanEventPlayerMove|setY|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3682|3684|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3685|3691|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3692|3699|motionY|field|net.minecraft.entity.Entity|motionY
    Method End: makeJump(Lrina/rocan/event/player/RocanEventPlayerMove;)V
 Class End  : rina.rocan.client.modules.movement.RocanStrafe
 endProcessing "rina/rocan/client/modules/movement/RocanStrafe.java"

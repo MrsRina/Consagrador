@@ -60,14 +60,12 @@ public class RocanStrafe extends RocanModule {
 			mc.player.setSprinting(true);
 
 			speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) : 0.2873d);
+		
+			verifySpeed();
 		} else if (modes_movement.getString().equals("Static")) {
 			speed = 0.2873d;
-		}
 
-		if (mc.player.isPotionActive(MobEffects.SPEED) && strafe_potion_effect.getBoolean()) {
-			final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
-
-			speed *= (1.0d + 0.2d * (amplifier + 1));
+			verifySpeed();
 		}
 
 		// player_movement[0] = Yaw; player_movement[1] = Pitch; player_movement[2] = Forward; player_movement[3] = Strafe;
@@ -86,6 +84,14 @@ public class RocanStrafe extends RocanModule {
 
 			event.setX((player_movement[2] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))) + (player_movement[3] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))));
 			event.setZ((player_movement[2] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))) - (player_movement[3] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))));
+		}
+	}
+
+	public void verifySpeed() {
+		if (mc.player.isPotionActive(MobEffects.SPEED) && strafe_potion_effect.getBoolean()) {
+			final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
+
+			speed *= (1.0d + 0.2d * (amplifier + 1));
 		}
 	}
 
