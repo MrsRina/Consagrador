@@ -29,15 +29,18 @@ import rina.rocan.util.RocanUtilMath;
  * Created by Rina!
  * 16/08/2020. // 00:05 am
  *
+ * Update in 04/09/2020. // 00:40 am.
+ *
  **/
 public class RocanSpeed extends RocanModule {
-	RocanSetting modes_speed  = createSetting(new String[] {"Mode", "SpeedModes", "Modes for speed"}, "Strafe", new String[] {"Strafe", "Sprint"});
-	RocanSetting auto_jump    = createSetting(new String[] {"Auto Jump", "SpeedAutoJump", "Auto jump to speed"}, false);
+	RocanSetting modes_speed = createSetting(new String[] {"Mode", "SpeedModes", "Modes for speed."}, "Strafe", new String[] {"Strafe", "Sprint"});
+	RocanSetting auto_jump   = createSetting(new String[] {"Auto Jump", "SpeedAutoJump", "Auto jump to speed."}, false);
 
 	private double speed;
-	private double tickness;
+	private double speed_event;
 
 	boolean jumping;
+	boolean jumping_state;
 
 	public RocanSpeed() {
 		super(new String[] {"Speed", "Speed", "Make fast."}, Category.ROCAN_MOVEMENT);
@@ -56,7 +59,7 @@ public class RocanSpeed extends RocanModule {
 
 			double[] player_movement = RocanUtilMath.transformStrafeMovement(mc.player);
 
-			speed = 0.2873d;
+			speed = Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) : 0.2873d;
 
 			if (mc.player.isPotionActive(MobEffects.SPEED)) {
 				final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
@@ -70,6 +73,8 @@ public class RocanSpeed extends RocanModule {
 				event.setX(0.0d);
 				event.setZ(0.0d);
 			} else {
+				mc.player.setSprinting(true);
+
 				if (auto_jump.getBoolean()) {
 					makeJump(event);
 				} else {
@@ -96,14 +101,13 @@ public class RocanSpeed extends RocanModule {
 		double jump = 0.40123128d;
 
 		if (mc.player.onGround) {
+			speed = 0.6174077d;
+
 			if (mc.player.isPotionActive(MobEffects.JUMP_BOOST)) {
-				jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1F);
+				jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1f);
 			}
 
 			event.setY(mc.player.motionY = jump);
-
-            // Fast jump.
-			speed = 0.6174077d;
 		}
 	}
 }

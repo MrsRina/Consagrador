@@ -62,7 +62,7 @@ public class RocanVelocitySpeed extends RocanHUD {
 
 			double bps_convert = (MathHelper.sqrt(delta_x * delta_x + detal_z * detal_z) / tick_rate);
 
-			speed = "Speed " + Rocan.getGrayColor() + String.format("%.1f", (double) bps_convert) + "BP/s";
+			speed = "Speed " + Rocan.getGrayColor() + String.format("%.1f", (double) bps_convert) + "B/s";
 
 		}
 
