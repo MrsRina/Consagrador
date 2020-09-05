@@ -225,7 +225,7 @@ public class RocanMainGUI extends GuiScreen {
 	public void drawScreen(int x, int y, float partial_ticks) {
 		this.drawDefaultBackground();
 
-		// We update theme.
+		// We refresh theme.
 		Rocan.getClientGUITheme().refresh();
 
 		ScaledResolution scaled_resolution = new ScaledResolution(RocanUtilMinecraftHelper.getMinecraft());

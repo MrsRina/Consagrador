@@ -38,8 +38,8 @@ public class RocanModuleList extends RocanHUD {
 		boolean style = info_mode.getString().equals("[info]") == true ? true : false; 
 
 		Comparator<RocanModule> comparator = (module_1, module_2) -> {
-			String module_1_string = module_1.getTag() + (module_1.getInfo().equals("") == true ? "" : (style ? (Rocan.getGrayColor() + " [" + Rocan.setDefaultColor() + module_1.getInfo() + Rocan.getGrayColor() + "] " + Rocan.setDefaultColor()) : Rocan.getGrayColor() + module_1.getInfo())); 
-			String module_2_string = module_2.getTag() + (module_2.getInfo().equals("") == true ? "" : (style ? (Rocan.getGrayColor() + " [" + Rocan.setDefaultColor() + module_2.getInfo() + Rocan.getGrayColor() + "] " + Rocan.setDefaultColor()) : Rocan.getGrayColor() + module_2.getInfo())); 
+			String module_1_string = module_1.getTag() + (module_1.getInfo().equals("") == true ? "" : (style ? (Rocan.getGrayColor() + " [" + module_1.getInfo() + Rocan.getGrayColor() + "]" + Rocan.setDefaultColor()) : Rocan.getGrayColor() + module_1.getInfo())); 
+			String module_2_string = module_2.getTag() + (module_2.getInfo().equals("") == true ? "" : (style ? (Rocan.getGrayColor() + " [" + module_2.getInfo() + Rocan.getGrayColor() + "]" + Rocan.setDefaultColor()) : Rocan.getGrayColor() + module_2.getInfo())); 
 
 			float diff = getStringWidth(module_2_string) - getStringWidth(module_1_string);
 
@@ -53,7 +53,7 @@ public class RocanModuleList extends RocanHUD {
 		if (this.getDocking() == Docking.LEFT_UP || this.getDocking() == Docking.RIGHT_UP) {
 			pretty_module_list = Rocan.getModuleManager().getModuleList().stream().filter(module -> module.getState()).sorted(comparator).collect(Collectors.toList());
 		} else if (this.getDocking() == Docking.LEFT_DOWN || this.getDocking() == Docking.RIGHT_DOWN) {
-			pretty_module_list = Rocan.getModuleManager().getModuleList().stream().filter(module -> module.getState()).sorted(Comparator.comparing(module -> getStringWidth(module.getTag() + (module.getInfo().equals("") == true ? "" : (style ? (Rocan.getGrayColor() + " [" + Rocan.setDefaultColor() + module.getInfo() + Rocan.getGrayColor() + "] " + Rocan.setDefaultColor()) : Rocan.getGrayColor() + module.getInfo()))))).collect(Collectors.toList());
+			pretty_module_list = Rocan.getModuleManager().getModuleList().stream().filter(module -> module.getState()).sorted(Comparator.comparing(module -> getStringWidth(module.getTag() + (module.getInfo().equals("") == true ? "" : (style ? (Rocan.getGrayColor() + " [" + module.getInfo() + Rocan.getGrayColor() + "]" + Rocan.setDefaultColor()) : Rocan.getGrayColor() + module.getInfo()))))).collect(Collectors.toList());
 		}
 
 		int position_update_y = 0;
@@ -63,7 +63,7 @@ public class RocanModuleList extends RocanHUD {
 				continue;
 			}
 
-			String module_name = modules.getTag() + (modules.getInfo().equals("") == true ? "" : (style ? (Rocan.getGrayColor() + " [" + Rocan.setDefaultColor() + modules.getInfo() + Rocan.getGrayColor() + "] " + Rocan.setDefaultColor()) : Rocan.getGrayColor() + " "  + modules.getInfo()));
+			String module_name = modules.getTag() + (modules.getInfo().equals("") == true ? "" : (style ? (Rocan.getGrayColor() + " [" + modules.getInfo() + Rocan.getGrayColor() + "]" + Rocan.setDefaultColor()) : Rocan.getGrayColor() + " " + modules.getInfo()));
 
 			if (rgb_effect.getBoolean()) {
 				renderString(module_name, 1, position_update_y, rgb_r, rgb_g, rgb_b);

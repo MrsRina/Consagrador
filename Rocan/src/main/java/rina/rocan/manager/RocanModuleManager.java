@@ -187,18 +187,7 @@ public class RocanModuleManager {
 	}
 
 	// HUD seems not a module, but extend module, so I get the list HUD in module manager.
-	public void syncHUD() {
-		ScaledResolution scl_minecraft_screen = new ScaledResolution(RocanUtilMinecraftHelper.getMinecraft());
-
-		int scr_width  = scl_minecraft_screen.getScaledWidth();
-		int scr_height = scl_minecraft_screen.getScaledHeight();
-
-		if (RocanUtilMinecraftHelper.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
-			off_set_chat = 16;
-		} else {
-			off_set_chat = 0;
-		}
-
+	public void syncHUDDocking() {
 		for (RocanHUD huds : getHUDList()) {
 			if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.LEFT_UP && huds.isJoinedToDockRect() && !isOnListLeftUp(huds)) {
 				this.hud_list_left_up.add(huds);
@@ -239,6 +228,19 @@ public class RocanModuleManager {
 			} else if (!((RocanModule) huds).getState() && (huds.getDocking() != RocanHUD.Docking.RIGHT_DOWN || huds.getDocking() == RocanHUD.Docking.RIGHT_DOWN) && isOnListRightDown(huds)) {
 				this.hud_list_right_down.remove(huds);
 			}
+		}
+	}
+
+	public void syncHUD() {
+		ScaledResolution scl_minecraft_screen = new ScaledResolution(RocanUtilMinecraftHelper.getMinecraft());
+
+		int scr_width  = scl_minecraft_screen.getScaledWidth();
+		int scr_height = scl_minecraft_screen.getScaledHeight();
+
+		if (RocanUtilMinecraftHelper.getMinecraft().world != null && RocanUtilMinecraftHelper.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
+			off_set_chat = 14;
+		} else {
+			off_set_chat = 0;
 		}
 
 		int left_up_save_y = 1;

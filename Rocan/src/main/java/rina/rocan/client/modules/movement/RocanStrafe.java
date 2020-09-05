@@ -1,9 +1,16 @@
 package rina.rocan.client.modules.movement;
 
 // Minecraft.
+import net.minecraftforge.client.settings.IKeyConflictContext;
+import net.minecraftforge.client.settings.KeyConflictContext;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.client.gui.GuiChat;
 import net.minecraft.init.MobEffects;
+
+// OpenGL.
+import org.lwjgl.input.Keyboard;
 
 // Pomelo.
 import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
@@ -37,11 +44,31 @@ public class RocanStrafe extends RocanModule {
 	RocanSetting auto_jump            = createSetting(new String[] {"Auto Jump", "StrafeAutoJump", "Auto jump to strafe."}, false);
 	RocanSetting fast_movement        = createSetting(new String[] {"Fast Movement", "StrafeFastMovement", "Fast strafe movement."}, true);
 	RocanSetting strafe_potion_effect = createSetting(new String[] {"Potion Effect", "StrafePotionEffect", "Potion effect speed."}, true);
+	RocanSetting bypass_speed         = createSetting(new String[] {"Bypass Speed", "StrafeBypassSpeed", "Bypass speed."}, -1, false);
 
 	double speed;
 
+	private static KeyBinding[] KEYS = new KeyBinding[] {
+		mc.gameSettings.keyBindForward, mc.gameSettings.keyBindRight,
+		mc.gameSettings.keyBindBack, mc.gameSettings.keyBindLeft,
+		mc.gameSettings.keyBindJump, mc.gameSettings.keyBindSprint
+	};
+
+	int jump = mc.gameSettings.keyBindJump.getKeyCode();
+
 	public RocanStrafe() {
 		super(new String[] {"Strafe", "Strafe", "Make fast."}, Category.ROCAN_MOVEMENT);
+	}
+
+	@Override
+	public void onUpdate() {
+		if (bypass_speed.getBoolean()) {
+			amplific();
+
+			this.info = "Bypass";
+		} else {
+			this.info = modes_movement.getString();
+		}
 	}
 
 	@Listener
@@ -108,6 +135,43 @@ public class RocanStrafe extends RocanModule {
 			}
 
 			event.setY(mc.player.motionY = jump);
+		}
+	}
+
+	public void amplific() {
+		if (mc.currentScreen instanceof GuiChat || mc.currentScreen != null) {
+			return;
+		}
+
+		if (Keyboard.isKeyDown(jump)) {
+			if (mc.player.isInLava() || mc.player.isInWater()) {
+				mc.player.motionY += 0.38f;
+			} else {
+				if (mc.player.onGround) {
+					mc.player.jump();
+				}
+			}
+		}
+
+		KeyBinding[] keys = KEYS;
+
+		int keys_n   = keys.length;
+		int keys_n_2 = 0;
+
+		while (keys_n_2 < keys_n) {
+			KeyBinding key_binding = keys[keys_n_2];
+
+			if (Keyboard.isKeyDown(key_binding.getKeyCode())) {
+				if (key_binding.getKeyConflictContext() != KeyConflictContext.UNIVERSAL) {
+					key_binding.setKeyConflictContext(KeyConflictContext.UNIVERSAL);
+				}
+
+				KeyBinding.setKeyBindState(key_binding.getKeyCode(), true);
+			} else {
+				KeyBinding.setKeyBindState(key_binding.getKeyCode(), false);
+			}
+
+			++keys_n_2;
 		}
 	}
 }

@@ -38,8 +38,6 @@ public class RocanGUIWalk extends RocanModule {
 		mc.gameSettings.keyBindJump, mc.gameSettings.keyBindSprint
 	};
 
-	int jump = mc.gameSettings.keyBindJump.getKeyCode();
-
 	public RocanGUIWalk() {
 		super(new String[] {"GUI Walk", "GUIWalk", "Able move while opened any GUI."}, Category.ROCAN_MOVEMENT);
 	}
@@ -65,16 +63,6 @@ public class RocanGUIWalk extends RocanModule {
 
 		if (mc.currentScreen instanceof GuiChat || mc.currentScreen == null) {
 			return;
-		}
-
-		if (Keyboard.isKeyDown(jump)) {
-			if (mc.player.isInLava() || mc.player.isInWater()) {
-				mc.player.motionY += 0.38f;
-			} else {
-				if (mc.player.onGround) {
-					mc.player.jump();
-				}
-			}
 		}
 
 		walk();

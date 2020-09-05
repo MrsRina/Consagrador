@@ -75,10 +75,6 @@ public class RocanEventManager {
 			return;
 		}
 
-		if (!Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
-			Rocan.getModuleManager().syncHUD();
-		}
-
 		Rocan.getModuleManager().onRenderModuleList(event);
 
 		float[] tick_color = {

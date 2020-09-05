@@ -4,6 +4,9 @@ package rina.rocan.client.modules.render;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
+// Rocan.
+import rina.rocan.Rocan;
+
 /**
  *
  * @author Rina!
@@ -19,5 +22,11 @@ public class RocanHUDRender extends RocanModule {
 
 	public RocanHUDRender() {
 		super(new String[] {"HUD", "HUD", "Enable for render HUD components."}, Category.ROCAN_RENDER);
+	}
+
+	@Override
+	public void onUpdate() {
+		Rocan.getModuleManager().syncHUDDocking();
+		Rocan.getModuleManager().syncHUD();
 	}
 }
