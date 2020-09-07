@@ -33,7 +33,7 @@ public class TurokRenderHelp extends Tessellator {
             mode = GL_LINES;
         }
 
-        prepareGL(1.0f);
+        prepareGL(0.5f);
         begin(mode);
     }
 

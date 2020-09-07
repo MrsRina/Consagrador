@@ -82,11 +82,13 @@ public class RocanModuleManager {
 		addModule(new RocanOffhandUtil());
 
 		// Movement.
-		addModule(new RocanStrafe());
 		addModule(new RocanGUIWalk());
+		addModule(new RocanStrafe());
 		addModule(new RocanStep());
 
 		// Render.
+		addModule(new RocanBlockHighlight());
+		addModule(new RocanBreakHighlight());
 		addModule(new RocanHUDRender());
 
 		// Exploit.
@@ -96,14 +98,14 @@ public class RocanModuleManager {
 		addModule(new RocanFastUtil());
 
 		// GUI.
-		addModule(new RocanGUI());
 		addModule(new RocanHUDEditor());
+		addModule(new RocanGUI());
 
 		// HUD.
-		addHUD(new RocanCoordinates());
-		addHUD(new RocanWelcome());
-		addHUD(new RocanModuleList());
 		addHUD(new RocanVelocitySpeed());
+		addHUD(new RocanCoordinates());
+		addHUD(new RocanModuleList());
+		addHUD(new RocanWelcome());
 	}
 
 	public void addModule(RocanModule module) {
@@ -142,7 +144,7 @@ public class RocanModuleManager {
 		GlStateManager.shadeModel(GL11.GL_SMOOTH);
 		GlStateManager.disableDepth();
 
-		GlStateManager.glLineWidth(1.5f);
+		GlStateManager.glLineWidth(0.5f);
 
 		Vec3d pos = RocanUtilEntity.getInterpolatedPos(RocanUtilMinecraftHelper.getMinecraft().player, event.getPartialTicks());
 
@@ -164,7 +166,7 @@ public class RocanModuleManager {
 
 		RocanUtilMinecraftHelper.getMinecraft().profiler.startSection("release");
 
-		GlStateManager.glLineWidth(1.5f);
+		GlStateManager.glLineWidth(0.5f);
 
 		GlStateManager.shadeModel(GL11.GL_FLAT);
 		GlStateManager.disableBlend();

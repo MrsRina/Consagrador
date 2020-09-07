@@ -63,7 +63,7 @@ public class RocanStrafe extends RocanModule {
 	@Override
 	public void onUpdate() {
 		if (bypass_speed.getBoolean()) {
-			macroDobule();
+			amplific();
 
 			this.info = "Bypass";
 		} else {
@@ -138,7 +138,7 @@ public class RocanStrafe extends RocanModule {
 		}
 	}
 
-	public void macroDobule() {
+	public void amplific() {
 		if (mc.currentScreen instanceof GuiChat || mc.currentScreen != null) {
 			return;
 		}
