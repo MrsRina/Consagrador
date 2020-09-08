@@ -233,9 +233,9 @@ public class RocanHUD extends RocanModule {
 		}
 
 		// Update colors.
-		this.hud_r = Rocan.getSettingManager().getSettingByModuleAndTag("HUD", "StringRed").getInteger();
-		this.hud_g = Rocan.getSettingManager().getSettingByModuleAndTag("HUD", "StringGreen").getInteger();
-		this.hud_b = Rocan.getSettingManager().getSettingByModuleAndTag("HUD", "StringBlue").getInteger();
+		this.hud_r = Rocan.getClientHUDRed();
+		this.hud_g = Rocan.getClientHUDGreen();
+		this.hud_b = Rocan.getClientHUDBlue();
 
 		this.rgb_r = Rocan.getEventManager().getRGBEffect()[0];
 		this.rgb_g = Rocan.getEventManager().getRGBEffect()[1];

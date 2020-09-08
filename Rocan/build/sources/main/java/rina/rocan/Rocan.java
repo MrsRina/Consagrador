@@ -103,6 +103,18 @@ public class Rocan {
 		return getInstance().rocan_gui;
 	}
 
+	public static int getClientHUDRed() {
+		return getInstance().setting_manager.getSettingByModuleAndTag("HUD", "HUDStringRed").getInteger();
+	}
+
+	public static int getClientHUDGreen() {
+		return getInstance().setting_manager.getSettingByModuleAndTag("HUD", "HUDStringGreen").getInteger();
+	}
+
+	public static int getClientHUDBlue() {
+		return getInstance().setting_manager.getSettingByModuleAndTag("HUD", "HUDStringBlue").getInteger();
+	}
+
 	public static RocanSettingManager getSettingManager() {
 		return getInstance().setting_manager;
 	}
