@@ -204,11 +204,11 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 	public void render() {
 		updateAction(this.absolute.getMouseX(), this.absolute.getMouseY());
 
+		TurokRenderGL.color(Rocan.getClientGUITheme().button_r, Rocan.getClientGUITheme().button_g, Rocan.getClientGUITheme().button_b, Rocan.getClientGUITheme().button_a);
+		TurokRenderGL.drawSolidRect(this.rect);
+
 		if (isMousePassing()) {
 			TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
-			TurokRenderGL.drawSolidRect(this.rect);
-		} else {
-			TurokRenderGL.color(Rocan.getClientGUITheme().button_r, Rocan.getClientGUITheme().button_g, Rocan.getClientGUITheme().button_b, Rocan.getClientGUITheme().button_a);
 			TurokRenderGL.drawSolidRect(this.rect);
 		}
 

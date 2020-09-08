@@ -234,41 +234,25 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 		updateAction(this.absolute.getMouseX(), this.absolute.getMouseY());
 
 		if (isAbleToType()) {
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
+			TurokRenderGL.drawSolidRect(this.rect);
+
 			if (isMousePassing()) {
-				TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_pass_r, Rocan.getClientGUITheme().button_pressed_pass_g, Rocan.getClientGUITheme().button_pressed_pass_b, Rocan.getClientGUITheme().button_pressed_pass_a);
-				TurokRenderGL.drawSolidRect(this.rect);
-			} else {
-				TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
+				TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
 				TurokRenderGL.drawSolidRect(this.rect);
 			}
 
 			TurokString.renderString(this.entry.getText() + this._string_entry, this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
 		} else {
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_r, Rocan.getClientGUITheme().button_g, Rocan.getClientGUITheme().button_b, Rocan.getClientGUITheme().button_a);
+			TurokRenderGL.drawSolidRect(this.rect);
+
 			if (isMousePassing()) {
 				TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
 				TurokRenderGL.drawSolidRect(this.rect);
-
-				TurokString.renderString(this.entry.getText(), this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
-			} else {
-				TurokRenderGL.color(Rocan.getClientGUITheme().button_r, Rocan.getClientGUITheme().button_g, Rocan.getClientGUITheme().button_b, Rocan.getClientGUITheme().button_a);
-				TurokRenderGL.drawSolidRect(this.rect);
-
-				TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
-			}
-		}
-
-		if (isAbleToType()) {
-			this.tick_to_entry++;
-
-			if (this.tick_to_entry >= 30) {
-				this._string_entry = "_";
 			}
 
-			if (this.tick_to_entry >= 60) {
-				this._string_entry = "";
-
-				this.tick_to_entry = 0;
-			}
+			TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);
 		}
 
 		this.setting.setString(this.entry.getText());
@@ -293,5 +277,19 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 		this.entry.y      = this.rect.getY() + 1;
 		this.entry.width  = this.rect.getWidth() - 2;
 		this.entry.height = this.rect.getHeight() - 2;
+
+		if (isAbleToType()) {
+			this.tick_to_entry++;
+
+			if (this.tick_to_entry >= 30) {
+				this._string_entry = "_";
+			}
+
+			if (this.tick_to_entry >= 60) {
+				this._string_entry = "";
+
+				this.tick_to_entry = 0;
+			}
+		}
 	}
 }

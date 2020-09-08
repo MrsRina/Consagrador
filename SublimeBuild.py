@@ -18,4 +18,7 @@ class Compile:
 		import sys
 		sys.exit()
 
+# Chat suffix \u25b8\u0280\u1d0f\u1d04\u1d00\u0274;
+# :)
+
 Compile("0.8", "0.8");

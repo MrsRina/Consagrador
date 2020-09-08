@@ -88,7 +88,7 @@ public class RocanModuleManager {
 
 		// Render.
 		addModule(new RocanBlockHighlight());
-		addModule(new RocanBreakHighlight());
+		//addModule(new RocanBreakHighlight());
 		addModule(new RocanHUDRender());
 
 		// Exploit.

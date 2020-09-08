@@ -198,22 +198,22 @@ public class RocanMainGUI extends GuiScreen {
 	public void handleMouseInput() throws IOException {
 		if (Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
 			if (Mouse.getEventDWheel() > 0) {
-				this.frame_hud.getRect().y += 5;
+				this.frame_hud.getRect().y += 10;
 			}
 
 			if (Mouse.getEventDWheel() < 0) {
-				this.frame_hud.getRect().y -= 5;
+				this.frame_hud.getRect().y -= 10;
 			}
 		} else {
 			if (Mouse.getEventDWheel() > 0) {
 				for (RocanFrame frames : this.frame_list) {
-					frames.getRect().y += 5;
+					frames.getRect().y += 10;
 				}
 			}
 
 			if (Mouse.getEventDWheel() < 0) {
 				for (RocanFrame frames : this.frame_list) {
-					frames.getRect().y -= 5;
+					frames.getRect().y -= 10;
 				}
 			}
 		}

@@ -42,7 +42,5 @@ public class RocanHUDEditor extends RocanModule {
 
 			show_gui = false;
 		}
-
-		Rocan.getModuleManager().syncHUD();
 	}
 }

@@ -53,13 +53,7 @@ public class RocanBreakHighlight extends RocanModule {
 
 	@Listener
 	public void sendPacket(RocanEventPacketReceive event) {
-		if (event.getPacket() instanceof SPacketBlockBreakAnim) {
-			if (mc.world.getBlockState(((SPacketBlockBreakAnim) event.getPacket()).getPosition()).getBlock() == Blocks.AIR) {
-				return;
-			}
-
-			packet_break = (SPacketBlockBreakAnim) event.getPacket();
-		}
+		if (event.getPacket() instanceof SPacketBlockBreakAnim) {}
 	}
 
 	@Override
@@ -77,17 +71,5 @@ public class RocanBreakHighlight extends RocanModule {
 			g = green_color.getInteger();
 			b = blue_color.getInteger();
 		}
-
-		if (packet_break == null) {
-			return;
-		}
-
-		TurokRenderHelp.prepare("quads");
-		TurokRenderHelp.drawCube(packet_break.getPosition(), r, g, b, alpha_color.getInteger(), "all");
-		TurokRenderHelp.release();
-
-		TurokRenderHelp.prepare("lines");
-		TurokRenderHelp.drawOutlineCube(packet_break.getPosition(), r, g, b, alpha_outline_color.getInteger(), "all");
-		TurokRenderHelp.release();
 	}
 }

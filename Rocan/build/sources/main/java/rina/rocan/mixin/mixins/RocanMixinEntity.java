@@ -27,7 +27,7 @@ import rina.rocan.Rocan;
   * 23/08/20.
   *
   **/
-@Mixin(value = Entity.class)
+@Mixin(value = Entity.class, priority = 999)
 public abstract class RocanMixinEntity {
 	@Shadow
 	public void move(MoverType type, double x, double y, double z) {}

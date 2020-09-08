@@ -30,20 +30,15 @@ public class TurokStructureColor {
 	public int button_b;
 	public int button_a;
 
-	public int button_pass_r;
-	public int button_pass_g;
-	public int button_pass_b;
-	public int button_pass_a;
-
 	public int button_pressed_r;
 	public int button_pressed_g;
 	public int button_pressed_b;
 	public int button_pressed_a;
 
-	public int button_pressed_pass_r;
-	public int button_pressed_pass_g;
-	public int button_pressed_pass_b;
-	public int button_pressed_pass_a;
+	public int button_pass_r;
+	public int button_pass_g;
+	public int button_pass_b;
+	public int button_pass_a;
 
 	public boolean smooth_font;
 	public boolean shadow_font;
@@ -67,20 +62,15 @@ public class TurokStructureColor {
 		this.button_b = 255;
 		this.button_a = 255;
 
-		this.button_pass_r = 255;
-		this.button_pass_g = 255;
-		this.button_pass_b = 255;
-		this.button_pass_a = 255;
-
 		this.button_pressed_r = 255;
 		this.button_pressed_g = 255;
 		this.button_pressed_b = 255;
 		this.button_pressed_a = 255;
 
-		this.button_pressed_pass_r = 255;
-		this.button_pressed_pass_g = 255;
-		this.button_pressed_pass_b = 255;
-		this.button_pressed_pass_a = 255;
+		this.button_pass_r = 255;
+		this.button_pass_g = 255;
+		this.button_pass_b = 255;
+		this.button_pass_a = 255;
 
 		this.smooth_font = true;
 		this.shadow_font = false;
@@ -105,21 +95,16 @@ public class TurokStructureColor {
 		this.button_b = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonBlue").getInteger();
 		this.button_a = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonAlpha").getInteger();
 
-		this.button_pass_r = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPassRed").getInteger();
-		this.button_pass_g = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPassGreen").getInteger();
-		this.button_pass_b = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPassBlue").getInteger();
-		this.button_pass_a = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPassAlpha").getInteger();
-
 		this.button_pressed_r = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedRed").getInteger();
 		this.button_pressed_g = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedGreen").getInteger();
 		this.button_pressed_b = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedBlue").getInteger();
 		this.button_pressed_a = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedAlpha").getInteger();
 
-		this.button_pressed_pass_r = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedPassRed").getInteger();
-		this.button_pressed_pass_g = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedPassGreen").getInteger();
-		this.button_pressed_pass_b = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedPassBlue").getInteger();
-		this.button_pressed_pass_a = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedPassAlpha").getInteger();
-	
+		this.button_pass_r = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedRed").getInteger();
+		this.button_pass_g = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedGreen").getInteger();
+		this.button_pass_b = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ButtonPressedBlue").getInteger();
+		this.button_pass_a = 50;
+
 		this.smooth_font = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "SmoothFont").getBoolean();
 		this.shadow_font = Rocan.getSettingManager().getSettingByModuleAndTag("GUI", "ShadowFont").getBoolean();
 	}

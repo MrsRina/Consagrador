@@ -184,12 +184,12 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 			value = Double.toString(this.setting.getDouble());
 		}
 
+		TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
+		TurokRenderGL.drawSolidRect(this.rect.getX(), this.rect.getY(), this.rect.getX() + width_calculed, this.rect.getY() + this.rect.getHeight());
+
 		if (isMousePassing()) {
-			TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_pass_r, Rocan.getClientGUITheme().button_pressed_pass_g, Rocan.getClientGUITheme().button_pressed_pass_b, Rocan.getClientGUITheme().button_pressed_pass_a);
-			TurokRenderGL.drawSolidRect(this.rect.getX(), this.rect.getY(), this.rect.getX() + width_calculed, this.rect.getY() + this.rect.getHeight());
-		} else {
-			TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
-			TurokRenderGL.drawSolidRect(this.rect.getX(), this.rect.getY(), this.rect.getX() + width_calculed, this.rect.getY() + this.rect.getHeight());
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
+			TurokRenderGL.drawSolidRect(this.rect);
 		}
 
 		TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);

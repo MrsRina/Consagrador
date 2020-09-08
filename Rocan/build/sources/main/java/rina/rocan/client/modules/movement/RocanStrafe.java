@@ -62,6 +62,10 @@ public class RocanStrafe extends RocanModule {
 
 	@Override
 	public void onUpdate() {
+		if (mc.player == null) {
+			return;
+		}
+
 		if (bypass_speed.getBoolean()) {
 			amplific();
 

@@ -36,7 +36,7 @@ import rina.rocan.Rocan;
   * 23/08/20.
   *
   **/
-@Mixin(value = EntityPlayerSP.class)
+@Mixin(value = EntityPlayerSP.class, priority = 999)
 public abstract class RocanMixinEntityPlayerSP extends RocanMixinEntityPlayer implements AcessEntityPlayerSP {
 	@Override
 	public void move(MoverType type, double x, double y, double z) {

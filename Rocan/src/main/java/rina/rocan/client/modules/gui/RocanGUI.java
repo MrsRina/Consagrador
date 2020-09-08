@@ -42,20 +42,10 @@ public class RocanGUI extends RocanModule {
 	RocanSetting button_b = createSetting(new String[] {"Blue", "ButtonBlue", "Change color blue."}, 190, 0, 255);
 	RocanSetting button_a = createSetting(new String[] {"Alpha", "ButtonAlpha", "Change color alpha."}, 190, 0, 255);
 
-	RocanSetting button_pass_r = createSetting(new String[] {"Pass Red", "ButtonPassRed", "Change color red."}, 255, 0, 255);
-	RocanSetting button_pass_g = createSetting(new String[] {"Pass Green", "ButtonPassGreen", "Change color green."}, 255, 0, 255);
-	RocanSetting button_pass_b = createSetting(new String[] {"Pass Blue", "ButtonPassBlue", "Change color blue."}, 255, 0, 255);
-	RocanSetting button_pass_a = createSetting(new String[] {"Pass Alpha", "ButtonPassAlpha", "Change color alpha."}, 190, 0, 255);
-
 	RocanSetting button_pressed_r = createSetting(new String[] {"Pressed Red", "ButtonPressedRed", "Change color red."}, 190, 0, 255);
 	RocanSetting button_pressed_g = createSetting(new String[] {"Pressed Green", "ButtonPressedGreen", "Change color green."}, 0, 0, 255);
 	RocanSetting button_pressed_b = createSetting(new String[] {"Pressed Blue", "ButtonPressedBlue", "Change color blue."}, 0, 0, 255);
 	RocanSetting button_pressed_a = createSetting(new String[] {"Pressed Alpha", "ButtonPressedAlpha", "Change color alpha."}, 190, 0, 255);
-
-	RocanSetting button_pressed_pass_r = createSetting(new String[] {"Pressed Pass Red", "ButtonPressedPassRed", "Change color red."}, 255, 0, 255);
-	RocanSetting button_pressed_pass_g = createSetting(new String[] {"Pressed Pass Green", "ButtonPressedPassGreen", "Change color green."}, 0, 0, 255);
-	RocanSetting button_pressed_pass_b = createSetting(new String[] {"Pressed Pass Blue", "ButtonPressedPassBlue", "Change color blue."}, 0, 0, 255);
-	RocanSetting button_pressed_pass_a = createSetting(new String[] {"Pressed Pass Alpha", "ButtonPressedPassAlpha", "Change color alpha."}, 190, 0, 255);
 
 	public RocanGUI() {
 		super(new String[] {"GUI", "GUI", "Draw GUI."}, Category.ROCAN_GUI);

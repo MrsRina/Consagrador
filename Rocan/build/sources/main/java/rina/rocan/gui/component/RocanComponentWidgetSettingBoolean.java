@@ -169,22 +169,17 @@ public class RocanComponentWidgetSettingBoolean extends RocanWidget {
 	public void render() {
 		updateAction(this.absolute.getMouseX(), this.absolute.getMouseY());
 
-		if (isMousePassing()) {
-			if (this.setting.getBoolean()) {
-				TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_pass_r, Rocan.getClientGUITheme().button_pressed_pass_g, Rocan.getClientGUITheme().button_pressed_pass_b, Rocan.getClientGUITheme().button_pressed_pass_a);
-				TurokRenderGL.drawSolidRect(this.rect);
-			} else {
-				TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
-				TurokRenderGL.drawSolidRect(this.rect);
-			}
+		if (this.setting.getBoolean()) {
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
+			TurokRenderGL.drawSolidRect(this.rect);
 		} else {
-			if (this.setting.getBoolean()) {
-				TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
-				TurokRenderGL.drawSolidRect(this.rect);
-			} else {
-				TurokRenderGL.color(Rocan.getClientGUITheme().button_r, Rocan.getClientGUITheme().button_g, Rocan.getClientGUITheme().button_b, Rocan.getClientGUITheme().button_a);
-				TurokRenderGL.drawSolidRect(this.rect);
-			}
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_r, Rocan.getClientGUITheme().button_g, Rocan.getClientGUITheme().button_b, Rocan.getClientGUITheme().button_a);
+			TurokRenderGL.drawSolidRect(this.rect);
+		}
+
+		if (isMousePassing()) {
+			TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
+			TurokRenderGL.drawSolidRect(this.rect);
 		}
 
 		TurokString.renderString(this.rect.getTag(), this.rect.getX() + 1, this.rect.getY() + 3, Rocan.getClientGUITheme().button_name_r, Rocan.getClientGUITheme().button_name_g, Rocan.getClientGUITheme().button_name_b, Rocan.getClientGUITheme().shadow_font, Rocan.getClientGUITheme().smooth_font);

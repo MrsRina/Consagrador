@@ -26,5 +26,5 @@ import rina.rocan.Rocan;
   * 23/08/20.
   *
   **/
-@Mixin(value = EntityPlayer.class)
+@Mixin(value = EntityPlayer.class, priority = 999)
 public abstract class RocanMixinEntityPlayer extends RocanMixinEntity {}

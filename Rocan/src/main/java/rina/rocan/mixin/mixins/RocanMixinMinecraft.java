@@ -36,7 +36,7 @@ import rina.rocan.Rocan;
   * 08/04/20.
   *
   **/
-@Mixin(value = Minecraft.class)
+@Mixin(value = Minecraft.class, priority = 999)
 public class RocanMixinMinecraft {
 	@Inject(method = "displayGuiScreen", at = @At("HEAD"))
 	private void displayGuiScreen(GuiScreen actual_guiscreen, CallbackInfo info) {

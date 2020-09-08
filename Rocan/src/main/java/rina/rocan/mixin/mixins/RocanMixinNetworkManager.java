@@ -31,7 +31,7 @@ import rina.rocan.Rocan;
   * 08/04/20.
   *
   **/
-@Mixin(value = NetworkManager.class)
+@Mixin(value = NetworkManager.class, priority = 999)
 public class RocanMixinNetworkManager {
 	@Inject(method = "sendPacket(Lnet/minecraft/network/Packet;)V", at = @At("HEAD"), cancellable = true)
 	private void send(Packet<?> packet, CallbackInfo callback) {
