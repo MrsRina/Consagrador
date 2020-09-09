@@ -65,13 +65,8 @@ public class RocanBlockHighlight extends RocanModule {
 		if (result != null && result.typeOfHit == RayTraceResult.Type.BLOCK) {
 			BlockPos blockpos = result.getBlockPos();
 
-			TurokRenderHelp.prepare("quads");
-			TurokRenderHelp.drawCube(blockpos, r, g, b, alpha_color.getInteger(), "all");
-			TurokRenderHelp.release();
-
-			TurokRenderHelp.prepare("lines");
-			TurokRenderHelp.drawOutlineCube(blockpos, r, g, b, alpha_outline_color.getInteger(), "all");
-			TurokRenderHelp.release();
+			TurokRenderHelp.render3DSolid(getICamera(), blockpos, r, g, b, alpha_color.getInteger());
+			TurokRenderHelp.render3DOutline(getICamera(), blockpos, r, g, b, alpha_outline_color.getInteger());
 		}
 	}
 }

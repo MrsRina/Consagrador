@@ -267,7 +267,7 @@ public class RocanFileManager {
 
 				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
 
-				Rocan.getModuleManager().getHUDListLeftUp().add(hud);
+				Rocan.getModuleManager().addHUDListLeftUp(hud);
 			}
 
 			for (JsonElement elements : HUD_LEFT_DOWN) {
@@ -279,7 +279,7 @@ public class RocanFileManager {
 
 				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
 
-				Rocan.getModuleManager().getHUDListLeftDown().add(hud);
+				Rocan.getModuleManager().addHUDListLeftDown(hud);
 			}
 
 
@@ -292,7 +292,7 @@ public class RocanFileManager {
 
 				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
 
-				Rocan.getModuleManager().getHUDListRightUp().add(hud);
+				Rocan.getModuleManager().addHUDListRightUp(hud);
 			}
 
 			for (JsonElement elements : HUD_RIGHT_DOWN) {
@@ -304,7 +304,7 @@ public class RocanFileManager {
 
 				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
 
-				Rocan.getModuleManager().getHUDListRightDown().add(hud);
+				Rocan.getModuleManager().addHUDListRightDown(hud);
 			}
 		}
 

@@ -26,7 +26,6 @@ public class RocanHUDRender extends RocanModule {
 
 	@Override
 	public void onUpdate() {
-		Rocan.getModuleManager().syncHUDDocking();
 		Rocan.getModuleManager().syncHUD();
 	}
 }

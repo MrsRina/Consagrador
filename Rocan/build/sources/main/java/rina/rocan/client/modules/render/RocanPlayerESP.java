@@ -49,7 +49,7 @@ public class RocanPlayerESP extends RocanModule {
 	RocanSetting render_2d_mode       = createSetting(new String[] {"Render 2D", "PlayerESPRender2D", "Modes to render 2D."}, "Predador", new String[] {"Predador", "Hacker", "CSGO", "Rect", "none"});
 	RocanSetting render_3d_mode       = createSetting(new String[] {"Render 3D", "PlayerESPRender3D", "Modes to render 3D."}, "Chams", new String[] {"Chams", "Outline", "none"});
 	RocanSetting block_highlight      = createSetting(new String[] {"Block Highlight Alpha", "PlayerESPBlockHighlightAlpha", "Block highlight from players."}, 255, 0, 255);
-	RocanSetting tracer_util          = createSetting(new String[] {"Tracer", "PlayerESPTracerAlpha", "Tracer util."}, 0, 0, 255);
+	RocanSetting tracer_util          = createSetting(new String[] {"Tracer Alpha", "PlayerESPTracerAlpha", "Tracer util."}, 0, 0, 255);
 
 	public static float distance_player = 0.0f;
 
@@ -71,18 +71,24 @@ public class RocanPlayerESP extends RocanModule {
 		g = 190;
 		b = 190;
 
-		for (Entity entities : mc.world.loadedEntityList) {
-			if (!(entities instanceof EntityLivingBase && entities instanceof EntityPlayer)) {
+		for (Entity entity : mc.world.loadedEntityList) {
+			if (!(entity instanceof EntityLivingBase && entity instanceof EntityPlayer)) {
 				continue;
 			}
 
-			if (mc.player.getDistance(entities) > range.getInteger()) {
+			if (mc.player == entity) {
 				continue;
 			}
 
-			renderBlockHighlight((EntityPlayer) entities);
-			renderTracer((EntityPlayer) entities);
-			renderTarget2D((EntityPlayer) entities);
+			if (mc.player.getDistance(entity) > range.getInteger()) {
+				continue;
+			}
+
+			EntityPlayer player = (EntityPlayer) entity;
+
+			renderTarget2D(player);
+			renderBlockHighlight(player);
+			renderTracer(player);
 		}
 	}
 
@@ -92,9 +98,7 @@ public class RocanPlayerESP extends RocanModule {
 		if (result != null && result.typeOfHit == RayTraceResult.Type.BLOCK) {
 			BlockPos blockpos = result.getBlockPos();
 
-			TurokRenderHelp.prepare("quads");
-			TurokRenderHelp.drawCube(blockpos, r, g, b, block_highlight.getInteger(), "all");
-			TurokRenderHelp.release();
+			TurokRenderHelp.render3DSolid(getICamera(), blockpos, r, g, b, block_highlight.getInteger());
 		}
 	}
 

@@ -364,20 +364,38 @@ public class RocanHUD extends RocanModule {
 	}
 
 	protected void verifyDrag(int x, int y) {
-		if ((this.rect.getX() <= 1 && this.rect.getY() <= 1) || this.rect.collide(Rocan.getModuleManager().getHUDRectLeftUp())) {
+		if ((this.rect.getX() <= 1 && this.rect.getY() <= 1)) {
 			setDocking(Docking.LEFT_UP);
-		}
-
-		if ((this.rect.getX() <= 1 && this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1)) || this.rect.collide(Rocan.getModuleManager().getHUDRectLeftDown())) {
+		} else if (this.rect.getX() <= 1) {
+			if (getDocking() == Docking.RIGHT_UP) {
+				setDocking(Docking.LEFT_UP);
+			} else if (getDocking() == Docking.RIGHT_DOWN) {
+				setDocking(Docking.LEFT_DOWN);
+			}
+		} else if ((this.rect.getX() <= 1 && this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1))) {
 			setDocking(Docking.LEFT_DOWN);
-		}
-
-		if ((this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1) && this.rect.getY() <= 1) || this.rect.collide(Rocan.getModuleManager().getHUDRectRightUp())) {
-			setDocking(Docking.RIGHT_UP);
-		}
-
-		if ((this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1) && this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1)) || this.rect.collide(Rocan.getModuleManager().getHUDRectRightDown())) {
+		} else if ((this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1) && this.rect.getY() <= 1)) {
+			if (getDocking() == Docking.LEFT_UP) {
+				setDocking(Docking.RIGHT_UP);
+			} else if (getDocking() == Docking.LEFT_DOWN) {
+				setDocking(Docking.RIGHT_DOWN);
+			}
+		} else if (this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1)) {
+			this.rect.setX(this.screen_width - this.rect.getWidth() - 1);
+		} else if (this.rect.getY() <= 1) {
+			if (getDocking() == Docking.LEFT_DOWN) {
+				setDocking(Docking.LEFT_UP);
+			} else if (getDocking() == Docking.RIGHT_DOWN) {
+				setDocking(Docking.RIGHT_UP);
+			}
+		} else if ((this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1) && this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1))) {
 			setDocking(Docking.RIGHT_DOWN);
+		} else if (this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1)) {
+			if (getDocking() == Docking.LEFT_UP) {
+				setDocking(Docking.LEFT_DOWN);
+			} else if (getDocking() == Docking.RIGHT_UP) {
+				setDocking(Docking.RIGHT_DOWN);
+			}
 		}
 	}
 
@@ -394,7 +412,7 @@ public class RocanHUD extends RocanModule {
 			this.setY(1);
 		}
 
-		if (this.rect.getY() + this.rect.getHeight() >= this.screen_height) {
+		if (this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1)) {
 			this.setY(this.screen_height - this.rect.getHeight() - 1);
 		}
 	}

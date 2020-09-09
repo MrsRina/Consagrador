@@ -134,51 +134,13 @@ public class RocanModuleManager {
 	}
 
 	public void onRenderModuleList(RenderWorldLastEvent event) {
-		RocanUtilMinecraftHelper.getMinecraft().profiler.startSection("rocan");
-		RocanUtilMinecraftHelper.getMinecraft().profiler.startSection("setup");
-
-		GlStateManager.disableTexture2D();
-		GlStateManager.enableBlend();
-		GlStateManager.disableAlpha();
-		GlStateManager.tryBlendFuncSeparate(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA, 1, 0);
-		GlStateManager.shadeModel(GL11.GL_SMOOTH);
-		GlStateManager.disableDepth();
-
-		GlStateManager.glLineWidth(0.5f);
-
-		Vec3d pos = RocanUtilEntity.getInterpolatedPos(RocanUtilMinecraftHelper.getMinecraft().player, event.getPartialTicks());
-
-		RocanEventRender event_render = new RocanEventRender(TurokRenderHelp.INSTANCE, pos);
-
-		event_render.resetTranslatation();
-
-		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
+		RocanEventRender event_render = new RocanEventRender(event.getPartialTicks());
 
 		for (RocanModule modules : getModuleList()) {
 			if (modules.getState()) {
-				RocanUtilMinecraftHelper.getMinecraft().profiler.startSection(modules.getTag());
-
 				modules.onRender(event_render);
-
-				RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
 			}
 		}
-
-		RocanUtilMinecraftHelper.getMinecraft().profiler.startSection("release");
-
-		GlStateManager.glLineWidth(0.5f);
-
-		GlStateManager.shadeModel(GL11.GL_FLAT);
-		GlStateManager.disableBlend();
-		GlStateManager.enableAlpha();
-		GlStateManager.enableTexture2D();
-		GlStateManager.enableDepth();
-		GlStateManager.enableCull();
-
-		TurokRenderHelp.releaseGL();
-
-		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
-		RocanUtilMinecraftHelper.getMinecraft().profiler.endSection();
 	}
 
 	public void clearHUDDockList() {
@@ -189,7 +151,7 @@ public class RocanModuleManager {
 	}
 
 	// HUD seems not a module, but extend module, so I get the list HUD in module manager.
-	public void syncHUDDocking() {
+	public void syncHUD() {
 		for (RocanHUD huds : getHUDList()) {
 			if (((RocanModule) huds).getState() && huds.getDocking() == RocanHUD.Docking.LEFT_UP && huds.isJoinedToDockRect() && !isOnListLeftUp(huds)) {
 				this.hud_list_left_up.add(huds);
@@ -231,9 +193,7 @@ public class RocanModuleManager {
 				this.hud_list_right_down.remove(huds);
 			}
 		}
-	}
 
-	public void syncHUD() {
 		ScaledResolution scl_minecraft_screen = new ScaledResolution(RocanUtilMinecraftHelper.getMinecraft());
 
 		int scr_width  = scl_minecraft_screen.getScaledWidth();
@@ -332,6 +292,22 @@ public class RocanModuleManager {
 				huds.render(x, y, partial_ticks);
 			}
 		}
+	}
+
+	public void addHUDListLeftUp(RocanHUD hud) {
+		this.hud_list_left_up.add(hud);
+	}
+
+	public void addHUDListLeftDown(RocanHUD hud) {
+		this.hud_list_left_down.add(hud);
+	}
+
+	public void addHUDListRightUp(RocanHUD hud) {
+		this.hud_list_right_up.add(hud);
+	}
+
+	public void addHUDListRightDown(RocanHUD hud) {
+		this.hud_list_right_down.add(hud);
 	}
 
 	public ArrayList<RocanModule> getModuleList() {

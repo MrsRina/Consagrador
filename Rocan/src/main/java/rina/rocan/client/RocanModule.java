@@ -1,6 +1,8 @@
 package rina.rocan.client;
 
 // Minecraft.
+import net.minecraft.client.renderer.culling.ICamera;
+import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraftforge.client.event.*;
 import net.minecraft.client.Minecraft;
 
@@ -50,6 +52,8 @@ public class RocanModule {
 	private RocanSetting setting_module;
 
 	private boolean show_hud_arraylist;
+
+	private ICamera camera = new Frustum();
 
 	public RocanModule(String[] details, Category category) {
 		this.name        = details[0];
@@ -112,6 +116,10 @@ public class RocanModule {
 
 	public Category getCategory() {
 		return this.category;
+	}
+
+	public ICamera getICamera() {
+		return camera;
 	}
 
 	public String getKeyBindName() {

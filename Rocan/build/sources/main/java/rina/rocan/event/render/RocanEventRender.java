@@ -17,33 +17,19 @@ import rina.rocan.event.RocanEventCancellable;
   *
   **/
 public class RocanEventRender extends RocanEventCancellable {
-	private final Tessellator tessellator;
-	private final Vec3d render_pos;
+	private float partial_ticks;
 
-	public RocanEventRender(Tessellator tessellator, Vec3d pos) {
+	public RocanEventRender(float partial_ticks) {
 		super();
 
-		this.tessellator = tessellator;
-		this.render_pos  = pos;
+		this.partial_ticks = partial_ticks;
 	}
 
-	public Tessellator getTessellator() {
-		return this.tessellator;
+	public void setPartialTicks(float partial_ticks) {
+		this.partial_ticks = partial_ticks;
 	}
 
-	public Vec3d getRenderPos() {
-		return this.render_pos;
-	}
-
-	public BufferBuilder getBuffer() {
-		return this.tessellator.getBuffer();
-	}
-
-	public void setTranslatation(Vec3d pos) {
-		getBuffer().setTranslation(- pos.x, - pos.y, - pos.z);
-	}
-
-	public void resetTranslatation() {
-		setTranslatation(getRenderPos());
+	public float getPartialTicks() {
+		return this.partial_ticks;
 	}
 }

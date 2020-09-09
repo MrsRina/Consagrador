@@ -71,18 +71,24 @@ public class RocanPlayerESP extends RocanModule {
 		g = 190;
 		b = 190;
 
-		for (Entity entities : mc.world.loadedEntityList) {
-			if (!(entities instanceof EntityLivingBase && entities instanceof EntityPlayer)) {
+		for (Entity entity : mc.world.loadedEntityList) {
+			if (!(entity instanceof EntityLivingBase && entity instanceof EntityPlayer)) {
 				continue;
 			}
 
-			if (mc.player.getDistance(entities) > range.getInteger()) {
+			if (mc.player == entity) {
 				continue;
 			}
 
-			renderBlockHighlight((EntityPlayer) entities);
-			renderTracer((EntityPlayer) entities);
-			renderTarget2D((EntityPlayer) entities);
+			if (mc.player.getDistance(entity) > range.getInteger()) {
+				continue;
+			}
+
+			EntityPlayer player = (EntityPlayer) entity;
+
+			renderTarget2D(player);
+			renderBlockHighlight(player);
+			renderTracer(player);
 		}
 	}
 
@@ -92,9 +98,7 @@ public class RocanPlayerESP extends RocanModule {
 		if (result != null && result.typeOfHit == RayTraceResult.Type.BLOCK) {
 			BlockPos blockpos = result.getBlockPos();
 
-			TurokRenderHelp.prepare("quads");
-			TurokRenderHelp.drawCube(blockpos, r, g, b, block_highlight.getInteger(), "all");
-			TurokRenderHelp.release();
+			TurokRenderHelp.render3DSolid(getICamera(), blockpos, r, g, b, block_highlight.getInteger());
 		}
 	}
 
