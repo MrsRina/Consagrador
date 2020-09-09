@@ -4,6 +4,7 @@ package rina.rocan.util;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderGlobal;
+import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.client.renderer.*;
 import net.minecraft.client.Minecraft;
@@ -38,6 +39,10 @@ public class RocanUtilRendererEntity2D3D {
 		GlStateManager.pushMatrix();
 
 		Vec3d pos = RocanUtilEntity.getInterpolatedPos(entity, RocanUtilMinecraftHelper.getMinecraft().getRenderPartialTicks());
+
+		ScaledResolution scaled_resolution = new ScaledResolution(RocanUtilMinecraftHelper.getMinecraft());
+
+		TurokRenderGL.fixScreen(scaled_resolution.getScaledWidth(), scaled_resolution.getScaledHeight());
 
 		GlStateManager.translate(pos.x - RocanUtilMinecraftHelper.getMinecraft().getRenderManager().renderPosX, pos.y - RocanUtilMinecraftHelper.getMinecraft().getRenderManager().renderPosY, pos.z - RocanUtilMinecraftHelper.getMinecraft().getRenderManager().renderPosZ);
 		GlStateManager.glNormal3f(0.0f, 1.0f, 0.0f);
