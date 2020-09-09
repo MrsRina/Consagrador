@@ -29,6 +29,10 @@ public class RocanVelocitySpeed extends RocanHUD {
 
 	@Override
 	public void onRenderHUD() {
+		if (mc.player == null || mc.world == null) {
+			return;
+		}
+
 		String speed = getSpeed();
 
 		if (rgb_effect.getBoolean()) {

@@ -112,7 +112,7 @@ public class RocanEventManager {
 			Rocan.getModuleManager().onRenderModuleList();
 
 			// Prepare to render.
-			TurokRenderGL.init2D();
+			TurokRenderGL.prepare2D();
 			TurokRenderGL.release2D();
 		}
 	}

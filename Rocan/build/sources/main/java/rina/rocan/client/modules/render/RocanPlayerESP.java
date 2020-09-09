@@ -19,6 +19,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Items;
 
+// OpenGL.
+import org.lwjgl.opengl.GL11;
+
 // Java.
 import java.awt.*;
 
@@ -28,6 +31,9 @@ import rina.turok.TurokRenderHelp;
 // Client.
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
+
+// Util.
+import rina.rocan.util.RocanUtilRendererEntity2D3D;
 
 // Event.
 import rina.rocan.event.render.RocanEventRender;
@@ -46,8 +52,8 @@ import rina.rocan.Rocan;
 public class RocanPlayerESP extends RocanModule {
 	RocanSetting range                = createSetting(new String[] {"Range", "PlayerESPRange", "Area range to able render."}, 200, 0, 200);
 	RocanSetting range_3d_stop_render = createSetting(new String[] {"Range Stop Render 3D", "PlayerESPRangeStopRender3D", "Offset to stop render."}, 6, 0, 10);
-	RocanSetting render_2d_mode       = createSetting(new String[] {"Render 2D", "PlayerESPRender2D", "Modes to render 2D."}, "Predador", new String[] {"Predador", "Hacker", "CSGO", "Rect", "none"});
-	RocanSetting render_3d_mode       = createSetting(new String[] {"Render 3D", "PlayerESPRender3D", "Modes to render 3D."}, "Chams", new String[] {"Chams", "Outline", "none"});
+	RocanSetting render_2d_mode       = createSetting(new String[] {"Render 2D", "PlayerESPRender2D", "Modes to render 2D."}, "States", new String[] {"States", "CSGO", "Rect", "none"});
+	RocanSetting render_3d_mode       = createSetting(new String[] {"Render 3D", "PlayerESPRender3D", "Modes to render 3D."}, "Predador", new String[] {"Predador", "Hacker", "Chams", "Outline", "none"});
 	RocanSetting block_highlight      = createSetting(new String[] {"Block Highlight Alpha", "PlayerESPBlockHighlightAlpha", "Block highlight from players."}, 255, 0, 255);
 	RocanSetting tracer_util          = createSetting(new String[] {"Tracer Alpha", "PlayerESPTracerAlpha", "Tracer util."}, 0, 0, 255);
 
@@ -102,7 +108,38 @@ public class RocanPlayerESP extends RocanModule {
 		}
 	}
 
-	public void renderTracer(EntityPlayer player) {}
+	public void renderTracer(EntityPlayer player) {
+		GlStateManager.pushMatrix();
 
-	public void renderTarget2D(EntityPlayer player) {}
+		TurokRenderHelp.renderTracer(player, r, g, b, tracer_util.getInteger());
+
+		GlStateManager.popMatrix();
+	}
+
+	public void renderTarget2D(EntityPlayer player) {
+		RocanUtilRendererEntity2D3D.prepare2D((Entity) player);
+
+		if (render_2d_mode.getString().equals("States")) {
+			GL11.glEnable(GL11.GL_BLEND);
+			GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+
+			int x = 0;
+			int y = 0;
+
+			int width  = x + 10;
+			int height = y + 10; 
+
+			GL11.glBegin(GL11.GL_QUADS);
+			{
+				GL11.glVertex2d(width, y);
+				GL11.glVertex2d(x, y);
+				GL11.glVertex2d(x, height);
+				GL11.glVertex2d(width, height);
+			}
+
+			GL11.glEnd();
+		}
+
+		RocanUtilRendererEntity2D3D.release2D();
+	}
 }

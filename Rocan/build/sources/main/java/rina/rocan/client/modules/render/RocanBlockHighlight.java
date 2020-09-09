@@ -35,6 +35,7 @@ public class RocanBlockHighlight extends RocanModule {
 	RocanSetting blue_color          = createSetting(new String[] {"Blue", "BlockHighlightBlue", "Change color BLUE."}, 0, 0, 255);
 	RocanSetting alpha_color         = createSetting(new String[] {"Alpha", "BlockHighlightAlpha", "Change color ALPHA."}, 150, 0, 255);
 	RocanSetting alpha_outline_color = createSetting(new String[] {"Alpha Outline", "BlockHighlightAlphaOutline", "Change color ALPHA to outline."}, 255, 0, 255);
+	RocanSetting line_outline_width  = createSetting(new String[] {"Line Outline Width", "BlockHighlightOutlineWidth", "Width outline for render outline."}, 0.1, 1.0, 3.0);
 
 	int r;
 	int g;
@@ -66,7 +67,7 @@ public class RocanBlockHighlight extends RocanModule {
 			BlockPos blockpos = result.getBlockPos();
 
 			TurokRenderHelp.render3DSolid(getICamera(), blockpos, r, g, b, alpha_color.getInteger());
-			TurokRenderHelp.render3DOutline(getICamera(), blockpos, r, g, b, alpha_outline_color.getInteger());
+			TurokRenderHelp.render3DOutline(getICamera(), blockpos, r, g, b, alpha_outline_color.getInteger(), (float) line_outline_width.getDouble());
 		}
 	}
 }

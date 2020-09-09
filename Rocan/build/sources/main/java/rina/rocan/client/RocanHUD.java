@@ -272,7 +272,7 @@ public class RocanHUD extends RocanModule {
 		onRenderHUD();
 
 		// Prepare to render.
-		TurokRenderGL.init2D();
+		TurokRenderGL.prepare2D();
 		TurokRenderGL.release2D();
 	}
 
@@ -375,13 +375,13 @@ public class RocanHUD extends RocanModule {
 		} else if ((this.rect.getX() <= 1 && this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1))) {
 			setDocking(Docking.LEFT_DOWN);
 		} else if ((this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1) && this.rect.getY() <= 1)) {
+			setDocking(Docking.RIGHT_UP);
+		} else if (this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1)) {
 			if (getDocking() == Docking.LEFT_UP) {
 				setDocking(Docking.RIGHT_UP);
 			} else if (getDocking() == Docking.LEFT_DOWN) {
 				setDocking(Docking.RIGHT_DOWN);
 			}
-		} else if (this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1)) {
-			this.rect.setX(this.screen_width - this.rect.getWidth() - 1);
 		} else if (this.rect.getY() <= 1) {
 			if (getDocking() == Docking.LEFT_DOWN) {
 				setDocking(Docking.LEFT_UP);

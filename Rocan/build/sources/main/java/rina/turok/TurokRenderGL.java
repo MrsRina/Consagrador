@@ -6,11 +6,13 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderGlobal;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.client.renderer.*;
+import net.minecraft.client.Minecraft;
 
 // OpenGL.
 import org.lwjgl.opengl.GL11;
 
 // Java.
+import java.awt.Color;
 import java.util.*;
 
 /**
@@ -20,6 +22,8 @@ import java.util.*;
  *
  **/
 public class TurokRenderGL {
+	private static final Minecraft mc = Minecraft.getMinecraft();
+
 	public static void color(int r, int g, int b, int a) {
 		GL11.glColor4f((float) r / 255, (float) g / 255, (float) b / 255, (float) a / 255);
 	}
@@ -180,7 +184,7 @@ public class TurokRenderGL {
 		GL11.glPopMatrix();
 	}
 
-	public static void init2D() {
+	public static void prepare2D() {
 		GL11.glPushMatrix();
 
 		GL11.glEnable(GL11.GL_TEXTURE_2D);
@@ -197,5 +201,60 @@ public class TurokRenderGL {
 		GlStateManager.enableTexture2D();
 		GlStateManager.enableBlend();
 		GlStateManager.enableDepth();
+	}
+
+	public static void prepare3D(float size) {
+		GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+		GlStateManager.tryBlendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+		GlStateManager.glLineWidth(size);
+		GlStateManager.disableTexture2D();
+		GlStateManager.depthMask(false);
+		GlStateManager.enableBlend();
+		GlStateManager.disableDepth();
+		GlStateManager.disableLighting();
+		GlStateManager.disableCull();
+		GlStateManager.enableAlpha();
+		GlStateManager.color(1, 1, 1);
+	}
+
+	public static void release3D() {
+		GlStateManager.enableCull();
+		GlStateManager.depthMask(true);
+		GlStateManager.enableTexture2D();
+		GlStateManager.enableBlend();
+		GlStateManager.enableDepth();
+	}
+
+	public static void renderLineInterpolated(double from_x, double from_y, double from_z, double to_x, double to_y, double to_z, double up, int r, int g, int b, int a) {
+		Color color = new Color(r, g, b, a);
+
+		GL11.glBlendFunc(770, 771);
+		GL11.glEnable(GL11.GL_BLEND);
+		GL11.glLineWidth(1.5f);
+		GL11.glDisable(GL11.GL_TEXTURE_2D);
+		GL11.glDisable(GL11.GL_DEPTH_TEST);
+		GL11.glDepthMask(false);
+		GL11.glColor4f(color.getRed() / 255.0f, color.getGreen() / 255.0f, color.getBlue() / 255.0f, color.getAlpha() / 255.0f);
+		GlStateManager.disableLighting();
+		GL11.glLoadIdentity();
+
+		mc.entityRenderer.orientCamera(mc.getRenderPartialTicks());
+
+		GL11.glBegin(GL11.GL_LINES);
+		{
+			GL11.glVertex3d(from_x, from_y, from_z);
+			GL11.glVertex3d(to_x, to_y, to_z);
+			GL11.glVertex3d(to_x, to_y, to_z);
+			GL11.glVertex3d(to_x, to_y + up, to_z);
+		}
+
+		GL11.glEnd();
+		GL11.glEnable(GL11.GL_TEXTURE_2D);
+		GL11.glEnable(GL11.GL_DEPTH_TEST);
+		GL11.glDepthMask(true);
+		GL11.glDisable(GL11.GL_BLEND);
+		GL11.glColor3d(1d,1d,1d);
+
+		GlStateManager.enableLighting();
 	}
 }

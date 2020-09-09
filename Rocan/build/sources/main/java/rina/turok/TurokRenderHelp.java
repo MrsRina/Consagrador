@@ -11,6 +11,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.client.renderer.*;
 import net.minecraft.client.Minecraft;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.entity.Entity;
 
 // Java.
 import java.awt.Color;
@@ -29,7 +31,7 @@ import static org.lwjgl.opengl.GL11.*;
 public class TurokRenderHelp {
 	private static final Minecraft mc = Minecraft.getMinecraft();
 
-	public static void prepare() {
+	public static void prepare(float line) {
 		GlStateManager.pushMatrix();
 		GlStateManager.enableBlend();
 		GlStateManager.disableDepth();
@@ -38,7 +40,7 @@ public class TurokRenderHelp {
 		GlStateManager.depthMask(false);
 		glEnable(GL_LINE_SMOOTH);
 		glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
-		glLineWidth(1.5f);
+		glLineWidth(line);
 	}
 
 	public static void release() {
@@ -51,14 +53,22 @@ public class TurokRenderHelp {
 	}
 
 	public static void render3DSolid(ICamera camera, BlockPos blockpos, int r, int g, int b, int a) {
-		render3DSolid(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a);
+		render3DSolid(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a, 1.0f);
 	}
 
 	public static void render3DSolid(ICamera camera, int x, int y, int z, int r, int g, int b, int a) {
-		render3DSolid(camera, x, y, z, 1, 1, 1, r, g, b, a);
+		render3DSolid(camera, x, y, z, 1, 1, 1, r, g, b, a, 1.0f);
 	}
 
-	public static void render3DSolid(ICamera camera, int x, int y, int z, int offset_x, int offset_y, int offset_z, int r, int g, int b, int a) {
+	public static void render3DSolid(ICamera camera, BlockPos blockpos, int r, int g, int b, int a, float line) {
+		render3DSolid(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a, line);
+	}
+
+	public static void render3DSolid(ICamera camera, int x, int y, int z, int r, int g, int b, int a, float line) {
+		render3DSolid(camera, x, y, z, 1, 1, 1, r, g, b, a, line);
+	}
+
+	public static void render3DSolid(ICamera camera, int x, int y, int z, int offset_x, int offset_y, int offset_z, int r, int g, int b, int a, float line) {
 		Color color = new Color(r, g, b, a);
 
 		final AxisAlignedBB bb = new AxisAlignedBB(
@@ -87,7 +97,7 @@ public class TurokRenderHelp {
 			bb.maxZ + mc.getRenderManager().viewerPosZ))) {
 			// Render.
 			// Prepare.
-			prepare();
+			prepare(line);
 
 			// Render global.
 			RenderGlobal.renderFilledBox(bb.minX, bb.minY, bb.minZ, bb.maxX, bb.maxY, bb.maxZ, color.getRed() / 255.0f, color.getGreen() / 255.0f, color.getBlue() / 255.0f, color.getAlpha() / 255.0f);
@@ -98,14 +108,22 @@ public class TurokRenderHelp {
 	}
 
 	public static void render3DOutline(ICamera camera, BlockPos blockpos, int r, int g, int b, int a) {
-		render3DOutline(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a);
+		render3DOutline(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a, 1.0f);
 	}
 
 	public static void render3DOutline(ICamera camera, int x, int y, int z, int r, int g, int b, int a) {
-		render3DOutline(camera, x, y, z, 1, 1, 1, r, g, b, a);
+		render3DOutline(camera, x, y, z, 1, 1, 1, r, g, b, a, 1.0f);
 	}
 
-	public static void render3DOutline(ICamera camera, int x, int y, int z, int offset_x, int offset_y, int offset_z, int r, int g, int b, int a) {
+	public static void render3DOutline(ICamera camera, BlockPos blockpos, int r, int g, int b, int a, float line) {
+		render3DOutline(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a, line);
+	}
+
+	public static void render3DOutline(ICamera camera, int x, int y, int z, int r, int g, int b, int a, float line) {
+		render3DOutline(camera, x, y, z, 1, 1, 1, r, g, b, a, line);
+	}
+
+	public static void render3DOutline(ICamera camera, int x, int y, int z, int offset_x, int offset_y, int offset_z, int r, int g, int b, int a, float line) {
 		Color color = new Color(r, g, b, a);
 
 		final AxisAlignedBB bb = new AxisAlignedBB(
@@ -134,7 +152,7 @@ public class TurokRenderHelp {
 			bb.maxZ + mc.getRenderManager().viewerPosZ))) {
 			// Render.
 			// Prepare.
-			prepare();
+			prepare(line);
 
 			// Render global.
 			RenderGlobal.drawBoundingBox(bb.minX, bb.minY, bb.minZ, bb.maxX, bb.maxY, bb.maxZ, color.getRed() / 255.0f, color.getGreen() / 255.0f, color.getBlue() / 255.0f, color.getAlpha() / 255.0f);
@@ -142,5 +160,31 @@ public class TurokRenderHelp {
 			// Release.
 			release();
 		}
+	}
+
+	public static double interpolate(double now, double then) {
+		return then + (now - then) * mc.getRenderPartialTicks();
+	}
+
+	public static double[] interpolate(Entity entity) {
+		double x = interpolate(entity.posX, entity.lastTickPosX) - mc.getRenderManager().renderPosX;
+		double y = interpolate(entity.posY, entity.lastTickPosY) - mc.getRenderManager().renderPosY;
+		double z = interpolate(entity.posZ, entity.lastTickPosZ) - mc.getRenderManager().renderPosZ;
+
+		return new double[] {
+			x, y, z
+		};
+	}
+
+	public static void renderTracer(Entity entity, int r, int g, int b, int a) {
+		double[] xyz = interpolate(entity);
+
+		renderTracer(xyz[0], xyz[1], xyz[2], entity.height, r, g, b, a);
+	}
+
+	public static void renderTracer(double x, double y, double z, double up, int r, int g, int b, int a) {
+		Vec3d eyes = new Vec3d(0, 0, 1).rotatePitch(-(float) Math.toRadians(mc.player.rotationPitch)).rotateYaw(-(float) Math.toRadians(mc.player.rotationYaw));
+
+		TurokRenderGL.renderLineInterpolated(eyes.x, eyes.y + mc.player.getEyeHeight(), eyes.z, x, y, z, up, r, g, b, a);
 	}
 }

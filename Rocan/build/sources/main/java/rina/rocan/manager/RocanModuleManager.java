@@ -95,6 +95,7 @@ public class RocanModuleManager {
 		addModule(new RocanXCarry());
 
 		// Misc.
+		addModule(new RocanChatSuffix());
 		addModule(new RocanFastUtil());
 
 		// GUI.
@@ -105,6 +106,7 @@ public class RocanModuleManager {
 		addHUD(new RocanVelocitySpeed());
 		addHUD(new RocanCoordinates());
 		addHUD(new RocanModuleList());
+		addHUD(new RocanInventory());
 		addHUD(new RocanWelcome());
 	}
 
