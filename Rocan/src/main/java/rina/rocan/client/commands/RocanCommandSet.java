@@ -119,7 +119,7 @@ public class RocanCommandSet extends RocanCommand {
 
 			RocanUtilClient.sendNotifyClient(setting_requested.getName() + " value to " + setting_requested.getDouble());
 		} else if (setting_requested.getType() == RocanSetting.SettingType.SETTING_LIST) {
-			if (isTrueItemList(setting_requested.getList(), value_2)) {
+			if (setting_requested.getList().indexOf(value_2) != -1) {
 				setting_requested.setString(value_2);
 			
 				RocanUtilClient.sendNotifyClient(setting_requested.getName() + " value to " + setting_requested.getString());
@@ -129,17 +129,5 @@ public class RocanCommandSet extends RocanCommand {
 		}
 
 		return true;
-	}
-
-	public boolean isTrueItemList(String[] list, String value) {
-		for (int i = 0; i < list.length; i++) {
-			String item = list[i];
-
-			if (item.equals(value)) {
-				return true;
-			}
-		}
-
-		return false;
 	}
 }

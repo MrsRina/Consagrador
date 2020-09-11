@@ -22,6 +22,7 @@ import rina.rocan.manager.RocanSettingManager;
 import rina.rocan.manager.RocanModuleManager;
 import rina.rocan.manager.RocanEventManager;
 import rina.rocan.manager.RocanFileManager;
+import rina.rocan.manager.RocanFriendManager;
 
 // Turok.
 import rina.turok.TurokStructureColor;
@@ -49,6 +50,7 @@ public class Rocan {
 	private RocanCommandManager command_manager;
 	private RocanEventManager event_manager;
 	private RocanFileManager file_manager;
+	private RocanFriendManager friend_manager;
 
 	// EventBus.
 	private EventManager pomelo_event_manager;
@@ -67,6 +69,7 @@ public class Rocan {
 		event_manager        = new RocanEventManager();
 		pomelo_event_manager = new AnnotatedEventManager();
 		file_manager         = new RocanFileManager();
+		friend_manager       = new RocanFriendManager("Friends rocan!!!");
 
 		// Register events.
 		MinecraftForge.EVENT_BUS.register(command_manager);
@@ -133,6 +136,10 @@ public class Rocan {
 
 	public static RocanFileManager getFileManager() {
 		return getInstance().file_manager;
+	}
+
+	public static RocanFriendManager getFriendManager() {
+		return getInstance().friend_manager;
 	}
 
 	public static EventManager getPomeloEventManager() {

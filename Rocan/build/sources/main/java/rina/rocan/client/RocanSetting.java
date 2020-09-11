@@ -6,6 +6,7 @@ import net.minecraft.client.Minecraft;
 // Java.
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
+import java.util.ArrayList;
 import java.awt.*;
 
 // Rocan.
@@ -37,7 +38,7 @@ public class RocanSetting<T> {
 
 	private double value_double;
 
-	private String[] values;
+	private ArrayList<String> values;
 
 	private double min, max;
 
@@ -98,7 +99,7 @@ public class RocanSetting<T> {
 		this.max = max;
 	}
 
-	public RocanSetting(RocanModule master, String[] details, String value, String[] values) {
+	public RocanSetting(RocanModule master, String[] details, String value, String[] list_values) {
 		this.master = master;
 
 		this.name        = details[0];
@@ -106,7 +107,11 @@ public class RocanSetting<T> {
 		this.description = details[2];
 
 		this.value_string = value;
-		this.values       = values;
+		this.values       = new ArrayList<>();
+
+		for (String items : list_values) {
+			this.values.add(items);
+		}
 	}
 
 	public void setBoolean(boolean value) {
@@ -125,8 +130,16 @@ public class RocanSetting<T> {
 		this.value_double = value;
 	}
 
-	public void setValues(String[] values) {
-		this.values = values;
+	public void setValues(String[] list_values) {
+		if (this.values == null) {
+			this.values = new ArrayList<>();
+		}
+
+		this.values.clear();
+		
+		for (String items : list_values) {
+			this.values.add(items);
+		}
 	}
 
 	public void setType(SettingType type) {
@@ -134,51 +147,51 @@ public class RocanSetting<T> {
 	}
 
 	public RocanModule getMaster() {
-		return master;
+		return this.master;
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public String getTag() {
-		return tag;
+		return this.tag;
 	}
 
 	public String getDescription() {
-		return description;
+		return this.description;
 	}
 
 	public SettingType getType() {
-		return type;
+		return this.type;
 	}
 
 	public boolean getBoolean() {
-		return value_boolean;
+		return this.value_boolean;
 	}
 
 	public String getString() {
-		return value_string;
+		return this.value_string;
 	}
 
 	public int getInteger() {
-		return value_integer;
+		return this.value_integer;
 	}
 
 	public double getDouble() {
-		return value_double;
+		return this.value_double;
 	}
 
-	public String[] getList() {
-		return values;
+	public ArrayList<String> getList() {
+		return this.values;
 	}
 
 	public double getMin() {
-		return min;
+		return this.min;
 	}
 
 	public double getMax() {
-		return max;
+		return this.max;
 	}
 
 	public enum SettingType {

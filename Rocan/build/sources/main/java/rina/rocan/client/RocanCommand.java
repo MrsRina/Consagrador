@@ -23,6 +23,8 @@ public class RocanCommand {
 	private String command;
 	private String description;
 
+	public static final Minecraft mc = Minecraft.getMinecraft();
+
 	public RocanCommand(String command, String description) {
 		this.command     = command;
 		this.description = description;

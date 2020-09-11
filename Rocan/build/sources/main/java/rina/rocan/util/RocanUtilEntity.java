@@ -3,6 +3,8 @@ package rina.rocan.util;
 // Minecraft.
 import net.minecraftforge.client.event.RenderWorldLastEvent;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.entity.Entity;
@@ -33,5 +35,19 @@ public class RocanUtilEntity {
 
 	public static Vec3d getInterpolatedPos(Entity entity, double ticks) {
 		return new Vec3d(entity.lastTickPosX, entity.lastTickPosY, entity.lastTickPosZ).add(getLastTickPos(entity, ticks, ticks, ticks));
+	}
+
+	public static EntityPlayerSP getEntityPlayerSPOnChunkByName(String name) {
+		for (Entity entity : RocanUtilMinecraftHelper.getMinecraft().world.loadedEntityList) {
+			if (!(entity instanceof EntityLivingBase && entity instanceof EntityPlayerSP)) {
+				continue;
+			}
+
+			EntityPlayerSP entity_player_SP = (EntityPlayerSP) entity;  
+
+			return entity_player_SP;
+		}
+
+		return null;
 	}
 }

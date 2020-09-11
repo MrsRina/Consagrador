@@ -1,7 +1,7 @@
 package rina.rocan.gui.component;
 
 // Java.
-import java.*;
+import java.util.*;
 
 // GUI.
 import rina.rocan.gui.widget.RocanWidget;
@@ -66,7 +66,7 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		this.rect.setWidth(this.master.getWidth());
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 
-		this.index = getIndexOf(this.setting.getString());
+		this.index = 0;
 
 		resetAllEvent();
 
@@ -127,18 +127,6 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		return this.rect.getTag();
 	}
 
-	public int getIndexOf(String string) {
-		for (int i = 0; i < this.setting.getList().length; i++) {
-			String item = this.setting.getList()[i];
-
-			if (item.equals(string)) {
-				return i;
-			}
-		}
-
-		return -1;
-	}
-
 	public int getX() {
 		return this.rect.getX();
 	}
@@ -184,7 +172,7 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 
 				setMouseClick(true);
 
-				if ((this.index + 1) >= this.setting.getList().length) {
+				if ((this.index + 1) >= this.setting.getList().size()) {
 					this.index = 0;
 				} else {
 					this.index++;
@@ -221,10 +209,6 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		} else {
 			setMousePassing(false);
 		}
-
-		if (isStarted()) {
-			setStarted(false);
-		}
 	}
 
 	public void updateAction(int x, int y) {
@@ -235,9 +219,12 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	
 		if (isStarted()) {
-			this.index = getIndexOf(this.setting.getString());
+			this.index = this.setting.getList().indexOf(this.setting.getString());
+
+			// miiss.
+			setStarted(false);
 		} else {
-			this.setting.setString(this.setting.getList()[this.index]);
+			this.setting.setString(((ArrayList<String>) this.setting.getList()).get(this.index));
 		}
 	}
 }

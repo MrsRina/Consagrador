@@ -82,12 +82,13 @@ public class RocanModuleManager {
 		addModule(new RocanOffhandUtil());
 
 		// Movement.
+		addModule(new RocanStep());
 		addModule(new RocanGUIWalk());
 		addModule(new RocanStrafe());
-		addModule(new RocanStep());
 
 		// Render.
 		addModule(new RocanBlockHighlight());
+		addModule(new RocanPlayerTracer());
 		addModule(new RocanPlayerESP());
 		addModule(new RocanHUDRender());
 
@@ -95,19 +96,19 @@ public class RocanModuleManager {
 		addModule(new RocanXCarry());
 
 		// Misc.
-		addModule(new RocanChatSuffix());
 		addModule(new RocanFastUtil());
+		addModule(new RocanChatSuffix());
 
 		// GUI.
-		addModule(new RocanHUDEditor());
 		addModule(new RocanGUI());
+		addModule(new RocanHUDEditor());
 
 		// HUD.
-		addHUD(new RocanVelocitySpeed());
-		addHUD(new RocanCoordinates());
-		addHUD(new RocanModuleList());
-		addHUD(new RocanInventory());
 		addHUD(new RocanWelcome());
+		addHUD(new RocanModuleList());
+		addHUD(new RocanCoordinates());
+		addHUD(new RocanInventory());
+		addHUD(new RocanVelocitySpeed());
 	}
 
 	public void addModule(RocanModule module) {
