@@ -200,4 +200,12 @@ public class RocanComponentWidgetSettingBoolean extends RocanWidget {
 		this.rect.setWidth(this.master.getWidth());
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	}
-}
+
+	@Override
+	public void updateDescriptionListener() {
+		if (isMousePassing()) {
+			if (Rocan.getTimer().isPassedMS(2500)) {
+				this.absolute.renderStringMouse(this.setting.getDescription());
+			}
+		}
+	}}

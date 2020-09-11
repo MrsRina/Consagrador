@@ -306,4 +306,10 @@ public class RocanFrame {
 			this.rect.setY(y - getMoveY());
 		}
 	}
+
+	public void updateDescriptionListener() {
+		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
+			module_buttons.updateDescriptionListener();
+		}
+	}
 }

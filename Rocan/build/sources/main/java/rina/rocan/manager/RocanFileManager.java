@@ -17,6 +17,7 @@ import java.io.*;
 // Client.
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
+import rina.rocan.client.RocanFriend;
 import rina.rocan.client.RocanHUD;
 
 // GUI.
@@ -37,8 +38,9 @@ public class RocanFileManager {
 	private String PATH_MAIN    = "rocan/";
 	private String PATH_MODULES = PATH_MAIN + "modules/";
 
-	private String PATH_FILE_CLIENT = PATH_MAIN + "client.json";
-	private String PATH_FILE_MATRIX = PATH_MAIN + "matrix.json";
+	private String PATH_FILE_CLIENT  = PATH_MAIN + "client.json";
+	private String PATH_FILE_MATRIX  = PATH_MAIN + "matrix.json";
+	private String PATH_FILE_FRIENDS = PATH_MAIN + "friends.json";
 
 	public RocanFileManager() {
 		try {
@@ -54,6 +56,7 @@ public class RocanFileManager {
 			this.loadConfiguration();
 			this.loadModules();
 			this.loadMatrix();
+			this.loadFriends();
 		} catch (IOException exc) {
 			// exc.printStackTrace();
 		}
@@ -67,6 +70,7 @@ public class RocanFileManager {
 			this.saveConfiguration();
 			this.saveModules();
 			this.saveMatrix();
+			this.saveFriends();
 		} catch (IOException exc) {
 			// exc.printStackTrace();
 		}
@@ -305,6 +309,54 @@ public class RocanFileManager {
 				RocanHUD hud = (RocanHUD) Rocan.getModuleManager().getModuleByTag(element);
 
 				Rocan.getModuleManager().addHUDListRightDown(hud);
+			}
+		}
+
+		JSON_FILE.close();
+	}
+
+	public void saveFriends() throws IOException {
+		Gson GSON_BUILDER      = new GsonBuilder().setPrettyPrinting().create();
+		JsonParser GSON_PARSER = new JsonParser();
+
+		JsonObject MAIN_JSON = new JsonObject();
+
+		// We create array list to HUDs dock.
+		JsonArray MAIN_FRIENDS = new JsonArray();
+
+		for (RocanFriend friends : Rocan.getFriendManager().getFriendList()) {
+			MAIN_FRIENDS.add(friends.getName());
+		}
+
+		MAIN_JSON.add("friends", MAIN_FRIENDS);
+
+		JsonElement JSON_PRETTY_FORMAT = GSON_PARSER.parse(MAIN_JSON.toString());
+
+		String STRING_JSON = GSON_BUILDER.toJson(JSON_PRETTY_FORMAT);
+
+		cleanFile(PATH_FILE_FRIENDS);
+		verifyFile(PATH_FILE_FRIENDS);
+
+		OutputStreamWriter file = new OutputStreamWriter(new FileOutputStream(PATH_FILE_FRIENDS), "UTF-8");
+
+		file.write(STRING_JSON);
+		file.close();
+	}
+
+	public void loadFriends() throws IOException {
+		InputStream JSON_FILE = Files.newInputStream(Paths.get(PATH_FILE_FRIENDS));
+
+		JsonObject MAIN_JSON = new JsonParser().parse(new InputStreamReader(JSON_FILE)).getAsJsonObject();
+
+		Rocan.getModuleManager().clearHUDDockList();
+
+		if (MAIN_JSON.get("friends") != null) {
+			JsonArray FRIEND_LIST = MAIN_JSON.get("friends").getAsJsonArray();
+
+			for (JsonElement elements : FRIEND_LIST) {
+				String element = elements.getAsString();
+
+				Rocan.getFriendManager().addFriend(element);
 			}
 		}
 

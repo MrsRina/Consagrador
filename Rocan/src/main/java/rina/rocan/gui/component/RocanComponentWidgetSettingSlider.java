@@ -237,4 +237,13 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 
 		return decimal.doubleValue();
 	}
+
+	@Override
+	public void updateDescriptionListener() {
+		if (isMousePassing() && !isMouseClicked()) {
+			if (Rocan.getTimer().isPassedMS(2500)) {
+				this.absolute.renderStringMouse(this.setting.getDescription());
+			}
+		}
+	}
 }

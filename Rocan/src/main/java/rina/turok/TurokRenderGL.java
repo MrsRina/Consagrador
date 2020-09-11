@@ -225,12 +225,12 @@ public class TurokRenderGL {
 		GlStateManager.enableDepth();
 	}
 
-	public static void renderLineInterpolated(double from_x, double from_y, double from_z, double to_x, double to_y, double to_z, double up, int r, int g, int b, int a) {
+	public static void renderLineInterpolated(double from_x, double from_y, double from_z, double to_x, double to_y, double to_z, double up, int r, int g, int b, int a, float line) {
 		Color color = new Color(r, g, b, a);
 
 		GL11.glBlendFunc(770, 771);
 		GL11.glEnable(GL11.GL_BLEND);
-		GL11.glLineWidth(1.5f);
+		GL11.glLineWidth(line);
 		GL11.glDisable(GL11.GL_TEXTURE_2D);
 		GL11.glDisable(GL11.GL_DEPTH_TEST);
 		GL11.glDepthMask(false);
@@ -253,7 +253,7 @@ public class TurokRenderGL {
 		GL11.glEnable(GL11.GL_DEPTH_TEST);
 		GL11.glDepthMask(true);
 		GL11.glDisable(GL11.GL_BLEND);
-		GL11.glColor3d(1d,1d,1d);
+		GL11.glColor3d(1d, 1d, 1d);
 
 		GlStateManager.enableLighting();
 	}

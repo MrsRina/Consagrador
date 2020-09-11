@@ -53,8 +53,6 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 	private boolean event_mouse_passing;
 	private boolean event_mouse_clicked;
 
-	private boolean event_widget_able_to_type;
-
 	private boolean maximum_length;
 
 	private GuiTextField entry;
@@ -77,8 +75,6 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 		this.save_x = 0;
 		this.save_y = next_y;
 
-		this.event_widget_able_to_type = false;
-
 		this.maximum_length = false;
 
 		this.rect.setWidth(this.master.getWidth());
@@ -86,7 +82,7 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 	
 		resetAllEvent();
 
-		this.entry = new GuiTextField(0, RocanUtilMinecraftHelper.getMinecraft().fontRenderer, this.rect.getX(), this.rect.getY(), this.rect.getWidth(), this.rect.getHeight());
+		this.entry = new GuiTextField(0, RocanUtilMinecraftHelper.getMinecraft().fontRenderer, 0, 0, 0, 0);
 		this.entry.setText(this.setting.getString());
 
 		this._string_entry = "";
@@ -129,10 +125,6 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 
 	public void setMouseClick(boolean state) {
 		this.event_mouse_clicked = state;
-	}
-
-	public void setAbleToType(boolean state) {
-		this.event_widget_able_to_type = state;
 	}
 
 	public void setInMaximumLength(boolean state) {
@@ -183,41 +175,40 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 		return this.event_mouse_clicked;
 	}
 
-	public boolean isAbleToType() {
-		return this.event_widget_able_to_type;
-	}
-
 	public boolean isMaximumLength() {
 		return this.maximum_length;
 	}
 
 	public void keyboard(char char_, int key) {
-		if (isAbleToType()) {
+		if (this.entry.isFocused()) {
 			this.entry.textboxKeyTyped(char_, key);
 		}
 	}
 
 	public void refreshFocus(int x, int y, int mouse) {
 		if (mouse == 0) {
-			if (isAbleToType()) {
-				setAbleToType(false);
+			if (this.entry.isFocused()) {
+				this.entry.setFocused(false);
+			}
+		}
+
+		if (mouse == 1) {
+			if (this.entry.isFocused()) {
+				this.entry.setFocused(false);
 			}
 		}
 	}
 
 	public void click(int mouse) {
-		this.entry.mouseClicked(this.absolute.getMouseX(), this.absolute.getMouseY(), mouse);
-
 		if (mouse == 0) {
-			setAbleToType(false);
+			this.entry.setFocused(false);
 
 			if (isMousePassing()) {
-				setAbleToType(true);
-
 				this.master.getMaster().setFrameCancelDrag(true);
 
 				setMouseClick(true);
-				setAbleToType(true);
+
+				this.entry.setFocused(true);
 			}
 		}
 	}
@@ -233,7 +224,7 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 	public void render() {
 		updateAction(this.absolute.getMouseX(), this.absolute.getMouseY());
 
-		if (isAbleToType()) {
+		if (this.entry.isFocused()) {
 			TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
 			TurokRenderGL.drawSolidRect(this.rect);
 
@@ -273,12 +264,7 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 		this.rect.setWidth(this.master.getWidth());
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 
-		this.entry.x      = this.rect.getX() + 1;
-		this.entry.y      = this.rect.getY() + 1;
-		this.entry.width  = this.rect.getWidth() - 2;
-		this.entry.height = this.rect.getHeight() - 2;
-
-		if (isAbleToType()) {
+		if (this.entry.isFocused()) {
 			this.tick_to_entry++;
 
 			if (this.tick_to_entry >= 30) {
@@ -289,6 +275,15 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 				this._string_entry = "";
 
 				this.tick_to_entry = 0;
+			}
+		}
+	}
+
+	@Override
+	public void updateDescriptionListener() {
+		if (isMousePassing() && !this.entry.isFocused()) {
+			if (Rocan.getTimer().isPassedMS(2500)) {
+				this.absolute.renderStringMouse(this.setting.getDescription());
 			}
 		}
 	}

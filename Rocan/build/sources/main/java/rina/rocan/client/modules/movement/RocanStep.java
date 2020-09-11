@@ -31,7 +31,7 @@ public class RocanStep extends RocanModule {
 	RocanSetting size_block = createSetting(new String[] {"Block", "StepBlock", "Size of block to step."}, "Two", new String[] {"One", "Two"});
 
 	public RocanStep() {
-		super(new String[] {"Step", "Step", "Bypass 1 or 2 blocks."}, Category.ROCAN_MOVEMENT);
+		super(new String[] {"Step", "Step", "Make you step 1 or 2 blocks."}, Category.ROCAN_MOVEMENT);
 	}
 
 	private final double[] one_block_height = {
@@ -44,51 +44,41 @@ public class RocanStep extends RocanModule {
 
 	private double[] selected = new double[0];
 
-	private int tickness;
+	// Packets.
+	private int packets;
 
-	@Listener
-	public void onUpdateWalkingEvent(RocanEventPlayerUpdateWalking event) {
-		// We call PRE event.
-		if (event.getStage() == RocanEventPlayerUpdateWalking.EventStage.PRE) {
-			if (size_block.getString().equals("One")) {
-				selected = one_block_height;
-			} else if (size_block.getString().equals("Two")) {
-				selected = two_block_height;
-			}
-
-			if (mc.player.collidedHorizontally && mc.player.onGround) {
-				tickness++;
-			}
-
-			final AxisAlignedBB bb = mc.player.getEntityBoundingBox();
-
-			if (isNotAirReadBlock(bb)) {
-				return;
-			}
-
-			if (mc.player.onGround && !mc.player.isInsideOfMaterial(Material.WATER) && !mc.player.isInsideOfMaterial(Material.LAVA) && !mc.player.isInWeb && mc.player.collidedVertically && mc.player.fallDistance == 0 && !mc.gameSettings.keyBindJump.pressed && mc.player.collidedHorizontally && !mc.player.isOnLadder() && tickness > selected.length - 2) {
-				for (double position : selected) {
-					mc.player.connection.sendPacket(new CPacketPlayer.Position(mc.player.posX, mc.player.posY + position, mc.player.posZ, true));
-				}
-
-				mc.player.setPosition(mc.player.posX, mc.player.posY + selected[selected.length - 1], mc.player.posZ);
-			
-				tickness = 0;
-			}
+	@Override
+	public void onUpdate() {
+		if (size_block.getString().equals("One")) {
+			selected = one_block_height;
+		} else if (size_block.getString().equals("Two")) {
+			selected = two_block_height;
 		}
-	}
 
-	public boolean isNotAirReadBlock(AxisAlignedBB bb) {
+		if (mc.player.collidedHorizontally && mc.player.onGround) {
+			packets++;
+		}
+
+		final AxisAlignedBB bb = mc.player.getEntityBoundingBox();
+
 		for (int x = MathHelper.floor(bb.minX); x < MathHelper.floor(bb.maxX + 1.0d); x++) {
 			for (int z = MathHelper.floor(bb.minZ); z < MathHelper.floor(bb.maxZ + 1.0d); z++) {
 				final Block block = mc.world.getBlockState(new BlockPos(x, bb.maxY + 1, z)).getBlock();
 
 				if (!(block instanceof BlockAir)) {
-					return true;
+					return;
 				}
 			}
 		}
 
-		return false;
+		if (mc.player.onGround && !mc.player.isInsideOfMaterial(Material.WATER) && !mc.player.isInsideOfMaterial(Material.LAVA) && !mc.player.isInWeb && mc.player.collidedVertically && mc.player.fallDistance == 0 && !mc.gameSettings.keyBindJump.pressed && mc.player.collidedHorizontally && !mc.player.isOnLadder() && packets > selected.length - 2) {
+			for (double position : selected) {
+				mc.player.connection.sendPacket(new CPacketPlayer.Position(mc.player.posX, mc.player.posY + position, mc.player.posZ, true));
+			}
+
+			mc.player.setPosition(mc.player.posX, mc.player.posY + selected[selected.length - 1], mc.player.posZ);
+		
+			packets = 0;
+		}
 	}
 }

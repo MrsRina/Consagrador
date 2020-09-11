@@ -39,4 +39,7 @@ public abstract class RocanWidget {
 	public void click(int mouse) {}
 	public void release(int mouse) {}
 	public void render() {}
+
+	// Listener to description.
+	public void updateDescriptionListener() {}
 }

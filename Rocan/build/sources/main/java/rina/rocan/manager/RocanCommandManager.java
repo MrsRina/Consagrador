@@ -33,6 +33,7 @@ public class RocanCommandManager {
 		addCommand(new RocanCommandSet());
 		addCommand(new RocanCommandClient());
 		addCommand(new RocanCommandFriend());
+		addCommand(new RocanCommandEnemy());
 	}
 
 	public void addCommand(RocanCommand command) {

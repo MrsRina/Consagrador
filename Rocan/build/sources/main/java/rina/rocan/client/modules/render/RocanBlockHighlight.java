@@ -40,7 +40,7 @@ public class RocanBlockHighlight extends RocanModule {
 	
 	// things...
 	RocanSetting alpha_outline_color = createSetting(new String[] {"Alpha Outline", "BlockHighlightAlphaOutline", "Change color ALPHA to outline."}, 255, 0, 255);
-	RocanSetting line_outline_width  = createSetting(new String[] {"Line Outline Width", "BlockHighlightOutlineWidth", "Width outline for render outline."}, 0.1, 1.0, 3.0);
+	RocanSetting line_outline_width  = createSetting(new String[] {"Line Outline Width", "BlockHighlightOutlineWidth", "Width outline for render outline."}, 1.0, 1.0, 3.0);
 
 	int r;
 	int g;

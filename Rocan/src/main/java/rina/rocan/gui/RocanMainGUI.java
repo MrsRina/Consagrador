@@ -6,7 +6,6 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderGlobal;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.client.renderer.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
@@ -23,6 +22,7 @@ import java.awt.*;
 
 // Turok.
 import rina.turok.TurokRenderGL;
+import rina.turok.TurokString;
 import rina.turok.TurokRect;
 
 // GUI.
@@ -239,6 +239,7 @@ public class RocanMainGUI extends GuiScreen {
 		if (Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
 			this.frame_hud.render();
 			this.frame_hud.refreshFrame();
+			this.frame_hud.updateDescriptionListener();
 
 			Rocan.getModuleManager().renderScreenHUD(x, y, partial_ticks);
 		} else {
@@ -253,6 +254,7 @@ public class RocanMainGUI extends GuiScreen {
 			}
 
 			this.focused_frame.refreshFrame();
+			this.focused_frame.updateDescriptionListener();
 		}
 
 		GL11.glDisable(GL11.GL_TEXTURE_2D);
@@ -277,6 +279,19 @@ public class RocanMainGUI extends GuiScreen {
 
 	public void setCancelToCloseGUI(boolean state) {
 		this.event_cancel_close_gui = state;
+	}
+
+	public void renderStringMouse(String string) {
+		int offset_x = getMouseX() + 5;
+		int offset_y = getMouseY() + 0;
+
+		int width  = 1 + TurokString.getStringWidth(string, Rocan.getClientGUITheme().smooth_font) + 1;
+		int height = 1 + TurokString.getStringHeight(string, Rocan.getClientGUITheme().smooth_font) + 2; // 1 + 1;
+
+		TurokRenderGL.color(0, 0, 0, 100);
+		TurokRenderGL.drawRoundedRect(offset_x, offset_y, width, height, 1);
+
+		TurokString.renderString(string, offset_x + 1, offset_y + 1, 255, 255, 255, true, Rocan.getClientGUITheme().smooth_font);
 	}
 
 	public ArrayList<RocanFrame> getFrameList() {

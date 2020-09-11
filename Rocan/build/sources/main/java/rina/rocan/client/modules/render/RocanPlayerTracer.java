@@ -54,6 +54,7 @@ public class RocanPlayerTracer extends RocanModule {
 	RocanSetting range                = createSetting(new String[] {"Range", "PlayerTracerRange", "Range to render."}, 200, 0, 200);
 	RocanSetting range_to_stop_render = createSetting(new String[] {"Range To Stop Render", "PlayerTracerToStopRender", "Range to stop] render."}, 1, 0, 10);
 
+	RocanSetting track_type_player   = createSetting(new String[] {"Tracker", "PlayerTracerTracker", "Type tracker."}, "Alls", new String[] {"Alls", "Enemy", "none"});
 	RocanSetting render_friend_color = createSetting(new String[] {"Render Friend Color", "PlayerTracerRenderFriendColor", "Enable color HUD to render."}, true);
 
 	// RGB effecttt.
@@ -65,12 +66,15 @@ public class RocanPlayerTracer extends RocanModule {
 	RocanSetting render_color_blue  = createSetting(new String[] {"Blue", "PlayerTracerBlue", "Render color blue."}, 190, 0, 255);
 	RocanSetting render_color_alpha = createSetting(new String[] {"Alpha", "PlayerTracerAlpha", "Render color alpha."}, 255, 0, 255);
 
+	// Line size.
+	RocanSetting line_size = createSetting(new String[] {"Line Size", "PlayerTracerSize", "Line size to render."}, 1.0, 0.0, 3.0);
+
 	int r;
 	int g;
 	int b;
 
 	public RocanPlayerTracer() {
-		super(new String[] {"Tracer Util", "TracerUtil", "Tracer util for render."}, Category.ROCAN_RENDER);
+		super(new String[] {"Player Tracer", "PlayerTracer", "Tracer util for render."}, Category.ROCAN_RENDER);
 	}
 
 	@Override
@@ -102,13 +106,45 @@ public class RocanPlayerTracer extends RocanModule {
 				continue;
 			}
 
-			if (mc.player.getDistance(entity) > range.getInteger() && mc.player.getDistance(entity) < range_to_stop_render.getInteger()) {
+			if (mc.player.getDistance(entity) > range.getInteger() || mc.player.getDistance(entity) < range_to_stop_render.getInteger()) {
 				continue;
 			}
 
-			EntityPlayer player = (EntityPlayer) entity;
-
-			TurokRenderHelp.renderTracer((Entity) player, r, g, b, render_color_alpha.getInteger());
+			verifyRender((EntityPlayer) entity);
 		}
 	}
+
+	public void renderTracer(EntityPlayer player, int r, int g, int b) {
+		TurokRenderHelp.renderTracer(player, r, g, b, render_color_alpha.getInteger(), (float) line_size.getDouble());
+	}
+
+	public void verifyRender(EntityPlayer player) {
+		int veirfy_red   = (render_friend_color.getBoolean() && Rocan.getFriendManager().isFriend(player.getName())) ? Rocan.getClientHUDRed() : r;
+		int veirfy_green = (render_friend_color.getBoolean() && Rocan.getFriendManager().isFriend(player.getName())) ? Rocan.getClientHUDGreen() : g;
+		int veirfy_blue  = (render_friend_color.getBoolean() && Rocan.getFriendManager().isFriend(player.getName())) ? Rocan.getClientHUDBlue() : b;
+
+		switch (track_type_player.getString()) {
+			case "Alls" : {
+				renderTracer(player, veirfy_red, veirfy_green, veirfy_blue);
+
+				break;
+			}
+
+			case "Enemy" : {
+				if (Rocan.getFriendManager().isEnemy(player.getName())) {
+					renderTracer(player, veirfy_red, veirfy_green, veirfy_blue);
+				}
+
+				break;
+			}
+
+			case "none" : {
+				if (Rocan.getFriendManager().isFriend(player.getName())) {
+					renderTracer(player, veirfy_red, veirfy_green, veirfy_blue);
+				}
+
+				break;
+			}
+		}
+	} 
 }

@@ -46,19 +46,19 @@ public class RocanCommandFriend extends RocanCommand {
 		}
 
 		if (verifyIndex(args, 3)) {
-			RocanUtilClient.sendNotifyErrorClient("friend add/new/rem/remove/del/delete name");
+			RocanUtilClient.sendNotifyErrorClient("friend add/new/rem/remove/del/delete/get name/list");
 
 			return true;
 		}
 
 		if (type.equals("null")) {
-			RocanUtilClient.sendNotifyErrorClient("friend add/new/rem/remove/del/delete name");
+			RocanUtilClient.sendNotifyErrorClient("friend add/new/rem/remove/del/delete/get name/list");
 
 			return true;
 		}
 
 		if (friend.equals("null")) {
-			RocanUtilClient.sendNotifyErrorClient("friend add/new/rem/remove/del/delete name");
+			RocanUtilClient.sendNotifyErrorClient("friend add/new/rem/remove/del/delete/get name/list");
 			
 			return true;
 		}
@@ -75,7 +75,13 @@ public class RocanCommandFriend extends RocanCommand {
 				   type.equalsIgnoreCase("delete")) {
 			// Remove.
 			isForAdd = false;
-		} else if (type.equalsIgnoreCase("list")) {
+		} else if (type.equalsIgnoreCase("get")) {
+			if (!friend.equals("list")) {
+				RocanUtilClient.sendNotifyErrorClient("friend add/new/rem/remove/del/delete/get name/list");
+
+				return true;
+			}
+
 			if (Rocan.getFriendManager().getFriendList().isEmpty()) {
 				RocanUtilClient.sendNotifyClient("Empty list :(.");
 
@@ -116,11 +122,7 @@ public class RocanCommandFriend extends RocanCommand {
 
 					return true;
 				} else {
-					if (RocanUtilEntity.getEntityPlayerSPOnChunkByName(friend) == null) {
-						Rocan.getFriendManager().addFriend(friend);
-					} else {
-						Rocan.getFriendManager().addFriend(friend, RocanUtilEntity.getEntityPlayerSPOnChunkByName(friend).getUniqueID().toString());
-					}
+					Rocan.getFriendManager().addFriend(friend);
 
 					RocanUtilClient.sendNotifyClient("Added " + Rocan.getDarkGreenColor() + friend + Rocan.setDefaultColor() + " as friend.");
 

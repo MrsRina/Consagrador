@@ -172,7 +172,7 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 
 				setMouseClick(true);
 
-				if ((this.index + 1) >= this.setting.getList().size()) {
+				if (this.index >= (this.setting.getList().size() - 1)) {
 					this.index = 0;
 				} else {
 					this.index++;
@@ -219,12 +219,21 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	
 		if (isStarted()) {
-			this.index = this.setting.getList().indexOf(this.setting.getString());
+			this.index = this.setting.getList().indexOf(this.setting.getString()) == -1 ? 0 : this.setting.getList().indexOf(this.setting.getString());
 
 			// miiss.
 			setStarted(false);
 		} else {
 			this.setting.setString(((ArrayList<String>) this.setting.getList()).get(this.index));
+		}
+	}
+
+	@Override
+	public void updateDescriptionListener() {
+		if (isMousePassing()) {
+			if (Rocan.getTimer().isPassedMS(2500)) {
+				this.absolute.renderStringMouse(this.setting.getDescription());
+			}
 		}
 	}
 }

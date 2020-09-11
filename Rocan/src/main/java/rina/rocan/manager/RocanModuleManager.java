@@ -15,6 +15,7 @@ import java.util.*;
 // Turok.
 import rina.turok.TurokRenderHelp;
 import rina.turok.TurokScreenUtil;
+import rina.turok.TurokRenderGL;
 import rina.turok.TurokRect;
 
 // Events.
@@ -87,10 +88,11 @@ public class RocanModuleManager {
 		addModule(new RocanStrafe());
 
 		// Render.
+		addModule(new RocanHUDRender());
 		addModule(new RocanBlockHighlight());
 		addModule(new RocanPlayerTracer());
 		addModule(new RocanPlayerESP());
-		addModule(new RocanHUDRender());
+		addModule(new RocanHoleESP());
 
 		// Exploit.
 		addModule(new RocanXCarry());
@@ -139,11 +141,29 @@ public class RocanModuleManager {
 	public void onRenderModuleList(RenderWorldLastEvent event) {
 		RocanEventRender event_render = new RocanEventRender(event.getPartialTicks());
 
+		GlStateManager.disableTexture2D();
+		GlStateManager.enableBlend();
+		GlStateManager.disableAlpha();
+		GlStateManager.tryBlendFuncSeparate(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA, 1, 0);
+		GlStateManager.shadeModel(GL11.GL_SMOOTH);
+		GlStateManager.disableDepth();
+		GlStateManager.glLineWidth(1f);
+
 		for (RocanModule modules : getModuleList()) {
 			if (modules.getState()) {
 				modules.onRender(event_render);
 			}
 		}
+
+		GlStateManager.glLineWidth(1f);
+		GlStateManager.shadeModel(GL11.GL_FLAT);
+		GlStateManager.disableBlend();
+		GlStateManager.enableAlpha();
+		GlStateManager.enableTexture2D();
+		GlStateManager.enableDepth();
+		GlStateManager.enableCull();
+
+		TurokRenderGL.release3D();
 	}
 
 	public void clearHUDDockList() {

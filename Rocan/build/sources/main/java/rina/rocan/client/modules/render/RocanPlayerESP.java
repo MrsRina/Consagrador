@@ -131,7 +131,7 @@ public class RocanPlayerESP extends RocanModule {
 			BlockPos blockpos = result.getBlockPos();
 
 			TurokRenderHelp.render3DSolid(getICamera(), blockpos, veirfy_red, veirfy_green, veirfy_blue, block_highlight_alpha.getInteger());
-			TurokRenderHelp.render3DOutline(getICamera(), blockpos, veirfy_red, veirfy_green, veirfy_blue, block_highlight_outline_alpha.getInteger(), (float) block_highlight_width_outline.getInteger());
+			TurokRenderHelp.render3DOutline(getICamera(), blockpos, veirfy_red, veirfy_green, veirfy_blue, block_highlight_outline_alpha.getInteger(), (float) block_highlight_width_outline.getDouble());
 		}
 	}
 

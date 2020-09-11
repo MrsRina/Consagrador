@@ -133,9 +133,9 @@ public class RocanSetting<T> {
 	public void setValues(String[] list_values) {
 		if (this.values == null) {
 			this.values = new ArrayList<>();
+		} else {
+			this.values.clear();
 		}
-
-		this.values.clear();
 		
 		for (String items : list_values) {
 			this.values.add(items);

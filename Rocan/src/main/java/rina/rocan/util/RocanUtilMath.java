@@ -2,7 +2,11 @@ package rina.rocan.util;
 
 // Minecraft.
 import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.entity.Entity;
+
+// Java.
+import java.util.*;
 
 /**
   *
@@ -52,5 +56,35 @@ public class RocanUtilMath {
 		}
 
 		return value;
+	}
+
+	// KAMI. :")
+	public static List<BlockPos> getSphereList(BlockPos pos, float r, int h, boolean hollow, boolean sphere) {
+		int plus_y = 0;
+
+		List<BlockPos> sphere_block = new ArrayList<BlockPos>();
+
+		int cx = pos.getX();
+		int cy = pos.getY();
+		int cz = pos.getZ();
+
+		for (int x = cx - (int) r; x <= cx + r; ++x) {
+			for (int z = cz - (int) r; z <= cz + r; ++z) {
+				for (int y = sphere ? (cy - (int) r) : cy; y < (sphere ? (cy + r) : ((float) (cy + h))); ++y) {
+					double dist = (cx - x) * (cx - x) + (cz - z) * (cz - z) + (sphere ? ((cy - y) * (cy - y)) : 0);
+					if (dist < r * r && (!hollow || dist >= (r - 1.0f) * (r - 1.0f))) {
+						BlockPos spheres = new BlockPos(x, y + plus_y, z);
+
+						sphere_block.add(spheres);
+					}
+				}
+			}
+		}
+
+		return sphere_block;
+	}
+
+	public static BlockPos getPlayerBlockpos() {
+		return new BlockPos(Math.floor((double) RocanUtilMinecraftHelper.getMinecraft().player.posX), Math.floor((double) RocanUtilMinecraftHelper.getMinecraft().player.posY), Math.floor((double) RocanUtilMinecraftHelper.getMinecraft().player.posZ));
 	}
 }

@@ -56,19 +56,23 @@ public class TurokRenderHelp {
 		render3DSolid(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a, 1.0f);
 	}
 
-	public static void render3DSolid(ICamera camera, int x, int y, int z, int r, int g, int b, int a) {
-		render3DSolid(camera, x, y, z, 1, 1, 1, r, g, b, a, 1.0f);
-	}
-
 	public static void render3DSolid(ICamera camera, BlockPos blockpos, int r, int g, int b, int a, float line) {
 		render3DSolid(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a, line);
+	}
+
+	public static void render3DSolid(ICamera camera, int x, int y, int z, int r, int g, int b, int a) {
+		render3DSolid(camera, x, y, z, 1, 1, 1, r, g, b, a, 1.0f);
 	}
 
 	public static void render3DSolid(ICamera camera, int x, int y, int z, int r, int g, int b, int a, float line) {
 		render3DSolid(camera, x, y, z, 1, 1, 1, r, g, b, a, line);
 	}
 
-	public static void render3DSolid(ICamera camera, int x, int y, int z, int offset_x, int offset_y, int offset_z, int r, int g, int b, int a, float line) {
+	public static void render3DSolid(ICamera camera, int x, int y, int z, double offset_x, double offset_y, double offset_z, int r, int g, int b, int a) {
+		render3DSolid(camera, x, y, z, offset_x, offset_y, offset_z, r, g, b, a, 1.0f);
+	}
+
+	public static void render3DSolid(ICamera camera, int x, int y, int z, double offset_x, double offset_y, double offset_z, int r, int g, int b, int a, float line) {
 		Color color = new Color(r, g, b, a);
 
 		final AxisAlignedBB bb = new AxisAlignedBB(
@@ -111,19 +115,23 @@ public class TurokRenderHelp {
 		render3DOutline(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a, 1.0f);
 	}
 
-	public static void render3DOutline(ICamera camera, int x, int y, int z, int r, int g, int b, int a) {
-		render3DOutline(camera, x, y, z, 1, 1, 1, r, g, b, a, 1.0f);
-	}
-
 	public static void render3DOutline(ICamera camera, BlockPos blockpos, int r, int g, int b, int a, float line) {
 		render3DOutline(camera, blockpos.x, blockpos.y, blockpos.z, 1, 1, 1, r, g, b, a, line);
+	}
+
+	public static void render3DOutline(ICamera camera, int x, int y, int z, int r, int g, int b, int a) {
+		render3DOutline(camera, x, y, z, 1, 1, 1, r, g, b, a, 1.0f);
 	}
 
 	public static void render3DOutline(ICamera camera, int x, int y, int z, int r, int g, int b, int a, float line) {
 		render3DOutline(camera, x, y, z, 1, 1, 1, r, g, b, a, line);
 	}
 
-	public static void render3DOutline(ICamera camera, int x, int y, int z, int offset_x, int offset_y, int offset_z, int r, int g, int b, int a, float line) {
+	public static void render3DOutline(ICamera camera, int x, int y, int z, double offset_x, double offset_y, double offset_z, int r, int g, int b, int a) {
+		render3DOutline(camera, x, y, z, offset_x, offset_y, offset_z, r, g, b, a, 1.0f);
+	}
+
+	public static void render3DOutline(ICamera camera, int x, int y, int z, double offset_x, double offset_y, double offset_z, int r, int g, int b, int a, float line) {
 		Color color = new Color(r, g, b, a);
 
 		final AxisAlignedBB bb = new AxisAlignedBB(
@@ -177,14 +185,22 @@ public class TurokRenderHelp {
 	}
 
 	public static void renderTracer(Entity entity, int r, int g, int b, int a) {
-		double[] xyz = interpolate(entity);
-
-		renderTracer(xyz[0], xyz[1], xyz[2], entity.height, r, g, b, a);
+		renderTracer(entity, r, g, b, a, 1.0f);
 	}
 
-	public static void renderTracer(double x, double y, double z, double up, int r, int g, int b, int a) {
+	public static void renderTracer(Entity entity, int r, int g, int b, int a, float line) {
+		double[] xyz = interpolate(entity);
+
+		renderTracer(xyz[0], xyz[1], xyz[2], entity.height, r, g, b, a, line);
+	}
+
+	public static void renderTracer(double x, double y, double z, double up, int r, int g, int b, int a, float line) {
+		GlStateManager.pushMatrix();
+
 		Vec3d eyes = new Vec3d(0, 0, 1).rotatePitch(-(float) Math.toRadians(mc.player.rotationPitch)).rotateYaw(-(float) Math.toRadians(mc.player.rotationYaw));
 
-		TurokRenderGL.renderLineInterpolated(eyes.x, eyes.y + mc.player.getEyeHeight(), eyes.z, x, y, z, up, r, g, b, a);
+		TurokRenderGL.renderLineInterpolated(eyes.x, eyes.y + mc.player.getEyeHeight(), eyes.z, x, y, z, up, r, g, b, a, line);
+	
+		GlStateManager.popMatrix();
 	}
 }

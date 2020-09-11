@@ -350,4 +350,17 @@ public class RocanComponentModuleButton {
 		this.rect.setWidth(this.master.getWidth() - this.save_x * 2);
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 	}
+
+	public void updateDescriptionListener() {
+		if (isMousePassing()) {
+			if (Rocan.getTimer().isPassedMS(2500)) {
+				this.absolute.renderStringMouse(this.module.getDescription());
+			}
+		}
+
+		// L:i:s:t:e:n.
+		for (RocanWidget widgets : this.setting_widget_list) {
+			widgets.updateDescriptionListener();
+		}
+	}
 }
