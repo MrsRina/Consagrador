@@ -139,7 +139,7 @@ public class RocanModuleManager {
 	}
 
 	public void onRenderModuleList(RenderWorldLastEvent event) {
-		RocanEventRender event_render = new RocanEventRender(event.getPartialTicks());
+		Minecraft.getMinecraft().profiler.startSection("rocan");
 
 		GlStateManager.disableTexture2D();
 		GlStateManager.enableBlend();
@@ -148,6 +148,8 @@ public class RocanModuleManager {
 		GlStateManager.shadeModel(GL11.GL_SMOOTH);
 		GlStateManager.disableDepth();
 		GlStateManager.glLineWidth(1f);
+
+		RocanEventRender event_render = new RocanEventRender(event.getPartialTicks());
 
 		for (RocanModule modules : getModuleList()) {
 			if (modules.getState()) {
@@ -164,6 +166,8 @@ public class RocanModuleManager {
 		GlStateManager.enableCull();
 
 		TurokRenderGL.release3D();
+
+		Minecraft.getMinecraft().profiler.endSection();
 	}
 
 	public void clearHUDDockList() {

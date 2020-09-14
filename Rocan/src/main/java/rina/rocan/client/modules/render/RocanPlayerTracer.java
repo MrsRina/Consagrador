@@ -27,6 +27,7 @@ import java.awt.*;
 
 // Turok.
 import rina.turok.TurokRenderHelp;
+import rina.turok.TurokRenderGL;
 
 // Client.
 import rina.rocan.client.RocanSetting;
@@ -67,7 +68,7 @@ public class RocanPlayerTracer extends RocanModule {
 	RocanSetting render_color_alpha = createSetting(new String[] {"Alpha", "PlayerTracerAlpha", "Render color alpha."}, 255, 0, 255);
 
 	// Line size.
-	RocanSetting line_size = createSetting(new String[] {"Line Size", "PlayerTracerSize", "Line size to render."}, 1.0, 0.0, 3.0);
+	RocanSetting line_size = createSetting(new String[] {"Line Size", "PlayerTracerSize", "Line size to render."}, 1.0, 1.0, 3.0);
 
 	int r;
 	int g;
@@ -110,41 +111,37 @@ public class RocanPlayerTracer extends RocanModule {
 				continue;
 			}
 
-			verifyRender((EntityPlayer) entity);
+			verifyRender(event, (EntityPlayer) entity);
 		}
 	}
 
-	public void renderTracer(EntityPlayer player, int r, int g, int b) {
-		TurokRenderHelp.renderTracer(player, r, g, b, render_color_alpha.getInteger(), (float) line_size.getDouble());
-	}
-
-	public void verifyRender(EntityPlayer player) {
-		int veirfy_red   = (render_friend_color.getBoolean() && Rocan.getFriendManager().isFriend(player.getName())) ? Rocan.getClientHUDRed() : r;
-		int veirfy_green = (render_friend_color.getBoolean() && Rocan.getFriendManager().isFriend(player.getName())) ? Rocan.getClientHUDGreen() : g;
-		int veirfy_blue  = (render_friend_color.getBoolean() && Rocan.getFriendManager().isFriend(player.getName())) ? Rocan.getClientHUDBlue() : b;
-
+	public void verifyRender(RocanEventRender event, EntityPlayer player) {
 		switch (track_type_player.getString()) {
 			case "Alls" : {
-				renderTracer(player, veirfy_red, veirfy_green, veirfy_blue);
-
+				renderTracer(event, player);
+	
 				break;
 			}
-
+	
 			case "Enemy" : {
-				if (Rocan.getFriendManager().isEnemy(player.getName())) {
-					renderTracer(player, veirfy_red, veirfy_green, veirfy_blue);
+				if (Rocan.getFriendManager().isEnemy(player.getName()) || Rocan.getFriendManager().isFriend(player.getName())) {
+					renderTracer(event, player);
 				}
-
+	
 				break;
 			}
-
-			case "none" : {
-				if (Rocan.getFriendManager().isFriend(player.getName())) {
-					renderTracer(player, veirfy_red, veirfy_green, veirfy_blue);
-				}
-
+	
+			case "none" : {	
 				break;
 			}
 		}
-	} 
+	}
+
+	public void renderTracer(RocanEventRender event, EntityPlayer player) {
+		if (render_friend_color.getBoolean() && Rocan.getFriendManager().isFriend(player.getName())) {
+			TurokRenderHelp.renderTracer(event.getPartialTicks(), (Entity) player, Rocan.getClientHUDRed(), Rocan.getClientHUDGreen(), Rocan.getClientHUDBlue(), render_color_alpha.getInteger(), (float) line_size.getDouble());
+		} else {
+			TurokRenderHelp.renderTracer(event.getPartialTicks(), (Entity) player, r, g, b, render_color_alpha.getInteger(), (float) line_size.getDouble());
+		}
+	}
 }

@@ -4,10 +4,12 @@
 	"package"            : "rina.rocan.mixin.mixins",
 	"refmap"             : "mixins.rocan.refmap.json",
 	"mixins"             : [
+		"RocanMixinRenderLivingBase",
 		"RocanMixinNetworkManager",
 		"RocanMixinEntityPlayerSP",
 		"RocanMixinEntityPlayer",
 		"RocanMixinMinecraft",
+		"RocanMixinRender",
 		"RocanMixinEntity"
 	]
 }

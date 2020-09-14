@@ -12,6 +12,9 @@
     },
     "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
       "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V"
+    },
+    "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase": {
+      "doRender": "Lnet/minecraft/client/renderer/entity/RenderLivingBase;func_76986_a(Lnet/minecraft/entity/EntityLivingBase;DDDFF)V"
     }
   },
   "data": {
@@ -28,6 +31,9 @@
       },
       "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
         "onUpdateWalkingPlayer": "Lbud;N()V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase": {
+        "doRender": "Lcaa;a(Lvp;DDDFF)V"
       }
     },
     "searge": {
@@ -43,6 +49,9 @@
       },
       "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
         "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase": {
+        "doRender": "Lnet/minecraft/client/renderer/entity/RenderLivingBase;func_76986_a(Lnet/minecraft/entity/EntityLivingBase;DDDFF)V"
       }
     }
   }

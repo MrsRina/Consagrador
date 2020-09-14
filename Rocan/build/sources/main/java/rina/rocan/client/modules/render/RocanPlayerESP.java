@@ -5,6 +5,7 @@ import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.InventoryPlayer;
 import com.mojang.realmsclient.gui.ChatFormatting;
+import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.passive.EntityAnimal;
@@ -25,6 +26,9 @@ import org.lwjgl.opengl.GL11;
 // Java.
 import java.awt.*;
 
+// Pomelo.
+import team.stiff.pomelo.impl.annotated.handler.annotation.Listener;
+
 // Turok.
 import rina.turok.TurokRenderHelp;
 
@@ -36,6 +40,7 @@ import rina.rocan.client.RocanModule;
 import rina.rocan.util.RocanUtilRendererEntity2D3D;
 
 // Event.
+import rina.rocan.event.render.RocanEventRenderLivingBase;
 import rina.rocan.event.render.RocanEventRender;
 
 // Rocan.
@@ -70,7 +75,7 @@ public class RocanPlayerESP extends RocanModule {
 	RocanSetting block_highlight_outline_alpha = createSetting(new String[] {"BlockH Outline Alpha", "PlayerESPBlockHighlightOutlineAlpha", "Block highlight from players."}, 100, 0, 255);
 	RocanSetting block_highlight_width_outline = createSetting(new String[] {"BlockH Line Width", "PlayerESPBlockhighlightLineWidth", "Width outline for block highlight."}, 1.0, 1.0, 3.0);
 
-	public static float distance_player = 0.0f;
+	float distance_player = 0.0f;
 
 	int r;
 	int g;
@@ -78,6 +83,52 @@ public class RocanPlayerESP extends RocanModule {
 
 	public RocanPlayerESP() {
 		super(new String[] {"Player ESP", "PlayerESP", "Make you see players on area."}, Category.ROCAN_RENDER);
+	}
+
+	@Listener
+	public void listenRender(RocanEventRenderLivingBase event) {
+		if (mc.player == null) {
+			return;
+		}
+
+		if (!(event.getEntityLivingBase() instanceof EntityPlayer)) {
+			return;
+		}
+
+		if ((EntityPlayer) event.getEntityLivingBase() == mc.player) {
+			return;
+		}
+
+		if (event.getStage() == RocanEventRenderLivingBase.EventStage.PRE) {
+			switch (render_3d_mode.getString()) {
+				case "Chams" : {
+					GlStateManager.pushMatrix();
+
+					OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, 240.0F, 240.0F);
+
+					GL11.glEnable(GL11.GL_POLYGON_OFFSET_FILL);
+					GL11.glPolygonOffset(1.0f, -1100000.0f);
+
+					GlStateManager.popMatrix();
+
+					break;
+				}
+			}
+		} else if (event.getStage() == RocanEventRenderLivingBase.EventStage.POST) {
+			switch (render_3d_mode.getString()) {
+				case "Chams" : {
+					GlStateManager.pushMatrix();
+
+					GL11.glDisable(GL11.GL_POLYGON_OFFSET_FILL);
+					GL11.glPolygonOffset(1.0f, 1100000.0f);
+					GL11.glEnable(GL11.GL_TEXTURE_2D);
+
+					GlStateManager.popMatrix();
+
+					break;
+				}
+			}
+		}
 	}
 
 	@Override
@@ -139,6 +190,7 @@ public class RocanPlayerESP extends RocanModule {
 		RocanUtilRendererEntity2D3D.prepare2D((Entity) player);
 
 		if (render_2d_mode.getString().equals("States")) {
+
 		}
 
 		RocanUtilRendererEntity2D3D.release2D();

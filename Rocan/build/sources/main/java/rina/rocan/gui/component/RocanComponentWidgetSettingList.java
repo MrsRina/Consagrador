@@ -12,6 +12,9 @@ import rina.rocan.gui.RocanMainGUI;
 import rina.rocan.client.RocanSetting;
 import rina.rocan.client.RocanModule;
 
+// Constructor.
+import rina.rocan.util.constructor.RocanConstructorTimer;
+
 // Turok.
 import rina.turok.TurokRenderGL;
 import rina.turok.TurokString;
@@ -49,6 +52,10 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 
 	private boolean event_started;
 
+	private boolean event_has_waited;
+	
+	private RocanConstructorTimer tickness;
+
 	public RocanComponentWidgetSettingList(RocanComponentModuleButton master, RocanSetting setting, int next_y) {
 		this.master   = master;
 		this.absolute = this.master.getMaster().getMaster();
@@ -71,6 +78,8 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 		resetAllEvent();
 
 		this.event_started = true;
+
+		this.tickness = new RocanConstructorTimer();
 	}
 
 	@Override
@@ -231,9 +240,17 @@ public class RocanComponentWidgetSettingList extends RocanWidget {
 	@Override
 	public void updateDescriptionListener() {
 		if (isMousePassing()) {
-			if (Rocan.getTimer().isPassedMS(2500)) {
-				this.absolute.renderStringMouse(this.setting.getDescription());
+			if (this.tickness.isPassedMS(2000) && !this.event_has_waited) {
+				this.event_has_waited = true;
 			}
+		} else {
+			this.event_has_waited = false;
+
+			this.tickness.reset();
+		}
+
+		if (this.event_has_waited) {
+			this.absolute.renderStringMouse(this.setting.getDescription());
 		}
 	}
 }

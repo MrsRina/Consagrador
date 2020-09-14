@@ -50,4 +50,18 @@ public class RocanUtilEntity {
 
 		return null;
 	}
+
+	public static double getInterpolated(double now, double then) {
+		return then + (now - then) * RocanUtilMinecraftHelper.getMinecraft().getRenderPartialTicks();
+	}
+
+	public static double[] getInterpolated(Entity entity) {
+		double x = getInterpolated(entity.posX, entity.lastTickPosX) - RocanUtilMinecraftHelper.getMinecraft().getRenderManager().renderPosX;
+		double y = getInterpolated(entity.posY, entity.lastTickPosY) - RocanUtilMinecraftHelper.getMinecraft().getRenderManager().renderPosY;
+		double z = getInterpolated(entity.posZ, entity.lastTickPosZ) - RocanUtilMinecraftHelper.getMinecraft().getRenderManager().renderPosZ;
+
+		return new double[] {
+			x, y, z
+		};
+	}
 }

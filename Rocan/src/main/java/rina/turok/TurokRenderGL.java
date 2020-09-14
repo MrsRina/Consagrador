@@ -4,12 +4,14 @@ package rina.turok;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderGlobal;
+import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.client.renderer.*;
 import net.minecraft.client.Minecraft;
 
 // OpenGL.
 import org.lwjgl.opengl.GL11;
+import org.lwjgl.opengl.GL32;
 
 // Java.
 import java.awt.Color;
@@ -168,6 +170,45 @@ public class TurokRenderGL {
 		drawSolidRect((float) rect.getX(), (float) rect.getY(), (float) (rect.getX() + rect.getWidth()), (float) (rect.getY() + rect.getHeight()));
 	}
 
+	public static void drawLine3D(double x, double y, double z, double x1, double y1, double z1, int r, int g, int b, int a, float line) {
+		GlStateManager.pushMatrix();
+		GlStateManager.disableTexture2D();
+		GlStateManager.enableBlend();
+		GlStateManager.disableAlpha();
+		GlStateManager.tryBlendFuncSeparate(770, 771, 1, 0);
+		GlStateManager.shadeModel(GL11.GL_SMOOTH);
+
+		GL11.glLineWidth(line);
+		GL11.glEnable(GL11.GL_LINE_SMOOTH);
+		GL11.glHint(GL11.GL_LINE_SMOOTH_HINT, GL11.GL_NICEST);
+
+		GlStateManager.disableDepth();
+
+		GL11.glEnable(GL32.GL_DEPTH_CLAMP);
+
+		final Tessellator tessellator    = Tessellator.getInstance();
+		final BufferBuilder buffer_build = tessellator.getBuffer();
+
+		buffer_build.begin(GL11.GL_LINES, DefaultVertexFormats.POSITION_COLOR);
+		buffer_build.pos(x, y, z).color(r, g, b, a).endVertex();
+		buffer_build.pos(x1, y1, z1).color(r, g, b, a).endVertex();
+
+		tessellator.draw();
+
+		GlStateManager.shadeModel(GL11.GL_FLAT);
+
+		GL11.glDisable(GL11.GL_LINE_SMOOTH);
+
+		GlStateManager.enableDepth();
+
+		GL11.glDisable(GL32.GL_DEPTH_CLAMP);
+
+		GlStateManager.disableBlend();
+		GlStateManager.enableAlpha();
+		GlStateManager.enableTexture2D();
+		GlStateManager.popMatrix();
+	}
+
 	public static void prepareToRenderString() {
 		GL11.glEnable(GL11.GL_TEXTURE_2D);
 		GL11.glEnable(GL11.GL_BLEND);
@@ -223,38 +264,5 @@ public class TurokRenderGL {
 		GlStateManager.enableTexture2D();
 		GlStateManager.enableBlend();
 		GlStateManager.enableDepth();
-	}
-
-	public static void renderLineInterpolated(double from_x, double from_y, double from_z, double to_x, double to_y, double to_z, double up, int r, int g, int b, int a, float line) {
-		Color color = new Color(r, g, b, a);
-
-		GL11.glBlendFunc(770, 771);
-		GL11.glEnable(GL11.GL_BLEND);
-		GL11.glLineWidth(line);
-		GL11.glDisable(GL11.GL_TEXTURE_2D);
-		GL11.glDisable(GL11.GL_DEPTH_TEST);
-		GL11.glDepthMask(false);
-		GL11.glColor4f(color.getRed() / 255.0f, color.getGreen() / 255.0f, color.getBlue() / 255.0f, color.getAlpha() / 255.0f);
-		GlStateManager.disableLighting();
-		GL11.glLoadIdentity();
-
-		mc.entityRenderer.orientCamera(mc.getRenderPartialTicks());
-
-		GL11.glBegin(GL11.GL_LINES);
-		{
-			GL11.glVertex3d(from_x, from_y, from_z);
-			GL11.glVertex3d(to_x, to_y, to_z);
-			GL11.glVertex3d(to_x, to_y, to_z);
-			GL11.glVertex3d(to_x, to_y + up, to_z);
-		}
-
-		GL11.glEnd();
-		GL11.glEnable(GL11.GL_TEXTURE_2D);
-		GL11.glEnable(GL11.GL_DEPTH_TEST);
-		GL11.glDepthMask(true);
-		GL11.glDisable(GL11.GL_BLEND);
-		GL11.glColor3d(1d, 1d, 1d);
-
-		GlStateManager.enableLighting();
 	}
 }

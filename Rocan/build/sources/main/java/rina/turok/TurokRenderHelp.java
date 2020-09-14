@@ -14,6 +14,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.entity.Entity;
 
+// ROCAN.
+import rina.rocan.util.RocanUtilEntity;
+
 // Java.
 import java.awt.Color;
 import java.util.*;
@@ -170,37 +173,23 @@ public class TurokRenderHelp {
 		}
 	}
 
-	public static double interpolate(double now, double then) {
-		return then + (now - then) * mc.getRenderPartialTicks();
-	}
+	public static void renderTracer(Float partial_ticks, Entity entity, int r, int g, int b, int a, float line) {
+		final Vec3d pos = RocanUtilEntity.getInterpolatedPos(entity, partial_ticks).subtract(mc.getRenderManager().renderPosX, mc.getRenderManager().renderPosY, mc.getRenderManager().renderPosZ);
 
-	public static double[] interpolate(Entity entity) {
-		double x = interpolate(entity.posX, entity.lastTickPosX) - mc.getRenderManager().renderPosX;
-		double y = interpolate(entity.posY, entity.lastTickPosY) - mc.getRenderManager().renderPosY;
-		double z = interpolate(entity.posZ, entity.lastTickPosZ) - mc.getRenderManager().renderPosZ;
+		if (pos == null) {
+			return;
+		}
 
-		return new double[] {
-			x, y, z
-		};
-	}
+		final boolean bobbing = mc.gameSettings.viewBobbing;
 
-	public static void renderTracer(Entity entity, int r, int g, int b, int a) {
-		renderTracer(entity, r, g, b, a, 1.0f);
-	}
+		mc.gameSettings.viewBobbing = false;
+		mc.entityRenderer.setupCameraTransform(partial_ticks, 0);
 
-	public static void renderTracer(Entity entity, int r, int g, int b, int a, float line) {
-		double[] xyz = interpolate(entity);
+		final Vec3d forward = new Vec3d(0, 0, 1).rotatePitch(-(float) Math.toRadians(mc.player.rotationPitch)).rotateYaw(-(float) Math.toRadians(mc.player.rotationYaw));
 
-		renderTracer(xyz[0], xyz[1], xyz[2], entity.height, r, g, b, a, line);
-	}
+		TurokRenderGL.drawLine3D((double) forward.x, (double) forward.y + mc.player.getEyeHeight(), (float) forward.z, (double) pos.x, (double) pos.y, (double) pos.z, r, g, b, a, line);
 
-	public static void renderTracer(double x, double y, double z, double up, int r, int g, int b, int a, float line) {
-		GlStateManager.pushMatrix();
-
-		Vec3d eyes = new Vec3d(0, 0, 1).rotatePitch(-(float) Math.toRadians(mc.player.rotationPitch)).rotateYaw(-(float) Math.toRadians(mc.player.rotationYaw));
-
-		TurokRenderGL.renderLineInterpolated(eyes.x, eyes.y + mc.player.getEyeHeight(), eyes.z, x, y, z, up, r, g, b, a, line);
-	
-		GlStateManager.popMatrix();
+		mc.gameSettings.viewBobbing = bobbing;
+		mc.entityRenderer.setupCameraTransform(partial_ticks, 0);
 	}
 }
