@@ -136,6 +136,8 @@ public class RocanStrafe extends RocanModule {
 		
 			verifySpeed();
 		} else if (modes_movement.getString().equals("Static")) {
+			mc.player.setSprinting(true);
+
 			speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.335292088655228d ? 0.335292088655228d : 0.2873d);
 
 			verifySpeed();
