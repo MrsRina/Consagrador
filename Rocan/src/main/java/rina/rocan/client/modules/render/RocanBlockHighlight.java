@@ -33,10 +33,10 @@ public class RocanBlockHighlight extends RocanModule {
 	RocanSetting rgb_effect = createSetting(new String[] {"RGB", "BlockHighlightRGB", "RGB effect to render."}, false);
 	
 	// Color stuffs.
-	RocanSetting render_red_color   = createSetting(new String[] {"Red", "BlockHighlightRed", "Change color RED."}, 255, 0, 255);
-	RocanSetting render_green_color = createSetting(new String[] {"Green", "BlockHighlightGreen", "Change color GREEN."}, 0, 0, 255);
-	RocanSetting render_blue_color  = createSetting(new String[] {"Blue", "BlockHighlightBlue", "Change color BLUE."}, 0, 0, 255);
-	RocanSetting render_alpha_color = createSetting(new String[] {"Alpha", "BlockHighlightAlpha", "Change color ALPHA."}, 150, 0, 255);
+	RocanSetting render_red_color   = createSetting(new String[] {"Render Red", "BlockHighlightRenderRed", "Change color red."}, 255, 0, 255);
+	RocanSetting render_green_color = createSetting(new String[] {"Render Green", "BlockHighlightRenderGreen", "Change color green."}, 0, 0, 255);
+	RocanSetting render_blue_color  = createSetting(new String[] {"Render Blue", "BlockHighlightRenderBlue", "Change color blue."}, 0, 0, 255);
+	RocanSetting render_alpha_color = createSetting(new String[] {"Render Alpha", "BlockHighlightRenderAlpha", "Change color alpha."}, 150, 0, 255);
 	
 	// things...
 	RocanSetting alpha_outline_color = createSetting(new String[] {"Alpha Outline", "BlockHighlightAlphaOutline", "Change color ALPHA to outline."}, 255, 0, 255);

@@ -91,7 +91,7 @@ public class RocanModuleManager {
 		addModule(new RocanHUDRender());
 		addModule(new RocanBlockHighlight());
 		addModule(new RocanPlayerTracer());
-		addModule(new RocanPlayerESP());
+		addModule(new RocanEntityESP());
 		addModule(new RocanHoleESP());
 
 		// Exploit.

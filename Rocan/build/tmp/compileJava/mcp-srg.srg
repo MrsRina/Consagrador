@@ -1,1 +1,4 @@
+FD: rina/rocan/mixin/mixins/RocanMixinRenderLivingBase/mainModel rina/rocan/mixin/mixins/RocanMixinRenderLivingBase/field_77045_g
 MD: rina/rocan/mixin/mixins/RocanMixinEntity/move (Lnet/minecraft/entity/MoverType;DDD)V rina/rocan/mixin/mixins/RocanMixinEntity/func_70091_d (Lnet/minecraft/entity/MoverType;DDD)V
+MD: rina/rocan/mixin/mixins/RocanMixinRender/bindEntityTexture (Lnet/minecraft/entity/Entity;)Z rina/rocan/mixin/mixins/RocanMixinRender/func_180548_c (Lnet/minecraft/entity/Entity;)Z
+MD: rina/rocan/mixin/mixins/RocanMixinRenderLivingBase/renderModel (Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V rina/rocan/mixin/mixins/RocanMixinRenderLivingBase/func_77036_a (Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V
