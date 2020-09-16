@@ -12,6 +12,7 @@ import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.passive.IAnimals;
 import net.minecraft.entity.monster.IMob;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.client.renderer.*;
@@ -56,14 +57,16 @@ import rina.rocan.Rocan;
 public class RocanEntityESP extends RocanModule {
 	// Settings range, minimum, modes...
 	RocanSetting range                = createSetting(new String[] {"Range", "EntityESPRange", "Area range to able render."}, 200, 0, 200);
-	RocanSetting range_3d_stop_render = createSetting(new String[] {"Range Stop Render", "EntityESPRangeStopRender", "Offset to stop render."}, 6, 0, 10);
+	RocanSetting range_to_stop_render = createSetting(new String[] {"Range To Stop Render", "EntityESPRangeToStopRender", "Offset to stop render."}, 6, 0, 10);
 
 	// Entities.
-	RocanSetting render_entity_friend  = createSetting(new String[] {"Friend", "EntityESPRenderEntityFriend", "Enable entity to rende."}, true);
-	RocanSetting render_entity_enemy   = createSetting(new String[] {"Enemy", "EntityESPRenderEntityEnemy", "Enable entity to render."}, false);
-	RocanSetting render_entity_player  = createSetting(new String[] {"Player", "EntityESPRenderEntityPlayer", "Enable entity to rende."}, false);
-	RocanSetting render_entity_hostile = createSetting(new String[] {"Hostile", "EntityESPRenderEntityHostile", "Enable entity to rende."}, false);
-	RocanSetting render_entity_animals = createSetting(new String[] {"Animals & Pigs", "EntityESPRenderEntityAnimals", "Enable entity to rende."}, false);
+	RocanSetting render_entity_player      = createSetting(new String[] {"Player", "EntityESPRenderEntityPlayer", "Enable entity to render."}, false);
+	RocanSetting render_entity_enemy       = createSetting(new String[] {"Enemy", "EntityESPRenderEntityEnemy", "Enable entity to render."}, false);
+	RocanSetting render_entity_friend      = createSetting(new String[] {"Friend", "EntityESPRenderEntityFriend", "Enable entity to render."}, true);
+	RocanSetting render_entity_hostile     = createSetting(new String[] {"Hostile", "EntityESPRenderEntityHostile", "Enable entity to rende."}, false);
+	RocanSetting render_entity_animals     = createSetting(new String[] {"Animals & Pigs", "EntityESPRenderEntityAnimals", "Enable entity to render."}, false);
+	RocanSetting render_entity_end_crystal = createSetting(new String[] {"End Crystal", "EntityESPRenderEntityEndCrystal", "Enable entity to render."}, false);
+	RocanSetting render_entity_drop_item   = createSetting(new String[] {"Drop Item", "EntityESPRenderEntityDropItem", "Enable entity to render."}, false);
 
 	// RGB retarddded effect.
 	RocanSetting rgb_effect = createSetting(new String[] {"RGB", "PlayerESPRGB", "RGB effect to render."}, false);

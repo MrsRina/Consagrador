@@ -39,9 +39,6 @@ import java.awt.*;
 import rina.rocan.util.RocanUtilRendererEntity2D3D;
 import rina.rocan.util.RocanUtilMinecraftHelper;
 
-// Event.
-import rina.rocan.event.render.RocanEventRenderLivingBase;
-
 // Rocan.
 import rina.rocan.Rocan;
 
@@ -58,20 +55,6 @@ public abstract class RocanMixinRenderLivingBase <T extends EntityLivingBase> ex
 
 	@Shadow
 	protected ModelBase mainModel;
-
-	@Inject(method = "doRender", at = @At("HEAD"))
-	private void onRender(T entity, double x, double y, double z, float yaw, float partial_ticks, CallbackInfo callback) {
-		RocanEventRenderLivingBase event = new RocanEventRenderLivingBase(RocanEventRenderLivingBase.EventStage.PRE, entity, x, y, z, yaw, partial_ticks);
-	
-		Rocan.getPomeloEventManager().dispatchEvent(event);
-	}
-
-	@Inject(method = "doRender", at = @At("RETURN"))
-	private void onLastRender(T entity, double x, double y, double z, float yaw, float partial_ticks, CallbackInfo callback) {
-		RocanEventRenderLivingBase event = new RocanEventRenderLivingBase(RocanEventRenderLivingBase.EventStage.POST, entity, x, y, z, yaw, partial_ticks);
-	
-		Rocan.getPomeloEventManager().dispatchEvent(event);
-	}
 
 	public boolean verifyRender(EntityLivingBase entity) {
 		if (entity instanceof EntityPlayer && ((Rocan.getFriendManager().isFriend(entity.getName()) && Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderEntityFriend").getBoolean()) || (Rocan.getFriendManager().isEnemy(entity.getName()) && Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderEntityEnemy").getBoolean()) || Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderEntityPlayer").getBoolean())) {
@@ -108,36 +91,38 @@ public abstract class RocanMixinRenderLivingBase <T extends EntityLivingBase> ex
 				GlStateManager.alphaFunc(516, 0.003921569F);
 			}
 
-			if (Rocan.getModuleManager().getModuleByTag("EntityESP").getState() && mc.player.getDistance(entitylivingbaseIn) < Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRange").getInteger() && mc.player.getDistance(entitylivingbaseIn) > Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRangeStopRender").getInteger()) {
-				Color n;
+			if (Rocan.getModuleManager().getModuleByTag("EntityESP").getState() && mc.player.getDistance(entitylivingbaseIn) < Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRange").getInteger() && mc.player.getDistance(entitylivingbaseIn) > Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRangeToStopRender").getInteger()) {
+				Color n = new Color(190, 190, 190);
 
 				if (entitylivingbaseIn instanceof EntityPlayer && Rocan.getFriendManager().isFriend(entitylivingbaseIn.getName())) {
 					n = new Color(Rocan.getClientHUDRed(), Rocan.getClientHUDGreen(), Rocan.getClientHUDBlue());
-				} else {
-					n = new Color(Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderRed").getInteger(), Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderGreen").getInteger(), Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderBlue").getInteger());
-				}
+				} //selse {
+				//	n = new Color(Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderRed").getInteger(), Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderGreen").getInteger(), Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderBlue").getInteger());
+				//}
 
 				if (verifyRender(entitylivingbaseIn)) {
 					mainModel.render(entitylivingbaseIn, p_77036_2_, p_77036_3_, p_77036_4_, p_77036_5_, p_77036_6_, scaleFactor);
-					RocanUtilRendererEntity2D3D.renderOne((float) Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPWidthLine").getDouble());
+
+					RocanUtilRendererEntity2D3D.renderOne((float) Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPWidthLine").getDouble(), n);
 
 					mainModel.render(entitylivingbaseIn, p_77036_2_, p_77036_3_, p_77036_4_, p_77036_5_, p_77036_6_, scaleFactor);
+
 					GL11.glLineWidth((float) Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPWidthLine").getDouble());
 
 					RocanUtilRendererEntity2D3D.renderTwo();
 
 					mainModel.render(entitylivingbaseIn, p_77036_2_, p_77036_3_, p_77036_4_, p_77036_5_, p_77036_6_, scaleFactor);
+
 					GL11.glLineWidth((float) Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPWidthLine").getDouble());
 
 					RocanUtilRendererEntity2D3D.renderThree();
 					RocanUtilRendererEntity2D3D.renderFour(n);
 
 					mainModel.render(entitylivingbaseIn, p_77036_2_, p_77036_3_, p_77036_4_, p_77036_5_, p_77036_6_, scaleFactor);
+
 					GL11.glLineWidth((float) Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPWidthLine").getDouble());
 
 					RocanUtilRendererEntity2D3D.renderFive();
-
-					RocanUtilRendererEntity2D3D.setColor(new Color(255, 255, 255));
 				}
 			}
 

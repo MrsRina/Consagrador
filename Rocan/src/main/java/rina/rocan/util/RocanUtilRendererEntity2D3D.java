@@ -62,7 +62,7 @@ public class RocanUtilRendererEntity2D3D {
 		GL11.glColor4f(1, 1, 1, 1);
 	}
 
-	public static void renderOne(float width) {
+	public static void renderOne(float width, Color color) {
 		checkSetupFBO();
 		GL11.glPushAttrib(GL11.GL_ALL_ATTRIB_BITS);
 		GL11.glDisable(GL11.GL_ALPHA_TEST);
@@ -92,8 +92,8 @@ public class RocanUtilRendererEntity2D3D {
 		GL11.glPolygonMode(GL11.GL_FRONT_AND_BACK, GL11.GL_LINE);
 	}
 	
-	public static void renderFour(Color color) {
-		setColor(color);
+	public static void renderFour(Color n) {
+		setColor(n);
 		GL11.glDepthMask(false);
 		GL11.glDisable(GL11.GL_DEPTH_TEST);
 		GL11.glEnable(GL11.GL_POLYGON_OFFSET_LINE);

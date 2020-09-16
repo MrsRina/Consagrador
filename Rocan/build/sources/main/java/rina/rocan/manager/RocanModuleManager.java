@@ -90,7 +90,8 @@ public class RocanModuleManager {
 		// Render.
 		addModule(new RocanHUDRender());
 		addModule(new RocanBlockHighlight());
-		addModule(new RocanPlayerTracer());
+		addModule(new RocanEntityTracer());
+		addModule(new RocanEntityChams());
 		addModule(new RocanEntityESP());
 		addModule(new RocanHoleESP());
 
