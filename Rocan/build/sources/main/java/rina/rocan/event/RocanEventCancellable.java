@@ -31,7 +31,7 @@ public class RocanEventCancellable extends RocanEventStageable {
 		this.canceled = true;
 	}
 
-	public boolean isCanceled() {
+	public boolean isCancelled() {
 		return this.canceled;
 	}
 }

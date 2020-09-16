@@ -40,7 +40,6 @@ import rina.rocan.client.RocanModule;
 import rina.rocan.util.RocanUtilRendererEntity2D3D;
 
 // Event.
-import rina.rocan.event.render.RocanEventRenderLivingBase;
 import rina.rocan.event.render.RocanEventRender;
 
 // Rocan.

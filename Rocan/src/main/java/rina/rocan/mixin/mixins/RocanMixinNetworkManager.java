@@ -39,7 +39,7 @@ public class RocanMixinNetworkManager {
 
 		Rocan.getPomeloEventManager().dispatchEvent(event);
 
-		if (event.isCanceled()) {
+		if (event.isCancelled()) {
 			callback.cancel();
 		}
 	}
@@ -50,7 +50,7 @@ public class RocanMixinNetworkManager {
 
 		Rocan.getPomeloEventManager().dispatchEvent(event);
 
-		if (event.isCanceled()) {
+		if (event.isCancelled()) {
 			callback.cancel();
 		}
 	}
