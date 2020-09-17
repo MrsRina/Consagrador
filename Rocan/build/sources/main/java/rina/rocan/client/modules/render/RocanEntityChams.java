@@ -84,34 +84,48 @@ public class RocanEntityChams extends RocanModule {
 			return;
 		}
 
+		if (event.getEntity() == null) {
+			return;
+		}
+
+		boolean shadow = mc.getRenderManager().isRenderShadow();
+
+		if (!verifyRender(event.getEntity())) {
+			return;
+		}
+
 		if (event.getStage() == RocanEventRenderEntity.EventStage.PRE) {
-			if (verifyRender(event.getEntity())) {
-				GlStateManager.pushMatrix();
+			mc.getRenderManager().setRenderShadow(false);
+			mc.getRenderManager().setRenderOutlines(false);
 
-				OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, 240.0F, 240.0F);
+			GlStateManager.pushMatrix();
 
-				GL11.glEnable(GL11.GL_POLYGON_OFFSET_FILL);
+			OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, 240.0F, 240.0F);
+		
+			GL11.glEnable(GL11.GL_POLYGON_OFFSET_FILL);
+			GL11.glPolygonOffset(1.0f, -1100000.0f);
+		
+			GlStateManager.popMatrix();
+		}
 
-				GL11.glPolygonOffset(1.0f, -1100000.0f);
+		if (event.getStage() == RocanEventRenderEntity.EventStage.POST) {
+			mc.getRenderManager().setRenderShadow(shadow);
 
-				GlStateManager.popMatrix();
-			}
-		} else if (event.getStage() == RocanEventRenderEntity.EventStage.POST) {
-			if (verifyRender(event.getEntity())) {
-				GlStateManager.pushMatrix();
+			GlStateManager.pushMatrix();
 
-				OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, 240.0F, 240.0F);
+			GL11.glDisable(GL11.GL_POLYGON_OFFSET_FILL);
+			GL11.glPolygonOffset(1.0f, 1100000.0f);
+			GL11.glEnable(GL11.GL_TEXTURE_2D);
 
-				GL11.glEnable(GL11.GL_POLYGON_OFFSET_FILL);
-
-				GL11.glPolygonOffset(1.0f, -1100000.0f);
-
-				GlStateManager.popMatrix();
-			}
+			GlStateManager.popMatrix();
 		}
 	}
 
 	public boolean verifyRender(Entity entity) {
+		if (entity instanceof EntityPlayer && entity == mc.player) {
+			return false;
+		}
+
 		if (entity instanceof EntityLivingBase && entity instanceof EntityPlayer && (render_entity_player.getBoolean() || (render_entity_enemy.getBoolean() && Rocan.getFriendManager().isEnemy(entity.getName())) || (render_entity_friend.getBoolean() && Rocan.getFriendManager().isFriend(entity.getName())))) {
 			return true;
 		}
