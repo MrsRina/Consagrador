@@ -43,21 +43,17 @@ import rina.rocan.Rocan;
  *
  **/
 public class RocanStrafe extends RocanModule {
-	RocanSetting modes_movement       = createSetting(new String[] {"Mode", "StrafeMode", "Modes for strafe."}, "Sprint", new String[] {"Sprint", "Static"});
-	RocanSetting auto_jump            = createSetting(new String[] {"Auto Jump", "StrafeAutoJump", "Auto jump to strafe."}, false);
-	RocanSetting fast_movement        = createSetting(new String[] {"Fast Movement", "StrafeFastMovement", "Fast strafe movement."}, true);
-	RocanSetting strafe_potion_effect = createSetting(new String[] {"Potion Effect", "StrafePotionEffect", "Potion effect speed."}, true);
-	RocanSetting bypass_speed         = createSetting(new String[] {"Bypass Speed", "StrafeBypassSpeed", "Bypass speed."}, -1, false);
+	RocanSetting modes_movement       = createSetting(new String[] {"Mode", "StrafeMode", "Modes movementation for strafe."}, "OnGround", new String[] {"OnGround", "AutoJump"});
+	RocanSetting automatically_sprint = createSetting(new String[] {"Sprint", "StrafeSprint", "Automatically sprint."}, true);
+	RocanSetting smooth_jump          = createSetting(new String[] {"Smooth Jump", "StrafeSmoothJump", "Smooth speed jump."}, false);
+	RocanSetting speed_potion_effect  = createSetting(new String[] {"Speed Potion Handler", "StrafeSpeedPotionHandler", "Enable speed handler to potion."}, true);
+	RocanSetting jump_potion_effect   = createSetting(new String[] {"BJump Potion Handler", "StrafeJumpPotionHandler", "Enable jump boost to potion."}, true);
+	RocanSetting bypass_speed         = createSetting(new String[] {"Bypass Speed", "StrafeBypassSpeed", "All damage explosions make you controlled and fast."}, -1, false);
 
-	double speed;
 
-	private static KeyBinding[] KEYS = new KeyBinding[] {
-		mc.gameSettings.keyBindForward, mc.gameSettings.keyBindRight,
-		mc.gameSettings.keyBindBack, mc.gameSettings.keyBindLeft,
-		mc.gameSettings.keyBindJump, mc.gameSettings.keyBindSprint
-	};
+	private int jump = mc.gameSettings.keyBindJump.getKeyCode();
 
-	int jump = mc.gameSettings.keyBindJump.getKeyCode();
+	private double speed;
 
 	public RocanStrafe() {
 		super(new String[] {"Strafe", "Strafe", "Make fast."}, Category.ROCAN_MOVEMENT);
@@ -82,34 +78,9 @@ public class RocanStrafe extends RocanModule {
 		}
 
 		if (Keyboard.isKeyDown(jump)) {
-			if (mc.player.isInLava() || mc.player.isInWater()) {
-				mc.player.motionY += 0.38f;
-			} else {
-				if (mc.player.onGround) {
-					mc.player.jump();
-				}
+			if (mc.player.onGround) {
+				mc.player.jump();
 			}
-		}
-
-		KeyBinding[] keys = KEYS;
-
-		int keys_n   = keys.length;
-		int keys_n_2 = 0;
-
-		while (keys_n_2 < keys_n) {
-			KeyBinding key_binding = keys[keys_n_2];
-
-			if (Keyboard.isKeyDown(key_binding.getKeyCode())) {
-				if (key_binding.getKeyConflictContext() != KeyConflictContext.UNIVERSAL) {
-					key_binding.setKeyConflictContext(KeyConflictContext.UNIVERSAL);
-				}
-
-				KeyBinding.setKeyBindState(key_binding.getKeyCode(), true);
-			} else {
-				KeyBinding.setKeyBindState(key_binding.getKeyCode(), false);
-			}
-
-			++keys_n_2;
 		}
 	}
 
@@ -125,33 +96,37 @@ public class RocanStrafe extends RocanModule {
 
 		double[] player_movement = RocanUtilMath.transformStrafeMovement(mc.player);
 
-		if (modes_movement.getString().equals("Sprint")) {
+		if (automatically_sprint.getBoolean()) {
 			mc.player.setSprinting(true);
+		}
 
-			speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) : 0.2873d);
-		
-			verifySpeed();
-		} else if (modes_movement.getString().equals("Static")) {
-			mc.player.setSprinting(true);
+		speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) : 0.2873d);
 
-			speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.335292088655228d ? 0.335292088655228d : 0.2873d);
+		if (mc.player.isPotionActive(MobEffects.SPEED) && speed_potion_effect.getBoolean()) {
+			final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
 
-			verifySpeed();
+			speed *= (1.0d + 0.2d * (amplifier + 1));
 		}
 
 		if (player_movement[2] == 0.0d && player_movement[3] == 0.0d) {
 			event.setX(0.0d);
 			event.setZ(0.0d);
 		} else {
-			if (auto_jump.getBoolean()) {
-				mc.gameSettings.keyBindJump.pressed = true;
-
-				if (mc.player.onGround) {
-					mc.player.jump();
+			if (modes_movement.getString().equals("OnGround")) {
+				if (mc.gameSettings.keyBindJump.isKeyDown()) {
+					makeJump(event);
+				}
+			} else if (modes_movement.getString().equals("AutoJump")) {
+				if (automatically_sprint.getBoolean()) {
+					mc.player.setSprinting(true);
 				}
 
-				makeJump(event);
-			} else {
+				if (mc.player.onGround) {
+					mc.gameSettings.keyBindJump.pressed = true;
+				} else {
+					mc.gameSettings.keyBindJump.pressed = false;
+				}
+
 				if (mc.gameSettings.keyBindJump.isKeyDown()) {
 					makeJump(event);
 				}
@@ -162,23 +137,15 @@ public class RocanStrafe extends RocanModule {
 		}
 	}
 
-	public void verifySpeed() {
-		if (mc.player.isPotionActive(MobEffects.SPEED) && strafe_potion_effect.getBoolean()) {
-			final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
-
-			speed *= (1.0d + 0.2d * (amplifier + 1));
-		}
-	}
-
 	public void makeJump(RocanEventPlayerMove event) {
 		double jump = 0.40123128d;
 
 		if (mc.player.onGround) {
-			if (fast_movement.getBoolean()) {
+			if (!smooth_jump.getBoolean()) {
 				speed = 0.6174077d;
 			}
 
-			if (mc.player.isPotionActive(MobEffects.JUMP_BOOST)) {
+			if (mc.player.isPotionActive(MobEffects.JUMP_BOOST) && jump_potion_effect.getBoolean()) {
 				jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1f);
 			}
 

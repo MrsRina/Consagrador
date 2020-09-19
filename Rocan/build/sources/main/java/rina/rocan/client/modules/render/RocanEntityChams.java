@@ -42,6 +42,7 @@ import rina.rocan.client.RocanModule;
 import rina.rocan.util.RocanUtilRendererEntity2D3D;
 
 // Event.
+import rina.rocan.event.RocanEventStageable.EventStage;
 import rina.rocan.event.render.RocanEventRenderEntity;
 import rina.rocan.event.render.RocanEventRender;
 
@@ -94,7 +95,7 @@ public class RocanEntityChams extends RocanModule {
 			return;
 		}
 
-		if (event.getStage() == RocanEventRenderEntity.EventStage.PRE) {
+		if (event.getStage() == EventStage.PRE) {
 			mc.getRenderManager().setRenderShadow(false);
 			mc.getRenderManager().setRenderOutlines(false);
 
@@ -108,7 +109,7 @@ public class RocanEntityChams extends RocanModule {
 			GlStateManager.popMatrix();
 		}
 
-		if (event.getStage() == RocanEventRenderEntity.EventStage.POST) {
+		if (event.getStage() == EventStage.POST) {
 			mc.getRenderManager().setRenderShadow(shadow);
 
 			GlStateManager.pushMatrix();

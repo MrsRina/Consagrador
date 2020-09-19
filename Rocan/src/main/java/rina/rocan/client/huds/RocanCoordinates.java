@@ -23,6 +23,8 @@ public class RocanCoordinates extends RocanHUD {
 	RocanSetting rgb_effect = addSetting(new String[] {"RGB", "CoordinatesRGB", "RGB effect."}, false);
 	RocanSetting direction  = addSetting(new String[] {"Direction", "Direction", "Direction view."}, "XZ", new String[] {"XZ", "NSWE", "none"});
 
+	private String coordinates;
+
 	public RocanCoordinates() {
 		super(new String[] {"Coordinates", "Coordinates", "Draw position player."}, Docking.LEFT_UP);
 	}
@@ -33,8 +35,10 @@ public class RocanCoordinates extends RocanHUD {
 		String y = String.format("%.1f", (double) (mc.player.posY));
 		String z = String.format("%.1f", (double) (mc.player.posZ));
 
-		String x_nether = String.format("%.1f", (Double) (mc.player.posX * 0.125f));
-		String z_nether = String.format("%.1f", (Double) (mc.player.posZ * 0.125f));
+		float value = mc.world.getBiome(mc.player.getPosition()).getBiomeName().equals("Hell") == true ? 8 : 0.125f;
+
+		String x_nether = String.format("%.1f", (Double) (mc.player.posX * value));
+		String z_nether = String.format("%.1f", (Double) (mc.player.posZ * value));
 
 		String dirc = "";
 
@@ -46,7 +50,7 @@ public class RocanCoordinates extends RocanHUD {
 			dirc = "";
 		}
 
-		String coordinates = dirc + "XYZ " + Rocan.getGrayColor() + x + ", " + y + ", " + z + Rocan.setDefaultColor() + " [" + Rocan.getGrayColor() + x_nether + ", " + z_nether + Rocan.setDefaultColor() + "]";
+		coordinates = dirc + "XYZ " + Rocan.getGrayColor() + x + ", " + y + ", " + z + Rocan.setDefaultColor() + " [" + Rocan.getGrayColor() + x_nether + ", " + z_nether + Rocan.setDefaultColor() + "]";
 
 		if (rgb_effect.getBoolean()) {
 			renderString(coordinates, 0, 0, rgb_r, rgb_g, rgb_b);

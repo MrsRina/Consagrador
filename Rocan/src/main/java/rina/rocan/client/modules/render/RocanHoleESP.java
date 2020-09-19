@@ -55,9 +55,27 @@ public class RocanHoleESP extends RocanModule {
 	int g;
 	int b;
 
-	ArrayList<BlockPos> hole_list;
+	private ArrayList<BlockPos> hole_list;
 
-	boolean safe = false;
+	private boolean safe = false;
+
+	private BlockPos[] hole_matrix = {
+		new BlockPos( 0, -1,  0),
+		new BlockPos( 0,  0, -1),
+		new BlockPos( 1,  0,  0),
+		new BlockPos( 0,  0,  1),
+		new BlockPos(-1,  0,  0)
+	};
+
+	private BlockPos[] double_hole_matrix = {
+		new BlockPos( 0, -2,  0),
+		new BlockPos( 0,  0, -2),
+		new BlockPos( 2,  0,  0),
+		new BlockPos( 0,  0,  2),
+		new BlockPos(-2,  0,  0)
+	};
+
+	private BlockPos[] current_hole_matrix = {};
 
 	public RocanHoleESP() {
 		super(new String[] {"Hole ESP", "HoleESP", "Render holes bedrock or obisidian."}, Category.ROCAN_RENDER);
@@ -72,6 +90,12 @@ public class RocanHoleESP extends RocanModule {
 		}
 
 		if (mc.player != null || mc.world != null) {
+			if (double_hole.getBoolean()) {
+				current_hole_matrix = double_hole_matrix;
+			} else {
+				current_hole_matrix = hole_matrix;
+			}
+
 			int ceil_range = (int) Math.ceil(range.getInteger());
 
 			List<BlockPos> sphere_list = RocanUtilMath.getSphereList(RocanUtilMath.getPlayerBlockpos(), ceil_range, ceil_range, false, true);
@@ -91,14 +115,8 @@ public class RocanHoleESP extends RocanModule {
 
 				boolean possible = true;
 
-				for (BlockPos seems_blocks : new BlockPos[] {
-				/*  RinaRinaRinaRinaRina  */ new BlockPos( 0, -1,  0),
-				/*  RinaRinaRinaRinaRina  */ new BlockPos( 0,  0, -1),
-				/*  RinaRinaRinaRinaRina  */ new BlockPos( 1,  0,  0),
-				/*  RinaRinaRinaRinaRina  */ new BlockPos( 0,  0,  1),
-				/*  RinaRinaRinaRinaRina  */ new BlockPos(-1,  0,  0)
-				}) {
-					Block block = mc.world.getBlockState(blockpos.add(seems_blocks)).getBlock();
+				for (BlockPos blockpos_matrix : current_hole_matrix) {
+					Block block = mc.world.getBlockState(blockpos.add(blockpos_matrix)).getBlock();
 
 					if (block != Blocks.BEDROCK && block != Blocks.OBSIDIAN && block != Blocks.ENDER_CHEST && block != Blocks.ANVIL) {
 						possible = false;
