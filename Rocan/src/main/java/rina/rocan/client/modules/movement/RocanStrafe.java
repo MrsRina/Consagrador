@@ -121,10 +121,8 @@ public class RocanStrafe extends RocanModule {
 					mc.player.setSprinting(true);
 				}
 
-				if (mc.player.onGround) {
+				if (mc.gameSettings.keyBindJump.pressed == false) {
 					mc.gameSettings.keyBindJump.pressed = true;
-				} else {
-					mc.gameSettings.keyBindJump.pressed = false;
 				}
 
 				if (mc.gameSettings.keyBindJump.isKeyDown()) {

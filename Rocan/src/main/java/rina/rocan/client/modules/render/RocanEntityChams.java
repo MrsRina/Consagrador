@@ -123,30 +123,32 @@ public class RocanEntityChams extends RocanModule {
 	}
 
 	public boolean verifyRender(Entity entity) {
+		boolean render = false;
+
 		if (entity instanceof EntityPlayer && entity == mc.player) {
-			return false;
+			render =  false;
 		}
 
 		if (entity instanceof EntityLivingBase && entity instanceof EntityPlayer && (render_entity_player.getBoolean() || (render_entity_enemy.getBoolean() && Rocan.getFriendManager().isEnemy(entity.getName())) || (render_entity_friend.getBoolean() && Rocan.getFriendManager().isFriend(entity.getName())))) {
-			return true;
+			remder = true;
 		}
 
 		if (entity instanceof EntityLivingBase && entity instanceof IMob && render_entity_hostile.getBoolean()) {
-			return true;
+			render = true;
 		}
 
 		if (entity instanceof EntityLivingBase && entity instanceof IAnimals && render_entity_animals.getBoolean()) {
-			return true;
+			render = true;
 		}
 
 		if (entity instanceof EntityEnderCrystal && render_entity_end_crystal.getBoolean()) {
-			return true;
+			render = true;
 		}
 
 		if (entity instanceof EntityItem && render_entity_drop_item.getBoolean()) {
-			return true;
+			render = true;
 		}
 
-		return false;
+		return render;
 	}
 }

@@ -60,19 +60,36 @@ public class RocanHoleESP extends RocanModule {
 	private boolean safe = false;
 
 	private BlockPos[] hole_matrix = {
-		new BlockPos( 0, -1,  0),
-		new BlockPos( 0,  0, -1),
-		new BlockPos( 1,  0,  0),
-		new BlockPos( 0,  0,  1),
-		new BlockPos(-1,  0,  0)
+		// Down holes.
+		new BlockPos(0, -1, 0),
+
+		// Positives.
+		new BlockPos(1, 0, 0),
+		new BlockPos(0, 0, 1),
+
+		// Negtives.
+		new BlockPos(-1, 0, 0),
+		new BlockPos(0, 0, -1)
 	};
 
 	private BlockPos[] double_hole_matrix = {
-		new BlockPos( 0, -2,  0),
-		new BlockPos( 0,  0, -2),
-		new BlockPos( 2,  0,  0),
-		new BlockPos( 0,  0,  2),
-		new BlockPos(-2,  0,  0)
+		// Down hole.
+		new BlockPos(0, -1, 1),
+		new BlockPos(0, -1, 2),
+		new BlockPos(1, -1, 0),
+		new BlockPos(2, -1, 2),
+
+		// Positives.
+		new BlockPos(1, 0, 0),
+		new BlockPos(2, 0, 0),
+		new BlockPos(0, 0, 1),
+		new BlockPos(0, 0, 2),
+
+		// Negatives.
+		new BlockPos(0, 0, -2),
+		new BlockPos(0, 0, -1),
+		new BlockPos(-2, 0, 0),
+		new BlockPos(-1, 0, 0)
 	};
 
 	private BlockPos[] current_hole_matrix = {};
