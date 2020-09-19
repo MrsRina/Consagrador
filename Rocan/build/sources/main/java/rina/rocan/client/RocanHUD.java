@@ -370,19 +370,25 @@ public class RocanHUD extends RocanModule {
 			} else if (getDocking() == Docking.RIGHT_DOWN) {
 				setDocking(Docking.LEFT_DOWN);
 			}
-		} else if (this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1)) {
+		}
+
+		if (this.rect.getX() + this.rect.getWidth() >= (this.screen_width - 1)) {
 			if (getDocking() == Docking.LEFT_UP) {
 				setDocking(Docking.RIGHT_UP);
 			} else if (getDocking() == Docking.LEFT_DOWN) {
 				setDocking(Docking.RIGHT_DOWN);
 			}
-		} else if (this.rect.getY() <= 1) {
+		}
+
+		if (this.rect.getY() <= 1) {
 			if (getDocking() == Docking.LEFT_DOWN) {
 				setDocking(Docking.LEFT_UP);
 			} else if (getDocking() == Docking.RIGHT_DOWN) {
 				setDocking(Docking.RIGHT_UP);
 			}
-		} else if (this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1)) {
+		}
+
+		if (this.rect.getY() + this.rect.getHeight() >= (this.screen_height - 1)) {
 			if (getDocking() == Docking.LEFT_UP) {
 				setDocking(Docking.LEFT_DOWN);
 			} else if (getDocking() == Docking.RIGHT_UP) {

@@ -126,6 +126,10 @@ public class RocanEntityTracer extends RocanModule {
 	}
 
 	public boolean verifyRender(Entity entity) {
+		if (entity instanceof EntityPlayer && entity == mc.player) {
+			return false;
+		}
+
 		if (entity instanceof EntityLivingBase && entity instanceof EntityPlayer && (render_entity_player.getBoolean() || (render_entity_enemy.getBoolean() && Rocan.getFriendManager().isEnemy(entity.getName())) || (render_entity_friend.getBoolean() && Rocan.getFriendManager().isFriend(entity.getName())))) {
 			return true;
 		}

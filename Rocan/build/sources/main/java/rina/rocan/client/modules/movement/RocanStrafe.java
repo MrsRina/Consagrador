@@ -29,6 +29,9 @@ import rina.turok.TurokString;
 import rina.rocan.util.RocanUtilClient;
 import rina.rocan.util.RocanUtilMath;
 
+// Rocan.
+import rina.rocan.Rocan;
+
 /**
  *
  * @author Rina!
@@ -45,8 +48,6 @@ public class RocanStrafe extends RocanModule {
 	RocanSetting fast_movement        = createSetting(new String[] {"Fast Movement", "StrafeFastMovement", "Fast strafe movement."}, true);
 	RocanSetting strafe_potion_effect = createSetting(new String[] {"Potion Effect", "StrafePotionEffect", "Potion effect speed."}, true);
 	RocanSetting bypass_speed         = createSetting(new String[] {"Bypass Speed", "StrafeBypassSpeed", "Bypass speed."}, -1, false);
-
-	RocanSetting dev_button = createSetting(new String[] {"Real Speed Value", "StrafeRealSpeedValue", "DEV util."}, true);
 
 	double speed;
 
@@ -67,11 +68,6 @@ public class RocanStrafe extends RocanModule {
 		if (mc.player == null) {
 			return;
 		}
-
-		if (dev_button.getBoolean()) {
-			sentNotifyClientChat("" + speed);
-		}
-
 
 		if (!bypass_speed.getBoolean()) {
 			this.info = modes_movement.getString();
@@ -142,8 +138,6 @@ public class RocanStrafe extends RocanModule {
 
 			verifySpeed();
 		}
-
-		// player_movement[0] = Yaw; player_movement[1] = Pitch; player_movement[2] = Forward; player_movement[3] = Strafe;
 
 		if (player_movement[2] == 0.0d && player_movement[3] == 0.0d) {
 			event.setX(0.0d);

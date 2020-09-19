@@ -67,6 +67,9 @@ public class RocanEventManager {
 		}
 
 		Rocan.getModuleManager().onUpdateModuleList();
+
+		// We call here to event listener, maybe I create a system mode to Rocan.
+		Rocan.getChatManager().listenChatNotifier();
 	}
 
 	@SubscribeEvent
