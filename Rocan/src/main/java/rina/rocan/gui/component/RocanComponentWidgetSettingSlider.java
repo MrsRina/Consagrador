@@ -250,7 +250,7 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 	@Override
 	public void updateDescriptionListener() {
 		if (isMousePassing()) {
-			if (this.tickness.isPassedMS(1500) && !this.event_has_waited) {
+			if (this.tickness.isPassedMS(1000) && !this.event_has_waited) {
 				this.event_has_waited = true;
 
 				this.tickness.reset();
