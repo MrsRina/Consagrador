@@ -30,4 +30,18 @@ import rina.rocan.Rocan;
 public abstract class RocanMixinRender <T extends Entity> {
 	@Shadow
 	protected abstract boolean bindEntityTexture(T entity);
+
+	@Inject(method = "doRender", at = @At("HEAD"))
+	private void doRender(Entity entity, double x, double y, double z, float yaw, float partial_ticks, CallbackInfo callback) {
+		RocanEventRenderEntity event = new RocanEventRenderEntity(RocanEventRenderEntity.EventStage.PRE, entity, x, y, z, yaw, partial_ticks);
+
+		Rocan.getPomeloEventManager().dispatchEvent(event);
+	}
+
+	@Inject(method = "doRender", at = @At("RETURN"))
+	private void doLastRender(Entity entity, double x, double y, double z, float yaw, float partial_ticks, CallbackInfo callback) {
+		RocanEventRenderEntity event = new RocanEventRenderEntity(RocanEventRenderEntity.EventStage.POST, entity, x, y, z, yaw, partial_ticks);
+
+		Rocan.getPomeloEventManager().dispatchEvent(event);
+	}
 }
