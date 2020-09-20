@@ -1,7 +1,7 @@
 Unsupposrted library path: C:\Users\SrRina\Documents\Rocan\Rocan\build\classes\api
 Unsupposrted library path: C:\Users\SrRina\Documents\Rocan\Rocan\build\resources\api
 Symbol range map extraction starting
-Processing 100 files
+Processing 102 files
 startProcessing "rina/rocan/Rocan.java" md5: 08f4b6e178634f4f84b10656f21cc37a
 @|rina/rocan/Rocan.java|8|18|rina.rocan|package|rina.rocan|(file)
 Class Start: rina.rocan.Rocan
@@ -3860,7 +3860,7 @@ Class Start: rina.rocan.client.modules.movement.RocanStep
 Class End  : rina.rocan.client.modules.movement.RocanStep
 endProcessing "rina/rocan/client/modules/movement/RocanStep.java"
 
-startProcessing "rina/rocan/client/modules/movement/RocanStrafe.java" md5: 0c1b703e97c9eab0c70acdf7508ede7c
+startProcessing "rina/rocan/client/modules/movement/RocanStrafe.java" md5: f059c7366320013f9dbff98707877293
 @|rina/rocan/client/modules/movement/RocanStrafe.java|8|42|rina.rocan.client.modules.movement|package|rina.rocan.client.modules.movement|(file)
 Class Start: rina.rocan.client.modules.movement.RocanStrafe
    @|rina/rocan/client/modules/movement/RocanStrafe.java|1028|1039|RocanStrafe|class|rina.rocan.client.modules.movement.RocanStrafe|false
@@ -4028,75 +4028,72 @@ Class Start: rina.rocan.client.modules.movement.RocanStrafe
       @|rina/rocan/client/modules/movement/RocanStrafe.java|3895|3901|player|field|net.minecraft.client.Minecraft|player
       @|rina/rocan/client/modules/movement/RocanStrafe.java|3902|3914|setSprinting|method|net.minecraft.entity.Entity|setSprinting|(Z)V
       @|rina/rocan/client/modules/movement/RocanStrafe.java|3940|3942|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3943|3949|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3950|3958|onGround|field|net.minecraft.entity.Entity|onGround
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3968|3970|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3971|3983|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3984|3995|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|3996|4003|pressed|field|net.minecraft.client.settings.KeyBinding|pressed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4032|4034|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4035|4047|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4048|4059|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4060|4067|pressed|field|net.minecraft.client.settings.KeyBinding|pressed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4095|4097|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4098|4110|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4111|4122|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4123|4132|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4144|4152|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4153|4158|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4180|4185|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4186|4190|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4213|4218|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4222|4226|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4227|4230|cos|method|java.lang.Math|cos|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4231|4235|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4236|4245|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4301|4306|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4310|4314|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4315|4318|sin|method|java.lang.Math|sin|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4319|4323|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4324|4333|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4371|4376|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4377|4381|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4404|4409|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4413|4417|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4418|4421|sin|method|java.lang.Math|sin|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4422|4426|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4427|4436|toRadians|method|java.lang.Math|toRadians|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4492|4497|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4501|4505|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4506|4509|cos|method|java.lang.Math|cos|(D)D
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4510|4514|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4515|4524|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3943|3955|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3956|3967|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3968|3975|pressed|field|net.minecraft.client.settings.KeyBinding|pressed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3994|3996|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|3997|4009|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4010|4021|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4022|4029|pressed|field|net.minecraft.client.settings.KeyBinding|pressed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4056|4058|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4059|4071|gameSettings|field|net.minecraft.client.Minecraft|gameSettings
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4072|4083|keyBindJump|field|net.minecraft.client.settings.GameSettings|keyBindJump
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4084|4093|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4105|4113|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4114|4119|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4141|4146|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4147|4151|setX|method|rina.rocan.event.player.RocanEventPlayerMove|setX|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4174|4179|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4183|4187|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4188|4191|cos|method|java.lang.Math|cos|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4192|4196|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4197|4206|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4262|4267|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4271|4275|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4276|4279|sin|method|java.lang.Math|sin|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4280|4284|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4285|4294|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4332|4337|event|param|rina.rocan.client.modules.movement.RocanStrafe|playerMove|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4338|4342|setZ|method|rina.rocan.event.player.RocanEventPlayerMove|setZ|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4365|4370|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4374|4378|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4379|4382|sin|method|java.lang.Math|sin|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4383|4387|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4388|4397|toRadians|method|java.lang.Math|toRadians|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4453|4458|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4462|4466|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4467|4470|cos|method|java.lang.Math|cos|(D)D
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4471|4475|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4476|4485|toRadians|method|java.lang.Math|toRadians|(D)D
    Method End: playerMove(Lrina/rocan/event/player/RocanEventPlayerMove;)V
    Method Start: makeJump(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4613|4618|event|param|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4583|4591|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4592|4612|RocanEventPlayerMove|class|rina.rocan.event.player.RocanEventPlayerMove|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4661|4663|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4664|4670|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4671|4679|onGround|field|net.minecraft.entity.Entity|onGround
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4692|4703|smooth_jump|field|rina.rocan.client.modules.movement.RocanStrafe|smooth_jump
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4704|4714|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4725|4730|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4761|4763|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4764|4770|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4771|4785|isPotionActive|method|net.minecraft.entity.EntityLivingBase|isPotionActive|(Lnet/minecraft/potion/Potion;)Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4786|4796|MobEffects|class|net.minecraft.init.MobEffects|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4797|4807|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4812|4830|jump_potion_effect|field|rina.rocan.client.modules.movement.RocanStrafe|jump_potion_effect
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4831|4841|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4862|4864|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4865|4871|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4872|4893|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4894|4904|MobEffects|class|net.minecraft.init.MobEffects|false
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4905|4915|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4917|4929|getAmplifier|method|net.minecraft.potion.PotionEffect|getAmplifier|()I
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4958|4963|event|param|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4964|4968|setY|method|rina.rocan.event.player.RocanEventPlayerMove|setY|(D)V
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4969|4971|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4972|4978|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/movement/RocanStrafe.java|4979|4986|motionY|field|net.minecraft.entity.Entity|motionY
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4574|4579|event|param|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4544|4552|makeJump|method|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4553|4573|RocanEventPlayerMove|class|rina.rocan.event.player.RocanEventPlayerMove|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4622|4624|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4625|4631|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4632|4640|onGround|field|net.minecraft.entity.Entity|onGround
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4653|4664|smooth_jump|field|rina.rocan.client.modules.movement.RocanStrafe|smooth_jump
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4665|4675|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4686|4691|speed|field|rina.rocan.client.modules.movement.RocanStrafe|speed
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4722|4724|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4725|4731|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4732|4746|isPotionActive|method|net.minecraft.entity.EntityLivingBase|isPotionActive|(Lnet/minecraft/potion/Potion;)Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4747|4757|MobEffects|class|net.minecraft.init.MobEffects|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4758|4768|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4773|4791|jump_potion_effect|field|rina.rocan.client.modules.movement.RocanStrafe|jump_potion_effect
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4792|4802|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4823|4825|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4826|4832|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4833|4854|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4855|4865|MobEffects|class|net.minecraft.init.MobEffects|false
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4866|4876|JUMP_BOOST|field|net.minecraft.init.MobEffects|JUMP_BOOST
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4878|4890|getAmplifier|method|net.minecraft.potion.PotionEffect|getAmplifier|()I
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4919|4924|event|param|rina.rocan.client.modules.movement.RocanStrafe|makeJump|(Lrina/rocan/event/player/RocanEventPlayerMove;)V|event|0
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4925|4929|setY|method|rina.rocan.event.player.RocanEventPlayerMove|setY|(D)V
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4930|4932|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4933|4939|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/movement/RocanStrafe.java|4940|4947|motionY|field|net.minecraft.entity.Entity|motionY
    Method End: makeJump(Lrina/rocan/event/player/RocanEventPlayerMove;)V
 Class End  : rina.rocan.client.modules.movement.RocanStrafe
 endProcessing "rina/rocan/client/modules/movement/RocanStrafe.java"
@@ -4220,7 +4217,7 @@ Class Start: rina.rocan.client.modules.render.RocanBlockHighlight
 Class End  : rina.rocan.client.modules.render.RocanBlockHighlight
 endProcessing "rina/rocan/client/modules/render/RocanBlockHighlight.java"
 
-startProcessing "rina/rocan/client/modules/render/RocanEntityChams.java" md5: 06ac703739da9c06e97035f871e4da1e
+startProcessing "rina/rocan/client/modules/render/RocanEntityChams.java" md5: 88db634011ef401559140c8406469b35
 @|rina/rocan/client/modules/render/RocanEntityChams.java|8|40|rina.rocan.client.modules.render|package|rina.rocan.client.modules.render|(file)
 Class Start: rina.rocan.client.modules.render.RocanEntityChams
    @|rina/rocan/client/modules/render/RocanEntityChams.java|1672|1688|RocanEntityChams|class|rina.rocan.client.modules.render.RocanEntityChams|false
@@ -4355,51 +4352,51 @@ Class Start: rina.rocan.client.modules.render.RocanEntityChams
       @|rina/rocan/client/modules/render/RocanEntityChams.java|4521|4527|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
       @|rina/rocan/client/modules/render/RocanEntityChams.java|4501|4513|verifyRender|method|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z
       @|rina/rocan/client/modules/render/RocanEntityChams.java|4514|4520|Entity|class|net.minecraft.entity.Entity|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4538|4544|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4556|4568|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4572|4578|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4582|4584|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4585|4591|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4627|4633|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4645|4661|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4665|4671|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4683|4695|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4700|4720|render_entity_player|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_player
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4721|4731|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4738|4757|render_entity_enemy|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_enemy
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4758|4768|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4774|4779|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4780|4796|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4799|4806|isEnemy|method|rina.rocan.manager.RocanFriendManager|isEnemy|(Ljava/lang/String;)Z
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4807|4813|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4814|4821|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4830|4850|render_entity_friend|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_friend
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4851|4861|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4867|4872|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4873|4889|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4892|4900|isFriend|method|rina.rocan.manager.RocanFriendManager|isFriend|(Ljava/lang/String;)Z
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4901|4907|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4908|4915|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4955|4961|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4973|4989|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|4993|4999|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5011|5015|IMob|class|net.minecraft.entity.monster.IMob|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5019|5040|render_entity_hostile|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_hostile
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5041|5051|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5088|5094|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5106|5122|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5126|5132|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5144|5152|IAnimals|class|net.minecraft.entity.passive.IAnimals|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5156|5177|render_entity_animals|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_animals
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5178|5188|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5225|5231|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5243|5261|EntityEnderCrystal|class|net.minecraft.entity.item.EntityEnderCrystal|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5265|5290|render_entity_end_crystal|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_end_crystal
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5291|5301|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5338|5344|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5356|5366|EntityItem|class|net.minecraft.entity.item.EntityItem|false
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5370|5393|render_entity_drop_item|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_drop_item
-      @|rina/rocan/client/modules/render/RocanEntityChams.java|5394|5404|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4567|4573|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4585|4597|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4601|4607|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4611|4613|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4614|4620|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4659|4665|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4677|4693|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4697|4703|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4715|4727|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4732|4752|render_entity_player|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_player
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4753|4763|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4770|4789|render_entity_enemy|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_enemy
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4790|4800|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4806|4811|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4812|4828|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4831|4838|isEnemy|method|rina.rocan.manager.RocanFriendManager|isEnemy|(Ljava/lang/String;)Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4839|4845|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4846|4853|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4862|4882|render_entity_friend|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_friend
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4883|4893|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4899|4904|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4905|4921|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4924|4932|isFriend|method|rina.rocan.manager.RocanFriendManager|isFriend|(Ljava/lang/String;)Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4933|4939|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4940|4947|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|4989|4995|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5007|5023|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5027|5033|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5045|5049|IMob|class|net.minecraft.entity.monster.IMob|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5053|5074|render_entity_hostile|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_hostile
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5075|5085|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5124|5130|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5142|5158|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5162|5168|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5180|5188|IAnimals|class|net.minecraft.entity.passive.IAnimals|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5192|5213|render_entity_animals|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_animals
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5214|5224|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5263|5269|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5281|5299|EntityEnderCrystal|class|net.minecraft.entity.item.EntityEnderCrystal|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5303|5328|render_entity_end_crystal|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_end_crystal
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5329|5339|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5378|5384|entity|param|rina.rocan.client.modules.render.RocanEntityChams|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5396|5406|EntityItem|class|net.minecraft.entity.item.EntityItem|false
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5410|5433|render_entity_drop_item|field|rina.rocan.client.modules.render.RocanEntityChams|render_entity_drop_item
+      @|rina/rocan/client/modules/render/RocanEntityChams.java|5434|5444|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
    Method End: verifyRender(Lnet/minecraft/entity/Entity;)Z
 Class End  : rina.rocan.client.modules.render.RocanEntityChams
 endProcessing "rina/rocan/client/modules/render/RocanEntityChams.java"
@@ -4511,7 +4508,7 @@ Class Start: rina.rocan.client.modules.render.RocanEntityESP
 Class End  : rina.rocan.client.modules.render.RocanEntityESP
 endProcessing "rina/rocan/client/modules/render/RocanEntityESP.java"
 
-startProcessing "rina/rocan/client/modules/render/RocanEntityTracer.java" md5: 31d60cc11a98f5b78e104f25b7dc9d61
+startProcessing "rina/rocan/client/modules/render/RocanEntityTracer.java" md5: 45a978a238aa6f680020156c5560d0c0
 @|rina/rocan/client/modules/render/RocanEntityTracer.java|8|40|rina.rocan.client.modules.render|package|rina.rocan.client.modules.render|(file)
 Class Start: rina.rocan.client.modules.render.RocanEntityTracer
    @|rina/rocan/client/modules/render/RocanEntityTracer.java|1457|1474|RocanEntityTracer|class|rina.rocan.client.modules.render.RocanEntityTracer|false
@@ -4696,51 +4693,51 @@ Class Start: rina.rocan.client.modules.render.RocanEntityTracer
       @|rina/rocan/client/modules/render/RocanEntityTracer.java|5393|5399|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
       @|rina/rocan/client/modules/render/RocanEntityTracer.java|5373|5385|verifyRender|method|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z
       @|rina/rocan/client/modules/render/RocanEntityTracer.java|5386|5392|Entity|class|net.minecraft.entity.Entity|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5410|5416|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5428|5440|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5444|5450|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5454|5456|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5457|5463|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5499|5505|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5517|5533|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5537|5543|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5555|5567|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5572|5592|render_entity_player|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_player
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5593|5603|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5610|5629|render_entity_enemy|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_enemy
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5630|5640|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5646|5651|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5652|5668|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5671|5678|isEnemy|method|rina.rocan.manager.RocanFriendManager|isEnemy|(Ljava/lang/String;)Z
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5679|5685|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5686|5693|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5702|5722|render_entity_friend|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_friend
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5723|5733|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5739|5744|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5745|5761|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5764|5772|isFriend|method|rina.rocan.manager.RocanFriendManager|isFriend|(Ljava/lang/String;)Z
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5773|5779|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5780|5787|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5827|5833|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5845|5861|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5865|5871|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5883|5887|IMob|class|net.minecraft.entity.monster.IMob|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5891|5912|render_entity_hostile|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_hostile
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5913|5923|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5960|5966|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5978|5994|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5998|6004|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6016|6024|IAnimals|class|net.minecraft.entity.passive.IAnimals|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6028|6049|render_entity_animals|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_animals
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6050|6060|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6097|6103|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6115|6133|EntityEnderCrystal|class|net.minecraft.entity.item.EntityEnderCrystal|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6137|6162|render_entity_end_crystal|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_end_crystal
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6163|6173|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6210|6216|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6228|6238|EntityItem|class|net.minecraft.entity.item.EntityItem|false
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6242|6265|render_entity_drop_item|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_drop_item
-      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6266|6276|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5439|5445|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5457|5469|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5473|5479|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5483|5485|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5486|5492|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5531|5537|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5549|5565|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5569|5575|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5587|5599|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5604|5624|render_entity_player|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_player
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5625|5635|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5642|5661|render_entity_enemy|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_enemy
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5662|5672|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5678|5683|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5684|5700|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5703|5710|isEnemy|method|rina.rocan.manager.RocanFriendManager|isEnemy|(Ljava/lang/String;)Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5711|5717|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5718|5725|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5734|5754|render_entity_friend|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_friend
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5755|5765|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5771|5776|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5777|5793|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5796|5804|isFriend|method|rina.rocan.manager.RocanFriendManager|isFriend|(Ljava/lang/String;)Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5805|5811|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5812|5819|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5861|5867|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5879|5895|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5899|5905|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5917|5921|IMob|class|net.minecraft.entity.monster.IMob|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5925|5946|render_entity_hostile|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_hostile
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5947|5957|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|5996|6002|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6014|6030|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6034|6040|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6052|6060|IAnimals|class|net.minecraft.entity.passive.IAnimals|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6064|6085|render_entity_animals|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_animals
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6086|6096|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6135|6141|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6153|6171|EntityEnderCrystal|class|net.minecraft.entity.item.EntityEnderCrystal|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6175|6200|render_entity_end_crystal|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_end_crystal
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6201|6211|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6250|6256|entity|param|rina.rocan.client.modules.render.RocanEntityTracer|verifyRender|(Lnet/minecraft/entity/Entity;)Z|entity|0
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6268|6278|EntityItem|class|net.minecraft.entity.item.EntityItem|false
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6282|6305|render_entity_drop_item|field|rina.rocan.client.modules.render.RocanEntityTracer|render_entity_drop_item
+      @|rina/rocan/client/modules/render/RocanEntityTracer.java|6306|6316|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
    Method End: verifyRender(Lnet/minecraft/entity/Entity;)Z
 Class End  : rina.rocan.client.modules.render.RocanEntityTracer
 endProcessing "rina/rocan/client/modules/render/RocanEntityTracer.java"
@@ -4781,7 +4778,7 @@ Class Start: rina.rocan.client.modules.render.RocanHUDRender
 Class End  : rina.rocan.client.modules.render.RocanHUDRender
 endProcessing "rina/rocan/client/modules/render/RocanHUDRender.java"
 
-startProcessing "rina/rocan/client/modules/render/RocanHoleESP.java" md5: 8d8a6260a200b380c36690faafa30e7a
+startProcessing "rina/rocan/client/modules/render/RocanHoleESP.java" md5: 4206e966dae7b44b01c7ad0b0f709655
 @|rina/rocan/client/modules/render/RocanHoleESP.java|8|40|rina.rocan.client.modules.render|package|rina.rocan.client.modules.render|(file)
 Class Start: rina.rocan.client.modules.render.RocanHoleESP
    @|rina/rocan/client/modules/render/RocanHoleESP.java|593|605|RocanHoleESP|class|rina.rocan.client.modules.render.RocanHoleESP|false
@@ -4856,172 +4853,165 @@ Class Start: rina.rocan.client.modules.render.RocanHoleESP
    @|rina/rocan/client/modules/render/RocanHoleESP.java|2382|2390|BlockPos|class|net.minecraft.util.math.BlockPos|false
    @|rina/rocan/client/modules/render/RocanHoleESP.java|2382|2390|BlockPos|class|net.minecraft.util.math.BlockPos|false
    @|rina/rocan/client/modules/render/RocanHoleESP.java|2393|2411|double_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|double_hole_matrix|
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2440|2448|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2467|2475|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2494|2502|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2521|2529|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2567|2575|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2593|2601|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2619|2627|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2645|2653|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2690|2698|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2717|2725|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2744|2752|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2771|2779|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2807|2815|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2807|2815|BlockPos|class|net.minecraft.util.math.BlockPos|false
-   @|rina/rocan/client/modules/render/RocanHoleESP.java|2818|2837|current_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|current_hole_matrix|
+   @|rina/rocan/client/modules/render/RocanHoleESP.java|2441|2449|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|rina/rocan/client/modules/render/RocanHoleESP.java|2487|2495|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|rina/rocan/client/modules/render/RocanHoleESP.java|2513|2521|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|rina/rocan/client/modules/render/RocanHoleESP.java|2557|2565|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|rina/rocan/client/modules/render/RocanHoleESP.java|2584|2592|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|rina/rocan/client/modules/render/RocanHoleESP.java|2620|2628|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|rina/rocan/client/modules/render/RocanHoleESP.java|2620|2628|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|rina/rocan/client/modules/render/RocanHoleESP.java|2631|2650|current_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|current_hole_matrix|
    Method Start: RocanHoleESP()V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|2855|2867|RocanHoleESP|method|rina.rocan.client.modules.render.RocanHoleESP|RocanHoleESP|()V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|2885|2891|String|class|java.lang.String|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|2957|2965|Category|class|rina.rocan.client.RocanModule.Category|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|2966|2978|ROCAN_RENDER|field|rina.rocan.client.RocanModule.Category|ROCAN_RENDER
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2668|2680|RocanHoleESP|method|rina.rocan.client.modules.render.RocanHoleESP|RocanHoleESP|()V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2698|2704|String|class|java.lang.String|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2770|2778|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2779|2791|ROCAN_RENDER|field|rina.rocan.client.RocanModule.Category|ROCAN_RENDER
    Method End: RocanHoleESP()V
    Method Start: onUpdate()V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|2990|2998|Override|class|java.lang.Override|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3013|3021|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3033|3042|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3058|3067|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3074|3083|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3105|3114|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3115|3120|clear|method|java.util.Collection|clear|()V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3138|3140|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3141|3147|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3159|3161|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3162|3167|world|field|net.minecraft.client.Minecraft|world
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3187|3198|double_hole|field|rina.rocan.client.modules.render.RocanHoleESP|double_hole
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3199|3209|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3220|3239|current_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|current_hole_matrix
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3242|3260|double_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|double_hole_matrix
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3280|3299|current_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|current_hole_matrix
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3302|3313|hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|hole_matrix
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3350|3354|Math|class|java.lang.Math|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3355|3359|ceil|method|java.lang.Math|ceil|(D)D
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3360|3365|range|field|rina.rocan.client.modules.render.RocanHoleESP|range
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3366|3376|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3387|3391|List|class|java.util.List|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3392|3400|BlockPos|class|net.minecraft.util.math.BlockPos|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3416|3429|RocanUtilMath|class|rina.rocan.util.RocanUtilMath|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3430|3443|getSphereList|method|rina.rocan.util.RocanUtilMath|getSphereList|(Lnet/minecraft/util/math/BlockPos;FIZZ)Ljava/util/List;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3444|3457|RocanUtilMath|class|rina.rocan.util.RocanUtilMath|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3458|3475|getPlayerBlockpos|method|rina.rocan.util.RocanUtilMath|getPlayerBlockpos|()Lnet/minecraft/util/math/BlockPos;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3528|3536|BlockPos|class|net.minecraft.util.math.BlockPos|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3573|3575|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3576|3581|world|field|net.minecraft.client.Minecraft|world
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3582|3595|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3606|3614|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3617|3623|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3624|3630|Blocks|class|net.minecraft.init.Blocks|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3631|3634|AIR|field|net.minecraft.init.Blocks|AIR
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3674|3676|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3677|3682|world|field|net.minecraft.client.Minecraft|world
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3683|3696|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3706|3709|add|method|net.minecraft.util.math.BlockPos|add|(III)Lnet/minecraft/util/math/BlockPos;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3720|3728|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3731|3737|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3738|3744|Blocks|class|net.minecraft.init.Blocks|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3745|3748|AIR|field|net.minecraft.init.Blocks|AIR
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3788|3790|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3791|3796|world|field|net.minecraft.client.Minecraft|world
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3797|3810|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3820|3823|add|method|net.minecraft.util.math.BlockPos|add|(III)Lnet/minecraft/util/math/BlockPos;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3834|3842|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3845|3851|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3852|3858|Blocks|class|net.minecraft.init.Blocks|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3859|3862|AIR|field|net.minecraft.init.Blocks|AIR
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3934|3942|BlockPos|class|net.minecraft.util.math.BlockPos|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3961|3980|current_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|current_hole_matrix
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|3990|3995|Block|class|net.minecraft.block.Block|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4004|4006|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4007|4012|world|field|net.minecraft.client.Minecraft|world
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4013|4026|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4036|4039|add|method|net.minecraft.util.math.BlockPos|add|(Lnet/minecraft/util/math/Vec3i;)Lnet/minecraft/util/math/BlockPos;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4058|4066|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4091|4097|Blocks|class|net.minecraft.init.Blocks|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4098|4105|BEDROCK|field|net.minecraft.init.Blocks|BEDROCK
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4118|4124|Blocks|class|net.minecraft.init.Blocks|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4125|4133|OBSIDIAN|field|net.minecraft.init.Blocks|OBSIDIAN
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4146|4152|Blocks|class|net.minecraft.init.Blocks|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4153|4164|ENDER_CHEST|field|net.minecraft.init.Blocks|ENDER_CHEST
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4177|4183|Blocks|class|net.minecraft.init.Blocks|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4184|4189|ANVIL|field|net.minecraft.init.Blocks|ANVIL
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4278|4287|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4288|4291|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2803|2811|Override|class|java.lang.Override|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2826|2834|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2846|2855|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2871|2880|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2887|2896|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2918|2927|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2928|2933|clear|method|java.util.Collection|clear|()V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2951|2953|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2954|2960|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2972|2974|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|2975|2980|world|field|net.minecraft.client.Minecraft|world
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3000|3011|double_hole|field|rina.rocan.client.modules.render.RocanHoleESP|double_hole
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3012|3022|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3033|3052|current_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|current_hole_matrix
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3055|3073|double_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|double_hole_matrix
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3093|3112|current_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|current_hole_matrix
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3115|3126|hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|hole_matrix
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3163|3167|Math|class|java.lang.Math|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3168|3172|ceil|method|java.lang.Math|ceil|(D)D
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3173|3178|range|field|rina.rocan.client.modules.render.RocanHoleESP|range
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3179|3189|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3200|3204|List|class|java.util.List|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3205|3213|BlockPos|class|net.minecraft.util.math.BlockPos|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3229|3242|RocanUtilMath|class|rina.rocan.util.RocanUtilMath|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3243|3256|getSphereList|method|rina.rocan.util.RocanUtilMath|getSphereList|(Lnet/minecraft/util/math/BlockPos;FIZZ)Ljava/util/List;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3257|3270|RocanUtilMath|class|rina.rocan.util.RocanUtilMath|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3271|3288|getPlayerBlockpos|method|rina.rocan.util.RocanUtilMath|getPlayerBlockpos|()Lnet/minecraft/util/math/BlockPos;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3341|3349|BlockPos|class|net.minecraft.util.math.BlockPos|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3386|3388|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3389|3394|world|field|net.minecraft.client.Minecraft|world
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3395|3408|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3419|3427|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3430|3436|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3437|3443|Blocks|class|net.minecraft.init.Blocks|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3444|3447|AIR|field|net.minecraft.init.Blocks|AIR
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3487|3489|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3490|3495|world|field|net.minecraft.client.Minecraft|world
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3496|3509|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3519|3522|add|method|net.minecraft.util.math.BlockPos|add|(III)Lnet/minecraft/util/math/BlockPos;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3533|3541|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3544|3550|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3551|3557|Blocks|class|net.minecraft.init.Blocks|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3558|3561|AIR|field|net.minecraft.init.Blocks|AIR
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3601|3603|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3604|3609|world|field|net.minecraft.client.Minecraft|world
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3610|3623|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3633|3636|add|method|net.minecraft.util.math.BlockPos|add|(III)Lnet/minecraft/util/math/BlockPos;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3647|3655|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3658|3664|equals|method|java.lang.Object|equals|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3665|3671|Blocks|class|net.minecraft.init.Blocks|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3672|3675|AIR|field|net.minecraft.init.Blocks|AIR
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3747|3755|BlockPos|class|net.minecraft.util.math.BlockPos|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3774|3793|current_hole_matrix|field|rina.rocan.client.modules.render.RocanHoleESP|current_hole_matrix
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3803|3808|Block|class|net.minecraft.block.Block|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3817|3819|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3820|3825|world|field|net.minecraft.client.Minecraft|world
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3826|3839|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3849|3852|add|method|net.minecraft.util.math.BlockPos|add|(Lnet/minecraft/util/math/Vec3i;)Lnet/minecraft/util/math/BlockPos;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3871|3879|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3906|3912|Blocks|class|net.minecraft.init.Blocks|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3913|3920|BEDROCK|field|net.minecraft.init.Blocks|BEDROCK
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3933|3939|Blocks|class|net.minecraft.init.Blocks|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3940|3948|OBSIDIAN|field|net.minecraft.init.Blocks|OBSIDIAN
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3961|3967|Blocks|class|net.minecraft.init.Blocks|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3968|3979|ENDER_CHEST|field|net.minecraft.init.Blocks|ENDER_CHEST
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3992|3998|Blocks|class|net.minecraft.init.Blocks|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|3999|4004|ANVIL|field|net.minecraft.init.Blocks|ANVIL
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4093|4102|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4103|4106|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
    Method End: onUpdate()V
    Method Start: onRender(Lrina/rocan/event/render/RocanEventRender;)V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4379|4384|event|param|rina.rocan.client.modules.render.RocanHoleESP|onRender|(Lrina/rocan/event/render/RocanEventRender;)V|event|0
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4330|4338|Override|class|java.lang.Override|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4353|4361|onRender|method|rina.rocan.client.RocanModule|onRender|(Lrina/rocan/event/render/RocanEventRender;)V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4362|4378|RocanEventRender|class|rina.rocan.event.render.RocanEventRender|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4396|4406|rgb_effect|field|rina.rocan.client.modules.render.RocanHoleESP|rgb_effect
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4407|4417|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4427|4443|render_red_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_red_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4444|4454|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4455|4460|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4461|4476|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4479|4491|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4503|4521|render_green_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_green_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4522|4532|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4533|4538|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4539|4554|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4557|4569|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4581|4598|render_blue_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_blue_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4599|4609|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4610|4615|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4616|4631|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4634|4646|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4660|4661|r|field|rina.rocan.client.modules.render.RocanHoleESP|r
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4664|4680|render_red_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_red_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4681|4691|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4699|4700|g|field|rina.rocan.client.modules.render.RocanHoleESP|g
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4703|4721|render_green_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_green_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4722|4732|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4740|4741|b|field|rina.rocan.client.modules.render.RocanHoleESP|b
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4744|4761|render_blue_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_blue_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4762|4772|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4792|4793|r|field|rina.rocan.client.modules.render.RocanHoleESP|r
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4796|4812|render_red_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_red_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4813|4823|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4831|4832|g|field|rina.rocan.client.modules.render.RocanHoleESP|g
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4835|4853|render_green_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_green_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4854|4864|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4872|4873|b|field|rina.rocan.client.modules.render.RocanHoleESP|b
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4876|4893|render_blue_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_blue_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4894|4904|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4922|4931|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4944|4953|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4954|4961|isEmpty|method|java.util.Collection|isEmpty|()Z
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4967|4971|safe|field|rina.rocan.client.modules.render.RocanHoleESP|safe
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|4993|5001|BlockPos|class|net.minecraft.util.math.BlockPos|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5013|5022|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5031|5046|TurokRenderHelp|class|rina.turok.TurokRenderHelp|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5047|5060|render3DSolid|method|rina.turok.TurokRenderHelp|render3DSolid|(Lnet/minecraft/client/renderer/culling/ICamera;IIIDDDIIII)V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5061|5071|getICamera|method|rina.rocan.client.RocanModule|getICamera|()Lnet/minecraft/client/renderer/culling/ICamera;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5084|5085|x|field|net.minecraft.util.math.Vec3i|x
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5096|5097|y|field|net.minecraft.util.math.Vec3i|y
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5108|5109|z|field|net.minecraft.util.math.Vec3i|z
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5114|5122|offset_y|field|rina.rocan.client.modules.render.RocanHoleESP|offset_y
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5123|5132|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5139|5140|r|field|rina.rocan.client.modules.render.RocanHoleESP|r
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5142|5143|g|field|rina.rocan.client.modules.render.RocanHoleESP|g
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5145|5146|b|field|rina.rocan.client.modules.render.RocanHoleESP|b
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5148|5166|render_alpha_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_alpha_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5167|5177|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5187|5202|TurokRenderHelp|class|rina.turok.TurokRenderHelp|false
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5203|5218|render3DOutline|method|rina.turok.TurokRenderHelp|render3DOutline|(Lnet/minecraft/client/renderer/culling/ICamera;IIIDDDIIIIF)V
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5219|5229|getICamera|method|rina.rocan.client.RocanModule|getICamera|()Lnet/minecraft/client/renderer/culling/ICamera;
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5242|5243|x|field|net.minecraft.util.math.Vec3i|x
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5254|5255|y|field|net.minecraft.util.math.Vec3i|y
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5266|5267|z|field|net.minecraft.util.math.Vec3i|z
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5272|5280|offset_y|field|rina.rocan.client.modules.render.RocanHoleESP|offset_y
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5281|5290|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5297|5298|r|field|rina.rocan.client.modules.render.RocanHoleESP|r
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5300|5301|g|field|rina.rocan.client.modules.render.RocanHoleESP|g
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5303|5304|b|field|rina.rocan.client.modules.render.RocanHoleESP|b
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5306|5325|alpha_outline_color|field|rina.rocan.client.modules.render.RocanHoleESP|alpha_outline_color
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5326|5336|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5348|5366|line_outline_width|field|rina.rocan.client.modules.render.RocanHoleESP|line_outline_width
-      @|rina/rocan/client/modules/render/RocanHoleESP.java|5367|5376|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4194|4199|event|param|rina.rocan.client.modules.render.RocanHoleESP|onRender|(Lrina/rocan/event/render/RocanEventRender;)V|event|0
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4145|4153|Override|class|java.lang.Override|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4168|4176|onRender|method|rina.rocan.client.RocanModule|onRender|(Lrina/rocan/event/render/RocanEventRender;)V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4177|4193|RocanEventRender|class|rina.rocan.event.render.RocanEventRender|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4211|4221|rgb_effect|field|rina.rocan.client.modules.render.RocanHoleESP|rgb_effect
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4222|4232|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4242|4258|render_red_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_red_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4259|4269|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4270|4275|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4276|4291|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4294|4306|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4318|4336|render_green_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_green_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4337|4347|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4348|4353|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4354|4369|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4372|4384|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4396|4413|render_blue_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_blue_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4414|4424|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4425|4430|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4431|4446|getEventManager|method|rina.rocan.Rocan|getEventManager|()Lrina/rocan/manager/RocanEventManager;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4449|4461|getRGBEffect|method|rina.rocan.manager.RocanEventManager|getRGBEffect|()[I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4475|4476|r|field|rina.rocan.client.modules.render.RocanHoleESP|r
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4479|4495|render_red_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_red_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4496|4506|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4514|4515|g|field|rina.rocan.client.modules.render.RocanHoleESP|g
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4518|4536|render_green_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_green_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4537|4547|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4555|4556|b|field|rina.rocan.client.modules.render.RocanHoleESP|b
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4559|4576|render_blue_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_blue_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4577|4587|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4607|4608|r|field|rina.rocan.client.modules.render.RocanHoleESP|r
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4611|4627|render_red_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_red_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4628|4638|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4646|4647|g|field|rina.rocan.client.modules.render.RocanHoleESP|g
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4650|4668|render_green_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_green_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4669|4679|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4687|4688|b|field|rina.rocan.client.modules.render.RocanHoleESP|b
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4691|4708|render_blue_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_blue_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4709|4719|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4737|4746|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4759|4768|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4769|4776|isEmpty|method|java.util.Collection|isEmpty|()Z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4782|4786|safe|field|rina.rocan.client.modules.render.RocanHoleESP|safe
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4808|4816|BlockPos|class|net.minecraft.util.math.BlockPos|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4828|4837|hole_list|field|rina.rocan.client.modules.render.RocanHoleESP|hole_list
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4846|4861|TurokRenderHelp|class|rina.turok.TurokRenderHelp|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4862|4875|render3DSolid|method|rina.turok.TurokRenderHelp|render3DSolid|(Lnet/minecraft/client/renderer/culling/ICamera;IIIDDDIIII)V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4876|4886|getICamera|method|rina.rocan.client.RocanModule|getICamera|()Lnet/minecraft/client/renderer/culling/ICamera;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4899|4900|x|field|net.minecraft.util.math.Vec3i|x
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4911|4912|y|field|net.minecraft.util.math.Vec3i|y
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4923|4924|z|field|net.minecraft.util.math.Vec3i|z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4929|4937|offset_y|field|rina.rocan.client.modules.render.RocanHoleESP|offset_y
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4938|4947|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4954|4955|r|field|rina.rocan.client.modules.render.RocanHoleESP|r
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4957|4958|g|field|rina.rocan.client.modules.render.RocanHoleESP|g
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4960|4961|b|field|rina.rocan.client.modules.render.RocanHoleESP|b
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4963|4981|render_alpha_color|field|rina.rocan.client.modules.render.RocanHoleESP|render_alpha_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|4982|4992|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5002|5017|TurokRenderHelp|class|rina.turok.TurokRenderHelp|false
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5018|5033|render3DOutline|method|rina.turok.TurokRenderHelp|render3DOutline|(Lnet/minecraft/client/renderer/culling/ICamera;IIIDDDIIIIF)V
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5034|5044|getICamera|method|rina.rocan.client.RocanModule|getICamera|()Lnet/minecraft/client/renderer/culling/ICamera;
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5057|5058|x|field|net.minecraft.util.math.Vec3i|x
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5069|5070|y|field|net.minecraft.util.math.Vec3i|y
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5081|5082|z|field|net.minecraft.util.math.Vec3i|z
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5087|5095|offset_y|field|rina.rocan.client.modules.render.RocanHoleESP|offset_y
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5096|5105|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5112|5113|r|field|rina.rocan.client.modules.render.RocanHoleESP|r
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5115|5116|g|field|rina.rocan.client.modules.render.RocanHoleESP|g
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5118|5119|b|field|rina.rocan.client.modules.render.RocanHoleESP|b
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5121|5140|alpha_outline_color|field|rina.rocan.client.modules.render.RocanHoleESP|alpha_outline_color
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5141|5151|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5163|5181|line_outline_width|field|rina.rocan.client.modules.render.RocanHoleESP|line_outline_width
+      @|rina/rocan/client/modules/render/RocanHoleESP.java|5182|5191|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
    Method End: onRender(Lrina/rocan/event/render/RocanEventRender;)V
 Class End  : rina.rocan.client.modules.render.RocanHoleESP
 endProcessing "rina/rocan/client/modules/render/RocanHoleESP.java"
@@ -5799,7 +5789,7 @@ Class Start: rina.rocan.gui.RocanMainGUI
 Class End  : rina.rocan.gui.RocanMainGUI
 endProcessing "rina/rocan/gui/RocanMainGUI.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentModuleButton.java" md5: 441e19d289c30d56af786a6cd06a0491
+startProcessing "rina/rocan/gui/component/RocanComponentModuleButton.java" md5: 0acdaaa9884cab768e77255e545783df
 @|rina/rocan/gui/component/RocanComponentModuleButton.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentModuleButton
    @|rina/rocan/gui/component/RocanComponentModuleButton.java|619|645|RocanComponentModuleButton|class|rina.rocan.gui.component.RocanComponentModuleButton|false
@@ -6380,7 +6370,7 @@ Class Start: rina.rocan.gui.component.RocanComponentModuleButton
 Class End  : rina.rocan.gui.component.RocanComponentModuleButton
 endProcessing "rina/rocan/gui/component/RocanComponentModuleButton.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingBoolean.java" md5: 4e3d5c5dcd64804659d38c41082d42a5
+startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingBoolean.java" md5: 4146f499da5561b868bd1f2fbf32de56
 @|rina/rocan/gui/component/RocanComponentWidgetSettingBoolean.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingBoolean
    @|rina/rocan/gui/component/RocanComponentWidgetSettingBoolean.java|688|722|RocanComponentWidgetSettingBoolean|class|rina.rocan.gui.component.RocanComponentWidgetSettingBoolean|false
@@ -6729,7 +6719,7 @@ Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingBoolean
 Class End  : rina.rocan.gui.component.RocanComponentWidgetSettingBoolean
 endProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingBoolean.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingList.java" md5: 0aa2eb0d4a042371eeccd74c9ec0facb
+startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingList.java" md5: bd8e7a85efdc047a71fb238534ccaf70
 @|rina/rocan/gui/component/RocanComponentWidgetSettingList.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingList
    @|rina/rocan/gui/component/RocanComponentWidgetSettingList.java|721|752|RocanComponentWidgetSettingList|class|rina.rocan.gui.component.RocanComponentWidgetSettingList|false
@@ -7098,7 +7088,7 @@ Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingList
 Class End  : rina.rocan.gui.component.RocanComponentWidgetSettingList
 endProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingList.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java" md5: bdb48c49e112705357eb379f90a3458b
+startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java" md5: 23d2ffe807bee8a887b8ed6115416abb
 @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingMacro
    @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|736|768|RocanComponentWidgetSettingMacro|class|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|false
@@ -7569,7 +7559,7 @@ Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingMacro
 Class End  : rina.rocan.gui.component.RocanComponentWidgetSettingMacro
 endProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java" md5: bbabaf6fa494466854e0a139acb91439
+startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java" md5: 70d4850000425da953b9db09ebcdef65
 @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingSlider
    @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|742|775|RocanComponentWidgetSettingSlider|class|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|false
@@ -8037,7 +8027,7 @@ Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingSlider
 Class End  : rina.rocan.gui.component.RocanComponentWidgetSettingSlider
 endProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingString.java" md5: 7dd4fb7642b811f542e472d0c778fb1f
+startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingString.java" md5: 144fff8fdc9b2c22518a7ff1eab985e9
 @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingString
    @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|943|976|RocanComponentWidgetSettingString|class|rina.rocan.gui.component.RocanComponentWidgetSettingString|false
@@ -11123,7 +11113,7 @@ Class Start: rina.rocan.mixin.mixins.RocanMixinNetworkManager
 Class End  : rina.rocan.mixin.mixins.RocanMixinNetworkManager
 endProcessing "rina/rocan/mixin/mixins/RocanMixinNetworkManager.java"
 
-startProcessing "rina/rocan/mixin/mixins/RocanMixinRender.java" md5: e47d994226e93297179dc3673d4db1ff
+startProcessing "rina/rocan/mixin/mixins/RocanMixinRender.java" md5: f7aa1abdf4a3929b584ab3ecbd25e14d
 @|rina/rocan/mixin/mixins/RocanMixinRender.java|8|31|rina.rocan.mixin.mixins|package|rina.rocan.mixin.mixins|(file)
 Class Start: rina.rocan.mixin.mixins.RocanMixinRender
    @|rina/rocan/mixin/mixins/RocanMixinRender.java|708|713|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
@@ -11137,66 +11127,79 @@ Class Start: rina.rocan.mixin.mixins.RocanMixinRender
       @|rina/rocan/mixin/mixins/RocanMixinRender.java|816|822|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
       @|rina/rocan/mixin/mixins/RocanMixinRender.java|852|869|bindEntityTexture|method|rina.rocan.mixin.mixins.RocanMixinRender|bindEntityTexture|(Lnet/minecraft/entity/Entity;)Z
    Method End: bindEntityTexture(Lnet/minecraft/entity/Entity;)Z
-   Method Start: onRender(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|958|964|entity|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|973|974|x|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|x|1
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|983|984|y|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|y|2
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|993|994|z|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|z|3
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1002|1005|yaw|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|yaw|4
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1013|1026|partial_ticks|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partial_ticks|5
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1041|1049|callback|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|callback|6
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|886|892|Inject|class|org.spongepowered.asm.mixin.injection.Inject|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|893|899|method|method|org.spongepowered.asm.mixin.injection.Inject|method|()[Ljava/lang/String;
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|914|916|at|method|org.spongepowered.asm.mixin.injection.Inject|at|()[Lorg/spongepowered/asm/mixin/injection/At;
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|920|922|At|class|org.spongepowered.asm.mixin.injection.At|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|947|955|onRender|method|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1028|1040|CallbackInfo|class|org.spongepowered.asm.mixin.injection.callback.CallbackInfo|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1056|1078|RocanEventRenderEntity|class|rina.rocan.event.render.RocanEventRenderEntity|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1091|1113|RocanEventRenderEntity|class|rina.rocan.event.render.RocanEventRenderEntity|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1114|1147|RocanEventRenderEntity.EventStage|class|rina.rocan.event.RocanEventStageable.EventStage|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1148|1151|PRE|field|rina.rocan.event.RocanEventStageable.EventStage|PRE
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1153|1159|entity|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1161|1162|x|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|x|1
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1164|1165|y|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|y|2
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1167|1168|z|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|z|3
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1170|1173|yaw|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|yaw|4
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1175|1188|partial_ticks|param|rina.rocan.mixin.mixins.RocanMixinRender|onRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partial_ticks|5
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1197|1202|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1203|1224|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1227|1240|dispatchEvent|method|team.stiff.pomelo.EventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;
-   Method End: onRender(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
-   Method Start: onLastRender(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1336|1342|entity|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1351|1352|x|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|x|1
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1361|1362|y|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|y|2
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1371|1372|z|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|z|3
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1380|1383|yaw|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|yaw|4
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1391|1404|partial_ticks|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partial_ticks|5
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1419|1427|callback|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|callback|6
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1258|1264|Inject|class|org.spongepowered.asm.mixin.injection.Inject|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1265|1271|method|method|org.spongepowered.asm.mixin.injection.Inject|method|()[Ljava/lang/String;
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1286|1288|at|method|org.spongepowered.asm.mixin.injection.Inject|at|()[Lorg/spongepowered/asm/mixin/injection/At;
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1292|1294|At|class|org.spongepowered.asm.mixin.injection.At|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1321|1333|onLastRender|method|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1406|1418|CallbackInfo|class|org.spongepowered.asm.mixin.injection.callback.CallbackInfo|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1434|1456|RocanEventRenderEntity|class|rina.rocan.event.render.RocanEventRenderEntity|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1469|1491|RocanEventRenderEntity|class|rina.rocan.event.render.RocanEventRenderEntity|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1492|1525|RocanEventRenderEntity.EventStage|class|rina.rocan.event.RocanEventStageable.EventStage|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1526|1530|POST|field|rina.rocan.event.RocanEventStageable.EventStage|POST
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1532|1538|entity|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1540|1541|x|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|x|1
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1543|1544|y|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|y|2
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1546|1547|z|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|z|3
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1549|1552|yaw|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|yaw|4
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1554|1567|partial_ticks|param|rina.rocan.mixin.mixins.RocanMixinRender|onLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partial_ticks|5
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1576|1581|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1582|1603|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRender.java|1606|1619|dispatchEvent|method|team.stiff.pomelo.EventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;
-   Method End: onLastRender(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
 Class End  : rina.rocan.mixin.mixins.RocanMixinRender
 endProcessing "rina/rocan/mixin/mixins/RocanMixinRender.java"
 
-startProcessing "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java" md5: 7ae7c2398e74dc5712cb3b97df2880bb
+startProcessing "rina/rocan/mixin/mixins/RocanMixinRenderEntity.java" md5: ce7f45f6461bedcb14ddef4e5fa2acd0
+@|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|8|31|rina.rocan.mixin.mixins|package|rina.rocan.mixin.mixins|(file)
+Class Start: rina.rocan.mixin.mixins.RocanMixinRenderEntity
+   @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|714|719|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
+   @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|720|725|value|method|org.spongepowered.asm.mixin.Mixin|value|()[Ljava/lang/Class;
+   @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|728|740|RenderEntity|class|net.minecraft.client.renderer.entity.RenderEntity|false
+   @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|748|756|priority|method|org.spongepowered.asm.mixin.Mixin|priority|()I
+   @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|787|809|RocanMixinRenderEntity|class|rina.rocan.mixin.mixins.RocanMixinRenderEntity|false
+   Method Start: doRender(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|892|898|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|907|908|x|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|x|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|917|918|y|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|y|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|927|928|z|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|z|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|936|939|yaw|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|yaw|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|947|960|partial_ticks|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partial_ticks|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|975|983|callback|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|callback|6
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|815|821|Inject|class|org.spongepowered.asm.mixin.injection.Inject|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|822|828|method|method|org.spongepowered.asm.mixin.injection.Inject|method|()[Ljava/lang/String;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|843|845|at|method|org.spongepowered.asm.mixin.injection.Inject|at|()[Lorg/spongepowered/asm/mixin/injection/At;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|849|851|At|class|org.spongepowered.asm.mixin.injection.At|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|876|884|doRender|method|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|885|891|Entity|class|net.minecraft.entity.Entity|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|962|974|CallbackInfo|class|org.spongepowered.asm.mixin.injection.callback.CallbackInfo|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|990|1012|RocanEventRenderEntity|class|rina.rocan.event.render.RocanEventRenderEntity|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1025|1047|RocanEventRenderEntity|class|rina.rocan.event.render.RocanEventRenderEntity|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1048|1081|RocanEventRenderEntity.EventStage|class|rina.rocan.event.RocanEventStageable.EventStage|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1082|1085|PRE|field|rina.rocan.event.RocanEventStageable.EventStage|PRE
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1087|1093|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1095|1096|x|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|x|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1098|1099|y|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|y|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1101|1102|z|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|z|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1104|1107|yaw|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|yaw|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1109|1122|partial_ticks|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partial_ticks|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1130|1135|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1136|1157|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1160|1173|dispatchEvent|method|team.stiff.pomelo.EventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;
+   Method End: doRender(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+   Method Start: doLastRender(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1274|1280|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1289|1290|x|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|x|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1299|1300|y|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|y|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1309|1310|z|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|z|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1318|1321|yaw|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|yaw|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1329|1342|partial_ticks|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partial_ticks|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1357|1365|callback|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|callback|6
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1191|1197|Inject|class|org.spongepowered.asm.mixin.injection.Inject|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1198|1204|method|method|org.spongepowered.asm.mixin.injection.Inject|method|()[Ljava/lang/String;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1219|1221|at|method|org.spongepowered.asm.mixin.injection.Inject|at|()[Lorg/spongepowered/asm/mixin/injection/At;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1225|1227|At|class|org.spongepowered.asm.mixin.injection.At|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1254|1266|doLastRender|method|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1267|1273|Entity|class|net.minecraft.entity.Entity|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1344|1356|CallbackInfo|class|org.spongepowered.asm.mixin.injection.callback.CallbackInfo|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1372|1394|RocanEventRenderEntity|class|rina.rocan.event.render.RocanEventRenderEntity|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1407|1429|RocanEventRenderEntity|class|rina.rocan.event.render.RocanEventRenderEntity|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1430|1463|RocanEventRenderEntity.EventStage|class|rina.rocan.event.RocanEventStageable.EventStage|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1464|1468|POST|field|rina.rocan.event.RocanEventStageable.EventStage|POST
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1470|1476|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1478|1479|x|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|x|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1481|1482|y|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|y|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1484|1485|z|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|z|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1487|1490|yaw|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|yaw|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1492|1505|partial_ticks|param|rina.rocan.mixin.mixins.RocanMixinRenderEntity|doLastRender|(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partial_ticks|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1515|1520|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1521|1542|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderEntity.java|1545|1558|dispatchEvent|method|team.stiff.pomelo.EventManager|dispatchEvent|(Ljava/lang/Object;)Ljava/lang/Object;
+   Method End: doLastRender(Lnet/minecraft/entity/Entity;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+Class End  : rina.rocan.mixin.mixins.RocanMixinRenderEntity
+endProcessing "rina/rocan/mixin/mixins/RocanMixinRenderEntity.java"
+
+startProcessing "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java" md5: 191be4ebfd48c64652503bd79c7b7551
 @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|8|31|rina.rocan.mixin.mixins|package|rina.rocan.mixin.mixins|(file)
 Class Start: rina.rocan.mixin.mixins.RocanMixinRenderLivingBase
    @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1614|1619|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
@@ -11219,199 +11222,210 @@ Class Start: rina.rocan.mixin.mixins.RocanMixinRenderLivingBase
       @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1914|1920|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
       @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1884|1896|verifyRender|method|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z
       @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1897|1913|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1931|1937|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1949|1961|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1967|1972|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1973|1989|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1992|2000|isFriend|method|rina.rocan.manager.RocanFriendManager|isFriend|(Ljava/lang/String;)Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2001|2007|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2008|2015|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2022|2027|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2028|2045|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2048|2072|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2117|2127|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2135|2140|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2141|2157|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2160|2167|isEnemy|method|rina.rocan.manager.RocanFriendManager|isEnemy|(Ljava/lang/String;)Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2168|2174|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2175|2182|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2189|2194|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2195|2212|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2215|2239|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2283|2293|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2300|2305|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2306|2323|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2326|2350|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2395|2405|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2443|2449|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2461|2465|IMob|class|net.minecraft.entity.monster.IMob|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2469|2474|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2475|2492|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2495|2519|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2565|2575|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2612|2618|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2630|2638|IAnimals|class|net.minecraft.entity.passive.IAnimals|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2642|2647|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2648|2665|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2668|2692|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2738|2748|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1960|1966|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1978|1990|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|1996|2001|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2002|2018|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2021|2029|isFriend|method|rina.rocan.manager.RocanFriendManager|isFriend|(Ljava/lang/String;)Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2030|2036|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2037|2044|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2051|2056|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2057|2074|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2077|2101|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2146|2156|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2164|2169|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2170|2186|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2189|2196|isEnemy|method|rina.rocan.manager.RocanFriendManager|isEnemy|(Ljava/lang/String;)Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2197|2203|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2204|2211|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2218|2223|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2224|2241|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2244|2268|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2312|2322|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2329|2334|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2335|2352|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2355|2379|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2424|2434|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2474|2480|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2492|2496|IMob|class|net.minecraft.entity.monster.IMob|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2500|2505|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2506|2523|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2526|2550|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2596|2606|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2645|2651|entity|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z|entity|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2663|2671|IAnimals|class|net.minecraft.entity.passive.IAnimals|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2675|2680|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2681|2698|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2701|2725|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2771|2781|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
    Method End: verifyRender(Lnet/minecraft/entity/EntityLivingBase;)Z
    Method Start: renderModel(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2845|2863|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2871|2881|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2889|2899|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2907|2917|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2925|2935|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2943|2953|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2961|2972|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2804|2813|Overwrite|class|org.spongepowered.asm.mixin.Overwrite|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2831|2842|renderModel|method|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2996|3014|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3015|3026|isInvisible|method|net.minecraft.entity.Entity|isInvisible|()Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3059|3077|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3078|3097|isInvisibleToPlayer|method|net.minecraft.entity.Entity|isInvisibleToPlayer|(Lnet/minecraft/entity/player/EntityPlayer;)Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3098|3100|mc|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mc
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3101|3107|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3147|3164|bindEntityTexture|method|rina.rocan.mixin.mixins.RocanMixinRender|bindEntityTexture|(Lnet/minecraft/entity/Entity;)Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3165|3183|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3233|3247|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3248|3258|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3267|3281|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3282|3287|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3319|3333|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3334|3343|depthMask|method|net.minecraft.client.renderer.GlStateManager|depthMask|(Z)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3357|3371|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3372|3383|enableBlend|method|net.minecraft.client.renderer.GlStateManager|enableBlend|()V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3392|3406|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3407|3416|blendFunc|method|net.minecraft.client.renderer.GlStateManager|blendFunc|(II)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3433|3447|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3448|3457|alphaFunc|method|net.minecraft.client.renderer.GlStateManager|alphaFunc|(IF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3494|3499|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3500|3516|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3519|3533|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3547|3555|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3561|3563|mc|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mc
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3564|3570|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3571|3582|getDistance|method|net.minecraft.entity.Entity|getDistance|(Lnet/minecraft/entity/Entity;)F
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3583|3601|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3605|3610|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3611|3628|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3631|3655|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3687|3697|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3703|3705|mc|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mc
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3706|3712|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3713|3724|getDistance|method|net.minecraft.entity.Entity|getDistance|(Lnet/minecraft/entity/Entity;)F
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3725|3743|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3747|3752|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3753|3770|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3773|3797|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3841|3851|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3862|3867|Color|class|java.awt.Color|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3876|3881|Color|class|java.awt.Color|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3909|3927|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3939|3951|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3955|3960|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3961|3977|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3980|3988|isFriend|method|rina.rocan.manager.RocanFriendManager|isFriend|(Ljava/lang/String;)Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3989|4007|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4008|4015|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4036|4041|Color|class|java.awt.Color|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4042|4047|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4048|4063|getClientHUDRed|method|rina.rocan.Rocan|getClientHUDRed|()I
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4067|4072|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4073|4090|getClientHUDGreen|method|rina.rocan.Rocan|getClientHUDGreen|()I
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4094|4099|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4100|4116|getClientHUDBlue|method|rina.rocan.Rocan|getClientHUDBlue|()I
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4484|4496|verifyRender|method|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4497|4515|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4526|4535|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4536|4542|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4543|4561|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4563|4573|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4575|4585|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4587|4597|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4599|4609|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4611|4621|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4623|4634|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4645|4672|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4673|4682|renderOne|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderOne|(FLjava/awt/Color;)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4691|4696|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4697|4714|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4717|4741|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4777|4786|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4802|4811|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4812|4818|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4819|4837|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4839|4849|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4851|4861|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4863|4873|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4875|4885|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4887|4897|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4899|4910|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4921|4925|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4926|4937|glLineWidth|method|org.lwjgl.opengl.GL11|glLineWidth|(F)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4946|4951|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4952|4969|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4972|4996|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5032|5041|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5054|5081|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5082|5091|renderTwo|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderTwo|()V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5103|5112|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5113|5119|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5120|5138|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5140|5150|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5152|5162|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5164|5174|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5176|5186|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5188|5198|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5200|5211|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5222|5226|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5227|5238|glLineWidth|method|org.lwjgl.opengl.GL11|glLineWidth|(F)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5247|5252|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5253|5270|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5273|5297|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5333|5342|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5355|5382|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5383|5394|renderThree|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderThree|()V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5404|5431|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5432|5442|renderFour|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderFour|(Ljava/awt/Color;)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5455|5464|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5465|5471|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5472|5490|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5492|5502|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5504|5514|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5516|5526|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5528|5538|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5540|5550|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5552|5563|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5574|5578|GL11|class|org.lwjgl.opengl.GL11|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5579|5590|glLineWidth|method|org.lwjgl.opengl.GL11|glLineWidth|(F)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5599|5604|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5605|5622|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5625|5649|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5685|5694|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5707|5734|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5735|5745|renderFive|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderFive|()V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5773|5782|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5783|5789|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5790|5808|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5810|5820|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5822|5832|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5834|5844|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5846|5856|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5858|5868|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5870|5881|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5908|5922|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5923|5935|disableBlend|method|net.minecraft.client.renderer.GlStateManager|disableBlend|()V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2881|2899|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2907|2917|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2925|2935|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2943|2953|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2961|2971|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2979|2989|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2997|3008|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2840|2849|Overwrite|class|org.spongepowered.asm.mixin.Overwrite|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|2867|2878|renderModel|method|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3032|3050|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3051|3062|isInvisible|method|net.minecraft.entity.Entity|isInvisible|()Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3095|3113|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3114|3133|isInvisibleToPlayer|method|net.minecraft.entity.Entity|isInvisibleToPlayer|(Lnet/minecraft/entity/player/EntityPlayer;)Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3134|3136|mc|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mc
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3137|3143|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3183|3200|bindEntityTexture|method|rina.rocan.mixin.mixins.RocanMixinRender|bindEntityTexture|(Lnet/minecraft/entity/Entity;)Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3201|3219|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3269|3283|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3284|3294|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3303|3317|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3318|3323|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFFF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3355|3369|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3370|3379|depthMask|method|net.minecraft.client.renderer.GlStateManager|depthMask|(Z)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3393|3407|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3408|3419|enableBlend|method|net.minecraft.client.renderer.GlStateManager|enableBlend|()V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3428|3442|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3443|3452|blendFunc|method|net.minecraft.client.renderer.GlStateManager|blendFunc|(II)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3469|3483|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3484|3493|alphaFunc|method|net.minecraft.client.renderer.GlStateManager|alphaFunc|(IF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3530|3535|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3536|3552|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3555|3569|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3583|3591|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3597|3599|mc|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mc
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3600|3606|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3607|3618|getDistance|method|net.minecraft.entity.Entity|getDistance|(Lnet/minecraft/entity/Entity;)F
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3619|3637|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3641|3646|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3647|3664|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3667|3691|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3723|3733|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3739|3741|mc|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mc
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3742|3748|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3749|3760|getDistance|method|net.minecraft.entity.Entity|getDistance|(Lnet/minecraft/entity/Entity;)F
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3761|3779|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3783|3788|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3789|3806|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3809|3833|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3877|3887|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3898|3903|Color|class|java.awt.Color|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3912|3917|Color|class|java.awt.Color|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3945|3963|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3975|3987|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3991|3996|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|3997|4013|getFriendManager|method|rina.rocan.Rocan|getFriendManager|()Lrina/rocan/manager/RocanFriendManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4016|4024|isFriend|method|rina.rocan.manager.RocanFriendManager|isFriend|(Ljava/lang/String;)Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4025|4043|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4044|4051|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4072|4077|Color|class|java.awt.Color|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4078|4083|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4084|4099|getClientHUDRed|method|rina.rocan.Rocan|getClientHUDRed|()I
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4103|4108|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4109|4126|getClientHUDGreen|method|rina.rocan.Rocan|getClientHUDGreen|()I
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4130|4135|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4136|4152|getClientHUDBlue|method|rina.rocan.Rocan|getClientHUDBlue|()I
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4520|4532|verifyRender|method|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|verifyRender|(Lnet/minecraft/entity/EntityLivingBase;)Z
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4533|4551|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4562|4571|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4572|4578|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4579|4597|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4599|4609|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4611|4621|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4623|4633|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4635|4645|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4647|4657|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4659|4670|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4681|4708|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4709|4718|renderOne|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderOne|(FLjava/awt/Color;)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4727|4732|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4733|4750|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4753|4777|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4813|4822|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4838|4847|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4848|4854|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4855|4873|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4875|4885|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4887|4897|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4899|4909|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4911|4921|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4923|4933|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4935|4946|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4957|4961|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4962|4973|glLineWidth|method|org.lwjgl.opengl.GL11|glLineWidth|(F)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4982|4987|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|4988|5005|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5008|5032|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5068|5077|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5090|5117|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5118|5127|renderTwo|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderTwo|()V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5139|5148|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5149|5155|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5156|5174|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5176|5186|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5188|5198|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5200|5210|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5212|5222|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5224|5234|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5236|5247|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5258|5262|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5263|5274|glLineWidth|method|org.lwjgl.opengl.GL11|glLineWidth|(F)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5283|5288|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5289|5306|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5309|5333|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5369|5378|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5391|5418|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5419|5430|renderThree|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderThree|()V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5440|5467|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5468|5478|renderFour|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderFour|(Ljava/awt/Color;)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5491|5500|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5501|5507|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5508|5526|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5528|5538|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5540|5550|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5552|5562|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5564|5574|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5576|5586|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5588|5599|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5610|5614|GL11|class|org.lwjgl.opengl.GL11|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5615|5626|glLineWidth|method|org.lwjgl.opengl.GL11|glLineWidth|(F)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5635|5640|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5641|5658|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5661|5685|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5721|5730|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5743|5770|RocanUtilRendererEntity2D3D|class|rina.rocan.util.RocanUtilRendererEntity2D3D|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5771|5781|renderFive|method|rina.rocan.util.RocanUtilRendererEntity2D3D|renderFive|()V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5809|5818|mainModel|field|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|mainModel
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5819|5825|render|method|net.minecraft.client.model.ModelBase|render|(Lnet/minecraft/entity/Entity;FFFFFF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5826|5844|entitylivingbaseIn|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|entitylivingbaseIn|0
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5846|5856|p_77036_2_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_2_|1
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5858|5868|p_77036_3_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_3_|2
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5870|5880|p_77036_4_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_4_|3
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5882|5892|p_77036_5_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_5_|4
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5894|5904|p_77036_6_|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|p_77036_6_|5
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5906|5917|scaleFactor|param|rina.rocan.mixin.mixins.RocanMixinRenderLivingBase|renderModel|(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V|scaleFactor|6
       @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5944|5958|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5959|5968|alphaFunc|method|net.minecraft.client.renderer.GlStateManager|alphaFunc|(IF)V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5986|6000|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|6001|6010|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|6019|6033|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|6034|6043|depthMask|method|net.minecraft.client.renderer.GlStateManager|depthMask|(Z)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5959|5971|disableBlend|method|net.minecraft.client.renderer.GlStateManager|disableBlend|()V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5980|5994|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|5995|6004|alphaFunc|method|net.minecraft.client.renderer.GlStateManager|alphaFunc|(IF)V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|6022|6036|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|6037|6046|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|6055|6069|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java|6070|6079|depthMask|method|net.minecraft.client.renderer.GlStateManager|depthMask|(Z)V
    Method End: renderModel(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V
 Class End  : rina.rocan.mixin.mixins.RocanMixinRenderLivingBase
 endProcessing "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase.java"
+
+startProcessing "rina/rocan/mixin/mixins/RocanMixinRenderManager.java" md5: ddfd49116af57fd84534fd22bdcfbfa1
+@|rina/rocan/mixin/mixins/RocanMixinRenderManager.java|8|31|rina.rocan.mixin.mixins|package|rina.rocan.mixin.mixins|(file)
+Class Start: rina.rocan.mixin.mixins.RocanMixinRenderManager
+   @|rina/rocan/mixin/mixins/RocanMixinRenderManager.java|715|720|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
+   @|rina/rocan/mixin/mixins/RocanMixinRenderManager.java|721|726|value|method|org.spongepowered.asm.mixin.Mixin|value|()[Ljava/lang/Class;
+   @|rina/rocan/mixin/mixins/RocanMixinRenderManager.java|729|742|RenderManager|class|net.minecraft.client.renderer.entity.RenderManager|false
+   @|rina/rocan/mixin/mixins/RocanMixinRenderManager.java|750|758|priority|method|org.spongepowered.asm.mixin.Mixin|priority|()I
+   @|rina/rocan/mixin/mixins/RocanMixinRenderManager.java|789|812|RocanMixinRenderManager|class|rina.rocan.mixin.mixins.RocanMixinRenderManager|false
+Class End  : rina.rocan.mixin.mixins.RocanMixinRenderManager
+endProcessing "rina/rocan/mixin/mixins/RocanMixinRenderManager.java"
 
 startProcessing "rina/rocan/util/RocanUtilClient.java" md5: c352bc3d5d41093961e4010ea3ee4555
 @|rina/rocan/util/RocanUtilClient.java|8|23|rina.rocan.util|package|rina.rocan.util|(file)

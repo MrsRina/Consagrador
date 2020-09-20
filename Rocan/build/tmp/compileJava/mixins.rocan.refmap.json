@@ -4,9 +4,6 @@
       "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V",
       "channelRead0": "Lnet/minecraft/network/NetworkManager;channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"
     },
-    "rina/rocan/mixin/mixins/RocanMixinRender": {
-      "doRender": "Lnet/minecraft/client/renderer/entity/Render;func_76986_a(Lnet/minecraft/entity/Entity;DDDFF)V"
-    },
     "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
       "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lnet/minecraft/client/Minecraft;func_71377_b(Lnet/minecraft/crash/CrashReport;)V",
       "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
@@ -15,6 +12,9 @@
     },
     "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
       "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V"
+    },
+    "rina/rocan/mixin/mixins/RocanMixinRenderEntity": {
+      "doRender": "Lnet/minecraft/client/renderer/entity/RenderEntity;func_76986_a(Lnet/minecraft/entity/Entity;DDDFF)V"
     }
   },
   "data": {
@@ -22,9 +22,6 @@
       "rina/rocan/mixin/mixins/RocanMixinNetworkManager": {
         "sendPacket(Lnet/minecraft/network/Packet;)V": "Lgw;a(Lht;)V",
         "channelRead0": "Lgw;a(Lio/netty/channel/ChannelHandlerContext;Lht;)V"
-      },
-      "rina/rocan/mixin/mixins/RocanMixinRender": {
-        "doRender": "Lbzg;a(Lvg;DDDFF)V"
       },
       "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
         "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lbib;c(Lb;)V",
@@ -34,15 +31,15 @@
       },
       "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
         "onUpdateWalkingPlayer": "Lbud;N()V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinRenderEntity": {
+        "doRender": "Lbyy;a(Lvg;DDDFF)V"
       }
     },
     "searge": {
       "rina/rocan/mixin/mixins/RocanMixinNetworkManager": {
         "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V",
         "channelRead0": "Lnet/minecraft/network/NetworkManager;channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"
-      },
-      "rina/rocan/mixin/mixins/RocanMixinRender": {
-        "doRender": "Lnet/minecraft/client/renderer/entity/Render;func_76986_a(Lnet/minecraft/entity/Entity;DDDFF)V"
       },
       "rina/rocan/mixin/mixins/RocanMixinMinecraft": {
         "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lnet/minecraft/client/Minecraft;func_71377_b(Lnet/minecraft/crash/CrashReport;)V",
@@ -52,6 +49,9 @@
       },
       "rina/rocan/mixin/mixins/RocanMixinEntityPlayerSP": {
         "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinRenderEntity": {
+        "doRender": "Lnet/minecraft/client/renderer/entity/RenderEntity;func_76986_a(Lnet/minecraft/entity/Entity;DDDFF)V"
       }
     }
   }

@@ -73,23 +73,16 @@ public class RocanHoleESP extends RocanModule {
 	};
 
 	private BlockPos[] double_hole_matrix = {
-		// Down hole.
-		new BlockPos(0, -1, 1),
-		new BlockPos(0, -1, 2),
-		new BlockPos(1, -1, 0),
-		new BlockPos(2, -1, 2),
+		// Down holes.
+		new BlockPos(0, -1, 0),
 
 		// Positives.
 		new BlockPos(1, 0, 0),
-		new BlockPos(2, 0, 0),
 		new BlockPos(0, 0, 1),
-		new BlockPos(0, 0, 2),
 
-		// Negatives.
-		new BlockPos(0, 0, -2),
-		new BlockPos(0, 0, -1),
-		new BlockPos(-2, 0, 0),
-		new BlockPos(-1, 0, 0)
+		// Negtives.
+		new BlockPos(-1, 0, 0),
+		new BlockPos(0, 0, -1)
 	};
 
 	private BlockPos[] current_hole_matrix = {};
@@ -134,6 +127,7 @@ public class RocanHoleESP extends RocanModule {
 
 				for (BlockPos blockpos_matrix : current_hole_matrix) {
 					Block block = mc.world.getBlockState(blockpos.add(blockpos_matrix)).getBlock();
+
 
 					if (block != Blocks.BEDROCK && block != Blocks.OBSIDIAN && block != Blocks.ENDER_CHEST && block != Blocks.ANVIL) {
 						possible = false;

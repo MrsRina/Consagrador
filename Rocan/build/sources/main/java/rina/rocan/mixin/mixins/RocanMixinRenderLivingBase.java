@@ -57,19 +57,21 @@ public abstract class RocanMixinRenderLivingBase <T extends EntityLivingBase> ex
 	protected ModelBase mainModel;
 
 	public boolean verifyRender(EntityLivingBase entity) {
+		boolean render = false;
+
 		if (entity instanceof EntityPlayer && ((Rocan.getFriendManager().isFriend(entity.getName()) && Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderEntityFriend").getBoolean()) || (Rocan.getFriendManager().isEnemy(entity.getName()) && Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderEntityEnemy").getBoolean()) || Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderEntityPlayer").getBoolean())) {
-			return true;
+			render = true;
 		}
 
 		if (entity instanceof IMob && Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderEntityHostile").getBoolean()) {
-			return true;
+			render = true;
 		}
 
 		if (entity instanceof IAnimals && Rocan.getSettingManager().getSettingByModuleAndTag("EntityESP", "EntityESPRenderEntityAnimals").getBoolean()) {
-			return true;
+			render = true;
 		}
 
-		return false;
+		return render;
 	}
 
 	@Overwrite

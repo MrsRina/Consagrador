@@ -130,7 +130,7 @@ public class RocanEntityChams extends RocanModule {
 		}
 
 		if (entity instanceof EntityLivingBase && entity instanceof EntityPlayer && (render_entity_player.getBoolean() || (render_entity_enemy.getBoolean() && Rocan.getFriendManager().isEnemy(entity.getName())) || (render_entity_friend.getBoolean() && Rocan.getFriendManager().isFriend(entity.getName())))) {
-			remder = true;
+			render = true;
 		}
 
 		if (entity instanceof EntityLivingBase && entity instanceof IMob && render_entity_hostile.getBoolean()) {
