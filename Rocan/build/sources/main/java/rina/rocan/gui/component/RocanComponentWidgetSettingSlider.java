@@ -43,8 +43,9 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 	private int save_x;
 	private int save_y;
 
-	private int save_width;
-	private int save_height;
+	// Just save_width can be a true float.
+	private float save_width;
+	private int   save_height;
 
 	private boolean event_mouse_passing;
 	private boolean event_mouse_clicked;
@@ -179,22 +180,10 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 	public void render() {
 		updateAction(this.absolute.getMouseX(), this.absolute.getMouseY());
 
-		int width_calculed = 0;
-
-		String value = "";
-
-		if (this.setting.getType() == RocanSetting.SettingType.SETTING_INTEGER) {
-			width_calculed = ((int) ((this.rect.getWidth()) * (this.setting.getInteger() - this.setting.getMin()) / (this.setting.getMax() - this.setting.getMin())));
-
-			value = Integer.toString(this.setting.getInteger());
-		} else if (this.setting.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
-			width_calculed = ((int) ((this.rect.getWidth()) * (this.setting.getDouble() - this.setting.getMin()) / (this.setting.getMax() - this.setting.getMin())));
-
-			value = Double.toString(this.setting.getDouble());
-		}
+		String value = this.setting.getType() == RocanSetting.SettingType.SETTING_INTEGER ? Integer.toString(this.setting.getInteger()) : Double.toString(this.setting.getDouble());
 
 		TurokRenderGL.color(Rocan.getClientGUITheme().button_pressed_r, Rocan.getClientGUITheme().button_pressed_g, Rocan.getClientGUITheme().button_pressed_b, Rocan.getClientGUITheme().button_pressed_a);
-		TurokRenderGL.drawSolidRect(this.rect.getX(), this.rect.getY(), this.rect.getX() + width_calculed, this.rect.getY() + this.rect.getHeight());
+		TurokRenderGL.drawSolidRect(this.rect.getX(), this.rect.getY(), this.rect.getX() + this.save_width, this.rect.getY() + this.rect.getHeight());
 
 		if (isMousePassing()) {
 			TurokRenderGL.color(Rocan.getClientGUITheme().button_pass_r, Rocan.getClientGUITheme().button_pass_g, Rocan.getClientGUITheme().button_pass_b, Rocan.getClientGUITheme().button_pass_a);
@@ -220,20 +209,31 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 		this.rect.setWidth(this.master.getWidth());
 		this.rect.setHeight(3 + TurokString.getStringHeight(this.rect.getTag(), true) + 3);
 
-		if (isMouseClicked()) {
-			double mouse = Math.min(this.rect.getWidth(), Math.max(0, x - this.rect.getX()));
+		double mouse = Math.min(this.rect.getWidth(), Math.max(0, x - this.rect.getX()));
 
-			if (mouse != 0) {
-				if (this.setting.getType() == RocanSetting.SettingType.SETTING_INTEGER) {
-					this.setting.setInteger((int) round((mouse / this.rect.getWidth()) * (this.setting.getMax() - this.setting.getMin() + this.setting.getMin())));
-				} else if (this.setting.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
-					this.setting.setDouble(round((mouse / this.rect.getWidth()) * (this.setting.getMax() - this.setting.getMin() + this.setting.getMin())));
-				}
-			} else {
+		Number min = this.setting.getType() == RocanSetting.SettingType.SETTING_INTEGER ? (int) this.setting.getMin() : this.setting.getMin();
+		Number max = this.setting.getType() == RocanSetting.SettingType.SETTING_INTEGER ? (int) this.setting.getMax() : this.setting.getMax();
+
+		Number value = this.setting.getType() == RocanSetting.SettingType.SETTING_INTEGER ? this.setting.getInteger() : this.setting.getDouble();
+
+		this.save_width = (float) ((this.rect.getWidth()) * ((double) value - (double) min) / ((double) max - (double) min));
+
+		if (isMouseClicked()) {
+			if (mouse == 0) {
 				if (this.setting.getType() == RocanSetting.SettingType.SETTING_INTEGER) {
 					this.setting.setInteger((int) this.setting.getMin());
 				} else if (this.setting.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
 					this.setting.setDouble(this.setting.getMin());
+				}
+			} else {
+				if (this.setting.getType() == RocanSetting.SettingType.SETTING_INTEGER) {
+					int round_value = (int) round(((mouse / this.rect.getWidth()) * ((double) max - (double) min) + (double) min));
+
+					this.setting.setInteger(round_value);
+				} else if (this.setting.getType() == RocanSetting.SettingType.SETTING_DOUBLE) {
+					double round_value = round(((mouse / this.rect.getWidth()) * ((double) max - (double) min) + (double) min));
+
+					this.setting.setDouble(round_value);
 				}
 			}
 		}

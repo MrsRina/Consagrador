@@ -20,7 +20,7 @@ import rina.rocan.Rocan;
   * 16/08/2020.
   *
   **/
-public class RocanSetting<T> {
+public class RocanSetting {
 	private RocanModule master;
 
 	private String name;
