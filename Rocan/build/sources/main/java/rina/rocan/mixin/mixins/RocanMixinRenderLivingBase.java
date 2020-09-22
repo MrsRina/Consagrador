@@ -32,6 +32,9 @@ import org.lwjgl.opengl.EXTFramebufferObject;
 import static org.lwjgl.opengl.GL11.*;
 import org.lwjgl.opengl.GL11;
 
+// Event.
+import rina.rocan.event.render.RocanEventRenderEntity;
+
 // Java.
 import java.awt.*;
 
@@ -55,6 +58,20 @@ public abstract class RocanMixinRenderLivingBase <T extends EntityLivingBase> ex
 
 	@Shadow
 	protected ModelBase mainModel;
+
+	@Inject(method = "doRender", at = @At("HEAD"))
+	private void doRender(T entity, double x, double y, double z, float yaw, float partial_ticks, CallbackInfo callback) {
+		RocanEventRenderEntity event = new RocanEventRenderEntity(RocanEventRenderEntity.EventStage.PRE, entity, x, y, z, yaw, partial_ticks);
+
+		Rocan.getPomeloEventManager().dispatchEvent(event);
+	}
+
+	@Inject(method = "doRender", at = @At("RETURN"))
+	private void doLastRender(T entity, double x, double y, double z, float yaw, float partial_ticks, CallbackInfo callback) {
+		RocanEventRenderEntity event = new RocanEventRenderEntity(RocanEventRenderEntity.EventStage.POST, entity, x, y, z, yaw, partial_ticks);
+
+		Rocan.getPomeloEventManager().dispatchEvent(event);
+	}
 
 	public boolean verifyRender(EntityLivingBase entity) {
 		boolean render = false;

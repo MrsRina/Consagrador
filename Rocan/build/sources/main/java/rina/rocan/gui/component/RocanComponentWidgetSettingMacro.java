@@ -308,7 +308,7 @@ public class RocanComponentWidgetSettingMacro extends RocanWidget {
 	@Override
 	public void updateDescriptionListener() {
 		if (isMousePassing()) {
-			if (this.tickness.isPassedMS(1500) && !this.event_has_waited) {
+			if (this.tickness.isPassedMS(500) && !this.event_has_waited) {
 				this.event_has_waited = true;
 			}
 		} else {
