@@ -7088,7 +7088,7 @@ Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingList
 Class End  : rina.rocan.gui.component.RocanComponentWidgetSettingList
 endProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingList.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java" md5: 5a84ceebad5c164e6d7c3756d54728c1
+startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java" md5: fe5aff57a4787dce713f3846d9c009b3
 @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingMacro
    @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|736|768|RocanComponentWidgetSettingMacro|class|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|false
@@ -7543,23 +7543,24 @@ Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingMacro
       @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7722|7730|Override|class|java.lang.Override|false
       @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7745|7770|updateDescriptionListener|method|rina.rocan.gui.widget.RocanWidget|updateDescriptionListener|()V
       @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7782|7796|isMousePassing|method|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|isMousePassing|()Z
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7815|7823|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|tickness
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7824|7834|isPassedMS|method|rina.rocan.util.constructor.RocanConstructorTimer|isPassedMS|(D)Z
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7849|7865|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7879|7895|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7931|7947|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7968|7976|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|tickness
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7977|7982|reset|method|rina.rocan.util.constructor.RocanConstructorTimer|reset|()V
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8005|8021|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8034|8042|absolute|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|absolute
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8043|8060|renderStringMouse|method|rina.rocan.gui.RocanMainGUI|renderStringMouse|(Ljava/lang/String;)V
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8066|8073|setting|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|setting
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8074|8088|getDescription|method|rina.rocan.client.RocanSetting|getDescription|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7803|7812|isWaiting|method|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|isWaiting|()Z
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7831|7839|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|tickness
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7840|7850|isPassedMS|method|rina.rocan.util.constructor.RocanConstructorTimer|isPassedMS|(D)Z
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7865|7881|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7895|7911|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7947|7963|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7984|7992|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|tickness
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|7993|7998|reset|method|rina.rocan.util.constructor.RocanConstructorTimer|reset|()V
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8021|8037|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8050|8058|absolute|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|absolute
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8059|8076|renderStringMouse|method|rina.rocan.gui.RocanMainGUI|renderStringMouse|(Ljava/lang/String;)V
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8082|8089|setting|field|rina.rocan.gui.component.RocanComponentWidgetSettingMacro|setting
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java|8090|8104|getDescription|method|rina.rocan.client.RocanSetting|getDescription|()Ljava/lang/String;
    Method End: updateDescriptionListener()V
 Class End  : rina.rocan.gui.component.RocanComponentWidgetSettingMacro
 endProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingMacro.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java" md5: c5b4966b34a67acfa42185099d3e7cd8
+startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java" md5: 7ed01146b2125e979c415a847ddddafb
 @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingSlider
    @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|742|775|RocanComponentWidgetSettingSlider|class|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|false
@@ -8004,25 +8005,26 @@ Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingSlider
       @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7290|7298|Override|class|java.lang.Override|false
       @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7313|7338|updateDescriptionListener|method|rina.rocan.gui.widget.RocanWidget|updateDescriptionListener|()V
       @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7350|7364|isMousePassing|method|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|isMousePassing|()Z
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7383|7391|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|tickness
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7392|7402|isPassedMS|method|rina.rocan.util.constructor.RocanConstructorTimer|isPassedMS|(D)Z
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7417|7433|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7447|7463|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7484|7492|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|tickness
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7493|7498|reset|method|rina.rocan.util.constructor.RocanConstructorTimer|reset|()V
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7529|7545|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7566|7574|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|tickness
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7575|7580|reset|method|rina.rocan.util.constructor.RocanConstructorTimer|reset|()V
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7603|7619|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7632|7640|absolute|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|absolute
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7641|7658|renderStringMouse|method|rina.rocan.gui.RocanMainGUI|renderStringMouse|(Ljava/lang/String;)V
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7664|7671|setting|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|setting
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7672|7686|getDescription|method|rina.rocan.client.RocanSetting|getDescription|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7371|7385|isMouseClicked|method|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|isMouseClicked|()Z
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7404|7412|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|tickness
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7413|7423|isPassedMS|method|rina.rocan.util.constructor.RocanConstructorTimer|isPassedMS|(D)Z
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7438|7454|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7468|7484|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7505|7513|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|tickness
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7514|7519|reset|method|rina.rocan.util.constructor.RocanConstructorTimer|reset|()V
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7550|7566|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7587|7595|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|tickness
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7596|7601|reset|method|rina.rocan.util.constructor.RocanConstructorTimer|reset|()V
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7624|7640|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7653|7661|absolute|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|absolute
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7662|7679|renderStringMouse|method|rina.rocan.gui.RocanMainGUI|renderStringMouse|(Ljava/lang/String;)V
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7685|7692|setting|field|rina.rocan.gui.component.RocanComponentWidgetSettingSlider|setting
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java|7693|7707|getDescription|method|rina.rocan.client.RocanSetting|getDescription|()Ljava/lang/String;
    Method End: updateDescriptionListener()V
 Class End  : rina.rocan.gui.component.RocanComponentWidgetSettingSlider
 endProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingSlider.java"
 
-startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingString.java" md5: 0163b5212112be5894a387b31452fd53
+startProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingString.java" md5: 0137e7bd764a17922fd551c50ae20d19
 @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|8|32|rina.rocan.gui.component|package|rina.rocan.gui.component|(file)
 Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingString
    @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|943|976|RocanComponentWidgetSettingString|class|rina.rocan.gui.component.RocanComponentWidgetSettingString|false
@@ -8460,18 +8462,20 @@ Class Start: rina.rocan.gui.component.RocanComponentWidgetSettingString
       @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7254|7262|Override|class|java.lang.Override|false
       @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7277|7302|updateDescriptionListener|method|rina.rocan.gui.widget.RocanWidget|updateDescriptionListener|()V
       @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7314|7328|isMousePassing|method|rina.rocan.gui.component.RocanComponentWidgetSettingString|isMousePassing|()Z
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7347|7355|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|tickness
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7356|7366|isPassedMS|method|rina.rocan.util.constructor.RocanConstructorTimer|isPassedMS|(D)Z
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7381|7397|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7411|7427|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7463|7479|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7500|7508|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|tickness
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7509|7514|reset|method|rina.rocan.util.constructor.RocanConstructorTimer|reset|()V
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7537|7553|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|event_has_waited
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7566|7574|absolute|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|absolute
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7575|7592|renderStringMouse|method|rina.rocan.gui.RocanMainGUI|renderStringMouse|(Ljava/lang/String;)V
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7598|7605|setting|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|setting
-      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7606|7620|getDescription|method|rina.rocan.client.RocanSetting|getDescription|()Ljava/lang/String;
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7340|7345|entry|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|entry
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7346|7355|isFocused|method|net.minecraft.client.gui.GuiTextField|isFocused|()Z
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7374|7382|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|tickness
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7383|7393|isPassedMS|method|rina.rocan.util.constructor.RocanConstructorTimer|isPassedMS|(D)Z
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7408|7424|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7438|7454|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7490|7506|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7527|7535|tickness|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|tickness
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7536|7541|reset|method|rina.rocan.util.constructor.RocanConstructorTimer|reset|()V
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7564|7580|event_has_waited|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|event_has_waited
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7593|7601|absolute|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|absolute
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7602|7619|renderStringMouse|method|rina.rocan.gui.RocanMainGUI|renderStringMouse|(Ljava/lang/String;)V
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7625|7632|setting|field|rina.rocan.gui.component.RocanComponentWidgetSettingString|setting
+      @|rina/rocan/gui/component/RocanComponentWidgetSettingString.java|7633|7647|getDescription|method|rina.rocan.client.RocanSetting|getDescription|()Ljava/lang/String;
    Method End: updateDescriptionListener()V
 Class End  : rina.rocan.gui.component.RocanComponentWidgetSettingString
 endProcessing "rina/rocan/gui/component/RocanComponentWidgetSettingString.java"
