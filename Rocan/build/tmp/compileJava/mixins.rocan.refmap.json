@@ -18,6 +18,10 @@
     },
     "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase": {
       "doRender": "Lnet/minecraft/client/renderer/entity/RenderLivingBase;func_76986_a(Lnet/minecraft/entity/EntityLivingBase;DDDFF)V"
+    },
+    "rina/rocan/mixin/mixins/RocanMixinEntity": {
+      "applyEntityCollision": "Lnet/minecraft/entity/Entity;func_70108_f(Lnet/minecraft/entity/Entity;)V",
+      "Lnet/minecraft/entity/Entity;addVelocity(DDD)V": "Lnet/minecraft/entity/Entity;func_70024_g(DDD)V"
     }
   },
   "data": {
@@ -40,6 +44,10 @@
       },
       "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase": {
         "doRender": "Lcaa;a(Lvp;DDDFF)V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinEntity": {
+        "applyEntityCollision": "Lvg;i(Lvg;)V",
+        "Lnet/minecraft/entity/Entity;addVelocity(DDD)V": "Lvg;f(DDD)V"
       }
     },
     "searge": {
@@ -61,6 +69,10 @@
       },
       "rina/rocan/mixin/mixins/RocanMixinRenderLivingBase": {
         "doRender": "Lnet/minecraft/client/renderer/entity/RenderLivingBase;func_76986_a(Lnet/minecraft/entity/EntityLivingBase;DDDFF)V"
+      },
+      "rina/rocan/mixin/mixins/RocanMixinEntity": {
+        "applyEntityCollision": "Lnet/minecraft/entity/Entity;func_70108_f(Lnet/minecraft/entity/Entity;)V",
+        "Lnet/minecraft/entity/Entity;addVelocity(DDD)V": "Lnet/minecraft/entity/Entity;func_70024_g(DDD)V"
       }
     }
   }

@@ -86,6 +86,7 @@ public class RocanModuleManager {
 		addModule(new RocanStep());
 		addModule(new RocanGUIWalk());
 		addModule(new RocanStrafe());
+		addModule(new RocanVelocity());
 
 		// Render.
 		addModule(new RocanHUDRender());
