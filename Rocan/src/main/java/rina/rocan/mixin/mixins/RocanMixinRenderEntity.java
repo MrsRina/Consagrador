@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Mixin;
 
 // Events.
-import rina.rocan.event.render.RocanEventRenderEntity;
+import rina.rocan.event.render.RocanEventRenderEntityNonLivingBase;
 
 // Rocan.
 import rina.rocan.Rocan;
@@ -27,4 +27,18 @@ import rina.rocan.Rocan;
   *
   **/
 @Mixin(value = RenderEntity.class, priority = 999)
-public abstract class RocanMixinRenderEntity {}
+public abstract class RocanMixinRenderEntity {
+	@Inject(method = "doRender", at = @At("HEAD"))
+	private void doRender(Entity entity, double x, double y, double z, float yaw, float partial_ticks, CallbackInfo callback) {
+		RocanEventRenderEntityNonLivingBase event = new RocanEventRenderEntityNonLivingBase(RocanEventRenderEntityNonLivingBase.EventStage.PRE, entity, x, y, z, yaw, partial_ticks);
+
+		Rocan.getPomeloEventManager().dispatchEvent(event);
+	}
+
+	@Inject(method = "doRender", at = @At("RETURN"))
+	private void doLastRender(Entity entity, double x, double y, double z, float yaw, float partial_ticks, CallbackInfo callback) {
+		RocanEventRenderEntityNonLivingBase event = new RocanEventRenderEntityNonLivingBase(RocanEventRenderEntityNonLivingBase.EventStage.POST, entity, x, y, z, yaw, partial_ticks);
+
+		Rocan.getPomeloEventManager().dispatchEvent(event);
+	}
+}

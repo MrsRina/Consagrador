@@ -141,6 +141,12 @@ public class RocanEntityChams extends RocanModule {
 			render = true;
 		}
 
+		return render;
+	}
+
+	public boolean verifyRenderEntitiesNonLivingBase(Entity entity) {
+		boolean render = false;
+
 		if (entity instanceof EntityEnderCrystal && render_entity_end_crystal.getBoolean()) {
 			render = true;
 		}

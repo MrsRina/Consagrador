@@ -10,6 +10,7 @@
 		"RocanMixinRenderManager",
 		"RocanMixinEntityPlayer",
 		"RocanMixinRenderEntity",
+		"RocanMixinRenderItem",
 		"RocanMixinMinecraft",
 		"RocanMixinRender",
 		"RocanMixinEntity"
