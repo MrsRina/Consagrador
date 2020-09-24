@@ -27,11 +27,8 @@ import rina.rocan.Rocan;
  *
  **/
 public class RocanVelocity extends RocanModule {
-	RocanSetting handler_x = createSetting(new String[] {"Handler X", "VelocityHandlerX", "Handler to x value knockback."}, 0, 5, 10);
-	RocanSetting handler_y = createSetting(new String[] {"Handler Y", "VelocityHandlerY", "Handler to y value knockback."}, 0, 5, 10);
-
 	public RocanVelocity() {
-		super(new String[] {"Velocity", "Velocity", "Handler knockback values."}, Category.ROCAN_MOVEMENT);
+		super(new String[] {"Velocity", "Velocity", "Handler knockback values to 0."}, Category.ROCAN_MOVEMENT);
 	}
 
 	@Listener
@@ -40,13 +37,7 @@ public class RocanVelocity extends RocanModule {
 			SPacketEntityVelocity velocity = (SPacketEntityVelocity) event.getPacket();
 
 			if (velocity.getEntityID() == mc.player.entityId) {
-				if (handler_x.getInteger() == 0 && handler_y.getInteger() == 0) {
-					event.cancel();
-				} 
-
-				velocity.motionX *= handler_x.getInteger();
-				velocity.motionY *= handler_y.getInteger();
-				velocity.motionZ *= handler_x.getInteger();
+				event.cancel();
 			}
 		}
 	}
@@ -54,15 +45,9 @@ public class RocanVelocity extends RocanModule {
 	@Listener
 	public void listenEntityCollision(RocanEventEntityCollision event) {
 		if (mc.player == event.getEntity()) {
-			if (handler_x.getInteger() == 0 && handler_y.getInteger() == 0) {
-				event.cancel();
+			event.cancel();
 
-				return;
-			}
-
-			event.setX(-event.getX() * handler_x.getInteger());
-			event.setY(0);
-			event.setZ(-event.getZ() * handler_x.getInteger());
+			return;
 		}
 	}
 }

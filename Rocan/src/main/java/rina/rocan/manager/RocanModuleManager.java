@@ -113,6 +113,9 @@ public class RocanModuleManager {
 		addHUD(new RocanCoordinates());
 		addHUD(new RocanInventory());
 		addHUD(new RocanVelocitySpeed());
+
+		// Organize to alfabhet algined.
+		Collections.sort(this.module_list, Comparator.comparing(RocanModule::getName));
 	}
 
 	public void addModule(RocanModule module) {

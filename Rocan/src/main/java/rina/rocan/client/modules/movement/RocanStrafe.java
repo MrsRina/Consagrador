@@ -44,12 +44,13 @@ import rina.rocan.Rocan;
  **/
 public class RocanStrafe extends RocanModule {
 	RocanSetting modes_movement       = createSetting(new String[] {"Mode", "StrafeMode", "Modes movementation for strafe."}, "OnGround", new String[] {"OnGround", "AutoJump"});
+	RocanSetting strafe_speed         = createSetting(new String[] {"Strafe Speed", "StrafeSpeed", "Handler speed."}, 0.0, 0.0, 100.0);
+	RocanSetting strafe_jump_factor   = createSetting(new String[] {"Strafe Jump Factor", "StrafeJumpFactor", "Handler jump factor."}, 0.0, 0.0, 100.0);
 	RocanSetting automatically_sprint = createSetting(new String[] {"Sprint", "StrafeSprint", "Automatically sprint."}, true);
 	RocanSetting smooth_jump          = createSetting(new String[] {"Smooth Jump", "StrafeSmoothJump", "Smooth speed jump."}, false);
 	RocanSetting speed_potion_effect  = createSetting(new String[] {"Speed Potion Handler", "StrafeSpeedPotionHandler", "Enable speed handler to potion."}, true);
 	RocanSetting jump_potion_effect   = createSetting(new String[] {"BJump Potion Handler", "StrafeJumpPotionHandler", "Enable jump boost to potion."}, true);
 	RocanSetting bypass_speed         = createSetting(new String[] {"Bypass Speed", "StrafeBypassSpeed", "All damage explosions make you controlled and fast."}, -1, false);
-
 
 	private int jump = mc.gameSettings.keyBindJump.getKeyCode();
 
@@ -100,7 +101,7 @@ public class RocanStrafe extends RocanModule {
 			mc.player.setSprinting(true);
 		}
 
-		speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) : 0.2873d);
+		speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) + (strafe_speed.getDouble() / 1000d) : 0.2873d);
 
 		if (mc.player.isPotionActive(MobEffects.SPEED) && speed_potion_effect.getBoolean()) {
 			final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
@@ -129,6 +130,8 @@ public class RocanStrafe extends RocanModule {
 					makeJump(event);
 				}
 			}
+
+			mc.player.jumpMovementFactor = (float) (strafe_jump_factor.getDouble() / 1000d);
 
 			event.setX((player_movement[2] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))) + (player_movement[3] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))));
 			event.setZ((player_movement[2] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))) - (player_movement[3] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))));
