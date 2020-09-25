@@ -126,9 +126,13 @@ public class RocanStrafe extends RocanModule {
 
 				if (mc.gameSettings.keyBindJump.pressed == false) {
 					mc.gameSettings.keyBindJump.pressed = true;
+
+					if (mc.player.onGround) {
+						mc.player.jump();
+					}
 				}
 
-				if (mc.gameSettings.keyBindJump.isKeyDown() && mc.player.onGround) {
+				if (mc.gameSettings.keyBindJump.isKeyDown()) {
 					jump_state = true;
 				}
 			}
@@ -136,15 +140,17 @@ public class RocanStrafe extends RocanModule {
 			if (jump_state) {
 				double jump = 0.40123128d;
 
-				if (!smooth_jump.getBoolean()) {
-					speed = 0.6174077d;
-				}
+				if (mc.player.onGround) {
+					if (!smooth_jump.getBoolean()) {
+						speed = 0.6174077d;
+					}
 
-				if (mc.player.isPotionActive(MobEffects.JUMP_BOOST) && jump_potion_effect.getBoolean()) {
-					jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1f);
-				}
+					if (mc.player.isPotionActive(MobEffects.JUMP_BOOST) && jump_potion_effect.getBoolean()) {
+						jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1f);
+					}
 
-				event.setY(mc.player.motionY = jump);
+					event.setY(mc.player.motionY = jump);
+				}
 
 				jump_state = false;
 			}

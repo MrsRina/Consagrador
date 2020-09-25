@@ -27,6 +27,8 @@ import rina.rocan.Rocan;
  *
  **/
 public class RocanSystemPacket extends RocanModule {
+	private boolean event_strafe_bypass_update;
+
 	public RocanSystemPacket() {
 		super(new String[] {"System Packet", "SystemPacket", "System util to handler packet stuff."}, Category.ROCAN_SYSTEM, true);
 	}
@@ -41,10 +43,6 @@ public class RocanSystemPacket extends RocanModule {
 		if (event.getPacket() instanceof SPacketEntityVelocity) {
 			SPacketEntityVelocity velocity = (SPacketEntityVelocity) event.getPacket();
 
-			if (Rocan.getSettingManager().getSettingByModuleAndTag("Strafe", "StrafeSmartBypassUpdate").getBoolean()) {
-				Rocan.getSettingManager().getSettingByModuleAndTag("Strafe", "StrafeBypassSpeed").setBoolean(true);
-			}
-
 			if (Rocan.getModuleManager().getModuleByTag("Velocity").getState()) {
 				if (velocity.getEntityID() == mc.player.entityId) {
 					event.cancel();
@@ -54,10 +52,14 @@ public class RocanSystemPacket extends RocanModule {
 					velocity.motionZ *= 0.0f;
 				}
 			}
-		} else if (event.getPacket() instanceof SPacketExplosion) {
+		}
+
+		if (event.getPacket() instanceof SPacketExplosion) {
 			SPacketExplosion explosion = (SPacketExplosion) event.getPacket();
 
 			if (Rocan.getSettingManager().getSettingByModuleAndTag("Strafe", "StrafeSmartBypassUpdate").getBoolean()) {
+				event_strafe_bypass_update = true;
+
 				Rocan.getSettingManager().getSettingByModuleAndTag("Strafe", "StrafeBypassSpeed").setBoolean(true);
 			}
 
@@ -67,6 +69,12 @@ public class RocanSystemPacket extends RocanModule {
 				explosion.motionX *= 0.0f;
 				explosion.motionY *= 0.0f;
 				explosion.motionZ *= 0.0f;
+			}
+		} else {
+			if (Rocan.getSettingManager().getSettingByModuleAndTag("Strafe", "StrafeSmartBypassUpdate").getBoolean() && event_strafe_bypass_update) {
+				Rocan.getSettingManager().getSettingByModuleAndTag("Strafe", "StrafeBypassSpeed").setBoolean(false);
+
+				event_strafe_bypass_update = false;
 			}
 		}
 	}
