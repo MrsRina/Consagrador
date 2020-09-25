@@ -1192,7 +1192,7 @@ Class Start: rina.rocan.client.RocanHUD
 Class End  : rina.rocan.client.RocanHUD
 endProcessing "rina/rocan/client/RocanHUD.java"
 
-startProcessing "rina/rocan/client/RocanModule.java" md5: 7d3d4c3a865067fd0d26c6943505f8a7
+startProcessing "rina/rocan/client/RocanModule.java" md5: 8a1a629096302b9a021f9bf03762367b
 @|rina/rocan/client/RocanModule.java|8|25|rina.rocan.client|package|rina.rocan.client|(file)
 Class Start: rina.rocan.client.RocanModule
    @|rina/rocan/client/RocanModule.java|680|691|RocanModule|class|rina.rocan.client.RocanModule|false
@@ -1230,515 +1230,538 @@ Class Start: rina.rocan.client.RocanModule
    @|rina/rocan/client/RocanModule.java|1055|1062|ICamera|class|net.minecraft.client.renderer.culling.ICamera|false
    @|rina/rocan/client/RocanModule.java|1063|1069|camera|field|rina.rocan.client.RocanModule|camera|
    @|rina/rocan/client/RocanModule.java|1076|1083|Frustum|class|net.minecraft.client.renderer.culling.Frustum|false
-   Method Start: RocanModule([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V
-      @|rina/rocan/client/RocanModule.java|1119|1126|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|details|0
-      @|rina/rocan/client/RocanModule.java|1137|1145|category|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|category|1
-      @|rina/rocan/client/RocanModule.java|1098|1109|RocanModule|method|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V
+   Method Start: RocanModule([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V
+      @|rina/rocan/client/RocanModule.java|1119|1126|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V|details|0
+      @|rina/rocan/client/RocanModule.java|1137|1145|category|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V|category|1
+      @|rina/rocan/client/RocanModule.java|1155|1160|state|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V|state|2
+      @|rina/rocan/client/RocanModule.java|1098|1109|RocanModule|method|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V
       @|rina/rocan/client/RocanModule.java|1110|1116|String|class|java.lang.String|false
       @|rina/rocan/client/RocanModule.java|1128|1136|Category|class|rina.rocan.client.RocanModule.Category|false
-      @|rina/rocan/client/RocanModule.java|1157|1161|name|field|rina.rocan.client.RocanModule|name
-      @|rina/rocan/client/RocanModule.java|1171|1178|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|details|0
-      @|rina/rocan/client/RocanModule.java|1191|1194|tag|field|rina.rocan.client.RocanModule|tag
-      @|rina/rocan/client/RocanModule.java|1205|1212|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|details|0
-      @|rina/rocan/client/RocanModule.java|1225|1236|description|field|rina.rocan.client.RocanModule|description
-      @|rina/rocan/client/RocanModule.java|1239|1246|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|details|0
-      @|rina/rocan/client/RocanModule.java|1261|1275|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|1282|1295|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|1300|1306|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|1323|1326|tag|field|rina.rocan.client.RocanModule|tag
-      @|rina/rocan/client/RocanModule.java|1381|1389|category|field|rina.rocan.client.RocanModule|category
-      @|rina/rocan/client/RocanModule.java|1402|1410|category|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|category|1
-      @|rina/rocan/client/RocanModule.java|1420|1438|show_hud_arraylist|field|rina.rocan.client.RocanModule|show_hud_arraylist
-      @|rina/rocan/client/RocanModule.java|1475|1479|info|field|rina.rocan.client.RocanModule|info
+      @|rina/rocan/client/RocanModule.java|1172|1176|name|field|rina.rocan.client.RocanModule|name
+      @|rina/rocan/client/RocanModule.java|1186|1193|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V|details|0
+      @|rina/rocan/client/RocanModule.java|1206|1209|tag|field|rina.rocan.client.RocanModule|tag
+      @|rina/rocan/client/RocanModule.java|1220|1227|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V|details|0
+      @|rina/rocan/client/RocanModule.java|1240|1251|description|field|rina.rocan.client.RocanModule|description
+      @|rina/rocan/client/RocanModule.java|1254|1261|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V|details|0
+      @|rina/rocan/client/RocanModule.java|1276|1290|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|1297|1310|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|1315|1321|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|1338|1341|tag|field|rina.rocan.client.RocanModule|tag
+      @|rina/rocan/client/RocanModule.java|1380|1385|state|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V|state|2
+      @|rina/rocan/client/RocanModule.java|1396|1404|category|field|rina.rocan.client.RocanModule|category
+      @|rina/rocan/client/RocanModule.java|1417|1425|category|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V|category|1
+      @|rina/rocan/client/RocanModule.java|1435|1453|show_hud_arraylist|field|rina.rocan.client.RocanModule|show_hud_arraylist
+      @|rina/rocan/client/RocanModule.java|1490|1494|info|field|rina.rocan.client.RocanModule|info
+   Method End: RocanModule([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;Z)V
+   Method Start: RocanModule([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V
+      @|rina/rocan/client/RocanModule.java|1537|1544|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|details|0
+      @|rina/rocan/client/RocanModule.java|1555|1563|category|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|category|1
+      @|rina/rocan/client/RocanModule.java|1516|1527|RocanModule|method|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V
+      @|rina/rocan/client/RocanModule.java|1528|1534|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|1546|1554|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/client/RocanModule.java|1575|1579|name|field|rina.rocan.client.RocanModule|name
+      @|rina/rocan/client/RocanModule.java|1589|1596|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|details|0
+      @|rina/rocan/client/RocanModule.java|1609|1612|tag|field|rina.rocan.client.RocanModule|tag
+      @|rina/rocan/client/RocanModule.java|1623|1630|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|details|0
+      @|rina/rocan/client/RocanModule.java|1643|1654|description|field|rina.rocan.client.RocanModule|description
+      @|rina/rocan/client/RocanModule.java|1657|1664|details|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|details|0
+      @|rina/rocan/client/RocanModule.java|1679|1693|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|1700|1713|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|1718|1724|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|1741|1744|tag|field|rina.rocan.client.RocanModule|tag
+      @|rina/rocan/client/RocanModule.java|1799|1807|category|field|rina.rocan.client.RocanModule|category
+      @|rina/rocan/client/RocanModule.java|1820|1828|category|param|rina.rocan.client.RocanModule|RocanModule|([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V|category|1
+      @|rina/rocan/client/RocanModule.java|1838|1856|show_hud_arraylist|field|rina.rocan.client.RocanModule|show_hud_arraylist
+      @|rina/rocan/client/RocanModule.java|1893|1897|info|field|rina.rocan.client.RocanModule|info
    Method End: RocanModule([Ljava/lang/String;Lrina/rocan/client/RocanModule$Category;)V
    Method Start: setState(Z)V
-      @|rina/rocan/client/RocanModule.java|1523|1528|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
-      @|rina/rocan/client/RocanModule.java|1506|1514|setState|method|rina.rocan.client.RocanModule|setState|(Z)V
-      @|rina/rocan/client/RocanModule.java|1544|1558|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|1559|1569|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/RocanModule.java|1575|1580|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
-      @|rina/rocan/client/RocanModule.java|1592|1597|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
-      @|rina/rocan/client/RocanModule.java|1606|1615|setEnable|method|rina.rocan.client.RocanModule|setEnable|()V
-      @|rina/rocan/client/RocanModule.java|1637|1647|setDisable|method|rina.rocan.client.RocanModule|setDisable|()V
+      @|rina/rocan/client/RocanModule.java|1941|1946|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
+      @|rina/rocan/client/RocanModule.java|1924|1932|setState|method|rina.rocan.client.RocanModule|setState|(Z)V
+      @|rina/rocan/client/RocanModule.java|1962|1976|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|1977|1987|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanModule.java|1993|1998|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
+      @|rina/rocan/client/RocanModule.java|2010|2015|value|param|rina.rocan.client.RocanModule|setState|(Z)V|value|0
+      @|rina/rocan/client/RocanModule.java|2024|2033|setEnable|method|rina.rocan.client.RocanModule|setEnable|()V
+      @|rina/rocan/client/RocanModule.java|2055|2065|setDisable|method|rina.rocan.client.RocanModule|setDisable|()V
    Method End: setState(Z)V
    Method Start: toggle()V
-      @|rina/rocan/client/RocanModule.java|1682|1688|toggle|method|rina.rocan.client.RocanModule|toggle|()V
-      @|rina/rocan/client/RocanModule.java|1696|1704|setState|method|rina.rocan.client.RocanModule|setState|(Z)V
-      @|rina/rocan/client/RocanModule.java|1706|1714|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/client/RocanModule.java|2100|2106|toggle|method|rina.rocan.client.RocanModule|toggle|()V
+      @|rina/rocan/client/RocanModule.java|2114|2122|setState|method|rina.rocan.client.RocanModule|setState|(Z)V
+      @|rina/rocan/client/RocanModule.java|2124|2132|getState|method|rina.rocan.client.RocanModule|getState|()Z
    Method End: toggle()V
    Method Start: setEnable()V
-      @|rina/rocan/client/RocanModule.java|1739|1748|setEnable|method|rina.rocan.client.RocanModule|setEnable|()V
-      @|rina/rocan/client/RocanModule.java|1761|1775|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|1776|1786|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
-      @|rina/rocan/client/RocanModule.java|1799|1807|onEnable|method|rina.rocan.client.RocanModule|onEnable|()V
-      @|rina/rocan/client/RocanModule.java|1816|1821|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|1822|1843|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
-      @|rina/rocan/client/RocanModule.java|1846|1862|addEventListener|method|team.stiff.pomelo.EventManager|addEventListener|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|2157|2166|setEnable|method|rina.rocan.client.RocanModule|setEnable|()V
+      @|rina/rocan/client/RocanModule.java|2179|2193|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|2194|2204|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
+      @|rina/rocan/client/RocanModule.java|2217|2225|onEnable|method|rina.rocan.client.RocanModule|onEnable|()V
+      @|rina/rocan/client/RocanModule.java|2234|2239|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|2240|2261|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
+      @|rina/rocan/client/RocanModule.java|2264|2280|addEventListener|method|team.stiff.pomelo.EventManager|addEventListener|(Ljava/lang/Object;)Z
    Method End: setEnable()V
    Method Start: setDisable()V
-      @|rina/rocan/client/RocanModule.java|1890|1900|setDisable|method|rina.rocan.client.RocanModule|setDisable|()V
-      @|rina/rocan/client/RocanModule.java|1913|1927|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|1928|1938|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
-      @|rina/rocan/client/RocanModule.java|1952|1961|onDisable|method|rina.rocan.client.RocanModule|onDisable|()V
-      @|rina/rocan/client/RocanModule.java|1970|1975|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|1976|1997|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
-      @|rina/rocan/client/RocanModule.java|2000|2019|removeEventListener|method|team.stiff.pomelo.EventManager|removeEventListener|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|2308|2318|setDisable|method|rina.rocan.client.RocanModule|setDisable|()V
+      @|rina/rocan/client/RocanModule.java|2331|2345|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|2346|2356|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
+      @|rina/rocan/client/RocanModule.java|2370|2379|onDisable|method|rina.rocan.client.RocanModule|onDisable|()V
+      @|rina/rocan/client/RocanModule.java|2388|2393|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|2394|2415|getPomeloEventManager|method|rina.rocan.Rocan|getPomeloEventManager|()Lteam/stiff/pomelo/EventManager;
+      @|rina/rocan/client/RocanModule.java|2418|2437|removeEventListener|method|team.stiff.pomelo.EventManager|removeEventListener|(Ljava/lang/Object;)Z
    Method End: setDisable()V
    Method Start: getSettingModule()Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|2042|2054|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|2055|2071|getSettingModule|method|rina.rocan.client.RocanModule|getSettingModule|()Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|2091|2105|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|2460|2472|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|2473|2489|getSettingModule|method|rina.rocan.client.RocanModule|getSettingModule|()Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|2509|2523|setting_module|field|rina.rocan.client.RocanModule|setting_module
    Method End: getSettingModule()Lrina/rocan/client/RocanSetting;
    Method Start: getName()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2122|2128|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|2129|2136|getName|method|rina.rocan.client.RocanModule|getName|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2156|2160|name|field|rina.rocan.client.RocanModule|name
+      @|rina/rocan/client/RocanModule.java|2540|2546|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2547|2554|getName|method|rina.rocan.client.RocanModule|getName|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2574|2578|name|field|rina.rocan.client.RocanModule|name
    Method End: getName()Ljava/lang/String;
    Method Start: getTag()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2177|2183|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|2184|2190|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2210|2213|tag|field|rina.rocan.client.RocanModule|tag
+      @|rina/rocan/client/RocanModule.java|2595|2601|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2602|2608|getTag|method|rina.rocan.client.RocanModule|getTag|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2628|2631|tag|field|rina.rocan.client.RocanModule|tag
    Method End: getTag()Ljava/lang/String;
    Method Start: getDescription()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2230|2236|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|2237|2251|getDescription|method|rina.rocan.client.RocanModule|getDescription|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2271|2282|description|field|rina.rocan.client.RocanModule|description
+      @|rina/rocan/client/RocanModule.java|2648|2654|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2655|2669|getDescription|method|rina.rocan.client.RocanModule|getDescription|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2689|2700|description|field|rina.rocan.client.RocanModule|description
    Method End: getDescription()Ljava/lang/String;
    Method Start: getInfo()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2299|2305|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|2306|2313|getInfo|method|rina.rocan.client.RocanModule|getInfo|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2333|2337|info|field|rina.rocan.client.RocanModule|info
+      @|rina/rocan/client/RocanModule.java|2717|2723|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2724|2731|getInfo|method|rina.rocan.client.RocanModule|getInfo|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2751|2755|info|field|rina.rocan.client.RocanModule|info
    Method End: getInfo()Ljava/lang/String;
    Method Start: getCategory()Lrina/rocan/client/RocanModule$Category;
-      @|rina/rocan/client/RocanModule.java|2354|2362|Category|class|rina.rocan.client.RocanModule.Category|false
-      @|rina/rocan/client/RocanModule.java|2363|2374|getCategory|method|rina.rocan.client.RocanModule|getCategory|()Lrina/rocan/client/RocanModule$Category;
-      @|rina/rocan/client/RocanModule.java|2394|2402|category|field|rina.rocan.client.RocanModule|category
+      @|rina/rocan/client/RocanModule.java|2772|2780|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/client/RocanModule.java|2781|2792|getCategory|method|rina.rocan.client.RocanModule|getCategory|()Lrina/rocan/client/RocanModule$Category;
+      @|rina/rocan/client/RocanModule.java|2812|2820|category|field|rina.rocan.client.RocanModule|category
    Method End: getCategory()Lrina/rocan/client/RocanModule$Category;
    Method Start: getICamera()Lnet/minecraft/client/renderer/culling/ICamera;
-      @|rina/rocan/client/RocanModule.java|2419|2426|ICamera|class|net.minecraft.client.renderer.culling.ICamera|false
-      @|rina/rocan/client/RocanModule.java|2427|2437|getICamera|method|rina.rocan.client.RocanModule|getICamera|()Lnet/minecraft/client/renderer/culling/ICamera;
-      @|rina/rocan/client/RocanModule.java|2452|2458|camera|field|rina.rocan.client.RocanModule|camera
+      @|rina/rocan/client/RocanModule.java|2837|2844|ICamera|class|net.minecraft.client.renderer.culling.ICamera|false
+      @|rina/rocan/client/RocanModule.java|2845|2855|getICamera|method|rina.rocan.client.RocanModule|getICamera|()Lnet/minecraft/client/renderer/culling/ICamera;
+      @|rina/rocan/client/RocanModule.java|2870|2876|camera|field|rina.rocan.client.RocanModule|camera
    Method End: getICamera()Lnet/minecraft/client/renderer/culling/ICamera;
    Method Start: getKeyBindName()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2475|2481|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|2482|2496|getKeyBindName|method|rina.rocan.client.RocanModule|getKeyBindName|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2513|2527|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|2528|2538|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/RocanModule.java|2586|2594|Keyboard|class|org.lwjgl.input.Keyboard|false
-      @|rina/rocan/client/RocanModule.java|2595|2605|getKeyName|method|org.lwjgl.input.Keyboard|getKeyName|(I)Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|2611|2625|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|2626|2636|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/RocanModule.java|2640|2651|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2893|2899|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|2900|2914|getKeyBindName|method|rina.rocan.client.RocanModule|getKeyBindName|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|2931|2945|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|2946|2956|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/RocanModule.java|3004|3012|Keyboard|class|org.lwjgl.input.Keyboard|false
+      @|rina/rocan/client/RocanModule.java|3013|3023|getKeyName|method|org.lwjgl.input.Keyboard|getKeyName|(I)Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|3029|3043|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|3044|3054|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/RocanModule.java|3058|3069|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
    Method End: getKeyBindName()Ljava/lang/String;
    Method Start: getKeyBind()I
-      @|rina/rocan/client/RocanModule.java|2674|2684|getKeyBind|method|rina.rocan.client.RocanModule|getKeyBind|()I
-      @|rina/rocan/client/RocanModule.java|2704|2718|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|2719|2729|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/RocanModule.java|3092|3102|getKeyBind|method|rina.rocan.client.RocanModule|getKeyBind|()I
+      @|rina/rocan/client/RocanModule.java|3122|3136|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|3137|3147|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
    Method End: getKeyBind()I
    Method Start: getState()Z
-      @|rina/rocan/client/RocanModule.java|2756|2764|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/client/RocanModule.java|2784|2798|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|2799|2809|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanModule.java|3174|3182|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/client/RocanModule.java|3202|3216|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|3217|3227|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
    Method End: getState()Z
    Method Start: showInHUD()Z
-      @|rina/rocan/client/RocanModule.java|2836|2845|showInHUD|method|rina.rocan.client.RocanModule|showInHUD|()Z
-      @|rina/rocan/client/RocanModule.java|2865|2883|show_hud_arraylist|field|rina.rocan.client.RocanModule|show_hud_arraylist
+      @|rina/rocan/client/RocanModule.java|3254|3263|showInHUD|method|rina.rocan.client.RocanModule|showInHUD|()Z
+      @|rina/rocan/client/RocanModule.java|3283|3301|show_hud_arraylist|field|rina.rocan.client.RocanModule|show_hud_arraylist
    Method End: showInHUD()Z
    Method Start: getSettingList()Ljava/util/ArrayList;
-      @|rina/rocan/client/RocanModule.java|2900|2909|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|2910|2922|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|2924|2938|getSettingList|method|rina.rocan.client.RocanModule|getSettingList|()Ljava/util/ArrayList;
-      @|rina/rocan/client/RocanModule.java|2950|2962|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|2978|2990|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|2997|3006|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|3029|3041|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|3318|3327|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|3328|3340|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|3342|3356|getSettingList|method|rina.rocan.client.RocanModule|getSettingList|()Ljava/util/ArrayList;
+      @|rina/rocan/client/RocanModule.java|3368|3380|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|3396|3408|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|3415|3424|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|3447|3459|setting_list|field|rina.rocan.client.RocanModule|setting_list
    Method End: getSettingList()Ljava/util/ArrayList;
    Method Start: onEnable()V
-      @|rina/rocan/client/RocanModule.java|3079|3087|onEnable|method|rina.rocan.client.RocanModule|onEnable|()V
+      @|rina/rocan/client/RocanModule.java|3497|3505|onEnable|method|rina.rocan.client.RocanModule|onEnable|()V
    Method End: onEnable()V
    Method Start: onDisable()V
-      @|rina/rocan/client/RocanModule.java|3107|3116|onDisable|method|rina.rocan.client.RocanModule|onDisable|()V
+      @|rina/rocan/client/RocanModule.java|3525|3534|onDisable|method|rina.rocan.client.RocanModule|onDisable|()V
    Method End: onDisable()V
    Method Start: onUpdate()V
-      @|rina/rocan/client/RocanModule.java|3138|3146|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
+      @|rina/rocan/client/RocanModule.java|3556|3564|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
    Method End: onUpdate()V
    Method Start: onRender()V
-      @|rina/rocan/client/RocanModule.java|3166|3174|onRender|method|rina.rocan.client.RocanModule|onRender|()V
+      @|rina/rocan/client/RocanModule.java|3584|3592|onRender|method|rina.rocan.client.RocanModule|onRender|()V
    Method End: onRender()V
    Method Start: onRender(Lrina/rocan/event/render/RocanEventRender;)V
-      @|rina/rocan/client/RocanModule.java|3220|3225|event|param|rina.rocan.client.RocanModule|onRender|(Lrina/rocan/event/render/RocanEventRender;)V|event|0
-      @|rina/rocan/client/RocanModule.java|3194|3202|onRender|method|rina.rocan.client.RocanModule|onRender|(Lrina/rocan/event/render/RocanEventRender;)V
-      @|rina/rocan/client/RocanModule.java|3203|3219|RocanEventRender|class|rina.rocan.event.render.RocanEventRender|false
+      @|rina/rocan/client/RocanModule.java|3638|3643|event|param|rina.rocan.client.RocanModule|onRender|(Lrina/rocan/event/render/RocanEventRender;)V|event|0
+      @|rina/rocan/client/RocanModule.java|3612|3620|onRender|method|rina.rocan.client.RocanModule|onRender|(Lrina/rocan/event/render/RocanEventRender;)V
+      @|rina/rocan/client/RocanModule.java|3621|3637|RocanEventRender|class|rina.rocan.event.render.RocanEventRender|false
    Method End: onRender(Lrina/rocan/event/render/RocanEventRender;)V
    Enum Start: rina.rocan.client.RocanModule.Category
-      @|rina/rocan/client/RocanModule.java|3246|3254|Category|class|rina.rocan.client.RocanModule.Category|false
-      @|rina/rocan/client/RocanModule.java|3260|3272|ROCAN_COMBAT|field|rina.rocan.client.RocanModule.Category|ROCAN_COMBAT
-      @|rina/rocan/client/RocanModule.java|3303|3317|ROCAN_MOVEMENT|field|rina.rocan.client.RocanModule.Category|ROCAN_MOVEMENT
-      @|rina/rocan/client/RocanModule.java|3352|3365|ROCAN_EXPLOIT|field|rina.rocan.client.RocanModule.Category|ROCAN_EXPLOIT
-      @|rina/rocan/client/RocanModule.java|3398|3410|ROCAN_RENDER|field|rina.rocan.client.RocanModule.Category|ROCAN_RENDER
-      @|rina/rocan/client/RocanModule.java|3441|3451|ROCAN_MISC|field|rina.rocan.client.RocanModule.Category|ROCAN_MISC
-      @|rina/rocan/client/RocanModule.java|3478|3487|ROCAN_HUD|field|rina.rocan.client.RocanModule.Category|ROCAN_HUD
-      @|rina/rocan/client/RocanModule.java|3512|3521|ROCAN_GUI|field|rina.rocan.client.RocanModule.Category|ROCAN_GUI
-      @|rina/rocan/client/RocanModule.java|3546|3558|ROCAN_SYSTEM|field|rina.rocan.client.RocanModule.Category|ROCAN_SYSTEM
-      @|rina/rocan/client/RocanModule.java|3591|3597|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|3591|3597|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|3598|3602|name|field|rina.rocan.client.RocanModule.Category|name|
-      @|rina/rocan/client/RocanModule.java|3607|3613|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|3607|3613|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|3614|3617|tag|field|rina.rocan.client.RocanModule.Category|tag|
+      @|rina/rocan/client/RocanModule.java|3664|3672|Category|class|rina.rocan.client.RocanModule.Category|false
+      @|rina/rocan/client/RocanModule.java|3678|3690|ROCAN_COMBAT|field|rina.rocan.client.RocanModule.Category|ROCAN_COMBAT
+      @|rina/rocan/client/RocanModule.java|3721|3735|ROCAN_MOVEMENT|field|rina.rocan.client.RocanModule.Category|ROCAN_MOVEMENT
+      @|rina/rocan/client/RocanModule.java|3770|3783|ROCAN_EXPLOIT|field|rina.rocan.client.RocanModule.Category|ROCAN_EXPLOIT
+      @|rina/rocan/client/RocanModule.java|3816|3828|ROCAN_RENDER|field|rina.rocan.client.RocanModule.Category|ROCAN_RENDER
+      @|rina/rocan/client/RocanModule.java|3859|3869|ROCAN_MISC|field|rina.rocan.client.RocanModule.Category|ROCAN_MISC
+      @|rina/rocan/client/RocanModule.java|3896|3905|ROCAN_HUD|field|rina.rocan.client.RocanModule.Category|ROCAN_HUD
+      @|rina/rocan/client/RocanModule.java|3930|3939|ROCAN_GUI|field|rina.rocan.client.RocanModule.Category|ROCAN_GUI
+      @|rina/rocan/client/RocanModule.java|3964|3976|ROCAN_SYSTEM|field|rina.rocan.client.RocanModule.Category|ROCAN_SYSTEM
+      @|rina/rocan/client/RocanModule.java|4009|4015|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|4009|4015|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|4016|4020|name|field|rina.rocan.client.RocanModule.Category|name|
+      @|rina/rocan/client/RocanModule.java|4025|4031|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|4025|4031|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|4032|4035|tag|field|rina.rocan.client.RocanModule.Category|tag|
       Method Start: Category(Ljava/lang/String;Ljava/lang/String;)V
-         @|rina/rocan/client/RocanModule.java|3640|3644|name|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|name|0
-         @|rina/rocan/client/RocanModule.java|3653|3656|tag|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|tag|1
-         @|rina/rocan/client/RocanModule.java|3624|3632|Category|method|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V
-         @|rina/rocan/client/RocanModule.java|3633|3639|String|class|java.lang.String|false
-         @|rina/rocan/client/RocanModule.java|3646|3652|String|class|java.lang.String|false
-         @|rina/rocan/client/RocanModule.java|3669|3673|name|field|rina.rocan.client.RocanModule.Category|name
-         @|rina/rocan/client/RocanModule.java|3676|3680|name|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|name|0
-         @|rina/rocan/client/RocanModule.java|3691|3694|tag|field|rina.rocan.client.RocanModule.Category|tag
-         @|rina/rocan/client/RocanModule.java|3698|3701|tag|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|tag|1
+         @|rina/rocan/client/RocanModule.java|4058|4062|name|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|name|0
+         @|rina/rocan/client/RocanModule.java|4071|4074|tag|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|tag|1
+         @|rina/rocan/client/RocanModule.java|4042|4050|Category|method|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V
+         @|rina/rocan/client/RocanModule.java|4051|4057|String|class|java.lang.String|false
+         @|rina/rocan/client/RocanModule.java|4064|4070|String|class|java.lang.String|false
+         @|rina/rocan/client/RocanModule.java|4087|4091|name|field|rina.rocan.client.RocanModule.Category|name
+         @|rina/rocan/client/RocanModule.java|4094|4098|name|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|name|0
+         @|rina/rocan/client/RocanModule.java|4109|4112|tag|field|rina.rocan.client.RocanModule.Category|tag
+         @|rina/rocan/client/RocanModule.java|4116|4119|tag|param|rina.rocan.client.RocanModule.Category|Category|(Ljava/lang/String;Ljava/lang/String;)V|tag|1
       Method End: Category(Ljava/lang/String;Ljava/lang/String;)V
       Method Start: getName()Ljava/lang/String;
-         @|rina/rocan/client/RocanModule.java|3720|3726|String|class|java.lang.String|false
-         @|rina/rocan/client/RocanModule.java|3727|3734|getName|method|rina.rocan.client.RocanModule.Category|getName|()Ljava/lang/String;
-         @|rina/rocan/client/RocanModule.java|3755|3759|name|field|rina.rocan.client.RocanModule.Category|name
+         @|rina/rocan/client/RocanModule.java|4138|4144|String|class|java.lang.String|false
+         @|rina/rocan/client/RocanModule.java|4145|4152|getName|method|rina.rocan.client.RocanModule.Category|getName|()Ljava/lang/String;
+         @|rina/rocan/client/RocanModule.java|4173|4177|name|field|rina.rocan.client.RocanModule.Category|name
       Method End: getName()Ljava/lang/String;
       Method Start: getTag()Ljava/lang/String;
-         @|rina/rocan/client/RocanModule.java|3778|3784|String|class|java.lang.String|false
-         @|rina/rocan/client/RocanModule.java|3785|3791|getTag|method|rina.rocan.client.RocanModule.Category|getTag|()Ljava/lang/String;
-         @|rina/rocan/client/RocanModule.java|3812|3815|tag|field|rina.rocan.client.RocanModule.Category|tag
+         @|rina/rocan/client/RocanModule.java|4196|4202|String|class|java.lang.String|false
+         @|rina/rocan/client/RocanModule.java|4203|4209|getTag|method|rina.rocan.client.RocanModule.Category|getTag|()Ljava/lang/String;
+         @|rina/rocan/client/RocanModule.java|4230|4233|tag|field|rina.rocan.client.RocanModule.Category|tag
       Method End: getTag()Ljava/lang/String;
    Enum End  : rina.rocan.client.RocanModule.Category
    Method Start: loadSettingListFromJsonObject(Lcom/google/gson/JsonObject;)V
-      @|rina/rocan/client/RocanModule.java|3883|3895|object_cache|param|rina.rocan.client.RocanModule|loadSettingListFromJsonObject|(Lcom/google/gson/JsonObject;)V|object_cache|0
-      @|rina/rocan/client/RocanModule.java|3842|3871|loadSettingListFromJsonObject|method|rina.rocan.client.RocanModule|loadSettingListFromJsonObject|(Lcom/google/gson/JsonObject;)V
-      @|rina/rocan/client/RocanModule.java|3872|3882|JsonObject|class|com.google.gson.JsonObject|false
-      @|rina/rocan/client/RocanModule.java|3907|3919|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|3931|3943|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|3955|3967|object_cache|param|rina.rocan.client.RocanModule|loadSettingListFromJsonObject|(Lcom/google/gson/JsonObject;)V|object_cache|0
-      @|rina/rocan/client/RocanModule.java|3968|3971|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|3981|3987|getTag|method|rina.rocan.client.RocanSetting|getTag|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|4029|4039|JsonObject|class|com.google.gson.JsonObject|false
-      @|rina/rocan/client/RocanModule.java|4050|4062|object_cache|param|rina.rocan.client.RocanModule|loadSettingListFromJsonObject|(Lcom/google/gson/JsonObject;)V|object_cache|0
-      @|rina/rocan/client/RocanModule.java|4063|4066|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4076|4082|getTag|method|rina.rocan.client.RocanSetting|getTag|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|4086|4101|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
-      @|rina/rocan/client/RocanModule.java|4123|4126|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4154|4157|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4215|4218|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4255|4265|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
-      @|rina/rocan/client/RocanModule.java|4274|4277|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4289|4301|getAsBoolean|method|com.google.gson.JsonElement|getAsBoolean|()Z
-      @|rina/rocan/client/RocanModule.java|4330|4333|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4369|4378|setString|method|rina.rocan.client.RocanSetting|setString|(Ljava/lang/String;)V
-      @|rina/rocan/client/RocanModule.java|4387|4390|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4401|4412|getAsString|method|com.google.gson.JsonElement|getAsString|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|4441|4444|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4481|4491|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
-      @|rina/rocan/client/RocanModule.java|4500|4503|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4515|4523|getAsInt|method|com.google.gson.JsonElement|getAsInt|()I
-      @|rina/rocan/client/RocanModule.java|4552|4555|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4591|4600|setDouble|method|rina.rocan.client.RocanSetting|setDouble|(D)V
-      @|rina/rocan/client/RocanModule.java|4609|4612|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
-      @|rina/rocan/client/RocanModule.java|4623|4634|getAsDouble|method|com.google.gson.JsonElement|getAsDouble|()D
+      @|rina/rocan/client/RocanModule.java|4301|4313|object_cache|param|rina.rocan.client.RocanModule|loadSettingListFromJsonObject|(Lcom/google/gson/JsonObject;)V|object_cache|0
+      @|rina/rocan/client/RocanModule.java|4260|4289|loadSettingListFromJsonObject|method|rina.rocan.client.RocanModule|loadSettingListFromJsonObject|(Lcom/google/gson/JsonObject;)V
+      @|rina/rocan/client/RocanModule.java|4290|4300|JsonObject|class|com.google.gson.JsonObject|false
+      @|rina/rocan/client/RocanModule.java|4325|4337|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|4349|4361|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|4373|4385|object_cache|param|rina.rocan.client.RocanModule|loadSettingListFromJsonObject|(Lcom/google/gson/JsonObject;)V|object_cache|0
+      @|rina/rocan/client/RocanModule.java|4386|4389|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4399|4405|getTag|method|rina.rocan.client.RocanSetting|getTag|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|4447|4457|JsonObject|class|com.google.gson.JsonObject|false
+      @|rina/rocan/client/RocanModule.java|4468|4480|object_cache|param|rina.rocan.client.RocanModule|loadSettingListFromJsonObject|(Lcom/google/gson/JsonObject;)V|object_cache|0
+      @|rina/rocan/client/RocanModule.java|4481|4484|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4494|4500|getTag|method|rina.rocan.client.RocanSetting|getTag|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|4504|4519|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
+      @|rina/rocan/client/RocanModule.java|4541|4544|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4572|4575|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4633|4636|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4673|4683|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
+      @|rina/rocan/client/RocanModule.java|4692|4695|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4707|4719|getAsBoolean|method|com.google.gson.JsonElement|getAsBoolean|()Z
+      @|rina/rocan/client/RocanModule.java|4748|4751|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4787|4796|setString|method|rina.rocan.client.RocanSetting|setString|(Ljava/lang/String;)V
+      @|rina/rocan/client/RocanModule.java|4805|4808|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4819|4830|getAsString|method|com.google.gson.JsonElement|getAsString|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|4859|4862|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4899|4909|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
+      @|rina/rocan/client/RocanModule.java|4918|4921|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|4933|4941|getAsInt|method|com.google.gson.JsonElement|getAsInt|()I
+      @|rina/rocan/client/RocanModule.java|4970|4973|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|5009|5018|setDouble|method|rina.rocan.client.RocanSetting|setDouble|(D)V
+      @|rina/rocan/client/RocanModule.java|5027|5030|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|rina/rocan/client/RocanModule.java|5041|5052|getAsDouble|method|com.google.gson.JsonElement|getAsDouble|()D
    Method End: loadSettingListFromJsonObject(Lcom/google/gson/JsonObject;)V
    Method Start: reloadModule()V
-      @|rina/rocan/client/RocanModule.java|4670|4682|reloadModule|method|rina.rocan.client.RocanModule|reloadModule|()V
-      @|rina/rocan/client/RocanModule.java|4699|4713|setting_module|field|rina.rocan.client.RocanModule|setting_module
-      @|rina/rocan/client/RocanModule.java|4714|4724|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/RocanModule.java|4734|4743|setEnable|method|rina.rocan.client.RocanModule|setEnable|()V
-      @|rina/rocan/client/RocanModule.java|4763|4773|setDisable|method|rina.rocan.client.RocanModule|setDisable|()V
+      @|rina/rocan/client/RocanModule.java|5088|5100|reloadModule|method|rina.rocan.client.RocanModule|reloadModule|()V
+      @|rina/rocan/client/RocanModule.java|5117|5131|setting_module|field|rina.rocan.client.RocanModule|setting_module
+      @|rina/rocan/client/RocanModule.java|5132|5142|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanModule.java|5152|5161|setEnable|method|rina.rocan.client.RocanModule|setEnable|()V
+      @|rina/rocan/client/RocanModule.java|5181|5191|setDisable|method|rina.rocan.client.RocanModule|setDisable|()V
    Method End: reloadModule()V
    Method Start: getJsonObjectSettingList()Lcom/google/gson/JsonObject;
-      @|rina/rocan/client/RocanModule.java|4797|4807|JsonObject|class|com.google.gson.JsonObject|false
-      @|rina/rocan/client/RocanModule.java|4808|4832|getJsonObjectSettingList|method|rina.rocan.client.RocanModule|getJsonObjectSettingList|()Lcom/google/gson/JsonObject;
-      @|rina/rocan/client/RocanModule.java|4840|4850|JsonObject|class|com.google.gson.JsonObject|false
-      @|rina/rocan/client/RocanModule.java|4875|4885|JsonObject|class|com.google.gson.JsonObject|false
-      @|rina/rocan/client/RocanModule.java|4899|4911|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|4923|4935|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|4943|4953|JsonObject|class|com.google.gson.JsonObject|false
-      @|rina/rocan/client/RocanModule.java|4968|4978|JsonObject|class|com.google.gson.JsonObject|false
-      @|rina/rocan/client/RocanModule.java|4996|4999|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
-      @|rina/rocan/client/RocanModule.java|5012|5025|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
-      @|rina/rocan/client/RocanModule.java|5035|5042|getName|method|rina.rocan.client.RocanSetting|getName|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|5060|5063|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
-      @|rina/rocan/client/RocanModule.java|5075|5088|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
-      @|rina/rocan/client/RocanModule.java|5098|5104|getTag|method|rina.rocan.client.RocanSetting|getTag|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|5121|5128|Boolean|class|java.lang.Boolean|false
-      @|rina/rocan/client/RocanModule.java|5139|5149|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/RocanModule.java|5176|5179|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
-      @|rina/rocan/client/RocanModule.java|5195|5208|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
-      @|rina/rocan/client/RocanModule.java|5218|5228|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/RocanModule.java|5251|5257|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|5268|5277|getString|method|rina.rocan.client.RocanSetting|getString|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|5304|5307|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
-      @|rina/rocan/client/RocanModule.java|5322|5335|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
-      @|rina/rocan/client/RocanModule.java|5345|5354|getString|method|rina.rocan.client.RocanSetting|getString|()Ljava/lang/String;
-      @|rina/rocan/client/RocanModule.java|5377|5384|Integer|class|java.lang.Integer|false
-      @|rina/rocan/client/RocanModule.java|5395|5405|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/RocanModule.java|5432|5435|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
-      @|rina/rocan/client/RocanModule.java|5451|5464|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
-      @|rina/rocan/client/RocanModule.java|5474|5484|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
-      @|rina/rocan/client/RocanModule.java|5507|5513|Double|class|java.lang.Double|false
-      @|rina/rocan/client/RocanModule.java|5524|5533|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
-      @|rina/rocan/client/RocanModule.java|5560|5563|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
-      @|rina/rocan/client/RocanModule.java|5578|5591|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
-      @|rina/rocan/client/RocanModule.java|5601|5610|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
-      @|rina/rocan/client/RocanModule.java|5646|5649|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
-      @|rina/rocan/client/RocanModule.java|5659|5665|getTag|method|rina.rocan.client.RocanSetting|getTag|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|5215|5225|JsonObject|class|com.google.gson.JsonObject|false
+      @|rina/rocan/client/RocanModule.java|5226|5250|getJsonObjectSettingList|method|rina.rocan.client.RocanModule|getJsonObjectSettingList|()Lcom/google/gson/JsonObject;
+      @|rina/rocan/client/RocanModule.java|5258|5268|JsonObject|class|com.google.gson.JsonObject|false
+      @|rina/rocan/client/RocanModule.java|5293|5303|JsonObject|class|com.google.gson.JsonObject|false
+      @|rina/rocan/client/RocanModule.java|5317|5329|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|5341|5353|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|5361|5371|JsonObject|class|com.google.gson.JsonObject|false
+      @|rina/rocan/client/RocanModule.java|5386|5396|JsonObject|class|com.google.gson.JsonObject|false
+      @|rina/rocan/client/RocanModule.java|5414|5417|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      @|rina/rocan/client/RocanModule.java|5430|5443|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
+      @|rina/rocan/client/RocanModule.java|5453|5460|getName|method|rina.rocan.client.RocanSetting|getName|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|5478|5481|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      @|rina/rocan/client/RocanModule.java|5493|5506|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
+      @|rina/rocan/client/RocanModule.java|5516|5522|getTag|method|rina.rocan.client.RocanSetting|getTag|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|5539|5546|Boolean|class|java.lang.Boolean|false
+      @|rina/rocan/client/RocanModule.java|5557|5567|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanModule.java|5594|5597|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      @|rina/rocan/client/RocanModule.java|5613|5626|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
+      @|rina/rocan/client/RocanModule.java|5636|5646|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/RocanModule.java|5669|5675|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|5686|5695|getString|method|rina.rocan.client.RocanSetting|getString|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|5722|5725|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      @|rina/rocan/client/RocanModule.java|5740|5753|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
+      @|rina/rocan/client/RocanModule.java|5763|5772|getString|method|rina.rocan.client.RocanSetting|getString|()Ljava/lang/String;
+      @|rina/rocan/client/RocanModule.java|5795|5802|Integer|class|java.lang.Integer|false
+      @|rina/rocan/client/RocanModule.java|5813|5823|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/RocanModule.java|5850|5853|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      @|rina/rocan/client/RocanModule.java|5869|5882|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
+      @|rina/rocan/client/RocanModule.java|5892|5902|getInteger|method|rina.rocan.client.RocanSetting|getInteger|()I
+      @|rina/rocan/client/RocanModule.java|5925|5931|Double|class|java.lang.Double|false
+      @|rina/rocan/client/RocanModule.java|5942|5951|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/client/RocanModule.java|5978|5981|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      @|rina/rocan/client/RocanModule.java|5996|6009|JsonPrimitive|class|com.google.gson.JsonPrimitive|false
+      @|rina/rocan/client/RocanModule.java|6019|6028|getDouble|method|rina.rocan.client.RocanSetting|getDouble|()D
+      @|rina/rocan/client/RocanModule.java|6064|6067|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      @|rina/rocan/client/RocanModule.java|6077|6083|getTag|method|rina.rocan.client.RocanSetting|getTag|()Ljava/lang/String;
    Method End: getJsonObjectSettingList()Lcom/google/gson/JsonObject;
    Method Start: sentNotifyClientChat(Ljava/lang/String;)V
-      @|rina/rocan/client/RocanModule.java|5766|5773|message|param|rina.rocan.client.RocanModule|sentNotifyClientChat|(Ljava/lang/String;)V|message|0
-      @|rina/rocan/client/RocanModule.java|5738|5758|sentNotifyClientChat|method|rina.rocan.client.RocanModule|sentNotifyClientChat|(Ljava/lang/String;)V
-      @|rina/rocan/client/RocanModule.java|5759|5765|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|5780|5795|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
-      @|rina/rocan/client/RocanModule.java|5796|5806|sendNotify|method|rina.rocan.util.RocanUtilClient|sendNotify|(Ljava/lang/String;)V
-      @|rina/rocan/client/RocanModule.java|5807|5812|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|5813|5825|getGrayColor|method|rina.rocan.Rocan|getGrayColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
-      @|rina/rocan/client/RocanModule.java|5830|5833|tag|field|rina.rocan.client.RocanModule|tag
-      @|rina/rocan/client/RocanModule.java|5842|5847|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|5848|5863|setDefaultColor|method|rina.rocan.Rocan|setDefaultColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
-      @|rina/rocan/client/RocanModule.java|5868|5875|message|param|rina.rocan.client.RocanModule|sentNotifyClientChat|(Ljava/lang/String;)V|message|0
+      @|rina/rocan/client/RocanModule.java|6184|6191|message|param|rina.rocan.client.RocanModule|sentNotifyClientChat|(Ljava/lang/String;)V|message|0
+      @|rina/rocan/client/RocanModule.java|6156|6176|sentNotifyClientChat|method|rina.rocan.client.RocanModule|sentNotifyClientChat|(Ljava/lang/String;)V
+      @|rina/rocan/client/RocanModule.java|6177|6183|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|6198|6213|RocanUtilClient|class|rina.rocan.util.RocanUtilClient|false
+      @|rina/rocan/client/RocanModule.java|6214|6224|sendNotify|method|rina.rocan.util.RocanUtilClient|sendNotify|(Ljava/lang/String;)V
+      @|rina/rocan/client/RocanModule.java|6225|6230|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|6231|6243|getGrayColor|method|rina.rocan.Rocan|getGrayColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/client/RocanModule.java|6248|6251|tag|field|rina.rocan.client.RocanModule|tag
+      @|rina/rocan/client/RocanModule.java|6260|6265|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|6266|6281|setDefaultColor|method|rina.rocan.Rocan|setDefaultColor|()Lcom/mojang/realmsclient/gui/ChatFormatting;
+      @|rina/rocan/client/RocanModule.java|6286|6293|message|param|rina.rocan.client.RocanModule|sentNotifyClientChat|(Ljava/lang/String;)V|message|0
    Method End: sentNotifyClientChat(Ljava/lang/String;)V
    Method Start: addSetting(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|5925|5932|setting|param|rina.rocan.client.RocanModule|addSetting|(Lrina/rocan/client/RocanSetting;)V|setting|0
-      @|rina/rocan/client/RocanModule.java|5901|5911|addSetting|method|rina.rocan.client.RocanModule|addSetting|(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|5912|5924|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|5943|5955|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|5971|5983|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|5990|5999|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|6015|6027|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|6028|6031|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/RocanModule.java|6032|6039|setting|param|rina.rocan.client.RocanModule|addSetting|(Lrina/rocan/client/RocanSetting;)V|setting|0
-      @|rina/rocan/client/RocanModule.java|6047|6052|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|6053|6070|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|6073|6083|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|6084|6091|setting|param|rina.rocan.client.RocanModule|addSetting|(Lrina/rocan/client/RocanSetting;)V|setting|0
+      @|rina/rocan/client/RocanModule.java|6343|6350|setting|param|rina.rocan.client.RocanModule|addSetting|(Lrina/rocan/client/RocanSetting;)V|setting|0
+      @|rina/rocan/client/RocanModule.java|6319|6329|addSetting|method|rina.rocan.client.RocanModule|addSetting|(Lrina/rocan/client/RocanSetting;)V
+      @|rina/rocan/client/RocanModule.java|6330|6342|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|6361|6373|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|6389|6401|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|6408|6417|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|6433|6445|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|6446|6449|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|6450|6457|setting|param|rina.rocan.client.RocanModule|addSetting|(Lrina/rocan/client/RocanSetting;)V|setting|0
+      @|rina/rocan/client/RocanModule.java|6465|6470|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|6471|6488|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|6491|6501|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
+      @|rina/rocan/client/RocanModule.java|6502|6509|setting|param|rina.rocan.client.RocanModule|addSetting|(Lrina/rocan/client/RocanSetting;)V|setting|0
    Method End: addSetting(Lrina/rocan/client/RocanSetting;)V
    Method Start: createSetting([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6148|6155|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|6165|6170|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|6112|6124|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|6125|6138|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6139|6145|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|6181|6193|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|6209|6221|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|6228|6237|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|6253|6258|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|6259|6276|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|6279|6289|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|6294|6306|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|6313|6320|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|6322|6327|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|6334|6339|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|6340|6357|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|6360|6375|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6376|6383|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|6388|6395|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
-      @|rina/rocan/client/RocanModule.java|6396|6420|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
-      @|rina/rocan/client/RocanModule.java|6421|6436|SETTING_BOOLEAN|field|rina.rocan.client.RocanSetting.SettingType|SETTING_BOOLEAN
-      @|rina/rocan/client/RocanModule.java|6444|6456|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|6457|6460|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/RocanModule.java|6461|6466|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|6467|6484|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|6487|6502|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6503|6510|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|6529|6534|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|6535|6552|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|6555|6570|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6571|6578|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|6566|6573|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|6583|6588|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|6530|6542|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|6543|6556|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|6557|6563|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|6599|6611|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|6627|6639|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|6646|6655|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|6671|6676|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|6677|6694|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|6697|6707|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
+      @|rina/rocan/client/RocanModule.java|6712|6724|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|6731|6738|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|6740|6745|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|6752|6757|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|6758|6775|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|6778|6793|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|6794|6801|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|6806|6813|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
+      @|rina/rocan/client/RocanModule.java|6814|6838|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
+      @|rina/rocan/client/RocanModule.java|6839|6854|SETTING_BOOLEAN|field|rina.rocan.client.RocanSetting.SettingType|SETTING_BOOLEAN
+      @|rina/rocan/client/RocanModule.java|6862|6874|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|6875|6878|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|6879|6884|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|6885|6902|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|6905|6920|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|6921|6928|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|6947|6952|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|6953|6970|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|6973|6988|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|6989|6996|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;|details|0
    Method End: createSetting([Ljava/lang/String;Z)Lrina/rocan/client/RocanSetting;
    Method Start: createSetting([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6638|6645|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|6654|6659|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|6602|6614|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|6615|6628|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6629|6635|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|6647|6653|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|6670|6682|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|6698|6710|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|6717|6726|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|6742|6747|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|6748|6765|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|6768|6778|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|6783|6795|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|6802|6809|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|6811|6816|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|6823|6828|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|6829|6846|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|6849|6864|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6865|6872|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|6877|6884|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
-      @|rina/rocan/client/RocanModule.java|6885|6909|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
-      @|rina/rocan/client/RocanModule.java|6910|6924|SETTING_STRING|field|rina.rocan.client.RocanSetting.SettingType|SETTING_STRING
-      @|rina/rocan/client/RocanModule.java|6932|6944|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|6945|6948|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/RocanModule.java|6949|6954|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|6955|6972|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|6975|6990|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|6991|6998|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|7017|7022|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|7023|7040|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|7043|7058|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7059|7066|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7056|7063|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7072|7077|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|7020|7032|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|7033|7046|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|7047|7053|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|7065|7071|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|7088|7100|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|7116|7128|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|7135|7144|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|7160|7165|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|7166|7183|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|7186|7196|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
+      @|rina/rocan/client/RocanModule.java|7201|7213|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|7220|7227|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7229|7234|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|7241|7246|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|7247|7264|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|7267|7282|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|7283|7290|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7295|7302|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
+      @|rina/rocan/client/RocanModule.java|7303|7327|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
+      @|rina/rocan/client/RocanModule.java|7328|7342|SETTING_STRING|field|rina.rocan.client.RocanSetting.SettingType|SETTING_STRING
+      @|rina/rocan/client/RocanModule.java|7350|7362|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|7363|7366|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|7367|7372|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|7373|7390|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|7393|7408|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|7409|7416|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7435|7440|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|7441|7458|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|7461|7476|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|7477|7484|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
    Method End: createSetting([Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
    Method Start: createSetting([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7126|7133|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|7139|7144|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|7154|7159|state|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|state|2
-      @|rina/rocan/client/RocanModule.java|7090|7102|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|7103|7116|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7117|7123|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|7170|7182|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|7198|7210|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|7217|7226|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|7242|7247|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|7248|7265|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|7268|7278|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|7283|7295|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|7302|7309|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|7311|7316|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|7318|7323|state|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|state|2
-      @|rina/rocan/client/RocanModule.java|7330|7335|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|7336|7353|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|7356|7371|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7372|7379|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|7384|7391|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
-      @|rina/rocan/client/RocanModule.java|7392|7416|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
-      @|rina/rocan/client/RocanModule.java|7417|7430|SETTING_MACRO|field|rina.rocan.client.RocanSetting.SettingType|SETTING_MACRO
-      @|rina/rocan/client/RocanModule.java|7438|7450|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|7451|7454|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/RocanModule.java|7455|7460|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|7461|7478|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|7481|7496|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7497|7504|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|7523|7528|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|7529|7546|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|7549|7564|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7565|7572|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7544|7551|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7557|7562|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|7572|7577|state|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|state|2
+      @|rina/rocan/client/RocanModule.java|7508|7520|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|7521|7534|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|7535|7541|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|7588|7600|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|7616|7628|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|7635|7644|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|7660|7665|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|7666|7683|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|7686|7696|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
+      @|rina/rocan/client/RocanModule.java|7701|7713|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|7720|7727|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7729|7734|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|7736|7741|state|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|state|2
+      @|rina/rocan/client/RocanModule.java|7748|7753|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|7754|7771|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|7774|7789|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|7790|7797|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7802|7809|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
+      @|rina/rocan/client/RocanModule.java|7810|7834|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
+      @|rina/rocan/client/RocanModule.java|7835|7848|SETTING_MACRO|field|rina.rocan.client.RocanSetting.SettingType|SETTING_MACRO
+      @|rina/rocan/client/RocanModule.java|7856|7868|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|7869|7872|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|7873|7878|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|7879|7896|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|7899|7914|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|7915|7922|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|7941|7946|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|7947|7964|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|7967|7982|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|7983|7990|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;|details|0
    Method End: createSetting([Ljava/lang/String;IZ)Lrina/rocan/client/RocanSetting;
    Method Start: createSetting([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7632|7639|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|7645|7650|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|7656|7659|min|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|min|2
-      @|rina/rocan/client/RocanModule.java|7665|7668|max|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|max|3
-      @|rina/rocan/client/RocanModule.java|7596|7608|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|7609|7622|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7623|7629|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|7679|7691|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|7707|7719|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|7726|7735|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|7751|7756|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|7757|7774|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|7777|7787|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|7792|7804|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|7811|7818|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|7820|7825|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|7827|7830|min|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|min|2
-      @|rina/rocan/client/RocanModule.java|7832|7835|max|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|max|3
-      @|rina/rocan/client/RocanModule.java|7842|7847|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|7848|7865|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|7868|7883|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|7884|7891|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|7896|7903|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
-      @|rina/rocan/client/RocanModule.java|7904|7928|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
-      @|rina/rocan/client/RocanModule.java|7929|7944|SETTING_INTEGER|field|rina.rocan.client.RocanSetting.SettingType|SETTING_INTEGER
-      @|rina/rocan/client/RocanModule.java|7952|7964|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|7965|7968|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/RocanModule.java|7969|7974|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|7975|7992|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|7995|8010|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8011|8018|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|8037|8042|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|8043|8060|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|8063|8078|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8079|8086|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8050|8057|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8063|8068|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|8074|8077|min|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|min|2
+      @|rina/rocan/client/RocanModule.java|8083|8086|max|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|max|3
+      @|rina/rocan/client/RocanModule.java|8014|8026|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|8027|8040|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|8041|8047|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|8097|8109|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|8125|8137|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|8144|8153|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|8169|8174|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|8175|8192|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|8195|8205|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
+      @|rina/rocan/client/RocanModule.java|8210|8222|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|8229|8236|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8238|8243|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|8245|8248|min|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|min|2
+      @|rina/rocan/client/RocanModule.java|8250|8253|max|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|max|3
+      @|rina/rocan/client/RocanModule.java|8260|8265|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|8266|8283|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|8286|8301|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|8302|8309|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8314|8321|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
+      @|rina/rocan/client/RocanModule.java|8322|8346|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
+      @|rina/rocan/client/RocanModule.java|8347|8362|SETTING_INTEGER|field|rina.rocan.client.RocanSetting.SettingType|SETTING_INTEGER
+      @|rina/rocan/client/RocanModule.java|8370|8382|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|8383|8386|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|8387|8392|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|8393|8410|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|8413|8428|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|8429|8436|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8455|8460|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|8461|8478|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|8481|8496|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|8497|8504|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;|details|0
    Method End: createSetting([Ljava/lang/String;III)Lrina/rocan/client/RocanSetting;
    Method Start: createSetting([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8146|8153|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|8162|8167|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|8176|8179|min|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|min|2
-      @|rina/rocan/client/RocanModule.java|8188|8191|max|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|max|3
-      @|rina/rocan/client/RocanModule.java|8110|8122|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|8123|8136|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8137|8143|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|8202|8214|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|8230|8242|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|8249|8258|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|8274|8279|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|8280|8297|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|8300|8310|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|8315|8327|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|8334|8341|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|8343|8348|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|8350|8353|min|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|min|2
-      @|rina/rocan/client/RocanModule.java|8355|8358|max|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|max|3
-      @|rina/rocan/client/RocanModule.java|8365|8370|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|8371|8388|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|8391|8406|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8407|8414|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|8419|8426|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
-      @|rina/rocan/client/RocanModule.java|8427|8451|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
-      @|rina/rocan/client/RocanModule.java|8452|8466|SETTING_DOUBLE|field|rina.rocan.client.RocanSetting.SettingType|SETTING_DOUBLE
-      @|rina/rocan/client/RocanModule.java|8474|8486|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|8487|8490|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/RocanModule.java|8491|8496|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|8497|8514|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|8517|8532|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8533|8540|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|8559|8564|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|8565|8582|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|8585|8600|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8601|8608|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8564|8571|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8580|8585|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|8594|8597|min|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|min|2
+      @|rina/rocan/client/RocanModule.java|8606|8609|max|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|max|3
+      @|rina/rocan/client/RocanModule.java|8528|8540|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|8541|8554|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|8555|8561|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|8620|8632|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|8648|8660|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|8667|8676|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|8692|8697|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|8698|8715|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|8718|8728|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
+      @|rina/rocan/client/RocanModule.java|8733|8745|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|8752|8759|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8761|8766|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|8768|8771|min|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|min|2
+      @|rina/rocan/client/RocanModule.java|8773|8776|max|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|max|3
+      @|rina/rocan/client/RocanModule.java|8783|8788|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|8789|8806|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|8809|8824|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|8825|8832|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8837|8844|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
+      @|rina/rocan/client/RocanModule.java|8845|8869|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
+      @|rina/rocan/client/RocanModule.java|8870|8884|SETTING_DOUBLE|field|rina.rocan.client.RocanSetting.SettingType|SETTING_DOUBLE
+      @|rina/rocan/client/RocanModule.java|8892|8904|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|8905|8908|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|8909|8914|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|8915|8932|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|8935|8950|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|8951|8958|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|8977|8982|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|8983|9000|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|9003|9018|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|9019|9026|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;|details|0
    Method End: createSetting([Ljava/lang/String;DDD)Lrina/rocan/client/RocanSetting;
    Method Start: createSetting([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8668|8675|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|8684|8689|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|8700|8706|values|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|values|2
-      @|rina/rocan/client/RocanModule.java|8632|8644|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|8645|8658|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8659|8665|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|8677|8683|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|8691|8697|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|8717|8729|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|8745|8757|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|8764|8773|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|8789|8794|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|8795|8812|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|8815|8825|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
-      @|rina/rocan/client/RocanModule.java|8830|8842|RocanSetting|class|rina.rocan.client.RocanSetting|false
-      @|rina/rocan/client/RocanModule.java|8849|8856|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|8858|8863|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
-      @|rina/rocan/client/RocanModule.java|8865|8871|values|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|values|2
-      @|rina/rocan/client/RocanModule.java|8878|8883|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|8884|8901|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|8904|8919|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|8920|8927|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|8932|8939|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
-      @|rina/rocan/client/RocanModule.java|8940|8964|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
-      @|rina/rocan/client/RocanModule.java|8965|8977|SETTING_LIST|field|rina.rocan.client.RocanSetting.SettingType|SETTING_LIST
-      @|rina/rocan/client/RocanModule.java|8985|8997|setting_list|field|rina.rocan.client.RocanModule|setting_list
-      @|rina/rocan/client/RocanModule.java|8998|9001|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|rina/rocan/client/RocanModule.java|9002|9007|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|9008|9025|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|9028|9043|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|9044|9051|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
-      @|rina/rocan/client/RocanModule.java|9070|9075|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/RocanModule.java|9076|9093|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/RocanModule.java|9096|9111|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/RocanModule.java|9112|9119|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|9086|9093|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|9102|9107|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|9118|9124|values|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|values|2
+      @|rina/rocan/client/RocanModule.java|9050|9062|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|9063|9076|createSetting|method|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|9077|9083|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|9095|9101|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|9109|9115|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|9135|9147|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|9163|9175|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|9182|9191|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|9207|9212|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|9213|9230|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|9233|9243|addSetting|method|rina.rocan.manager.RocanSettingManager|addSetting|(Lrina/rocan/client/RocanSetting;)V
+      @|rina/rocan/client/RocanModule.java|9248|9260|RocanSetting|class|rina.rocan.client.RocanSetting|false
+      @|rina/rocan/client/RocanModule.java|9267|9274|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|9276|9281|value|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|value|1
+      @|rina/rocan/client/RocanModule.java|9283|9289|values|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|values|2
+      @|rina/rocan/client/RocanModule.java|9296|9301|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|9302|9319|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|9322|9337|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|9338|9345|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|9350|9357|setType|method|rina.rocan.client.RocanSetting|setType|(Lrina/rocan/client/RocanSetting$SettingType;)V
+      @|rina/rocan/client/RocanModule.java|9358|9382|RocanSetting.SettingType|class|rina.rocan.client.RocanSetting.SettingType|false
+      @|rina/rocan/client/RocanModule.java|9383|9395|SETTING_LIST|field|rina.rocan.client.RocanSetting.SettingType|SETTING_LIST
+      @|rina/rocan/client/RocanModule.java|9403|9415|setting_list|field|rina.rocan.client.RocanModule|setting_list
+      @|rina/rocan/client/RocanModule.java|9416|9419|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|9420|9425|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|9426|9443|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|9446|9461|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|9462|9469|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
+      @|rina/rocan/client/RocanModule.java|9488|9493|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/RocanModule.java|9494|9511|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/RocanModule.java|9514|9529|getSettingByTag|method|rina.rocan.manager.RocanSettingManager|getSettingByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/RocanModule.java|9530|9537|details|param|rina.rocan.client.RocanModule|createSetting|([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;|details|0
    Method End: createSetting([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
    Method Start: createStringList([Ljava/lang/String;)Ljava/util/ArrayList;
-      @|rina/rocan/client/RocanModule.java|9188|9192|list|param|rina.rocan.client.RocanModule|createStringList|([Ljava/lang/String;)Ljava/util/ArrayList;|list|0
-      @|rina/rocan/client/RocanModule.java|9143|9152|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|9153|9159|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|9161|9177|createStringList|method|rina.rocan.client.RocanModule|createStringList|([Ljava/lang/String;)Ljava/util/ArrayList;
-      @|rina/rocan/client/RocanModule.java|9178|9184|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|9199|9208|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|9209|9215|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|9238|9247|ArrayList|class|java.util.ArrayList|false
-      @|rina/rocan/client/RocanModule.java|9263|9269|String|class|java.lang.String|false
-      @|rina/rocan/client/RocanModule.java|9280|9284|list|param|rina.rocan.client.RocanModule|createStringList|([Ljava/lang/String;)Ljava/util/ArrayList;|list|0
-      @|rina/rocan/client/RocanModule.java|9307|9310|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|rina/rocan/client/RocanModule.java|9606|9610|list|param|rina.rocan.client.RocanModule|createStringList|([Ljava/lang/String;)Ljava/util/ArrayList;|list|0
+      @|rina/rocan/client/RocanModule.java|9561|9570|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|9571|9577|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|9579|9595|createStringList|method|rina.rocan.client.RocanModule|createStringList|([Ljava/lang/String;)Ljava/util/ArrayList;
+      @|rina/rocan/client/RocanModule.java|9596|9602|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|9617|9626|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|9627|9633|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|9656|9665|ArrayList|class|java.util.ArrayList|false
+      @|rina/rocan/client/RocanModule.java|9681|9687|String|class|java.lang.String|false
+      @|rina/rocan/client/RocanModule.java|9698|9702|list|param|rina.rocan.client.RocanModule|createStringList|([Ljava/lang/String;)Ljava/util/ArrayList;|list|0
+      @|rina/rocan/client/RocanModule.java|9725|9728|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
    Method End: createStringList([Ljava/lang/String;)Ljava/util/ArrayList;
 Class End  : rina.rocan.client.RocanModule
 endProcessing "rina/rocan/client/RocanModule.java"
@@ -5070,7 +5093,7 @@ Class Start: rina.rocan.client.modules.render.RocanHoleESP
 Class End  : rina.rocan.client.modules.render.RocanHoleESP
 endProcessing "rina/rocan/client/modules/render/RocanHoleESP.java"
 
-startProcessing "rina/rocan/client/system/RocanSystemPacket.java" md5: f644fdbd08157f4bbdc62a0091a32716
+startProcessing "rina/rocan/client/system/RocanSystemPacket.java" md5: a13a909ee26a9671d294756996dad012
 @|rina/rocan/client/system/RocanSystemPacket.java|8|32|rina.rocan.client.system|package|rina.rocan.client.system|(file)
 Class Start: rina.rocan.client.system.RocanSystemPacket
    @|rina/rocan/client/system/RocanSystemPacket.java|616|633|RocanSystemPacket|class|rina.rocan.client.system.RocanSystemPacket|false
@@ -5080,71 +5103,70 @@ Class Start: rina.rocan.client.system.RocanSystemPacket
       @|rina/rocan/client/system/RocanSystemPacket.java|700|706|String|class|java.lang.String|false
       @|rina/rocan/client/system/RocanSystemPacket.java|784|792|Category|class|rina.rocan.client.RocanModule.Category|false
       @|rina/rocan/client/system/RocanSystemPacket.java|793|805|ROCAN_SYSTEM|field|rina.rocan.client.RocanModule.Category|ROCAN_SYSTEM
-      @|rina/rocan/client/system/RocanSystemPacket.java|814|822|setState|method|rina.rocan.client.RocanModule|setState|(Z)V
    Method End: RocanSystemPacket()V
    Method Start: onUpdate()V
-      @|rina/rocan/client/system/RocanSystemPacket.java|839|847|Override|class|java.lang.Override|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|862|870|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
-      @|rina/rocan/client/system/RocanSystemPacket.java|878|894|getSettingModule|method|rina.rocan.client.RocanModule|getSettingModule|()Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/system/RocanSystemPacket.java|897|907|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
+      @|rina/rocan/client/system/RocanSystemPacket.java|823|831|Override|class|java.lang.Override|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|846|854|onUpdate|method|rina.rocan.client.RocanModule|onUpdate|()V
+      @|rina/rocan/client/system/RocanSystemPacket.java|862|878|getSettingModule|method|rina.rocan.client.RocanModule|getSettingModule|()Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/system/RocanSystemPacket.java|881|891|setInteger|method|rina.rocan.client.RocanSetting|setInteger|(I)V
    Method End: onUpdate()V
    Method Start: receivePacket(Lrina/rocan/event/network/RocanEventPacketReceive;)V
+      @|rina/rocan/client/system/RocanSystemPacket.java|967|972|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
+      @|rina/rocan/client/system/RocanSystemPacket.java|906|914|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|929|942|receivePacket|method|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V
+      @|rina/rocan/client/system/RocanSystemPacket.java|943|966|RocanEventPacketReceive|class|rina.rocan.event.network.RocanEventPacketReceive|false
       @|rina/rocan/client/system/RocanSystemPacket.java|983|988|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
-      @|rina/rocan/client/system/RocanSystemPacket.java|922|930|Listener|class|team.stiff.pomelo.impl.annotated.handler.annotation.Listener|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|945|958|receivePacket|method|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V
-      @|rina/rocan/client/system/RocanSystemPacket.java|959|982|RocanEventPacketReceive|class|rina.rocan.event.network.RocanEventPacketReceive|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|999|1004|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
-      @|rina/rocan/client/system/RocanSystemPacket.java|1005|1014|getPacket|method|rina.rocan.event.network.RocanEventPacketReceive|getPacket|()Lnet/minecraft/network/Packet;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1028|1049|SPacketEntityVelocity|class|net.minecraft.network.play.server.SPacketEntityVelocity|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1057|1078|SPacketEntityVelocity|class|net.minecraft.network.play.server.SPacketEntityVelocity|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1091|1112|SPacketEntityVelocity|class|net.minecraft.network.play.server.SPacketEntityVelocity|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1114|1119|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
-      @|rina/rocan/client/system/RocanSystemPacket.java|1120|1129|getPacket|method|rina.rocan.event.network.RocanEventPacketReceive|getPacket|()Lnet/minecraft/network/Packet;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1143|1148|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1149|1166|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1169|1193|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1231|1241|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/system/RocanSystemPacket.java|1252|1257|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1258|1275|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1278|1302|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1334|1344|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
-      @|rina/rocan/client/system/RocanSystemPacket.java|1368|1373|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1374|1390|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1393|1407|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1420|1428|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/client/system/RocanSystemPacket.java|1452|1463|getEntityID|method|net.minecraft.network.play.server.SPacketEntityVelocity|getEntityID|()I
-      @|rina/rocan/client/system/RocanSystemPacket.java|1469|1471|mc|field|rina.rocan.client.RocanModule|mc
-      @|rina/rocan/client/system/RocanSystemPacket.java|1472|1478|player|field|net.minecraft.client.Minecraft|player
-      @|rina/rocan/client/system/RocanSystemPacket.java|1479|1487|entityId|field|net.minecraft.entity.Entity|entityId
-      @|rina/rocan/client/system/RocanSystemPacket.java|1497|1502|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
-      @|rina/rocan/client/system/RocanSystemPacket.java|1503|1509|cancel|method|rina.rocan.event.RocanEventCancellable|cancel|()V
-      @|rina/rocan/client/system/RocanSystemPacket.java|1530|1537|motionX|field|net.minecraft.network.play.server.SPacketEntityVelocity|motionX
-      @|rina/rocan/client/system/RocanSystemPacket.java|1562|1569|motionY|field|net.minecraft.network.play.server.SPacketEntityVelocity|motionY
-      @|rina/rocan/client/system/RocanSystemPacket.java|1594|1601|motionZ|field|net.minecraft.network.play.server.SPacketEntityVelocity|motionZ
-      @|rina/rocan/client/system/RocanSystemPacket.java|1638|1643|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
-      @|rina/rocan/client/system/RocanSystemPacket.java|1644|1653|getPacket|method|rina.rocan.event.network.RocanEventPacketReceive|getPacket|()Lnet/minecraft/network/Packet;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1667|1683|SPacketExplosion|class|net.minecraft.network.play.server.SPacketExplosion|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1691|1707|SPacketExplosion|class|net.minecraft.network.play.server.SPacketExplosion|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1721|1737|SPacketExplosion|class|net.minecraft.network.play.server.SPacketExplosion|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1739|1744|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
-      @|rina/rocan/client/system/RocanSystemPacket.java|1745|1754|getPacket|method|rina.rocan.event.network.RocanEventPacketReceive|getPacket|()Lnet/minecraft/network/Packet;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1768|1773|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1774|1791|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1794|1818|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1856|1866|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
-      @|rina/rocan/client/system/RocanSystemPacket.java|1877|1882|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1883|1900|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1903|1927|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
-      @|rina/rocan/client/system/RocanSystemPacket.java|1959|1969|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
-      @|rina/rocan/client/system/RocanSystemPacket.java|1993|1998|Rocan|class|rina.rocan.Rocan|false
-      @|rina/rocan/client/system/RocanSystemPacket.java|1999|2015|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
-      @|rina/rocan/client/system/RocanSystemPacket.java|2018|2032|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
-      @|rina/rocan/client/system/RocanSystemPacket.java|2045|2053|getState|method|rina.rocan.client.RocanModule|getState|()Z
-      @|rina/rocan/client/system/RocanSystemPacket.java|2064|2069|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
-      @|rina/rocan/client/system/RocanSystemPacket.java|2070|2076|cancel|method|rina.rocan.event.RocanEventCancellable|cancel|()V
-      @|rina/rocan/client/system/RocanSystemPacket.java|2097|2104|motionX|field|net.minecraft.network.play.server.SPacketExplosion|motionX
-      @|rina/rocan/client/system/RocanSystemPacket.java|2129|2136|motionY|field|net.minecraft.network.play.server.SPacketExplosion|motionY
-      @|rina/rocan/client/system/RocanSystemPacket.java|2161|2168|motionZ|field|net.minecraft.network.play.server.SPacketExplosion|motionZ
+      @|rina/rocan/client/system/RocanSystemPacket.java|989|998|getPacket|method|rina.rocan.event.network.RocanEventPacketReceive|getPacket|()Lnet/minecraft/network/Packet;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1012|1033|SPacketEntityVelocity|class|net.minecraft.network.play.server.SPacketEntityVelocity|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1041|1062|SPacketEntityVelocity|class|net.minecraft.network.play.server.SPacketEntityVelocity|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1075|1096|SPacketEntityVelocity|class|net.minecraft.network.play.server.SPacketEntityVelocity|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1098|1103|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
+      @|rina/rocan/client/system/RocanSystemPacket.java|1104|1113|getPacket|method|rina.rocan.event.network.RocanEventPacketReceive|getPacket|()Lnet/minecraft/network/Packet;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1127|1132|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1133|1150|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1153|1177|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1215|1225|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/system/RocanSystemPacket.java|1236|1241|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1242|1259|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1262|1286|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1318|1328|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
+      @|rina/rocan/client/system/RocanSystemPacket.java|1352|1357|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1358|1374|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1377|1391|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1404|1412|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/client/system/RocanSystemPacket.java|1436|1447|getEntityID|method|net.minecraft.network.play.server.SPacketEntityVelocity|getEntityID|()I
+      @|rina/rocan/client/system/RocanSystemPacket.java|1453|1455|mc|field|rina.rocan.client.RocanModule|mc
+      @|rina/rocan/client/system/RocanSystemPacket.java|1456|1462|player|field|net.minecraft.client.Minecraft|player
+      @|rina/rocan/client/system/RocanSystemPacket.java|1463|1471|entityId|field|net.minecraft.entity.Entity|entityId
+      @|rina/rocan/client/system/RocanSystemPacket.java|1481|1486|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
+      @|rina/rocan/client/system/RocanSystemPacket.java|1487|1493|cancel|method|rina.rocan.event.RocanEventCancellable|cancel|()V
+      @|rina/rocan/client/system/RocanSystemPacket.java|1514|1521|motionX|field|net.minecraft.network.play.server.SPacketEntityVelocity|motionX
+      @|rina/rocan/client/system/RocanSystemPacket.java|1546|1553|motionY|field|net.minecraft.network.play.server.SPacketEntityVelocity|motionY
+      @|rina/rocan/client/system/RocanSystemPacket.java|1578|1585|motionZ|field|net.minecraft.network.play.server.SPacketEntityVelocity|motionZ
+      @|rina/rocan/client/system/RocanSystemPacket.java|1622|1627|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
+      @|rina/rocan/client/system/RocanSystemPacket.java|1628|1637|getPacket|method|rina.rocan.event.network.RocanEventPacketReceive|getPacket|()Lnet/minecraft/network/Packet;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1651|1667|SPacketExplosion|class|net.minecraft.network.play.server.SPacketExplosion|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1675|1691|SPacketExplosion|class|net.minecraft.network.play.server.SPacketExplosion|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1705|1721|SPacketExplosion|class|net.minecraft.network.play.server.SPacketExplosion|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1723|1728|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
+      @|rina/rocan/client/system/RocanSystemPacket.java|1729|1738|getPacket|method|rina.rocan.event.network.RocanEventPacketReceive|getPacket|()Lnet/minecraft/network/Packet;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1752|1757|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1758|1775|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1778|1802|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1840|1850|getBoolean|method|rina.rocan.client.RocanSetting|getBoolean|()Z
+      @|rina/rocan/client/system/RocanSystemPacket.java|1861|1866|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1867|1884|getSettingManager|method|rina.rocan.Rocan|getSettingManager|()Lrina/rocan/manager/RocanSettingManager;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1887|1911|getSettingByModuleAndTag|method|rina.rocan.manager.RocanSettingManager|getSettingByModuleAndTag|(Ljava/lang/String;Ljava/lang/String;)Lrina/rocan/client/RocanSetting;
+      @|rina/rocan/client/system/RocanSystemPacket.java|1943|1953|setBoolean|method|rina.rocan.client.RocanSetting|setBoolean|(Z)V
+      @|rina/rocan/client/system/RocanSystemPacket.java|1977|1982|Rocan|class|rina.rocan.Rocan|false
+      @|rina/rocan/client/system/RocanSystemPacket.java|1983|1999|getModuleManager|method|rina.rocan.Rocan|getModuleManager|()Lrina/rocan/manager/RocanModuleManager;
+      @|rina/rocan/client/system/RocanSystemPacket.java|2002|2016|getModuleByTag|method|rina.rocan.manager.RocanModuleManager|getModuleByTag|(Ljava/lang/String;)Lrina/rocan/client/RocanModule;
+      @|rina/rocan/client/system/RocanSystemPacket.java|2029|2037|getState|method|rina.rocan.client.RocanModule|getState|()Z
+      @|rina/rocan/client/system/RocanSystemPacket.java|2048|2053|event|param|rina.rocan.client.system.RocanSystemPacket|receivePacket|(Lrina/rocan/event/network/RocanEventPacketReceive;)V|event|0
+      @|rina/rocan/client/system/RocanSystemPacket.java|2054|2060|cancel|method|rina.rocan.event.RocanEventCancellable|cancel|()V
+      @|rina/rocan/client/system/RocanSystemPacket.java|2081|2088|motionX|field|net.minecraft.network.play.server.SPacketExplosion|motionX
+      @|rina/rocan/client/system/RocanSystemPacket.java|2113|2120|motionY|field|net.minecraft.network.play.server.SPacketExplosion|motionY
+      @|rina/rocan/client/system/RocanSystemPacket.java|2145|2152|motionZ|field|net.minecraft.network.play.server.SPacketExplosion|motionZ
    Method End: receivePacket(Lrina/rocan/event/network/RocanEventPacketReceive;)V
 Class End  : rina.rocan.client.system.RocanSystemPacket
 endProcessing "rina/rocan/client/system/RocanSystemPacket.java"

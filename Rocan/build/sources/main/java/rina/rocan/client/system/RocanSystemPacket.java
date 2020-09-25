@@ -23,14 +23,12 @@ import rina.rocan.Rocan;
  * @author Rina!
  *
  * Created by Rina!
- * 23/09/2020.
+ * 25/09/2020.
  *
  **/
 public class RocanSystemPacket extends RocanModule {
 	public RocanSystemPacket() {
-		super(new String[] {"System Packet", "SystemPacket", "System util to handler packet stuff."}, Category.ROCAN_SYSTEM);
-	
-		setState(true);
+		super(new String[] {"System Packet", "SystemPacket", "System util to handler packet stuff."}, Category.ROCAN_SYSTEM, true);
 	}
 
 	@Override
