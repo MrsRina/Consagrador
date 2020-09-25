@@ -28,9 +28,7 @@ import rina.rocan.Rocan;
  **/
 public class RocanSystemPacket extends RocanModule {
 	public RocanSystemPacket() {
-		super(new String[] {"System Packet", "SystemPacket", "System util to handler packet stuff."}, Category.ROCAN_SYSTEM);
-	
-		setState(true);
+		super(new String[] {"System Packet", "SystemPacket", "System util to handler packet stuff."}, Category.ROCAN_SYSTEM, true);
 	}
 
 	@Override
