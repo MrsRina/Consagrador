@@ -82,7 +82,7 @@ public class RocanMainGUI extends GuiScreen {
 		this.frame_hud = new RocanFrame(this, RocanModule.Category.ROCAN_HUD);
 
 		for (RocanModule.Category categories : RocanModule.Category.values()) {
-			if (categories == RocanModule.Category.ROCAN_HUD) {
+			if (categories == RocanModule.Category.ROCAN_HUD || categories == RocanModule.Category.ROCAN_SYSTEM) {
 				continue;
 			}
 
@@ -113,6 +113,9 @@ public class RocanMainGUI extends GuiScreen {
 		if (Rocan.getModuleManager().getModuleByTag("HUDEditor").getState()) {
 			Rocan.getModuleManager().getModuleByTag("HUDEditor").setState(false);
 		}
+
+		this.focused_frame.resetAllAbsoluteEvent();
+		this.frame_hud.resetAllAbsoluteEvent();
 	}
 
 	@Override

@@ -32,29 +32,6 @@ public class RocanVelocity extends RocanModule {
 	}
 
 	@Listener
-	public void receivePacket(RocanEventPacketReceive event) {
-		if (event.getPacket() instanceof SPacketEntityVelocity) {
-			SPacketEntityVelocity velocity = (SPacketEntityVelocity) event.getPacket();
-
-			if (velocity.getEntityID() == mc.player.entityId) {
-				event.cancel();
-
-				velocity.motionX *= 0.0f;
-				velocity.motionY *= 0.0f;
-				velocity.motionZ *= 0.0f;
-			}
-		} else if (event.getPacket() instanceof SPacketExplosion) {
-			SPacketExplosion explosion = (SPacketExplosion) event.getPacket();
-
-			event.cancel();
-
-			explosion.motionX *= 0.0f;
-			explosion.motionY *= 0.0f;
-			explosion.motionZ *= 0.0f;
-		}
-	}
-
-	@Listener
 	public void listenEntityCollision(RocanEventEntityCollision event) {
 		if (mc.player == event.getEntity()) {
 			event.cancel();

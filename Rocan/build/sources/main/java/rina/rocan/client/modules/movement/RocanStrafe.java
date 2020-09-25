@@ -49,6 +49,7 @@ public class RocanStrafe extends RocanModule {
 	RocanSetting smooth_jump          = createSetting(new String[] {"Smooth Jump", "StrafeSmoothJump", "Smooth speed jump."}, false);
 	RocanSetting speed_potion_effect  = createSetting(new String[] {"Speed Potion Handler", "StrafeSpeedPotionHandler", "Enable speed handler to potion."}, true);
 	RocanSetting jump_potion_effect   = createSetting(new String[] {"BJump Potion Handler", "StrafeJumpPotionHandler", "Enable jump boost to potion."}, true);
+	RocanSetting smart_bypass_update  = createSetting(new String[] {"Smart Bypass Update", "StrafeSmartBypassUpdate", "Automatically enable bypass in explosion."}, false);
 	RocanSetting bypass_speed         = createSetting(new String[] {"Bypass Speed", "StrafeBypassSpeed", "All damage explosions make you controlled and fast."}, -1, false);
 
 	private int jump = mc.gameSettings.keyBindJump.getKeyCode();
@@ -102,7 +103,7 @@ public class RocanStrafe extends RocanModule {
 			mc.player.setSprinting(true);
 		}
 
-		speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) + (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) >= 0.33000d ? strafe_speed.getDouble() / 1000d : 0.0d) : 0.2873d);
+		speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) + (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) >= 0.34D ? strafe_speed.getDouble() / 1000d : 0.0d) : 0.2873d);
 
 		if (mc.player.isPotionActive(MobEffects.SPEED) && speed_potion_effect.getBoolean()) {
 			final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
@@ -135,18 +136,7 @@ public class RocanStrafe extends RocanModule {
 			if (jump_state) {
 				double jump = 0.40123128d;
 
-				speed = 0.6174077d;
-
 				if (!smooth_jump.getBoolean()) {
-					speed = 0.3574077d;
-					speed = 0.6174077d;
-					speed = 0.3574077d;
-					speed = 0.6174077d;
-					speed = 0.3574077d;
-					speed = 0.6174077d;
-					speed = 0.3574077d;
-					speed = 0.6174077d;
-					speed = 0.6174077d;
 					speed = 0.6174077d;
 				}
 
@@ -154,40 +144,13 @@ public class RocanStrafe extends RocanModule {
 					jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1f);
 				}
 
-				speed = 0.6174077d;
-
 				event.setY(mc.player.motionY = jump);
-
-				speed = 0.6174077d;
 
 				jump_state = false;
 			}
 
 			event.setX((player_movement[2] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))) + (player_movement[3] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))));
 			event.setZ((player_movement[2] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))) - (player_movement[3] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))));
-		}
-	}
-
-	public void makeJump(RocanEventPlayerMove event) {
-		double jump = 0.40123128d;
-
-		if (mc.player.onGround) {
-			if (!smooth_jump.getBoolean()) {
-				speed = 0.3574077d;
-				speed = 0.6174077d;
-				speed = 0.3574077d;
-				speed = 0.6174077d;
-				speed = 0.3574077d;
-				speed = 0.6174077d;
-				speed = 0.3574077d;
-				speed = 0.6174077d;
-			}
-
-			if (mc.player.isPotionActive(MobEffects.JUMP_BOOST) && jump_potion_effect.getBoolean()) {
-				jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1f);
-			}
-
-			event.setY(mc.player.motionY = jump);
 		}
 	}
 }

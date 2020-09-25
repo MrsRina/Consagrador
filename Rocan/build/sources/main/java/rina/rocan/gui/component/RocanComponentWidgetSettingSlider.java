@@ -81,6 +81,14 @@ public class RocanComponentWidgetSettingSlider extends RocanWidget {
 		this.event_mouse_passing = false;
 	}
 
+	@Override
+	public void resetAllAbsoluteEvent() {
+		resetAllEvent();
+
+		this.event_mouse_clicked = false;
+		this.event_has_waited    = false;
+	}
+
 	public void setX(int x) {
 		this.rect.setX(x);
 	}

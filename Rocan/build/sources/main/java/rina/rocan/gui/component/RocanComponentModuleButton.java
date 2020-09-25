@@ -151,6 +151,16 @@ public class RocanComponentModuleButton {
 		this.event_mouse_clicked = false;
 	}
 
+	public void resetAllAbsoluteEvent() {
+		resetAllEvent();
+
+		this.event_has_waited = false;
+
+		for (RocanWidget widgets : this.setting_widget_list) {
+			widgets.resetAllAbsoluteEvent();
+		}
+	}
+
 	public void setX(int x) {
 		this.rect.setX(x);
 	}

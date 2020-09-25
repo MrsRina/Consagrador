@@ -76,6 +76,14 @@ public class RocanFrame {
 		this.event_frame_cancel_drag = false;
 	}
 
+	public void resetAllAbsoluteEvent() {
+		resetAllEvent();
+
+		for (RocanComponentModuleButton module_buttons : this.component_module_button_list) {
+			module_buttons.resetAllAbsoluteEvent();
+		}
+	}
+
 	public void loadWidgets() {
 		int size  = Rocan.getModuleManager().getModuleListByCategory(this.category).size();
 		int count = 0;

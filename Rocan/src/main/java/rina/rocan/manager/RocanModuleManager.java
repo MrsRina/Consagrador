@@ -32,6 +32,9 @@ import rina.rocan.client.modules.exploit.*;
 import rina.rocan.client.modules.misc.*;
 import rina.rocan.client.modules.gui.*;
 
+// System.
+import rina.rocan.client.system.*;
+
 // Client.
 import rina.rocan.client.RocanModule.Category;
 import rina.rocan.client.RocanModule;
@@ -106,6 +109,9 @@ public class RocanModuleManager {
 		// GUI.
 		addModule(new RocanGUI());
 		addModule(new RocanHUDEditor());
+
+		// Backend system.
+		addModule(new RocanSystemPacket());
 
 		// HUD.
 		addHUD(new RocanWelcome());

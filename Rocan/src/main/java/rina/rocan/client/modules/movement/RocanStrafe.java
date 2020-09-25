@@ -49,6 +49,7 @@ public class RocanStrafe extends RocanModule {
 	RocanSetting smooth_jump          = createSetting(new String[] {"Smooth Jump", "StrafeSmoothJump", "Smooth speed jump."}, false);
 	RocanSetting speed_potion_effect  = createSetting(new String[] {"Speed Potion Handler", "StrafeSpeedPotionHandler", "Enable speed handler to potion."}, true);
 	RocanSetting jump_potion_effect   = createSetting(new String[] {"BJump Potion Handler", "StrafeJumpPotionHandler", "Enable jump boost to potion."}, true);
+	RocanSetting smart_bypass_update  = createSetting(new String[] {"Smart Bypass Update", "StrafeSmartBypassUpdate", "Automatically enable bypass in explosion."}, false);
 	RocanSetting bypass_speed         = createSetting(new String[] {"Bypass Speed", "StrafeBypassSpeed", "All damage explosions make you controlled and fast."}, -1, false);
 
 	private int jump = mc.gameSettings.keyBindJump.getKeyCode();

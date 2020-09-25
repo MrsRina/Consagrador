@@ -104,6 +104,13 @@ public class RocanComponentWidgetSettingString extends RocanWidget {
 		this.event_mouse_clicked = false;
 	}
 
+	@Override
+	public void resetAllAbsoluteEvent() {
+		resetAllEvent();
+
+		this.event_has_waited    = false;
+	}
+
 	public void setX(int x) {
 		this.rect.setX(x);
 	}

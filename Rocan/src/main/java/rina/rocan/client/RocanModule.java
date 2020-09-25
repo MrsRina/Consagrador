@@ -98,6 +98,10 @@ public class RocanModule {
 		Rocan.getPomeloEventManager().removeEventListener(this);
 	}
 
+	public RocanSetting getSettingModule() {
+		return this.setting_module;
+	}
+
 	public String getName() {
 		return this.name;
 	}
@@ -165,7 +169,8 @@ public class RocanModule {
 		ROCAN_RENDER("Rocan Render", "Render"),
 		ROCAN_MISC("Rocan Misc", "Misc"),
 		ROCAN_HUD("Rocan HUD", "HUD"),
-		ROCAN_GUI("Rocan GUI", "GUI");
+		ROCAN_GUI("Rocan GUI", "GUI"),
+		ROCAN_SYSTEM("Rocan System", "System");
 
 		String name;
 		String tag;

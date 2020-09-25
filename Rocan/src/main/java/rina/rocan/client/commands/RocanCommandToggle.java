@@ -45,6 +45,12 @@ public class RocanCommandToggle extends RocanCommand {
 
 		RocanModule module_requested = Rocan.getModuleManager().getModuleByTag(value_0); 
 
+		if (module_requested.getCategory() == RocanModule.Category.ROCAN_SYSTEM) {
+			RocanUtilClient.sendNotifyErrorClient("Sorry you can't acess this system module.");
+
+			return true;
+		}
+
 		if (module_requested == null) {
 			RocanUtilClient.sendNotifyErrorClient("Module does not exist.");
 
