@@ -44,8 +44,7 @@ import rina.rocan.Rocan;
  **/
 public class RocanStrafe extends RocanModule {
 	RocanSetting modes_movement       = createSetting(new String[] {"Mode", "StrafeMode", "Modes movementation for strafe."}, "OnGround", new String[] {"OnGround", "AutoJump"});
-	RocanSetting strafe_speed         = createSetting(new String[] {"Strafe Speed", "StrafeSpeed", "Handler speed."}, 0.0, 0.0, 100.0);
-	RocanSetting strafe_jump_factor   = createSetting(new String[] {"Strafe Jump Factor", "StrafeJumpFactor", "Handler jump factor."}, 0.0, 0.0, 100.0);
+	RocanSetting strafe_speed         = createSetting(new String[] {"Speed", "StrafeSpeed", "Handler speed."}, 0.0, 0.0, 100.0);
 	RocanSetting automatically_sprint = createSetting(new String[] {"Sprint", "StrafeSprint", "Automatically sprint."}, true);
 	RocanSetting smooth_jump          = createSetting(new String[] {"Smooth Jump", "StrafeSmoothJump", "Smooth speed jump."}, false);
 	RocanSetting speed_potion_effect  = createSetting(new String[] {"Speed Potion Handler", "StrafeSpeedPotionHandler", "Enable speed handler to potion."}, true);
@@ -55,6 +54,8 @@ public class RocanStrafe extends RocanModule {
 	private int jump = mc.gameSettings.keyBindJump.getKeyCode();
 
 	private double speed;
+
+	private boolean jump_state;
 
 	public RocanStrafe() {
 		super(new String[] {"Strafe", "Strafe", "Make fast."}, Category.ROCAN_MOVEMENT);
@@ -101,7 +102,7 @@ public class RocanStrafe extends RocanModule {
 			mc.player.setSprinting(true);
 		}
 
-		speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) + (strafe_speed.getDouble() / 1000d) : 0.2873d);
+		speed = (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) > 0.2873d ? Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) + (Math.sqrt(event.getX() * event.getX() + event.getZ() * event.getZ()) >= 0.34D ? strafe_speed.getDouble() / 1000d : 0.0d) : 0.2873d);
 
 		if (mc.player.isPotionActive(MobEffects.SPEED) && speed_potion_effect.getBoolean()) {
 			final int amplifier = mc.player.getActivePotionEffect(MobEffects.SPEED).getAmplifier();
@@ -114,8 +115,8 @@ public class RocanStrafe extends RocanModule {
 			event.setZ(0.0d);
 		} else {
 			if (modes_movement.getString().equals("OnGround")) {
-				if (mc.gameSettings.keyBindJump.isKeyDown()) {
-					makeJump(event);
+				if (mc.gameSettings.keyBindJump.isKeyDown() && mc.player.onGround) {
+					jump_state = true;
 				}
 			} else if (modes_movement.getString().equals("AutoJump")) {
 				if (automatically_sprint.getBoolean()) {
@@ -126,31 +127,29 @@ public class RocanStrafe extends RocanModule {
 					mc.gameSettings.keyBindJump.pressed = true;
 				}
 
-				if (mc.gameSettings.keyBindJump.isKeyDown()) {
-					makeJump(event);
+				if (mc.gameSettings.keyBindJump.isKeyDown() && mc.player.onGround) {
+					jump_state = true;
 				}
 			}
 
-			mc.player.jumpMovementFactor = (float) (strafe_jump_factor.getDouble() / 1000d);
+			if (jump_state) {
+				double jump = 0.40123128d;
+
+				if (!smooth_jump.getBoolean()) {
+					speed = 0.6174077d;
+				}
+
+				if (mc.player.isPotionActive(MobEffects.JUMP_BOOST) && jump_potion_effect.getBoolean()) {
+					jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1f);
+				}
+
+				event.setY(mc.player.motionY = jump);
+
+				jump_state = false;
+			}
 
 			event.setX((player_movement[2] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))) + (player_movement[3] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))));
 			event.setZ((player_movement[2] * speed) * Math.sin(Math.toRadians((player_movement[0] + 90.0f))) - (player_movement[3] * speed) * Math.cos(Math.toRadians((player_movement[0] + 90.0f))));
-		}
-	}
-
-	public void makeJump(RocanEventPlayerMove event) {
-		double jump = 0.40123128d;
-
-		if (mc.player.onGround) {
-			if (!smooth_jump.getBoolean()) {
-				speed = 0.6174077d;
-			}
-
-			if (mc.player.isPotionActive(MobEffects.JUMP_BOOST) && jump_potion_effect.getBoolean()) {
-				jump += ((mc.player.getActivePotionEffect(MobEffects.JUMP_BOOST).getAmplifier() + 1) * 0.1f);
-			}
-
-			event.setY(mc.player.motionY = jump);
 		}
 	}
 }

@@ -35,7 +35,7 @@ import rina.rocan.Rocan;
 public class RocanHoleESP extends RocanModule {
 	// Configs.
 	RocanSetting range       = createSetting(new String[] {"Range", "HoleESPRange", "Area range to able render."}, 6, 0, 16);
-	RocanSetting double_hole = createSetting(new String[] {"Double Hole", "HoleESPDoubleHole", "Double render hole."}, false);
+	//RocanSetting double_hole = createSetting(new String[] {"Double Hole", "HoleESPDoubleHole", "Double render hole."}, false);
 
 	// RGB effect.
 	RocanSetting rgb_effect = createSetting(new String[] {"RGB", "HoleESPRGB", "RGB effect to render."}, false);
@@ -100,11 +100,11 @@ public class RocanHoleESP extends RocanModule {
 		}
 
 		if (mc.player != null || mc.world != null) {
-			if (double_hole.getBoolean()) {
-				current_hole_matrix = double_hole_matrix;
-			} else {
+			//if (double_hole.getBoolean()) {
+				//current_hole_matrix = double_hole_matrix;
+			//} else {
 				current_hole_matrix = hole_matrix;
-			}
+			//}
 
 			int ceil_range = (int) Math.ceil(range.getInteger());
 
