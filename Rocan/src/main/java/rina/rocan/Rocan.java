@@ -1,6 +1,8 @@
 package rina.rocan;
 
 // Minecraft.
+import com.sun.jna.platform.unix.X11;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -10,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import com.mojang.realmsclient.gui.ChatFormatting;
 
 // Event Manager.
+import org.lwjgl.opengl.Display;
 import team.stiff.pomelo.impl.annotated.AnnotatedEventManager;
 import team.stiff.pomelo.EventManager;
 
@@ -44,7 +47,7 @@ import rina.turok.TurokStructureColor;
 public class Rocan {
 	// Details of the client.
 	public final static String ROCAN_VERSION = "0.8";
-	public final static String ROCAN_NAME    = "Rocan";
+	public final static String ROCAN_NAME = "Rocan";
 
 	@Mod.Instance
 	private static Rocan INSTANCE;
@@ -70,15 +73,15 @@ public class Rocan {
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		setting_manager      = new RocanSettingManager();
-		module_manager       = new RocanModuleManager();
-		command_manager      = new RocanCommandManager(".");
-		event_manager        = new RocanEventManager();
+		setting_manager = new RocanSettingManager();
+		module_manager = new RocanModuleManager();
+		command_manager = new RocanCommandManager(".");
+		event_manager = new RocanEventManager();
 		pomelo_event_manager = new AnnotatedEventManager();
-		file_manager         = new RocanFileManager();
-		friend_manager       = new RocanFriendManager("Friends rocan!!!");
-		timer_manager        = new RocanTimerManager();
-		chat_manager         = new RocanChatManager();
+		file_manager = new RocanFileManager();
+		friend_manager = new RocanFriendManager("Friends rocan!!!");
+		timer_manager = new RocanTimerManager();
+		chat_manager = new RocanChatManager();
 
 		// Register events.
 		MinecraftForge.EVENT_BUS.register(command_manager);
@@ -91,8 +94,13 @@ public class Rocan {
 		rocan_gui = new RocanMainGUI();
 
 		// load client.
+		/*
 		file_manager.loadClient();
 		file_manager.reloadModules();
+
+		 */
+
+		Display.setTitle(ROCAN_NAME + " - " + ROCAN_VERSION);
 	}
 
 	public static Rocan getInstance() {
@@ -144,7 +152,9 @@ public class Rocan {
 	}
 
 	public static RocanFileManager getFileManager() {
-		return getInstance().file_manager;
+
+		return null;
+//		return getInstance().file_manager;
 	}
 
 	public static RocanFriendManager getFriendManager() {

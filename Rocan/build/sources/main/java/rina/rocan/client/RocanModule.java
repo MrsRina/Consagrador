@@ -69,12 +69,12 @@ public class RocanModule {
 	}
 
 	public RocanModule(String[] details, Category category) {
-		this.name        = details[0];
-		this.tag         = details[1];
+		this.name = details[0];
+		this.tag = details[1];
 		this.description = details[2];
 
-		this.setting_module     = createSetting(new String[] {"Bind", this.tag + "Bind", "Key bind to module."}, -1, false);
-		this.category           = category;
+		this.setting_module = createSetting(new String[] {"Bind", this.tag + "Bind", "Key bind to module."}, -1, false);
+		this.category = category;
 		this.show_hud_arraylist = true;
 
 		// Empty info.
