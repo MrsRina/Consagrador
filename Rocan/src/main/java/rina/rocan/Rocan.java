@@ -93,13 +93,6 @@ public class Rocan {
 		// Create gui.
 		rocan_gui = new RocanMainGUI();
 
-		// load client.
-		/*
-		file_manager.loadClient();
-		file_manager.reloadModules();
-
-		 */
-
 		Display.setTitle(ROCAN_NAME + " - " + ROCAN_VERSION);
 	}
 
@@ -154,7 +147,6 @@ public class Rocan {
 	public static RocanFileManager getFileManager() {
 
 		return null;
-//		return getInstance().file_manager;
 	}
 
 	public static RocanFriendManager getFriendManager() {
