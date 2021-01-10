@@ -23,7 +23,7 @@ import rina.rocan.client.RocanModule;
  **/
 public class RocanChatSuffix extends RocanModule {
 	RocanSetting fonts       = createSetting(new String[] {"Font", "ChatSuffixFont", "Fonts modes."}, "Hephaestus", new String[] {"Hephaestus"});
-	RocanSetting name_suffix = createSetting(new String[] {"Suffix", "ChatSuffixSuffix", "Custom suffix."}, "rocan");
+	RocanSetting name_suffix = createSetting(new String[] {"Suffix", "ChatSuffixSuffix", "Custom suffix."}, "profanador");
 	RocanSetting start_split = createSetting(new String[] {"Start Split", "ChatSuffixStartSplit", "| Start split to chat suffix."}, true);
 	RocanSetting ignore      = createSetting(new String[] {"Ignore", "ChatSuffixIgnore", "Ignore somes characters."}, true);
 

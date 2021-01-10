@@ -46,8 +46,8 @@ import rina.turok.TurokStructureColor;
 @Mod(modid = "rocan", name = Rocan.ROCAN_NAME, version = Rocan.ROCAN_VERSION)
 public class Rocan {
 	// Details of the client.
-	public final static String ROCAN_VERSION = "0.8";
-	public final static String ROCAN_NAME = "Rocan";
+	public final static String ROCAN_VERSION = "0.0.1";
+	public final static String ROCAN_NAME = "Consagrador";
 
 	@Mod.Instance
 	private static Rocan INSTANCE;

@@ -176,14 +176,14 @@ public class RocanModule {
 	public void onRender(RocanEventRender event) {}
 
 	public enum Category {
-		ROCAN_COMBAT("Rocan Combat", "Combat"),
-		ROCAN_MOVEMENT("Rocan Movement", "Movement"),
-		ROCAN_EXPLOIT("Rocan Exploit", "Exploit"),
-		ROCAN_RENDER("Rocan Render", "Render"),
-		ROCAN_MISC("Rocan Misc", "Misc"),
-		ROCAN_HUD("Rocan HUD", "HUD"),
-		ROCAN_GUI("Rocan GUI", "GUI"),
-		ROCAN_SYSTEM("Rocan System", "System");
+		ROCAN_COMBAT("Consagrador Combat", "Combat"),
+		ROCAN_MOVEMENT("Consagrador Movement", "Movement"),
+		ROCAN_EXPLOIT("Consagrador Exploit", "Exploit"),
+		ROCAN_RENDER("Consagrador Render", "Render"),
+		ROCAN_MISC("Consagrador Misc", "Misc"),
+		ROCAN_HUD("Consagrador HUD", "HUD"),
+		ROCAN_GUI("Consagrador GUI", "GUI"),
+		ROCAN_SYSTEM("Consagrador System", "System");
 
 		String name;
 		String tag;
