@@ -79,7 +79,7 @@ public class Rocan {
 		event_manager = new RocanEventManager();
 		pomelo_event_manager = new AnnotatedEventManager();
 		file_manager = new RocanFileManager();
-		friend_manager = new RocanFriendManager("Friends rocan!!!");
+		friend_manager = new RocanFriendManager("Profano");
 		timer_manager = new RocanTimerManager();
 		chat_manager = new RocanChatManager();
 
